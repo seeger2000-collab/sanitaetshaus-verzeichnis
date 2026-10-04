@@ -1,13 +1,12 @@
 ---
 import Base from '../layouts/Base.astro';
 ---
-<Base noindex title="Impressum" description="Impressum des Sanitätshaus-Verzeichnisses" crumbs={[{ href: '/impressum/', label: 'Impressum' }]}>
+<Base noindex title="Impressum" description="Impressum der Sanitätshaus-Suche" crumbs={[{ href: '/impressum/', label: 'Impressum' }]}>
   <h1>Impressum</h1>
   <p>Angaben gemäß § 5 DDG</p>
-  <!-- TODO: Name und ladungsfähige Anschrift des Betreibers eintragen, danach in src/config.ts indexing auf true stellen -->
-  <p>[Vorname Nachname]<br />[Straße Hausnummer]<br />[PLZ Ort]</p>
-  <p>Kontakt: [E-Mail-Adresse]</p>
-  <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: [Vorname Nachname, Anschrift wie oben]</p>
+  <p>Jan Seeger<br />Steinbrechweg 3<br />82223 Eichenau</p>
+  <p>Kontakt: <a href="mailto:info@sanitaetshaus-suche.de">info@sanitaetshaus-suche.de</a></p>
+  <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: Jan Seeger, Anschrift wie oben</p>
   <h2>Haftung für Inhalte</h2>
   <p>Die Einträge werden automatisch aus öffentlichen Quellen zusammengestellt. Wir prüfen sie nicht einzeln und übernehmen keine Gewähr für Richtigkeit und Vollständigkeit. Hinweise auf Fehler nehmen wir gern entgegen.</p>
 </Base>

@@ -3,7 +3,7 @@ export const SITE = {
   name: 'Sanitätshaus-Suche',
   claim: 'Sanitätshaus, Physiotherapie, Pflege und Krankenfahrten in der Nähe',
   // Erst auf true stellen, wenn das Impressum ausgefüllt ist. Bis dahin: noindex für Suchmaschinen.
-  indexing: false,
+  indexing: true,
   // Formular für Korrekturen und neue Einträge (z. B. Tally). Leer = Link auf GitHub-Issue.
   correctionFormUrl: '',
   repoUrl: 'https://github.com/seeger2000-collab/sanitaetshaus-verzeichnis',
