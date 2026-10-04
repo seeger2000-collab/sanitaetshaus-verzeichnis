@@ -9117,5 +9117,2186 @@
   "phone": "065432078",
   "pagesChecked": 7,
   "status": "ok"
+ },
+ "node/12913392877": {
+  "checkedAt": "2026-10-04T17:28:51.835Z",
+  "website": "https://www.natuerlich-liebig-apotheke.de/",
+  "features": [
+   "pflegehilfsmittel",
+   "inkontinenz",
+   "botendienst"
+  ],
+  "kassen": [
+   "alle"
+  ],
+  "evidence": {
+   "pflegehilfsmittel": "https://www.natuerlich-liebig-apotheke.de/",
+   "inkontinenz": "https://www.natuerlich-liebig-apotheke.de/",
+   "botendienst": "https://www.natuerlich-liebig-apotheke.de/"
+  },
+  "finalUrl": "https://www.natuerlich-liebig-apotheke.de/",
+  "email": "info@natuerlich-liebig-apotheke.de",
+  "phone": "0277123230",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/12919483793": {
+  "checkedAt": "2026-10-04T17:28:52.560Z",
+  "website": "https://www.uhlhorn-apo.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.uhlhorn-apo.de/",
+  "email": "muehle@uhlhorn-apo.de",
+  "pagesChecked": 4,
+  "status": "ok"
+ },
+ "node/12915551368": {
+  "checkedAt": "2026-10-04T17:28:52.396Z",
+  "website": "https://www.sonnenapotheke-magdeburg.de/",
+  "features": [
+   "inkontinenz",
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.sonnenapotheke-magdeburg.de/Serviceleistungen",
+   "botendienst": "https://www.sonnenapotheke-magdeburg.de/Serviceleistungen"
+  },
+  "finalUrl": "https://www.sonnenapotheke-magdeburg.de/",
+  "phone": "03912538479",
+  "pagesChecked": 4,
+  "status": "ok"
+ },
+ "node/1294225800": {
+  "checkedAt": "2026-10-04T17:28:53.274Z",
+  "website": "https://www.stern-apotheke-baal-hueckelhoven.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "DEPTH_ZERO_SELF_SIGNED_CERT"
+ },
+ "node/1298620577": {
+  "checkedAt": "2026-10-04T17:28:54.292Z",
+  "website": "http://www.michaeli-apotheke.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "ENOTFOUND"
+ },
+ "node/1297297299": {
+  "checkedAt": "2026-10-04T17:28:53.535Z",
+  "website": "https://www.flora-park-apotheke-app.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "DEPTH_ZERO_SELF_SIGNED_CERT"
+ },
+ "node/129379225": {
+  "checkedAt": "2026-10-04T17:28:52.889Z",
+  "website": "http://schwabenland-apotheke.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "http://schwabenland-apotheke.de/16-0-SERVICE.html"
+  },
+  "finalUrl": "http://schwabenland-apotheke.de/",
+  "pagesChecked": 6,
+  "status": "ok"
+ },
+ "node/1290517366": {
+  "checkedAt": "2026-10-04T17:28:51.566Z",
+  "website": "http://www.st-martinus-apo.de/",
+  "features": [
+   "inkontinenz",
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.st-martinus-apo.de/",
+   "botendienst": "https://www.st-martinus-apo.de/"
+  },
+  "finalUrl": "https://www.st-martinus-apo.de/",
+  "email": "info@st-martinus-apo.de",
+  "phone": "+4967269473",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/12863071999": {
+  "checkedAt": "2026-10-04T17:28:48.113Z",
+  "website": "https://neueapotheken.de/neue-apotheke-center-vimbuch",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://neueapotheken.de/neue-apotheke-center-vimbuch"
+  },
+  "finalUrl": "https://neueapotheken.de/neue-apotheke-center-vimbuch",
+  "email": "center.vimbuch@neueapotheken.de",
+  "phone": "+4972239533141",
+  "pagesChecked": 6,
+  "status": "ok"
+ },
+ "node/1297075216": {
+  "checkedAt": "2026-10-04T17:28:53.426Z",
+  "website": "https://www.apothekedummerstorf.de/",
+  "features": [
+   "pflegehilfsmittel",
+   "inkontinenz",
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "pflegehilfsmittel": "https://www.apothekedummerstorf.de/leistungen/",
+   "inkontinenz": "https://www.apothekedummerstorf.de/leistungen/",
+   "botendienst": "https://www.apothekedummerstorf.de/leistungen/"
+  },
+  "finalUrl": "https://www.apothekedummerstorf.de/",
+  "email": "info@apothekedummerstorf.de",
+  "phone": "03820813915",
+  "pagesChecked": 6,
+  "status": "ok"
+ },
+ "node/1293263273": {
+  "checkedAt": "2026-10-04T17:28:52.754Z",
+  "website": "https://www.apotheke-huchting.de/",
+  "features": [
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.apotheke-huchting.de/"
+  },
+  "finalUrl": "https://www.apotheke-huchting.de/",
+  "email": "teamapo@web.de",
+  "phone": "+49421581023",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1289173900": {
+  "checkedAt": "2026-10-04T17:28:49.306Z",
+  "website": "https://www.mycare.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.mycare.de/",
+  "email": "service@mycare.de",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/12964164454": {
+  "checkedAt": "2026-10-04T17:28:53.383Z",
+  "website": "https://www.apexvital.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.apexvital.de/"
+  },
+  "finalUrl": "https://www.apexvital.de/",
+  "email": "info@apexvital.de",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/1300538391": {
+  "checkedAt": "2026-10-04T17:28:54.817Z",
+  "website": "http://www.apothekeimreal.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "http://www.apothekeimreal.de/"
+  },
+  "finalUrl": "http://www.apothekeimreal.de/",
+  "email": "info@apo-real.de",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/1302498068": {
+  "checkedAt": "2026-10-04T17:28:55.179Z",
+  "website": "https://www.flemingapomuc.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.flemingapomuc.de/",
+  "email": "info@flemingapomuc.de",
+  "phone": "089482633",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/125816928": {
+  "checkedAt": "2026-10-04T17:28:36.749Z",
+  "website": "https://www.b-treff.info/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.b-treff.info/",
+  "email": "info@b-treff.info",
+  "phone": "+49711375116",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/12912411407": {
+  "checkedAt": "2026-10-04T17:28:51.771Z",
+  "website": "https://www.tulpenapotheke.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.tulpenapotheke.de/team-apotheke/"
+  },
+  "finalUrl": "https://www.tulpenapotheke.de/",
+  "pagesChecked": 5,
+  "status": "ok"
+ },
+ "node/1298246171": {
+  "checkedAt": "2026-10-04T17:28:53.741Z",
+  "website": "https://www.herz-apotheke-berlin.de/",
+  "features": [
+   "pflegehilfsmittel",
+   "inkontinenz",
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "pflegehilfsmittel": "https://www.herz-apotheke-berlin.de/",
+   "inkontinenz": "https://www.herz-apotheke-berlin.de/",
+   "botendienst": "https://www.herz-apotheke-berlin.de/"
+  },
+  "finalUrl": "https://www.herz-apotheke-berlin.de/",
+  "phone": "0304614050",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/12883295849": {
+  "checkedAt": "2026-10-04T17:28:48.866Z",
+  "website": "https://www.geissels-apotheke.de/",
+  "features": [
+   "botendienst",
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.apoluh.de/geissels-apotheke/",
+   "inkontinenz": "https://www.apoluh.de/geissels-apotheke/category/krankenpflege-sanitaetsbedarf.2352.html"
+  },
+  "finalUrl": "https://www.apoluh.de/geissels-apotheke/",
+  "email": "info@geissels-apotheke.de",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/13037531672": {
+  "checkedAt": "2026-10-04T17:28:55.670Z",
+  "website": "https://www.engelapotheken.com/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR"
+ },
+ "node/12968427508": {
+  "checkedAt": "2026-10-04T17:28:53.404Z",
+  "website": "https://stern-apo.de/",
+  "features": [
+   "botendienst",
+   "pflegehilfsmittel"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://stern-apo.de/",
+   "pflegehilfsmittel": "https://stern-apo.de/leistungen/"
+  },
+  "finalUrl": "https://stern-apo.de/",
+  "email": "mail@stern-apo.de",
+  "phone": "+4959215440",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "node/12944084501": {
+  "checkedAt": "2026-10-04T17:28:53.357Z",
+  "website": "https://www.sonnenapotheke-teisnach.de/",
+  "features": [
+   "inkontinenz"
+  ],
+  "kassen": [
+   "aok"
+  ],
+  "evidence": {
+   "inkontinenz": "https://www.sonnenapotheke-teisnach.de/"
+  },
+  "finalUrl": "https://www.sonnenapotheke-teisnach.de/",
+  "email": "info@sonnenapotheke-teisnach.de",
+  "phone": "+49992380080",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1289918427": {
+  "checkedAt": "2026-10-04T17:28:49.821Z",
+  "website": "https://www.rheingold-apotheke-bonn.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.rheingold-apotheke-bonn.de/"
+  },
+  "finalUrl": "https://www.rheingold-apotheke-bonn.de/",
+  "pagesChecked": 5,
+  "status": "ok"
+ },
+ "node/1299614302": {
+  "checkedAt": "2026-10-04T17:28:54.372Z",
+  "website": "https://www.hirsch-apotheke-toenisvorst.de/",
+  "features": [
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.hirsch-apotheke-toenisvorst.de/"
+  },
+  "finalUrl": "https://www.hirsch-apotheke-toenisvorst.de/",
+  "email": "info@hirsch-apotheke-tv.de",
+  "phone": "+492151790248",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/129997502": {
+  "checkedAt": "2026-10-04T17:28:54.458Z",
+  "website": "http://www.nordapotheke-cottbus.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.nordapotheke-cottbus.de/"
+  },
+  "finalUrl": "https://www.nordapotheke-cottbus.de/",
+  "email": "post@nordapotheke-cottbus.de",
+  "phone": "035524455",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/1304824184": {
+  "checkedAt": "2026-10-04T17:28:55.862Z",
+  "website": "https://shop.kur-apotheke-bad-sobernheim.de/",
+  "features": [
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://shop.kur-apotheke-bad-sobernheim.de/"
+  },
+  "finalUrl": "https://shop.kur-apotheke-bad-sobernheim.de/",
+  "email": "post@kur-ap.com",
+  "phone": "+496751857980",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/13070185097": {
+  "checkedAt": "2026-10-04T17:28:56.955Z",
+  "website": "https://apotheke-voehringen.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "DEPTH_ZERO_SELF_SIGNED_CERT"
+ },
+ "node/1291415326": {
+  "checkedAt": "2026-10-04T17:28:52.238Z",
+  "website": "http://www.sertuerner-apo-frankfurt.de/",
+  "features": [
+   "inkontinenz",
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://sertuerner-apo-frankfurt.de/",
+   "botendienst": "https://sertuerner-apo-frankfurt.de/"
+  },
+  "finalUrl": "https://sertuerner-apo-frankfurt.de/",
+  "email": "info@sertuerner-apo-frankfurt.de",
+  "phone": "+4969381085",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/130134170": {
+  "checkedAt": "2026-10-04T17:28:55.110Z",
+  "website": "https://drschultes-apotheke.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://drschultes-apotheke.de/",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "node/1304824218": {
+  "checkedAt": "2026-10-04T17:28:56.280Z",
+  "website": "https://www.felke-apotheke.de/",
+  "features": [
+   "botendienst",
+   "pflegehilfsmittel"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.felke-apotheke.de/",
+   "pflegehilfsmittel": "https://www.felke-apotheke.de/leistungen/"
+  },
+  "finalUrl": "https://www.felke-apotheke.de/",
+  "email": "felke-apotheke@web.de",
+  "phone": "067515010",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1304624934": {
+  "checkedAt": "2026-10-04T17:28:55.793Z",
+  "website": "https://www.vitaapo.com/",
+  "features": [
+   "pflegehilfsmittel",
+   "botendienst",
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "pflegehilfsmittel": "https://www.vitaapo.com/services",
+   "botendienst": "https://www.vitaapo.com/unser-team",
+   "inkontinenz": "https://www.vitaapo.com/krankheiten-und-therapie/66-erkrankungen-im-alter"
+  },
+  "finalUrl": "https://www.vitaapo.com/",
+  "email": "info@vitaapo.com",
+  "phone": "+496182843723",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1309760750": {
+  "checkedAt": "2026-10-04T17:28:57.626Z",
+  "website": "https://www.pelikan-apotheke-frankfurt.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.pelikan-apotheke-frankfurt.de/",
+  "phone": "069364516",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/13011846520": {
+  "checkedAt": "2026-10-04T17:28:54.916Z",
+  "website": "https://www.olymp-apotheke.de/",
+  "features": [
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.olymp-apotheke.de/"
+  },
+  "finalUrl": "https://www.olymp-apotheke.de/",
+  "email": "info@olymp-apotheke.de",
+  "phone": "004927429683030",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/1305555202": {
+  "checkedAt": "2026-10-04T17:28:56.463Z",
+  "website": "https://www.ahornapo-aerztehaus.com/",
+  "features": [
+   "inkontinenz",
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.ahornapo-aerztehaus.com/",
+   "botendienst": "https://www.ahornapo-aerztehaus.com/"
+  },
+  "finalUrl": "https://www.ahornapo-aerztehaus.com/",
+  "email": "apo-aerzte@ahornapo.com",
+  "phone": "+49814115255",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/12983537983": {
+  "checkedAt": "2026-10-04T17:28:53.765Z",
+  "website": "https://www.viktoria-apotheke-mainz.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.viktoria-apotheke-mainz.de/",
+  "email": "viktoria-apotheke@mail.gmx",
+  "phone": "+49613185220",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/13061916647": {
+  "checkedAt": "2026-10-04T17:28:56.813Z",
+  "website": "https://www.okapotheken.de/",
+  "features": [
+   "pflegehilfsmittel",
+   "botendienst",
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "pflegehilfsmittel": "https://www.okapotheken.de/",
+   "botendienst": "https://www.okapotheken.de/",
+   "inkontinenz": "https://www.okapotheken.de/leistungen/"
+  },
+  "finalUrl": "https://www.okapotheken.de/",
+  "email": "ludwig@okapotheken.de",
+  "phone": "062329905490",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/12875476252": {
+  "checkedAt": "2026-10-04T17:28:48.310Z",
+  "website": "https://roland-stendal.de/apotheken-in-stendal/roland-apotheke/",
+  "features": [
+   "botendienst",
+   "pflegehilfsmittel"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://roland-stendal.de/apotheken-in-stendal/roland-apotheke/",
+   "pflegehilfsmittel": "https://roland-stendal.de/roland-pflegedienst/persoenliche-beratung/"
+  },
+  "finalUrl": "https://roland-stendal.de/apotheken-in-stendal/roland-apotheke/",
+  "phone": "039314907530",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1315220865": {
+  "checkedAt": "2026-10-04T17:28:59.526Z",
+  "website": "http://www.glueckauf-apotheke-wietze.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "ENOTFOUND"
+ },
+ "node/1302921140": {
+  "checkedAt": "2026-10-04T17:28:55.613Z",
+  "website": "http://www.apotheke-betzingen.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://apotheke-betzingen.de/"
+  },
+  "finalUrl": "https://apotheke-betzingen.de/",
+  "phone": "0712154791",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/13063884146": {
+  "checkedAt": "2026-10-04T17:28:56.841Z",
+  "website": "https://www.apotheke-am-rosenberg.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://apotheke-am-rosenberg.de/"
+  },
+  "finalUrl": "https://apotheke-am-rosenberg.de/",
+  "email": "info@apotheke-am-rosenberg.de",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/1310325443": {
+  "checkedAt": "2026-10-04T17:28:58.794Z",
+  "website": "http://www.westfalen-apotheke-hamm.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "http://www.westfalen-apotheke-hamm.de/",
+  "phone": "+4902381953024",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/1307532122": {
+  "checkedAt": "2026-10-04T17:28:57.199Z",
+  "website": "http://www.rosen-apotheke-lindau.de/",
+  "features": [
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.rosen-apotheke-lindau.de/"
+  },
+  "finalUrl": "https://www.rosen-apotheke-lindau.de/",
+  "email": "rosen-apo-lindau@t-online.de",
+  "phone": "+49838222121",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/13100923660": {
+  "checkedAt": "2026-10-04T17:28:57.787Z",
+  "website": "https://ikt-apotheken.de/filiale-alsdorf/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://ikt-apotheken.de/filiale-alsdorf/",
+  "email": "kaufland@schopps-apotheken.de",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/1316428169": {
+  "checkedAt": "2026-10-04T17:29:00.128Z",
+  "website": "http://www.stadtapo-auerbach.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "ENOTFOUND"
+ },
+ "node/130225614": {
+  "checkedAt": "2026-10-04T17:28:55.159Z",
+  "website": "https://vital-apotheke-kiel.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://vital-apotheke-kiel.de/",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/1310092497": {
+  "checkedAt": "2026-10-04T17:28:58.717Z",
+  "website": "https://www.city-apotheke-freiburg.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.city-apotheke-freiburg.de/",
+  "email": "info@city-apotheke-freiburg.de",
+  "phone": "+4976134774",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/1313517753": {
+  "checkedAt": "2026-10-04T17:28:58.961Z",
+  "website": "https://www.bahnhof-apotheke-sylt.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.bahnhof-apotheke-sylt.de/"
+  },
+  "finalUrl": "https://www.bahnhof-apotheke-sylt.de/",
+  "email": "service@bahnhof-apotheke-sylt.de",
+  "phone": "+4946517575",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/1310092496": {
+  "checkedAt": "2026-10-04T17:28:57.921Z",
+  "website": "https://www.unterlinden-apotheke.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.unterlinden-apotheke.de/"
+  },
+  "finalUrl": "https://www.unterlinden-apotheke.de/",
+  "email": "info@unterlinden-apotheke.de",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1297816362": {
+  "checkedAt": "2026-10-04T17:28:53.559Z",
+  "website": "https://www.glockenapotheke-oberhausen.de/",
+  "features": [
+   "botendienst",
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.glockenapotheke-oberhausen.de/startseite/",
+   "inkontinenz": "https://www.glockenapotheke-oberhausen.de/leistungen/beratung/"
+  },
+  "finalUrl": "https://www.glockenapotheke-oberhausen.de/startseite/",
+  "email": "beutling@glockenapotheke-oberhausen.de",
+  "phone": "+49208669414",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1315355263": {
+  "checkedAt": "2026-10-04T17:28:59.563Z",
+  "website": "http://www.vogtshof-apotheke-freiburg.de/",
+  "features": [
+   "botendienst",
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.vogtshof-apotheke-freiburg.de/",
+   "inkontinenz": "https://www.vogtshof-apotheke-freiburg.de/Serviceleistungen"
+  },
+  "finalUrl": "https://www.vogtshof-apotheke-freiburg.de/",
+  "phone": "076142465",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "node/1301626221": {
+  "checkedAt": "2026-10-04T17:28:55.132Z",
+  "website": "http://brandenburger-apotheke-bayreuth.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://apotheke-bayreuth.de/brandenburger-apotheke/",
+  "email": "info@brandenburger-apotheke-bayreuth.de",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/1317496418": {
+  "checkedAt": "2026-10-04T17:29:00.269Z",
+  "website": "https://neuried.marys-apotheke.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://neuried.marys-apotheke.de/service/"
+  },
+  "finalUrl": "https://neuried.marys-apotheke.de/",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/1309278699": {
+  "checkedAt": "2026-10-04T17:28:57.362Z",
+  "website": "https://www.brunnen-apotheke-mannheim.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.brunnen-apotheke-mannheim.de/",
+  "email": "info@brunnen-apotheke-mannheim.de",
+  "phone": "+49621792126",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1305923005": {
+  "checkedAt": "2026-10-04T17:28:56.602Z",
+  "website": "https://www.zentral-apotheke.de/",
+  "features": [
+   "inkontinenz",
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.zentral-apotheke.de/",
+   "botendienst": "https://www.zentral-apotheke.de/"
+  },
+  "finalUrl": "https://www.zentral-apotheke.de/",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/13184677216": {
+  "checkedAt": "2026-10-04T17:29:01.221Z",
+  "website": "https://www.ernst-leitz-apotheke.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.ernst-leitz-apotheke.de/",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/13142565846": {
+  "checkedAt": "2026-10-04T17:28:59.234Z",
+  "website": "https://linden-apotheke-stuttgart.de/",
+  "features": [
+   "inkontinenz",
+   "botendienst"
+  ],
+  "kassen": [
+   "aok",
+   "alle"
+  ],
+  "evidence": {
+   "inkontinenz": "https://linden-apotheke-stuttgart.de/",
+   "botendienst": "https://linden-apotheke-stuttgart.de/"
+  },
+  "finalUrl": "https://linden-apotheke-stuttgart.de/",
+  "booking": "https://linden-apotheke-stuttgart.de/leistungen/impfen.html",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "node/1251369487": {
+  "checkedAt": "2026-10-04T17:28:32.973Z",
+  "website": "http://www.goethe-apotheke-be.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "AbortError"
+ },
+ "node/13206807100": {
+  "checkedAt": "2026-10-04T17:29:02.975Z",
+  "website": "http://www.elchapotheke-goe.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "ENOTFOUND"
+ },
+ "node/1315124749": {
+  "checkedAt": "2026-10-04T17:28:59.391Z",
+  "website": "https://www.maxicenterapotheke.de/",
+  "features": [
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://maxicenterapotheke.de/"
+  },
+  "finalUrl": "https://maxicenterapotheke.de/",
+  "email": "info@maxicenterapotheke.de",
+  "phone": "+492381371414",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/13176972152": {
+  "checkedAt": "2026-10-04T17:29:00.306Z",
+  "website": "https://www.alte-apotheke-selsingen.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.alte-apotheke-selsingen.de/"
+  },
+  "finalUrl": "https://www.alte-apotheke-selsingen.de/",
+  "phone": "01718933400",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1318030346": {
+  "checkedAt": "2026-10-04T17:29:00.592Z",
+  "website": "https://www.adler-apotheke-tornesch.de/",
+  "features": [
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.adler-apotheke-tornesch.de/"
+  },
+  "finalUrl": "https://www.adler-apotheke-tornesch.de/",
+  "email": "dietmar.hennings@hotmail.de",
+  "phone": "+49412252394",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/13180313166": {
+  "checkedAt": "2026-10-04T17:29:00.924Z",
+  "website": "https://www.rehmausapotheke.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.rehmausapotheke.de/"
+  },
+  "finalUrl": "https://www.rehmausapotheke.de/",
+  "email": "apotheke@rehmaus.de",
+  "phone": "+4981712387227",
+  "pagesChecked": 4,
+  "status": "ok"
+ },
+ "node/1318704254": {
+  "checkedAt": "2026-10-04T17:29:01.443Z",
+  "website": "https://www.tannen-apotheke.com/apotheke/willkommen.htm",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "http-404"
+ },
+ "node/12991959373": {
+  "checkedAt": "2026-10-04T17:28:54.361Z",
+  "website": "https://www.bergapotheke-tabarz.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.bergapotheke-tabarz.de/"
+  },
+  "finalUrl": "https://www.bergapotheke-tabarz.de/",
+  "phone": "+493625962228",
+  "pagesChecked": 6,
+  "status": "ok"
+ },
+ "node/1319033047": {
+  "checkedAt": "2026-10-04T17:29:01.525Z",
+  "website": "https://www.alte-apotheke-fink.de/",
+  "features": [
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.alte-apotheke-fink.de/"
+  },
+  "finalUrl": "https://www.alte-apotheke-fink.de/",
+  "email": "alte.apotheke.fink@t-online.de",
+  "phone": "+49603365585",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/13190600166": {
+  "checkedAt": "2026-10-04T17:29:01.672Z",
+  "website": "https://www.apotheke-am-postamt.de/",
+  "features": [
+   "inkontinenz",
+   "botendienst",
+   "pflegehilfsmittel"
+  ],
+  "kassen": [
+   "alle"
+  ],
+  "evidence": {
+   "inkontinenz": "https://www.apotheke-am-postamt.de/",
+   "botendienst": "https://www.apotheke-am-postamt.de/",
+   "pflegehilfsmittel": "https://www.apotheke-am-postamt.de/leistungen/"
+  },
+  "finalUrl": "https://www.apotheke-am-postamt.de/",
+  "email": "info@apotheke-am-postamt.de",
+  "phone": "027715513",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1314205666": {
+  "checkedAt": "2026-10-04T17:28:59.208Z",
+  "website": "https://elster-apotheke-gera.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://elster-apotheke-gera.de/team/"
+  },
+  "finalUrl": "https://elster-apotheke-gera.de/",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "node/13197230045": {
+  "checkedAt": "2026-10-04T17:29:02.391Z",
+  "website": "https://apotheke-wenzenbach.de/",
+  "features": [
+   "botendienst",
+   "pflegehilfsmittel",
+   "inkontinenz"
+  ],
+  "kassen": [
+   "aok",
+   "bkk"
+  ],
+  "evidence": {
+   "botendienst": "https://www.apotheke-wenzenbach.de/",
+   "pflegehilfsmittel": "https://www.apotheke-wenzenbach.de/leistungen.html",
+   "inkontinenz": "https://www.apotheke-wenzenbach.de/leistungen.html"
+  },
+  "finalUrl": "https://www.apotheke-wenzenbach.de/",
+  "email": "info@apotheke-wenzenbach.de",
+  "phone": "+49940790500",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "node/13106033631": {
+  "checkedAt": "2026-10-04T17:28:58.821Z",
+  "website": "https://deich-apotheke-elsfleth.de/",
+  "features": [
+   "pflegehilfsmittel"
+  ],
+  "kassen": [
+   "alle"
+  ],
+  "evidence": {
+   "pflegehilfsmittel": "https://deich-apotheke-elsfleth.de/startseite/service/"
+  },
+  "finalUrl": "https://deich-apotheke-elsfleth.de/",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "node/1324083797": {
+  "checkedAt": "2026-10-04T17:29:03.841Z",
+  "website": "https://www.rosen-apotheke-nahe-app.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "DEPTH_ZERO_SELF_SIGNED_CERT"
+ },
+ "node/13227470392": {
+  "checkedAt": "2026-10-04T17:29:03.400Z",
+  "website": "https://die-neue-apotheke-kirn.avie.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://die-neue-apotheke-kirn.avie.de/"
+  },
+  "finalUrl": "https://die-neue-apotheke-kirn.avie.de/",
+  "email": "info@dna-kirn.de",
+  "phone": "0675291330",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/13230322585": {
+  "checkedAt": "2026-10-04T17:29:03.425Z",
+  "website": "https://www.lux-apotheke-leipzig.de/",
+  "features": [
+   "botendienst",
+   "pflegehilfsmittel",
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.lux-apotheke-leipzig.de/",
+   "pflegehilfsmittel": "https://www.lux-apotheke-leipzig.de/leistungen/",
+   "inkontinenz": "https://www.lux-apotheke-leipzig.de/leistungen/"
+  },
+  "finalUrl": "https://www.lux-apotheke-leipzig.de/",
+  "email": "lux@apotheken-antjebethmann.de",
+  "phone": "03419605030",
+  "booking": "https://apomondo.online/#/scheduler/2e16b33d-17b7-435b-a136-661542fedf0b?category=Vitamin-D-Check",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1323375091": {
+  "checkedAt": "2026-10-04T17:29:03.594Z",
+  "website": "https://www.herz-apotheke-magdeburg.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.herz-apotheke-magdeburg.de/",
+  "email": "info@herz-apo-md.de",
+  "phone": "03916116113",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/1325733595": {
+  "checkedAt": "2026-10-04T17:29:05.714Z",
+  "website": "http://www.saartal-apotheke-app.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "ENOTFOUND"
+ },
+ "node/1321822607": {
+  "checkedAt": "2026-10-04T17:29:03.057Z",
+  "website": "http://www.stadtpark-apotheke-erfurt.de/",
+  "features": [
+   "inkontinenz",
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.stadtpark-apotheke-erfurt.de/leistungen/",
+   "botendienst": "https://www.stadtpark-apotheke-erfurt.de/leistungen/"
+  },
+  "finalUrl": "https://www.stadtpark-apotheke-erfurt.de/",
+  "email": "info@stadtpark-apotheke-erfurt.de",
+  "phone": "036174733749",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "node/13194633388": {
+  "checkedAt": "2026-10-04T17:29:02.055Z",
+  "website": "https://www.hirsch-apotheke-huesten.de/",
+  "features": [
+   "pflegehilfsmittel"
+  ],
+  "kassen": [],
+  "evidence": {
+   "pflegehilfsmittel": "https://hirsch-apotheke-huesten.de/"
+  },
+  "finalUrl": "https://hirsch-apotheke-huesten.de/",
+  "email": "hirsch-apotheke-huesten@t-online.de",
+  "phone": "+4929324681",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "node/1322094255": {
+  "checkedAt": "2026-10-04T17:29:03.208Z",
+  "website": "https://hofberg-apotheke.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://hofberg-apotheke.de/",
+  "email": "info@hofberg-apotheke.de",
+  "phone": "087122534",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/13196567728": {
+  "checkedAt": "2026-10-04T17:29:02.244Z",
+  "website": "https://www.stgeorg-apo.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.stgeorg-apo.de/"
+  },
+  "finalUrl": "https://www.stgeorg-apo.de/",
+  "phone": "+49532183135",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1323492817": {
+  "checkedAt": "2026-10-04T17:29:03.811Z",
+  "website": "https://www.adler-apotheke-gronau.de/",
+  "features": [
+   "pflegehilfsmittel"
+  ],
+  "kassen": [],
+  "evidence": {
+   "pflegehilfsmittel": "https://www.adler-apotheke-gronau.de/services"
+  },
+  "finalUrl": "https://www.adler-apotheke-gronau.de/",
+  "email": "service@adler-apotheke-gronau.de",
+  "phone": "+4925625420",
+  "pagesChecked": 4,
+  "status": "ok"
+ },
+ "node/1320492538": {
+  "checkedAt": "2026-10-04T17:29:02.439Z",
+  "website": "http://www.stern-apotheke-leonberg.de/",
+  "features": [
+   "pflegehilfsmittel",
+   "inkontinenz",
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "pflegehilfsmittel": "https://www.stern-apotheke-leonberg.de/",
+   "inkontinenz": "https://www.stern-apotheke-leonberg.de/",
+   "botendienst": "https://www.stern-apotheke-leonberg.de/"
+  },
+  "finalUrl": "https://www.stern-apotheke-leonberg.de/",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "node/1315581083": {
+  "checkedAt": "2026-10-04T17:28:59.830Z",
+  "website": "http://www.loewen-apotheke-lippstadt.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "http-404"
+ },
+ "node/1324788969": {
+  "checkedAt": "2026-10-04T17:29:04.898Z",
+  "website": "https://www.pinguin-apotheke-herne.de/apotheke-am-stadtgarten.html",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.pinguin-apotheke-herne.de/services.html"
+  },
+  "finalUrl": "https://www.pinguin-apotheke-herne.de/apotheke-am-stadtgarten.html",
+  "phone": "+49232312090",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/1317027152": {
+  "checkedAt": "2026-10-04T17:29:00.170Z",
+  "website": "https://www.artus-apotheke-koeln.de/startseite/",
+  "features": [
+   "botendienst",
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.artus-apotheke-koeln.de/startseite/",
+   "inkontinenz": "https://www.artus-apotheke-koeln.de/leistungen/beratung/"
+  },
+  "finalUrl": "https://www.artus-apotheke-koeln.de/startseite/",
+  "email": "info@artus-apo-koeln.de",
+  "phone": "+49221382014",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/13248885887": {
+  "checkedAt": "2026-10-04T17:29:05.117Z",
+  "website": "https://www.friedlaender-apotheke.de/",
+  "features": [
+   "botendienst",
+   "pflegehilfsmittel",
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.friedlaender-apotheke.de/",
+   "pflegehilfsmittel": "https://www.friedlaender-apotheke.de/leistungen/",
+   "inkontinenz": "https://www.friedlaender-apotheke.de/leistungen/"
+  },
+  "finalUrl": "https://www.friedlaender-apotheke.de/",
+  "email": "info@friedlaender-apotheke.de",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "node/1327902850": {
+  "checkedAt": "2026-10-04T17:29:06.945Z",
+  "website": "http://www.adlerapotheke-ruhpolding.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "http://www.adlerapotheke-ruhpolding.de/",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/13252229902": {
+  "checkedAt": "2026-10-04T17:29:05.347Z",
+  "website": "https://www.apotheke-loewenplatz.de/",
+  "features": [
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.apotheke-loewenplatz.de/"
+  },
+  "finalUrl": "https://www.apotheke-loewenplatz.de/",
+  "email": "info@apotheke-loewenplatz.de",
+  "phone": "+497146881411",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/13264630344": {
+  "checkedAt": "2026-10-04T17:29:05.971Z",
+  "website": "https://www.honigwald-apotheke.de/",
+  "features": [
+   "inkontinenz",
+   "botendienst",
+   "pflegehilfsmittel"
+  ],
+  "kassen": [
+   "alle"
+  ],
+  "evidence": {
+   "inkontinenz": "https://www.honigwald-apotheke.de/",
+   "botendienst": "https://www.honigwald-apotheke.de/",
+   "pflegehilfsmittel": "https://www.honigwald-apotheke.de/leistungen/"
+  },
+  "finalUrl": "https://www.honigwald-apotheke.de/",
+  "email": "honigwald-apotheke@gmx.de",
+  "phone": "064792477044",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/13266643101": {
+  "checkedAt": "2026-10-04T17:29:06.336Z",
+  "website": "https://www.apothekeamhadernerstern.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.apothekeamhadernerstern.de/"
+  },
+  "finalUrl": "https://www.apothekeamhadernerstern.de/",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/1328581450": {
+  "checkedAt": "2026-10-04T17:29:07.496Z",
+  "website": "https://www.sonnen-apotheke-ennepetal.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "ERR_TLS_CERT_ALTNAME_INVALID"
+ },
+ "node/1328297212": {
+  "checkedAt": "2026-10-04T17:29:07.393Z",
+  "website": "https://www.loewen-apotheke-fulda.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.loewen-apotheke-fulda.de/",
+  "phone": "0661928560",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/1330622677": {
+  "checkedAt": "2026-10-04T17:29:08.672Z",
+  "website": "http://www.muehlenapotheke-abcenter-app.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "ENOTFOUND"
+ },
+ "node/13267223322": {
+  "checkedAt": "2026-10-04T17:29:06.717Z",
+  "website": "https://www.hirschapotheke.de/",
+  "features": [
+   "botendienst",
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.hirschapotheke.de/unser-team",
+   "inkontinenz": "https://www.hirschapotheke.de/krankheiten-und-therapie/66-erkrankungen-im-alter"
+  },
+  "finalUrl": "https://www.hirschapotheke.de/",
+  "email": "bestellung@hirschapotheke.de",
+  "phone": "+49664196300",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1326218859": {
+  "checkedAt": "2026-10-04T17:29:05.937Z",
+  "website": "https://www.apotheken.de/club/93413/regental-apotheke/",
+  "features": [
+   "pflegehilfsmittel",
+   "botendienst",
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "pflegehilfsmittel": "http://regental-apotheke.de/services",
+   "botendienst": "http://regental-apotheke.de/services",
+   "inkontinenz": "http://regental-apotheke.de/krankheiten-und-therapie/66-erkrankungen-im-alter"
+  },
+  "finalUrl": "http://regental-apotheke.de/",
+  "email": "info@regental-apotheke.de",
+  "phone": "+499971862010",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/13280372894": {
+  "checkedAt": "2026-10-04T17:29:07.159Z",
+  "website": "https://www.dominikaner-apotheke.de/",
+  "features": [
+   "inkontinenz",
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.dominikaner-apotheke.de/",
+   "botendienst": "https://www.dominikaner-apotheke.de/services"
+  },
+  "finalUrl": "https://www.dominikaner-apotheke.de/",
+  "email": "dominikanerapotheke@t-online.de",
+  "phone": "+4924635789",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1317697467": {
+  "checkedAt": "2026-10-04T17:29:00.484Z",
+  "website": "https://www.scheffel-apotheke-leipzig.de/",
+  "features": [
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.scheffel-apotheke-leipzig.de/"
+  },
+  "finalUrl": "https://www.scheffel-apotheke-leipzig.de/",
+  "email": "​info@scheffel-apotheke-leipzig.de",
+  "phone": "+49341244830",
+  "pagesChecked": 5,
+  "status": "ok"
+ },
+ "node/13304462376": {
+  "checkedAt": "2026-10-04T17:29:08.279Z",
+  "website": "https://www.rats-apotheke-kurort-seiffen.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.rats-apotheke-kurort-seiffen.de/",
+  "phone": "0373628210",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/1316184897": {
+  "checkedAt": "2026-10-04T17:28:59.907Z",
+  "website": "http://www.rathausapo-reichenbach.de/",
+  "features": [
+   "inkontinenz",
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.meveo.de/",
+   "botendienst": "https://www.meveo.de/"
+  },
+  "finalUrl": "https://www.meveo.de/",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/13277781021": {
+  "checkedAt": "2026-10-04T17:29:06.750Z",
+  "website": "https://www.kosmas-apotheke-koeln.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.kosmas-apotheke-koeln.de/",
+  "email": "kosmas-apotheke@gmx.de",
+  "phone": "+492219253034",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1332031588": {
+  "checkedAt": "2026-10-04T17:29:08.845Z",
+  "website": "https://die-engel-apotheken.de/engel-apotheke-am-buttermarkt/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://die-engel-apotheken.de/engel-apotheke-am-buttermarkt/"
+  },
+  "finalUrl": "https://die-engel-apotheken.de/engel-apotheke-am-buttermarkt/",
+  "email": "info@dev.die-engel-apotheken.de",
+  "phone": "06614805770",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/1324340055": {
+  "checkedAt": "2026-10-04T17:29:03.943Z",
+  "website": "https://www.apotheke-grossaitingen.de/",
+  "features": [
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.apotheke-grossaitingen.de/"
+  },
+  "finalUrl": "https://www.apotheke-grossaitingen.de/",
+  "email": "marienapotheke-grossaitingen@t-online.de",
+  "phone": "+498203952809",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/13326886399": {
+  "checkedAt": "2026-10-04T17:29:09.347Z",
+  "website": "https://www.marienapotheke-bissingen.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.marienapotheke-bissingen.de/",
+  "email": "apotheke@marienapotheke-bissingen.de",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/1332023647": {
+  "checkedAt": "2026-10-04T17:29:08.816Z",
+  "website": "https://die-engel-apotheken.de/engel-apotheke-am-bahnhof/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://die-engel-apotheken.de/engel-apotheke-am-bahnhof/"
+  },
+  "finalUrl": "https://die-engel-apotheken.de/engel-apotheke-am-bahnhof/",
+  "email": "info@dev.die-engel-apotheken.de",
+  "phone": "06614805770",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/13319924543": {
+  "checkedAt": "2026-10-04T17:29:08.715Z",
+  "website": "https://www.apotheke-denkendorf.de/",
+  "features": [
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.apotheke-denkendorf.de/"
+  },
+  "finalUrl": "https://www.apotheke-denkendorf.de/",
+  "email": "mail@apotheke-denkendorf.de",
+  "phone": "+498466601",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1324776800": {
+  "checkedAt": "2026-10-04T17:29:04.174Z",
+  "website": "https://apotheken-sibbel.de/paracelsus-apotheke-herne/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://apotheken-sibbel.de/paracelsus-apotheke-herne/"
+  },
+  "finalUrl": "https://apotheken-sibbel.de/paracelsus-apotheke-herne/",
+  "email": "paracelsus@apotheken-sibbel.de",
+  "phone": "+49232571727",
+  "pagesChecked": 4,
+  "status": "ok"
+ },
+ "node/1324776782": {
+  "checkedAt": "2026-10-04T17:29:04.163Z",
+  "website": "https://apotheken-sibbel.de/ruhr-apotheke-herne/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://apotheken-sibbel.de/ruhr-apotheke-herne/"
+  },
+  "finalUrl": "https://apotheken-sibbel.de/ruhr-apotheke-herne/",
+  "email": "ruhr@apotheken-sibbel.de",
+  "phone": "+49232573138",
+  "pagesChecked": 4,
+  "status": "ok"
+ },
+ "node/13153781310": {
+  "checkedAt": "2026-10-04T17:28:59.691Z",
+  "website": "https://www.apotheke-bernstadt.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.apotheke-bernstadt.de/startseite/",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1330182018": {
+  "checkedAt": "2026-10-04T17:29:07.978Z",
+  "website": "https://adler-apotheke-annen.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.adler-apotheke-annen.de/"
+  },
+  "finalUrl": "https://www.adler-apotheke-annen.de/",
+  "email": "info@adler-apotheke-annen.de",
+  "phone": "0049230260469",
+  "pagesChecked": 4,
+  "status": "ok"
+ },
+ "node/13328532253": {
+  "checkedAt": "2026-10-04T17:29:10.502Z",
+  "website": "https://www.naheland-apotheke-nahbollenbach.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "DEPTH_ZERO_SELF_SIGNED_CERT"
+ },
+ "node/1329449943": {
+  "checkedAt": "2026-10-04T17:29:07.779Z",
+  "website": "https://www.kronen-apotheke-bochum.de/",
+  "features": [
+   "inkontinenz",
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://kronen-apotheke-bochum.de/",
+   "botendienst": "https://kronen-apotheke-bochum.de/leistungen/"
+  },
+  "finalUrl": "https://kronen-apotheke-bochum.de/",
+  "email": "kronen.apotheke.bochum@t-online.de",
+  "phone": "+4923416823",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "node/13343990769": {
+  "checkedAt": "2026-10-04T17:29:11.155Z",
+  "website": "https://www.brunnenapotheke.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.brunnenapotheke.de/",
+  "email": "info@brunnenapotheke.de",
+  "phone": "038313075220",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/13234285708": {
+  "checkedAt": "2026-10-04T17:29:03.751Z",
+  "website": "https://www.kottenberg-apotheken.de/",
+  "features": [
+   "pflegehilfsmittel"
+  ],
+  "kassen": [
+   "aok",
+   "tk",
+   "barmer",
+   "dak",
+   "ikk",
+   "bkk",
+   "kkh",
+   "hkk",
+   "knappschaft"
+  ],
+  "evidence": {
+   "pflegehilfsmittel": "https://apotheken-kottenberg.de/"
+  },
+  "finalUrl": "https://apotheken-kottenberg.de/",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "node/1333818714": {
+  "checkedAt": "2026-10-04T17:29:10.962Z",
+  "website": "https://www.bach-apotheke-app.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "DEPTH_ZERO_SELF_SIGNED_CERT"
+ },
+ "node/13362230689": {
+  "checkedAt": "2026-10-04T17:29:11.712Z",
+  "website": "https://www.flieder-apotheke.de/",
+  "features": [
+   "pflegehilfsmittel",
+   "inkontinenz",
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "pflegehilfsmittel": "https://www.flieder-apotheke.de/",
+   "inkontinenz": "https://www.flieder-apotheke.de/",
+   "botendienst": "https://www.flieder-apotheke.de/"
+  },
+  "finalUrl": "https://www.flieder-apotheke.de/",
+  "email": "info@flieder-apotheke.de",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/1333603958": {
+  "checkedAt": "2026-10-04T17:29:10.800Z",
+  "website": "https://www.seeapotheke-witten.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.seeapotheke-witten.de/"
+  },
+  "finalUrl": "https://www.seeapotheke-witten.de/",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/1333461165": {
+  "checkedAt": "2026-10-04T17:29:10.767Z",
+  "website": "https://www.berg-apotheke-willingen.de/",
+  "features": [
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.berg-apotheke-willingen.de/services"
+  },
+  "finalUrl": "https://www.berg-apotheke-willingen.de/",
+  "email": "schmitt-willingen@t-online.de",
+  "phone": "+4956326699",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1336788980": {
+  "checkedAt": "2026-10-04T17:29:12.556Z",
+  "website": "http://www.sued-apotheke-berlin.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "http://www.sued-apotheke-berlin.de/lieferservice.htm"
+  },
+  "finalUrl": "http://www.sued-apotheke-berlin.de/",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "node/13286139856": {
+  "checkedAt": "2026-10-04T17:29:07.711Z",
+  "website": "https://ried-apotheken.de/",
+  "features": [
+   "botendienst",
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://ried-apotheken.de/",
+   "inkontinenz": "https://ried-apotheken.de/dienstleistungen-2/"
+  },
+  "finalUrl": "https://ried-apotheken.de/",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1332753776": {
+  "checkedAt": "2026-10-04T17:29:09.450Z",
+  "website": "http://www.apotheke-biebesheim-am-rhein.de/",
+  "features": [
+   "pflegehilfsmittel",
+   "inkontinenz",
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "pflegehilfsmittel": "https://apotheke-biebesheim-am-rhein.de/",
+   "inkontinenz": "https://apotheke-biebesheim-am-rhein.de/apotheken-leistungen/pflegehilfsmittel/",
+   "botendienst": "https://apotheke-biebesheim-am-rhein.de/apotheken-leistungen/pflegehilfsmittel/"
+  },
+  "finalUrl": "https://apotheke-biebesheim-am-rhein.de/",
+  "email": "rhein-apotheke@gmx.net",
+  "phone": "0625898120",
+  "pagesChecked": 6,
+  "status": "ok"
+ },
+ "node/13355161290": {
+  "checkedAt": "2026-10-04T17:29:11.285Z",
+  "website": "https://vita-apo.com/",
+  "features": [
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.vita-apo.com/"
+  },
+  "finalUrl": "https://www.vita-apo.com/",
+  "email": "info@vita-apo.com",
+  "phone": "+49644143094",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/13266541058": {
+  "checkedAt": "2026-10-04T17:29:06.196Z",
+  "website": "https://www.maxmo.de/apotheken/maxmo-juechen/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.maxmo.de/apotheken/maxmo-juechen/",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1336703491": {
+  "checkedAt": "2026-10-04T17:29:12.248Z",
+  "website": "https://www.schanzen-apotheke.de/",
+  "features": [
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.schanzen-apotheke.de/"
+  },
+  "finalUrl": "https://www.schanzen-apotheke.de/",
+  "email": "schanzenapotheke.kiel@t-online.de",
+  "phone": "+49431391796",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/13347530290": {
+  "checkedAt": "2026-10-04T17:29:11.222Z",
+  "website": "https://www.burg-apotheke-lemfoerde.de/",
+  "features": [
+   "botendienst",
+   "pflegehilfsmittel"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.burg-apotheke-lemfoerde.de/",
+   "pflegehilfsmittel": "https://www.burg-apotheke-lemfoerde.de/team/"
+  },
+  "finalUrl": "https://www.burg-apotheke-lemfoerde.de/",
+  "email": "info@burgapotheke-lemfoerde.de",
+  "phone": "05443203013",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/13383702074": {
+  "checkedAt": "2026-10-04T17:29:14.055Z",
+  "website": "https://www.stadtapotheke-mosbach.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR"
+ },
+ "node/13336105548": {
+  "checkedAt": "2026-10-04T17:29:10.935Z",
+  "website": "https://www.lichtenau-apotheke.de/",
+  "features": [
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.lichtenau-apotheke.de/"
+  },
+  "finalUrl": "https://www.lichtenau-apotheke.de/",
+  "email": "info@lichtenau-apotheke.de",
+  "phone": "+49368437860",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1336599080": {
+  "checkedAt": "2026-10-04T17:29:12.026Z",
+  "website": "https://www.dr-rothes-apotheke.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://dr-rothes-apotheke.de/",
+  "email": "info@dr-rothes-apotheke.de",
+  "phone": "+49306572151",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/1336725194": {
+  "checkedAt": "2026-10-04T17:29:12.301Z",
+  "website": "https://www.stadt-apotheke-koepenick.de/",
+  "features": [
+   "pflegehilfsmittel",
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "pflegehilfsmittel": "https://www.stadt-apotheke-koepenick.de/services",
+   "inkontinenz": "https://www.stadt-apotheke-koepenick.de/krankheiten-und-therapie/66-erkrankungen-im-alter"
+  },
+  "finalUrl": "https://www.stadt-apotheke-koepenick.de/",
+  "email": "info@stadt-apotheke-koepenick.de",
+  "phone": "+49306557463",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1328483728": {
+  "checkedAt": "2026-10-04T17:29:07.464Z",
+  "website": "http://www.bilshausen.de/index.php?seite=gemeinde&kat=arzt",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "http://www.bilshausen.de/?seite=gemeinde&kat=arzt",
+  "email": "jugendpflege@sg-gieboldehausen.de",
+  "pagesChecked": 4,
+  "status": "ok"
+ },
+ "node/1339396269": {
+  "checkedAt": "2026-10-04T17:29:14.504Z",
+  "website": "http://www.apo-quadra-park.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "http://www.apo-quadra-park.de/",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/1337322023": {
+  "checkedAt": "2026-10-04T17:29:13.105Z",
+  "website": "http://www.alte-apotheke-sandhofen.de/",
+  "features": [
+   "botendienst",
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://alte-apotheke-sandhofen.de/",
+   "inkontinenz": "https://alte-apotheke-sandhofen.de/de/leistungen/"
+  },
+  "finalUrl": "https://alte-apotheke-sandhofen.de/",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "node/13417970145": {
+  "checkedAt": "2026-10-04T17:29:14.922Z",
+  "website": "http://www.die-apotheke-weingarten.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "robots-disallow"
+ },
+ "node/1337971582": {
+  "checkedAt": "2026-10-04T17:29:13.458Z",
+  "website": "http://www.goethe-apotheke-gotha.com/",
+  "features": [
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.goethe-apotheke-gotha.com/krankheiten-und-therapie/66-erkrankungen-im-alter"
+  },
+  "finalUrl": "https://www.goethe-apotheke-gotha.com/",
+  "email": "info@goetheapo.com",
+  "phone": "+493621852717",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1300148666": {
+  "checkedAt": "2026-10-04T17:28:54.673Z",
+  "website": "https://apothekefortuna.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "UND_ERR_CONNECT_TIMEOUT"
+ },
+ "node/13388703980": {
+  "checkedAt": "2026-10-04T17:29:14.481Z",
+  "website": "https://www.heide-apotheke-cuxhaven.de/",
+  "features": [
+   "inkontinenz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.heide-apotheke-cuxhaven.de/"
+  },
+  "finalUrl": "https://www.heide-apotheke-cuxhaven.de/",
+  "email": "heide-apotheke@gmx.net",
+  "phone": "+49472129322",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/13427160906": {
+  "checkedAt": "2026-10-04T17:29:15.239Z",
+  "website": "https://www.roemer-apotheke-herrenberg.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.roemer-apotheke-herrenberg.de/",
+  "phone": "0703231903",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/13355391035": {
+  "checkedAt": "2026-10-04T17:29:11.313Z",
+  "website": "https://www.apotheke-am-krankenhaus-borna.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.apotheke-am-krankenhaus-borna.de/"
+  },
+  "finalUrl": "https://www.apotheke-am-krankenhaus-borna.de/",
+  "email": "post@aak-borna.de",
+  "phone": "+49343327430",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/13421449724": {
+  "checkedAt": "2026-10-04T17:29:15.111Z",
+  "website": "https://www.apotheke-neuerburg.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.apotheke-neuerburg.de/"
+  },
+  "finalUrl": "https://www.apotheke-neuerburg.de/",
+  "email": "service@apotheke-neuerburg.de",
+  "phone": "065642198",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1340859712": {
+  "checkedAt": "2026-10-04T17:29:14.751Z",
+  "website": "https://www.kolibri-apotheke.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://kolibri-apotheke.de/",
+  "email": "apo@kolibri-apotheke.de",
+  "phone": "+4991319202930",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/1341290307": {
+  "checkedAt": "2026-10-04T17:29:14.779Z",
+  "website": "https://www.apotheke-im-hauptbahnhof-koeln.de/",
+  "features": [
+   "pflegehilfsmittel",
+   "inkontinenz",
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "pflegehilfsmittel": "https://www.apotheke-im-hauptbahnhof-koeln.de/",
+   "inkontinenz": "https://www.apotheke-im-hauptbahnhof-koeln.de/",
+   "botendienst": "https://www.apotheke-im-hauptbahnhof-koeln.de/"
+  },
+  "finalUrl": "https://www.apotheke-im-hauptbahnhof-koeln.de/",
+  "email": "info@apotheke-im-hauptbahnhof-koeln.de",
+  "phone": "+4922180111444",
+  "pagesChecked": 5,
+  "status": "ok"
+ },
+ "node/13396049316": {
+  "checkedAt": "2026-10-04T17:29:14.716Z",
+  "website": "https://apo-medcenter.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://apo-medcenter.de/"
+  },
+  "finalUrl": "https://apo-medcenter.de/",
+  "booking": "https://apomondo.online/#/scheduler/b8c0e18b-9a93-42e0-8670-d70925779df5",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/1340996770": {
+  "checkedAt": "2026-10-04T17:29:14.755Z",
+  "website": "http://www.apotheke-zum-schlotschmet.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.apotheke-zum-schlotschmet-velbert.de/apo/Service/Unser-Service/Kosmetik-3474493"
+  },
+  "finalUrl": "https://www.apotheke-zum-schlotschmet-velbert.de/",
+  "pagesChecked": 4,
+  "status": "ok"
+ },
+ "node/1344695870": {
+  "checkedAt": "2026-10-04T17:29:16.320Z",
+  "website": "https://www.kloster-apotheke-loccum.de/",
+  "features": [
+   "inkontinenz",
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "inkontinenz": "https://www.kloster-apotheke-loccum.de/Serviceleistungen",
+   "botendienst": "https://www.kloster-apotheke-loccum.de/Serviceleistungen"
+  },
+  "finalUrl": "https://www.kloster-apotheke-loccum.de/",
+  "phone": "0576693040",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/1343662447": {
+  "checkedAt": "2026-10-04T17:29:16.251Z",
+  "website": "https://www.apotheke-am-markt-polch.de/",
+  "features": [
+   "botendienst",
+   "pflegehilfsmittel"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.apotheke-am-markt-polch.de/",
+   "pflegehilfsmittel": "https://www.apotheke-am-markt-polch.de/leistungen/"
+  },
+  "finalUrl": "https://www.apotheke-am-markt-polch.de/",
+  "email": "info@apotheke-polch.de",
+  "phone": "02654960530",
+  "pagesChecked": 6,
+  "status": "ok"
+ },
+ "node/1332091043": {
+  "checkedAt": "2026-10-04T17:29:09.219Z",
+  "website": "https://altstadt-apotheke-fulda.de/",
+  "features": [
+   "pflegehilfsmittel",
+   "inkontinenz",
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "pflegehilfsmittel": "https://altstadt-apotheke-fulda.de/ueber-uns/",
+   "inkontinenz": "https://altstadt-apotheke-fulda.de/services/",
+   "botendienst": "https://altstadt-apotheke-fulda.de/services/"
+  },
+  "finalUrl": "https://altstadt-apotheke-fulda.de/",
+  "phone": "066179009",
+  "pagesChecked": 4,
+  "status": "ok"
+ },
+ "node/1347675133": {
+  "checkedAt": "2026-10-04T17:29:17.512Z",
+  "website": "https://www.trierweiler-apotheke-trierweiler.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR"
+ },
+ "node/1347264438": {
+  "checkedAt": "2026-10-04T17:29:17.184Z",
+  "website": "http://www.apotheke-pfuehlpark.de/filialen/apotheke-am-pfuehlpark",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "http-404"
+ },
+ "node/1347659946": {
+  "checkedAt": "2026-10-04T17:29:17.305Z",
+  "website": "https://www.herzapotheke-wf.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.herzapotheke-wf.de/service.php"
+  },
+  "finalUrl": "https://www.herzapotheke-wf.de/",
+  "email": "info@herzapotheke-wf.de",
+  "phone": "004953319359390",
+  "pagesChecked": 4,
+  "status": "ok"
+ },
+ "node/13354949501": {
+  "checkedAt": "2026-10-04T17:29:11.253Z",
+  "website": "https://www.maxmo.de/apotheken/maxmo-erkelenz-karolingerring/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.maxmo.de/apotheken/maxmo-erkelenz-karolingerring/",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/13458352935": {
+  "checkedAt": "2026-10-04T17:29:16.841Z",
+  "website": "https://www.apotheke-dipperz.de/",
+  "features": [
+   "inkontinenz",
+   "botendienst",
+   "pflegehilfsmittel"
+  ],
+  "kassen": [
+   "alle"
+  ],
+  "evidence": {
+   "inkontinenz": "https://www.apotheke-dipperz.de/",
+   "botendienst": "https://www.apotheke-dipperz.de/",
+   "pflegehilfsmittel": "https://www.apotheke-dipperz.de/leistungen/"
+  },
+  "finalUrl": "https://www.apotheke-dipperz.de/",
+  "email": "dipperz@apotheken-sapper.de",
+  "phone": "06657609800",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/1352855150": {
+  "checkedAt": "2026-10-04T17:29:19.000Z",
+  "website": "http://www.apotheke-geldendorf.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "ENOTFOUND"
+ },
+ "node/13495617705": {
+  "checkedAt": "2026-10-04T17:29:17.990Z",
+  "website": "https://www.lotusapo.de/",
+  "features": [
+   "botendienst"
+  ],
+  "kassen": [],
+  "evidence": {
+   "botendienst": "https://www.lotusapo.de/unser-team"
+  },
+  "finalUrl": "https://www.lotusapo.de/",
+  "email": "kontakt@lotusapo.de",
+  "phone": "08143992840",
+  "pagesChecked": 3,
+  "status": "ok"
  }
 }
