@@ -10,7 +10,7 @@ const fmtPhone = (p) => { if (!p) return null; const d = p.trim().replace(/^0049
 const goodBooking = (b, site) => {
   if (!b) return null;
   try {
-    const u = new URL(b);
+    const u = new URL(b.replace(/&#0?38;|&amp;/g, '&'));
     if (/karriere|job|fahrer-werden|bewerb|widerruf|preisrechner|kontakt|standort|impressum|datenschutz/i.test(u.pathname)) return null;
     if (site && u.hostname.replace(/^www\./, '') === new URL(site).hostname.replace(/^www\./, '') && /^\/?$/.test(u.pathname)) return null;
     if (/landkreis-|outlook\.office|typeform\.com/i.test(u.hostname)) return null;
