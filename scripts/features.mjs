@@ -29,9 +29,39 @@ export const KASSEN = [
   { key: 'alle', label: 'alle Kassen', patterns: [/(alle|allen|sämtlichen|s(ä|ae)mtliche) (gesetzlichen )?(kranken)?kassen/] },
 ];
 
-export function detect(text) {
+// Physiotherapie: was in Suchanfragen auftaucht (Hausbesuch, KG am Gerät, Bobath, Lymphdrainage …)
+export const PHYSIO_FEATURES = [
+  { key: 'hausbesuch', short: 'Hausbesuch', label: 'Hausbesuche', patterns: [/hausbesuch/, /haus-besuch/, /behandlung (bei ihnen )?zu ?hause/, /mobile physiotherapie/] },
+  { key: 'lymphdrainage', short: 'Lymphdrainage', label: 'Manuelle Lymphdrainage', patterns: [/lymphdrainage/, /mld/, /komplexe physikalische entstauung/] },
+  { key: 'kgg', short: 'KG am Gerät', label: 'Krankengymnastik am Gerät', patterns: [/krankengymnastik am ger(ä|ae)t/, /kg-?ger(ä|ae)t/, /kgg/, /medizinische trainingstherapie/] },
+  { key: 'neuro', short: 'Bobath/PNF', label: 'Neurologische Behandlung (Bobath, PNF, Vojta)', patterns: [/bobath/, /pnf/, /vojta/, /kg-?zns/] },
+  { key: 'kinder', short: 'Kinder', label: 'Kinderphysiotherapie', patterns: [/kinderphysio/, /physiotherapie f(ü|ue)r kinder/, /s(ä|ae)uglinge/, /vojta/] },
+  { key: 'manuelle', short: 'Manuelle Therapie', label: 'Manuelle Therapie', patterns: [/manuelle therapie/] },
+  { key: 'schroth', short: 'Schroth', label: 'Skoliosetherapie nach Schroth', patterns: [/schroth/] },
+  { key: 'beckenboden', short: 'Beckenboden', label: 'Beckenbodentraining', patterns: [/beckenboden/] },
+];
+export const PFLEGE_FEATURES = [
+  { key: 'intensiv', short: 'Intensivpflege', label: 'Außerklinische Intensivpflege', patterns: [/intensivpflege/, /beatmung/] },
+  { key: 'demenz', short: 'Demenz', label: 'Betreuung bei Demenz', patterns: [/demenz/] },
+  { key: 'palliativ', short: 'Palliativ', label: 'Palliativpflege', patterns: [/palliativ/, /sapv/] },
+  { key: 'kinder', short: 'Kinder', label: 'Kinderkrankenpflege', patterns: [/kinderkrankenpflege/, /kinderintensiv/, /pflege von kindern/] },
+  { key: 'verhinderung', short: 'Verhinderungspflege', label: 'Verhinderungspflege', patterns: [/verhinderungspflege/] },
+  { key: 'hauswirtschaft', short: 'Haushaltshilfe', label: 'Hauswirtschaftliche Hilfe', patterns: [/hauswirtschaft/, /haushaltshilfe/] },
+  { key: 'beratung', short: 'Beratungsbesuch', label: 'Beratungsbesuche nach § 37.3', patterns: [/37\s?(abs\.?\s?)?3/, /beratungsbesuch/, /beratungseinsatz/] },
+  { key: 'tagespflege', short: 'Tagespflege', label: 'Tagespflege', patterns: [/tagespflege/] },
+];
+export const FAHRT_FEATURES = [
+  { key: 'krankenfahrt', short: 'Krankenfahrten', label: 'Krankenfahrten (auch auf Kassenschein)', patterns: [/krankenfahrt/, /krankentransport/, /krankenkassenfahrt/, /fahrten zur dialyse/, /dialysefahrt/, /transportschein/] },
+  { key: 'rollstuhl', short: 'Rollstuhl', label: 'Fahrten im Rollstuhl', patterns: [/rollstuhl(fahrt|transport|taxi|gerecht|beförderung|befoerderung)/, /im rollstuhl sitzend/, /rampe/] },
+  { key: 'tragestuhl', short: 'Tragestuhl/liegend', label: 'Tragestuhl oder liegend', patterns: [/tragestuhl/, /liegend(transport|fahrt)/, /treppenraupe/] },
+  { key: 'dialyse', short: 'Dialyse', label: 'Dialysefahrten', patterns: [/dialyse/] },
+  { key: 'onkologie', short: 'Chemo/Bestrahlung', label: 'Fahrten zu Chemo und Bestrahlung', patterns: [/bestrahlung/, /chemo/] },
+];
+export const FEATURES_BY_CAT = { sanitaetshaus: FEATURES, physio: PHYSIO_FEATURES, pflege: PFLEGE_FEATURES, fahrt: FAHRT_FEATURES };
+
+export function detect(text, cat = 'sanitaetshaus') {
   const t = text.toLowerCase();
-  const features = FEATURES.filter((f) => f.patterns.some((p) => p.test(t))).map((f) => f.key);
+  const features = FEATURES_BY_CAT[cat].filter((f) => f.patterns.some((p) => p.test(t))).map((f) => f.key);
   const kassen = KASSEN.filter((k) => k.patterns.some((p) => p.test(t))).map((k) => k.key);
   return { features, kassen };
 }

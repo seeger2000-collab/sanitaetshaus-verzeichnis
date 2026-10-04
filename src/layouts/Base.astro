@@ -33,8 +33,12 @@ if (crumbs.length) ld.push({
       <div class="wrap">
         <a class="logo" href={u('/')}><span aria-hidden="true">✚</span> {SITE.name}</a>
         <nav aria-label="Hauptnavigation">
-          <a href={u('/leistung/')}>Leistungen</a>
-          <a href={u('/bundesland/')}>Bundesländer</a>
+          <a href={u('/karte/')}>Karte</a>
+          <a href={u('/leistung/')}>Sanitätshaus-Leistungen</a>
+          <a href={u('/physiotherapie/')}>Physiotherapie</a>
+          <a href={u('/pflegedienst/')}>Pflegedienste</a>
+          <a href={u('/krankenfahrten/')}>Krankenfahrten</a>
+          <a href={u('/ratgeber/')}>Ratgeber</a>
           <a href={u('/fuer-sanitaetshaeuser/')}>Für Sanitätshäuser</a>
         </nav>
       </div>
@@ -51,7 +55,7 @@ if (crumbs.length) ld.push({
     <footer class="site-footer">
       <div class="wrap">
         <p>Daten: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (ODbL), Stand {fmtDate(meta.osmFetchedAt)}. Leistungen automatisch von den Websites der Häuser ausgelesen, ohne Gewähr.</p>
-        <p><a href={u('/ueber/')}>So entstehen die Daten</a> · <a href={u('/fuer-sanitaetshaeuser/')}>Eintrag ändern</a> · <a href={u('/impressum/')}>Impressum</a> · <a href={u('/datenschutz/')}>Datenschutz</a></p>
+        <p><a href={u('/ueber/')}>So entstehen die Daten</a> · <a href={u('/bundesland/')}>Bundesländer</a> · <a href={u('/fuer-sanitaetshaeuser/')}>Eintrag ändern</a> · <a href={u('/impressum/')}>Impressum</a> · <a href={u('/datenschutz/')}>Datenschutz</a></p>
       </div>
     </footer>
   </body>
@@ -94,5 +98,8 @@ if (crumbs.length) ld.push({
   .btn { display: inline-block; background: var(--brand); color: var(--brand-ink); padding: 10px 16px; border-radius: 8px; text-decoration: none; font-weight: 600; }
   input[type=search] { width: 100%; font-size: 1.05rem; padding: 12px 14px; border: 2px solid var(--line); border-radius: var(--radius); }
   input[type=search]:focus { outline: none; border-color: var(--brand); }
-  @media (max-width: 600px) { h1 { font-size: 1.5rem; } :root { font-size: 17px; } }
+  @media (max-width: 600px) {
+    h1 { font-size: 1.5rem; } :root { font-size: 17px; }
+    .site-header nav { flex-wrap: nowrap; overflow-x: auto; width: 100%; padding-bottom: 4px; white-space: nowrap; }
+  }
 </style>

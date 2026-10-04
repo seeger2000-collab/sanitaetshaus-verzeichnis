@@ -5,7 +5,8 @@ import Map from '../../components/Map.astro';
 import Faq from '../../components/Faq.astro';
 import PflegeboxHinweis from '../../components/PflegeboxHinweis.astro';
 import { u } from '../../lib/url';
-import { cities, shopsInCity, features, nearbyCities, meta, fmtDate, fit } from '../../lib/data';
+import { cities, shopsInCity, features, nearbyCities, meta, fmtDate, fit, otherCategories, providers } from '../../lib/data';
+import { km } from '../../lib/geo';
 export function getStaticPaths() {
   return cities.map((c) => ({ params: { city: c.slug }, props: { city: c } }));
 }
@@ -29,6 +30,13 @@ const faq = [
 const itemList = { '@context': 'https://schema.org', '@type': 'ItemList', name: `Sanitätshäuser ${where}`, numberOfItems: n,
   itemListElement: list.slice(0, 50).map((s, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(u(`/sanitaetshaus/${s.slug}/`), Astro.site).href, name: s.name })) };
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
+// Weitere Hilfe: Anzahl im Ort, sonst Entfernung zum nächsten Eintrag
+const more = otherCategories.map((c) => {
+  const n = city.counts[c.key] || 0;
+  if (n) return { c, n, href: `/${c.slug}/${city.slug}/` };
+  const nearest = providers.filter((p) => p.cat === c.key).map((p) => ({ p, d: km(city, p) })).sort((a, b) => a.d - b.d)[0];
+  return nearest && nearest.d < 40 ? { c, n: 0, d: Math.round(nearest.d), href: `/${c.slug}/${nearest.p.citySlug}/`, where: nearest.p.city } : null;
+}).filter(Boolean) as { c: any; n: number; d?: number; href: string; where?: string }[];
 const topFeat = feats.slice().sort((a, b) => b.shops.length - a.shops.length).slice(0, 3).map((f) => f.label);
 ---
 <Base
@@ -46,6 +54,10 @@ const topFeat = feats.slice().sort((a, b) => b.shops.length - a.shops.length).sl
   )}
   <Map shops={list} />
   <ShopList shops={list} />
+  {more.length > 0 && (<>
+    <h2>Weitere Hilfe in {city.label}</h2>
+    <ul class="grid">{more.map((m) => (<li><a class="tile" href={u(m.href)}>{m.c.label}<small>{m.n ? `${m.n} in ${city.label}` : `nächster in ${m.where}, ${m.d} km`}</small></a></li>))}</ul>
+  </>)}
   <PflegeboxHinweis />
   <Faq items={faq} />
   <h2>Sanitätshäuser in der Nähe von {city.label}</h2>

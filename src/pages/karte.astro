@@ -1,0 +1,62 @@
+---
+import Base from '../layouts/Base.astro';
+import { u } from '../lib/url';
+import { categories, meta } from '../lib/data';
+const total = categories.reduce((a, c) => a + c.count, 0);
+---
+<Base title="Karte: Sanitätshäuser, Physiotherapie, Pflegedienste, Krankenfahrten" description={`Alle ${total.toLocaleString('de-DE')} Einträge auf einer Karte: Sanitätshäuser, Physiotherapie, ambulante Pflegedienste und Krankenfahrten in ganz Deutschland. Mit Standortsuche.`} crumbs={[{ href: '/karte/', label: 'Karte' }]}>
+  <h1>Hilfe in der Nähe auf der Karte</h1>
+  <p class="lead">{total.toLocaleString('de-DE')} Einträge in ganz Deutschland. Wählen Sie aus, was angezeigt werden soll, oder zeigen Sie Ihren Standort.</p>
+  <div class="controls">
+    {categories.map((c, i) => (
+      <label class="toggle" style={`--c:${c.color}`}><input type="checkbox" data-cat={i} checked={c.key === 'sanitaetshaus' || c.key === 'fahrt' || c.key === 'pflege'} /> <span class="dot"></span>{c.label} ({c.count.toLocaleString('de-DE')})</label>
+    ))}
+    <button type="button" id="locate" class="btn">Meinen Standort zeigen</button>
+  </div>
+  <div id="bigmap" data-src={u('/data/karte.json')} data-base={u('/')} data-cats={JSON.stringify(categories.map((c) => ({ slug: c.slug, color: c.color, one: c.one })))}></div>
+  <p class="muted"><small>Kartendaten © OpenStreetMap-Mitwirkende. Physiotherapie ist anfangs ausgeblendet, weil es sehr viele Praxen sind. Ihr Standort wird nur in Ihrem Browser verwendet und nicht gespeichert.</small></p>
+</Base>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.min.css" />
+<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
+<script is:inline>
+  (async () => {
+    const el = document.getElementById('bigmap');
+    const cats = JSON.parse(el.dataset.cats);
+    const base = el.dataset.base;
+    const map = L.map(el, { scrollWheelZoom: true }).setView([51.2, 10.4], 6);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map);
+    const data = await (await fetch(el.dataset.src)).json();
+    const layers = cats.map((c) => L.markerClusterGroup({ chunkedLoading: true, showCoverageOnHover: false, maxClusterRadius: 45,
+      iconCreateFunction: (cl) => { const n = cl.getChildCount(); const s = n < 10 ? 30 : n < 100 ? 36 : 44;
+        return L.divIcon({ html: `<span style="background:${c.color};width:${s}px;height:${s}px">${n}</span>`, className: 'cl', iconSize: [s, s] }); } }));
+    for (const [ci, lat, lon, name, citySlug, slug] of data) {
+      const c = cats[ci];
+      const href = slug ? `${base}sanitaetshaus/${slug}/` : `${base}${c.slug}/${citySlug}/`;
+      const pop = document.createElement('div');
+      const a = document.createElement('a'); a.href = href; a.textContent = name;
+      const s = document.createElement('div'); s.textContent = c.one; s.style.color = c.color;
+      pop.append(a, s);
+      layers[ci].addLayer(L.circleMarker([lat, lon], { radius: 7, color: c.color, fillColor: c.color, fillOpacity: 0.85, weight: 1 }).bindPopup(pop));
+    }
+    const boxes = [...document.querySelectorAll('.controls input[data-cat]')];
+    const sync = () => boxes.forEach((b) => (b.checked ? map.addLayer(layers[b.dataset.cat]) : map.removeLayer(layers[b.dataset.cat])));
+    boxes.forEach((b) => b.addEventListener('change', sync));
+    sync();
+    document.getElementById('locate').addEventListener('click', () => {
+      map.locate({ setView: true, maxZoom: 13 });
+    });
+    map.on('locationfound', (e) => L.circle(e.latlng, { radius: e.accuracy, color: '#333' }).addTo(map));
+    map.on('locationerror', () => alert('Standort konnte nicht ermittelt werden.'));
+  })();
+</script>
+<style>
+  #bigmap { height: 70vh; min-height: 420px; border-radius: var(--radius); border: 1px solid var(--line); margin: 12px 0; z-index: 0; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; }
+  .toggle { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--c); display: inline-block; }
+  .btn { border: 0; cursor: pointer; font-size: 0.95rem; }
+  :global(.cl span) { display: flex; align-items: center; justify-content: center; border-radius: 50%; color: #fff; font-weight: 700; font-size: 0.8rem; border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.35); opacity: .92; }
+</style>

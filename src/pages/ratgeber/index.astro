@@ -1,0 +1,10 @@
+---
+import Base from '../../layouts/Base.astro';
+import { u } from '../../lib/url';
+import { GUIDES } from '../../lib/ratgeber';
+---
+<Base title="Ratgeber: Hilfsmittel, Rezept und Krankenkasse" description="Kurze Antworten auf die häufigsten Fragen: Rollator auf Rezept, Kompressionsstrümpfe, Einlagen, Pflegebett, Pflegebox und Krankenfahrten." crumbs={[{ href: '/ratgeber/', label: 'Ratgeber' }]}>
+  <h1>Ratgeber</h1>
+  <p class="lead">Die Fragen, die Menschen am häufigsten zu Hilfsmitteln und Kosten stellen, kurz beantwortet.</p>
+  <ul class="grid">{GUIDES.map((g) => <li><a class="tile" href={u(`/ratgeber/${g.slug}/`)}>{g.h1}</a></li>)}</ul>
+</Base>

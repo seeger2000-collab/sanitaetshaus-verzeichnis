@@ -1,0 +1,30 @@
+---
+import Base from '../../layouts/Base.astro';
+import Faq from '../../components/Faq.astro';
+import Kaufen from '../../components/Kaufen.astro';
+import PflegeboxHinweis from '../../components/PflegeboxHinweis.astro';
+import { AFFILIATE } from '../../config';
+import { u } from '../../lib/url';
+import { GUIDES } from '../../lib/ratgeber';
+import { meta, fmtDate } from '../../lib/data';
+export function getStaticPaths() { return GUIDES.map((g) => ({ params: { slug: g.slug }, props: { g } })); }
+const { g } = Astro.props;
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: g.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
+const article = { '@context': 'https://schema.org', '@type': 'Article', headline: g.h1, dateModified: meta.builtAt, inLanguage: 'de' };
+---
+<Base title={g.title} description={g.description} jsonLd={[article, faqLd]} crumbs={[{ href: '/ratgeber/', label: 'Ratgeber' }, { href: `/ratgeber/${g.slug}/`, label: g.h1 }]}>
+  <article class="guide">
+    <h1>{g.h1}</h1>
+    <p class="lead">{g.lead}</p>
+    <p><a class="btn" href={u(g.finder.href)}>{g.finder.label}</a></p>
+    {g.sections.map((s) => (<section><h2>{s.h}</h2>{s.p.map((p) => <p>{p}</p>)}</section>))}
+    {g.buy && <Kaufen items={g.buy} />}
+    {g.pflegebox && <PflegeboxHinweis />}
+    {g.hausnotruf && AFFILIATE.hausnotrufUrl && (
+      <aside class="card"><h2>Hausnotruf</h2><p>Wer allein lebt, kann mit einem Hausnotruf auf Knopfdruck Hilfe rufen. Bei Pflegegrad zahlt die Pflegekasse die Grundgebühr.</p><p><a class="btn" href={AFFILIATE.hausnotrufUrl} rel="sponsored noopener" target="_blank">Hausnotruf bei {AFFILIATE.hausnotrufAnbieter} anfragen</a></p><p class="muted"><small>Werbung</small></p></aside>
+    )}
+    <Faq items={g.faq} />
+    <p class="muted"><small>Stand: {fmtDate(meta.builtAt)}. Allgemeine Informationen, keine Rechts- oder Gesundheitsberatung. Im Einzelfall entscheidet Ihre Kasse.</small></p>
+  </article>
+</Base>
+<style>.guide { max-width: 46em; } .guide section p { margin: 0 0 0.8em; }</style>

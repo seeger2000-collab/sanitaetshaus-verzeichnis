@@ -1,3 +1,5 @@
 node_modules/
 dist/
 .astro/
+reports/onpage/eigene-seite.json
+public/data/

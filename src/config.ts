@@ -15,8 +15,17 @@ export const FEATURED = {
   priceText: '',
 };
 
-// Affiliate: Pflegehilfsmittel-Box (Kostenübernahme durch die Pflegekasse). Leer = Box wird nicht angezeigt.
+// Affiliate-Links. Alles leer = keine Werbelinks auf der Seite. Eintragen, sobald die Partnerprogramme bestätigt sind.
 export const AFFILIATE = {
+  // Amazon PartnerNet (kostenlos): Partner-Tag, z. B. "meinname-21". Dann erscheinen Kauf-Links in den Ratgebern.
+  amazonTag: '',
+  // Pflegebox (z. B. PflegeBox.de über Awin, pflegebox by pflegetipp, Pflegehase): Deeplink inkl. Tracking
   pflegeboxUrl: '',
   pflegeboxAnbieter: '',
+  // Online-Sanitätshaus (z. B. WalzVital über Awin, Sani-Fuchs): Deeplink-Basis, an die ?q=… nicht angehängt wird
+  sanishopUrl: '',
+  sanishopName: '',
+  // Hausnotruf (z. B. Libify, GEOCARE, Pflegehase): Deeplink
+  hausnotrufUrl: '',
+  hausnotrufAnbieter: '',
 };

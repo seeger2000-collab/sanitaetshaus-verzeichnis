@@ -1,0 +1,24 @@
+---
+// Kauf-Links für Produkte, die man auch ohne Rezept bekommt. Erscheint nur mit hinterlegtem Partner-Link.
+import { AFFILIATE } from '../config';
+interface Props { items: { label: string; amazon: string }[]; title?: string }
+const { items, title = 'Selbst kaufen' } = Astro.props;
+const show = AFFILIATE.amazonTag || AFFILIATE.sanishopUrl;
+---
+{show && (
+  <aside class="card buy">
+    <h2>{title}</h2>
+    <ul>
+      {items.map((i) => (
+        <li>
+          {i.label}:{' '}
+          {AFFILIATE.amazonTag && <a href={`https://www.amazon.de/s?k=${encodeURIComponent(i.amazon)}&tag=${AFFILIATE.amazonTag}`} rel="sponsored nofollow noopener" target="_blank">bei Amazon ansehen</a>}
+          {AFFILIATE.amazonTag && AFFILIATE.sanishopUrl && ' · '}
+          {AFFILIATE.sanishopUrl && <a href={AFFILIATE.sanishopUrl} rel="sponsored nofollow noopener" target="_blank">bei {AFFILIATE.sanishopName}</a>}
+        </li>
+      ))}
+    </ul>
+    <p class="muted"><small>Werbung: Kaufen Sie über diese Links, erhalten wir eine kleine Provision. Der Preis ändert sich für Sie nicht. Mit Rezept ist das Sanitätshaus vor Ort meist günstiger.</small></p>
+  </aside>
+)}
+<style>.buy { margin: 20px 0; } .buy h2 { margin-top: 0; }</style>

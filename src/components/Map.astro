@@ -1,12 +1,12 @@
 ---
 // Karte mit OpenStreetMap-Kacheln (Leaflet). Lädt erst, wenn sie ins Bild scrollt.
-import type { Shop } from '../lib/data';
 import { u } from '../lib/url';
-interface Props { shops: Shop[] }
-const points = Astro.props.shops.filter((s) => s.lat).map((s) => [s.lat, s.lon, s.name, u(`/sanitaetshaus/${s.slug}/`)]);
+interface Props { shops: { lat?: number; lon?: number; name: string; slug?: string }[]; color?: string }
+const color = Astro.props.color ?? '#0f6b57';
+const points = Astro.props.shops.filter((s) => s.lat).map((s) => [s.lat, s.lon, s.name, s.slug ? u(`/sanitaetshaus/${s.slug}/`) : '']);
 ---
 {points.length > 0 && (
-  <div class="map" data-points={JSON.stringify(points)} role="region" aria-label="Karte der Sanitätshäuser"></div>
+  <div class="map" data-color={color} data-points={JSON.stringify(points)} role="region" aria-label="Karte der Sanitätshäuser"></div>
 )}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
 <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
@@ -18,8 +18,8 @@ const points = Astro.props.shops.filter((s) => s.lat).map((s) => [s.lat, s.lon, 
     const map = L.map(el, { scrollWheelZoom: false });
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map);
     const markers = pts.map(([lat, lon, name, href]) => {
-      const a = document.createElement('a'); a.href = href; a.textContent = name;
-      return L.circleMarker([lat, lon], { radius: 7, color: '#0f6b57', fillOpacity: 0.8 }).bindPopup(a).addTo(map);
+      const a = document.createElement(href ? 'a' : 'span'); if (href) (a as HTMLAnchorElement).href = href; a.textContent = name;
+      return L.circleMarker([lat, lon], { radius: 7, color: el.dataset.color, fillOpacity: 0.8 }).bindPopup(a).addTo(map);
     });
     map.fitBounds(L.featureGroup(markers).getBounds().pad(0.15), { maxZoom: 15 });
   };

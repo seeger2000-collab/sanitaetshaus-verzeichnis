@@ -1,22 +1,21 @@
 // Liest die Websites der Sanitätshäuser aus und erkennt Leistungen (siehe features.mjs).
-// Ergebnis: data/enrichment.json (Cache; Einträge jünger als MAX_AGE_DAYS werden nicht neu geladen)
-// Aufruf: node scripts/enrich.mjs [--limit 50] [--force]
+// Ergebnis: data/enrichment/<kategorie>.json (Cache; Einträge jünger als MAX_AGE_DAYS werden nicht neu geladen)
+// Aufruf: node scripts/enrich.mjs [--cat physio] [--limit 50] [--force]   (ohne --cat: alle Kategorien)
 import { readFile, writeFile } from 'node:fs/promises';
 import { detect } from './features.mjs';
+import { CATEGORIES } from './categories.mjs';
 
 const args = process.argv.slice(2);
 const LIMIT = args.includes('--limit') ? Number(args[args.indexOf('--limit') + 1]) : Infinity;
 const FORCE = args.includes('--force');
 const MAX_AGE_DAYS = 30;
-const CONCURRENCY = 16;
+const CONCURRENCY = Number(process.env.CONCURRENCY || 16);
 const TIMEOUT_MS = 15000;
 const MAX_PAGES = 7; // Startseite + bis zu 6 Unterseiten
 const UA = 'Mozilla/5.0 (compatible; SanitaetshausVerzeichnisBot/0.1; +https://github.com/seeger2000-collab/sanitaetshaus-verzeichnis)';
-const LINK_HINTS = /leistung|angebot|service|versorg|kompression|lymph|brust|kinder|reha|rollstuhl|orthop|einlage|fuss|fu%c3%9f|fuß|schuh|kasse|vertrag|hausbesuch|ueber-uns|uber-uns|über-uns|about|stoma|inkontinenz|homecare|pflege|milchpumpe|produkte|sortiment/i;
+const LINK_HINTS = /leistung|therapie|behandlung|krankenfahrt|fahrdienst|pflege|team|angebot|service|versorg|kompression|lymph|brust|kinder|reha|rollstuhl|orthop|einlage|fuss|fu%c3%9f|fuß|schuh|kasse|vertrag|hausbesuch|ueber-uns|uber-uns|über-uns|about|stoma|inkontinenz|homecare|pflege|milchpumpe|produkte|sortiment/i;
 
-const osm = JSON.parse(await readFile('data/osm.json', 'utf8'));
-let cache = {};
-try { cache = JSON.parse(await readFile('data/enrichment.json', 'utf8')); } catch {}
+const CATS = args.includes('--cat') ? [args[args.indexOf('--cat') + 1]] : CATEGORIES.map((c) => c.key);
 
 export function websiteOf(tags) {
   let w = tags.website || tags['contact:website'] || tags.url;
@@ -80,7 +79,7 @@ async function robotsAllows(base) {
   return true;
 }
 
-async function scan(shop) {
+async function scan(shop, cat) {
   const start = websiteOf(shop.tags);
   const result = { checkedAt: new Date().toISOString(), website: start, features: [], kassen: [], evidence: {} };
   if (!start) return { ...result, status: 'no-website' };
@@ -99,7 +98,7 @@ async function scan(shop) {
     const features = new Set();
     const kassen = new Set();
     for (const p of pages) {
-      const d = detect(toText(p.html));
+      const d = detect(toText(p.html), cat);
       for (const f of d.features) { if (!features.has(f)) result.evidence[f] = p.url; features.add(f); }
       d.kassen.forEach((k) => kassen.add(k));
     }
@@ -114,25 +113,31 @@ async function scan(shop) {
   return result;
 }
 
+for (const cat of CATS) {
+const osm = JSON.parse(await readFile(`data/osm/${cat}.json`, 'utf8'));
+const cacheFile = `data/enrichment/${cat}.json`;
+let cache = {};
+try { cache = JSON.parse(await readFile(cacheFile, 'utf8')); } catch {}
 const fresh = (e) => e && Date.now() - Date.parse(e.checkedAt) < MAX_AGE_DAYS * 864e5;
 const todo = osm.shops.filter((s) => websiteOf(s.tags) && (FORCE || !fresh(cache[s.id]))).slice(0, LIMIT);
-console.log(`${todo.length} Websites zu prüfen`);
+console.log(`== ${cat}: ${todo.length} Websites zu prüfen`);
 
 let done = 0;
 async function worker() {
   while (todo.length) {
     const shop = todo.shift();
-    cache[shop.id] = await scan(shop);
+    cache[shop.id] = await scan(shop, cat);
     if (++done % 50 === 0) {
       console.log(`${done} geprüft`);
-      await writeFile('data/enrichment.json', JSON.stringify(cache, null, 1));
+      await writeFile(cacheFile, JSON.stringify(cache, null, 1));
     }
   }
 }
 await Promise.all(Array.from({ length: CONCURRENCY }, worker));
-await writeFile('data/enrichment.json', JSON.stringify(cache, null, 1));
+await writeFile(cacheFile, JSON.stringify(cache, null, 1));
 const vals = Object.values(cache);
 const count = {};
 vals.forEach((v) => v.features.forEach((f) => (count[f] = (count[f] || 0) + 1)));
 console.log('Status:', vals.reduce((a, v) => ((a[v.status] = (a[v.status] || 0) + 1), a), {}));
 console.log('Merkmale:', count);
+}

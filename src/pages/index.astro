@@ -2,7 +2,8 @@
 import Base from '../layouts/Base.astro';
 import { SITE } from '../config';
 import { u } from '../lib/url';
-import { cities, states, features, meta } from '../lib/data';
+import { cities, states, features, meta, otherCategories } from '../lib/data';
+import { GUIDES } from '../lib/ratgeber';
 const topCities = [...cities].sort((a, b) => b.count - a.count).slice(0, 24);
 const searchIndex = cities.map((c) => [c.label, c.slug, c.count]);
 ---
@@ -22,6 +23,15 @@ const searchIndex = cities.map((c) => [c.label, c.slug, c.count]);
       <li><a class="tile" href={u(`/leistung/${f.slug}/`)}>{f.label}<small>{f.count} Häuser</small></a></li>
     ))}
   </ul>
+
+  <h2>Weitere Hilfe in der Nähe</h2>
+  <ul class="grid">
+    <li><a class="tile" href={u('/karte/')}>Alles auf der Karte<small>mit Standortsuche</small></a></li>
+    {otherCategories.map((c) => (<li><a class="tile" href={u(`/${c.slug}/`)}>{c.label}<small>{c.count.toLocaleString('de-DE')} Einträge</small></a></li>))}
+  </ul>
+
+  <h2>Häufige Fragen zu Rezept und Kosten</h2>
+  <ul class="grid">{GUIDES.map((g) => <li><a class="tile" href={u(`/ratgeber/${g.slug}/`)}>{g.h1}</a></li>)}</ul>
 
   <h2>Größte Städte</h2>
   <ul class="grid">

@@ -1,11 +1,11 @@
-// Holt alle Sanitätshäuser in Deutschland aus OpenStreetMap über den QLever-SPARQL-Endpunkt
-// (Overpass ist aus manchen Umgebungen nicht erreichbar; QLever liefert dieselben OSM-Daten).
-// Ergebnis: data/osm.json
+// Holt alle Einträge je Kategorie (siehe categories.mjs) in Deutschland aus OpenStreetMap
+// über den QLever-SPARQL-Endpunkt (Overpass ist aus manchen Umgebungen nicht erreichbar).
+// Ergebnis: data/osm/<kategorie>.json   Aufruf: node scripts/fetch-osm.mjs [kategorie …]
 import { writeFile, mkdir } from 'node:fs/promises';
+import { CATEGORIES } from './categories.mjs';
 
 const ENDPOINT = 'https://qlever.dev/api/osm-planet';
 const COUNTRY_REL = 51477; // Deutschland
-const SHOP_VALUES = ['medical_supply', 'orthopedics', 'orthopaedics'];
 
 const PREFIX = `
 PREFIX osmkey: <https://www.openstreetmap.org/wiki/Key:>
@@ -13,7 +13,6 @@ PREFIX ogc: <http://www.opengis.net/rdf#>
 PREFIX osmrel: <https://www.openstreetmap.org/relation/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 `;
-const SHOP_FILTER = `osmrel:${COUNTRY_REL} ogc:sfContains ?osm . ?osm osmkey:shop ?shop . FILTER(?shop IN (${SHOP_VALUES.map((v) => `"${v}"`).join(',')}))`;
 
 async function sparql(query) {
   for (let attempt = 1; attempt <= 4; attempt++) {
@@ -46,48 +45,59 @@ function centroid(wkt) {
   return { lat: Number(lat.toFixed(6)), lon: Number(lon.toFixed(6)) };
 }
 
-console.log('Tags laden …');
-const tagRows = await sparql(`
-SELECT ?osm ?key ?value WHERE {
-  ${SHOP_FILTER}
-  ?osm ?key ?value .
-  FILTER(STRSTARTS(STR(?key), "https://www.openstreetmap.org/wiki/Key:"))
-}`);
+const wanted = process.argv.slice(2);
+for (const cat of CATEGORIES.filter((c) => !wanted.length || wanted.includes(c.key))) {
+  const SHOP_FILTER = `osmrel:${COUNTRY_REL} ogc:sfContains ?osm . ${cat.filter}`;
+  console.log(`== ${cat.label}`);
+  console.log('Tags laden …');
+  const tagRows = await sparql(`
+  SELECT ?osm ?key ?value WHERE {
+    ${SHOP_FILTER}
+    ?osm ?key ?value .
+    FILTER(STRSTARTS(STR(?key), "https://www.openstreetmap.org/wiki/Key:"))
+  }`);
 
-const shops = new Map();
-for (const r of tagRows) {
-  const id = osmId(val(r, 'osm'));
-  const key = val(r, 'key').replace('https://www.openstreetmap.org/wiki/Key:', '');
-  if (!shops.has(id)) shops.set(id, { id, tags: {} });
-  shops.get(id).tags[key] = val(r, 'value');
+  const shops = new Map();
+  for (const r of tagRows) {
+    const id = osmId(val(r, 'osm'));
+    const key = val(r, 'key').replace('https://www.openstreetmap.org/wiki/Key:', '');
+    if (!shops.has(id)) shops.set(id, { id, tags: {} });
+    shops.get(id).tags[key] = val(r, 'value');
+  }
+  console.log(`${shops.size} Objekte`);
+
+  console.log('Geometrien laden …');
+  // Folgeabfragen über die gefundenen IDs (schneller als den Filter erneut auszuwerten)
+  const uris = [...shops.keys()].map((id) => `<https://www.openstreetmap.org/${id}>`);
+  const chunks = [];
+  for (let i = 0; i < uris.length; i += 1500) chunks.push(`VALUES ?osm { ${uris.slice(i, i + 1500).join(' ')} }`);
+  const byIds = async (body) => (await Promise.all(chunks.map((v) => sparql(body(v))))).flat();
+  const geoRows = await byIds((v) => `SELECT ?osm ?wkt WHERE { ${v} ?osm geo:hasGeometry/geo:asWKT ?wkt . }`);
+  for (const r of geoRows) {
+    const s = shops.get(osmId(val(r, 'osm')));
+    if (s) s.location = centroid(val(r, 'wkt'));
+  }
+
+  console.log('Verwaltungsgebiete laden …');
+  const adminRows = await byIds((v) => `
+  SELECT ?osm ?rel ?level ?name WHERE {
+    ${v}
+    ?rel ogc:sfContains ?osm .
+    ?rel osmkey:boundary "administrative" .
+    ?rel osmkey:admin_level ?level .
+    ?rel osmkey:name ?name .
+    FILTER(STR(?level) IN ("4", "5", "6", "7", "8"))
+  }`);
+  for (const r of adminRows) {
+    const s = shops.get(osmId(val(r, 'osm')));
+    if (!s) continue;
+    s.admin ??= {};
+    s.admin[String(val(r, "level"))] = { id: osmId(val(r, 'rel')), name: val(r, 'name') };
+  }
+
+  const list = [...shops.values()].sort((a, b) => a.id.localeCompare(b.id));
+  await mkdir('data/osm', { recursive: true });
+  await writeFile(`data/osm/${cat.key}.json`, JSON.stringify({ fetchedAt: new Date().toISOString(), source: 'OpenStreetMap via QLever', shops: list }, null, 1));
+  console.log(`data/osm/${cat.key}.json geschrieben (${list.length} Einträge)`);
+
 }
-console.log(`${shops.size} Objekte`);
-
-console.log('Geometrien laden …');
-const geoRows = await sparql(`SELECT ?osm ?wkt WHERE { ${SHOP_FILTER} ?osm geo:hasGeometry/geo:asWKT ?wkt . }`);
-for (const r of geoRows) {
-  const s = shops.get(osmId(val(r, 'osm')));
-  if (s) s.location = centroid(val(r, 'wkt'));
-}
-
-console.log('Verwaltungsgebiete laden …');
-const adminRows = await sparql(`
-SELECT ?osm ?rel ?level ?name WHERE {
-  ${SHOP_FILTER}
-  ?rel ogc:sfContains ?osm .
-  ?rel osmkey:boundary "administrative" .
-  ?rel osmkey:admin_level ?level .
-  ?rel osmkey:name ?name .
-  FILTER(STR(?level) IN ("4", "5", "6", "7", "8"))
-}`);
-for (const r of adminRows) {
-  const s = shops.get(osmId(val(r, 'osm')));
-  if (!s) continue;
-  s.admin ??= {};
-  s.admin[String(val(r, "level"))] = { id: osmId(val(r, 'rel')), name: val(r, 'name') };
-}
-
-const list = [...shops.values()].sort((a, b) => a.id.localeCompare(b.id));
-await mkdir('data', { recursive: true });
-await writeFile('data/osm.json', JSON.stringify({ fetchedAt: new Date().toISOString(), source: 'OpenStreetMap via QLever', shops: list }, null, 1));
-console.log(`data/osm.json geschrieben (${list.length} Einträge)`);

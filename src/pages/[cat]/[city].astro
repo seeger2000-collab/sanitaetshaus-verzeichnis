@@ -1,0 +1,43 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProviderList from '../../components/ProviderList.astro';
+import Map from '../../components/Map.astro';
+import Faq from '../../components/Faq.astro';
+import { u } from '../../lib/url';
+import { km } from '../../lib/geo';
+import { otherCategories, providersByCat, allCities, fit } from '../../lib/data';
+import { CATEGORY_TEXT } from '../../lib/categoryText';
+export function getStaticPaths() {
+  return otherCategories.flatMap((cat) => {
+    const list = providersByCat(cat.key);
+    return allCities.filter((c) => c.counts[cat.key]).map((city) => ({ params: { cat: cat.slug, city: city.slug }, props: { cat, city, list } }));
+  });
+}
+const { cat, city, list } = Astro.props;
+const text = CATEGORY_TEXT[cat.key];
+const local = list.filter((p) => p.citySlug === city.slug).map((p) => ({ p }));
+const nearby = local.length >= 8 ? [] : list.filter((p) => p.citySlug !== city.slug).map((p) => ({ p, km: km(city, p) })).filter((x) => x.km <= 25).sort((a, b) => a.km - b.km).slice(0, 10);
+const n = local.length;
+const itemList = { '@context': 'https://schema.org', '@type': 'ItemList', name: text.h1(city.label), numberOfItems: n, itemListElement: local.slice(0, 50).map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.p.name })) };
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: text.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
+const nearCities = allCities.filter((c) => c.slug !== city.slug && c.counts[cat.key]).map((c) => ({ ...c, d: km(city, c) })).sort((a, b) => a.d - b.d).slice(0, 8);
+---
+<Base
+  title={fit([text.title(city.label, n), `${cat.label} ${city.label}: ${n}`])}
+  description={`${n} ${n === 1 ? cat.one : cat.many} in ${city.label}${nearby.length ? ` und ${nearby.length} in der Umgebung` : ''}: Adresse, Telefon, Öffnungszeiten und Leistungen. ${text.intro}`}
+  jsonLd={[itemList, faqLd]}
+  crumbs={[{ href: `/${cat.slug}/`, label: cat.label }, { href: `/${cat.slug}/${city.slug}/`, label: city.label }]}>
+  <h1>{text.h1(city.label)}</h1>
+  <p class="lead">{n} {n === 1 ? cat.one : cat.many} in {city.label}{city.district && city.district !== city.name ? ` (${city.district})` : ''}. {text.intro}</p>
+  <Map shops={[...local, ...nearby].map((x) => x.p)} color={cat.color} />
+  <ProviderList items={local} cat={cat.key} />
+  {nearby.length > 0 && (<>
+    <h2>In der Umgebung von {city.label}</h2>
+    <ProviderList items={nearby} cat={cat.key} showCity={true} filter={false} />
+  </>)}
+  {city.count > 0 && <p class="note">Hilfsmittel wie Rollator, Kompressionsstrümpfe oder Einlagen: <a href={u(`/stadt/${city.slug}/`)}>{city.count} Sanitätshäuser in {city.label}</a></p>}
+  {text.guide && <p><a href={u(text.guide)}>Ratgeber: Wann zahlt die Kasse die Fahrt?</a></p>}
+  <Faq items={text.faq} />
+  <h2>{cat.label} in der Nähe</h2>
+  <ul class="grid">{nearCities.map((c) => (<li><a class="tile" href={u(`/${cat.slug}/${c.slug}/`)}>{c.label}<small>{Math.round(c.d)} km · {c.counts[cat.key]}</small></a></li>))}</ul>
+</Base>

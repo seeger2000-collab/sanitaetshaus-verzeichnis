@@ -1,27 +1,22 @@
 ---
-// Liste mit Filter nach Leistung (läuft im Browser, ohne Neuladen)
-import type { Shop } from '../lib/data';
-import { features } from '../lib/data';
-import ShopCard from './ShopCard.astro';
-interface Props { shops: Shop[]; showCity?: boolean; filter?: boolean }
-const { shops, showCity = false, filter = true } = Astro.props;
-const available = features.filter((f) => shops.some((s) => s.features.includes(f.key)));
+import type { Provider } from '../lib/data';
+import { categories } from '../lib/data';
+import ProviderCard from './ProviderCard.astro';
+interface Props { items: { p: Provider; km?: number }[]; cat: string; showCity?: boolean; filter?: boolean }
+const { items, cat, showCity = false, filter = true } = Astro.props;
+const feats = categories.find((c) => c.key === cat)!.features.filter((f) => items.some((i) => i.p.features.includes(f.key)));
 ---
-<div class="shoplist">
-  {filter && available.length > 0 && (
+<div class="shoplist providerlist">
+  {filter && feats.length > 0 && items.length > 3 && (
     <fieldset class="filter">
-      <legend>Nach Leistung filtern</legend>
-      {available.map((f) => (
-        <label><input type="checkbox" value={f.key} /> {f.label}</label>
-      ))}
+      <legend>Filtern</legend>
+      {feats.map((f) => <label><input type="checkbox" value={f.key} /> {f.label}</label>)}
       <label><input type="checkbox" value="__wheelchair" /> barrierefrei</label>
-      <p class="count" aria-live="polite"><span>{shops.length}</span> von {shops.length} Sanitätshäusern</p>
+      <p class="count" aria-live="polite"><span>{items.length}</span> von {items.length}</p>
     </fieldset>
   )}
-  <ul class="list">
-    {shops.map((s) => <ShopCard shop={s} showCity={showCity} />)}
-  </ul>
-  <p class="empty" hidden>Kein Sanitätshaus erfüllt alle gewählten Leistungen. Nimm einen Filter heraus.</p>
+  <ul class="list">{items.map((i) => <ProviderCard p={i.p} km={i.km} showCity={showCity} />)}</ul>
+  <p class="empty" hidden>Kein Eintrag erfüllt alle gewählten Merkmale.</p>
 </div>
 <style>
   .filter { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 10px 14px 6px; margin: 0 0 14px; display: flex; flex-wrap: wrap; gap: 4px 18px; }
@@ -31,8 +26,9 @@ const available = features.filter((f) => shops.some((s) => s.features.includes(f
   .list { display: grid; gap: 10px; padding: 0; margin: 0; }
 </style>
 <script>
-  for (const root of document.querySelectorAll<HTMLElement>('.shoplist:not(.providerlist)')) {
+  for (const root of document.querySelectorAll<HTMLElement>(".providerlist")) {
     const boxes = [...root.querySelectorAll<HTMLInputElement>('.filter input')];
+    if (!boxes.length) continue;
     const items = [...root.querySelectorAll<HTMLElement>('li.shop')];
     const counter = root.querySelector('.count span');
     const empty = root.querySelector<HTMLElement>('.empty')!;
@@ -42,8 +38,7 @@ const available = features.filter((f) => shops.some((s) => s.features.includes(f
       for (const li of items) {
         const have = (li.dataset.features || '').split(' ');
         const ok = wanted.every((w) => (w === '__wheelchair' ? li.dataset.wheelchair === '1' : have.includes(w)));
-        li.hidden = !ok;
-        if (ok) n++;
+        li.hidden = !ok; if (ok) n++;
       }
       if (counter) counter.textContent = String(n);
       empty.hidden = n > 0;
