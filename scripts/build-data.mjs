@@ -172,7 +172,7 @@ await writeFile('src/data/meta.json', JSON.stringify({
   total: shops.length,
   withWebsiteData: shops.filter((s) => s.websiteCheckedAt).length,
   features: FEATURES.map(({ key, short, slug, label, title }) => ({ key, short, slug, label, title, count: shops.filter((s) => s.features.includes(key)).length })),
-  bedarf: BEDARF.map((b, i) => ({ key: b.key, label: b.label, short: b.short, hint: b.hint || '', leistung: b.leistung || '', seite: b.seite || '', count: all.filter((s) => bedarfMask(s) & (1 << i)).length })),
+  bedarf: BEDARF.map((b, i) => ({ key: b.key, label: b.label, short: b.short, words: b.words || '', hint: b.hint || '', leistung: b.leistung || '', seite: b.seite || '', count: all.filter((s) => bedarfMask(s) & (1 << i)).length })),
   kassen: KASSEN.map(({ key, label }) => ({ key, label })),
   categories: CATEGORIES.map(({ key, slug, label, one, many, color }) => ({ key, slug, label, one, many, color,
     count: all.filter((s) => s.cat === key).length,

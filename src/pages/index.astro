@@ -10,7 +10,7 @@ const topCities = [...cities].sort((a, b) => b.count - a.count).slice(0, 24);
 ---
 <Base title="Sanitätshaus in der Nähe finden: nach Bedarf, mit Telefon und Route" jsonLd={[{ '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: new URL(u('/'), Astro.site).href }]} description={`Sanitätshaus in der Nähe finden: Stützstrümpfe, Einlagen, Rollator, Pflegebett. Dazu Physiotherapie, Pflegedienste und Krankenfahrten. Finde Häuser mit Hausbesuch, Flachstrick-Kompression, Brustprothetik, Kinderversorgung oder Rollstuhl-Werkstatt in deiner Nähe.`}>
   <h1>Schnell die passende Hilfe in der Nähe finden</h1>
-  <p class="lead">Wählen Sie, was Sie brauchen, und geben Sie Ihren Ort ein. Sie sehen sofort, wer in der Nähe ist, wie Sie anrufen und wie Sie hinkommen.</p>
+  <p class="lead">Geben Sie ein, was Sie brauchen und wo. Sie sehen sofort, wer in der Nähe ist, wie Sie anrufen und wie Sie hinkommen.</p>
 
   <Finder />
 

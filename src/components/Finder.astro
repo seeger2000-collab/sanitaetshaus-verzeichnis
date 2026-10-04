@@ -5,39 +5,38 @@ import { meta, categories } from '../lib/data';
 const bedarf = meta.bedarf;
 const cats = categories.map((c) => ({ color: c.color, one: c.one }));
 ---
-<section id="finder" class="finder card" data-step="1" aria-labelledby="finder-h">
-  <div class="fgrid">
-    <div class="fside">
-      <h2 id="finder-h" class="flabel">Was brauchen Sie?</h2>
-      <ul class="bedarf" role="group" aria-label="Bedarf auswählen">
-        {bedarf.map((b, i) => (
-          <li class={b.key === 'sanitaetshaus' ? 'bd-all' : ''}><button type="button" class="bd" data-i={i} aria-pressed="false">
-            <strong><span class="bl">{b.key === 'sanitaetshaus' ? 'Alle Sanitätshäuser' : b.label}</span><span class="bs">{b.key === 'sanitaetshaus' ? 'Alle Sanitätshäuser' : b.short}</span></strong>{b.hint && <small>{b.hint}</small>}
-          </button></li>
-        ))}
-      </ul>
+<section id="finder" class="finder card" aria-labelledby="finder-h">
+  <h2 id="finder-h" class="sr">Suche</h2>
+  <form class="fsearch" role="search" action="#" autocomplete="off">
+    <div class="fq">
+      <label for="f-was">Was suchen Sie?</label>
+      <input id="f-was" type="search" placeholder="z. B. Stützstrümpfe, Rollator, Physiotherapie oder ein Name" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="f-wsug" />
+      <ul id="f-wsug" class="fsug" role="listbox" hidden></ul>
     </div>
-    <div class="fmain">
-      <p class="fwahl" id="f-wahl"></p>
-      <div class="fbar">
-        <div class="fq">
-          <label for="f-ort" class="sr">Ort oder Postleitzahl</label>
-          <input id="f-ort" type="search" placeholder="Ihr Ort oder Ihre PLZ, z. B. Kassel oder 34117" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="f-sug" />
-          <ul id="f-sug" role="listbox" hidden></ul>
-        </div>
-        <button type="button" id="f-loc" class="btn">Mein Standort</button>
-      </div>
-      <div class="fout">
-        <p class="fhead"><span id="f-msg" aria-live="polite"></span>
-          <label class="frad">Umkreis <select id="f-rad"><option value="5">5 km</option><option value="10">10 km</option><option value="25" selected>25 km</option><option value="50">50 km</option><option value="100">100 km</option></select></label>
-        </p>
-        <div id="f-map" data-src={u('/data/finder.json')} data-base={u('/')} data-cats={JSON.stringify(cats)} data-bedarf={JSON.stringify(bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Sanitätshaus' : b.label, leistung: b.leistung, seite: b.seite })))}></div>
-        <ol id="f-list" class="flist"></ol>
-        <p id="f-more" class="fmore" hidden></p>
-        <p class="muted"><small>Kartendaten © OpenStreetMap-Mitwirkende. Leistungen laut Website der Betriebe, ohne Gewähr. Ihr Standort bleibt in Ihrem Browser.</small></p>
-      </div>
+    <div class="fq">
+      <label for="f-ort">Wo?</label>
+      <input id="f-ort" type="search" placeholder="Ort oder PLZ, z. B. Kassel oder 34117" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="f-sug" />
+      <ul id="f-sug" class="fsug" role="listbox" hidden></ul>
     </div>
-  </div>
+    <div class="frow">
+      <button type="button" id="f-loc" class="btn btn-ghost">Mein Standort</button>
+      <label class="frad">Umkreis <select id="f-rad"><option value="5">5 km</option><option value="10">10 km</option><option value="25" selected>25 km</option><option value="50">50 km</option><option value="100">100 km</option></select></label>
+      <button type="submit" class="btn fgo">Suchen</button>
+    </div>
+  </form>
+  <p class="fhead"><span id="f-msg" aria-live="polite">Geben Sie ein, was Sie brauchen und wo. Die Karte zeigt sofort, wer in der Nähe ist.</span></p>
+  <div id="f-map" data-src={u('/data/finder.json')} data-base={u('/')} data-cats={JSON.stringify(cats)} data-bedarf={JSON.stringify(bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Sanitätshaus' : b.label, words: b.words || '', leistung: b.leistung, seite: b.seite })))}></div>
+  <ol id="f-list" class="flist"></ol>
+  <p id="f-more" class="fmore" hidden></p>
+  <h2 class="flabel">Rubriken</h2>
+  <ul class="bedarf" role="group" aria-label="Rubrik auswählen">
+    {bedarf.map((b, i) => (
+      <li class={b.key === 'sanitaetshaus' ? 'bd-all' : ''}><button type="button" class="bd" data-i={i} aria-pressed="false">
+        <strong>{b.key === 'sanitaetshaus' ? 'Alle Sanitätshäuser' : b.label.replace('Kompressionsstrümpfe', 'Kompressions\u00ADstrümpfe')}</strong>{b.hint && <small>{b.hint}</small>}
+      </button></li>
+    ))}
+  </ul>
+  <p class="muted"><small>Kartendaten © OpenStreetMap-Mitwirkende. Leistungen laut Website der Betriebe, ohne Gewähr. Ihr Standort bleibt in Ihrem Browser.</small></p>
 </section>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
 <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
@@ -52,7 +51,7 @@ const cats = categories.map((c) => ({ color: c.color, one: c.one }));
     let data = null, map = null, pins = null;
     const ensureMap = () => {
       if (map) { map.invalidateSize(); return; }
-      map = L.map(el, { scrollWheelZoom: false }).setView([51.2, 10.4], 6);
+      map = L.map(el, { scrollWheelZoom: false, preferCanvas: true, zoomSnap: 0.25 }).setView([51.2, 10.4], 6);
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map);
       pins = L.featureGroup().addTo(map);
     };
@@ -93,37 +92,48 @@ const cats = categories.map((c) => ({ color: c.color, one: c.one }));
       }
       return open == null ? '' : `<span class="oh ${open ? 'open' : 'closed'}">${open ? 'jetzt geöffnet' : 'jetzt geschlossen'}</span>`;
     }
-    const marker = (e) => L.circleMarker([e[1], e[2]], { radius: 7, color: cats[e[0]].color, fillColor: cats[e[0]].color, fillOpacity: 0.85, weight: 1 }).bindPopup(pop(e));
+    const marker = (e, rr) => L.circleMarker([e[1], e[2]], { radius: rr, color: cats[e[0]].color, fillColor: cats[e[0]].color, fillOpacity: 0.85, weight: 1 }).bindPopup(pop(e));
 
-    const step = (n) => { root.dataset.step = String(n); };
+    // Was: Rubrik (sel) oder freier Name (nameQ). Wo: here. Ohne Ort zeigt die Karte ganz Deutschland.
+    const was = $('f-was'), wsug = $('f-wsug');
+    const BDN = BD.map((b, i) => ({ i, label: b.label, k: norm(b.label + ' ' + b.words) }));
+    const ALL = BD.length - 1;
+    let nameQ = '';
+    const pickRubrik = (i) => { sel = i; nameQ = ''; was.value = BD[i].label; document.querySelectorAll('.bedarf .bd').forEach((x) => { const on = +x.dataset.i === i; x.classList.toggle('on', on); x.setAttribute('aria-pressed', on); }); };
+    const matches = () => {
+      if (nameQ) { const q = norm(nameQ); return data.e.filter((e) => norm(e[3]).includes(q)); }
+      const bit = 1 << (sel < 0 ? ALL : sel); return data.e.filter((e) => e[6] & bit);
+    };
+    const whatLabel = () => (nameQ ? `„${nameQ}“` : BD[sel < 0 ? ALL : sel].label);
     function draw() {
-      if (sel < 0) return;
-      const b = BD[sel];
-      $('f-wahl').innerHTML = `<strong>${esc(b.label)}</strong> in Ihrer Nähe`;
-      if (!here) { step(2); return; }
-      step(3); ensureMap();
-      const bit = 1 << sel, r = +rad.value;
-      const near = data.e.filter((e) => e[6] & bit).map((e) => ({ e, d: km(here, { lat: e[1], lon: e[2] }) })).filter((x) => x.d <= r).sort((a, b) => a.d - b.d);
+      ensureMap();
+      const r = +rad.value, all = matches();
       pins.clearLayers(); list.innerHTML = ''; more.hidden = true;
-      near.forEach((x) => pins.addLayer(marker(x.e)));
-      if (circle) circle.remove();
+      if (circle) { circle.remove(); circle = null; }
+      if (me) { me.remove(); me = null; }
+      if (!here) {
+        all.forEach((e) => pins.addLayer(marker(e, 2.5)));
+        map.fitBounds([[47.3, 5.9], [55.0, 15.0]]);
+        msg.textContent = (sel < 0 && !nameQ) ? 'Geben Sie ein, was Sie brauchen und wo. Die Karte zeigt sofort, wer in der Nähe ist.' : `${whatLabel()}: Geben Sie jetzt Ihren Ort oder Ihre PLZ ein.`;
+        return;
+      }
+      const near = all.map((e) => ({ e, d: km(here, { lat: e[1], lon: e[2] }) })).filter((x) => x.d <= r).sort((a, b) => a.d - b.d);
+      near.forEach((x) => pins.addLayer(marker(x.e, 7)));
       circle = L.circle([here.lat, here.lon], { radius: r * 1000, color: '#0f6b57', weight: 1, dashArray: '5 4', fillOpacity: 0.04, interactive: false }).addTo(map);
-      if (me) me.remove();
       me = L.circleMarker([here.lat, here.lon], { radius: 8, color: '#fff', fillColor: '#d9480f', fillOpacity: 1, weight: 3 }).addTo(map);
       map.fitBounds(circle.getBounds());
-      const extra = b.leistung ? ` <a href="${base}leistung/${b.leistung}/">${esc(b.label)} nach Stadt</a>` : b.seite ? ` <a href="${base}${b.seite}/">${esc(b.label)} nach Stadt</a>` : '';
-      msg.innerHTML = near.length ? `${esc(b.label)} bei ${esc(here.label)}, die nächsten zuerst.` : `Nichts gefunden. Vergrößern Sie den Umkreis.${extra}`;
+      const b = BD[sel < 0 ? ALL : sel];
+      const extra = nameQ ? '' : b.leistung ? ` <a href="${base}leistung/${b.leistung}/">${esc(b.label)} nach Stadt</a>` : b.seite ? ` <a href="${base}${b.seite}/">${esc(b.label)} nach Stadt</a>` : '';
+      msg.innerHTML = near.length ? `${esc(whatLabel())} bei ${esc(here.label)}, die nächsten zuerst.` : `Nichts gefunden im Umkreis von ${r} km. Vergrößern Sie den Umkreis.${extra}`;
       list.innerHTML = near.slice(0, shown).map(({ e, d }) => `<li><a href="${base}${e[5]}"><strong>${esc(e[3])}</strong></a> <span class="fkm">${d.toFixed(1).replace('.', ',')} km</span>${ohBadge(e[8])}<br><span class="muted">${esc(cats[e[0]].one)} · ${esc(e[4])}</span>${actions(e)}</li>`).join('');
       if (here.slug) list.insertAdjacentHTML('beforeend', `<li class="fcity"><a href="${base}stadt/${here.slug}/">Alles in ${esc(here.label)} auf einer Seite: Sanitätshäuser, Physiotherapie, Pflege, Krankenfahrten</a></li>`);
       if (near.length > shown) { more.hidden = false; more.innerHTML = '<button type="button" class="btn" id="f-mehr">Weitere anzeigen</button>'; $('f-mehr').onclick = () => { shown += 30; draw(); }; }
     }
     document.querySelector('.bedarf').addEventListener('click', (ev) => {
       const btn = ev.target.closest('button'); if (!btn) return;
-      document.querySelectorAll('.bedarf .bd').forEach((x) => { x.classList.toggle('on', x === btn); x.setAttribute('aria-pressed', x === btn); });
-      const first = sel < 0;
-      sel = +btn.dataset.i; shown = 30; draw();
-      if (first || !here) { root.scrollIntoView({ block: 'start', behavior: 'smooth' }); input.focus({ preventScroll: true }); }
-      requestAnimationFrame(() => btn.scrollIntoView({ block: 'nearest', inline: 'center' }));
+      pickRubrik(+btn.dataset.i); shown = 30; draw();
+      root.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      if (!here) input.focus({ preventScroll: true });
     });
     rad.addEventListener('change', () => { shown = 30; draw(); });
     const setHere = (h) => { here = h; shown = 30; input.value = h.label; sug.hidden = true; input.setAttribute('aria-expanded', 'false'); draw(); };
@@ -135,73 +145,75 @@ const cats = categories.map((c) => ({ color: c.color, one: c.one }));
       }
       return null;
     }
-    let hits = [], act = -1;
-    const renderSug = () => { sug.innerHTML = hits.map((h, i) => `<li role="option" data-i="${i}" class="${i === act ? 'on' : ''}">${esc(h.label)}</li>`).join(''); sug.hidden = !hits.length; input.setAttribute('aria-expanded', String(!!hits.length)); };
-    input.addEventListener('input', () => {
-      const q = norm(input.value.trim()); act = -1;
-      if (/^\d{5}$/.test(q)) { const p = plzHit(q); hits = p ? [{ label: `PLZ ${q}`, lat: p[0], lon: p[1] }] : []; }
-      else if (q.length < 2) hits = [];
-      else hits = orte.filter((o) => o.k.includes(q)).sort((a, b) => (b.k.startsWith(q) - a.k.startsWith(q)) || b.n - a.n).slice(0, 8);
-      renderSug();
+    // Vorschlagslisten für beide Felder
+    function combo(inp, box, find, choose) {
+      let hits = [], act = -1;
+      const render = () => { box.innerHTML = hits.map((h, i) => `<li role="option" data-i="${i}" class="${i === act ? 'on' : ''}">${h.html || esc(h.label)}</li>`).join(''); box.hidden = !hits.length; inp.setAttribute('aria-expanded', String(!!hits.length)); };
+      inp.addEventListener('input', () => { act = -1; hits = find(norm(inp.value.trim()), inp.value.trim()); render(); });
+      inp.addEventListener('keydown', (ev) => {
+        if (ev.key === 'ArrowDown' && hits.length) { act = (act + 1) % hits.length; render(); ev.preventDefault(); }
+        else if (ev.key === 'ArrowUp' && hits.length) { act = (act - 1 + hits.length) % hits.length; render(); ev.preventDefault(); }
+        else if (ev.key === 'Enter') { ev.preventDefault(); choose(hits.length ? hits[Math.max(act, 0)] : null); box.hidden = true; hits = []; }
+        else if (ev.key === 'Escape') box.hidden = true;
+      });
+      box.addEventListener('mousedown', (ev) => { const li = ev.target.closest('li'); if (li) { ev.preventDefault(); choose(hits[+li.dataset.i]); box.hidden = true; hits = []; } });
+      inp.addEventListener('blur', () => setTimeout(() => { box.hidden = true; }, 150));
+    }
+    combo(was, wsug, (q, raw) => {
+      if (q.length < 2) return [];
+      const rub = BDN.filter((b) => b.k.split(/[\s&,-]+/).some((w) => w.startsWith(q)) || b.k.includes(q)).slice(0, 6).map((b) => ({ rub: b.i, label: b.label }));
+      const names = [...new Set(data.e.filter((e) => norm(e[3]).includes(q)).map((e) => e[3]))].slice(0, 4).map((n) => ({ name: n, label: n, html: `${esc(n)} <small class="muted">Name</small>` }));
+      return [...rub, ...names];
+    }, (h) => {
+      if (h && h.rub != null) pickRubrik(h.rub);
+      else { const t = h ? h.name : was.value.trim(); if (!t) { sel = -1; nameQ = ''; } else { nameQ = t; sel = -1; was.value = t; document.querySelectorAll('.bedarf .bd').forEach((x) => x.classList.remove('on')); } }
+      shown = 30; draw();
+      if (!here) input.focus();
     });
-    input.addEventListener('keydown', (ev) => {
-      if (ev.key === 'ArrowDown' && hits.length) { act = (act + 1) % hits.length; renderSug(); ev.preventDefault(); }
-      else if (ev.key === 'ArrowUp' && hits.length) { act = (act - 1 + hits.length) % hits.length; renderSug(); ev.preventDefault(); }
-      else if (ev.key === 'Enter' && hits.length) { setHere(hits[Math.max(act, 0)]); ev.preventDefault(); }
-      else if (ev.key === 'Escape') { sug.hidden = true; }
-    });
-    sug.addEventListener('mousedown', (ev) => { const li = ev.target.closest('li'); if (li) { ev.preventDefault(); setHere(hits[+li.dataset.i]); } });
-    input.addEventListener('blur', () => setTimeout(() => { sug.hidden = true; }, 150));
+    combo(input, sug, (q) => {
+      if (/^\d{5}$/.test(q)) { const p = plzHit(q); return p ? [{ label: `PLZ ${q}`, lat: p[0], lon: p[1] }] : []; }
+      if (q.length < 2) return [];
+      return orte.filter((o) => o.k.includes(q)).sort((a, b) => (b.k.startsWith(q) - a.k.startsWith(q)) || b.n - a.n).slice(0, 8);
+    }, (h) => { if (h) setHere(h); });
+    root.querySelector('form').addEventListener('submit', (ev) => { ev.preventDefault(); draw(); });
+    draw();
     $('f-loc').addEventListener('click', () => {
       if (!navigator.geolocation) return;
-      $('f-wahl').insertAdjacentText('beforeend', ' · Standort wird ermittelt …');
+      msg.textContent = 'Standort wird ermittelt …';
       navigator.geolocation.getCurrentPosition((p) => setHere({ label: 'Ihrem Standort', lat: p.coords.latitude, lon: p.coords.longitude }),
-        () => { $('f-wahl').insertAdjacentText('beforeend', ' · Standort nicht verfügbar, bitte Ort eingeben.'); }, { timeout: 10000 });
+        () => { msg.textContent = 'Standort nicht verfügbar, bitte Ort oder PLZ eingeben.'; }, { timeout: 10000 });
     });
   })();
 </script>
 <style is:global>
   .finder { margin: 12px 0 8px; scroll-margin-top: 12px; }
-  .flabel { margin: 0 0 10px; font-size: 1.25rem; }
-  .bedarf { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
-  .bd { width: 100%; height: 100%; text-align: left; font: inherit; background: var(--bg); color: var(--text); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; cursor: pointer; }
-  .bd strong { display: block; font-size: 1rem; line-height: 1.3; hyphens: auto; overflow-wrap: anywhere; }
+  .fsearch { display: grid; gap: 12px; }
+  .fq { position: relative; min-width: 0; }
+  .fq label { display: block; font-weight: 700; font-size: 1.1rem; margin-bottom: 4px; }
+  .fq input { width: 100%; font: inherit; font-size: 1.15rem; padding: 13px 16px; border: 2px solid var(--line); border-radius: var(--radius); }
+  .fq input:focus { outline: none; border-color: var(--brand); }
+  .frow { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .fgo { margin-left: auto; border: 0; cursor: pointer; font-size: 1.05rem; padding: 11px 26px; }
+  #f-loc { cursor: pointer; font-size: .95rem; background: var(--surface); color: var(--brand); border: 1px solid var(--brand); }
+  .fsug { position: absolute; z-index: 1001; left: 0; right: 0; top: 100%; margin: 2px 0 0; padding: 0; list-style: none; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,.14); max-height: 300px; overflow: auto; }
+  .fsug li { padding: 9px 14px; cursor: pointer; }
+  .fsug li.on, .fsug li:hover { background: var(--accent); }
+  .frad { display: flex; align-items: center; gap: 8px; font-size: .95rem; font-weight: 600; }
+  .frad select { font: inherit; padding: 7px 10px; border: 2px solid var(--brand); border-radius: 8px; background: var(--surface); }
+  .fhead { margin: 14px 0 0; font-size: 1.05rem; }
+  #f-map { height: 420px; border-radius: var(--radius); border: 1px solid var(--line); margin: 10px 0 12px; z-index: 0; }
+  .flabel { margin: 22px 0 10px; font-size: 1.25rem; }
+  .bedarf { list-style: none; padding: 0; margin: 0 0 10px; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
+  .bd { width: 100%; height: 100%; text-align: left; font: inherit; background: var(--bg); color: var(--text); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 14px; cursor: pointer; }
+  .bd strong { display: block; font-size: 1rem; line-height: 1.3; hyphens: auto; overflow-wrap: break-word; }
+  .bd-all { grid-column: 1 / -1; }
+  .bd-all .bd { background: none; border-style: dashed; text-align: center; padding: 8px; }
   .bd small { display: block; color: var(--muted); font-size: .8rem; margin-top: 2px; }
   .bd:hover { border-color: var(--brand); }
   .bd.on { background: var(--brand); border-color: var(--brand); color: var(--brand-ink); }
   .bd.on small { color: #cfe8df; }
-  .bs { display: none; }
-  .finder:not([data-step="1"]) .bl { display: none; }
-  .finder:not([data-step="1"]) .bs { display: inline; }
-  .bd-all { grid-column: 1 / -1; }
-  .bd-all .bd { background: none; border-style: dashed; text-align: center; padding: 8px; }
-  .fside { min-width: 0; }
-  .fmain { display: none; min-width: 0; }
-  .fout { display: none; }
-  /* Nach der Wahl: Rubriken links, rechts nur das Ort-Feld; nach der Ortseingabe Karte und Ergebnisse */
-  .finder:not([data-step="1"]) .fgrid { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 20px; align-items: start; }
-  .finder:not([data-step="1"]) .fmain { display: block; }
-  .finder:not([data-step="1"]) .bedarf { grid-template-columns: 1fr; gap: 4px; }
-  .finder:not([data-step="1"]) .bd { padding: 7px 10px; }
-  .finder:not([data-step="1"]) .bd strong { font-size: .92rem; }
-  .finder:not([data-step="1"]) .bd small { display: none; }
-  .finder:not([data-step="1"]) .flabel { font-size: 1rem; }
-  .finder[data-step="3"] .fout { display: block; }
-  .fwahl { margin: 0 0 10px; font-size: 1.2rem; }
-  .finder[data-step="2"] .fq input { font-size: 1.25rem; padding: 16px 18px; }
-  .fbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-  .fq { position: relative; flex: 1 1 260px; min-width: 0; }
-  .fq input { width: 100%; font: inherit; padding: 11px 14px; border: 2px solid var(--line); border-radius: var(--radius); }
-  .fq input:focus { outline: none; border-color: var(--brand); }
-  #f-sug { position: absolute; z-index: 1001; left: 0; right: 0; top: 100%; margin: 2px 0 0; padding: 0; list-style: none; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,.14); max-height: 300px; overflow: auto; }
-  #f-sug li { padding: 9px 14px; cursor: pointer; }
-  #f-sug li.on, #f-sug li:hover { background: var(--accent); }
-  .fhead { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 16px; margin: 14px 0 0; }
-  .frad { display: flex; align-items: center; gap: 8px; font-size: .95rem; font-weight: 600; }
-  .frad select { font: inherit; padding: 7px 10px; border: 2px solid var(--brand); border-radius: 8px; background: var(--surface); }
-  #f-loc { border: 0; cursor: pointer; font-size: .95rem; }
-  #f-map { height: 400px; border-radius: var(--radius); border: 1px solid var(--line); margin: 10px 0 12px; z-index: 0; }
   .flist { padding-left: 1.4em; display: grid; gap: 12px; margin: 0; }
+  .flist:empty { display: none; }
   .flist .fcity { list-style: none; margin-left: -1.4em; }
   .fkm { color: var(--muted); font-size: .85rem; white-space: nowrap; }
   .flist .facts { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
@@ -215,11 +227,7 @@ const cats = categories.map((c) => ({ color: c.color, one: c.one }));
   .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
   @media (max-width: 700px) {
     #f-map { height: 320px; }
-    .finder[data-step="1"] .bedarf { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .finder:not([data-step="1"]) .fgrid { grid-template-columns: 1fr; }
-    .finder:not([data-step="1"]) .bedarf { display: flex; overflow-x: auto; gap: 6px; padding-bottom: 4px; }
-    .finder:not([data-step="1"]) .bedarf li { flex: 0 0 auto; }
-    .finder:not([data-step="1"]) .bd { white-space: nowrap; }
-    .finder:not([data-step="1"]) .flabel { display: none; }
+    .bedarf { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .fgo { width: 100%; }
   }
 </style>
