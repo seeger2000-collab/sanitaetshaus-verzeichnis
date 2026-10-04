@@ -2,8 +2,8 @@
 // Prüft nur Websites, deren Scan nicht "ok" war. Ergebnis: data/deadlinks.json { url: grund }
 import { readFile, writeFile } from 'node:fs/promises';
 const CATS = ['sanitaetshaus', 'physio', 'pflege', 'heim', 'apotheke', 'fahrt'];
-// Unvollständige Zertifikatskette (LEAF_SIGNATURE, ISSUER) lösen Browser meist selbst, das zählt nicht als tot
-const CERT = /CERT_HAS_EXPIRED|ALTNAME_INVALID|SELF_SIGNED|SSL|TLS/;
+// Nur eindeutige Zertifikatsfehler zählen (abgelaufen, falscher Name). Selbstsignierte und TLS-Handshake-Fehler können am Prüfweg liegen, die Links bleiben sichtbar.
+const CERT = /CERT_HAS_EXPIRED|ALTNAME_INVALID/;
 const sites = new Map();
 for (const c of CATS) {
   const enr = JSON.parse(await readFile(`data/enrichment/${c}.json`, 'utf8').catch(() => '{}'));
