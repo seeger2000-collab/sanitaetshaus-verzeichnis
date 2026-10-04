@@ -46,6 +46,12 @@ const pageTitle = fit([
   <p class="lead">Sanitätshaus in {shop.city}{shop.district && shop.district !== shop.city ? `, ${shop.district}` : ''}, {shop.state}</p>
   <p>{shop.name} ist eines von {cityCount} {cityCount === 1 ? 'Sanitätshaus' : 'Sanitätshäusern'} in {shop.city}.{found.length > 0 ? ` Auf der eigenen Website nennt es ${found.length} der Spezialleistungen, nach denen wir suchen.` : ''}{shop.wheelchair === 'yes' ? ' Der Eingang ist laut OpenStreetMap stufenlos erreichbar.' : ''} Bitte rufen Sie vor dem Besuch kurz an, ob Ihr Hilfsmittel vorrätig ist und ob ein Vertrag mit Ihrer Krankenkasse besteht.</p>
 
+  {SITE.streetPhotos && shop.image && (
+    <figure class="photo">
+      <img src={shop.image.thumb} alt={`Straßenansicht in der Nähe von ${shop.name}, ${shop.street ?? shop.city}`} loading="lazy" referrerpolicy="no-referrer" width="1024" height="576" />
+      <figcaption>Straßenansicht in der Nähe (nicht vom Haus selbst), {shop.image.date && `aufgenommen ${new Date(shop.image.date).toLocaleDateString('de-DE', { month: 'long', year: 'numeric' })}, `}Foto: <a href={shop.image.link} rel="nofollow noopener" target="_blank">{shop.image.credit} / {shop.image.source}</a>, Lizenz {shop.image.license}</figcaption>
+    </figure>
+  )}
   <div class="cols">
     <section class="card">
       <h2>Kontakt</h2>
@@ -54,7 +60,8 @@ const pageTitle = fit([
         {shop.phone && <><dt>Telefon</dt><dd>{shop.phone.split(';').map((p) => <a href={`tel:${p.replace(/[^+\d]/g, '')}`}>{p.trim()}<br /></a>)}</dd></>}
         {shop.email && <><dt>E-Mail</dt><dd><a href={`mailto:${shop.email.split(';')[0]}`}>{shop.email.split(';')[0]}</a></dd></>}
         {shop.website && <><dt>Website</dt><dd><a href={shop.website} rel="nofollow noopener" target="_blank">{shop.website.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')}</a></dd></>}
-        {shop.openingHours && <><dt>Öffnungszeiten</dt><dd>{hours ? hours.map((h) => <>{h}<br /></>) : <code>{shop.openingHours}</code>}</dd></>}
+        {shop.openingHours && <><dt data-oh={shop.openingHours}>Öffnungszeiten</dt><dd>{hours ? hours.map((h) => <>{h}<br /></>) : <code>{shop.openingHours}</code>}{shop.hoursSource === 'website' && <small class="muted">Von der Website des Hauses übernommen.</small>}</dd></>}
+        {!shop.openingHours && shop.website && <><dt>Öffnungszeiten</dt><dd><a href={shop.website} rel="nofollow noopener" target="_blank">Auf der Website des Hauses</a></dd></>}
         {shop.wheelchair && <><dt>Barrierefrei</dt><dd>{({ yes: 'Ja, stufenlos erreichbar', limited: 'Eingeschränkt', no: 'Nein' } as Record<string, string>)[shop.wheelchair] ?? shop.wheelchair}</dd></>}
       </dl>
     </section>
@@ -90,6 +97,9 @@ const pageTitle = fit([
   </>)}
 </Base>
 <style>
+  .photo { margin: 12px 0; }
+  .photo img { width: 100%; max-height: 360px; object-fit: cover; border-radius: var(--radius); display: block; background: var(--line); }
+  .photo figcaption { font-size: 0.78rem; color: var(--muted); margin-top: 4px; }
   .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; margin: 16px 0; }
   .cols h2 { margin-top: 0; }
   dl { margin: 0; }

@@ -14,12 +14,12 @@ const mapUrl = p.lat ? `https://www.openstreetmap.org/?mlat=${p.lat}&mlon=${p.lo
 ---
 <li class="shop" data-features={p.features.join(' ')} data-wheelchair={p.wheelchair === 'yes' ? '1' : ''}>
   <article class="card">
-    <h3>{p.name}</h3>
+    <h3 data-oh={p.openingHours ?? undefined}>{p.name}</h3>
     <p class="addr">{address}{km != null && ` · ${km < 1 ? 'unter 1' : Math.round(km)} km`}{p.wheelchair === 'yes' && <span class="acc">{address ? ' · ' : ''}barrierefrei</span>}</p>
     {p.features.length > 0 && (
       <ul class="chips">{p.features.map((f) => <li class="chip">{p.evidence?.[f] ? <a href={p.evidence[f]} rel="nofollow noopener" target="_blank" title="Quelle auf der Website">{label[f]}</a> : label[f]}</li>)}</ul>
     )}
-    {hours && <p class="hours">{hours.join(' · ')}</p>}
+    {hours && <p class="hours">{hours.join(' · ')}{p.hoursSource === 'website' && ' (laut Website)'}</p>}
     <p class="links">
       {p.phone && <a href={`tel:${p.phone.split(';')[0].replace(/[^+\d]/g, '')}`}>{p.phone.split(';')[0]}</a>}
       {p.website && <a href={p.website} rel="nofollow noopener" target="_blank">Website</a>}

@@ -7,6 +7,8 @@ export const SITE = {
   // Formular für Korrekturen und neue Einträge (z. B. Tally). Leer = Link auf GitHub-Issue.
   correctionFormUrl: '',
   repoUrl: 'https://github.com/seeger2000-collab/sanitaetshaus-verzeichnis',
+  // Straßenfotos aus Panoramax/Mapillary anzeigen. Aus, weil frei verfügbare Fotos meist nur die Straße zeigen, nicht die Fassade.
+  streetPhotos: false,
 };
 
 // Top-Einträge für Sanitätshäuser (Stripe Payment Link). Leer = Hinweis "bald verfügbar".

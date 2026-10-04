@@ -10,7 +10,7 @@ const address = [shop.street, place].filter(Boolean).join(', ');
 <li class="shop" data-features={shop.features.join(' ')} data-wheelchair={shop.wheelchair === 'yes' ? '1' : ''}>
   <article class={shop.featured ? 'card featured' : 'card'}>
     {shop.featured && <p class="badge">Top-Eintrag</p>}
-    <h3><a href={u(`/sanitaetshaus/${shop.slug}/`)}>{shop.name}</a></h3>
+    <h3 data-oh={shop.openingHours ?? undefined}><a href={u(`/sanitaetshaus/${shop.slug}/`)}>{shop.name}</a></h3>
     <p class="addr">
       {address}
       {shop.wheelchair === 'yes' && <span class="acc">{address ? ' · ' : ''}barrierefrei</span>}

@@ -1,6 +1,7 @@
 ---
 import { SITE } from '../config';
 import { u } from '../lib/url';
+import OpenNow from '../components/OpenNow.astro';
 import { meta, fmtDate, clip } from '../lib/data';
 interface Props { title: string; description: string; crumbs?: { href: string; label: string }[]; noindex?: boolean; jsonLd?: object[] }
 const { title, crumbs = [], noindex = false, jsonLd = [] } = Astro.props;
@@ -52,6 +53,7 @@ if (crumbs.length) ld.push({
       )}
       <slot />
     </main>
+    <OpenNow />
     <footer class="site-footer">
       <div class="wrap">
         <p>Daten: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (ODbL), Stand {fmtDate(meta.osmFetchedAt)}. Leistungen automatisch von den Websites der Häuser ausgelesen, ohne Gewähr.</p>

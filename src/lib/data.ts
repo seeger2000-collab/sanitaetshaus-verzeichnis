@@ -9,14 +9,15 @@ export type Shop = {
   street: string | null; postcode: string | null; city: string; citySlug: string;
   district: string | null; state: string; stateSlug: string; lat?: number; lon?: number;
   phone: string | null; email: string | null; website: string | null;
-  openingHours: string | null; wheelchair: string | null;
+  openingHours: string | null; hoursSource?: string | null; wheelchair: string | null;
   features: string[]; kassen: string[]; evidence: Record<string, string>;
   websiteCheckedAt: string | null; featured: boolean;
+  image?: { thumb: string; link: string; credit: string; license: string; source: string; date: string } | null;
 };
 export type City = { id: string; name: string; label: string; slug: string; district: string | null; state: string; stateSlug: string; count: number; counts: Record<string, number>; lat: number; lon: number };
 export type Provider = {
   cat: string; id: string; name: string; street: string | null; postcode: string | null; city: string; citySlug: string; stateSlug: string; state: string;
-  lat?: number; lon?: number; phone: string | null; website: string | null; openingHours: string | null; wheelchair: string | null;
+  lat?: number; lon?: number; phone: string | null; website: string | null; openingHours: string | null; hoursSource?: string | null; wheelchair: string | null;
   features: string[]; evidence: Record<string, string>;
 };
 

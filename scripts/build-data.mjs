@@ -6,6 +6,16 @@ import { CATEGORIES } from './categories.mjs';
 const readJson = async (p, fallback) => { try { return JSON.parse(await readFile(p, 'utf8')); } catch { return fallback; } };
 // Manuelle Daten: Top-Einträge (bezahlt) und Korrekturen, Schlüssel = OSM-ID, z. B. "node/123"
 const overrides = await readJson('data/overrides.json', {});
+// Öffnungszeiten von Websites, nur wenn OSM keine hat (scripts/enrich-hours.mjs)
+const webHoursRaw = await readJson('data/hours.json', {});
+// Unplausible Website-Zeiten verwerfen: überlappende Zeiträume (oft mehrere Filialen auf einer Seite) oder Sonntags geöffnet
+const plausible = (oh) => !/Su/.test(oh) && oh.split(';').every((rule) => {
+  const slots = (rule.trim().split(' ')[1] || '').split(',').map((t) => t.split('-').map((x) => +x.slice(0, 2) * 60 + +x.slice(3)));
+  return slots.every(([a, b], i) => a < b && (i === 0 || a >= slots[i - 1][1]));
+});
+const webHours = Object.fromEntries(Object.entries(webHoursRaw).filter(([, v]) => v.oh && plausible(v.oh)));
+// Straßenfotos (scripts/fetch-images.mjs)
+const images = await readJson('data/images.json', {});
 
 export function slugify(s) {
   return s.toLowerCase()
@@ -52,12 +62,14 @@ for (const s of osm.shops) {
     phone: t.phone || t['contact:phone'] || null,
     email: t.email || t['contact:email'] || null,
     website: websiteOf(t),
-    openingHours: t.opening_hours || null,
+    openingHours: t.opening_hours || webHours[s.id]?.oh || null,
+    hoursSource: t.opening_hours ? 'osm' : webHours[s.id]?.oh ? 'website' : null,
     wheelchair: t.wheelchair || null,
     features,
     kassen: e?.status === 'ok' ? e.kassen : [],
     evidence: e?.status === 'ok' ? e.evidence : {},
     websiteCheckedAt: e?.status === 'ok' ? e.checkedAt.slice(0, 10) : null,
+    image: images[s.id] && !images[s.id].none ? (({ thumb, link, credit, license, source, date }) => ({ thumb, link, credit, license, source, date }))(images[s.id]) : null,
     featured: false,
     ...o,
   });
@@ -88,8 +100,8 @@ for (const s of all) {
 }
 const shops = all.filter((s) => s.cat === 'sanitaetshaus');
 // Andere Kategorien: schlanke Einträge ohne eigene Detailseite
-const providers = all.filter((s) => s.cat !== 'sanitaetshaus').map(({ cat, id, name, street, postcode, city, citySlug, stateSlug, state, lat, lon, phone, website, openingHours, wheelchair, features, evidence }) =>
-  ({ cat, id, name, street, postcode, city, citySlug, stateSlug, state, lat, lon, phone, website, openingHours, wheelchair, features, evidence }))
+const providers = all.filter((s) => s.cat !== 'sanitaetshaus').map(({ cat, id, name, street, postcode, city, citySlug, stateSlug, state, lat, lon, phone, website, openingHours, hoursSource, wheelchair, features, evidence }) =>
+  ({ cat, id, name, street, postcode, city, citySlug, stateSlug, state, lat, lon, phone, website, openingHours, hoursSource, wheelchair, features, evidence }))
   .sort((a, b) => b.features.length - a.features.length || a.name.localeCompare(b.name, 'de'));
 
 // Shop-Slugs: name + stadt, bei Dopplung Straße bzw. Zähler
