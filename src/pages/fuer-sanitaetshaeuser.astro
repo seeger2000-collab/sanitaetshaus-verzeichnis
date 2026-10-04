@@ -1,0 +1,32 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE, FEATURED } from '../config';
+import { u } from '../lib/url';
+import { meta } from '../lib/data';
+const correction = SITE.correctionFormUrl || `${SITE.repoUrl}/issues/new?title=${encodeURIComponent('Eintrag ändern oder neu')}`;
+---
+<Base title="Für Sanitätshäuser: Eintrag ergänzen" description="Ihr Sanitätshaus fehlt oder Leistungen sind unvollständig? So ergänzen Sie Ihren Eintrag im Sanitätshaus-Verzeichnis." crumbs={[{ href: '/fuer-sanitaetshaeuser/', label: 'Für Sanitätshäuser' }]}>
+  <h1>Für Sanitätshäuser</h1>
+  <p class="lead">Ihr Haus ist eines von {meta.total.toLocaleString('de-DE')} Einträgen. Patienten suchen hier gezielt nach Leistungen wie Flachstrick-Kompression, Brustprothetik oder Hausbesuchen.</p>
+
+  <section class="card">
+    <h2>Eintrag kostenlos ergänzen</h2>
+    <p>Fehlt Ihr Haus, stimmt eine Adresse nicht oder fehlt eine Leistung? Melden Sie es uns. Die Basisdaten stammen aus OpenStreetMap, Leistungen lesen wir von Ihrer Website. Am schnellsten hilft es, wenn Ihre Leistungen auf Ihrer Website klar genannt sind.</p>
+    <p><a class="btn" href={correction} rel="nofollow">Eintrag ändern oder hinzufügen</a></p>
+  </section>
+
+  <section class="card top">
+    <h2>Top-Eintrag</h2>
+    <p>Mit einem Top-Eintrag steht Ihr Haus in Ihrer Stadt und auf den passenden Leistungsseiten ganz oben und ist hervorgehoben. Sie können zusätzlich Kassenverträge, Ansprechpartner und Fotos angeben.</p>
+    {FEATURED.paymentUrl
+      ? <p><strong>{FEATURED.priceText}</strong></p><p><a class="btn" href={FEATURED.paymentUrl}>Top-Eintrag buchen</a></p>
+      : <p class="muted">Top-Einträge sind bald verfügbar. Schreiben Sie uns über das Formular oben, wenn Sie Interesse haben.</p>}
+  </section>
+  <section class="card">
+    <h2>Siegel für Ihre Website</h2>
+    <p>Zeigen Sie Ihren Kunden, welche Leistungen Sie anbieten: Binden Sie diesen Link auf Ihrer Website ein. Ersetzen Sie dazu <code>IHR-EINTRAG</code> durch den letzten Teil der Adresse Ihrer Seite bei uns.</p>
+    <pre><code>{`<a href="${new URL(u('/sanitaetshaus/IHR-EINTRAG/'), Astro.site).href}">Unsere Leistungen im Sanitätshaus-Verzeichnis</a>`}</code></pre>
+  </section>
+  <p><a href={u('/ueber/')}>So entstehen die Daten</a></p>
+</Base>
+<style>pre { white-space: pre-wrap; overflow-wrap: anywhere; background: var(--accent); padding: 10px; border-radius: 8px; font-size: 0.85rem; } .card { margin: 16px 0; } .card h2 { margin-top: 0; } .top { border: 2px solid var(--gold); }</style>

@@ -1,0 +1,98 @@
+---
+import { SITE } from '../config';
+import { u } from '../lib/url';
+import { meta, fmtDate, clip } from '../lib/data';
+interface Props { title: string; description: string; crumbs?: { href: string; label: string }[]; noindex?: boolean; jsonLd?: object[] }
+const { title, crumbs = [], noindex = false, jsonLd = [] } = Astro.props;
+const description = clip(Astro.props.description);
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const abs = (path: string) => new URL(u(path), Astro.site).href;
+const ld = [...jsonLd];
+if (crumbs.length) ld.push({
+  '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+  itemListElement: [{ href: '/', label: 'Start' }, ...crumbs].map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.label, item: abs(c.href) })),
+});
+---
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {(!SITE.indexing || noindex) && <meta name="robots" content={SITE.indexing ? 'noindex, follow' : 'noindex, nofollow'} />}
+    {ld.map((o) => <script type="application/ld+json" set:html={JSON.stringify(o)} />)}
+    <link rel="icon" href={u('/favicon.svg')} type="image/svg+xml" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:locale" content="de_DE" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="logo" href={u('/')}><span aria-hidden="true">✚</span> {SITE.name}</a>
+        <nav aria-label="Hauptnavigation">
+          <a href={u('/leistung/')}>Leistungen</a>
+          <a href={u('/bundesland/')}>Bundesländer</a>
+          <a href={u('/fuer-sanitaetshaeuser/')}>Für Sanitätshäuser</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      {crumbs.length > 0 && (
+        <nav class="crumbs" aria-label="Brotkrumen">
+          <a href={u('/')}>Start</a>
+          {crumbs.map((c) => (<><span aria-hidden="true">›</span><a href={u(c.href)}>{c.label}</a></>))}
+        </nav>
+      )}
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>Daten: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (ODbL), Stand {fmtDate(meta.osmFetchedAt)}. Leistungen automatisch von den Websites der Häuser ausgelesen, ohne Gewähr.</p>
+        <p><a href={u('/ueber/')}>So entstehen die Daten</a> · <a href={u('/fuer-sanitaetshaeuser/')}>Eintrag ändern</a> · <a href={u('/impressum/')}>Impressum</a> · <a href={u('/datenschutz/')}>Datenschutz</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
+<style is:global>
+  :root {
+    --bg: #f7f8f7; --surface: #ffffff; --text: #1b2421; --muted: #55625d; --line: #d9dfdc;
+    --brand: #0f6b57; --brand-ink: #ffffff; --accent: #e7f3ef; --gold: #8a5a00; --gold-bg: #fff4dc;
+    --radius: 10px;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-size: 18px; line-height: 1.55; color: var(--text); background: var(--bg);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); }
+  a { color: var(--brand); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+  .site-header { background: var(--brand); color: var(--brand-ink); }
+  .site-header .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center; justify-content: space-between; padding-top: 14px; padding-bottom: 14px; }
+  .site-header a { color: var(--brand-ink); text-decoration: none; }
+  .logo { font-weight: 700; font-size: 1.15rem; }
+  .site-header nav { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 0.95rem; }
+  .site-header nav a:hover { text-decoration: underline; }
+  main { padding-top: 20px; padding-bottom: 48px; min-height: 60vh; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0.3em 0 0.4em; }
+  h2 { font-size: 1.35rem; margin: 1.6em 0 0.5em; }
+  .lead { font-size: 1.1rem; color: var(--muted); max-width: 46em; }
+  .crumbs { font-size: 0.85rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px; }
+  .crumbs a { color: var(--muted); }
+  .site-footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85rem; padding: 18px 0 32px; }
+  .site-footer a { color: var(--muted); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; padding: 0; list-style: none; }
+  .grid a.tile { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; text-decoration: none; color: var(--text); }
+  .grid a.tile:hover { border-color: var(--brand); }
+  .tile small { display: block; color: var(--muted); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 0; margin: 8px 0; list-style: none; }
+  .chip { background: var(--accent); color: var(--brand); border-radius: 999px; padding: 2px 10px; font-size: 0.82rem; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
+  .note { background: var(--gold-bg); color: var(--gold); border-radius: var(--radius); padding: 12px 14px; font-size: 0.92rem; }
+  .muted { color: var(--muted); }
+  .btn { display: inline-block; background: var(--brand); color: var(--brand-ink); padding: 10px 16px; border-radius: 8px; text-decoration: none; font-weight: 600; }
+  input[type=search] { width: 100%; font-size: 1.05rem; padding: 12px 14px; border: 2px solid var(--line); border-radius: var(--radius); }
+  input[type=search]:focus { outline: none; border-color: var(--brand); }
+  @media (max-width: 600px) { h1 { font-size: 1.5rem; } :root { font-size: 17px; } }
+</style>

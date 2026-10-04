@@ -1,0 +1,38 @@
+---
+import type { Shop } from '../lib/data';
+import { featureByKey } from '../lib/data';
+import { u } from '../lib/url';
+interface Props { shop: Shop; showCity?: boolean }
+const { shop, showCity = false } = Astro.props;
+const place = [shop.postcode, shop.postcode || showCity ? shop.city : null].filter(Boolean).join(' ');
+const address = [shop.street, place].filter(Boolean).join(', ');
+---
+<li class="shop" data-features={shop.features.join(' ')} data-wheelchair={shop.wheelchair === 'yes' ? '1' : ''}>
+  <article class={shop.featured ? 'card featured' : 'card'}>
+    {shop.featured && <p class="badge">Top-Eintrag</p>}
+    <h3><a href={u(`/sanitaetshaus/${shop.slug}/`)}>{shop.name}</a></h3>
+    <p class="addr">
+      {address}
+      {shop.wheelchair === 'yes' && <span class="acc">{address ? ' · ' : ''}barrierefrei</span>}
+    </p>
+    {shop.features.length > 0 && (
+      <ul class="chips">{shop.features.map((f) => <li class="chip">{featureByKey[f]?.label}</li>)}</ul>
+    )}
+    <p class="links">
+      {shop.phone && <a href={`tel:${shop.phone.split(';')[0].replace(/[^+\d]/g, '')}`}>{shop.phone.split(';')[0]}</a>}
+      {shop.website && <a href={shop.website} rel="nofollow noopener" target="_blank">Website</a>}
+      <a href={u(`/sanitaetshaus/${shop.slug}/`)}>Details</a>
+    </p>
+  </article>
+</li>
+<style>
+  .shop { list-style: none; }
+  h3 { margin: 0 0 4px; font-size: 1.1rem; }
+  h3 a { color: var(--text); text-decoration: none; }
+  h3 a:hover { color: var(--brand); text-decoration: underline; }
+  .addr { margin: 0; color: var(--muted); font-size: 0.95rem; }
+  .acc { color: var(--brand); }
+  .links { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 6px 0 0; font-size: 0.95rem; }
+  .featured { border: 2px solid var(--gold); }
+  .badge { margin: 0 0 4px; color: var(--gold); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; }
+</style>

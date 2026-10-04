@@ -1,0 +1,8 @@
+---
+import Base from '../layouts/Base.astro';
+import { u } from '../lib/url';
+---
+<Base noindex title="Seite nicht gefunden" description="Diese Seite gibt es nicht.">
+  <h1>Seite nicht gefunden</h1>
+  <p>Vielleicht ist das Sanitätshaus umgezogen oder geschlossen. <a href={u('/')}>Zur Startseite und Ort suchen</a></p>
+</Base>

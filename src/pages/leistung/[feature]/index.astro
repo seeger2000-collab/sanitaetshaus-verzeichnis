@@ -1,0 +1,33 @@
+---
+import Base from '../../../layouts/Base.astro';
+import PflegeboxHinweis from '../../../components/PflegeboxHinweis.astro';
+import { u } from '../../../lib/url';
+import { features, shops, states, fit } from '../../../lib/data';
+export function getStaticPaths() {
+  return features.filter((f) => f.count > 0).map((f) => ({ params: { feature: f.slug }, props: { feature: f } }));
+}
+const { feature } = Astro.props;
+const matching = shops.filter((s) => s.features.includes(feature.key));
+const byState = states.map((st) => {
+  const inState = matching.filter((s) => s.state === st.name);
+  const cityMap = new Map<string, { slug: string; label: string; n: number }>();
+  for (const s of inState) {
+    const c = cityMap.get(s.citySlug) ?? { slug: s.citySlug, label: s.city, n: 0 };
+    c.n++; cityMap.set(s.citySlug, c);
+  }
+  return { ...st, n: inState.length, cities: [...cityMap.values()].sort((a, b) => a.label.localeCompare(b.label, 'de')) };
+}).filter((s) => s.n > 0);
+---
+<Base title={fit([`${feature.title}: ${matching.length} Adressen`, `${feature.short}: ${matching.length} Sanitätshäuser in Deutschland`])} description={`${matching.length} Sanitätshäuser in Deutschland mit ${feature.label}. Nach Bundesland und Stadt sortiert.`} crumbs={[{ href: '/leistung/', label: 'Leistungen' }, { href: `/leistung/${feature.slug}/`, label: feature.label }]}>
+  <h1>{feature.title}</h1>
+  <p class="lead">{matching.length} Sanitätshäuser mit dem Angebot „{feature.label}“, erkannt auf ihren Websites. Wähle deinen Ort.</p>
+  {byState.map((st) => (
+    <section id={st.slug}>
+      <h2>{st.name} <span class="muted">({st.n})</span></h2>
+      <ul class="grid">
+        {st.cities.map((c) => (<li><a class="tile" href={u(`/leistung/${feature.slug}/${c.slug}/`)}>{c.label}<small>{c.n} {c.n === 1 ? 'Haus' : 'Häuser'}</small></a></li>))}
+      </ul>
+    </section>
+  ))}
+  {feature.key === 'pflegehilfsmittel' && <PflegeboxHinweis />}
+</Base>

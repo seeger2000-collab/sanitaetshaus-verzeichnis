@@ -1,0 +1,834 @@
+{
+ "graph": "cc-main-2026-jul-aug-sep",
+ "ziele": [
+  {
+   "domain": "hamburg.de",
+   "rang": 3701,
+   "verweisendeDomains": 17296,
+   "davonDe": 12238,
+   "staerkste": [
+    "google.com (#3)",
+    "apple.com (#13)",
+    "wikipedia.org (#14)",
+    "microsoft.com (#19)",
+    "wordpress.org (#21)",
+    "github.com (#26)",
+    "europa.eu (#30)",
+    "mozilla.org (#35)",
+    "amazonaws.com (#36)",
+    "shopify.com (#39)",
+    "blogspot.com (#40)",
+    "bit.ly (#41)",
+    "github.io (#45)",
+    "medium.com (#47)",
+    "nih.gov (#53)"
+   ]
+  },
+  {
+   "domain": "muenchen.de",
+   "rang": 8767,
+   "verweisendeDomains": 12025,
+   "davonDe": 7488,
+   "staerkste": [
+    "google.com (#3)",
+    "wikipedia.org (#14)",
+    "microsoft.com (#19)",
+    "github.com (#26)",
+    "europa.eu (#30)",
+    "mozilla.org (#35)",
+    "amazonaws.com (#36)",
+    "blogspot.com (#40)",
+    "github.io (#45)",
+    "nih.gov (#53)",
+    "squarespace.com (#55)",
+    "stripe.com (#64)",
+    "statista.com (#75)",
+    "wikimedia.org (#77)",
+    "weebly.com (#89)"
+   ]
+  },
+  {
+   "domain": "gelbeseiten.de",
+   "rang": 23398,
+   "verweisendeDomains": 2359,
+   "davonDe": 1664,
+   "staerkste": [
+    "google.com (#3)",
+    "wikipedia.org (#14)",
+    "shopify.com (#39)",
+    "blogspot.com (#40)",
+    "github.io (#45)",
+    "wix.com (#189)",
+    "uni-goettingen.de (#776)",
+    "wikiversity.org (#1025)",
+    "hpage.com (#1130)",
+    "free.fr (#1286)",
+    "libsyn.com (#1402)",
+    "yext.com (#2028)",
+    "presseportal.de (#2137)",
+    "gencat.cat (#2174)",
+    "mpg.de (#2371)"
+   ]
+  },
+  {
+   "domain": "cylex.de",
+   "rang": 67484,
+   "verweisendeDomains": 1698,
+   "davonDe": 1232,
+   "staerkste": [
+    "google.com (#3)",
+    "wikipedia.org (#14)",
+    "blogspot.com (#40)",
+    "eu.com (#266)",
+    "onrender.com (#408)",
+    "hpage.com (#1130)",
+    "free.fr (#1286)",
+    "openstreetmap.org (#1978)",
+    "archdaily.com (#1997)",
+    "tugraz.at (#3352)",
+    "hamburg.de (#3701)",
+    "arbeitsagentur.de (#3874)",
+    "provenexpert.com (#4237)",
+    "hubspot.de (#4529)",
+    "flow.page (#4979)"
+   ]
+  },
+  {
+   "domain": "golocal.de",
+   "rang": 49208,
+   "verweisendeDomains": 1291,
+   "davonDe": 958,
+   "staerkste": [
+    "google.com (#3)",
+    "wikipedia.org (#14)",
+    "blogspot.com (#40)",
+    "tinyurl.com (#104)",
+    "linktr.ee (#109)",
+    "wix.com (#189)",
+    "onrender.com (#408)",
+    "free.fr (#1286)",
+    "usp.br (#1513)",
+    "gencat.cat (#2174)",
+    "zeit.de (#2568)",
+    "mcafee.com (#2776)",
+    "sumup.com (#2997)",
+    "provenexpert.com (#4237)",
+    "hubspot.de (#4529)"
+   ]
+  },
+  {
+   "domain": "dastelefonbuch.de",
+   "rang": 45801,
+   "verweisendeDomains": 1270,
+   "davonDe": 809,
+   "staerkste": [
+    "google.com (#3)",
+    "apple.com (#13)",
+    "wikipedia.org (#14)",
+    "blogspot.com (#40)",
+    "bit.ly (#41)",
+    "wixsite.com (#95)",
+    "tinyurl.com (#104)",
+    "google.de (#122)",
+    "sueddeutsche.de (#524)",
+    "wikidata.org (#587)",
+    "wikiversity.org (#1025)",
+    "hpage.com (#1130)",
+    "free.fr (#1286)",
+    "kavkazcenter.com (#1666)",
+    "presseportal.de (#2137)"
+   ]
+  },
+  {
+   "domain": "wlw.de",
+   "rang": 403425,
+   "verweisendeDomains": 963,
+   "davonDe": 564,
+   "staerkste": [
+    "wikipedia.org (#14)",
+    "shopify.com (#39)",
+    "adobe.com (#42)",
+    "godaddy.com (#136)",
+    "wikiversity.org (#1025)",
+    "free.fr (#1286)",
+    "libsyn.com (#1402)",
+    "presseportal.de (#2137)",
+    "oberlo.com (#2495)",
+    "ihk.de (#2967)",
+    "taz.de (#3051)",
+    "wko.at (#3218)",
+    "wikidot.com (#3589)",
+    "provenexpert.com (#4237)",
+    "hubspot.de (#4529)"
+   ]
+  },
+  {
+   "domain": "goyellow.de",
+   "rang": 62446,
+   "verweisendeDomains": 877,
+   "davonDe": 633,
+   "staerkste": [
+    "google.com (#3)",
+    "wikipedia.org (#14)",
+    "blogspot.com (#40)",
+    "github.io (#45)",
+    "wikimedia.org (#77)",
+    "onrender.com (#408)",
+    "pbworks.com (#618)",
+    "wikinews.org (#930)",
+    "free.fr (#1286)",
+    "norton.com (#1787)",
+    "ihk.de (#2967)",
+    "provenexpert.com (#4237)",
+    "hubspot.de (#4529)",
+    "xsrv.jp (#4924)",
+    "ubuntuusers.de (#9199)"
+   ]
+  },
+  {
+   "domain": "seniorenportal.de",
+   "rang": 70096,
+   "verweisendeDomains": 451,
+   "davonDe": 209,
+   "staerkste": [
+    "google.com (#3)",
+    "wikipedia.org (#14)",
+    "blogspot.com (#40)",
+    "netlify.app (#148)",
+    "mystrikingly.com (#374)",
+    "onrender.com (#408)",
+    "telegra.ph (#437)",
+    "neocities.org (#678)",
+    "jotform.com (#714)",
+    "hpage.com (#1130)",
+    "bayern.de (#2085)",
+    "faz.net (#3494)",
+    "short.gy (#4305)",
+    "xrea.com (#4796)",
+    "jw.lt (#5877)"
+   ]
+  },
+  {
+   "domain": "sani-aktuell.de",
+   "rang": 234365,
+   "verweisendeDomains": 133,
+   "davonDe": 108,
+   "staerkste": [
+    "google.com (#3)",
+    "personio.de (#9269)",
+    "online.de (#10967)",
+    "pressetext.com (#53083)",
+    "lindera.de (#62609)",
+    "inter.de (#193907)",
+    "podcaster.de (#400003)",
+    "wir-sind-kaufbeuren.de (#436879)",
+    "ot-world.com (#510782)",
+    "mitteldeutscherverlag.de (#552937)",
+    "verlag-reiffer.de (#713110)",
+    "stoma-welt.de (#718374)",
+    "abfallmanager-medizin.de (#1182361)",
+    "beuthel.de (#1216791)",
+    "gruene-fraktion-reinickendorf.de (#2714878)"
+   ]
+  },
+  {
+   "domain": "wlw.at",
+   "rang": 9205170,
+   "verweisendeDomains": 84,
+   "davonDe": 42,
+   "staerkste": [
+    "gencat.cat (#2174)",
+    "sistrix.com (#8155)",
+    "accio.com (#15590)",
+    "medianet.at (#77152)",
+    "intently.co (#121243)",
+    "ostheimer.at (#419744)",
+    "lloydsbanktrade.com (#482766)",
+    "agriculturaemar.com (#632505)",
+    "derinstallateur.at (#1097955)",
+    "bankofscotlandtrade.co.uk (#1241091)",
+    "brand-nagelberg.at (#1289688)",
+    "visable.com (#2275683)",
+    "letsfixit.co.uk (#2460786)",
+    "wallmanderco.se (#6499534)",
+    "kliada.de (#6684830)"
+   ]
+  },
+  {
+   "domain": "rehavital.de",
+   "rang": 10157140,
+   "verweisendeDomains": 78,
+   "davonDe": 60,
+   "staerkste": [
+    "bundestag.de (#2594)",
+    "eveeno.com (#11884)",
+    "inter.de (#193907)",
+    "weber-ai.com (#357414)",
+    "ransomware.live (#610763)",
+    "acriba.de (#1040965)",
+    "fgskw.org (#1274105)",
+    "hansemerkur.de (#1881450)",
+    "barmenia.de (#6678392)",
+    "gws.ms (#6888977)",
+    "ibb-as.com (#7263023)",
+    "simplefit.de (#8964430)",
+    "biv-ot.org (#9093785)",
+    "wirversorgendeutschland.de (#9204233)",
+    "stolle-ot.de (#9317398)"
+   ]
+  },
+  {
+   "domain": "pflege-helfer24.de",
+   "rang": 6554867,
+   "verweisendeDomains": 68,
+   "davonDe": 48,
+   "staerkste": [
+    "github.io (#45)",
+    "elsevier.com (#336)",
+    "tiscali.cz (#44454)",
+    "platoniq.health (#162147)",
+    "kreis-paderborn.de (#413974)",
+    "join.com (#418625)",
+    "rws-verlag.de (#675036)",
+    "buerger-geld.org (#846261)",
+    "altenheim.net (#1175238)",
+    "familienratgeber.de (#1890955)",
+    "listflix.de (#1918248)",
+    "libify.com (#2004995)",
+    "am-beratung.de (#9806683)",
+    "ergoflix.de (#9971904)",
+    "der-indat.de (#10454325)"
+   ]
+  },
+  {
+   "domain": "joviva.de",
+   "rang": 10583643,
+   "verweisendeDomains": 65,
+   "davonDe": 55,
+   "staerkste": [
+    "presseportal.de (#2137)",
+    "inpactmedia.com (#89551)",
+    "sani-aktuell.de (#234365)",
+    "rehamigo.de (#276462)",
+    "donista.org (#313220)",
+    "deutsche-startups.de (#404084)",
+    "fair-news.de (#543341)",
+    "pharma-relations.de (#1172088)",
+    "rehacare.de (#2224409)",
+    "kommunistischepartei.de (#3036615)",
+    "atemdenkschaltwerk.de (#3137700)",
+    "postmaster-magazin.de (#3527713)",
+    "rehacare.com (#6584683)",
+    "reha-team-leer.de (#7976786)",
+    "mein-gesundheitsmagazin.com (#10172918)"
+   ]
+  },
+  {
+   "domain": "pflegesuche.de",
+   "rang": 30759959,
+   "verweisendeDomains": 59,
+   "davonDe": 52,
+   "staerkste": [
+    "gelsenkirchen.de (#431509)",
+    "shecancode.io (#447322)",
+    "gapa.de (#468299)",
+    "chemiepark.de (#1158846)",
+    "burladingen.de (#1181300)",
+    "fronhausen.de (#1181629)",
+    "lazarus.at (#1253670)",
+    "heeme-fehlste.de (#2741150)",
+    "pflegehilfe.org (#7675282)",
+    "web-demokratie.de (#8332007)",
+    "kulturgiesserei-saarburg.de (#9760976)",
+    "anbosagig.de (#10062648)",
+    "a-rehfeldt.de (#10459122)",
+    "pflegeschule-nea.de (#10569911)",
+    "familienportal-bamberg.de (#11053014)"
+   ]
+  },
+  {
+   "domain": "koelnerbranchen.de",
+   "rang": 19703336,
+   "verweisendeDomains": 46,
+   "davonDe": 34,
+   "staerkste": [
+    "marktplatz-mittelstand.de (#60643)",
+    "intently.co (#121243)",
+    "chronikwort.de (#181608)",
+    "krugermagazine.com (#685092)",
+    "meinkoelnbonn.de (#2063098)",
+    "deutscher-webkatalog.com (#2997023)",
+    "cologneweb.com (#3067213)",
+    "marla-schnee-cosmetics.de (#3197110)",
+    "der-branchenindex.de (#4786884)",
+    "xn--9d0b4b70vnol89ezvdmykd32abaw.kr (#7698374)",
+    "ralfzosel.de (#8614218)",
+    "auskunft.de (#8920312)",
+    "branchen-duesseldorf.de (#9655101)",
+    "platzda.de (#11949843)",
+    "bongardt-bonn.de (#12573251)"
+   ]
+  },
+  {
+   "domain": "weshoplocal.de",
+   "rang": 15441914,
+   "verweisendeDomains": 23,
+   "davonDe": 14,
+   "staerkste": [
+    "accio.com (#15590)",
+    "apotheken.de (#60666)",
+    "kopareykir.com (#148209)",
+    "12hp.de (#627495)",
+    "pisgahview.net (#2884114)",
+    "meinwegausderangst.de (#6573586)",
+    "spacioblanco.com (#7688467)",
+    "apocdn.net (#8308469)",
+    "auskunft.de (#8920312)",
+    "branchen-duesseldorf.de (#9655101)",
+    "die-bekleber.com (#12539604)",
+    "berlinerbranchen.com (#14710804)",
+    "essener-branchenbuch.de (#17737080)",
+    "bookmeyer-ol.de (#17825242)",
+    "koelnerbranchen.de (#19703336)"
+   ]
+  },
+  {
+   "domain": "sanitaetshaus-orthopaedie.de",
+   "rang": 34837260,
+   "verweisendeDomains": 20,
+   "davonDe": 15,
+   "staerkste": [
+    "kreis-dueren.de (#486562)",
+    "healthcare-bayern.de (#9358714)",
+    "bad-iburg-marketing.de (#11071351)",
+    "gewerbeverein-waltershausen.de (#11495048)",
+    "vfb-artern.de (#14475145)",
+    "rotary-glueckseisuche.de (#18943666)",
+    "haspo-bayreuth.de (#26093527)",
+    "handball-sauerlach.de (#26616207)",
+    "oehringen-lieblingsstadt.de (#26942091)",
+    "stadtmarketing-lennestadt.de (#27378544)",
+    "pr-hospiz.de (#27424230)",
+    "ratgeber-arzt.com (#28159255)",
+    "therapeutenteam.com (#34325653)",
+    "wjt-ortho.com (#35457323)",
+    "senioren-emsdetten.de (#37043925)"
+   ]
+  },
+  {
+   "domain": "sanimio.de",
+   "rang": 56147341,
+   "verweisendeDomains": 9,
+   "davonDe": 6,
+   "staerkste": [
+    "digitaleseiten.de (#2511636)",
+    "ergoflix.de (#9971904)",
+    "pflege.net (#25704664)",
+    "pressemitteilung-profi.de (#28144896)",
+    "installateur-john.de (#32369691)",
+    "pressemitteilungen.ws (#33845626)",
+    "markthallemg.de (#34088652)",
+    "xn--tischlerei-wolfenbttel-9lc.de (#73611052)",
+    "was-kostet.org (#74750313)"
+   ]
+  },
+  {
+   "domain": "scitrace.com",
+   "rang": 29466030,
+   "verweisendeDomains": 4,
+   "davonDe": 2,
+   "staerkste": [
+    "dewiki.de (#144857)",
+    "neckaralb.de (#10139780)",
+    "comprenders.com (#16549375)",
+    "adressen-kaufen.online (#96932542)"
+   ]
+  }
+ ],
+ "luecken": [
+  {
+   "domain": "google.com",
+   "rang": 3,
+   "verlinkt": [
+    "seniorenportal.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "inter.de",
+   "rang": 193907,
+   "verlinkt": [
+    "sani-aktuell.de",
+    "rehavital.de"
+   ]
+  },
+  {
+   "domain": "aktive-rentner.de",
+   "rang": 7034800,
+   "verlinkt": [
+    "seniorenportal.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "reha-team-leer.de",
+   "rang": 7976786,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "web-demokratie.de",
+   "rang": 8332007,
+   "verlinkt": [
+    "pflegesuche.de",
+    "seniorenportal.de"
+   ]
+  },
+  {
+   "domain": "biv-ot.org",
+   "rang": 9093785,
+   "verlinkt": [
+    "sani-aktuell.de",
+    "rehavital.de"
+   ]
+  },
+  {
+   "domain": "wirversorgendeutschland.de",
+   "rang": 9204233,
+   "verlinkt": [
+    "sani-aktuell.de",
+    "rehavital.de"
+   ]
+  },
+  {
+   "domain": "ergoflix.de",
+   "rang": 9971904,
+   "verlinkt": [
+    "sanimio.de",
+    "pflege-helfer24.de"
+   ]
+  },
+  {
+   "domain": "inkontinenz-selbsthilfe.com",
+   "rang": 10180739,
+   "verlinkt": [
+    "sani-aktuell.de",
+    "rehavital.de"
+   ]
+  },
+  {
+   "domain": "a-rehfeldt.de",
+   "rang": 10459122,
+   "verlinkt": [
+    "pflegesuche.de",
+    "seniorenportal.de"
+   ]
+  },
+  {
+   "domain": "hallesche.de",
+   "rang": 10837088,
+   "verlinkt": [
+    "sani-aktuell.de",
+    "rehavital.de"
+   ]
+  },
+  {
+   "domain": "sani-klein.de",
+   "rang": 11336977,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "wiesanha.de",
+   "rang": 11488982,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "firmenliste.info",
+   "rang": 11493957,
+   "verlinkt": [
+    "sani-aktuell.de",
+    "rehavital.de"
+   ]
+  },
+  {
+   "domain": "kt-reha.de",
+   "rang": 12026705,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "begicare57.de",
+   "rang": 12452542,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "recara.de",
+   "rang": 12544774,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "nubedian.de",
+   "rang": 12697702,
+   "verlinkt": [
+    "sani-aktuell.de",
+    "rehavital.de"
+   ]
+  },
+  {
+   "domain": "wir-helfen-gemeinsam.de",
+   "rang": 13397295,
+   "verlinkt": [
+    "seniorenportal.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "gebauer-hilft.de",
+   "rang": 13819309,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "sanitaetshaus-kersting.de",
+   "rang": 13932289,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "demenz-region-swp.de",
+   "rang": 14177669,
+   "verlinkt": [
+    "pflegesuche.de",
+    "seniorenportal.de"
+   ]
+  },
+  {
+   "domain": "zimmermann-team.de",
+   "rang": 14312104,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "langermeier.de",
+   "rang": 17016125,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "darco.de",
+   "rang": 18353933,
+   "verlinkt": [
+    "sani-aktuell.de",
+    "rehavital.de"
+   ]
+  },
+  {
+   "domain": "sanitaetshaus-kocher.de",
+   "rang": 18939531,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "urban-kemmler.de",
+   "rang": 19385203,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "vitalzentren.com",
+   "rang": 19958827,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "pflege.net",
+   "rang": 25704664,
+   "verlinkt": [
+    "sanimio.de",
+    "pflege-helfer24.de"
+   ]
+  },
+  {
+   "domain": "sanitaetshaus-pauli.de",
+   "rang": 26277356,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "grotjahn.de",
+   "rang": 27445523,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "sanitaetshaus-liebe.de",
+   "rang": 28061168,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "klemen-homecare.de",
+   "rang": 28178371,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "appelrath-kemper.de",
+   "rang": 28753950,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "marx-rieger.de",
+   "rang": 28819608,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "sani-speer.de",
+   "rang": 30042941,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "springer-berlin.de",
+   "rang": 35282376,
+   "verlinkt": [
+    "sani-aktuell.de",
+    "rehavital.de"
+   ]
+  },
+  {
+   "domain": "sanitaetshaus-hellwig.de",
+   "rang": 41241540,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "alltagshilfe-oberbayern.de",
+   "rang": 49563588,
+   "verlinkt": [
+    "seniorenportal.de",
+    "pflege-helfer24.de"
+   ]
+  },
+  {
+   "domain": "modetipps-maenner.de",
+   "rang": 57223563,
+   "verlinkt": [
+    "joviva.de",
+    "rehavital.de"
+   ]
+  },
+  {
+   "domain": "sanitaetshausbauer.de",
+   "rang": 67798909,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "sani-werner.de",
+   "rang": 72146705,
+   "verlinkt": [
+    "joviva.de",
+    "sani-aktuell.de"
+   ]
+  },
+  {
+   "domain": "pflegeschulen-hofheim.de",
+   "rang": 73552440,
+   "verlinkt": [
+    "pflegesuche.de",
+    "seniorenportal.de"
+   ]
+  },
+  {
+   "domain": "xn--tischlerei-wolfenbttel-9lc.de",
+   "rang": 73611052,
+   "verlinkt": [
+    "sanimio.de",
+    "pflege-helfer24.de"
+   ]
+  },
+  {
+   "domain": "praxiswest.de",
+   "rang": 73997432,
+   "verlinkt": [
+    "pflegesuche.de",
+    "seniorenportal.de"
+   ]
+  },
+  {
+   "domain": "was-kostet.org",
+   "rang": 74750313,
+   "verlinkt": [
+    "sanimio.de",
+    "pflege-helfer24.de"
+   ]
+  },
+  {
+   "domain": "seniorenbetreuung-nrw.de",
+   "rang": 97708254,
+   "verlinkt": [
+    "pflegesuche.de",
+    "seniorenportal.de"
+   ]
+  },
+  {
+   "domain": "sanivision.net",
+   "rang": 130955990,
+   "verlinkt": [
+    "sani-aktuell.de",
+    "rehavital.de"
+   ]
+  }
+ ]
+}

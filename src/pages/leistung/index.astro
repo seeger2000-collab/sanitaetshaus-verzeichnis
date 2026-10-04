@@ -1,0 +1,12 @@
+---
+import Base from '../../layouts/Base.astro';
+import { u } from '../../lib/url';
+import { features } from '../../lib/data';
+---
+<Base title="Sanitätshäuser nach Leistung finden" description="Sanitätshäuser mit Hausbesuch, Flachstrick-Kompression, Brustprothetik, Kinderversorgung, Rollstuhl-Werkstatt und mehr." crumbs={[{ href: '/leistung/', label: 'Leistungen' }]}>
+  <h1>Sanitätshäuser nach Leistung</h1>
+  <p class="lead">Nicht jedes Sanitätshaus kann alles. Diese Leistungen haben wir auf den Websites der Häuser erkannt.</p>
+  <ul class="grid">
+    {features.filter((f) => f.count > 0).map((f) => (<li><a class="tile" href={u(`/leistung/${f.slug}/`)}>{f.label}<small>{f.count} Häuser</small></a></li>))}
+  </ul>
+</Base>

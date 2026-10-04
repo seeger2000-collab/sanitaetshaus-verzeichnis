@@ -1,0 +1,22 @@
+{
+  "name": "sanitaetshaus-verzeichnis",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "fetch:osm": "node scripts/fetch-osm.mjs",
+    "enrich": "node scripts/enrich.mjs",
+    "data": "node scripts/build-data.mjs",
+    "update": "node scripts/fetch-osm.mjs && node scripts/enrich.mjs && node scripts/build-data.mjs",
+    "dev": "astro dev",
+    "build": "node scripts/build-data.mjs && astro build",
+    "preview": "astro preview",
+    "seo:onpage": "node scripts/seo/onpage.mjs scripts/seo/konkurrenz.txt > reports/onpage/konkurrenz.json",
+    "seo:audit": "npm run build && node scripts/seo/onpage.mjs --dir dist --base https://seeger2000-collab.github.io/sanitaetshaus-verzeichnis > reports/onpage/eigene-seite.json && node scripts/seo/audit.mjs reports/onpage/eigene-seite.json",
+    "seo:backlinks": "bash scripts/seo/backlinks.sh sanimio.de joviva.de pflegesuche.de seniorenportal.de sani-aktuell.de rehavital.de pflege-helfer24.de sanitaetshaus-orthopaedie.de scitrace.com gelbeseiten.de && node scripts/seo/backlink-report.mjs reports/backlinks/${GRAPH:-cc-main-2026-jul-aug-sep} sanimio.de joviva.de pflegesuche.de seniorenportal.de sani-aktuell.de rehavital.de pflege-helfer24.de sanitaetshaus-orthopaedie.de scitrace.com"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.3.5"
+  }
+}

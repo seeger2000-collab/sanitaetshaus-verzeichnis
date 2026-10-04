@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import { meta, features, fmtDate } from '../lib/data';
+---
+<Base title="So entstehen die Daten" description="Woher die Adressen und Leistungen im Sanitätshaus-Verzeichnis stammen und wie aktuell sie sind." crumbs={[{ href: '/ueber/', label: 'Über die Daten' }]}>
+  <h1>So entstehen die Daten</h1>
+  <h2>Adressen</h2>
+  <p>Alle Adressen, Telefonnummern, Öffnungszeiten und Angaben zur Barrierefreiheit stammen aus <a href="https://www.openstreetmap.org/">OpenStreetMap</a>, der freien Weltkarte. Daten © OpenStreetMap-Mitwirkende, verfügbar unter der <a href="https://opendatacommons.org/licenses/odbl/">Open Database License (ODbL)</a>. Stand: {fmtDate(meta.osmFetchedAt)}.</p>
+  <h2>Leistungen</h2>
+  <p>Für {meta.withWebsiteData.toLocaleString('de-DE')} Häuser haben wir die Website ausgelesen und nach Stichworten gesucht, zum Beispiel „Hausbesuch“, „Flachstrick“ oder „Brustprothetik“. Bei jeder erkannten Leistung verlinken wir die Seite, auf der wir sie gefunden haben. Das geht automatisch und kann Fehler enthalten: Gehört ein Haus zu einer Kette, kann die Website auch Leistungen anderer Filialen nennen.</p>
+  <p>Wir suchen derzeit nach diesen Leistungen:</p>
+  <ul>{features.map((f) => <li>{f.label}</li>)}</ul>
+  <h2>Krankenkassen</h2>
+  <p>Welche Kassen ein Haus auf seiner Website nennt, zeigen wir an. Ob ein Vertrag mit Ihrer Kasse besteht, ist öffentlich nicht vollständig bekannt. Fragen Sie bitte vor dem Besuch nach.</p>
+  <h2>Aktualität</h2>
+  <p>Die Daten werden regelmäßig neu geladen. Letzte Aktualisierung der Seite: {fmtDate(meta.builtAt)}.</p>
+</Base>

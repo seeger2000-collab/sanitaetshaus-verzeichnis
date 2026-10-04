@@ -1,0 +1,42 @@
+---
+import Base from '../../../layouts/Base.astro';
+import ShopList from '../../../components/ShopList.astro';
+import Map from '../../../components/Map.astro';
+import { u } from '../../../lib/url';
+import { km } from '../../../lib/geo';
+import { features, shops, cities, meta, fit } from '../../../lib/data';
+export function getStaticPaths() {
+  const paths = [];
+  for (const f of features) {
+    const seen = new Set<string>();
+    for (const s of shops) if (s.features.includes(f.key)) seen.add(s.citySlug);
+    for (const slug of seen) paths.push({ params: { feature: f.slug, city: slug }, props: { feature: f, city: cities.find((c) => c.slug === slug)! } });
+  }
+  return paths;
+}
+const { feature, city } = Astro.props;
+const list = shops.filter((s) => s.citySlug === city.slug && s.features.includes(feature.key));
+const nearby = shops
+  .filter((s) => s.citySlug !== city.slug && s.features.includes(feature.key))
+  .map((s) => ({ s, d: km(city, s) })).filter((x) => x.d <= 40).sort((a, b) => a.d - b.d).slice(0, 10).map((x) => x.s);
+const n = list.length;
+const one = n === 1;
+const itemList = { '@context': 'https://schema.org', '@type': 'ItemList', name: `${feature.label} in ${city.label}`, numberOfItems: n,
+  itemListElement: list.map((s, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(u(`/sanitaetshaus/${s.slug}/`), Astro.site).href, name: s.name })) };
+---
+<Base
+  title={fit([`${feature.short} in ${city.label}: ${n} ${one ? 'Sanitätshaus' : 'Sanitätshäuser'}${nearby.length ? ` + ${nearby.length} in der Nähe` : ''}`, `${feature.short} in ${city.label}: ${n} ${one ? 'Sanitätshaus' : 'Sanitätshäuser'}`, `${feature.short} ${city.label}`])}
+  description={`${n} ${one ? 'Sanitätshaus' : 'Sanitätshäuser'} in ${city.label} mit ${feature.label}${nearby.length ? `, dazu ${nearby.length} weitere im Umkreis von 40 km` : ''}. Adressen, Telefon und Quelle der Angabe.`}
+  jsonLd={[itemList]}
+  crumbs={[{ href: '/leistung/', label: 'Leistungen' }, { href: `/leistung/${feature.slug}/`, label: feature.label }, { href: `/leistung/${feature.slug}/${city.slug}/`, label: city.label }]}>
+  <h1>{feature.title} in {city.label}</h1>
+  <p class="lead">{n} {one ? 'Sanitätshaus' : 'Sanitätshäuser'} in {city.label} {one ? 'nennt' : 'nennen'} „{feature.label}“ auf der eigenen Website. Bei jedem Haus verlinken wir die Seite, auf der wir es gefunden haben. <a href={u(`/stadt/${city.slug}/`)}>Alle {city.count} Sanitätshäuser in {city.label}</a></p>
+  <Map shops={[...list, ...nearby]} />
+  <ShopList shops={list} filter={false} />
+  {nearby.length > 0 && (<>
+    <h2>{feature.label} in der Nähe von {city.label}</h2>
+    <p class="muted">Im Umkreis von 40 km, nach Entfernung sortiert.</p>
+    <ShopList shops={nearby} filter={false} showCity={true} />
+  </>)}
+  <p class="muted"><small>Automatisch erkannt am {new Date(meta.builtAt).toLocaleDateString('de-DE')}. Bitte vor dem Besuch telefonisch bestätigen.</small></p>
+</Base>

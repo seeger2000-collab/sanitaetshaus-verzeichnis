@@ -1,0 +1,54 @@
+---
+import Base from '../../layouts/Base.astro';
+import ShopList from '../../components/ShopList.astro';
+import Map from '../../components/Map.astro';
+import Faq from '../../components/Faq.astro';
+import PflegeboxHinweis from '../../components/PflegeboxHinweis.astro';
+import { u } from '../../lib/url';
+import { cities, shopsInCity, features, nearbyCities, meta, fmtDate, fit } from '../../lib/data';
+export function getStaticPaths() {
+  return cities.map((c) => ({ params: { city: c.slug }, props: { city: c } }));
+}
+const { city } = Astro.props;
+const list = shopsInCity(city.slug);
+const n = list.length;
+const one = n === 1;
+const near = nearbyCities(city, 10);
+const feats = features.map((f) => ({ ...f, shops: list.filter((s) => s.features.includes(f.key)) })).filter((f) => f.shops.length > 0);
+const accessible = list.filter((s) => s.wheelchair === 'yes').length;
+const featCount = (k: string) => feats.find((f) => f.key === k)?.shops.length ?? 0;
+const names = (k: string) => feats.find((f) => f.key === k)?.shops.slice(0, 3).map((s) => s.name).join(', ');
+const where = `in ${city.label}`;
+
+const faq = [
+  { q: `Wie viele Sanitätshäuser gibt es ${where}?`, a: `Wir kennen ${n} ${one ? 'Sanitätshaus' : 'Sanitätshäuser'} ${where}${accessible ? `, davon ${accessible} stufenlos erreichbar` : ''}. Stand der Adressen: ${fmtDate(meta.osmFetchedAt)}.` },
+  { q: `Welches Sanitätshaus ${where} macht Hausbesuche?`, a: featCount('hausbesuch') ? `Laut eigener Website bieten ${featCount('hausbesuch')} Häuser Hausbesuche an, zum Beispiel ${names('hausbesuch')}.` : `Auf den Websites der Häuser ${where} haben wir keinen Hinweis auf Hausbesuche gefunden. Fragen Sie trotzdem nach, viele Häuser liefern auf Rezept nach Hause. Häuser mit Hausbesuch in der Nähe finden Sie unter „Hausbesuche“.` },
+  { q: `Wo bekomme ich ${where} Flachstrick-Kompression bei Lip- oder Lymphödem?`, a: featCount('lymph') ? `${featCount('lymph')} Häuser nennen Flachstrick oder Lymph-Versorgung, zum Beispiel ${names('lymph')}.` : `Keines der Häuser ${where} nennt Flachstrick auf seiner Website. In der Liste „Lymph- und Lipödem-Versorgung“ finden Sie Häuser in der Umgebung.` },
+  { q: 'Brauche ich ein Rezept?', a: 'Für Hilfsmittel, die die Krankenkasse bezahlen soll, brauchen Sie eine Verordnung vom Arzt. Gesetzlich Versicherte zahlen meist 10 % zu, mindestens 5 € und höchstens 10 € pro Hilfsmittel. Ob ein Haus mit Ihrer Kasse einen Vertrag hat, fragen Sie am besten vorher telefonisch.' },
+];
+const itemList = { '@context': 'https://schema.org', '@type': 'ItemList', name: `Sanitätshäuser ${where}`, numberOfItems: n,
+  itemListElement: list.slice(0, 50).map((s, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(u(`/sanitaetshaus/${s.slug}/`), Astro.site).href, name: s.name })) };
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
+const topFeat = feats.slice().sort((a, b) => b.shops.length - a.shops.length).slice(0, 3).map((f) => f.label);
+---
+<Base
+  title={fit([`Sanitätshaus ${city.label}: ${n} ${one ? 'Adresse' : 'Adressen'} nach Leistung (${new Date(meta.builtAt).getFullYear()})`, `Sanitätshaus ${city.label}: ${n} ${one ? 'Adresse' : 'Adressen'} nach Leistung`, `Sanitätshaus ${city.label}: ${n} ${one ? 'Adresse' : 'Adressen'}`, `Sanitätshaus ${city.label}`])}
+  description={`${n} ${one ? 'Sanitätshaus' : 'Sanitätshäuser'} ${where} mit Adresse, Telefon und Öffnungszeiten.${topFeat.length ? ' Filter: ' + topFeat.join(', ') + '.' : ''}`}
+  jsonLd={[itemList, faqLd]}
+  crumbs={[{ href: `/bundesland/${city.stateSlug}/`, label: city.state }, { href: `/stadt/${city.slug}/`, label: city.label }]}>
+  <h1>Sanitätshäuser in {city.label}</h1>
+  <p class="lead">
+    {n} {one ? 'Sanitätshaus' : 'Sanitätshäuser'} in {city.label}{city.district && city.district !== city.name ? ` (${city.district})` : ''}{accessible ? `, ${accessible} davon barrierefrei` : ''}.
+    {feats.length > 0 ? ' Häuser mit mehr erkannten Leistungen stehen oben. Filtern Sie nach dem, was Sie brauchen.' : ''}
+  </p>
+  {feats.length > 0 && (
+    <ul class="chips">{feats.map((f) => <li><a class="chip" href={u(`/leistung/${f.slug}/${city.slug}/`)}>{f.label} ({f.shops.length})</a></li>)}</ul>
+  )}
+  <Map shops={list} />
+  <ShopList shops={list} />
+  <PflegeboxHinweis />
+  <Faq items={faq} />
+  <h2>Sanitätshäuser in der Nähe von {city.label}</h2>
+  <ul class="grid">{near.map((c) => (<li><a class="tile" href={u(`/stadt/${c.slug}/`)}>{c.label}<small>{Math.round(c.km)} km · {c.count} {c.count === 1 ? 'Sanitätshaus' : 'Sanitätshäuser'}</small></a></li>))}</ul>
+</Base>
+<style>.chip { text-decoration: none; display: inline-block; }</style>

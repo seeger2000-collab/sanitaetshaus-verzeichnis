@@ -1,0 +1,11 @@
+---
+import Base from '../../layouts/Base.astro';
+import { u } from '../../lib/url';
+import { states } from '../../lib/data';
+---
+<Base title="Sanitätshäuser nach Bundesland" description="Sanitätshäuser in allen 16 Bundesländern, sortiert nach Städten und Gemeinden." crumbs={[{ href: '/bundesland/', label: 'Bundesländer' }]}>
+  <h1>Sanitätshäuser nach Bundesland</h1>
+  <ul class="grid">
+    {states.map((s) => (<li><a class="tile" href={u(`/bundesland/${s.slug}/`)}>{s.name}<small>{s.count} Sanitätshäuser</small></a></li>))}
+  </ul>
+</Base>

@@ -1,0 +1,60 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../config';
+import { u } from '../lib/url';
+import { cities, states, features, meta } from '../lib/data';
+const topCities = [...cities].sort((a, b) => b.count - a.count).slice(0, 24);
+const searchIndex = cities.map((c) => [c.label, c.slug, c.count]);
+---
+<Base title={`Sanitätshaus finden: ${meta.total.toLocaleString('de-DE')} Häuser nach Leistung`} jsonLd={[{ '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: new URL(u('/'), Astro.site).href }]} description={`${meta.total.toLocaleString('de-DE')} Sanitätshäuser in Deutschland. Finde Häuser mit Hausbesuch, Flachstrick-Kompression, Brustprothetik, Kinderversorgung oder Rollstuhl-Werkstatt in deiner Nähe.`}>
+  <h1>Das passende Sanitätshaus finden, nicht nur das nächste</h1>
+  <p class="lead">{meta.total.toLocaleString('de-DE')} Sanitätshäuser in ganz Deutschland. Filtere nach dem, was du wirklich brauchst: Hausbesuch, Lymph-Versorgung, Brustprothetik, Kinder-Reha oder Rollstuhl-Werkstatt.</p>
+
+  <div class="search card">
+    <label for="ort"><strong>Ort suchen</strong></label>
+    <input id="ort" type="search" placeholder="z. B. Leipzig, Bochum, Freiburg" autocomplete="off" />
+    <ul id="treffer" class="grid"></ul>
+  </div>
+
+  <h2>Nach Leistung suchen</h2>
+  <ul class="grid">
+    {features.filter((f) => f.count > 0).map((f) => (
+      <li><a class="tile" href={u(`/leistung/${f.slug}/`)}>{f.label}<small>{f.count} Häuser</small></a></li>
+    ))}
+  </ul>
+
+  <h2>Größte Städte</h2>
+  <ul class="grid">
+    {topCities.map((c) => (<li><a class="tile" href={u(`/stadt/${c.slug}/`)}>{c.label}<small>{c.count} {c.count === 1 ? 'Sanitätshaus' : 'Sanitätshäuser'}</small></a></li>))}
+  </ul>
+
+  <h2>Bundesländer</h2>
+  <ul class="grid">
+    {states.map((s) => (<li><a class="tile" href={u(`/bundesland/${s.slug}/`)}>{s.name}<small>{s.count} Sanitätshäuser</small></a></li>))}
+  </ul>
+</Base>
+<script is:inline define:vars={{ searchIndex, base: u('/') }}>
+  const input = document.getElementById('ort');
+  const out = document.getElementById('treffer');
+  const norm = (s) => s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/ß/g, 'ss');
+  input.addEventListener('input', () => {
+    const q = norm(input.value.trim());
+    out.innerHTML = '';
+    if (q.length < 2) return;
+    const hits = searchIndex.filter((c) => norm(c[0]).includes(q)).sort((a, b) => (norm(a[0]).startsWith(q) ? -1 : 0) - (norm(b[0]).startsWith(q) ? -1 : 0) || b[2] - a[2]).slice(0, 12);
+    if (!hits.length) { out.innerHTML = '<li class="muted">Kein Ort gefunden. Versuch die nächste größere Stadt.</li>'; return; }
+    for (const [label, slug, count] of hits) {
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.className = 'tile'; a.href = `${base}stadt/${slug}/`;
+      a.textContent = label;
+      const small = document.createElement('small'); small.textContent = `${count} ${count === 1 ? 'Sanitätshaus' : 'Sanitätshäuser'}`;
+      a.append(small); li.append(a); out.append(li);
+    }
+  });
+</script>
+<style>
+  .search { margin: 20px 0; }
+  .search label { display: block; margin-bottom: 6px; }
+  #treffer { margin-top: 10px; }
+</style>

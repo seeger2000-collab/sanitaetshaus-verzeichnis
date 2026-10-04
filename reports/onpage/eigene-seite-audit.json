@@ -1,0 +1,56 @@
+{
+ "seiten": 9125,
+ "gezählt": 9125,
+ "probleme": {
+  "Titel länger als 65 Zeichen": {
+   "anzahl": 23,
+   "beispiele": [
+    "https://seeger2000-collab.github.io/sanitaetshaus-verzeichnis/sanitaetshaus/bad-gesundheitsvorsorge-und-sicherheitstechnik-gmbh-kaiserslautern/",
+    "https://seeger2000-collab.github.io/sanitaetshaus-verzeichnis/sanitaetshaus/eurovation-gmbh-gesundheitsprodukte-medizintechnik-und-rehatechnik-braunfels/",
+    "https://seeger2000-collab.github.io/sanitaetshaus-verzeichnis/sanitaetshaus/home-care-service-balke-gbr-medizinproduktehandel-zimmern-ob-rottweil/"
+   ]
+  },
+  "Titel kürzer als 25 Zeichen": {
+   "anzahl": 9,
+   "beispiele": [
+    "https://seeger2000-collab.github.io/sanitaetshaus-verzeichnis/404.html",
+    "https://seeger2000-collab.github.io/sanitaetshaus-verzeichnis/datenschutz/",
+    "https://seeger2000-collab.github.io/sanitaetshaus-verzeichnis/impressum/"
+   ]
+  },
+  "Beschreibung kürzer als 70 Zeichen": {
+   "anzahl": 322,
+   "beispiele": [
+    "https://seeger2000-collab.github.io/sanitaetshaus-verzeichnis/404.html",
+    "https://seeger2000-collab.github.io/sanitaetshaus-verzeichnis/datenschutz/",
+    "https://seeger2000-collab.github.io/sanitaetshaus-verzeichnis/impressum/"
+   ]
+  },
+  "weniger als 120 Wörter": {
+   "anzahl": 159,
+   "beispiele": [
+    "https://seeger2000-collab.github.io/sanitaetshaus-verzeichnis/404.html",
+    "https://seeger2000-collab.github.io/sanitaetshaus-verzeichnis/bundesland/",
+    "https://seeger2000-collab.github.io/sanitaetshaus-verzeichnis/impressum/"
+   ]
+  },
+  "keine strukturierten Daten": {
+   "anzahl": 1,
+   "beispiele": [
+    "https://seeger2000-collab.github.io/sanitaetshaus-verzeichnis/404.html"
+   ]
+  },
+  "doppelte Titel": {
+   "anzahl": 2,
+   "beispiele": [
+    "Hans Sachs Orthopädieschuhtechnik Dresden – Sanitätshaus (2×)",
+    "Orthopädie & Reha Bedarf GmbH Alzey, Hospitalstraße 44-46 (2×)"
+   ]
+  }
+ },
+ "durchschnitt": {
+  "wörter": 289,
+  "interneLinks": 30,
+  "titelLänge": 52
+ }
+}

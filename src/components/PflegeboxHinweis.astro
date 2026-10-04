@@ -1,0 +1,13 @@
+---
+// Affiliate-Platz für Pflegehilfsmittel-Boxen. Wird nur angezeigt, wenn in config.ts ein Link hinterlegt ist.
+import { AFFILIATE } from '../config';
+---
+{AFFILIATE.pflegeboxUrl && (
+  <aside class="card pflegebox">
+    <h2>Pflegehilfsmittel kostenlos über die Pflegekasse</h2>
+    <p>Wer einen Pflegegrad hat, bekommt von der Pflegekasse jeden Monat einen festen Betrag für Handschuhe, Desinfektion und Bettschutz. Den Antrag kann ein Versandanbieter für dich stellen.</p>
+    <p><a class="btn" href={AFFILIATE.pflegeboxUrl} rel="sponsored noopener" target="_blank">Pflegebox bei {AFFILIATE.pflegeboxAnbieter} beantragen</a></p>
+    <p class="muted"><small>Werbung: Wir erhalten eine Provision, wenn du über diesen Link bestellst.</small></p>
+  </aside>
+)}
+<style>.pflegebox { margin-top: 28px; } .pflegebox h2 { margin-top: 0; }</style>

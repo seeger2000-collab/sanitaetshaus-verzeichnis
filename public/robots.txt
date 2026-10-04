@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://seeger2000-collab.github.io/sanitaetshaus-verzeichnis/sitemap-index.xml

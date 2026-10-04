@@ -1,0 +1,103 @@
+---
+import Base from '../../layouts/Base.astro';
+import ShopCard from '../../components/ShopCard.astro';
+import PflegeboxHinweis from '../../components/PflegeboxHinweis.astro';
+import { SITE } from '../../config';
+import { u } from '../../lib/url';
+import { shops, features, kasseLabel, shopsInCity, fmtDate, fit } from '../../lib/data';
+import { formatHours } from '../../lib/hours';
+import { km } from '../../lib/geo';
+export function getStaticPaths() {
+  return shops.map((s) => ({ params: { slug: s.slug }, props: { shop: s } }));
+}
+const { shop } = Astro.props;
+const found = features.filter((f) => shop.features.includes(f.key));
+const cityShops = shopsInCity(shop.citySlug);
+const cityCount = cityShops.length;
+const others = cityCount > 1
+  ? cityShops.filter((s) => s.slug !== shop.slug).slice(0, 6)
+  : shops.filter((s) => s.slug !== shop.slug).map((s) => ({ s, d: km(shop, s) })).sort((a, b) => a.d - b.d).slice(0, 6).map((x) => x.s);
+const osmUrl = `https://www.openstreetmap.org/${shop.id}`;
+const mapUrl = shop.lat ? `https://www.openstreetmap.org/?mlat=${shop.lat}&mlon=${shop.lon}#map=18/${shop.lat}/${shop.lon}` : osmUrl;
+const correction = SITE.correctionFormUrl
+  ? `${SITE.correctionFormUrl}?eintrag=${encodeURIComponent(shop.slug)}`
+  : `${SITE.repoUrl}/issues/new?title=${encodeURIComponent('Korrektur: ' + shop.name + ', ' + shop.city)}&body=${encodeURIComponent('Eintrag: ' + shop.slug + '\n\nWas ist falsch oder fehlt?\n')}`;
+const jsonLd = {
+  '@context': 'https://schema.org', '@type': 'MedicalBusiness', name: shop.name,
+  address: { '@type': 'PostalAddress', streetAddress: shop.street ?? undefined, postalCode: shop.postcode ?? undefined, addressLocality: shop.city, addressCountry: 'DE' },
+  geo: shop.lat ? { '@type': 'GeoCoordinates', latitude: shop.lat, longitude: shop.lon } : undefined,
+  telephone: shop.phone?.split(';')[0] ?? undefined, url: shop.website ?? undefined,
+  openingHours: shop.openingHours ?? undefined,
+  availableService: found.map((f) => ({ '@type': 'MedicalTherapy', name: f.label })),
+};
+const hours = shop.openingHours ? formatHours(shop.openingHours) : null;
+const nm = shop.name.toLowerCase().includes(shop.city.toLowerCase()) ? shop.name : `${shop.name} ${shop.city}`;
+const sameName = shops.filter((s) => s.name === shop.name && s.city === shop.city).length > 1;
+const base = sameName ? (shop.street ? `${nm}, ${shop.street}` : `${nm} (${shop.slug.split('-').pop()})`) : nm;
+const pageTitle = fit([
+  found.length >= 2 ? `${base}: ${found[0].short}, ${found[1].short}` : '',
+  found.length ? `${base}: ${found[0].short}` : '',
+  `${base} – Sanitätshaus`,
+  base,
+].filter(Boolean));
+---
+<Base title={pageTitle} description={`${shop.name}, Sanitätshaus in ${shop.postcode ? shop.postcode + ' ' : ''}${shop.city}${shop.street ? ', ' + shop.street : ''}: Adresse, Telefon, Öffnungszeiten${found.length ? ' und Leistungen wie ' + found.slice(0, 3).map((f) => f.label).join(', ') : ', Barrierefreiheit und Sanitätshäuser in der Nähe'}.`} jsonLd={[jsonLd]} crumbs={[{ href: `/bundesland/${shop.stateSlug}/`, label: shop.state }, { href: `/stadt/${shop.citySlug}/`, label: shop.city }, { href: `/sanitaetshaus/${shop.slug}/`, label: shop.name }]}>
+  <h1>{shop.name}</h1>
+  <p class="lead">Sanitätshaus in {shop.city}{shop.district && shop.district !== shop.city ? `, ${shop.district}` : ''}, {shop.state}</p>
+  <p>{shop.name} ist eines von {cityCount} {cityCount === 1 ? 'Sanitätshaus' : 'Sanitätshäusern'} in {shop.city}.{found.length > 0 ? ` Auf der eigenen Website nennt es ${found.length} der Spezialleistungen, nach denen wir suchen.` : ''}{shop.wheelchair === 'yes' ? ' Der Eingang ist laut OpenStreetMap stufenlos erreichbar.' : ''} Bitte rufen Sie vor dem Besuch kurz an, ob Ihr Hilfsmittel vorrätig ist und ob ein Vertrag mit Ihrer Krankenkasse besteht.</p>
+
+  <div class="cols">
+    <section class="card">
+      <h2>Kontakt</h2>
+      <dl>
+        <dt>Adresse</dt><dd>{shop.street && <>{shop.street}<br /></>}{shop.postcode} {shop.city}<br /><a href={mapUrl} rel="nofollow noopener" target="_blank">Auf der Karte zeigen</a></dd>
+        {shop.phone && <><dt>Telefon</dt><dd>{shop.phone.split(';').map((p) => <a href={`tel:${p.replace(/[^+\d]/g, '')}`}>{p.trim()}<br /></a>)}</dd></>}
+        {shop.email && <><dt>E-Mail</dt><dd><a href={`mailto:${shop.email.split(';')[0]}`}>{shop.email.split(';')[0]}</a></dd></>}
+        {shop.website && <><dt>Website</dt><dd><a href={shop.website} rel="nofollow noopener" target="_blank">{shop.website.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')}</a></dd></>}
+        {shop.openingHours && <><dt>Öffnungszeiten</dt><dd>{hours ? hours.map((h) => <>{h}<br /></>) : <code>{shop.openingHours}</code>}</dd></>}
+        {shop.wheelchair && <><dt>Barrierefrei</dt><dd>{({ yes: 'Ja, stufenlos erreichbar', limited: 'Eingeschränkt', no: 'Nein' } as Record<string, string>)[shop.wheelchair] ?? shop.wheelchair}</dd></>}
+      </dl>
+    </section>
+
+    <section class="card">
+      <h2>Leistungen</h2>
+      {found.length > 0 ? (
+        <ul class="feat">
+          {found.map((f) => (<li><a href={u(`/leistung/${f.slug}/`)}>{f.label}</a> {shop.evidence[f.key] && <a class="src" href={shop.evidence[f.key]} rel="nofollow noopener" target="_blank">Quelle</a>}</li>))}
+        </ul>
+      ) : (
+        <p class="muted">{shop.websiteCheckedAt ? 'Auf der Website haben wir keine der Spezialleistungen gefunden, nach denen wir suchen.' : 'Noch keine Leistungen erfasst.'}</p>
+      )}
+      {shop.kassen.length > 0 && (
+        <>
+          <h3>Krankenkassen auf der Website genannt</h3>
+          <p>{shop.kassen.map((k) => kasseLabel[k]).join(', ')}</p>
+          <p class="muted"><small>Eine Nennung heißt nicht sicher, dass ein Vertrag besteht. Frag vor dem Besuch kurz nach.</small></p>
+        </>
+      )}
+      {shop.websiteCheckedAt && <p class="muted"><small>Website zuletzt geprüft am {fmtDate(shop.websiteCheckedAt)}.</small></p>}
+    </section>
+  </div>
+
+  <p class="note">Ist hier etwas falsch oder fehlt eine Leistung? <a href={correction} rel="nofollow">Eintrag korrigieren</a>. Inhaber können ihren Eintrag auch <a href={u('/fuer-sanitaetshaeuser/')}>selbst ergänzen</a>.</p>
+
+  <PflegeboxHinweis />
+
+  {others.length > 0 && (<>
+    <h2>{cityCount > 1 ? `Weitere Sanitätshäuser in ${shop.city}` : 'Sanitätshäuser in der Nähe'}</h2>
+    <ul class="list">{others.map((s) => <ShopCard shop={s} showCity={cityCount === 1} />)}</ul>
+    <p><a href={u(`/stadt/${shop.citySlug}/`)}>Alle Sanitätshäuser in {shop.city}</a></p>
+  </>)}
+</Base>
+<style>
+  .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; margin: 16px 0; }
+  .cols h2 { margin-top: 0; }
+  dl { margin: 0; }
+  dt { font-weight: 600; margin-top: 10px; }
+  dd { margin: 0; overflow-wrap: anywhere; }
+  code { font-family: inherit; }
+  .feat { padding-left: 1.1em; }
+  .src { font-size: 0.8rem; color: var(--muted); }
+  h3 { font-size: 1rem; margin: 16px 0 4px; }
+  .list { display: grid; gap: 10px; padding: 0; }
+</style>
