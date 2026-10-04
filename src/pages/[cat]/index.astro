@@ -1,24 +1,16 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { u } from '../../lib/url';
-import { otherCategories, allCities, states } from '../../lib/data';
+import Finder from '../../components/Finder.astro';
+import { otherCategories, categories } from '../../lib/data';
 import { CATEGORY_TEXT } from '../../lib/categoryText';
 export function getStaticPaths() {
   return otherCategories.map((cat) => ({ params: { cat: cat.slug }, props: { cat } }));
 }
 const { cat } = Astro.props;
 const text = CATEGORY_TEXT[cat.key];
-const withCat = allCities.filter((c) => c.counts[cat.key]);
-const byState = states.map((s) => ({ ...s, cities: withCat.filter((c) => c.state === s.name).sort((a, b) => a.label.localeCompare(b.label, 'de')) })).filter((s) => s.cities.length);
 ---
-<Base title={`${cat.label} in Ihrer Nähe: Adressen nach Ort`} description={`${cat.label} in ganz Deutschland, nach Ort sortiert. ${text.intro}`} crumbs={[{ href: `/${cat.slug}/`, label: cat.label }]}>
-  <h1>{cat.label} in Deutschland</h1>
+<Base title={`${cat.label} in Ihrer Nähe: Adressen nach Ort`} description={`${cat.label} in Ihrer Nähe finden: Ort oder PLZ eingeben, mit Karte, Telefon und Route. ${text.intro}`} crumbs={[{ href: `/${cat.slug}/`, label: cat.label }]}>
+  <h1>{cat.label} in Ihrer Nähe</h1>
   <p class="lead">{text.intro}</p>
-  <p><a class="btn" href={u('/karte/')}>Auf der Karte ansehen</a></p>
-  {byState.map((s) => (
-    <section id={s.slug}>
-      <h2>{s.name}</h2>
-      <ul class="grid">{s.cities.map((c) => <li><a class="tile" href={u(`/${cat.slug}/${c.slug}/`)}>{c.label}</a></li>)}</ul>
-    </section>
-  ))}
+  <Finder preset={{ kind: 'cat', i: categories.findIndex((c) => c.key === cat.key), label: cat.label, current: `/${cat.slug}/` }} />
 </Base>

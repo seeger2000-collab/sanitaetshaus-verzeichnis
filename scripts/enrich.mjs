@@ -2,6 +2,7 @@
 // Ergebnis: data/enrichment/<kategorie>.json (Cache; Einträge jünger als MAX_AGE_DAYS werden nicht neu geladen)
 // Aufruf: node scripts/enrich.mjs [--cat physio] [--limit 50] [--force]   (ohne --cat: alle Kategorien)
 import { readFile, writeFile } from 'node:fs/promises';
+import { pathToFileURL } from 'node:url';
 import { detect } from './features.mjs';
 import { CATEGORIES } from './categories.mjs';
 
@@ -132,7 +133,8 @@ async function scan(shop, cat) {
   return result;
 }
 
-for (const cat of CATS) {
+// Nur beim direkten Aufruf scannen, nicht beim Import (z. B. aus enrich-phone.mjs)
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) for (const cat of CATS) {
 const osm = JSON.parse(await readFile(`data/osm/${cat}.json`, 'utf8'));
 const cacheFile = `data/enrichment/${cat}.json`;
 let cache = {};

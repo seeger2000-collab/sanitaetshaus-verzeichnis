@@ -40,6 +40,7 @@ jobs:
           npm run fetch:osm
           npm run enrich
           node scripts/enrich-hours.mjs
+          node scripts/enrich-phone.mjs
           node scripts/fetch-images.mjs
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

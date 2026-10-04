@@ -22,6 +22,7 @@ const readJson = async (p, fallback) => { try { return JSON.parse(await readFile
 const overrides = await readJson('data/overrides.json', {});
 // Öffnungszeiten von Websites, nur wenn OSM keine hat (scripts/enrich-hours.mjs)
 const webHoursRaw = await readJson('data/hours.json', {});
+const phones = await readJson('data/phones.json', {});
 // Unplausible Website-Zeiten verwerfen: überlappende Zeiträume (oft mehrere Filialen auf einer Seite) oder Sonntags geöffnet
 const plausible = (oh) => !/Su/.test(oh) && oh.split(';').every((rule) => {
   const slots = (rule.trim().split(' ')[1] || '').split(',').map((t) => t.split('-').map((x) => +x.slice(0, 2) * 60 + +x.slice(3)));
@@ -73,7 +74,7 @@ for (const s of osm.shops) {
     district: s.admin['6']?.name || null,
     state: s.admin['4'].name,
     lat: s.location?.lat, lon: s.location?.lon,
-    phone: fmtPhone(t.phone || t['contact:phone'] || t['contact:mobile'] || e?.phone || ''),
+    phone: fmtPhone(t.phone || t['contact:phone'] || t['contact:mobile'] || t.mobile || t['phone:mobile'] || e?.phone || phones[s.id]?.phone || ''),
     email: t.email || t['contact:email'] || e?.email || null,
     booking: goodBooking(e?.booking, e?.finalUrl || e?.website),
     website: websiteOf(t),
@@ -162,7 +163,7 @@ await writeFile('public/data/finder.json', JSON.stringify({
   orte: cities.filter((c) => c.lat).map((c) => [c.label, c.lat, c.lon, c.slug, c.counts?.sanitaetshaus || 0]),
   plz,
   e: all.filter((s) => s.lat).map((s) => [catIndex[s.cat], r4(s.lat), r4(s.lon), s.name, [s.street, [s.postcode, cityBySlug.get(s.citySlug)?.label || s.city].filter(Boolean).join(' ')].filter(Boolean).join(', '),
-    s.slug ? `sanitaetshaus/${s.slug}/` : `${catSlug[s.cat]}/${s.citySlug}/`, bedarfMask(s), (s.phone || '').split(';')[0].trim(), s.openingHours || '', s.website || '', (s.email || '').split(';')[0].trim(), s.booking || '']),
+    s.slug ? `sanitaetshaus/${s.slug}/` : `${catSlug[s.cat]}/${s.citySlug}/`, bedarfMask(s), (s.phone || '').split(';')[0].trim(), s.openingHours || '', s.website || '', (s.email || '').split(';')[0].trim(), s.booking || '', s.cat === 'sanitaetshaus' ? FEATURES.reduce((m, f, i) => (s.features.includes(f.key) ? m | (1 << i) : m), 0) : 0]),
 }));
 await writeFile('src/data/cities.json', JSON.stringify(cities));
 await writeFile('src/data/states.json', JSON.stringify(states));

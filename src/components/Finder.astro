@@ -2,19 +2,24 @@
 // Finder auf der Startseite: Bedarf wählen, Ort/PLZ eingeben, Umkreis, Karte mit Treffern und Liste nach Entfernung.
 import { u } from '../lib/url';
 import { meta, categories } from '../lib/data';
+// preset: feste Auswahl auf Leistungs- und Kategorieseiten (nur Ort-Feld). kind: bedarf | feat | cat, i = Index, city = Link-Muster für die Ortsseite mit {slug}
+interface Props { preset?: { kind: 'bedarf' | 'feat' | 'cat'; i: number; label: string; city?: string; current?: string } }
+const { preset } = Astro.props;
 const bedarf = meta.bedarf;
 const cats = categories.map((c) => ({ color: c.color, one: c.one }));
+const sanIdx = categories.findIndex((c) => c.key === 'sanitaetshaus');
+const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sanitätshäuser' : b.short, href: b.leistung ? `/leistung/${b.leistung}/` : b.seite ? `/${b.seite}/` : '/' }));
 ---
-<section id="finder" class="finder card" aria-labelledby="finder-h">
+<section id="finder" class:list={["finder card", { fixed: !!preset }]} aria-labelledby="finder-h" data-preset={preset ? JSON.stringify({ ...preset, san: sanIdx }) : ""}>
   <h2 id="finder-h" class="sr">Suche</h2>
   <form class="fsearch" role="search" action="#" autocomplete="off">
-    <div class="fq">
+    {!preset && <div class="fq">
       <label for="f-was">Was suchen Sie?</label>
       <input id="f-was" type="search" placeholder="z. B. Stützstrümpfe, Rollator, Physiotherapie oder ein Name" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="f-wsug" />
       <ul id="f-wsug" class="fsug" role="listbox" hidden></ul>
-    </div>
+    </div>}
     <div class="fq">
-      <label for="f-ort">Wo?</label>
+      <label for="f-ort">{preset ? `${preset.label}: Wo suchen Sie?` : 'Wo?'}</label>
       <input id="f-ort" type="search" placeholder="Ort oder PLZ, z. B. Kassel oder 34117" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="f-sug" />
       <ul id="f-sug" class="fsug" role="listbox" hidden></ul>
     </div>
@@ -28,6 +33,10 @@ const cats = categories.map((c) => ({ color: c.color, one: c.one }));
   <div id="f-map" data-src={u('/data/finder.json')} data-base={u('/')} data-cats={JSON.stringify(cats)} data-bedarf={JSON.stringify(bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Sanitätshaus' : b.label, words: b.words || '', leistung: b.leistung, seite: b.seite })))}></div>
   <ol id="f-list" class="flist"></ol>
   <p id="f-more" class="fmore" hidden></p>
+  {preset ? <>
+  <h2 class="flabel">Andere Leistungen in der Nähe</h2>
+  <ul class="chips fchips">{pages.map((p) => <li><a class:list={["chip", { on: preset.current === p.href }]} href={u(p.href)}>{p.label}</a></li>)}</ul>
+  </> : <>
   <h2 class="flabel">Rubriken</h2>
   <ul class="bedarf" role="group" aria-label="Rubrik auswählen">
     {bedarf.map((b, i) => (
@@ -35,7 +44,7 @@ const cats = categories.map((c) => ({ color: c.color, one: c.one }));
         <strong>{b.key === 'sanitaetshaus' ? 'Alle Sanitätshäuser' : b.label.replace('Kompressionsstrümpfe', 'Kompressions\u00ADstrümpfe')}</strong>{b.hint && <small>{b.hint}</small>}
       </button></li>
     ))}
-  </ul>
+  </ul></>}
   <p class="muted"><small>Kartendaten © OpenStreetMap-Mitwirkende. Leistungen laut Website der Betriebe, ohne Gewähr. Ihr Standort bleibt in Ihrem Browser.</small></p>
 </section>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
@@ -96,15 +105,18 @@ const cats = categories.map((c) => ({ color: c.color, one: c.one }));
 
     // Was: Rubrik (sel) oder freier Name (nameQ). Wo: here. Ohne Ort zeigt die Karte ganz Deutschland.
     const was = $('f-was'), wsug = $('f-wsug');
+    const PRE = root.dataset.preset ? JSON.parse(root.dataset.preset) : null;
+    const KEY = 'sh-ort';
     const BDN = BD.map((b, i) => ({ i, label: b.label, k: norm(b.label + ' ' + b.words) }));
     const ALL = BD.length - 1;
     let nameQ = '';
     const pickRubrik = (i) => { sel = i; nameQ = ''; was.value = BD[i].label; document.querySelectorAll('.bedarf .bd').forEach((x) => { const on = +x.dataset.i === i; x.classList.toggle('on', on); x.setAttribute('aria-pressed', on); }); };
     const matches = () => {
+      if (PRE) return data.e.filter((e) => (PRE.kind === 'cat' ? e[0] === PRE.i : PRE.kind === 'feat' ? e[0] === PRE.san && (e[12] & (1 << PRE.i)) : e[6] & (1 << PRE.i)));
       if (nameQ) { const q = norm(nameQ); return data.e.filter((e) => norm(e[3]).includes(q)); }
       const bit = 1 << (sel < 0 ? ALL : sel); return data.e.filter((e) => e[6] & bit);
     };
-    const whatLabel = () => (nameQ ? `„${nameQ}“` : BD[sel < 0 ? ALL : sel].label);
+    const whatLabel = () => (PRE ? PRE.label : nameQ ? `„${nameQ}“` : BD[sel < 0 ? ALL : sel].label);
     function draw() {
       ensureMap();
       const r = +rad.value, all = matches();
@@ -114,29 +126,33 @@ const cats = categories.map((c) => ({ color: c.color, one: c.one }));
       if (!here) {
         all.forEach((e) => pins.addLayer(marker(e, 2.5)));
         map.fitBounds([[47.3, 5.9], [55.0, 15.0]]);
-        msg.textContent = (sel < 0 && !nameQ) ? 'Geben Sie ein, was Sie brauchen und wo. Die Karte zeigt sofort, wer in der Nähe ist.' : `${whatLabel()}: Geben Sie jetzt Ihren Ort oder Ihre PLZ ein.`;
+        msg.textContent = (sel < 0 && !nameQ && !PRE) ? 'Geben Sie ein, was Sie brauchen und wo. Die Karte zeigt sofort, wer in der Nähe ist.' : `${whatLabel()}: Geben Sie jetzt Ihren Ort oder Ihre PLZ ein.`;
         return;
       }
-      const near = all.map((e) => ({ e, d: km(here, { lat: e[1], lon: e[2] }) })).filter((x) => x.d <= r).sort((a, b) => a.d - b.d);
+      const dist = all.map((e) => ({ e, d: km(here, { lat: e[1], lon: e[2] }) })).sort((a, b) => a.d - b.d);
+      let near = dist.filter((x) => x.d <= r);
+      const wider = !near.length && dist.length > 0;
+      if (wider) near = dist.slice(0, 5);
       near.forEach((x) => pins.addLayer(marker(x.e, 7)));
       circle = L.circle([here.lat, here.lon], { radius: r * 1000, color: '#0f6b57', weight: 1, dashArray: '5 4', fillOpacity: 0.04, interactive: false }).addTo(map);
       me = L.circleMarker([here.lat, here.lon], { radius: 8, color: '#fff', fillColor: '#d9480f', fillOpacity: 1, weight: 3 }).addTo(map);
-      map.fitBounds(circle.getBounds());
+      map.fitBounds(wider ? L.latLngBounds(near.map((x) => [x.e[1], x.e[2]])).extend([here.lat, here.lon]).pad(0.15) : circle.getBounds());
       const b = BD[sel < 0 ? ALL : sel];
-      const extra = nameQ ? '' : b.leistung ? ` <a href="${base}leistung/${b.leistung}/">${esc(b.label)} nach Stadt</a>` : b.seite ? ` <a href="${base}${b.seite}/">${esc(b.label)} nach Stadt</a>` : '';
-      msg.innerHTML = near.length ? `${esc(whatLabel())} bei ${esc(here.label)}, die nächsten zuerst.` : `Nichts gefunden im Umkreis von ${r} km. Vergrößern Sie den Umkreis.${extra}`;
+      const extra = (nameQ || PRE) ? '' : b.leistung ? ` <a href="${base}leistung/${b.leistung}/">${esc(b.label)} nach Stadt</a>` : b.seite ? ` <a href="${base}${b.seite}/">${esc(b.label)} nach Stadt</a>` : '';
+      msg.innerHTML = wider ? `Im Umkreis von ${r} km nichts gefunden. Die nächsten Adressen für ${esc(whatLabel())}:` : near.length ? `${esc(whatLabel())} bei ${esc(here.label)}, die nächsten zuerst.` : `Nichts gefunden im Umkreis von ${r} km. Vergrößern Sie den Umkreis.${extra}`;
       list.innerHTML = near.slice(0, shown).map(({ e, d }) => `<li><a href="${base}${e[5]}"><strong>${esc(e[3])}</strong></a> <span class="fkm">${d.toFixed(1).replace('.', ',')} km</span>${ohBadge(e[8])}<br><span class="muted">${esc(cats[e[0]].one)} · ${esc(e[4])}</span>${actions(e)}</li>`).join('');
-      if (here.slug) list.insertAdjacentHTML('beforeend', `<li class="fcity"><a href="${base}stadt/${here.slug}/">Alles in ${esc(here.label)} auf einer Seite: Sanitätshäuser, Physiotherapie, Pflege, Krankenfahrten</a></li>`);
+      if (here.slug) list.insertAdjacentHTML('beforeend', PRE && PRE.city ? `<li class="fcity"><a href="${base}${PRE.city.replace('{slug}', here.slug)}">${esc(PRE.label)} in ${esc(here.label)}: Übersicht für den Ort</a></li>` : `<li class="fcity"><a href="${base}stadt/${here.slug}/">Alles in ${esc(here.label)} auf einer Seite: Sanitätshäuser, Physiotherapie, Pflege, Krankenfahrten</a></li>`);
       if (near.length > shown) { more.hidden = false; more.innerHTML = '<button type="button" class="btn" id="f-mehr">Weitere anzeigen</button>'; $('f-mehr').onclick = () => { shown += 30; draw(); }; }
     }
-    document.querySelector('.bedarf').addEventListener('click', (ev) => {
+    if (!PRE) document.querySelector('.bedarf').addEventListener('click', (ev) => {
       const btn = ev.target.closest('button'); if (!btn) return;
       pickRubrik(+btn.dataset.i); shown = 30; draw();
       root.scrollIntoView({ block: 'start', behavior: 'smooth' });
       if (!here) input.focus({ preventScroll: true });
     });
-    rad.addEventListener('change', () => { shown = 30; draw(); });
-    const setHere = (h) => { here = h; shown = 30; input.value = h.label; sug.hidden = true; input.setAttribute('aria-expanded', 'false'); draw(); };
+    const save = () => { try { localStorage.setItem(KEY, JSON.stringify({ here, r: rad.value })); } catch {} };
+    rad.addEventListener('change', () => { shown = 30; save(); draw(); });
+    const setHere = (h) => { here = h; shown = 30; save(); input.value = h.label; sug.hidden = true; input.setAttribute('aria-expanded', 'false'); draw(); };
     function plzHit(q) {
       if (data.plz[q]) return data.plz[q];
       for (const n of [3, 2]) {
@@ -159,7 +175,7 @@ const cats = categories.map((c) => ({ color: c.color, one: c.one }));
       box.addEventListener('mousedown', (ev) => { const li = ev.target.closest('li'); if (li) { ev.preventDefault(); choose(hits[+li.dataset.i]); box.hidden = true; hits = []; } });
       inp.addEventListener('blur', () => setTimeout(() => { box.hidden = true; }, 150));
     }
-    combo(was, wsug, (q, raw) => {
+    if (!PRE) combo(was, wsug, (q, raw) => {
       if (q.length < 2) return [];
       const rub = BDN.filter((b) => b.k.split(/[\s&,-]+/).some((w) => w.startsWith(q)) || b.k.includes(q)).slice(0, 6).map((b) => ({ rub: b.i, label: b.label }));
       const names = [...new Set(data.e.filter((e) => norm(e[3]).includes(q)).map((e) => e[3]))].slice(0, 4).map((n) => ({ name: n, label: n, html: `${esc(n)} <small class="muted">Name</small>` }));
@@ -176,6 +192,8 @@ const cats = categories.map((c) => ({ color: c.color, one: c.one }));
       return orte.filter((o) => o.k.includes(q)).sort((a, b) => (b.k.startsWith(q) - a.k.startsWith(q)) || b.n - a.n).slice(0, 8);
     }, (h) => { if (h) setHere(h); });
     root.querySelector('form').addEventListener('submit', (ev) => { ev.preventDefault(); draw(); });
+    // Ort von der letzten Suche übernehmen (auch beim Wechsel zwischen Leistungen)
+    try { const st = JSON.parse(localStorage.getItem(KEY) || 'null'); if (st && st.here) { here = st.here; input.value = here.label; if (st.r) rad.value = st.r; } } catch {}
     draw();
     $('f-loc').addEventListener('click', () => {
       if (!navigator.geolocation) return;
@@ -214,6 +232,8 @@ const cats = categories.map((c) => ({ color: c.color, one: c.one }));
   .bd.on small { color: #cfe8df; }
   .flist { padding-left: 1.4em; display: grid; gap: 12px; margin: 0; }
   .flist:empty { display: none; }
+  .fchips .chip { text-decoration: none; display: inline-block; }
+  .fchips .chip.on { background: var(--brand); color: var(--brand-ink); border-color: var(--brand); }
   .flist .fcity { list-style: none; margin-left: -1.4em; }
   .fkm { color: var(--muted); font-size: .85rem; white-space: nowrap; }
   .flist .facts { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
