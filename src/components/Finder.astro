@@ -207,12 +207,20 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
     // Ort von der letzten Suche übernehmen (auch beim Wechsel zwischen Leistungen)
     try { const st = JSON.parse(localStorage.getItem(KEY) || 'null'); if (st && st.here) { here = st.here; input.value = here.label; if (st.r) rad.value = st.r; } } catch {}
     draw();
-    $('f-loc').addEventListener('click', () => {
+    // Gerätestandort: nur über die Standortfreigabe des Browsers. Angezeigt wird die nächste PLZ, gerechnet wird mit dem genauen Punkt. Keine IP-Ortung.
+    const nearestPlz = (lat, lon) => { let best = null, bd = 1e9; for (const k of plzKeys) { const [a, b] = data.plz[k]; const d = (a - lat) ** 2 + ((b - lon) * 0.63) ** 2; if (d < bd) { bd = d; best = k; } } return best; };
+    const nearestOrt = (lat, lon) => orte.reduce((best, o) => { const d = (o.lat - lat) ** 2 + ((o.lon - lon) * 0.63) ** 2; return d < best.d ? { o, d } : best; }, { o: null, d: 1e9 }).o;
+    const locate = (silent) => {
       if (!navigator.geolocation) return;
-      msg.textContent = 'Standort wird ermittelt …';
-      navigator.geolocation.getCurrentPosition((p) => setHere({ label: 'Ihrem Standort', lat: p.coords.latitude, lon: p.coords.longitude }),
-        () => { msg.textContent = 'Standort nicht verfügbar, bitte Ort oder PLZ eingeben.'; }, { timeout: 10000 });
-    });
+      if (!silent) msg.textContent = 'Standort wird ermittelt …';
+      navigator.geolocation.getCurrentPosition((p) => {
+        const lat = p.coords.latitude, lon = p.coords.longitude, plz = nearestPlz(lat, lon), o = nearestOrt(lat, lon);
+        setHere({ label: plz ? `PLZ ${plz}` : 'Ihrem Standort', lat, lon, slug: o ? o.slug : undefined });
+      }, () => { if (!silent) msg.textContent = 'Standort nicht verfügbar, bitte Ort oder PLZ eingeben.'; }, { timeout: 10000, maximumAge: 600000 });
+    };
+    $('f-loc').addEventListener('click', () => locate(false));
+    // Hat der Nutzer die Standortfreigabe für diese Seite schon erteilt und noch keinen Ort gesucht, gleich verwenden (ohne neue Abfrage)
+    if (!here && navigator.permissions) navigator.permissions.query({ name: 'geolocation' }).then((st) => { if (st.state === 'granted' && !here) locate(true); }).catch(() => {});
   })();
 </script>
 <style is:global>

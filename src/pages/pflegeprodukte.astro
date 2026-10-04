@@ -2,7 +2,9 @@
 import Base from '../layouts/Base.astro';
 import Finder from '../components/Finder.astro';
 import PflegeboxHinweis from '../components/PflegeboxHinweis.astro';
-import { meta } from '../lib/data';
+import OrteListe from '../components/OrteListe.astro';
+import { meta, allCities } from '../lib/data';
+const orte = allCities.filter((c) => c.counts.apotheke).map((c) => ({ label: c.label, href: `/apotheke/${c.slug}/`, state: c.state }));
 const bi = meta.bedarf.findIndex((b) => b.key === 'pflegebox');
 const produkte = [
   { name: 'Einmalhandschuhe', wo: 'Apotheke, Sanitätshaus, Pflegebox' },
@@ -27,6 +29,7 @@ const produkte = [
   <p>Wer einen Pflegegrad hat und zu Hause gepflegt wird, bekommt von der Pflegekasse bis zu 42 € im Monat für Pflegehilfsmittel zum Verbrauch, also Handschuhe, Desinfektion, Bettschutz und Mundschutz. Das gibt es ab Pflegegrad 1. Sie können die Produkte in einer Apotheke oder einem Sanitätshaus holen, das mit Ihrer Pflegekasse abrechnet, oder sich jeden Monat eine Pflegebox nach Hause schicken lassen.</p>
   <p>Inkontinenzartikel zahlt dagegen die Krankenkasse, wenn der Arzt sie verordnet. Dann zahlen Sie 10 % zu, höchstens 10 € im Monat.</p>
   <PflegeboxHinweis />
+  <OrteListe title="Apotheken nach Ort" items={orte} />
 </Base>
 <style>
   .ptab { width: 100%; border-collapse: collapse; margin: 8px 0 16px; }

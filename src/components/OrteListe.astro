@@ -1,0 +1,25 @@
+---
+// Zugeklappte Ortsliste am Seitenende: für Nutzer unauffällig, für Suchmaschinen die Links auf alle Ortsseiten.
+import { u } from '../lib/url';
+import { states } from '../lib/data';
+interface Props { title: string; items: { label: string; href: string; state: string }[] }
+const { title, items } = Astro.props;
+const groups = states.map((s) => ({ name: s.name, list: items.filter((i) => i.state === s.name).sort((a, b) => a.label.localeCompare(b.label, 'de')) })).filter((g) => g.list.length);
+---
+{groups.length > 0 && (
+  <details class="orte">
+    <summary>{title}</summary>
+    {groups.map((g) => (
+      <section>
+        <h3>{g.name}</h3>
+        <p>{g.list.map((i, k) => <>{k > 0 && ' · '}<a href={u(i.href)}>{i.label}</a></>)}</p>
+      </section>
+    ))}
+  </details>
+)}
+<style>
+  .orte { margin: 28px 0 8px; border-top: 1px solid var(--line); padding-top: 12px; }
+  .orte summary { cursor: pointer; color: var(--muted); font-size: .95rem; }
+  .orte h3 { font-size: .95rem; margin: 14px 0 4px; }
+  .orte p { font-size: .88rem; line-height: 1.7; margin: 0; }
+</style>

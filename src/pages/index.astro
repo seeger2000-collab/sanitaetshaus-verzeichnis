@@ -8,7 +8,7 @@ import Finder from '../components/Finder.astro';
 import PlzBloecke from '../components/PlzBloecke.astro';
 const topCities = [...cities].sort((a, b) => b.count - a.count).slice(0, 24);
 ---
-<Base title="Sanitätshaus in der Nähe finden: nach Bedarf, mit Telefon und Route" jsonLd={[{ '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: new URL(u('/'), Astro.site).href }]} description={`Sanitätshaus in der Nähe finden: Stützstrümpfe, Einlagen, Rollator, Pflegebett. Dazu Physiotherapie, Pflegedienste und Krankenfahrten. Finde Häuser mit Hausbesuch, Flachstrick-Kompression, Brustprothetik, Kinderversorgung oder Rollstuhl-Werkstatt in deiner Nähe.`}>
+<Base title="Sanitätshaus in der Nähe finden: nach Bedarf, mit Telefon und Route" jsonLd={[{ '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: new URL(u('/'), Astro.site).href }]} description={`Sanitätshaus, Apotheke, Physiotherapie, Pflegedienst oder Pflegeheim in der Nähe finden: Ort eingeben, Karte, Telefon und Route. Auch Rollator, Pflegebett, Stützstrümpfe.`}>
   <h1>Schnell die passende Hilfe in der Nähe finden</h1>
   <p class="lead">Geben Sie ein, was Sie brauchen und wo. Sie sehen sofort, wer in der Nähe ist, wie Sie anrufen und wie Sie hinkommen.</p>
 

@@ -2,18 +2,21 @@
 import Base from '../../../layouts/Base.astro';
 import PflegeboxHinweis from '../../../components/PflegeboxHinweis.astro';
 import Finder from '../../../components/Finder.astro';
+import OrteListe from '../../../components/OrteListe.astro';
 import { u } from '../../../lib/url';
-import { features, meta, fit } from '../../../lib/data';
+import { features, meta, fit, shops } from '../../../lib/data';
 export function getStaticPaths() {
   return features.filter((f) => f.count > 0).map((f) => ({ params: { feature: f.slug }, props: { feature: f } }));
 }
 const { feature } = Astro.props;
 const bi = meta.bedarf.findIndex((b) => b.leistung === feature.slug);
 const preset = bi >= 0 ? { kind: 'bedarf' as const, i: bi, label: meta.bedarf[bi].label } : { kind: 'feat' as const, i: features.findIndex((f) => f.key === feature.key), label: feature.label };
+const orte = [...new Map(shops.filter((s) => s.features.includes(feature.key)).map((s) => [s.citySlug, { label: s.city, href: `/leistung/${feature.slug}/${s.citySlug}/`, state: s.state }])).values()];
 ---
-<Base title={fit([`${feature.title}: Adressen in Ihrer Nähe`, `${feature.short}: Sanitätshaus in der Nähe`])} description={`Sanitätshäuser mit ${feature.label} in Ihrer Nähe finden: Ort oder PLZ eingeben, mit Karte, Telefon und Route.`} crumbs={[{ href: '/leistung/', label: 'Leistungen' }, { href: `/leistung/${feature.slug}/`, label: feature.label }]}>
+<Base title={fit([`${feature.title}: in der Nähe mit Telefon`, `${feature.short}: Sanitätshaus in der Nähe`])} description={`Sanitätshäuser mit ${feature.label} in Ihrer Nähe finden: Ort oder PLZ eingeben, mit Karte, Telefon und Route.`} crumbs={[{ href: '/leistung/', label: 'Leistungen' }, { href: `/leistung/${feature.slug}/`, label: feature.label }]}>
   <h1>{feature.title}</h1>
   <p class="lead">Sanitätshäuser mit dem Angebot „{feature.label}“, erkannt auf ihren Websites. Geben Sie Ihren Ort oder Ihre PLZ ein: Sie sehen sofort, wer in der Nähe ist.</p>
   <Finder preset={{ ...preset, current: `/leistung/${feature.slug}/` }} />
   {feature.key === 'pflegehilfsmittel' && <PflegeboxHinweis />}
+  <OrteListe title={`${feature.short} nach Ort`} items={orte} />
 </Base>

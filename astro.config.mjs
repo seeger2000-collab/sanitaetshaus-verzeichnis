@@ -8,5 +8,6 @@ export default defineConfig({
   base: process.env.BASE ?? '/',
   trailingSlash: 'always',
   build: { format: 'directory' },
-  integrations: [sitemap()],
+  // Seiten mit noindex nicht in die Sitemap
+  integrations: [sitemap({ filter: (page) => !/\/(impressum|datenschutz|404)\/?$/.test(page) })],
 });
