@@ -5,56 +5,64 @@ import { meta, categories } from '../lib/data';
 const bedarf = meta.bedarf;
 const cats = categories.map((c) => ({ color: c.color, one: c.one }));
 ---
-<section id="finder" class="finder card" aria-labelledby="finder-h">
-  <h2 id="finder-h" class="sr">Hilfe in der Nähe suchen</h2>
-  <div class="fbar">
-    <div class="fq">
-      <label for="f-ort" class="sr">Ort oder Postleitzahl</label>
-      <input id="f-ort" type="search" placeholder="Ort oder PLZ, z. B. Kassel oder 34117" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="f-sug" />
-      <ul id="f-sug" role="listbox" hidden></ul>
+<section id="finder" class="finder card" data-step="1" aria-labelledby="finder-h">
+  <div class="fgrid">
+    <div class="fside">
+      <h2 id="finder-h" class="flabel">Was brauchen Sie?</h2>
+      <ul class="bedarf" role="group" aria-label="Bedarf auswählen">
+        {bedarf.map((b, i) => (
+          <li class={b.key === 'sanitaetshaus' ? 'bd-all' : ''}><button type="button" class="bd" data-i={i} aria-pressed="false">
+            <strong><span class="bl">{b.key === 'sanitaetshaus' ? 'Alle Sanitätshäuser' : b.label}</span><span class="bs">{b.key === 'sanitaetshaus' ? 'Alle Sanitätshäuser' : b.short}</span></strong>{b.hint && <small>{b.hint}</small>}
+          </button></li>
+        ))}
+      </ul>
     </div>
-    <label class="frad">Umkreis
-      <select id="f-rad"><option value="10">10 km</option><option value="25" selected>25 km</option><option value="50">50 km</option><option value="100">100 km</option></select>
-    </label>
-    <button type="button" id="f-loc" class="btn">Mein Standort</button>
-    <button type="button" id="f-all" class="fall" hidden>Alle Sanitätshäuser zeigen</button>
+    <div class="fmain">
+      <p class="fwahl" id="f-wahl"></p>
+      <div class="fbar">
+        <div class="fq">
+          <label for="f-ort" class="sr">Ort oder Postleitzahl</label>
+          <input id="f-ort" type="search" placeholder="Ihr Ort oder Ihre PLZ, z. B. Kassel oder 34117" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="f-sug" />
+          <ul id="f-sug" role="listbox" hidden></ul>
+        </div>
+        <button type="button" id="f-loc" class="btn">Mein Standort</button>
+      </div>
+      <div class="fout">
+        <p class="fhead"><span id="f-msg" aria-live="polite"></span>
+          <label class="frad">Umkreis <select id="f-rad"><option value="5">5 km</option><option value="10">10 km</option><option value="25" selected>25 km</option><option value="50">50 km</option><option value="100">100 km</option></select></label>
+        </p>
+        <div id="f-map" data-src={u('/data/finder.json')} data-base={u('/')} data-cats={JSON.stringify(cats)} data-bedarf={JSON.stringify(bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Sanitätshaus' : b.label, leistung: b.leistung, seite: b.seite })))}></div>
+        <ol id="f-list" class="flist"></ol>
+        <p id="f-more" class="fmore" hidden></p>
+        <p class="muted"><small>Kartendaten © OpenStreetMap-Mitwirkende. Leistungen laut Website der Betriebe, ohne Gewähr. Ihr Standort bleibt in Ihrem Browser.</small></p>
+      </div>
+    </div>
   </div>
-  <p class="flabel">Was brauchen Sie?</p>
-  <ul class="bedarf" role="group" aria-label="Bedarf auswählen">
-    {bedarf.map((b, i) => b.key !== 'sanitaetshaus' && (
-      <li><button type="button" class="bd" data-i={i} aria-pressed="false">
-        <strong>{b.label}</strong>{b.hint && <small>{b.hint}</small>}
-      </button></li>
-    ))}
-  </ul>
-  <p id="f-msg" class="fmsg" aria-live="polite">Geben Sie Ihren Ort ein. Bis dahin zeigt die Karte ganz Deutschland.</p>
-  <div id="f-map" data-src={u('/data/finder.json')} data-base={u('/')} data-cats={JSON.stringify(cats)} data-bedarf={JSON.stringify(bedarf.map((b) => ({ label: b.label, leistung: b.leistung, seite: b.seite })))}></div>
-  <ol id="f-list" class="flist"></ol>
-  <p id="f-more" class="fmore" hidden></p>
-  <p class="muted"><small>Kartendaten © OpenStreetMap-Mitwirkende. Leistungen laut Website der Betriebe, ohne Gewähr. Ihr Standort bleibt in Ihrem Browser.</small></p>
 </section>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.min.css" />
 <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
 <script is:inline>
   (async () => {
     const el = document.getElementById('f-map');
     const base = el.dataset.base, cats = JSON.parse(el.dataset.cats), BD = JSON.parse(el.dataset.bedarf);
     const $ = (id) => document.getElementById(id);
     const input = $('f-ort'), sug = $('f-sug'), rad = $('f-rad'), msg = $('f-msg'), list = $('f-list'), more = $('f-more');
-    const map = L.map(el, { scrollWheelZoom: false }).setView([51.2, 10.4], 6);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map);
-    const data = await (await fetch(el.dataset.src)).json();
+    const root = $('finder');
+    const dataP = fetch(el.dataset.src).then((r) => r.json());
+    let data = null, map = null, pins = null;
+    const ensureMap = () => {
+      if (map) { map.invalidateSize(); return; }
+      map = L.map(el, { scrollWheelZoom: false }).setView([51.2, 10.4], 6);
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map);
+      pins = L.featureGroup().addTo(map);
+    };
+    data = await dataP;
     const norm = (s) => s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/ß/g, 'ss');
     const orte = data.orte.map(([label, lat, lon, slug, n]) => ({ label, lat, lon, slug, n, k: norm(label) }));
     const plzKeys = Object.keys(data.plz);
     const km = (a, b) => { const r = Math.PI / 180, x = Math.sin((b.lat - a.lat) * r / 2) ** 2 + Math.cos(a.lat * r) * Math.cos(b.lat * r) * Math.sin((b.lon - a.lon) * r / 2) ** 2; return 12742 * Math.asin(Math.sqrt(x)); };
     const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-    let sel = BD.length - 1, here = null, shown = 30;
-    const cluster = L.markerClusterGroup({ chunkedLoading: true, showCoverageOnHover: false, maxClusterRadius: 45 }).addTo(map);
-    const pins = L.layerGroup().addTo(map);
+    let sel = -1, here = null, shown = 30;
     let circle = null, me = null;
     const pop = (e) => `<a href="${base}${e[5]}">${esc(e[3])}</a><br><span style="color:${cats[e[0]].color}">${esc(cats[e[0]].one)}</span><br>${esc(e[4])}`;
     const actions = (e) => {
@@ -87,38 +95,38 @@ const cats = categories.map((c) => ({ color: c.color, one: c.one }));
     }
     const marker = (e) => L.circleMarker([e[1], e[2]], { radius: 7, color: cats[e[0]].color, fillColor: cats[e[0]].color, fillOpacity: 0.85, weight: 1 }).bindPopup(pop(e));
 
+    const step = (n) => { root.dataset.step = String(n); };
     function draw() {
-      const bit = 1 << sel, b = BD[sel];
-      const match = data.e.filter((e) => e[6] & bit);
-      cluster.clearLayers(); pins.clearLayers(); list.innerHTML = ''; more.hidden = true;
-      const extra = b.leistung ? `<a href="${base}leistung/${b.leistung}/">${esc(b.label)} nach Stadt</a>` : b.seite ? `<a href="${base}${b.seite}/">${esc(b.label)} nach Stadt</a>` : '';
-      if (!here) {
-        cluster.addLayers(match.map(marker));
-        msg.innerHTML = sel === BD.length - 1 ? 'Wählen Sie oben, was Sie brauchen, und geben Sie Ihren Ort ein. Die nächsten Adressen stehen dann ganz oben.' : `„${esc(b.label)}“: Geben Sie Ihren Ort ein, dann zeigen wir die nächsten Adressen zuerst.`;
-        return;
-      }
-      const r = +rad.value;
-      const near = match.map((e) => ({ e, d: km(here, { lat: e[1], lon: e[2] }) })).filter((x) => x.d <= r).sort((a, b) => a.d - b.d);
+      if (sel < 0) return;
+      const b = BD[sel];
+      $('f-wahl').innerHTML = `<strong>${esc(b.label)}</strong> in Ihrer Nähe`;
+      if (!here) { step(2); return; }
+      step(3); ensureMap();
+      const bit = 1 << sel, r = +rad.value;
+      const near = data.e.filter((e) => e[6] & bit).map((e) => ({ e, d: km(here, { lat: e[1], lon: e[2] }) })).filter((x) => x.d <= r).sort((a, b) => a.d - b.d);
+      pins.clearLayers(); list.innerHTML = ''; more.hidden = true;
       near.forEach((x) => pins.addLayer(marker(x.e)));
       if (circle) circle.remove();
       circle = L.circle([here.lat, here.lon], { radius: r * 1000, color: '#0f6b57', weight: 1, dashArray: '5 4', fillOpacity: 0.04, interactive: false }).addTo(map);
+      if (me) me.remove();
+      me = L.circleMarker([here.lat, here.lon], { radius: 8, color: '#fff', fillColor: '#d9480f', fillOpacity: 1, weight: 3 }).addTo(map);
       map.fitBounds(circle.getBounds());
-      const cityLink = here.slug ? ` <a href="${base}stadt/${here.slug}/">Alle Sanitätshäuser in ${esc(here.label)}</a>` : '';
-      msg.innerHTML = near.length
-        ? `„${esc(b.label)}“ im Umkreis von ${r} km um ${esc(here.label)}, die nächsten zuerst.${cityLink}`
-        : `Kein Treffer für „${esc(b.label)}“ im Umkreis von ${r} km. Vergrößern Sie den Umkreis.${extra ? ' ' + extra : ''}`;
+      const extra = b.leistung ? ` <a href="${base}leistung/${b.leistung}/">${esc(b.label)} nach Stadt</a>` : b.seite ? ` <a href="${base}${b.seite}/">${esc(b.label)} nach Stadt</a>` : '';
+      msg.innerHTML = near.length ? `${esc(b.label)} bei ${esc(here.label)}, die nächsten zuerst.` : `Nichts gefunden. Vergrößern Sie den Umkreis.${extra}`;
       list.innerHTML = near.slice(0, shown).map(({ e, d }) => `<li><a href="${base}${e[5]}"><strong>${esc(e[3])}</strong></a> <span class="fkm">${d.toFixed(1).replace('.', ',')} km</span>${ohBadge(e[8])}<br><span class="muted">${esc(cats[e[0]].one)} · ${esc(e[4])}</span>${actions(e)}</li>`).join('');
-      if (near.length > shown) { more.hidden = false; more.innerHTML = `<button type="button" class="btn" id="f-mehr">${near.length - shown} weitere anzeigen</button>`; $('f-mehr').onclick = () => { shown += 30; draw(); }; }
+      if (here.slug) list.insertAdjacentHTML('beforeend', `<li class="fcity"><a href="${base}stadt/${here.slug}/">Alles in ${esc(here.label)} auf einer Seite: Sanitätshäuser, Physiotherapie, Pflege, Krankenfahrten</a></li>`);
+      if (near.length > shown) { more.hidden = false; more.innerHTML = '<button type="button" class="btn" id="f-mehr">Weitere anzeigen</button>'; $('f-mehr').onclick = () => { shown += 30; draw(); }; }
     }
     document.querySelector('.bedarf').addEventListener('click', (ev) => {
       const btn = ev.target.closest('button'); if (!btn) return;
       document.querySelectorAll('.bedarf .bd').forEach((x) => { x.classList.toggle('on', x === btn); x.setAttribute('aria-pressed', x === btn); });
-      sel = +btn.dataset.i; shown = 30; $('f-all').hidden = false; draw();
+      const first = sel < 0;
+      sel = +btn.dataset.i; shown = 30; draw();
+      if (first || !here) { root.scrollIntoView({ block: 'start', behavior: 'smooth' }); input.focus({ preventScroll: true }); }
+      requestAnimationFrame(() => btn.scrollIntoView({ block: 'nearest', inline: 'center' }));
     });
-    $('f-all').addEventListener('click', () => { document.querySelectorAll('.bedarf .bd').forEach((x) => { x.classList.remove('on'); x.setAttribute('aria-pressed', 'false'); }); sel = BD.length - 1; shown = 30; $('f-all').hidden = true; draw(); });
     rad.addEventListener('change', () => { shown = 30; draw(); });
-    const setHere = (h) => { here = h; shown = 30; input.value = h.label; sug.hidden = true; input.setAttribute('aria-expanded', 'false');
-      if (me) me.remove(); me = L.circleMarker([h.lat, h.lon], { radius: 8, color: '#fff', fillColor: '#d9480f', fillOpacity: 1, weight: 3 }).addTo(map); draw(); };
+    const setHere = (h) => { here = h; shown = 30; input.value = h.label; sug.hidden = true; input.setAttribute('aria-expanded', 'false'); draw(); };
     function plzHit(q) {
       if (data.plz[q]) return data.plz[q];
       for (const n of [3, 2]) {
@@ -145,40 +153,56 @@ const cats = categories.map((c) => ({ color: c.color, one: c.one }));
     sug.addEventListener('mousedown', (ev) => { const li = ev.target.closest('li'); if (li) { ev.preventDefault(); setHere(hits[+li.dataset.i]); } });
     input.addEventListener('blur', () => setTimeout(() => { sug.hidden = true; }, 150));
     $('f-loc').addEventListener('click', () => {
-      if (!navigator.geolocation) { msg.textContent = 'Ihr Browser kann den Standort nicht ermitteln. Bitte Ort eingeben.'; return; }
-      msg.textContent = 'Standort wird ermittelt …';
+      if (!navigator.geolocation) return;
+      $('f-wahl').insertAdjacentText('beforeend', ' · Standort wird ermittelt …');
       navigator.geolocation.getCurrentPosition((p) => setHere({ label: 'Ihrem Standort', lat: p.coords.latitude, lon: p.coords.longitude }),
-        () => { msg.textContent = 'Standort nicht verfügbar. Bitte Ort oder PLZ eingeben.'; }, { timeout: 10000 });
+        () => { $('f-wahl').insertAdjacentText('beforeend', ' · Standort nicht verfügbar, bitte Ort eingeben.'); }, { timeout: 10000 });
     });
-    draw();
   })();
 </script>
 <style is:global>
-  .finder { margin: 12px 0 8px; }
-  .finder h2 { margin-top: 0; }
-  .flabel { margin: 14px 0 6px; font-weight: 700; }
-  .bedarf { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 8px; }
-  .bd { width: 100%; height: 100%; text-align: left; font: inherit; background: var(--bg); color: var(--text); border: 1px solid var(--line); border-radius: var(--radius); padding: 7px 10px; cursor: pointer; }
-  .bd strong { display: block; font-size: .95rem; line-height: 1.3; hyphens: auto; overflow-wrap: anywhere; }
+  .finder { margin: 12px 0 8px; scroll-margin-top: 12px; }
+  .flabel { margin: 0 0 10px; font-size: 1.25rem; }
+  .bedarf { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
+  .bd { width: 100%; height: 100%; text-align: left; font: inherit; background: var(--bg); color: var(--text); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; cursor: pointer; }
+  .bd strong { display: block; font-size: 1rem; line-height: 1.3; hyphens: auto; overflow-wrap: anywhere; }
   .bd small { display: block; color: var(--muted); font-size: .8rem; margin-top: 2px; }
   .bd:hover { border-color: var(--brand); }
   .bd.on { background: var(--brand); border-color: var(--brand); color: var(--brand-ink); }
   .bd.on small { color: #cfe8df; }
+  .bs { display: none; }
+  .finder:not([data-step="1"]) .bl { display: none; }
+  .finder:not([data-step="1"]) .bs { display: inline; }
+  .bd-all { grid-column: 1 / -1; }
+  .bd-all .bd { background: none; border-style: dashed; text-align: center; padding: 8px; }
+  .fside { min-width: 0; }
+  .fmain { display: none; min-width: 0; }
+  .fout { display: none; }
+  /* Nach der Wahl: Rubriken links, rechts nur das Ort-Feld; nach der Ortseingabe Karte und Ergebnisse */
+  .finder:not([data-step="1"]) .fgrid { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 20px; align-items: start; }
+  .finder:not([data-step="1"]) .fmain { display: block; }
+  .finder:not([data-step="1"]) .bedarf { grid-template-columns: 1fr; gap: 4px; }
+  .finder:not([data-step="1"]) .bd { padding: 7px 10px; }
+  .finder:not([data-step="1"]) .bd strong { font-size: .92rem; }
+  .finder:not([data-step="1"]) .bd small { display: none; }
+  .finder:not([data-step="1"]) .flabel { font-size: 1rem; }
+  .finder[data-step="3"] .fout { display: block; }
+  .fwahl { margin: 0 0 10px; font-size: 1.2rem; }
+  .finder[data-step="2"] .fq input { font-size: 1.25rem; padding: 16px 18px; }
   .fbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-  .fq { position: relative; flex: 1 1 260px; }
+  .fq { position: relative; flex: 1 1 260px; min-width: 0; }
   .fq input { width: 100%; font: inherit; padding: 11px 14px; border: 2px solid var(--line); border-radius: var(--radius); }
   .fq input:focus { outline: none; border-color: var(--brand); }
   #f-sug { position: absolute; z-index: 1001; left: 0; right: 0; top: 100%; margin: 2px 0 0; padding: 0; list-style: none; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,.14); max-height: 300px; overflow: auto; }
-  #f-sug li { padding: 9px 14px; cursor: pointer; display: flex; justify-content: space-between; gap: 12px; }
-  #f-sug li span { color: var(--muted); font-size: .85rem; }
+  #f-sug li { padding: 9px 14px; cursor: pointer; }
   #f-sug li.on, #f-sug li:hover { background: var(--accent); }
-  .frad { display: flex; align-items: center; gap: 8px; font-size: .95rem; }
-  .frad select { font: inherit; padding: 9px 10px; border: 2px solid var(--line); border-radius: 8px; background: var(--surface); }
-  .fall { font: inherit; font-size: .9rem; background: none; border: 0; color: var(--brand); text-decoration: underline; cursor: pointer; padding: 4px; }
+  .fhead { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 16px; margin: 14px 0 0; }
+  .frad { display: flex; align-items: center; gap: 8px; font-size: .95rem; font-weight: 600; }
+  .frad select { font: inherit; padding: 7px 10px; border: 2px solid var(--brand); border-radius: 8px; background: var(--surface); }
   #f-loc { border: 0; cursor: pointer; font-size: .95rem; }
-  .fmsg { margin: 10px 0 0; }
-  #f-map { height: 440px; border-radius: var(--radius); border: 1px solid var(--line); margin: 12px 0; z-index: 0; }
-  .flist { padding-left: 1.4em; display: grid; gap: 10px; margin: 0; }
+  #f-map { height: 400px; border-radius: var(--radius); border: 1px solid var(--line); margin: 10px 0 12px; z-index: 0; }
+  .flist { padding-left: 1.4em; display: grid; gap: 12px; margin: 0; }
+  .flist .fcity { list-style: none; margin-left: -1.4em; }
   .fkm { color: var(--muted); font-size: .85rem; white-space: nowrap; }
   .flist .facts { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
   .flist .k { display: inline-block; padding: 4px 11px; border: 1px solid var(--line); border-radius: 8px; text-decoration: none; font-size: .9rem; background: var(--surface); }
@@ -189,5 +213,13 @@ const cats = categories.map((c) => ({ color: c.color, one: c.one }));
   .flist .oh.closed { background: #f3eded; color: #8a2d2d; }
   .fmore { margin: 12px 0 0; }
   .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-  @media (max-width: 600px) { #f-map { height: 340px; } .bedarf { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 700px) {
+    #f-map { height: 320px; }
+    .finder[data-step="1"] .bedarf { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .finder:not([data-step="1"]) .fgrid { grid-template-columns: 1fr; }
+    .finder:not([data-step="1"]) .bedarf { display: flex; overflow-x: auto; gap: 6px; padding-bottom: 4px; }
+    .finder:not([data-step="1"]) .bedarf li { flex: 0 0 auto; }
+    .finder:not([data-step="1"]) .bd { white-space: nowrap; }
+    .finder:not([data-step="1"]) .flabel { display: none; }
+  }
 </style>

@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://seeger2000-collab.github.io/sanitaetshaus-verzeichnis/sitemap-index.xml
+Sitemap: https://sanitaetshaus-suche.de/sitemap-index.xml
