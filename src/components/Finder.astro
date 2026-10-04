@@ -65,6 +65,13 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
       pins = L.featureGroup().addTo(map);
     };
     data = await dataP;
+    // Kerndaten ins alte Zeilenformat bringen; Adresse und Kontakt kommen aus den Kacheln nach (ensureDetails)
+    data.e = data.e.map((c, i) => { const r = [c[0], c[1], c[2], c[3], '', '', c[4], c[6] ? '…' : '', '', '', '', '', c[5]]; r.i = i; r.cell = `${Math.floor(c[1])}_${Math.floor(c[2])}`; return r; });
+    const cellP = {};
+    const ensureDetails = (rows) => Promise.all([...new Set(rows.map((r) => r.cell))].map((k) => (cellP[k] ||= fetch(`${base}data/f/${k}.json`).then((r) => r.json()).then((d) => {
+      for (const [i, v] of Object.entries(d)) { const r = data.e[+i]; [r[4], r[5], r[7], r[8], r[9], r[10], r[11]] = v; }
+    }).catch(() => { delete cellP[k]; }))));
+    let drawTok = 0;
     const norm = (s) => s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/ß/g, 'ss');
     const orte = data.orte.map(([label, lat, lon, slug, n]) => ({ label, lat, lon, slug, n, k: norm(label) }));
     const plzKeys = Object.keys(data.plz);
@@ -72,7 +79,7 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
     const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
     let sel = -1, here = null, shown = 30;
     let circle = null, me = null;
-    const pop = (e) => `<a href="${base}${e[5]}">${esc(e[3])}</a><br><span style="color:${cats[e[0]].color}">${esc(cats[e[0]].one)}</span><br>${esc(e[4])}`;
+    const pop = (e) => `${e[5] ? `<a href="${base}${e[5]}">${esc(e[3])}</a>` : `<strong>${esc(e[3])}</strong>`}<br><span style="color:${cats[e[0]].color}">${esc(cats[e[0]].one)}</span><br>${esc(e[4])}`;
     const actions = (e) => {
       const a = [];
       if (e[7]) a.push(`<a class="k k-tel" href="tel:${esc(e[7].replace(/[^+\d]/g, ''))}">☎ ${esc(e[7])}</a>`);
@@ -117,7 +124,8 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
       const bit = 1 << (sel < 0 ? ALL : sel); return data.e.filter((e) => e[6] & bit);
     };
     const whatLabel = () => (PRE ? PRE.label : nameQ ? `„${nameQ}“` : BD[sel < 0 ? ALL : sel].label);
-    function draw() {
+    async function draw() {
+      const tok = ++drawTok;
       ensureMap();
       const r = +rad.value, all = matches();
       pins.clearLayers(); list.innerHTML = ''; more.hidden = true;
@@ -134,6 +142,8 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
       const wider = !near.length && dist.length > 0;
       if (wider) near = dist.slice(0, 5);
       // Ohne Telefon: hellgrau ans Ende
+      await ensureDetails(near.map((x) => x.e));
+      if (tok !== drawTok) return;
       near = [...near.filter((x) => x.e[7]), ...near.filter((x) => !x.e[7])];
       near.forEach((x) => pins.addLayer(x.e[7] ? marker(x.e, 7) : L.circleMarker([x.e[1], x.e[2]], { radius: 6, color: '#aaa', fillColor: '#ccc', fillOpacity: 0.8, weight: 1 }).bindPopup(pop(x.e))));
       circle = L.circle([here.lat, here.lon], { radius: r * 1000, color: '#0f6b57', weight: 1, dashArray: '5 4', fillOpacity: 0.04, interactive: false }).addTo(map);

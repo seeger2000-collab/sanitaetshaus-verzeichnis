@@ -1,6 +1,6 @@
 // Führt OSM-Daten, Website-Auswertung und manuelle Ergänzungen zu src/data/*.json zusammen.
 import { BEDARF, bedarfMask } from './bedarf.mjs';
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, rm } from 'node:fs/promises';
 import { FEATURES, KASSEN, FEATURES_BY_CAT } from './features.mjs';
 import { CATEGORIES } from './categories.mjs';
 
@@ -162,11 +162,19 @@ for (const s of all) if (s.lat && /^\d{5}$/.test(s.postcode || '')) (plzPts[s.po
 const r4 = (x) => Math.round(x * 1e4) / 1e4;
 const plz = Object.fromEntries(Object.entries(plzPts).sort().map(([k, v]) => [k, [r4(v.reduce((a, p) => a + p[0], 0) / v.length), r4(v.reduce((a, p) => a + p[1], 0) / v.length)]]));
 const catSlug = Object.fromEntries(CATEGORIES.map((c) => [c.key, c.slug]));
+// Finder-Daten zweigeteilt: kleine Kerndatei für Karte und Suche, Details (Adresse, Kontakt) in 1°-Kacheln, die erst beim Suchen geladen werden
+const finderAll = all.filter((s) => s.lat).map((s) => [catIndex[s.cat], r4(s.lat), r4(s.lon), s.name, [s.street, [s.postcode, cityBySlug.get(s.citySlug)?.label || s.city].filter(Boolean).join(' ')].filter(Boolean).join(', '),
+    s.slug ? `sanitaetshaus/${s.slug}/` : `${catSlug[s.cat]}/${s.citySlug}/`, bedarfMask(s), (s.phone || '').split(';')[0].trim(), s.openingHours || '', s.website || '', (s.email || '').split(';')[0].trim(), s.booking || '', s.cat === 'sanitaetshaus' ? FEATURES.reduce((m, f, i) => (s.features.includes(f.key) ? m | (1 << i) : m), 0) : 0]);
+const cells = {};
+finderAll.forEach((e, i) => { const k = `${Math.floor(e[1])}_${Math.floor(e[2])}`; (cells[k] ||= {})[i] = [e[4], e[5], e[7], e[8], e[9], e[10], e[11]]; });
+await rm('public/data/f', { recursive: true, force: true });
+await mkdir('public/data/f', { recursive: true });
+for (const [k, v] of Object.entries(cells)) await writeFile(`public/data/f/${k}.json`, JSON.stringify(v));
 await writeFile('public/data/finder.json', JSON.stringify({
   orte: cities.filter((c) => c.lat).map((c) => [c.label, c.lat, c.lon, c.slug, c.counts?.sanitaetshaus || 0]),
   plz,
-  e: all.filter((s) => s.lat).map((s) => [catIndex[s.cat], r4(s.lat), r4(s.lon), s.name, [s.street, [s.postcode, cityBySlug.get(s.citySlug)?.label || s.city].filter(Boolean).join(' ')].filter(Boolean).join(', '),
-    s.slug ? `sanitaetshaus/${s.slug}/` : `${catSlug[s.cat]}/${s.citySlug}/`, bedarfMask(s), (s.phone || '').split(';')[0].trim(), s.openingHours || '', s.website || '', (s.email || '').split(';')[0].trim(), s.booking || '', s.cat === 'sanitaetshaus' ? FEATURES.reduce((m, f, i) => (s.features.includes(f.key) ? m | (1 << i) : m), 0) : 0]),
+  // [Kategorie, lat, lon, Name, Bedarfs-Maske, Leistungs-Maske, hat Telefon]
+  e: finderAll.map((e) => [e[0], e[1], e[2], e[3], e[6], e[12], e[7] ? 1 : 0]),
 }));
 await writeFile('src/data/cities.json', JSON.stringify(cities));
 await writeFile('src/data/states.json', JSON.stringify(states));

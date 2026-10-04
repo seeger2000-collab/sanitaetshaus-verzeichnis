@@ -29,6 +29,15 @@ export const CATEGORY_TEXT: Record<string, { h1: (c: string) => string; title: (
       { q: 'Was ist Kurzzeitpflege?', a: 'Ein vorübergehender Heimplatz, etwa nach einem Krankenhausaufenthalt oder wenn pflegende Angehörige ausfallen. Die Pflegekasse zahlt ab Pflegegrad 2 bis zu acht Wochen im Jahr.' },
     ],
   },
+  apotheke: {
+    h1: (c) => `Apotheken in ${c}`,
+    title: (c, n) => `Apotheke ${c}: Telefon, Öffnungszeiten, Pflegeprodukte`,
+    intro: 'Apotheken in der Nähe, mit Telefon und Öffnungszeiten. Viele Apotheken führen Pflegeprodukte wie Einmalhandschuhe, Desinfektion und Inkontinenzartikel und liefern per Botendienst nach Hause.',
+    faq: [
+      { q: 'Bekomme ich Pflegehilfsmittel in der Apotheke?', a: 'Ja. Mit Pflegegrad zahlt die Pflegekasse monatlich bis zu 42 € für Pflegehilfsmittel zum Verbrauch. Viele Apotheken rechnen das direkt mit der Pflegekasse ab, fragen Sie danach.' },
+      { q: 'Liefert die Apotheke nach Hause?', a: 'Viele Apotheken haben einen Botendienst, oft kostenlos. Rufen Sie an und fragen Sie, bis wann Sie bestellen müssen.' },
+    ],
+  },
   fahrt: {
     h1: (c) => `Krankenfahrten in ${c}`,
     title: (c, n) => `Krankenfahrt ${c}: Fahrdienst für Arzt, Dialyse, Reha`,

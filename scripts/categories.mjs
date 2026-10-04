@@ -23,6 +23,10 @@ export const CATEGORIES = [
     filter: `{ ?osm osmkey:amenity "nursing_home" } UNION { ?osm osmkey:social_facility "nursing_home" } UNION { ?osm osmkey:social_facility ?sf . ?osm osmkey:social_facility:for "senior" . FILTER(?sf IN ("assisted_living","group_home")) }`,
   },
   {
+    key: 'apotheke', slug: 'apotheke', label: 'Apotheken', one: 'Apotheke', many: 'Apotheken', color: '#2e7d32',
+    filter: `?osm osmkey:amenity "pharmacy" . FILTER NOT EXISTS { ?osm osmkey:dispensing "no" }`,
+  },
+  {
     key: 'fahrt', slug: 'krankenfahrten', label: 'Krankenfahrten', one: 'Fahrdienst', many: 'Fahrdienste mit Krankenfahrten', color: '#7b3fa0', needsEvidence: 'krankenfahrt',
     filter: `{ ?osm osmkey:amenity "taxi" } UNION { ?osm osmkey:office "taxi" } UNION { ${NAME('krankenfahrt|krankentransport|fahrdienst|rollstuhltaxi|rollstuhlbeförderung|behindertenfahrdienst|patientenfahrt|dialysefahrt')} FILTER NOT EXISTS { ?osm osmkey:emergency ?em } }`,
     nameEvidence: /krankenfahrt|krankentransport|fahrdienst|rollstuhltaxi|rollstuhlbeförderung|behindertenfahrdienst|patientenfahrt|dialysefahrt/i,

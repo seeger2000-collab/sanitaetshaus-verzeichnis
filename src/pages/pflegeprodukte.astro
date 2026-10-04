@@ -1,0 +1,34 @@
+---
+import Base from '../layouts/Base.astro';
+import Finder from '../components/Finder.astro';
+import PflegeboxHinweis from '../components/PflegeboxHinweis.astro';
+import { meta } from '../lib/data';
+const bi = meta.bedarf.findIndex((b) => b.key === 'pflegebox');
+const produkte = [
+  { name: 'Einmalhandschuhe', wo: 'Apotheke, Sanitätshaus, Pflegebox' },
+  { name: 'Hände- und Flächendesinfektion', wo: 'Apotheke, Sanitätshaus, Pflegebox' },
+  { name: 'Bettschutzeinlagen', wo: 'Sanitätshaus, Apotheke, Pflegebox' },
+  { name: 'Mundschutz und Schutzschürzen', wo: 'Apotheke, Pflegebox' },
+  { name: 'Inkontinenzvorlagen und -hosen', wo: 'Sanitätshaus, Apotheke (mit Rezept über die Krankenkasse)' },
+  { name: 'Hautpflege, Wundschutz', wo: 'Apotheke' },
+  { name: 'Waschhandschuhe, Waschlotion', wo: 'Apotheke, Drogerie' },
+];
+---
+<Base title="Pflegeprodukte in der Nähe: Apotheke und Sanitätshaus, Pflegebox" description="Pflegeprodukte schnell in der Nähe kaufen: Apotheken und Sanitätshäuser mit Pflegehilfsmitteln und Inkontinenzartikeln, mit Telefon und Route. Dazu: Pflegebox mit 42 € im Monat von der Pflegekasse." crumbs={[{ href: '/pflegeprodukte/', label: 'Pflegeprodukte' }]}>
+  <h1>Pflegeprodukte in Ihrer Nähe</h1>
+  <p class="lead">Handschuhe, Desinfektion, Bettschutz oder Inkontinenzartikel: Geben Sie Ihren Ort ein und sehen Sie die nächsten Apotheken und Sanitätshäuser mit Telefon und Route.</p>
+  <Finder preset={{ kind: 'bedarf', i: bi, label: 'Pflegeprodukte', current: '/pflegeprodukte/' }} />
+  <h2>Was bekomme ich wo?</h2>
+  <table class="ptab">
+    <thead><tr><th>Produkt</th><th>Wo es das gibt</th></tr></thead>
+    <tbody>{produkte.map((p) => <tr><td>{p.name}</td><td>{p.wo}</td></tr>)}</tbody>
+  </table>
+  <h2>Pflegeprodukte über die Pflegekasse</h2>
+  <p>Wer einen Pflegegrad hat und zu Hause gepflegt wird, bekommt von der Pflegekasse bis zu 42 € im Monat für Pflegehilfsmittel zum Verbrauch, also Handschuhe, Desinfektion, Bettschutz und Mundschutz. Das gibt es ab Pflegegrad 1. Sie können die Produkte in einer Apotheke oder einem Sanitätshaus holen, das mit Ihrer Pflegekasse abrechnet, oder sich jeden Monat eine Pflegebox nach Hause schicken lassen.</p>
+  <p>Inkontinenzartikel zahlt dagegen die Krankenkasse, wenn der Arzt sie verordnet. Dann zahlen Sie 10 % zu, höchstens 10 € im Monat.</p>
+  <PflegeboxHinweis />
+</Base>
+<style>
+  .ptab { width: 100%; border-collapse: collapse; margin: 8px 0 16px; }
+  .ptab th, .ptab td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+</style>

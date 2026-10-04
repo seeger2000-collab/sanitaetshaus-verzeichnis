@@ -68,7 +68,12 @@ export const HEIM_FEATURES = [
   { key: 'intensiv', short: 'Intensivpflege', label: 'Intensiv- und Beatmungspflege', patterns: [/intensivpflege/, /beatmung/] },
   { key: 'palliativ', short: 'Palliativ', label: 'Palliativpflege', patterns: [/palliativ/] },
 ];
-export const FEATURES_BY_CAT = { sanitaetshaus: FEATURES, physio: PHYSIO_FEATURES, pflege: PFLEGE_FEATURES, heim: HEIM_FEATURES, fahrt: FAHRT_FEATURES };
+export const APOTHEKE_FEATURES = [
+  { key: 'pflegehilfsmittel', short: 'Pflegehilfsmittel', label: 'Pflegehilfsmittel und Pflegebox', patterns: [/pflegehilfsmittel/, /pflegebox/] },
+  { key: 'inkontinenz', short: 'Inkontinenz', label: 'Inkontinenzversorgung', patterns: [/inkontinenz/] },
+  { key: 'botendienst', short: 'Botendienst', label: 'Lieferung nach Hause', patterns: [/botendienst/, /lieferservice/, /liefern (ihnen )?(ihre medikamente )?(nach hause|frei haus)/] },
+];
+export const FEATURES_BY_CAT = { sanitaetshaus: FEATURES, physio: PHYSIO_FEATURES, pflege: PFLEGE_FEATURES, heim: HEIM_FEATURES, apotheke: APOTHEKE_FEATURES, fahrt: FAHRT_FEATURES };
 
 export function detect(text, cat = 'sanitaetshaus') {
   const t = text.toLowerCase();

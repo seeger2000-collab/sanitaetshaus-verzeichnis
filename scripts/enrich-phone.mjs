@@ -4,7 +4,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { websiteOf, contactLinks } from './enrich.mjs';
 
-const CATS = ['sanitaetshaus', 'physio', 'pflege', 'heim', 'fahrt'];
+const CATS = ['sanitaetshaus', 'physio', 'pflege', 'heim', 'apotheke', 'fahrt'];
 const CONCURRENCY = 16, TIMEOUT_MS = 15000, MAX_AGE_DAYS = 30;
 const UA = 'Mozilla/5.0 (compatible; SanitaetshausVerzeichnisBot/0.1; +https://sanitaetshaus-suche.de/ueber/)';
 const FORCE = process.argv.includes('--force');
