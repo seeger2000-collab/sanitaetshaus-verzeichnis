@@ -1,7 +1,7 @@
 // Zentrale Einstellungen. Alles, was später Geld bringt, wird hier eingeschaltet.
 export const SITE = {
-  name: 'Sanitätshaus-Verzeichnis',
-  claim: 'Sanitätshäuser in Deutschland nach Leistung finden',
+  name: 'Sanitätshaus-Suche',
+  claim: 'Sanitätshaus, Physiotherapie, Pflege und Krankenfahrten in der Nähe',
   // Erst auf true stellen, wenn das Impressum ausgefüllt ist. Bis dahin: noindex für Suchmaschinen.
   indexing: false,
   // Formular für Korrekturen und neue Einträge (z. B. Tally). Leer = Link auf GitHub-Issue.
