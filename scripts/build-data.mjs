@@ -5,7 +5,7 @@ import { FEATURES, KASSEN, FEATURES_BY_CAT } from './features.mjs';
 import { CATEGORIES } from './categories.mjs';
 
 // Telefonnummer ohne Leerzeichen (+4930123456, aus tel:-Links oder OSM) lesbar machen: +49 30123456
-const fmtPhone = (p) => { if (!p) return null; const d = p.trim().replace(/^0049/, '+49'); return /^\+49\(?0?\)?\d+$/.test(d) ? `+49 ${d.slice(3).replace(/^\(?0?\)?/, '')}` : d; };
+const fmtPhone = (p) => { if (!p) return null; let d = p.trim().replace(/^0049\s*/, '+49'); if (/^0[1-9]/.test(d)) d = '+49' + d.slice(1); const m = d.match(/^\+49\s*(?:\(0\)|0)?\s*(\d.*)$/); return m ? `+49 ${m[1]}` : d; };
 // Online-Termin nur, wenn es wirklich eine Buchungsseite ist (keine Startseite, kein Kontaktformular, keine Stellenanzeige)
 const goodBooking = (b, site) => {
   if (!b) return null;
@@ -23,6 +23,7 @@ const overrides = await readJson('data/overrides.json', {});
 // Öffnungszeiten von Websites, nur wenn OSM keine hat (scripts/enrich-hours.mjs)
 const webHoursRaw = await readJson('data/hours.json', {});
 const phones = await readJson('data/phones.json', {});
+const deadLinks = await readJson('data/deadlinks.json', {});
 // Unplausible Website-Zeiten verwerfen: überlappende Zeiträume (oft mehrere Filialen auf einer Seite) oder Sonntags geöffnet
 const plausible = (oh) => !/Su/.test(oh) && oh.split(';').every((rule) => {
   const slots = (rule.trim().split(' ')[1] || '').split(',').map((t) => t.split('-').map((x) => +x.slice(0, 2) * 60 + +x.slice(3)));
@@ -77,7 +78,7 @@ for (const s of osm.shops) {
     phone: fmtPhone(t.phone || t['contact:phone'] || t['contact:mobile'] || t.mobile || t['phone:mobile'] || e?.phone || phones[s.id]?.phone || ''),
     email: t.email || t['contact:email'] || e?.email || null,
     booking: goodBooking(e?.booking, e?.finalUrl || e?.website),
-    website: websiteOf(t),
+    website: deadLinks[websiteOf(t)] ? null : websiteOf(t),
     openingHours: t.opening_hours || webHours[s.id]?.oh || null,
     hoursSource: t.opening_hours ? 'osm' : webHours[s.id]?.oh ? 'website' : null,
     wheelchair: t.wheelchair || null,
@@ -92,6 +93,8 @@ for (const s of osm.shops) {
 }
 }
 
+// Einträge ohne Straßenadresse und ohne Telefon sind für Suchende nicht erreichbar: weglassen (Wunsch JS, 2026-10-04)
+for (let i = all.length - 1; i >= 0; i--) if (!all[i].street && !all[i].phone && !all[i].featured) all.splice(i, 1);
 // Städte: Name eindeutig machen (z. B. zwei "Brühl"), sonst Landkreis anhängen
 const cityById = new Map();
 for (const s of all) {

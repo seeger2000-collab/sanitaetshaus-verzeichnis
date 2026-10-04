@@ -133,14 +133,16 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
       let near = dist.filter((x) => x.d <= r);
       const wider = !near.length && dist.length > 0;
       if (wider) near = dist.slice(0, 5);
-      near.forEach((x) => pins.addLayer(marker(x.e, 7)));
+      // Ohne Telefon: hellgrau ans Ende
+      near = [...near.filter((x) => x.e[7]), ...near.filter((x) => !x.e[7])];
+      near.forEach((x) => pins.addLayer(x.e[7] ? marker(x.e, 7) : L.circleMarker([x.e[1], x.e[2]], { radius: 6, color: '#aaa', fillColor: '#ccc', fillOpacity: 0.8, weight: 1 }).bindPopup(pop(x.e))));
       circle = L.circle([here.lat, here.lon], { radius: r * 1000, color: '#0f6b57', weight: 1, dashArray: '5 4', fillOpacity: 0.04, interactive: false }).addTo(map);
       me = L.circleMarker([here.lat, here.lon], { radius: 8, color: '#fff', fillColor: '#d9480f', fillOpacity: 1, weight: 3 }).addTo(map);
       map.fitBounds(wider ? L.latLngBounds(near.map((x) => [x.e[1], x.e[2]])).extend([here.lat, here.lon]).pad(0.15) : circle.getBounds());
       const b = BD[sel < 0 ? ALL : sel];
       const extra = (nameQ || PRE) ? '' : b.leistung ? ` <a href="${base}leistung/${b.leistung}/">${esc(b.label)} nach Stadt</a>` : b.seite ? ` <a href="${base}${b.seite}/">${esc(b.label)} nach Stadt</a>` : '';
       msg.innerHTML = wider ? `Im Umkreis von ${r} km nichts gefunden. Die nächsten Adressen für ${esc(whatLabel())}:` : near.length ? `${esc(whatLabel())} bei ${esc(here.label)}, die nächsten zuerst.` : `Nichts gefunden im Umkreis von ${r} km. Vergrößern Sie den Umkreis.${extra}`;
-      list.innerHTML = near.slice(0, shown).map(({ e, d }) => `<li><a href="${base}${e[5]}"><strong>${esc(e[3])}</strong></a> <span class="fkm">${d.toFixed(1).replace('.', ',')} km</span>${ohBadge(e[8])}<br><span class="muted">${esc(cats[e[0]].one)} · ${esc(e[4])}</span>${actions(e)}</li>`).join('');
+      list.innerHTML = near.slice(0, shown).map(({ e, d }) => `<li${e[7] ? '' : ' class="nocontact"'}><a href="${base}${e[5]}"><strong>${esc(e[3])}</strong></a> <span class="fkm">${d.toFixed(1).replace('.', ',')} km</span>${ohBadge(e[8])}<br><span class="muted">${esc(cats[e[0]].one)} · ${esc(e[4])}</span>${actions(e)}</li>`).join('');
       if (here.slug) list.insertAdjacentHTML('beforeend', PRE && PRE.city ? `<li class="fcity"><a href="${base}${PRE.city.replace('{slug}', here.slug)}">${esc(PRE.label)} in ${esc(here.label)}: Übersicht für den Ort</a></li>` : `<li class="fcity"><a href="${base}stadt/${here.slug}/">Alles in ${esc(here.label)} auf einer Seite: Sanitätshäuser, Physiotherapie, Pflege, Krankenfahrten</a></li>`);
       if (near.length > shown) { more.hidden = false; more.innerHTML = '<button type="button" class="btn" id="f-mehr">Weitere anzeigen</button>'; $('f-mehr').onclick = () => { shown += 30; draw(); }; }
     }
@@ -232,6 +234,8 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
   .bd.on small { color: #cfe8df; }
   .flist { padding-left: 1.4em; display: grid; gap: 12px; margin: 0; }
   .flist:empty { display: none; }
+  .nocontact, .nocontact a, .nocontact .muted { color: #9a9a9a !important; }
+  .flist .nocontact .k { color: #9a9a9a; border-color: #e3e3e3; }
   .fchips .chip { text-decoration: none; display: inline-block; }
   .fchips .chip.on { background: var(--brand); color: var(--brand-ink); border-color: var(--brand); }
   .flist .fcity { list-style: none; margin-left: -1.4em; }

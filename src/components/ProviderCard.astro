@@ -12,7 +12,7 @@ const place = [p.postcode, p.postcode || showCity ? p.city : null].filter(Boolea
 const address = [p.street, place].filter(Boolean).join(', ');
 const hours = p.openingHours ? formatHours(p.openingHours) : null;
 ---
-<li class="shop" data-features={p.features.join(' ')} data-wheelchair={p.wheelchair === 'yes' ? '1' : ''}>
+<li class:list={["shop", { nocontact: !p.phone }]} data-features={p.features.join(' ')} data-wheelchair={p.wheelchair === 'yes' ? '1' : ''}>
   <article class="card">
     <h3 data-oh={p.openingHours ?? undefined}>{p.name}</h3>
     <p class="addr">{address}{km != null && ` · ${km < 1 ? 'unter 1' : Math.round(km)} km`}{p.wheelchair === 'yes' && <span class="acc">{address ? ' · ' : ''}barrierefrei</span>}</p>

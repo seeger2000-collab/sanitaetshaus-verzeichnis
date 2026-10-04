@@ -41,6 +41,7 @@ jobs:
           npm run enrich
           node scripts/enrich-hours.mjs
           node scripts/enrich-phone.mjs
+          node scripts/check-links.mjs
           node scripts/fetch-images.mjs
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
