@@ -1,0 +1,9 @@
+---
+import Base from '../../layouts/Base.astro';
+import PlzBloecke from '../../components/PlzBloecke.astro';
+---
+<Base title="Sanitätshaus nach Postleitzahl finden" description="Sanitätshäuser, Physiotherapie, Pflegedienste und Krankenfahrten nach Postleitzahl-Bereich: von 01 Dresden bis 99 Erfurt." crumbs={[{ href: '/plz/', label: 'Postleitzahlen' }]}>
+  <h1>Sanitätshaus nach Postleitzahl</h1>
+  <p class="lead">Wählen Sie die ersten zwei Ziffern Ihrer Postleitzahl. Sie sehen alle Adressen im Bereich auf einer Seite.</p>
+  <PlzBloecke />
+</Base>

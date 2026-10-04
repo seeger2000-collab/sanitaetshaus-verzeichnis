@@ -1,0 +1,193 @@
+---
+// Finder auf der Startseite: Bedarf wählen, Ort/PLZ eingeben, Umkreis, Karte mit Treffern und Liste nach Entfernung.
+import { u } from '../lib/url';
+import { meta, categories } from '../lib/data';
+const bedarf = meta.bedarf;
+const cats = categories.map((c) => ({ color: c.color, one: c.one }));
+---
+<section id="finder" class="finder card" aria-labelledby="finder-h">
+  <h2 id="finder-h" class="sr">Hilfe in der Nähe suchen</h2>
+  <div class="fbar">
+    <div class="fq">
+      <label for="f-ort" class="sr">Ort oder Postleitzahl</label>
+      <input id="f-ort" type="search" placeholder="Ort oder PLZ, z. B. Kassel oder 34117" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="f-sug" />
+      <ul id="f-sug" role="listbox" hidden></ul>
+    </div>
+    <label class="frad">Umkreis
+      <select id="f-rad"><option value="10">10 km</option><option value="25" selected>25 km</option><option value="50">50 km</option><option value="100">100 km</option></select>
+    </label>
+    <button type="button" id="f-loc" class="btn">Mein Standort</button>
+    <button type="button" id="f-all" class="fall" hidden>Alle Sanitätshäuser zeigen</button>
+  </div>
+  <p class="flabel">Was brauchen Sie?</p>
+  <ul class="bedarf" role="group" aria-label="Bedarf auswählen">
+    {bedarf.map((b, i) => b.key !== 'sanitaetshaus' && (
+      <li><button type="button" class="bd" data-i={i} aria-pressed="false">
+        <strong>{b.label}</strong>{b.hint && <small>{b.hint}</small>}
+      </button></li>
+    ))}
+  </ul>
+  <p id="f-msg" class="fmsg" aria-live="polite">Geben Sie Ihren Ort ein. Bis dahin zeigt die Karte ganz Deutschland.</p>
+  <div id="f-map" data-src={u('/data/finder.json')} data-base={u('/')} data-cats={JSON.stringify(cats)} data-bedarf={JSON.stringify(bedarf.map((b) => ({ label: b.label, leistung: b.leistung, seite: b.seite })))}></div>
+  <ol id="f-list" class="flist"></ol>
+  <p id="f-more" class="fmore" hidden></p>
+  <p class="muted"><small>Kartendaten © OpenStreetMap-Mitwirkende. Leistungen laut Website der Betriebe, ohne Gewähr. Ihr Standort bleibt in Ihrem Browser.</small></p>
+</section>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.min.css" />
+<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
+<script is:inline>
+  (async () => {
+    const el = document.getElementById('f-map');
+    const base = el.dataset.base, cats = JSON.parse(el.dataset.cats), BD = JSON.parse(el.dataset.bedarf);
+    const $ = (id) => document.getElementById(id);
+    const input = $('f-ort'), sug = $('f-sug'), rad = $('f-rad'), msg = $('f-msg'), list = $('f-list'), more = $('f-more');
+    const map = L.map(el, { scrollWheelZoom: false }).setView([51.2, 10.4], 6);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map);
+    const data = await (await fetch(el.dataset.src)).json();
+    const norm = (s) => s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/ß/g, 'ss');
+    const orte = data.orte.map(([label, lat, lon, slug, n]) => ({ label, lat, lon, slug, n, k: norm(label) }));
+    const plzKeys = Object.keys(data.plz);
+    const km = (a, b) => { const r = Math.PI / 180, x = Math.sin((b.lat - a.lat) * r / 2) ** 2 + Math.cos(a.lat * r) * Math.cos(b.lat * r) * Math.sin((b.lon - a.lon) * r / 2) ** 2; return 12742 * Math.asin(Math.sqrt(x)); };
+    const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    let sel = BD.length - 1, here = null, shown = 30;
+    const cluster = L.markerClusterGroup({ chunkedLoading: true, showCoverageOnHover: false, maxClusterRadius: 45 }).addTo(map);
+    const pins = L.layerGroup().addTo(map);
+    let circle = null, me = null;
+    const pop = (e) => `<a href="${base}${e[5]}">${esc(e[3])}</a><br><span style="color:${cats[e[0]].color}">${esc(cats[e[0]].one)}</span><br>${esc(e[4])}`;
+    const actions = (e) => {
+      const a = [];
+      if (e[7]) a.push(`<a class="k k-tel" href="tel:${esc(e[7].replace(/[^+\d]/g, ''))}">☎ ${esc(e[7])}</a>`);
+      a.push(`<a class="k" href="https://www.google.com/maps/dir/?api=1&destination=${e[1]},${e[2]}" target="_blank" rel="nofollow noopener">Route</a>`);
+      if (e[11]) a.push(`<a class="k k-book" href="${esc(e[11])}" target="_blank" rel="nofollow noopener">Online-Termin</a>`);
+      if (e[10]) a.push(`<a class="k" href="mailto:${esc(e[10])}">E-Mail</a>`);
+      if (e[9]) a.push(`<a class="k" href="${esc(e[9])}" target="_blank" rel="nofollow noopener">Website</a>`);
+      return `<span class="facts">${a.join('')}</span>`;
+    };
+    // Jetzt geöffnet (einfaches OSM-Format, Zeitzone Berlin)
+    const ORDER = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
+    const nowB = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Berlin' }));
+    const today = ORDER[(nowB.getDay() + 6) % 7], nowMin = nowB.getHours() * 60 + nowB.getMinutes();
+    function ohBadge(oh) {
+      if (!oh) return '';
+      let open = null;
+      for (let part of oh.split(';').map((x) => x.trim()).filter(Boolean)) {
+        part = part.replace(/,PH\b|\bPH,/g, '');
+        if (/^PH\b/.test(part)) continue;
+        const m = part.match(/^((?:Mo|Tu|We|Th|Fr|Sa|Su)(?:[-,](?:Mo|Tu|We|Th|Fr|Sa|Su))*)\s+(off|closed|(?:\d\d:\d\d-\d\d:\d\d,?\s*)+)$/);
+        if (!m) return '';
+        const days = [];
+        for (const d of m[1].split(',')) { const [a, b] = d.split('-'); for (let k = ORDER.indexOf(a); k <= ORDER.indexOf(b ?? a); k++) days.push(ORDER[k]); }
+        if (!days.includes(today)) continue;
+        open = /off|closed/.test(m[2]) ? false : m[2].replace(/\s/g, '').split(',').some((t) => { const [a, b] = t.split('-').map((x) => +x.slice(0, 2) * 60 + +x.slice(3)); return nowMin >= a && nowMin < b; });
+      }
+      return open == null ? '' : `<span class="oh ${open ? 'open' : 'closed'}">${open ? 'jetzt geöffnet' : 'jetzt geschlossen'}</span>`;
+    }
+    const marker = (e) => L.circleMarker([e[1], e[2]], { radius: 7, color: cats[e[0]].color, fillColor: cats[e[0]].color, fillOpacity: 0.85, weight: 1 }).bindPopup(pop(e));
+
+    function draw() {
+      const bit = 1 << sel, b = BD[sel];
+      const match = data.e.filter((e) => e[6] & bit);
+      cluster.clearLayers(); pins.clearLayers(); list.innerHTML = ''; more.hidden = true;
+      const extra = b.leistung ? `<a href="${base}leistung/${b.leistung}/">${esc(b.label)} nach Stadt</a>` : b.seite ? `<a href="${base}${b.seite}/">${esc(b.label)} nach Stadt</a>` : '';
+      if (!here) {
+        cluster.addLayers(match.map(marker));
+        msg.innerHTML = sel === BD.length - 1 ? 'Wählen Sie oben, was Sie brauchen, und geben Sie Ihren Ort ein. Die nächsten Adressen stehen dann ganz oben.' : `„${esc(b.label)}“: Geben Sie Ihren Ort ein, dann zeigen wir die nächsten Adressen zuerst.`;
+        return;
+      }
+      const r = +rad.value;
+      const near = match.map((e) => ({ e, d: km(here, { lat: e[1], lon: e[2] }) })).filter((x) => x.d <= r).sort((a, b) => a.d - b.d);
+      near.forEach((x) => pins.addLayer(marker(x.e)));
+      if (circle) circle.remove();
+      circle = L.circle([here.lat, here.lon], { radius: r * 1000, color: '#0f6b57', weight: 1, dashArray: '5 4', fillOpacity: 0.04, interactive: false }).addTo(map);
+      map.fitBounds(circle.getBounds());
+      const cityLink = here.slug ? ` <a href="${base}stadt/${here.slug}/">Alle Sanitätshäuser in ${esc(here.label)}</a>` : '';
+      msg.innerHTML = near.length
+        ? `„${esc(b.label)}“ im Umkreis von ${r} km um ${esc(here.label)}, die nächsten zuerst.${cityLink}`
+        : `Kein Treffer für „${esc(b.label)}“ im Umkreis von ${r} km. Vergrößern Sie den Umkreis.${extra ? ' ' + extra : ''}`;
+      list.innerHTML = near.slice(0, shown).map(({ e, d }) => `<li><a href="${base}${e[5]}"><strong>${esc(e[3])}</strong></a> <span class="fkm">${d.toFixed(1).replace('.', ',')} km</span>${ohBadge(e[8])}<br><span class="muted">${esc(cats[e[0]].one)} · ${esc(e[4])}</span>${actions(e)}</li>`).join('');
+      if (near.length > shown) { more.hidden = false; more.innerHTML = `<button type="button" class="btn" id="f-mehr">${near.length - shown} weitere anzeigen</button>`; $('f-mehr').onclick = () => { shown += 30; draw(); }; }
+    }
+    document.querySelector('.bedarf').addEventListener('click', (ev) => {
+      const btn = ev.target.closest('button'); if (!btn) return;
+      document.querySelectorAll('.bedarf .bd').forEach((x) => { x.classList.toggle('on', x === btn); x.setAttribute('aria-pressed', x === btn); });
+      sel = +btn.dataset.i; shown = 30; $('f-all').hidden = false; draw();
+    });
+    $('f-all').addEventListener('click', () => { document.querySelectorAll('.bedarf .bd').forEach((x) => { x.classList.remove('on'); x.setAttribute('aria-pressed', 'false'); }); sel = BD.length - 1; shown = 30; $('f-all').hidden = true; draw(); });
+    rad.addEventListener('change', () => { shown = 30; draw(); });
+    const setHere = (h) => { here = h; shown = 30; input.value = h.label; sug.hidden = true; input.setAttribute('aria-expanded', 'false');
+      if (me) me.remove(); me = L.circleMarker([h.lat, h.lon], { radius: 8, color: '#fff', fillColor: '#d9480f', fillOpacity: 1, weight: 3 }).addTo(map); draw(); };
+    function plzHit(q) {
+      if (data.plz[q]) return data.plz[q];
+      for (const n of [3, 2]) {
+        const p = plzKeys.filter((k) => k.startsWith(q.slice(0, n)));
+        if (p.length) return data.plz[p.reduce((best, k) => (Math.abs(+k - +q) < Math.abs(+best - +q) ? k : best))];
+      }
+      return null;
+    }
+    let hits = [], act = -1;
+    const renderSug = () => { sug.innerHTML = hits.map((h, i) => `<li role="option" data-i="${i}" class="${i === act ? 'on' : ''}">${esc(h.label)}</li>`).join(''); sug.hidden = !hits.length; input.setAttribute('aria-expanded', String(!!hits.length)); };
+    input.addEventListener('input', () => {
+      const q = norm(input.value.trim()); act = -1;
+      if (/^\d{5}$/.test(q)) { const p = plzHit(q); hits = p ? [{ label: `PLZ ${q}`, lat: p[0], lon: p[1] }] : []; }
+      else if (q.length < 2) hits = [];
+      else hits = orte.filter((o) => o.k.includes(q)).sort((a, b) => (b.k.startsWith(q) - a.k.startsWith(q)) || b.n - a.n).slice(0, 8);
+      renderSug();
+    });
+    input.addEventListener('keydown', (ev) => {
+      if (ev.key === 'ArrowDown' && hits.length) { act = (act + 1) % hits.length; renderSug(); ev.preventDefault(); }
+      else if (ev.key === 'ArrowUp' && hits.length) { act = (act - 1 + hits.length) % hits.length; renderSug(); ev.preventDefault(); }
+      else if (ev.key === 'Enter' && hits.length) { setHere(hits[Math.max(act, 0)]); ev.preventDefault(); }
+      else if (ev.key === 'Escape') { sug.hidden = true; }
+    });
+    sug.addEventListener('mousedown', (ev) => { const li = ev.target.closest('li'); if (li) { ev.preventDefault(); setHere(hits[+li.dataset.i]); } });
+    input.addEventListener('blur', () => setTimeout(() => { sug.hidden = true; }, 150));
+    $('f-loc').addEventListener('click', () => {
+      if (!navigator.geolocation) { msg.textContent = 'Ihr Browser kann den Standort nicht ermitteln. Bitte Ort eingeben.'; return; }
+      msg.textContent = 'Standort wird ermittelt …';
+      navigator.geolocation.getCurrentPosition((p) => setHere({ label: 'Ihrem Standort', lat: p.coords.latitude, lon: p.coords.longitude }),
+        () => { msg.textContent = 'Standort nicht verfügbar. Bitte Ort oder PLZ eingeben.'; }, { timeout: 10000 });
+    });
+    draw();
+  })();
+</script>
+<style is:global>
+  .finder { margin: 12px 0 8px; }
+  .finder h2 { margin-top: 0; }
+  .flabel { margin: 14px 0 6px; font-weight: 700; }
+  .bedarf { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 8px; }
+  .bd { width: 100%; height: 100%; text-align: left; font: inherit; background: var(--bg); color: var(--text); border: 1px solid var(--line); border-radius: var(--radius); padding: 7px 10px; cursor: pointer; }
+  .bd strong { display: block; font-size: .95rem; line-height: 1.3; hyphens: auto; overflow-wrap: anywhere; }
+  .bd small { display: block; color: var(--muted); font-size: .8rem; margin-top: 2px; }
+  .bd:hover { border-color: var(--brand); }
+  .bd.on { background: var(--brand); border-color: var(--brand); color: var(--brand-ink); }
+  .bd.on small { color: #cfe8df; }
+  .fbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .fq { position: relative; flex: 1 1 260px; }
+  .fq input { width: 100%; font: inherit; padding: 11px 14px; border: 2px solid var(--line); border-radius: var(--radius); }
+  .fq input:focus { outline: none; border-color: var(--brand); }
+  #f-sug { position: absolute; z-index: 1001; left: 0; right: 0; top: 100%; margin: 2px 0 0; padding: 0; list-style: none; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,.14); max-height: 300px; overflow: auto; }
+  #f-sug li { padding: 9px 14px; cursor: pointer; display: flex; justify-content: space-between; gap: 12px; }
+  #f-sug li span { color: var(--muted); font-size: .85rem; }
+  #f-sug li.on, #f-sug li:hover { background: var(--accent); }
+  .frad { display: flex; align-items: center; gap: 8px; font-size: .95rem; }
+  .frad select { font: inherit; padding: 9px 10px; border: 2px solid var(--line); border-radius: 8px; background: var(--surface); }
+  .fall { font: inherit; font-size: .9rem; background: none; border: 0; color: var(--brand); text-decoration: underline; cursor: pointer; padding: 4px; }
+  #f-loc { border: 0; cursor: pointer; font-size: .95rem; }
+  .fmsg { margin: 10px 0 0; }
+  #f-map { height: 440px; border-radius: var(--radius); border: 1px solid var(--line); margin: 12px 0; z-index: 0; }
+  .flist { padding-left: 1.4em; display: grid; gap: 10px; margin: 0; }
+  .fkm { color: var(--muted); font-size: .85rem; white-space: nowrap; }
+  .flist .facts { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .flist .k { display: inline-block; padding: 4px 11px; border: 1px solid var(--line); border-radius: 8px; text-decoration: none; font-size: .9rem; background: var(--surface); }
+  .flist .k-tel { background: var(--brand); color: var(--brand-ink); border-color: var(--brand); font-weight: 600; }
+  .flist .k-book { border-color: var(--brand); font-weight: 600; }
+  .flist .oh { display: inline-block; margin-left: 8px; padding: 1px 8px; border-radius: 999px; font-size: .78rem; font-weight: 600; }
+  .flist .oh.open { background: #e3f4e8; color: #17663a; }
+  .flist .oh.closed { background: #f3eded; color: #8a2d2d; }
+  .fmore { margin: 12px 0 0; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  @media (max-width: 600px) { #f-map { height: 340px; } .bedarf { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>

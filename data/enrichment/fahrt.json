@@ -1,6 +1,6 @@
 {
  "node/10186174862": {
-  "checkedAt": "2026-10-04T10:58:15.849Z",
+  "checkedAt": "2026-10-04T13:44:51.578Z",
   "website": "https://www.transport-unternehmen.net/professional/smolin-hubert-1383",
   "features": [],
   "kassen": [],
@@ -9,7 +9,7 @@
   "error": "TypeError"
  },
  "node/11423412737": {
-  "checkedAt": "2026-10-04T10:58:15.860Z",
+  "checkedAt": "2026-10-04T13:44:51.581Z",
   "website": "https://www.taxiruf4711-bad-oldesloe.de/",
   "features": [],
   "kassen": [],
@@ -18,7 +18,7 @@
   "error": "TypeError"
  },
  "node/10128499864": {
-  "checkedAt": "2026-10-04T10:58:15.847Z",
+  "checkedAt": "2026-10-04T13:44:51.578Z",
   "website": "https://www.taxieike.de/",
   "features": [],
   "kassen": [],
@@ -28,7 +28,7 @@
   "status": "ok"
  },
  "node/10029843846": {
-  "checkedAt": "2026-10-04T10:58:15.830Z",
+  "checkedAt": "2026-10-04T13:44:51.577Z",
   "website": "http://www.taxiruf-wetzlar.de/",
   "features": [],
   "kassen": [],
@@ -38,7 +38,7 @@
   "status": "ok"
  },
  "node/11145748870": {
-  "checkedAt": "2026-10-04T10:58:15.858Z",
+  "checkedAt": "2026-10-04T13:44:51.580Z",
   "website": "https://taxi-bad-sobernheim-felkebad.business.site/",
   "features": [],
   "kassen": [],
@@ -46,7 +46,7 @@
   "status": "http-404"
  },
  "node/11368831660": {
-  "checkedAt": "2026-10-04T10:58:15.859Z",
+  "checkedAt": "2026-10-04T13:44:51.581Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -60,11 +60,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/11368831661": {
-  "checkedAt": "2026-10-04T10:58:15.859Z",
+  "checkedAt": "2026-10-04T13:44:51.581Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -78,11 +80,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/11368831664": {
-  "checkedAt": "2026-10-04T10:58:15.860Z",
+  "checkedAt": "2026-10-04T13:44:51.581Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -96,11 +100,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/10858095866": {
-  "checkedAt": "2026-10-04T10:58:15.856Z",
+  "checkedAt": "2026-10-04T13:44:51.580Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -114,11 +120,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/10839467452": {
-  "checkedAt": "2026-10-04T10:58:15.854Z",
+  "checkedAt": "2026-10-04T13:44:51.579Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -132,11 +140,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/11368831658": {
-  "checkedAt": "2026-10-04T10:58:15.858Z",
+  "checkedAt": "2026-10-04T13:44:51.581Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -150,11 +160,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/11368831663": {
-  "checkedAt": "2026-10-04T10:58:15.859Z",
+  "checkedAt": "2026-10-04T13:44:51.581Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -168,11 +180,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/11368831659": {
-  "checkedAt": "2026-10-04T10:58:15.859Z",
+  "checkedAt": "2026-10-04T13:44:51.581Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -186,11 +200,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/10858095868": {
-  "checkedAt": "2026-10-04T10:58:15.856Z",
+  "checkedAt": "2026-10-04T13:44:51.580Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -204,11 +220,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/10858095867": {
-  "checkedAt": "2026-10-04T10:58:15.856Z",
+  "checkedAt": "2026-10-04T13:44:51.580Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -222,11 +240,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/10928819866": {
-  "checkedAt": "2026-10-04T10:58:15.857Z",
+  "checkedAt": "2026-10-04T13:44:51.580Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -240,11 +260,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/10858095865": {
-  "checkedAt": "2026-10-04T10:58:15.856Z",
+  "checkedAt": "2026-10-04T13:44:51.580Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -258,11 +280,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/10845901529": {
-  "checkedAt": "2026-10-04T10:58:15.855Z",
+  "checkedAt": "2026-10-04T13:44:51.580Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -276,11 +300,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/10845901530": {
-  "checkedAt": "2026-10-04T10:58:15.855Z",
+  "checkedAt": "2026-10-04T13:44:51.580Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -294,11 +320,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/11368831657": {
-  "checkedAt": "2026-10-04T10:58:15.858Z",
+  "checkedAt": "2026-10-04T13:44:51.581Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -312,11 +340,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/10845901528": {
-  "checkedAt": "2026-10-04T10:58:15.855Z",
+  "checkedAt": "2026-10-04T13:44:51.579Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -330,11 +360,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/12078109343": {
-  "checkedAt": "2026-10-04T10:58:16.865Z",
+  "checkedAt": "2026-10-04T13:44:52.284Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -348,11 +380,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/1238501875": {
-  "checkedAt": "2026-10-04T10:58:16.924Z",
+  "checkedAt": "2026-10-04T13:44:52.346Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -366,21 +400,25 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/1018680468": {
-  "checkedAt": "2026-10-04T10:58:15.849Z",
+  "checkedAt": "2026-10-04T13:44:51.579Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/11053829714": {
-  "checkedAt": "2026-10-04T10:58:15.857Z",
+  "checkedAt": "2026-10-04T13:44:51.580Z",
   "website": "http://taxen-zaage.de/",
   "features": [
    "rollstuhl"
@@ -394,7 +432,7 @@
   "status": "ok"
  },
  "node/11427222894": {
-  "checkedAt": "2026-10-04T10:58:16.346Z",
+  "checkedAt": "2026-10-04T13:44:52.098Z",
   "website": "https://www.taxi-bad-oldesloe.de/",
   "features": [
    "krankenfahrt",
@@ -406,11 +444,13 @@
    "rollstuhl": "https://www.taxi-bad-oldesloe.de/"
   },
   "finalUrl": "https://www.taxi-bad-oldesloe.de/",
+  "email": "info@taxi-bad-oldesloe.de",
+  "phone": "+49453117400",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/1260878390": {
-  "checkedAt": "2026-10-04T10:58:16.967Z",
+  "checkedAt": "2026-10-04T13:44:52.391Z",
   "website": "https://home.mobile.de/KOCUR#ses",
   "features": [],
   "kassen": [],
@@ -418,7 +458,7 @@
   "status": "http-403"
  },
  "node/12520654384": {
-  "checkedAt": "2026-10-04T10:58:16.958Z",
+  "checkedAt": "2026-10-04T13:44:52.377Z",
   "website": "https://www.500000.taxi/",
   "features": [],
   "kassen": [],
@@ -426,7 +466,7 @@
   "status": "robots-disallow"
  },
  "node/12240818191": {
-  "checkedAt": "2026-10-04T10:58:16.888Z",
+  "checkedAt": "2026-10-04T13:44:52.332Z",
   "website": "http://www.pflegedienst-dabel.de/",
   "features": [],
   "kassen": [],
@@ -436,7 +476,7 @@
   "status": "ok"
  },
  "node/1030878028": {
-  "checkedAt": "2026-10-04T10:58:15.851Z",
+  "checkedAt": "2026-10-04T13:44:51.579Z",
   "website": "https://www.hallo-taxi-stern.de/",
   "features": [
    "krankenfahrt",
@@ -452,11 +492,12 @@
    "dialyse": "https://www.hallo-taxi-stern.de/"
   },
   "finalUrl": "https://www.hallo-taxi-stern.de/",
+  "phone": "+49525163377",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/10748920163": {
-  "checkedAt": "2026-10-04T10:58:15.854Z",
+  "checkedAt": "2026-10-04T13:44:51.579Z",
   "website": "https://www.taxi-lamspringe.de/",
   "features": [
    "krankenfahrt",
@@ -472,11 +513,12 @@
    "onkologie": "https://www.taxi-lamspringe.de/"
   },
   "finalUrl": "https://www.taxi-lamspringe.de/",
+  "phone": "051839460321",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/12370764915": {
-  "checkedAt": "2026-10-04T10:58:16.904Z",
+  "checkedAt": "2026-10-04T13:44:52.339Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -490,11 +532,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/12986007858": {
-  "checkedAt": "2026-10-04T10:58:17.590Z",
+  "checkedAt": "2026-10-04T13:44:53.018Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -508,11 +552,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/12986043460": {
-  "checkedAt": "2026-10-04T10:58:17.605Z",
+  "checkedAt": "2026-10-04T13:44:53.065Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -526,31 +572,36 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/12079713536": {
-  "checkedAt": "2026-10-04T10:58:16.869Z",
+  "checkedAt": "2026-10-04T13:44:52.287Z",
   "website": "http://www.taxi-strube.de/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "http://www.taxi-strube.de/",
+  "phone": "+493464611313",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/1311011470": {
-  "checkedAt": "2026-10-04T10:58:17.731Z",
+  "checkedAt": "2026-10-04T13:44:53.178Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/12823882966": {
-  "checkedAt": "2026-10-04T10:58:17.143Z",
+  "checkedAt": "2026-10-04T13:44:52.619Z",
   "website": "https://www.taxi-quelle.de/",
   "features": [],
   "kassen": [],
@@ -559,7 +610,7 @@
   "error": "ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR"
  },
  "node/12770472836": {
-  "checkedAt": "2026-10-04T10:58:16.976Z",
+  "checkedAt": "2026-10-04T13:44:52.442Z",
   "website": "http://www.taxi-andreasmueller.de/imprint.htm",
   "features": [],
   "kassen": [],
@@ -569,7 +620,7 @@
   "status": "ok"
  },
  "node/11832524181": {
-  "checkedAt": "2026-10-04T10:58:16.861Z",
+  "checkedAt": "2026-10-04T13:44:52.270Z",
   "website": "https://www.taxi-kullmann.de/",
   "features": [
    "krankenfahrt",
@@ -585,11 +636,13 @@
    "onkologie": "https://www.taxi-kullmann.de/"
   },
   "finalUrl": "https://www.taxi-kullmann.de/",
+  "email": "info@taxi-kullmann.de",
+  "phone": "+4972546509",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/12615333894": {
-  "checkedAt": "2026-10-04T10:58:16.969Z",
+  "checkedAt": "2026-10-04T13:44:52.398Z",
   "website": "https://www.taxi-erren.de/",
   "features": [
    "krankenfahrt",
@@ -605,11 +658,13 @@
    "onkologie": "https://www.taxi-erren.de/"
   },
   "finalUrl": "https://www.taxi-erren.de/",
+  "email": "bestellung@taxi-erren.de",
+  "phone": "+4924316262",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/11471076142": {
-  "checkedAt": "2026-10-04T10:58:16.509Z",
+  "checkedAt": "2026-10-04T13:44:52.209Z",
   "website": "https://www.korbach-taxi.de/",
   "features": [
    "krankenfahrt",
@@ -629,7 +684,7 @@
   "status": "ok"
  },
  "node/11772240009": {
-  "checkedAt": "2026-10-04T10:58:16.833Z",
+  "checkedAt": "2026-10-04T13:44:52.263Z",
   "website": "https://www.3p-krankenfahrten-luenen.de/",
   "features": [
    "krankenfahrt",
@@ -647,11 +702,12 @@
    "onkologie": "https://www.3p-krankenfahrten-luenen.de/leistungen/"
   },
   "finalUrl": "https://www.3p-krankenfahrten-luenen.de/",
+  "phone": "+490230662222",
   "pagesChecked": 5,
   "status": "ok"
  },
  "node/11627370587": {
-  "checkedAt": "2026-10-04T10:58:16.773Z",
+  "checkedAt": "2026-10-04T13:44:52.261Z",
   "website": "https://www.fahrdienst-lorenz.de/",
   "features": [
    "krankenfahrt",
@@ -667,11 +723,13 @@
    "onkologie": "https://www.fahrdienst-lorenz.de/krankenfahrten.html"
   },
   "finalUrl": "https://www.fahrdienst-lorenz.de/",
+  "email": "info@fahrdienst-lorenz.de",
+  "phone": "+4947114289110",
   "pagesChecked": 3,
   "status": "ok"
  },
  "node/1325796760": {
-  "checkedAt": "2026-10-04T10:58:18.609Z",
+  "checkedAt": "2026-10-04T13:44:54.021Z",
   "website": "http://www.taxi-kaiser.com/",
   "features": [],
   "kassen": [],
@@ -680,7 +738,7 @@
   "error": "ENOTFOUND"
  },
  "node/12409544096": {
-  "checkedAt": "2026-10-04T10:58:16.931Z",
+  "checkedAt": "2026-10-04T13:44:52.349Z",
   "website": "https://www.city-taxi-sulzbach.de/",
   "features": [
    "krankenfahrt",
@@ -696,11 +754,13 @@
    "dialyse": "https://www.city-taxi-sulzbach.de/"
   },
   "finalUrl": "https://www.city-taxi-sulzbach.de/",
+  "email": "info@city-taxi-sulzbach.de",
+  "phone": "+499661172323",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/12615645692": {
-  "checkedAt": "2026-10-04T10:58:16.971Z",
+  "checkedAt": "2026-10-04T13:44:52.411Z",
   "website": "https://www.taxischmitz.de/",
   "features": [
    "krankenfahrt",
@@ -714,21 +774,24 @@
    "onkologie": "https://www.taxischmitz.de/content/krankenfahrten.html"
   },
   "finalUrl": "https://www.taxischmitz.de/",
+  "phone": "+4924345656",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/1318860036": {
-  "checkedAt": "2026-10-04T10:58:18.149Z",
+  "checkedAt": "2026-10-04T13:44:53.497Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/10655958330": {
-  "checkedAt": "2026-10-04T10:58:15.853Z",
+  "checkedAt": "2026-10-04T13:44:51.579Z",
   "website": "https://ihr-plan-a.de/",
   "features": [
    "krankenfahrt",
@@ -748,7 +811,7 @@
   "status": "ok"
  },
  "node/13208340949": {
-  "checkedAt": "2026-10-04T10:58:18.279Z",
+  "checkedAt": "2026-10-04T13:44:53.610Z",
   "website": "https://www.kehrentaxi.de/",
   "features": [
    "krankenfahrt",
@@ -760,11 +823,13 @@
    "rollstuhl": "https://www.kehrentaxi.de/"
   },
   "finalUrl": "https://www.kehrentaxi.de/",
+  "email": "kehrentaxi@gmx.de",
+  "phone": "+491712045900",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/13272930114": {
-  "checkedAt": "2026-10-04T10:58:18.643Z",
+  "checkedAt": "2026-10-04T13:44:54.032Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -778,11 +843,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/10614243732": {
-  "checkedAt": "2026-10-04T10:58:15.852Z",
+  "checkedAt": "2026-10-04T13:44:51.579Z",
   "website": "https://taxi-schonhardt.de/",
   "features": [
    "krankenfahrt"
@@ -796,7 +863,7 @@
   "status": "ok"
  },
  "node/13272945221": {
-  "checkedAt": "2026-10-04T10:58:18.931Z",
+  "checkedAt": "2026-10-04T13:44:54.066Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -810,11 +877,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/13272935337": {
-  "checkedAt": "2026-10-04T10:58:18.677Z",
+  "checkedAt": "2026-10-04T13:44:54.033Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -828,11 +897,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/13240480906": {
-  "checkedAt": "2026-10-04T10:58:18.490Z",
+  "checkedAt": "2026-10-04T13:44:53.791Z",
   "website": "https://www.taxi-schleissheim.de/",
   "features": [
    "krankenfahrt"
@@ -842,21 +913,24 @@
    "krankenfahrt": "https://www.taxi-schleissheim.de/"
   },
   "finalUrl": "https://www.taxi-schleissheim.de/",
+  "email": "info@munich-airportshuttle.de",
+  "phone": "08931198242",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/13180475985": {
-  "checkedAt": "2026-10-04T10:58:17.958Z",
+  "checkedAt": "2026-10-04T13:44:53.299Z",
   "website": "https://www.vlp-lup.de/ueber-vlp/unternehmen/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.vlp-lup.de/ueber-vlp/unternehmen/",
+  "phone": "+493883616161",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/13248819072": {
-  "checkedAt": "2026-10-04T10:58:18.578Z",
+  "checkedAt": "2026-10-04T13:44:53.872Z",
   "website": "https://www.taxi-ricci.de/",
   "features": [
    "krankenfahrt"
@@ -866,11 +940,12 @@
    "krankenfahrt": "https://www.taxi-ricci.de/TaxiUnterschleissheim-TaxiZentrale-Ush-Lohhof-Leistungen.html"
   },
   "finalUrl": "https://www.taxi-ricci.de/",
+  "email": "taxi-ricci@taxi-ricci.de",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/13272945816": {
-  "checkedAt": "2026-10-04T10:58:19.176Z",
+  "checkedAt": "2026-10-04T13:44:54.069Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -884,11 +959,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/13416565027": {
-  "checkedAt": "2026-10-04T10:58:19.769Z",
+  "checkedAt": "2026-10-04T13:44:55.014Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -902,11 +979,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/12879209182": {
-  "checkedAt": "2026-10-04T10:58:17.337Z",
+  "checkedAt": "2026-10-04T13:44:53.006Z",
   "website": "https://taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -918,11 +997,12 @@
    "krankenfahrt": "https://taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/13416565028": {
-  "checkedAt": "2026-10-04T10:58:19.900Z",
+  "checkedAt": "2026-10-04T13:44:55.017Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -936,11 +1016,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/13306066832": {
-  "checkedAt": "2026-10-04T10:58:19.725Z",
+  "checkedAt": "2026-10-04T13:44:54.845Z",
   "website": "http://www.die13-fahrdienst.de/",
   "features": [
    "krankenfahrt",
@@ -956,7 +1038,7 @@
   "status": "ok"
  },
  "node/11492598153": {
-  "checkedAt": "2026-10-04T10:58:16.762Z",
+  "checkedAt": "2026-10-04T13:44:52.254Z",
   "website": "https://www.minicar-butschek.de/",
   "features": [
    "krankenfahrt",
@@ -968,11 +1050,12 @@
    "rollstuhl": "https://www.minicar-butschek.de/info/bestellung-rollstuhl-taxi"
   },
   "finalUrl": "https://www.minicar-butschek.de/",
+  "phone": "+49917197900",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/12878819945": {
-  "checkedAt": "2026-10-04T10:58:17.281Z",
+  "checkedAt": "2026-10-04T13:44:52.903Z",
   "website": "https://taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -984,11 +1067,12 @@
    "krankenfahrt": "https://taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/1345713937": {
-  "checkedAt": "2026-10-04T10:58:20.055Z",
+  "checkedAt": "2026-10-04T13:44:55.126Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -1002,11 +1086,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/12433690956": {
-  "checkedAt": "2026-10-04T10:58:16.945Z",
+  "checkedAt": "2026-10-04T13:44:52.357Z",
   "website": "https://taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -1018,11 +1104,12 @@
    "krankenfahrt": "https://taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/1329422452": {
-  "checkedAt": "2026-10-04T10:58:19.670Z",
+  "checkedAt": "2026-10-04T13:44:54.838Z",
   "website": "https://www.golocal.de/landsberg/kurierdienste/chauffier-kurierdienste-wunderlich-fahrdienst-9z2T6/",
   "features": [],
   "kassen": [],
@@ -1030,7 +1117,7 @@
   "status": "http-410"
  },
  "node/13173904847": {
-  "checkedAt": "2026-10-04T10:58:17.803Z",
+  "checkedAt": "2026-10-04T13:44:53.210Z",
   "website": "https://taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -1042,11 +1129,12 @@
    "krankenfahrt": "https://taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/12953802588": {
-  "checkedAt": "2026-10-04T10:58:17.537Z",
+  "checkedAt": "2026-10-04T13:44:53.013Z",
   "website": "https://www.royal-taxi.de/",
   "features": [
    "krankenfahrt"
@@ -1058,11 +1146,12 @@
    "krankenfahrt": "https://royal-taxi.de/"
   },
   "finalUrl": "https://royal-taxi.de/",
+  "phone": "08931818781",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/1376308499": {
-  "checkedAt": "2026-10-04T10:58:20.850Z",
+  "checkedAt": "2026-10-04T13:44:56.039Z",
   "website": "http://www.taxi-haehnel.de/",
   "features": [
    "krankenfahrt"
@@ -1076,7 +1165,7 @@
   "status": "ok"
  },
  "node/13664934512": {
-  "checkedAt": "2026-10-04T10:58:20.452Z",
+  "checkedAt": "2026-10-04T13:44:55.718Z",
   "website": "https://www.taxibochum.de/",
   "features": [
    "krankenfahrt"
@@ -1092,7 +1181,7 @@
   "status": "ok"
  },
  "node/13665086928": {
-  "checkedAt": "2026-10-04T10:58:20.478Z",
+  "checkedAt": "2026-10-04T13:44:55.722Z",
   "website": "https://www.taxibochum.de/",
   "features": [
    "krankenfahrt"
@@ -1108,7 +1197,7 @@
   "status": "ok"
  },
  "node/13659371607": {
-  "checkedAt": "2026-10-04T10:58:20.343Z",
+  "checkedAt": "2026-10-04T13:44:55.468Z",
   "website": "https://www.taxibochum.de/",
   "features": [
    "krankenfahrt"
@@ -1124,7 +1213,7 @@
   "status": "ok"
  },
  "node/13503630021": {
-  "checkedAt": "2026-10-04T10:58:20.204Z",
+  "checkedAt": "2026-10-04T13:44:55.385Z",
   "website": "https://taxiintuebingen.de/taxi-tuebingen",
   "features": [
    "krankenfahrt",
@@ -1138,11 +1227,14 @@
    "onkologie": "https://taxiintuebingen.de/krankenfahrten-tuebingen"
   },
   "finalUrl": "https://taxiintuebingen.de/taxi-tuebingen/",
-  "pagesChecked": 3,
+  "email": "mail@taxiintuebingen.de",
+  "phone": "+4970711389577",
+  "booking": "https://taxiintuebingen.de/preisrechner-taxi-tuebingen-termin-vereinbarung",
+  "pagesChecked": 2,
   "status": "ok"
  },
  "node/13236567194": {
-  "checkedAt": "2026-10-04T10:58:18.310Z",
+  "checkedAt": "2026-10-04T13:44:53.615Z",
   "website": "http://www.eppis-taxi.de/unternehmen.html",
   "features": [
    "krankenfahrt",
@@ -1156,11 +1248,12 @@
    "tragestuhl": "https://www.eppis-taxi-strausberg.de/"
   },
   "finalUrl": "https://www.eppis-taxi-strausberg.de/",
+  "phone": "+49334133050",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/13659633186": {
-  "checkedAt": "2026-10-04T10:58:20.427Z",
+  "checkedAt": "2026-10-04T13:44:55.557Z",
   "website": "https://taxibochum.de/",
   "features": [
    "krankenfahrt"
@@ -1176,7 +1269,7 @@
   "status": "ok"
  },
  "node/13762984339": {
-  "checkedAt": "2026-10-04T10:58:20.653Z",
+  "checkedAt": "2026-10-04T13:44:55.932Z",
   "website": "http://www.taxigenossenschaft-pirna.de/",
   "features": [
    "krankenfahrt",
@@ -1190,11 +1283,13 @@
    "onkologie": "http://www.taxigenossenschaft-pirna.de/"
   },
   "finalUrl": "http://www.taxigenossenschaft-pirna.de/",
+  "email": "zentrale@taxigenossenschaft-pirna.de",
+  "phone": "+493501446744",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/1394255399": {
-  "checkedAt": "2026-10-04T10:58:22.076Z",
+  "checkedAt": "2026-10-04T13:44:56.826Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -1208,11 +1303,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/1399073352": {
-  "checkedAt": "2026-10-04T10:58:22.092Z",
+  "checkedAt": "2026-10-04T13:44:56.876Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -1226,11 +1323,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/13240480904": {
-  "checkedAt": "2026-10-04T10:58:18.426Z",
+  "checkedAt": "2026-10-04T13:44:53.642Z",
   "website": "https://rolis-taxis.de/",
   "features": [
    "krankenfahrt",
@@ -1242,11 +1341,13 @@
    "dialyse": "https://rolis-taxis.de/"
   },
   "finalUrl": "https://rolis-taxis.de/",
+  "email": "info@rolis-taxis.de",
+  "phone": "+49893106177",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/13282881572": {
-  "checkedAt": "2026-10-04T10:58:19.510Z",
+  "checkedAt": "2026-10-04T13:44:54.758Z",
   "website": "https://www.taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -1258,11 +1359,12 @@
    "krankenfahrt": "https://www.taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://www.taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/11061647753": {
-  "checkedAt": "2026-10-04T10:58:15.857Z",
+  "checkedAt": "2026-10-04T13:44:51.580Z",
   "website": "http://drk-os.de/",
   "features": [
    "krankenfahrt"
@@ -1276,7 +1378,7 @@
   "status": "ok"
  },
  "node/13042644136": {
-  "checkedAt": "2026-10-04T10:58:17.610Z",
+  "checkedAt": "2026-10-04T13:44:53.080Z",
   "website": "https://www.ckt-hameln.de/",
   "features": [
    "krankenfahrt",
@@ -1290,11 +1392,12 @@
    "onkologie": "https://www.ckt-hameln.de/transporte-fahrdienste/krankenfahrten/"
   },
   "finalUrl": "https://www.ckt-hameln.de/",
+  "email": "ckt.hameln@t-online.de",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/13763532097": {
-  "checkedAt": "2026-10-04T10:58:21.543Z",
+  "checkedAt": "2026-10-04T13:44:56.176Z",
   "website": "https://www.bayerwaltes-ihrtaxi.de/",
   "features": [
    "krankenfahrt",
@@ -1314,7 +1417,7 @@
   "status": "ok"
  },
  "node/12421670515": {
-  "checkedAt": "2026-10-04T10:58:16.938Z",
+  "checkedAt": "2026-10-04T13:44:52.352Z",
   "website": "https://www.asb-bautzen.de/weitere-angebote/fahrdienst",
   "features": [
    "krankenfahrt"
@@ -1324,11 +1427,12 @@
    "krankenfahrt": "https://www.asb-bautzen.de/wir-ueber-uns/der-asb-kv-bautzen-ev/aufgaben-und-leitbild/"
   },
   "finalUrl": "https://www.asb-bautzen.de/weitere-angebote/fahrdienst",
+  "phone": "+493594702316",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/13282914715": {
-  "checkedAt": "2026-10-04T10:58:19.662Z",
+  "checkedAt": "2026-10-04T13:44:54.829Z",
   "website": "https://www.taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -1340,11 +1444,12 @@
    "krankenfahrt": "https://www.taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://www.taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/13505561939": {
-  "checkedAt": "2026-10-04T10:58:20.228Z",
+  "checkedAt": "2026-10-04T13:44:55.437Z",
   "website": "https://www.taxixpert.de/",
   "features": [
    "krankenfahrt",
@@ -1358,11 +1463,13 @@
    "onkologie": "https://www.taxixpert.de/"
   },
   "finalUrl": "https://www.taxixpert.de/",
+  "email": "info@taxixpert.de",
+  "phone": "+494094995670",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/13355480639": {
-  "checkedAt": "2026-10-04T10:58:19.732Z",
+  "checkedAt": "2026-10-04T13:44:54.979Z",
   "website": "https://www.taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -1374,11 +1481,12 @@
    "krankenfahrt": "https://www.taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://www.taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/13282945979": {
-  "checkedAt": "2026-10-04T10:58:19.663Z",
+  "checkedAt": "2026-10-04T13:44:54.831Z",
   "website": "https://www.taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -1390,11 +1498,12 @@
    "krankenfahrt": "https://www.taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://www.taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/1445229786": {
-  "checkedAt": "2026-10-04T10:58:22.822Z",
+  "checkedAt": "2026-10-04T13:44:57.504Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -1408,11 +1517,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/13282831896": {
-  "checkedAt": "2026-10-04T10:58:19.258Z",
+  "checkedAt": "2026-10-04T13:44:54.417Z",
   "website": "https://www.taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -1424,11 +1535,12 @@
    "krankenfahrt": "https://www.taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://www.taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/1732306107": {
-  "checkedAt": "2026-10-04T10:58:23.083Z",
+  "checkedAt": "2026-10-04T13:44:58.277Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -1442,11 +1554,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/12104424836": {
-  "checkedAt": "2026-10-04T10:58:16.877Z",
+  "checkedAt": "2026-10-04T13:44:52.323Z",
   "website": "https://www.taxialstertal.de/",
   "features": [
    "krankenfahrt",
@@ -1460,11 +1574,12 @@
    "onkologie": "https://www.taxialstertal.de/"
   },
   "finalUrl": "https://www.taxialstertal.de/",
+  "phone": "0406003040",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/14028834767": {
-  "checkedAt": "2026-10-04T10:58:22.096Z",
+  "checkedAt": "2026-10-04T13:44:56.917Z",
   "website": "https://www.taxizentrale-loerrach.de/",
   "features": [],
   "kassen": [],
@@ -1473,7 +1588,7 @@
   "error": "ERR_TLS_CERT_ALTNAME_INVALID"
  },
  "node/1640472001": {
-  "checkedAt": "2026-10-04T10:58:23.067Z",
+  "checkedAt": "2026-10-04T13:44:58.266Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -1487,11 +1602,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/14103168150": {
-  "checkedAt": "2026-10-04T10:58:22.321Z",
+  "checkedAt": "2026-10-04T13:44:57.112Z",
   "website": "https://www.taxi-brandenburg.de/",
   "features": [],
   "kassen": [],
@@ -1501,7 +1618,7 @@
   "status": "ok"
  },
  "node/14063740449": {
-  "checkedAt": "2026-10-04T10:58:22.249Z",
+  "checkedAt": "2026-10-04T13:44:57.046Z",
   "website": "https://www.citytaxi-hueckelhoven.de/",
   "features": [
    "krankenfahrt",
@@ -1517,11 +1634,13 @@
    "onkologie": "https://www.citytaxi-hueckelhoven.de/leistungen"
   },
   "finalUrl": "https://www.citytaxi-hueckelhoven.de/",
+  "email": "service@citytaxi-hueckelhoven.de",
+  "phone": "+4924336666",
   "pagesChecked": 3,
   "status": "ok"
  },
  "node/14183184574": {
-  "checkedAt": "2026-10-04T10:58:22.782Z",
+  "checkedAt": "2026-10-04T13:44:57.342Z",
   "website": "https://www.taximeyer-herne.de/",
   "features": [
    "krankenfahrt",
@@ -1535,11 +1654,13 @@
    "dialyse": "https://www.taximeyer-herne.de/"
   },
   "finalUrl": "https://www.taximeyer-herne.de/",
+  "email": "taxijungmeyer@web.de",
+  "phone": "0232322222",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/2062964348": {
-  "checkedAt": "2026-10-04T10:58:23.421Z",
+  "checkedAt": "2026-10-04T13:44:58.454Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -1553,11 +1674,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/2031781304": {
-  "checkedAt": "2026-10-04T10:58:23.322Z",
+  "checkedAt": "2026-10-04T13:44:58.368Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -1571,11 +1694,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/2037291107": {
-  "checkedAt": "2026-10-04T10:58:23.364Z",
+  "checkedAt": "2026-10-04T13:44:58.427Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -1589,11 +1714,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/1010650327": {
-  "checkedAt": "2026-10-04T10:58:15.846Z",
+  "checkedAt": "2026-10-04T13:44:51.578Z",
   "website": "https://www.taxiwachtberg.de/",
   "features": [
    "krankenfahrt"
@@ -1603,21 +1730,25 @@
    "krankenfahrt": "https://www.taxiwachtberg.de/"
   },
   "finalUrl": "https://www.taxiwachtberg.de/",
+  "email": "info@taxiwachtberg.de",
+  "phone": "022824255703",
   "pagesChecked": 3,
   "status": "ok"
  },
  "node/1547009303": {
-  "checkedAt": "2026-10-04T10:58:22.927Z",
+  "checkedAt": "2026-10-04T13:44:57.790Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/2229316556": {
-  "checkedAt": "2026-10-04T10:58:23.594Z",
+  "checkedAt": "2026-10-04T13:44:58.682Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -1631,11 +1762,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/2204521714": {
-  "checkedAt": "2026-10-04T10:58:23.557Z",
+  "checkedAt": "2026-10-04T13:44:58.669Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -1649,11 +1782,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/13185719655": {
-  "checkedAt": "2026-10-04T10:58:17.966Z",
+  "checkedAt": "2026-10-04T13:44:53.385Z",
   "website": "https://taxieasy.de/",
   "features": [
    "krankenfahrt",
@@ -1669,11 +1804,13 @@
    "onkologie": "https://taxieasy.de/"
   },
   "finalUrl": "https://taxieasy.de/",
+  "email": "info@taxieasy.de",
+  "phone": "+49515112200",
   "pagesChecked": 5,
   "status": "ok"
  },
  "node/2277693526": {
-  "checkedAt": "2026-10-04T10:58:23.687Z",
+  "checkedAt": "2026-10-04T13:44:58.711Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -1687,21 +1824,25 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/1632015218": {
-  "checkedAt": "2026-10-04T10:58:23.046Z",
+  "checkedAt": "2026-10-04T13:44:58.257Z",
   "website": "https://www.taxi-duesseldorf.com/bestelloptionen/online.html",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/2175798752": {
-  "checkedAt": "2026-10-04T10:58:23.498Z",
+  "checkedAt": "2026-10-04T13:44:58.555Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -1715,11 +1856,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/2344839858": {
-  "checkedAt": "2026-10-04T10:58:23.938Z",
+  "checkedAt": "2026-10-04T13:44:58.877Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -1733,11 +1876,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/2369461149": {
-  "checkedAt": "2026-10-04T10:58:24.009Z",
+  "checkedAt": "2026-10-04T13:44:58.974Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -1751,11 +1896,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/2391748404": {
-  "checkedAt": "2026-10-04T10:58:24.037Z",
+  "checkedAt": "2026-10-04T13:44:59.039Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -1769,11 +1916,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/14063470184": {
-  "checkedAt": "2026-10-04T10:58:22.160Z",
+  "checkedAt": "2026-10-04T13:44:57.042Z",
   "website": "https://taxi-zentrale-tuebingen.de/",
   "features": [],
   "kassen": [],
@@ -1783,7 +1932,7 @@
   "status": "ok"
  },
  "node/13246529920": {
-  "checkedAt": "2026-10-04T10:58:18.536Z",
+  "checkedAt": "2026-10-04T13:44:53.794Z",
   "website": "https://www.lyfs.de/",
   "features": [
    "tragestuhl",
@@ -1801,11 +1950,12 @@
    "onkologie": "https://www.lyfs.de/fahrdienst.html"
   },
   "finalUrl": "https://www.lyfs.de/",
+  "email": "jobs@lyfs.de",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/14134553247": {
-  "checkedAt": "2026-10-04T10:58:22.510Z",
+  "checkedAt": "2026-10-04T13:44:57.217Z",
   "website": "https://www.taxi.de/unternehmen/taxi-zentrale-rheine-gmbh/",
   "features": [
    "rollstuhl",
@@ -1823,7 +1973,7 @@
   "status": "ok"
  },
  "node/246858206": {
-  "checkedAt": "2026-10-04T10:58:24.213Z",
+  "checkedAt": "2026-10-04T13:44:59.131Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -1837,21 +1987,25 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/2441848098": {
-  "checkedAt": "2026-10-04T10:58:24.116Z",
+  "checkedAt": "2026-10-04T13:44:59.099Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/1829840261": {
-  "checkedAt": "2026-10-04T10:58:23.250Z",
+  "checkedAt": "2026-10-04T13:44:58.343Z",
   "website": "https://feringa-taxi.de/",
   "features": [],
   "kassen": [],
@@ -1861,7 +2015,7 @@
   "status": "ok"
  },
  "node/2668804122": {
-  "checkedAt": "2026-10-04T10:58:24.653Z",
+  "checkedAt": "2026-10-04T13:44:59.549Z",
   "website": "https://drk-fdpotsdam.de/",
   "features": [],
   "kassen": [],
@@ -1870,7 +2024,7 @@
   "error": "TypeError"
  },
  "node/2636597817": {
-  "checkedAt": "2026-10-04T10:58:24.646Z",
+  "checkedAt": "2026-10-04T13:44:59.464Z",
   "website": "http://www.taxi-danielewicz.de/",
   "features": [],
   "kassen": [],
@@ -1879,7 +2033,7 @@
   "error": "ENOTFOUND"
  },
  "node/2540924906": {
-  "checkedAt": "2026-10-04T10:58:24.470Z",
+  "checkedAt": "2026-10-04T13:44:59.329Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -1893,11 +2047,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/2603027232": {
-  "checkedAt": "2026-10-04T10:58:24.582Z",
+  "checkedAt": "2026-10-04T13:44:59.395Z",
   "website": "https://www.bus-reisen-mueller.de/bus-reisen",
   "features": [],
   "kassen": [],
@@ -1906,7 +2062,7 @@
   "error": "TypeError"
  },
  "node/2322987669": {
-  "checkedAt": "2026-10-04T10:58:23.830Z",
+  "checkedAt": "2026-10-04T13:44:58.868Z",
   "website": "https://www.taxi-cronenberg.de/",
   "features": [
    "krankenfahrt",
@@ -1924,17 +2080,19 @@
   "status": "ok"
  },
  "node/259855877": {
-  "checkedAt": "2026-10-04T10:58:24.488Z",
+  "checkedAt": "2026-10-04T13:44:59.389Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/268594360": {
-  "checkedAt": "2026-10-04T10:58:24.665Z",
+  "checkedAt": "2026-10-04T13:44:59.637Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -1948,11 +2106,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/2419585119": {
-  "checkedAt": "2026-10-04T10:58:24.040Z",
+  "checkedAt": "2026-10-04T13:44:59.054Z",
   "website": "http://www.ruhrtaxi-online.de/",
   "features": [
    "krankenfahrt",
@@ -1972,7 +2132,7 @@
   "status": "ok"
  },
  "node/1741813197": {
-  "checkedAt": "2026-10-04T10:58:23.191Z",
+  "checkedAt": "2026-10-04T13:44:58.312Z",
   "website": "https://www.taxizentrale-moenchengladbach.de/",
   "features": [
    "krankenfahrt"
@@ -1982,11 +2142,12 @@
    "krankenfahrt": "https://www.taxizentrale-moenchengladbach.de/"
   },
   "finalUrl": "https://www.taxizentrale-moenchengladbach.de/",
+  "phone": "+49216113013",
   "pagesChecked": 3,
   "status": "ok"
  },
  "node/2996042165": {
-  "checkedAt": "2026-10-04T10:58:25.080Z",
+  "checkedAt": "2026-10-04T13:44:59.976Z",
   "website": "https://www.rothenburg-taxi.de/",
   "features": [],
   "kassen": [],
@@ -1995,7 +2156,7 @@
   "error": "TypeError"
  },
  "node/2708328560": {
-  "checkedAt": "2026-10-04T10:58:24.801Z",
+  "checkedAt": "2026-10-04T13:44:59.643Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -2009,11 +2170,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/2746933624": {
-  "checkedAt": "2026-10-04T10:58:24.860Z",
+  "checkedAt": "2026-10-04T13:44:59.721Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -2027,11 +2190,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/3137720665": {
-  "checkedAt": "2026-10-04T10:58:25.241Z",
+  "checkedAt": "2026-10-04T13:45:00.122Z",
   "website": "http://www.rollitaxi-tostedt.de/",
   "features": [],
   "kassen": [],
@@ -2040,7 +2205,7 @@
   "error": "ENOTFOUND"
  },
  "node/13809675910": {
-  "checkedAt": "2026-10-04T10:58:21.637Z",
+  "checkedAt": "2026-10-04T13:44:56.509Z",
   "website": "https://aria-taxi.de/",
   "features": [
    "onkologie"
@@ -2050,11 +2215,13 @@
    "onkologie": "https://aria-taxi.de/"
   },
   "finalUrl": "https://aria-taxi.de/",
+  "email": "bestellung@aria-taxi.de",
+  "phone": "024133331",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/2632571114": {
-  "checkedAt": "2026-10-04T10:58:24.598Z",
+  "checkedAt": "2026-10-04T13:44:59.444Z",
   "website": "https://www.ramstein-otterbach-taxi.de/",
   "features": [
    "krankenfahrt"
@@ -2068,7 +2235,7 @@
   "status": "ok"
  },
  "node/13240480905": {
-  "checkedAt": "2026-10-04T10:58:18.448Z",
+  "checkedAt": "2026-10-04T13:44:53.728Z",
   "website": "https://taxieco-unterschleissheim.de/",
   "features": [
    "krankenfahrt",
@@ -2080,11 +2247,12 @@
    "dialyse": "https://taxieco-unterschleissheim.de/krankenfahrten/"
   },
   "finalUrl": "https://taxieco-unterschleissheim.de/",
+  "phone": "+498923544788",
   "pagesChecked": 5,
   "status": "ok"
  },
  "node/2834786419": {
-  "checkedAt": "2026-10-04T10:58:24.987Z",
+  "checkedAt": "2026-10-04T13:44:59.767Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -2098,11 +2266,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/2509231585": {
-  "checkedAt": "2026-10-04T10:58:24.367Z",
+  "checkedAt": "2026-10-04T13:44:59.184Z",
   "website": "https://mietwagen-kalinski.de/",
   "features": [],
   "kassen": [],
@@ -2111,7 +2281,7 @@
   "error": "ERR_SSL_SSL/TLS_ALERT_HANDSHAKE_FAILURE"
  },
  "node/3263197691": {
-  "checkedAt": "2026-10-04T10:58:25.424Z",
+  "checkedAt": "2026-10-04T13:45:00.360Z",
   "website": "http://www.taxi-barnim.de/",
   "features": [],
   "kassen": [],
@@ -2120,7 +2290,7 @@
   "error": "ENOTFOUND"
  },
  "node/3022300599": {
-  "checkedAt": "2026-10-04T10:58:25.140Z",
+  "checkedAt": "2026-10-04T13:45:00.015Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -2134,11 +2304,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/3022312941": {
-  "checkedAt": "2026-10-04T10:58:25.145Z",
+  "checkedAt": "2026-10-04T13:45:00.094Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -2152,11 +2324,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/13758254395": {
-  "checkedAt": "2026-10-04T10:58:20.621Z",
+  "checkedAt": "2026-10-04T13:44:55.883Z",
   "website": "https://asb-fahrdienst.info/",
   "features": [
    "krankenfahrt",
@@ -2172,11 +2346,12 @@
    "dialyse": "https://asb-fahrdienst.info/"
   },
   "finalUrl": "https://asb-fahrdienst.info/",
+  "phone": "0510577000",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/1464599876": {
-  "checkedAt": "2026-10-04T10:58:22.857Z",
+  "checkedAt": "2026-10-04T13:44:57.531Z",
   "website": "https://www.taxiruf.de/",
   "features": [
    "krankenfahrt",
@@ -2188,11 +2363,12 @@
    "dialyse": "https://www.taxiruf.de/service/"
   },
   "finalUrl": "https://www.taxiruf.de/",
+  "phone": "+492212882",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/1629478005": {
-  "checkedAt": "2026-10-04T10:58:23.035Z",
+  "checkedAt": "2026-10-04T13:44:57.938Z",
   "website": "http://www.flughafentransfer-taxi.de/",
   "features": [],
   "kassen": [],
@@ -2200,7 +2376,7 @@
   "status": "http-403"
  },
  "node/324569055": {
-  "checkedAt": "2026-10-04T10:58:25.417Z",
+  "checkedAt": "2026-10-04T13:45:00.324Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -2214,11 +2390,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/3239042386": {
-  "checkedAt": "2026-10-04T10:58:25.404Z",
+  "checkedAt": "2026-10-04T13:45:00.322Z",
   "website": "https://www.taxi-blitz.de/",
   "features": [],
   "kassen": [],
@@ -2226,7 +2404,7 @@
   "status": "robots-disallow"
  },
  "node/2198606596": {
-  "checkedAt": "2026-10-04T10:58:23.498Z",
+  "checkedAt": "2026-10-04T13:44:58.613Z",
   "website": "https://www.taxi-aichach.de/",
   "features": [
    "rollstuhl",
@@ -2242,7 +2420,7 @@
   "status": "ok"
  },
  "node/333748473": {
-  "checkedAt": "2026-10-04T10:58:25.575Z",
+  "checkedAt": "2026-10-04T13:45:00.453Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -2256,11 +2434,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/3378100693": {
-  "checkedAt": "2026-10-04T10:58:25.597Z",
+  "checkedAt": "2026-10-04T13:45:00.515Z",
   "website": "https://www.ulmerle.com/",
   "features": [
    "krankenfahrt",
@@ -2276,11 +2456,12 @@
    "onkologie": "https://www.ulmerle.com/dienstleistungen"
   },
   "finalUrl": "https://www.ulmerle.com/",
+  "email": "komm@ulmerle.com",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/1027865462": {
-  "checkedAt": "2026-10-04T10:58:15.850Z",
+  "checkedAt": "2026-10-04T13:44:51.579Z",
   "website": "https://www.taxi-pohl.de/",
   "features": [
    "krankenfahrt"
@@ -2290,11 +2471,12 @@
    "krankenfahrt": "https://taxi-pohl.de/"
   },
   "finalUrl": "https://taxi-pohl.de/",
+  "email": "example@example.com",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/2152496333": {
-  "checkedAt": "2026-10-04T10:58:23.448Z",
+  "checkedAt": "2026-10-04T13:44:58.552Z",
   "website": "https://www.biekra.de/",
   "features": [
    "krankenfahrt",
@@ -2308,11 +2490,13 @@
    "dialyse": "https://www.biekra.de/leistungen/krankentransporte/"
   },
   "finalUrl": "https://www.biekra.de/",
+  "email": "mail@biekra.de",
+  "phone": "+4952172211",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/3239028276": {
-  "checkedAt": "2026-10-04T10:58:25.387Z",
+  "checkedAt": "2026-10-04T13:45:00.257Z",
   "website": "https://www.lahncitycar.de/",
   "features": [],
   "kassen": [],
@@ -2321,17 +2505,19 @@
   "error": "ERR_SSL_SSL/TLS_ALERT_HANDSHAKE_FAILURE"
  },
  "node/3452426794": {
-  "checkedAt": "2026-10-04T10:58:25.996Z",
+  "checkedAt": "2026-10-04T13:45:00.921Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/3290118481": {
-  "checkedAt": "2026-10-04T10:58:25.538Z",
+  "checkedAt": "2026-10-04T13:45:00.397Z",
   "website": "https://www.taxi-dortmund.com/",
   "features": [],
   "kassen": [],
@@ -2341,7 +2527,7 @@
   "status": "ok"
  },
  "node/3327109825": {
-  "checkedAt": "2026-10-04T10:58:25.565Z",
+  "checkedAt": "2026-10-04T13:45:00.434Z",
   "website": "https://stadttaxigiessen.de/",
   "features": [],
   "kassen": [],
@@ -2350,7 +2536,7 @@
   "error": "CERT_HAS_EXPIRED"
  },
  "node/3473264838": {
-  "checkedAt": "2026-10-04T10:58:26.454Z",
+  "checkedAt": "2026-10-04T13:45:01.078Z",
   "website": "http://werners-fahrdienste.de/",
   "features": [],
   "kassen": [],
@@ -2358,7 +2544,7 @@
   "status": "robots-disallow"
  },
  "node/2510524541": {
-  "checkedAt": "2026-10-04T10:58:24.434Z",
+  "checkedAt": "2026-10-04T13:44:59.245Z",
   "website": "https://taxi-nee.de/",
   "features": [
    "krankenfahrt",
@@ -2370,11 +2556,13 @@
    "rollstuhl": "https://taxi-nee.de/"
   },
   "finalUrl": "https://taxi-nee.de/",
+  "phone": "+4925916006",
+  "email": "info@taxi-nee.de",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/230377258": {
-  "checkedAt": "2026-10-04T10:58:23.792Z",
+  "checkedAt": "2026-10-04T13:44:58.808Z",
   "website": "https://www.taxiruf.de/",
   "features": [
    "krankenfahrt",
@@ -2386,21 +2574,23 @@
    "dialyse": "https://www.taxiruf.de/service/"
   },
   "finalUrl": "https://www.taxiruf.de/",
+  "phone": "+492212882",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/3163028369": {
-  "checkedAt": "2026-10-04T10:58:25.284Z",
+  "checkedAt": "2026-10-04T13:45:00.149Z",
   "website": "http://baden-blitz.de/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "http://baden-blitz.online.de/",
+  "email": "info@baden-blitz.de",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/12804408116": {
-  "checkedAt": "2026-10-04T10:58:17.099Z",
+  "checkedAt": "2026-10-04T13:44:52.574Z",
   "website": "https://medicomfort-nrw.de/",
   "features": [
    "krankenfahrt",
@@ -2418,11 +2608,13 @@
    "onkologie": "https://medicomfort-nrw.de/"
   },
   "finalUrl": "https://medicomfort-nrw.de/",
+  "email": "kontakt@medicomfort-nrw.de",
+  "phone": "020187772234",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/3879001732": {
-  "checkedAt": "2026-10-04T10:58:26.871Z",
+  "checkedAt": "2026-10-04T13:45:01.745Z",
   "website": "http://www.taxi-lucht.de/",
   "features": [],
   "kassen": [],
@@ -2431,7 +2623,7 @@
   "error": "ENOTFOUND"
  },
  "node/282556887": {
-  "checkedAt": "2026-10-04T10:58:24.875Z",
+  "checkedAt": "2026-10-04T13:44:59.759Z",
   "website": "https://www.taxiruflandwursten.de/",
   "features": [
    "krankenfahrt",
@@ -2443,11 +2635,14 @@
    "dialyse": "https://www.taxiruflandwursten.de/"
   },
   "finalUrl": "https://www.taxiruflandwursten.de/",
+  "email": "bestellung@taxiruflandwursten.de",
+  "phone": "047422121",
+  "booking": "https://www.landkreis-cuxhaven.de/Themenbereiche/%C3%96PNV/Anruf-Sammel-Taxi-AST-/",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/3454582174": {
-  "checkedAt": "2026-10-04T10:58:26.073Z",
+  "checkedAt": "2026-10-04T13:45:01.035Z",
   "website": "https://www.taxi-aichach.de/",
   "features": [
    "rollstuhl",
@@ -2463,7 +2658,7 @@
   "status": "ok"
  },
  "node/3714093393": {
-  "checkedAt": "2026-10-04T10:58:26.781Z",
+  "checkedAt": "2026-10-04T13:45:01.495Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -2477,11 +2672,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/288255374": {
-  "checkedAt": "2026-10-04T10:58:25.000Z",
+  "checkedAt": "2026-10-04T13:44:59.813Z",
   "website": "https://www.taxi-akbulut.de/",
   "features": [
    "krankenfahrt",
@@ -2506,11 +2703,14 @@
    "onkologie": "https://www.taxi-akbulut.de/"
   },
   "finalUrl": "https://www.taxi-akbulut.de/",
+  "email": "mail@taxi-akbulut.de",
+  "phone": "+4970711438591",
+  "booking": "https://www.taxi-akbulut.de/buchen",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/370449217": {
-  "checkedAt": "2026-10-04T10:58:26.691Z",
+  "checkedAt": "2026-10-04T13:45:01.487Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -2524,11 +2724,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/12823945629": {
-  "checkedAt": "2026-10-04T10:58:17.201Z",
+  "checkedAt": "2026-10-04T13:44:52.631Z",
   "website": "https://www.taxi-goltz.de/",
   "features": [
    "krankenfahrt",
@@ -2542,11 +2744,12 @@
    "tragestuhl": "https://www.taxi-goltz.de/"
   },
   "finalUrl": "https://www.taxi-goltz.de/",
+  "phone": "+4927716111",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/372829581": {
-  "checkedAt": "2026-10-04T10:58:26.797Z",
+  "checkedAt": "2026-10-04T13:45:01.585Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -2560,11 +2763,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/3696545864": {
-  "checkedAt": "2026-10-04T10:58:26.583Z",
+  "checkedAt": "2026-10-04T13:45:01.456Z",
   "website": "http://www.taxi-tofall.de/",
   "features": [],
   "kassen": [],
@@ -2572,7 +2777,7 @@
   "status": "robots-disallow"
  },
  "node/3452427293": {
-  "checkedAt": "2026-10-04T10:58:26.071Z",
+  "checkedAt": "2026-10-04T13:45:00.976Z",
   "website": "https://fahrdienst-loewenherz.de/",
   "features": [
    "krankenfahrt",
@@ -2588,11 +2793,13 @@
    "tragestuhl": "https://fahrdienst-loewenherz.de/leistungen.html"
   },
   "finalUrl": "https://fahrdienst-loewenherz.de/",
+  "email": "info@fahrdienst-loewenherz.de",
+  "phone": "+49211799679",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/3444947900": {
-  "checkedAt": "2026-10-04T10:58:25.939Z",
+  "checkedAt": "2026-10-04T13:45:00.920Z",
   "website": "http://www.citycar6767.de/",
   "features": [
    "krankenfahrt",
@@ -2612,7 +2819,7 @@
   "status": "ok"
  },
  "node/2295722009": {
-  "checkedAt": "2026-10-04T10:58:23.746Z",
+  "checkedAt": "2026-10-04T13:44:58.735Z",
   "website": "https://www.taxilang.de/",
   "features": [
    "tragestuhl",
@@ -2624,11 +2831,13 @@
    "rollstuhl": "https://www.lang-gruppe.io/mobilitaetsservice/"
   },
   "finalUrl": "https://www.lang-gruppe.io/",
+  "email": "info@taxilang.de",
+  "phone": "+4922931214",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/3884466252": {
-  "checkedAt": "2026-10-04T10:58:27.022Z",
+  "checkedAt": "2026-10-04T13:45:01.810Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -2642,11 +2851,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/3196094991": {
-  "checkedAt": "2026-10-04T10:58:25.323Z",
+  "checkedAt": "2026-10-04T13:45:00.208Z",
   "website": "http://www.brueckmann-faehrt.de/",
   "features": [
    "krankenfahrt",
@@ -2664,11 +2875,13 @@
    "tragestuhl": "https://www.brueckmann-faehrt.de/leistungen"
   },
   "finalUrl": "https://www.brueckmann-faehrt.de/",
+  "email": "info@brueckmann-faehrt.de",
+  "phone": "07244737020",
   "pagesChecked": 3,
   "status": "ok"
  },
  "node/12875476254": {
-  "checkedAt": "2026-10-04T10:58:17.260Z",
+  "checkedAt": "2026-10-04T13:44:52.892Z",
   "website": "https://roland-stendal.de/roland-fahrdienst/",
   "features": [
    "krankenfahrt",
@@ -2682,11 +2895,12 @@
    "onkologie": "https://roland-stendal.de/roland-fahrdienst/"
   },
   "finalUrl": "https://roland-stendal.de/roland-fahrdienst/",
+  "phone": "039314907530",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/3180994672": {
-  "checkedAt": "2026-10-04T10:58:25.317Z",
+  "checkedAt": "2026-10-04T13:45:00.178Z",
   "website": "https://www.taxi-deutschland.net/",
   "features": [],
   "kassen": [],
@@ -2696,7 +2910,7 @@
   "status": "ok"
  },
  "node/4330744105": {
-  "checkedAt": "2026-10-04T10:58:27.443Z",
+  "checkedAt": "2026-10-04T13:45:02.723Z",
   "website": "https://mk-do.de/",
   "features": [],
   "kassen": [],
@@ -2704,7 +2918,7 @@
   "status": "http-403"
  },
  "node/4462052156": {
-  "checkedAt": "2026-10-04T10:58:27.838Z",
+  "checkedAt": "2026-10-04T13:45:03.115Z",
   "website": "http://www.fahrdienst-euskirchen.de/",
   "features": [],
   "kassen": [],
@@ -2713,7 +2927,7 @@
   "error": "ENOTFOUND"
  },
  "node/412726901": {
-  "checkedAt": "2026-10-04T10:58:27.209Z",
+  "checkedAt": "2026-10-04T13:45:02.167Z",
   "website": "http://www.taxibornheim.de/",
   "features": [
    "krankenfahrt"
@@ -2727,7 +2941,7 @@
   "status": "ok"
  },
  "node/3969440681": {
-  "checkedAt": "2026-10-04T10:58:27.052Z",
+  "checkedAt": "2026-10-04T13:45:01.936Z",
   "website": "https://www.taxijunker.de/",
   "features": [],
   "kassen": [],
@@ -2735,7 +2949,7 @@
   "status": "http-404"
  },
  "node/291205397": {
-  "checkedAt": "2026-10-04T10:58:25.039Z",
+  "checkedAt": "2026-10-04T13:44:59.833Z",
   "website": "https://taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -2747,11 +2961,12 @@
    "krankenfahrt": "https://taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/4102660887": {
-  "checkedAt": "2026-10-04T10:58:27.159Z",
+  "checkedAt": "2026-10-04T13:45:02.075Z",
   "website": "https://taxi-norderstedt.de/",
   "features": [
    "rollstuhl"
@@ -2761,11 +2976,13 @@
    "rollstuhl": "https://taxi-norderstedt.de/"
   },
   "finalUrl": "https://taxi-norderstedt.de/",
+  "email": "firmengruppe-klee@wtnet.de",
+  "phone": "+49405241088",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/4512601418": {
-  "checkedAt": "2026-10-04T10:58:27.979Z",
+  "checkedAt": "2026-10-04T13:45:03.180Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -2779,11 +2996,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/3396067375": {
-  "checkedAt": "2026-10-04T10:58:25.816Z",
+  "checkedAt": "2026-10-04T13:45:00.583Z",
   "website": "https://www.chemnitz-taxi.de/",
   "features": [
    "krankenfahrt",
@@ -2801,11 +3020,13 @@
    "onkologie": "https://www.chemnitz-taxi.de/"
   },
   "finalUrl": "https://www.chemnitz-taxi.de/",
+  "phone": "0371721010",
+  "email": "info@chemnitz-taxi.de",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/4294709836": {
-  "checkedAt": "2026-10-04T10:58:27.345Z",
+  "checkedAt": "2026-10-04T13:45:02.254Z",
   "website": "https://www.goossenstaxi.de/",
   "features": [
    "krankenfahrt",
@@ -2825,7 +3046,7 @@
   "status": "ok"
  },
  "node/3417499464": {
-  "checkedAt": "2026-10-04T10:58:25.891Z",
+  "checkedAt": "2026-10-04T13:45:00.782Z",
   "website": "https://taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -2837,21 +3058,24 @@
    "krankenfahrt": "https://taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/3720274460": {
-  "checkedAt": "2026-10-04T10:58:26.786Z",
+  "checkedAt": "2026-10-04T13:45:01.503Z",
   "website": "https://omnibus-schroeder.de/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://omnibus-schroeder.de/",
+  "email": "info@omnibus-schroeder.de",
+  "phone": "+497345919113",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/1055948565": {
-  "checkedAt": "2026-10-04T10:58:15.851Z",
+  "checkedAt": "2026-10-04T13:44:51.579Z",
   "website": "https://www.frg-taxi.de/",
   "features": [],
   "kassen": [],
@@ -2860,7 +3084,7 @@
   "error": "ECONNRESET"
  },
  "node/3598558566": {
-  "checkedAt": "2026-10-04T10:58:26.481Z",
+  "checkedAt": "2026-10-04T13:45:01.174Z",
   "website": "http://www.taxi-urban.de/",
   "features": [],
   "kassen": [],
@@ -2869,7 +3093,7 @@
   "error": "ERR_TLS_CERT_ALTNAME_INVALID"
  },
  "node/4693761608": {
-  "checkedAt": "2026-10-04T10:58:28.409Z",
+  "checkedAt": "2026-10-04T13:45:03.354Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -2883,11 +3107,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/3417499465": {
-  "checkedAt": "2026-10-04T10:58:25.899Z",
+  "checkedAt": "2026-10-04T13:45:00.799Z",
   "website": "https://taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -2899,11 +3125,12 @@
    "krankenfahrt": "https://taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/4722826510": {
-  "checkedAt": "2026-10-04T10:58:28.533Z",
+  "checkedAt": "2026-10-04T13:45:03.465Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -2917,11 +3144,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/368307642": {
-  "checkedAt": "2026-10-04T10:58:26.530Z",
+  "checkedAt": "2026-10-04T13:45:01.227Z",
   "website": "https://www.taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -2933,11 +3162,12 @@
    "krankenfahrt": "https://www.taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://www.taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/392002594": {
-  "checkedAt": "2026-10-04T10:58:27.049Z",
+  "checkedAt": "2026-10-04T13:45:01.907Z",
   "website": "https://www.taxiruf.de/",
   "features": [
    "krankenfahrt",
@@ -2949,21 +3179,23 @@
    "dialyse": "https://www.taxiruf.de/service/"
   },
   "finalUrl": "https://www.taxiruf.de/",
+  "phone": "+492212882",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/4157673001": {
-  "checkedAt": "2026-10-04T10:58:27.297Z",
+  "checkedAt": "2026-10-04T13:45:02.178Z",
   "website": "http://taxi-xxl-reutlingen.de/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://taxi-xxl-reutlingen.de/",
+  "email": "info@taxi-xxl-reutlingen.de",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/4722826511": {
-  "checkedAt": "2026-10-04T10:58:28.750Z",
+  "checkedAt": "2026-10-04T13:45:03.633Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -2977,11 +3209,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/13702009693": {
-  "checkedAt": "2026-10-04T10:58:20.498Z",
+  "checkedAt": "2026-10-04T13:44:55.868Z",
   "website": "https://www.drk-leer.de/angebote/fahrdienst.html",
   "features": [
    "rollstuhl",
@@ -2997,11 +3231,12 @@
    "onkologie": "https://www.drk-leer.de/angebote/fahrdienst.html"
   },
   "finalUrl": "https://www.drk-leer.de/angebote/fahrdienst.html",
+  "phone": "04919292355",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/2491873126": {
-  "checkedAt": "2026-10-04T10:58:24.215Z",
+  "checkedAt": "2026-10-04T13:44:59.170Z",
   "website": "https://www.taxi-goedeke.de/",
   "features": [
    "krankenfahrt",
@@ -3013,11 +3248,13 @@
    "rollstuhl": "https://www.taxi-goedeke.com/"
   },
   "finalUrl": "https://www.taxi-goedeke.com/",
+  "phone": "+4947447007",
+  "booking": "https://esm.ansat.de/LKCUX/ansatportalauskunft/",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/474739847": {
-  "checkedAt": "2026-10-04T10:58:28.843Z",
+  "checkedAt": "2026-10-04T13:45:03.791Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3031,11 +3268,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/4703403445": {
-  "checkedAt": "2026-10-04T10:58:28.441Z",
+  "checkedAt": "2026-10-04T13:45:03.362Z",
   "website": "https://www.taxi-kasiske.de/",
   "features": [
    "krankenfahrt",
@@ -3049,11 +3288,12 @@
    "onkologie": "https://www.taxi-kasiske.de/serviceleistungen"
   },
   "finalUrl": "https://www.taxi-kasiske.de/",
+  "phone": "073717407",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/4909595906": {
-  "checkedAt": "2026-10-04T10:58:29.071Z",
+  "checkedAt": "2026-10-04T13:45:04.218Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3067,11 +3307,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/4909589003": {
-  "checkedAt": "2026-10-04T10:58:29.003Z",
+  "checkedAt": "2026-10-04T13:45:04.200Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3085,11 +3327,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/4918849053": {
-  "checkedAt": "2026-10-04T10:58:29.268Z",
+  "checkedAt": "2026-10-04T13:45:04.468Z",
   "website": "http://www.team-heidelberg.taximayer.eu/",
   "features": [],
   "kassen": [],
@@ -3098,7 +3342,7 @@
   "error": "ENOTFOUND"
  },
  "node/4909568809": {
-  "checkedAt": "2026-10-04T10:58:29.000Z",
+  "checkedAt": "2026-10-04T13:45:04.071Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3112,11 +3356,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5069965721": {
-  "checkedAt": "2026-10-04T10:58:29.461Z",
+  "checkedAt": "2026-10-04T13:45:04.759Z",
   "website": "http://www.taxi-1a.eu/",
   "features": [],
   "kassen": [],
@@ -3125,7 +3371,7 @@
   "error": "ENOTFOUND"
  },
  "node/5073626839": {
-  "checkedAt": "2026-10-04T10:58:29.464Z",
+  "checkedAt": "2026-10-04T13:45:04.766Z",
   "website": "http://autoruf-rathjens.de/",
   "features": [],
   "kassen": [],
@@ -3134,7 +3380,7 @@
   "error": "ENOTFOUND"
  },
  "node/4171676420": {
-  "checkedAt": "2026-10-04T10:58:27.306Z",
+  "checkedAt": "2026-10-04T13:45:02.193Z",
   "website": "http://www.artland-fahrdienste.de/",
   "features": [],
   "kassen": [],
@@ -3143,7 +3389,7 @@
   "error": "ERR_TLS_CERT_ALTNAME_INVALID"
  },
  "node/4909596344": {
-  "checkedAt": "2026-10-04T10:58:29.178Z",
+  "checkedAt": "2026-10-04T13:45:04.228Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3157,11 +3403,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/4899815244": {
-  "checkedAt": "2026-10-04T10:58:28.955Z",
+  "checkedAt": "2026-10-04T13:45:04.057Z",
   "website": "http://www.katjasmietwagen.de/",
   "features": [],
   "kassen": [],
@@ -3171,7 +3419,7 @@
   "status": "ok"
  },
  "node/5094788544": {
-  "checkedAt": "2026-10-04T10:58:29.603Z",
+  "checkedAt": "2026-10-04T13:45:04.889Z",
   "website": "http://www.taxi-reutlingen-gbr.de/",
   "features": [],
   "kassen": [],
@@ -3180,7 +3428,7 @@
   "error": "ENOTFOUND"
  },
  "node/4909602808": {
-  "checkedAt": "2026-10-04T10:58:29.221Z",
+  "checkedAt": "2026-10-04T13:45:04.288Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3194,11 +3442,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/4909601576": {
-  "checkedAt": "2026-10-04T10:58:29.189Z",
+  "checkedAt": "2026-10-04T13:45:04.239Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3212,11 +3462,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5148463366": {
-  "checkedAt": "2026-10-04T10:58:29.810Z",
+  "checkedAt": "2026-10-04T13:45:05.093Z",
   "website": "http://www.taxi-jung.com/",
   "features": [],
   "kassen": [],
@@ -3225,7 +3477,7 @@
   "error": "ENOTFOUND"
  },
  "node/5094923498": {
-  "checkedAt": "2026-10-04T10:58:29.694Z",
+  "checkedAt": "2026-10-04T13:45:04.973Z",
   "website": "https://www.taxi-kurier-reutlingen.de/",
   "features": [],
   "kassen": [],
@@ -3234,17 +3486,21 @@
   "error": "TypeError"
  },
  "node/4610168520": {
-  "checkedAt": "2026-10-04T10:58:28.371Z",
+  "checkedAt": "2026-10-04T13:45:03.349Z",
   "website": "http://taxi-nikolaus.eu/",
-  "features": [],
+  "features": [
+   "krankenfahrt"
+  ],
   "kassen": [],
-  "evidence": {},
+  "evidence": {
+   "krankenfahrt": "https://taxi-nikolaus.eu/"
+  },
   "finalUrl": "https://taxi-nikolaus.eu/",
-  "pagesChecked": 1,
+  "pagesChecked": 3,
   "status": "ok"
  },
  "node/14070737063": {
-  "checkedAt": "2026-10-04T10:58:22.269Z",
+  "checkedAt": "2026-10-04T13:44:57.063Z",
   "website": "https://www.taxi-arfaoui.de/",
   "features": [
    "krankenfahrt",
@@ -3262,11 +3518,13 @@
    "rollstuhl": "https://www.taxi-arfaoui.de/krankenfahrten/"
   },
   "finalUrl": "https://www.taxi-arfaoui.de/",
+  "email": "kontakt@taxi-arfaoui.de",
+  "phone": "+497071650182",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/3787241667": {
-  "checkedAt": "2026-10-04T10:58:26.850Z",
+  "checkedAt": "2026-10-04T13:45:01.681Z",
   "website": "http://www.goettinger-funk-taxi-zentrale.de/",
   "features": [],
   "kassen": [],
@@ -3274,7 +3532,7 @@
   "status": "http-503"
  },
  "node/4000188614": {
-  "checkedAt": "2026-10-04T10:58:27.071Z",
+  "checkedAt": "2026-10-04T13:45:02.035Z",
   "website": "http://www.taxizentrale670670.de/",
   "features": [],
   "kassen": [],
@@ -3284,17 +3542,18 @@
   "status": "ok"
  },
  "node/5094630054": {
-  "checkedAt": "2026-10-04T10:58:29.520Z",
+  "checkedAt": "2026-10-04T13:45:04.798Z",
   "website": "http://www.taxi-tietz.de/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "http://www.taxi-tietz.de/",
+  "email": "info@taxi-tietz.de",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/5094774158": {
-  "checkedAt": "2026-10-04T10:58:29.589Z",
+  "checkedAt": "2026-10-04T13:45:04.842Z",
   "website": "http://www.taxiteam-reutlingen.de/",
   "features": [],
   "kassen": [],
@@ -3302,7 +3561,7 @@
   "status": "robots-disallow"
  },
  "node/4715318094": {
-  "checkedAt": "2026-10-04T10:58:28.454Z",
+  "checkedAt": "2026-10-04T13:45:03.404Z",
   "website": "https://www.taxiruf.de/",
   "features": [
    "krankenfahrt",
@@ -3314,11 +3573,12 @@
    "dialyse": "https://www.taxiruf.de/service/"
   },
   "finalUrl": "https://www.taxiruf.de/",
+  "phone": "+492212882",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/4942349421": {
-  "checkedAt": "2026-10-04T10:58:29.321Z",
+  "checkedAt": "2026-10-04T13:45:04.498Z",
   "website": "https://www.hit-taxi.de/",
   "features": [
    "krankenfahrt",
@@ -3336,11 +3596,12 @@
    "onkologie": "https://www.hit-taxi.de/unsere-leistungen"
   },
   "finalUrl": "https://www.hit-taxi.de/",
+  "phone": "054242219155",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/519661441": {
-  "checkedAt": "2026-10-04T10:58:30.024Z",
+  "checkedAt": "2026-10-04T13:45:05.447Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3354,11 +3615,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5032488586": {
-  "checkedAt": "2026-10-04T10:58:29.439Z",
+  "checkedAt": "2026-10-04T13:45:04.621Z",
   "website": "http://www.dwd-service.de/",
   "features": [],
   "kassen": [],
@@ -3368,7 +3631,7 @@
   "status": "ok"
  },
  "node/5405139900": {
-  "checkedAt": "2026-10-04T10:58:30.421Z",
+  "checkedAt": "2026-10-04T13:45:05.602Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3382,11 +3645,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/4594474683": {
-  "checkedAt": "2026-10-04T10:58:28.369Z",
+  "checkedAt": "2026-10-04T13:45:03.327Z",
   "website": "http://taxi-dieter-gmbh.de/",
   "features": [],
   "kassen": [],
@@ -3396,17 +3661,19 @@
   "status": "ok"
  },
  "node/5278198349": {
-  "checkedAt": "2026-10-04T10:58:30.280Z",
+  "checkedAt": "2026-10-04T13:45:05.554Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/5230056263": {
-  "checkedAt": "2026-10-04T10:58:30.030Z",
+  "checkedAt": "2026-10-04T13:45:05.476Z",
   "website": "https://www.taxi-freital.de/",
   "features": [
    "krankenfahrt"
@@ -3422,17 +3689,19 @@
   "status": "ok"
  },
  "node/5196095818": {
-  "checkedAt": "2026-10-04T10:58:29.979Z",
+  "checkedAt": "2026-10-04T13:45:05.412Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/5300876878": {
-  "checkedAt": "2026-10-04T10:58:30.287Z",
+  "checkedAt": "2026-10-04T13:45:05.576Z",
   "website": "https://www.2777777.de/",
   "features": [],
   "kassen": [],
@@ -3441,7 +3710,7 @@
   "error": "ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR"
  },
  "node/5094757637": {
-  "checkedAt": "2026-10-04T10:58:29.547Z",
+  "checkedAt": "2026-10-04T13:45:04.827Z",
   "website": "https://www.taxi-ok-reutlingen.de/",
   "features": [],
   "kassen": [],
@@ -3451,7 +3720,7 @@
   "status": "ok"
  },
  "node/4880471809": {
-  "checkedAt": "2026-10-04T10:58:28.873Z",
+  "checkedAt": "2026-10-04T13:45:03.945Z",
   "website": "http://www.funktaxi-zwickau.de/",
   "features": [
    "krankenfahrt"
@@ -3467,7 +3736,7 @@
   "status": "ok"
  },
  "node/482819315": {
-  "checkedAt": "2026-10-04T10:58:28.855Z",
+  "checkedAt": "2026-10-04T13:45:03.916Z",
   "website": "https://www.taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -3479,11 +3748,12 @@
    "krankenfahrt": "https://www.taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://www.taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/4982881575": {
-  "checkedAt": "2026-10-04T10:58:29.353Z",
+  "checkedAt": "2026-10-04T13:45:04.526Z",
   "website": "https://www.taxi.de/unternehmen/Mini-Car-am-Wald-Wolfenbuettel/",
   "features": [
    "rollstuhl",
@@ -3501,37 +3771,42 @@
   "status": "ok"
  },
  "node/5231190798": {
-  "checkedAt": "2026-10-04T10:58:30.092Z",
+  "checkedAt": "2026-10-04T13:45:05.546Z",
   "website": "https://www.taxi-duesseldorf.com/bestelloptionen.html",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/index.html",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/5095136648": {
-  "checkedAt": "2026-10-04T10:58:29.713Z",
+  "checkedAt": "2026-10-04T13:45:05.070Z",
   "website": "https://www.taxi-tietz.de/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-tietz.de/",
+  "email": "info@taxi-tietz.de",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/5412390560": {
-  "checkedAt": "2026-10-04T10:58:30.471Z",
+  "checkedAt": "2026-10-04T13:45:05.615Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/5367996357": {
-  "checkedAt": "2026-10-04T10:58:30.356Z",
+  "checkedAt": "2026-10-04T13:45:05.599Z",
   "website": "http://www.city-taxi-giessen.de/",
   "features": [],
   "kassen": [],
@@ -3541,7 +3816,7 @@
   "status": "ok"
  },
  "node/5513405488": {
-  "checkedAt": "2026-10-04T10:58:30.962Z",
+  "checkedAt": "2026-10-04T13:45:05.998Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3555,11 +3830,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5157869651": {
-  "checkedAt": "2026-10-04T10:58:29.839Z",
+  "checkedAt": "2026-10-04T13:45:05.122Z",
   "website": "http://www.taxi-haage.de/",
   "features": [],
   "kassen": [],
@@ -3567,7 +3844,7 @@
   "status": "http-500"
  },
  "node/482818652": {
-  "checkedAt": "2026-10-04T10:58:28.853Z",
+  "checkedAt": "2026-10-04T13:45:03.877Z",
   "website": "https://www.taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -3579,31 +3856,36 @@
    "krankenfahrt": "https://www.taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://www.taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/5509986411": {
-  "checkedAt": "2026-10-04T10:58:30.886Z",
+  "checkedAt": "2026-10-04T13:45:05.978Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/5534827859": {
-  "checkedAt": "2026-10-04T10:58:31.016Z",
+  "checkedAt": "2026-10-04T13:45:06.055Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/5472639166": {
-  "checkedAt": "2026-10-04T10:58:30.691Z",
+  "checkedAt": "2026-10-04T13:45:05.821Z",
   "website": "http://www.personatrans.de/online-anfrage/",
   "features": [],
   "kassen": [],
@@ -3611,7 +3893,7 @@
   "status": "http-404"
  },
  "node/5662510547": {
-  "checkedAt": "2026-10-04T10:58:31.334Z",
+  "checkedAt": "2026-10-04T13:45:06.344Z",
   "website": "http://www.fuchs-mobil.de/",
   "features": [],
   "kassen": [],
@@ -3620,7 +3902,7 @@
   "error": "ENOTFOUND"
  },
  "node/3885984442": {
-  "checkedAt": "2026-10-04T10:58:27.038Z",
+  "checkedAt": "2026-10-04T13:45:01.820Z",
   "website": "https://www.taxischweers.de/",
   "features": [
    "dialyse",
@@ -3636,11 +3918,12 @@
    "rollstuhl": "https://www.taxischweers.de/ueber-uns/jobs.html"
   },
   "finalUrl": "https://www.taxischweers.de/",
+  "email": "info@taxischweers.de",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/5094851946": {
-  "checkedAt": "2026-10-04T10:58:29.632Z",
+  "checkedAt": "2026-10-04T13:45:04.942Z",
   "website": "https://www.taxifunk-zentrale-reutlingen.de/",
   "features": [],
   "kassen": [],
@@ -3649,7 +3932,7 @@
   "error": "ERR_TLS_CERT_ALTNAME_INVALID"
  },
  "node/5539790957": {
-  "checkedAt": "2026-10-04T10:58:31.060Z",
+  "checkedAt": "2026-10-04T13:45:06.161Z",
   "website": "http://www.taxi-gundermann.de/",
   "features": [],
   "kassen": [],
@@ -3657,7 +3940,7 @@
   "status": "http-404"
  },
  "node/5766224941": {
-  "checkedAt": "2026-10-04T10:58:31.394Z",
+  "checkedAt": "2026-10-04T13:45:06.476Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3671,21 +3954,25 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5751641919": {
-  "checkedAt": "2026-10-04T10:58:31.380Z",
+  "checkedAt": "2026-10-04T13:45:06.361Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/5766173354": {
-  "checkedAt": "2026-10-04T10:58:31.393Z",
+  "checkedAt": "2026-10-04T13:45:06.421Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3699,11 +3986,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/517369835": {
-  "checkedAt": "2026-10-04T10:58:29.916Z",
+  "checkedAt": "2026-10-04T13:45:05.165Z",
   "website": "https://www.taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -3715,11 +4004,12 @@
    "krankenfahrt": "https://www.taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://www.taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/5766173353": {
-  "checkedAt": "2026-10-04T10:58:31.383Z",
+  "checkedAt": "2026-10-04T13:45:06.377Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3733,11 +4023,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5766224943": {
-  "checkedAt": "2026-10-04T10:58:31.413Z",
+  "checkedAt": "2026-10-04T13:45:06.531Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3751,11 +4043,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5502692107": {
-  "checkedAt": "2026-10-04T10:58:30.832Z",
+  "checkedAt": "2026-10-04T13:45:05.899Z",
   "website": "https://www.taxi-korell.de/",
   "features": [
    "rollstuhl",
@@ -3771,11 +4065,13 @@
    "onkologie": "https://www.taxi-korell.de/kranken-und-rollstuhlfahrten"
   },
   "finalUrl": "https://www.taxi-korell.de/",
+  "email": "info@taxi-korell.de",
+  "phone": "0714244444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/5766315746": {
-  "checkedAt": "2026-10-04T10:58:31.643Z",
+  "checkedAt": "2026-10-04T13:45:06.818Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3789,11 +4085,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5766315747": {
-  "checkedAt": "2026-10-04T10:58:31.735Z",
+  "checkedAt": "2026-10-04T13:45:06.891Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3807,11 +4105,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5766224947": {
-  "checkedAt": "2026-10-04T10:58:31.465Z",
+  "checkedAt": "2026-10-04T13:45:06.617Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3825,11 +4125,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5766224948": {
-  "checkedAt": "2026-10-04T10:58:31.522Z",
+  "checkedAt": "2026-10-04T13:45:06.679Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3843,11 +4145,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5766315749": {
-  "checkedAt": "2026-10-04T10:58:31.831Z",
+  "checkedAt": "2026-10-04T13:45:06.925Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3861,11 +4165,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5766315750": {
-  "checkedAt": "2026-10-04T10:58:31.847Z",
+  "checkedAt": "2026-10-04T13:45:07.020Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3879,11 +4185,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5766315748": {
-  "checkedAt": "2026-10-04T10:58:31.827Z",
+  "checkedAt": "2026-10-04T13:45:06.895Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3897,11 +4205,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5478749141": {
-  "checkedAt": "2026-10-04T10:58:30.732Z",
+  "checkedAt": "2026-10-04T13:45:05.877Z",
   "website": "https://www.city-taxi-eu.de/",
   "features": [
    "krankenfahrt",
@@ -3913,11 +4223,13 @@
    "dialyse": "https://www.city-taxi-eu.de/"
   },
   "finalUrl": "https://www.city-taxi-eu.de/",
+  "email": "city-taxi@gmx.de",
+  "phone": "0225156000",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5766224949": {
-  "checkedAt": "2026-10-04T10:58:31.523Z",
+  "checkedAt": "2026-10-04T13:45:06.778Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3931,11 +4243,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5766317753": {
-  "checkedAt": "2026-10-04T10:58:31.936Z",
+  "checkedAt": "2026-10-04T13:45:07.044Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3949,11 +4263,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5766224944": {
-  "checkedAt": "2026-10-04T10:58:31.417Z",
+  "checkedAt": "2026-10-04T13:45:06.594Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3967,11 +4283,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5770598662": {
-  "checkedAt": "2026-10-04T10:58:32.204Z",
+  "checkedAt": "2026-10-04T13:45:07.237Z",
   "website": "https://www.rosdorf-taxi.de/",
   "features": [],
   "kassen": [],
@@ -3980,7 +4298,7 @@
   "error": "TypeError"
  },
  "node/5766315752": {
-  "checkedAt": "2026-10-04T10:58:31.855Z",
+  "checkedAt": "2026-10-04T13:45:07.024Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -3994,11 +4312,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5766317755": {
-  "checkedAt": "2026-10-04T10:58:32.064Z",
+  "checkedAt": "2026-10-04T13:45:07.064Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4012,11 +4332,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5766317756": {
-  "checkedAt": "2026-10-04T10:58:32.084Z",
+  "checkedAt": "2026-10-04T13:45:07.167Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4030,11 +4352,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5766315745": {
-  "checkedAt": "2026-10-04T10:58:31.600Z",
+  "checkedAt": "2026-10-04T13:45:06.807Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4048,11 +4372,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5766317759": {
-  "checkedAt": "2026-10-04T10:58:32.149Z",
+  "checkedAt": "2026-10-04T13:45:07.212Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4066,11 +4392,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5503422882": {
-  "checkedAt": "2026-10-04T10:58:30.848Z",
+  "checkedAt": "2026-10-04T13:45:05.904Z",
   "website": "http://www.tross-fahrdienste.de/",
   "features": [],
   "kassen": [],
@@ -4080,7 +4408,7 @@
   "status": "ok"
  },
  "node/5766317754": {
-  "checkedAt": "2026-10-04T10:58:31.977Z",
+  "checkedAt": "2026-10-04T13:45:07.047Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4094,11 +4422,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5774788134": {
-  "checkedAt": "2026-10-04T10:58:32.276Z",
+  "checkedAt": "2026-10-04T13:45:07.281Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4112,11 +4442,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5798573362": {
-  "checkedAt": "2026-10-04T10:58:32.642Z",
+  "checkedAt": "2026-10-04T13:45:07.740Z",
   "website": "http://www.taxihehberger.de/",
   "features": [],
   "kassen": [],
@@ -4125,7 +4457,7 @@
   "error": "ENOTFOUND"
  },
  "node/5774788135": {
-  "checkedAt": "2026-10-04T10:58:32.283Z",
+  "checkedAt": "2026-10-04T13:45:07.319Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4139,11 +4471,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5639447353": {
-  "checkedAt": "2026-10-04T10:58:31.173Z",
+  "checkedAt": "2026-10-04T13:45:06.255Z",
   "website": "http://www.taxi-odenwald.de/",
   "features": [],
   "kassen": [],
@@ -4153,7 +4487,7 @@
   "status": "ok"
  },
  "node/5774788132": {
-  "checkedAt": "2026-10-04T10:58:32.269Z",
+  "checkedAt": "2026-10-04T13:45:07.276Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4167,11 +4501,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5774788136": {
-  "checkedAt": "2026-10-04T10:58:32.309Z",
+  "checkedAt": "2026-10-04T13:45:07.391Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4185,11 +4521,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5774788138": {
-  "checkedAt": "2026-10-04T10:58:32.374Z",
+  "checkedAt": "2026-10-04T13:45:07.444Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4203,11 +4541,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5774788137": {
-  "checkedAt": "2026-10-04T10:58:32.364Z",
+  "checkedAt": "2026-10-04T13:45:07.416Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4221,11 +4561,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5779750432": {
-  "checkedAt": "2026-10-04T10:58:32.421Z",
+  "checkedAt": "2026-10-04T13:45:07.484Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4239,11 +4581,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5779750430": {
-  "checkedAt": "2026-10-04T10:58:32.396Z",
+  "checkedAt": "2026-10-04T13:45:07.470Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4257,11 +4601,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5653894449": {
-  "checkedAt": "2026-10-04T10:58:31.191Z",
+  "checkedAt": "2026-10-04T13:45:06.289Z",
   "website": "http://www.taxi-usedom.de/",
   "features": [
    "krankenfahrt",
@@ -4279,7 +4625,7 @@
   "status": "ok"
  },
  "node/5779750433": {
-  "checkedAt": "2026-10-04T10:58:32.465Z",
+  "checkedAt": "2026-10-04T13:45:07.519Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4293,11 +4639,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5779750437": {
-  "checkedAt": "2026-10-04T10:58:32.517Z",
+  "checkedAt": "2026-10-04T13:45:07.587Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4311,11 +4659,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5779750436": {
-  "checkedAt": "2026-10-04T10:58:32.513Z",
+  "checkedAt": "2026-10-04T13:45:07.575Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4329,11 +4679,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5779849449": {
-  "checkedAt": "2026-10-04T10:58:32.569Z",
+  "checkedAt": "2026-10-04T13:45:07.654Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4347,11 +4699,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5779849450": {
-  "checkedAt": "2026-10-04T10:58:32.576Z",
+  "checkedAt": "2026-10-04T13:45:07.670Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4365,11 +4719,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5779849451": {
-  "checkedAt": "2026-10-04T10:58:32.635Z",
+  "checkedAt": "2026-10-04T13:45:07.718Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4383,11 +4739,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5832807115": {
-  "checkedAt": "2026-10-04T10:58:32.716Z",
+  "checkedAt": "2026-10-04T13:45:07.781Z",
   "website": "https://www.taxirufeuskirchen.de/",
   "features": [],
   "kassen": [],
@@ -4396,17 +4754,18 @@
   "error": "TypeError"
  },
  "node/5962647403": {
-  "checkedAt": "2026-10-04T10:58:32.800Z",
+  "checkedAt": "2026-10-04T13:45:07.900Z",
   "website": "https://www.seemobil-konstanz.de/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.seemobil-konstanz.de/",
+  "email": "info@mysite.com",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/4561847156": {
-  "checkedAt": "2026-10-04T10:58:28.013Z",
+  "checkedAt": "2026-10-04T13:45:03.298Z",
   "website": "https://harsefeld-taxi.de/",
   "features": [],
   "kassen": [],
@@ -4416,7 +4775,7 @@
   "status": "ok"
  },
  "node/614709042": {
-  "checkedAt": "2026-10-04T10:58:32.987Z",
+  "checkedAt": "2026-10-04T13:45:08.085Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4430,31 +4789,37 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5933838437": {
-  "checkedAt": "2026-10-04T10:58:32.730Z",
+  "checkedAt": "2026-10-04T13:45:07.839Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/5933872683": {
-  "checkedAt": "2026-10-04T10:58:32.735Z",
+  "checkedAt": "2026-10-04T13:45:07.851Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/6053204333": {
-  "checkedAt": "2026-10-04T10:58:32.842Z",
+  "checkedAt": "2026-10-04T13:45:07.973Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4468,11 +4833,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5771327246": {
-  "checkedAt": "2026-10-04T10:58:32.225Z",
+  "checkedAt": "2026-10-04T13:45:07.248Z",
   "website": "https://www.taxiunternehmen-garcia.de/",
   "features": [],
   "kassen": [],
@@ -4482,17 +4849,19 @@
   "status": "ok"
  },
  "node/5933894494": {
-  "checkedAt": "2026-10-04T10:58:32.749Z",
+  "checkedAt": "2026-10-04T13:45:07.857Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/6053204336": {
-  "checkedAt": "2026-10-04T10:58:32.897Z",
+  "checkedAt": "2026-10-04T13:45:08.018Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4506,11 +4875,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/6053204335": {
-  "checkedAt": "2026-10-04T10:58:32.894Z",
+  "checkedAt": "2026-10-04T13:45:07.981Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4524,21 +4895,25 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/5933905722": {
-  "checkedAt": "2026-10-04T10:58:32.797Z",
+  "checkedAt": "2026-10-04T13:45:07.881Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/6013487551": {
-  "checkedAt": "2026-10-04T10:58:32.838Z",
+  "checkedAt": "2026-10-04T13:45:07.915Z",
   "website": "https://www.free-now.com/de/office-information/muenchen/",
   "features": [],
   "kassen": [],
@@ -4546,7 +4921,7 @@
   "status": "http-429"
  },
  "node/6151889188": {
-  "checkedAt": "2026-10-04T10:58:33.023Z",
+  "checkedAt": "2026-10-04T13:45:08.107Z",
   "website": "https://www.notfallrettung-gelsenkirchen.de/",
   "features": [],
   "kassen": [],
@@ -4555,7 +4930,7 @@
   "error": "TypeError"
  },
  "node/6053204337": {
-  "checkedAt": "2026-10-04T10:58:32.940Z",
+  "checkedAt": "2026-10-04T13:45:08.036Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4569,11 +4944,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/6053204338": {
-  "checkedAt": "2026-10-04T10:58:32.966Z",
+  "checkedAt": "2026-10-04T13:45:08.049Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4587,11 +4964,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/14180019401": {
-  "checkedAt": "2026-10-04T10:58:22.557Z",
+  "checkedAt": "2026-10-04T13:44:57.333Z",
   "website": "http://fahrdienstcelle.de/",
   "features": [
    "krankenfahrt",
@@ -4603,11 +4982,13 @@
    "tragestuhl": "https://www.drkcelle.de/angebote/fahrservice.html"
   },
   "finalUrl": "https://www.drkcelle.de/angebote/fahrservice.html",
+  "phone": "+495141903290",
+  "booking": "https://www.drkcelle.de/service/widerruf-/-kuendigung.html",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/707084236": {
-  "checkedAt": "2026-10-04T10:58:33.370Z",
+  "checkedAt": "2026-10-04T13:45:08.465Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4621,11 +5002,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/4056735177": {
-  "checkedAt": "2026-10-04T10:58:27.131Z",
+  "checkedAt": "2026-10-04T13:45:02.068Z",
   "website": "https://www.drkfreital.de/angebote/alltagshilfen/fahrdienst.html",
   "features": [
    "rollstuhl",
@@ -4637,11 +5020,12 @@
    "tragestuhl": "https://www.drkfreital.de/angebote/alltagshilfe/fahrdienst.html"
   },
   "finalUrl": "https://www.drkfreital.de/angebote/alltagshilfe/fahrdienst.html",
+  "phone": "035126717230",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/7227005280": {
-  "checkedAt": "2026-10-04T10:58:33.772Z",
+  "checkedAt": "2026-10-04T13:45:08.507Z",
   "website": "https://www.viamed24.com/",
   "features": [],
   "kassen": [],
@@ -4650,7 +5034,7 @@
   "error": "TypeError"
  },
  "node/6184862032": {
-  "checkedAt": "2026-10-04T10:58:33.049Z",
+  "checkedAt": "2026-10-04T13:45:08.111Z",
   "website": "http://www.taxi-herrmann.eu/",
   "features": [],
   "kassen": [],
@@ -4660,7 +5044,7 @@
   "status": "ok"
  },
  "node/5858771700": {
-  "checkedAt": "2026-10-04T10:58:32.719Z",
+  "checkedAt": "2026-10-04T13:45:07.812Z",
   "website": "http://www.fahrservice-stolte.de/",
   "features": [
    "krankenfahrt",
@@ -4678,7 +5062,7 @@
   "status": "ok"
  },
  "node/7104608513": {
-  "checkedAt": "2026-10-04T10:58:33.381Z",
+  "checkedAt": "2026-10-04T13:45:08.494Z",
   "website": "http://taxikomfort.de/",
   "features": [],
   "kassen": [],
@@ -4686,7 +5070,7 @@
   "status": "robots-disallow"
  },
  "node/6349625749": {
-  "checkedAt": "2026-10-04T10:58:33.249Z",
+  "checkedAt": "2026-10-04T13:45:08.230Z",
   "website": "http://www.taxi-mit-herz.de/",
   "features": [
    "krankenfahrt",
@@ -4706,7 +5090,7 @@
   "status": "ok"
  },
  "node/6737232425": {
-  "checkedAt": "2026-10-04T10:58:33.325Z",
+  "checkedAt": "2026-10-04T13:45:08.423Z",
   "website": "https://www.san-car.com/",
   "features": [],
   "kassen": [],
@@ -4714,7 +5098,7 @@
   "status": "http-404"
  },
  "node/4730839097": {
-  "checkedAt": "2026-10-04T10:58:28.787Z",
+  "checkedAt": "2026-10-04T13:45:03.734Z",
   "website": "http://www.taxi-zentrale-karlsruhe.de/",
   "features": [
    "krankenfahrt",
@@ -4730,11 +5114,12 @@
    "onkologie": "https://www.taxi-zentrale-karlsruhe.de/leistungen/krankenfahrten"
   },
   "finalUrl": "https://www.taxi-zentrale-karlsruhe.de/",
+  "email": "info@taxi-ka.de",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/6612395190": {
-  "checkedAt": "2026-10-04T10:58:33.306Z",
+  "checkedAt": "2026-10-04T13:45:08.407Z",
   "website": "https://www.taxi.de/unternehmen/taxivereinigung-forchheim-gdbr/",
   "features": [
    "krankenfahrt"
@@ -4748,7 +5133,7 @@
   "status": "ok"
  },
  "node/6189836848": {
-  "checkedAt": "2026-10-04T10:58:33.058Z",
+  "checkedAt": "2026-10-04T13:45:08.127Z",
   "website": "http://www.taxi-zyganda.de/",
   "features": [
    "krankenfahrt",
@@ -4762,11 +5147,12 @@
    "rollstuhl": "http://www.taxi-zyganda.de/"
   },
   "finalUrl": "http://www.taxi-zyganda.de/",
+  "email": "j.zyganda@t-online.de",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/744708480": {
-  "checkedAt": "2026-10-04T10:58:34.146Z",
+  "checkedAt": "2026-10-04T13:45:08.906Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -4780,11 +5166,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/580593360": {
-  "checkedAt": "2026-10-04T10:58:32.705Z",
+  "checkedAt": "2026-10-04T13:45:07.768Z",
   "website": "http://www.funktaxi-braubach.de/",
   "features": [
    "krankenfahrt",
@@ -4800,7 +5188,7 @@
   "status": "ok"
  },
  "node/6266034739": {
-  "checkedAt": "2026-10-04T10:58:33.240Z",
+  "checkedAt": "2026-10-04T13:45:08.178Z",
   "website": "https://www.locke.taxi/",
   "features": [],
   "kassen": [],
@@ -4810,7 +5198,7 @@
   "status": "ok"
  },
  "node/5472340359": {
-  "checkedAt": "2026-10-04T10:58:30.505Z",
+  "checkedAt": "2026-10-04T13:45:05.708Z",
   "website": "https://www.taxi-roman.de/",
   "features": [],
   "kassen": [],
@@ -4820,7 +5208,7 @@
   "status": "ok"
  },
  "node/710932537": {
-  "checkedAt": "2026-10-04T10:58:33.402Z",
+  "checkedAt": "2026-10-04T13:45:08.499Z",
   "website": "https://www.taxi-dortmund.com/",
   "features": [],
   "kassen": [],
@@ -4830,7 +5218,7 @@
   "status": "ok"
  },
  "node/6257508925": {
-  "checkedAt": "2026-10-04T10:58:33.213Z",
+  "checkedAt": "2026-10-04T13:45:08.144Z",
   "website": "https://www.taxisoest.de/",
   "features": [],
   "kassen": [],
@@ -4839,7 +5227,7 @@
   "error": "ERR_TLS_CERT_ALTNAME_INVALID"
  },
  "node/7047653105": {
-  "checkedAt": "2026-10-04T10:58:33.350Z",
+  "checkedAt": "2026-10-04T13:45:08.448Z",
   "website": "http://www.taxi-hoffmann.com/",
   "features": [
    "krankenfahrt",
@@ -4859,7 +5247,7 @@
   "status": "ok"
  },
  "node/7409237690": {
-  "checkedAt": "2026-10-04T10:58:33.971Z",
+  "checkedAt": "2026-10-04T13:45:08.792Z",
   "website": "http://mietwagenservice.com/",
   "features": [
    "krankenfahrt",
@@ -4877,7 +5265,7 @@
   "status": "ok"
  },
  "node/6390203068": {
-  "checkedAt": "2026-10-04T10:58:33.273Z",
+  "checkedAt": "2026-10-04T13:45:08.319Z",
   "website": "https://www.taxiruf.de/",
   "features": [
    "krankenfahrt",
@@ -4889,11 +5277,12 @@
    "dialyse": "https://www.taxiruf.de/service/"
   },
   "finalUrl": "https://www.taxiruf.de/",
+  "phone": "+492212882",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/7987237147": {
-  "checkedAt": "2026-10-04T10:58:34.581Z",
+  "checkedAt": "2026-10-04T13:45:09.277Z",
   "website": "https://www.taxi-semrau-geithain.de/",
   "features": [],
   "kassen": [],
@@ -4902,7 +5291,7 @@
   "error": "CERT_HAS_EXPIRED"
  },
  "node/7385383054": {
-  "checkedAt": "2026-10-04T10:58:33.967Z",
+  "checkedAt": "2026-10-04T13:45:08.782Z",
   "website": "https://www.kl-taxi.de/",
   "features": [
    "krankenfahrt"
@@ -4912,11 +5301,13 @@
    "krankenfahrt": "https://www.kl-taxi.de/"
   },
   "finalUrl": "https://www.kl-taxi.de/",
+  "email": "info@kl-taxi.de",
+  "phone": "+4963169800",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/7385377621": {
-  "checkedAt": "2026-10-04T10:58:33.937Z",
+  "checkedAt": "2026-10-04T13:45:08.570Z",
   "website": "https://www.kl-taxi.de/",
   "features": [
    "krankenfahrt"
@@ -4926,11 +5317,13 @@
    "krankenfahrt": "https://www.kl-taxi.de/"
   },
   "finalUrl": "https://www.kl-taxi.de/",
+  "email": "info@kl-taxi.de",
+  "phone": "+4963169800",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/4294709866": {
-  "checkedAt": "2026-10-04T10:58:27.417Z",
+  "checkedAt": "2026-10-04T13:45:02.581Z",
   "website": "https://www.rhein-taxi.de/",
   "features": [
    "krankenfahrt",
@@ -4948,11 +5341,13 @@
    "onkologie": "https://www.rhein-taxi.de/krankenfahrten/"
   },
   "finalUrl": "https://www.rhein-taxi.de/",
+  "phone": "+49211212121",
+  "email": "kundenservice@rhein-taxi.de",
   "pagesChecked": 5,
   "status": "ok"
  },
  "node/3038993546": {
-  "checkedAt": "2026-10-04T10:58:25.206Z",
+  "checkedAt": "2026-10-04T13:45:00.098Z",
   "website": "https://www.mietwagen-klotz.de/",
   "features": [
    "krankenfahrt",
@@ -4964,11 +5359,12 @@
    "dialyse": "https://www.mietwagen-klotz.de/fahrangebote/"
   },
   "finalUrl": "https://www.mietwagen-klotz.de/",
+  "phone": "+4967729589070",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/7725273533": {
-  "checkedAt": "2026-10-04T10:58:34.206Z",
+  "checkedAt": "2026-10-04T13:45:09.125Z",
   "website": "https://www.pflegesuche.de/krankenfahrten/tom-fahrdienste-gmbh-in-duesseldorf_160892.html",
   "features": [
    "krankenfahrt",
@@ -4988,7 +5384,7 @@
   "status": "ok"
  },
  "node/801228085": {
-  "checkedAt": "2026-10-04T10:58:34.598Z",
+  "checkedAt": "2026-10-04T13:45:09.286Z",
   "website": "https://www.taxi-potsdam.de/",
   "features": [
    "krankenfahrt"
@@ -5002,7 +5398,7 @@
   "status": "ok"
  },
  "node/7165185165": {
-  "checkedAt": "2026-10-04T10:58:33.598Z",
+  "checkedAt": "2026-10-04T13:45:08.499Z",
   "website": "https://www.biekra.de/",
   "features": [
    "krankenfahrt",
@@ -5016,11 +5412,13 @@
    "dialyse": "https://www.biekra.de/leistungen/krankentransporte/"
   },
   "finalUrl": "https://www.biekra.de/",
+  "email": "mail@biekra.de",
+  "phone": "+4952172211",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/801249725": {
-  "checkedAt": "2026-10-04T10:58:34.635Z",
+  "checkedAt": "2026-10-04T13:45:09.348Z",
   "website": "https://www.taxi-potsdam.de/",
   "features": [
    "krankenfahrt"
@@ -5034,17 +5432,19 @@
   "status": "ok"
  },
  "node/4470022814": {
-  "checkedAt": "2026-10-04T10:58:27.977Z",
+  "checkedAt": "2026-10-04T13:45:03.132Z",
   "website": "https://www.sveinfo.de/fahrplan_auskunft/anruf_sammel_taxi_ast/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.sveinfo.de/mobilitaet/fahrplanauskunft/anruf-sammel-taxi-ast/",
+  "email": "info@sveinfo.de",
+  "phone": "08006504030",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/8512060242": {
-  "checkedAt": "2026-10-04T10:58:35.701Z",
+  "checkedAt": "2026-10-04T13:45:10.408Z",
   "website": "https://www.taxi-freese.de/",
   "features": [],
   "kassen": [],
@@ -5053,7 +5453,7 @@
   "error": "TypeError"
  },
  "node/6780787497": {
-  "checkedAt": "2026-10-04T10:58:33.330Z",
+  "checkedAt": "2026-10-04T13:45:08.425Z",
   "website": "https://taxiwolf.de/",
   "features": [
    "krankenfahrt",
@@ -5065,31 +5465,37 @@
    "dialyse": "https://taxiwolf.de/"
   },
   "finalUrl": "https://taxiwolf.de/",
+  "email": "info@taxiwolf.de",
+  "phone": "004977411234",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/8424672561": {
-  "checkedAt": "2026-10-04T10:58:35.606Z",
+  "checkedAt": "2026-10-04T13:45:10.296Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/8424895474": {
-  "checkedAt": "2026-10-04T10:58:35.637Z",
+  "checkedAt": "2026-10-04T13:45:10.359Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/8239593721": {
-  "checkedAt": "2026-10-04T10:58:34.791Z",
+  "checkedAt": "2026-10-04T13:45:09.551Z",
   "website": "https://www.medi-sector.de/",
   "features": [
    "krankenfahrt",
@@ -5107,7 +5513,7 @@
   "status": "ok"
  },
  "node/7927553279": {
-  "checkedAt": "2026-10-04T10:58:34.448Z",
+  "checkedAt": "2026-10-04T13:45:09.265Z",
   "website": "https://taxi-hess.de/",
   "features": [
    "krankenfahrt"
@@ -5121,17 +5527,19 @@
   "status": "ok"
  },
  "node/8865061326": {
-  "checkedAt": "2026-10-04T10:58:36.050Z",
+  "checkedAt": "2026-10-04T13:45:10.709Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/7759168866": {
-  "checkedAt": "2026-10-04T10:58:34.381Z",
+  "checkedAt": "2026-10-04T13:45:09.232Z",
   "website": "https://www.taxi-altrip.de/",
   "features": [
    "krankenfahrt",
@@ -5151,7 +5559,7 @@
   "status": "ok"
  },
  "node/8687553920": {
-  "checkedAt": "2026-10-04T10:58:35.813Z",
+  "checkedAt": "2026-10-04T13:45:10.461Z",
   "website": "http://www.tmh-engelmann.de/",
   "features": [],
   "kassen": [],
@@ -5161,7 +5569,7 @@
   "status": "ok"
  },
  "node/8099582254": {
-  "checkedAt": "2026-10-04T10:58:34.670Z",
+  "checkedAt": "2026-10-04T13:45:09.548Z",
   "website": "https://www.taxieuskirchen.de/",
   "features": [
    "krankenfahrt",
@@ -5179,11 +5587,13 @@
    "onkologie": "https://taxieuskirchen.de/"
   },
   "finalUrl": "https://taxieuskirchen.de/",
+  "email": "taxi.euskirchen@gmail.com",
+  "phone": "022519292444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/8986855213": {
-  "checkedAt": "2026-10-04T10:58:36.214Z",
+  "checkedAt": "2026-10-04T13:45:10.904Z",
   "website": "https://www.taxi-weber.de/",
   "features": [],
   "kassen": [],
@@ -5192,7 +5602,7 @@
   "error": "ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR"
  },
  "node/774696891": {
-  "checkedAt": "2026-10-04T10:58:34.330Z",
+  "checkedAt": "2026-10-04T13:45:09.164Z",
   "website": "https://www.taxiruf.de/",
   "features": [
    "krankenfahrt",
@@ -5204,11 +5614,12 @@
    "dialyse": "https://www.taxiruf.de/service/"
   },
   "finalUrl": "https://www.taxiruf.de/",
+  "phone": "+492212882",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/828661933": {
-  "checkedAt": "2026-10-04T10:58:35.044Z",
+  "checkedAt": "2026-10-04T13:45:09.750Z",
   "website": "https://www.taxi-juenger.de/",
   "features": [
    "krankenfahrt",
@@ -5222,11 +5633,13 @@
    "dialyse": "https://www.taxi-juenger.de/"
   },
   "finalUrl": "https://www.taxi-juenger.de/",
+  "email": "info@rsb-neustadt.de",
+  "phone": "+49026442255",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/10704296564": {
-  "checkedAt": "2026-10-04T10:58:15.853Z",
+  "checkedAt": "2026-10-04T13:44:51.579Z",
   "website": "https://taxi-gold-gaildorf.de/",
   "features": [
    "krankenfahrt"
@@ -5236,11 +5649,13 @@
    "krankenfahrt": "https://taxi-gold-gaildorf.de/"
   },
   "finalUrl": "https://taxi-gold-gaildorf.de/",
+  "email": "info@taxi-gold.de",
+  "phone": "0797123222",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/8741766749": {
-  "checkedAt": "2026-10-04T10:58:35.859Z",
+  "checkedAt": "2026-10-04T13:45:10.483Z",
   "website": "https://www.taxi-giengen.de/",
   "features": [
    "krankenfahrt",
@@ -5258,11 +5673,13 @@
    "onkologie": "https://www.taxi-giengen.de/"
   },
   "finalUrl": "https://www.taxi-giengen.de/",
+  "email": "taxi.stegmaier@gmail.com",
+  "phone": "+4973225300",
   "pagesChecked": 3,
   "status": "ok"
  },
  "node/8355607198": {
-  "checkedAt": "2026-10-04T10:58:35.565Z",
+  "checkedAt": "2026-10-04T13:45:09.958Z",
   "website": "https://www.taxi-krumbach.de/",
   "features": [],
   "kassen": [],
@@ -5272,7 +5689,7 @@
   "status": "ok"
  },
  "node/7580343850": {
-  "checkedAt": "2026-10-04T10:58:34.194Z",
+  "checkedAt": "2026-10-04T13:45:08.967Z",
   "website": "https://ms-transfer.de/",
   "features": [
    "krankenfahrt",
@@ -5290,17 +5707,18 @@
   "status": "ok"
  },
  "node/8306347186": {
-  "checkedAt": "2026-10-04T10:58:35.311Z",
+  "checkedAt": "2026-10-04T13:45:09.772Z",
   "website": "https://www.taxi-frankfurt.de/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-frankfurt.de/",
+  "phone": "+4969230001",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/5552086761": {
-  "checkedAt": "2026-10-04T10:58:31.145Z",
+  "checkedAt": "2026-10-04T13:45:06.183Z",
   "website": "http://www.altstadt-taxi.de/",
   "features": [],
   "kassen": [],
@@ -5310,7 +5728,7 @@
   "status": "ok"
  },
  "node/9095197877": {
-  "checkedAt": "2026-10-04T10:58:36.674Z",
+  "checkedAt": "2026-10-04T13:45:11.374Z",
   "website": "https://www.taxis-deggendorf.de/",
   "features": [],
   "kassen": [],
@@ -5319,7 +5737,7 @@
   "error": "TypeError"
  },
  "node/9095197875": {
-  "checkedAt": "2026-10-04T10:58:36.492Z",
+  "checkedAt": "2026-10-04T13:45:11.225Z",
   "website": "https://mirtl.com/",
   "features": [
    "krankenfahrt",
@@ -5333,11 +5751,13 @@
    "onkologie": "https://mirtl.com/"
   },
   "finalUrl": "https://mirtl.com/",
+  "email": "funktaxi@mirtl.com",
+  "phone": "09914008",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/8895775373": {
-  "checkedAt": "2026-10-04T10:58:36.147Z",
+  "checkedAt": "2026-10-04T13:45:10.841Z",
   "website": "https://www.citytaxi-bergheim.de/",
   "features": [
    "krankenfahrt",
@@ -5353,11 +5773,12 @@
    "onkologie": "https://www.citytaxi-bergheim.de/"
   },
   "finalUrl": "https://www.citytaxi-bergheim.de/",
+  "phone": "00492271838381",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/8330452232": {
-  "checkedAt": "2026-10-04T10:58:35.423Z",
+  "checkedAt": "2026-10-04T13:45:09.883Z",
   "website": "https://www.taxi-fredenbeck.de/",
   "features": [
    "krankenfahrt",
@@ -5377,7 +5798,7 @@
   "status": "ok"
  },
  "node/956266759": {
-  "checkedAt": "2026-10-04T10:58:36.966Z",
+  "checkedAt": "2026-10-04T13:45:11.510Z",
   "website": "https://www.mietauto-gruber.de/",
   "features": [],
   "kassen": [],
@@ -5386,7 +5807,7 @@
   "error": "TypeError"
  },
  "node/9738463204": {
-  "checkedAt": "2026-10-04T10:58:37.223Z",
+  "checkedAt": "2026-10-04T13:45:11.619Z",
   "website": "https://ulbricht-t.business.site/",
   "features": [],
   "kassen": [],
@@ -5394,7 +5815,7 @@
   "status": "http-404"
  },
  "node/6505491308": {
-  "checkedAt": "2026-10-04T10:58:33.279Z",
+  "checkedAt": "2026-10-04T13:45:08.362Z",
   "website": "https://flagge-krankenfahrdienst.de/",
   "features": [
    "krankenfahrt",
@@ -5414,7 +5835,7 @@
   "status": "ok"
  },
  "node/9095197874": {
-  "checkedAt": "2026-10-04T10:58:36.271Z",
+  "checkedAt": "2026-10-04T13:45:11.180Z",
   "website": "https://www.taxi-neumeier.de/home.html",
   "features": [],
   "kassen": [],
@@ -5422,7 +5843,7 @@
   "status": "http-404"
  },
  "node/9801518602": {
-  "checkedAt": "2026-10-04T10:58:37.300Z",
+  "checkedAt": "2026-10-04T13:45:11.891Z",
   "website": "https://www.taxi-ritter-esslingen.de/",
   "features": [
    "krankenfahrt",
@@ -5436,11 +5857,12 @@
    "onkologie": "https://www.taxi-ritter-esslingen.de/"
   },
   "finalUrl": "https://www.taxi-ritter-esslingen.de/",
+  "phone": "+4971150463753",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/8804775624": {
-  "checkedAt": "2026-10-04T10:58:35.878Z",
+  "checkedAt": "2026-10-04T13:45:10.617Z",
   "website": "https://www.taxi-stiller.de/",
   "features": [
    "krankenfahrt"
@@ -5454,7 +5876,7 @@
   "status": "ok"
  },
  "node/9701396396": {
-  "checkedAt": "2026-10-04T10:58:37.094Z",
+  "checkedAt": "2026-10-04T13:45:11.529Z",
   "website": "https://www.minicar-aachen.de/",
   "features": [],
   "kassen": [],
@@ -5463,7 +5885,7 @@
   "error": "ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR"
  },
  "node/7783377298": {
-  "checkedAt": "2026-10-04T10:58:34.439Z",
+  "checkedAt": "2026-10-04T13:45:09.241Z",
   "website": "https://www.taxibott.de/",
   "features": [
    "krankenfahrt",
@@ -5477,11 +5899,12 @@
    "onkologie": "https://taxibott.de/leistungen/"
   },
   "finalUrl": "https://taxibott.de/",
+  "phone": "015258793529",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/8721822064": {
-  "checkedAt": "2026-10-04T10:58:35.824Z",
+  "checkedAt": "2026-10-04T13:45:10.465Z",
   "website": "https://taxi11-euskirchen.de/",
   "features": [
    "krankenfahrt"
@@ -5491,11 +5914,12 @@
    "krankenfahrt": "https://taxi11-euskirchen.de/"
   },
   "finalUrl": "https://taxi11-euskirchen.de/",
+  "phone": "+4922517021111",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/997536134": {
-  "checkedAt": "2026-10-04T10:58:37.641Z",
+  "checkedAt": "2026-10-04T13:45:12.171Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -5509,21 +5933,25 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/3405461944": {
-  "checkedAt": "2026-10-04T10:58:25.833Z",
+  "checkedAt": "2026-10-04T13:45:00.726Z",
   "website": "https://www.bruchsal.de/gestalten/bruchsalmorgen/Mobilitaet+_+Verkehr/anrufsammeltaxi-ast",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.bruchsal.de/gestalten/bruchsalmorgen/Mobilitaet+_+Verkehr/anrufsammeltaxi-ast",
+  "phone": "07251300886",
+  "email": "info@bruchsal.de",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/8863616592": {
-  "checkedAt": "2026-10-04T10:58:36.046Z",
+  "checkedAt": "2026-10-04T13:45:10.652Z",
   "website": "https://taxiruf-duesseldorf.de/",
   "features": [
    "krankenfahrt",
@@ -5539,11 +5967,13 @@
    "rollstuhl": "https://taxiruf-duesseldorf.de/taxi-duesseldorf-ueber-uns/"
   },
   "finalUrl": "https://taxiruf-duesseldorf.de/",
+  "email": "mailto:info@taxiruf-duesseldorf.de",
+  "phone": "+49211211211",
   "pagesChecked": 2,
   "status": "ok"
  },
  "way/1250945037": {
-  "checkedAt": "2026-10-04T10:58:38.066Z",
+  "checkedAt": "2026-10-04T13:45:12.678Z",
   "website": "https://www.taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -5557,11 +5987,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "node/9371504456": {
-  "checkedAt": "2026-10-04T10:58:36.911Z",
+  "checkedAt": "2026-10-04T13:45:11.493Z",
   "website": "https://www.taxi-cordes.de/",
   "features": [],
   "kassen": [],
@@ -5570,7 +6002,7 @@
   "error": "CERT_HAS_EXPIRED"
  },
  "node/9095197876": {
-  "checkedAt": "2026-10-04T10:58:36.571Z",
+  "checkedAt": "2026-10-04T13:45:11.243Z",
   "website": "https://www.taxi-arbinger.com/",
   "features": [
    "krankenfahrt"
@@ -5584,7 +6016,7 @@
   "status": "ok"
  },
  "node/8810515209": {
-  "checkedAt": "2026-10-04T10:58:36.037Z",
+  "checkedAt": "2026-10-04T13:45:10.642Z",
   "website": "https://ihr-plan-a.de/",
   "features": [
    "krankenfahrt",
@@ -5604,7 +6036,7 @@
   "status": "ok"
  },
  "node/6593876931": {
-  "checkedAt": "2026-10-04T10:58:33.304Z",
+  "checkedAt": "2026-10-04T13:45:08.401Z",
   "website": "http://donaumoos-taxi-eibl.de/",
   "features": [],
   "kassen": [],
@@ -5614,7 +6046,7 @@
   "status": "ok"
  },
  "node/6579711286": {
-  "checkedAt": "2026-10-04T10:58:33.295Z",
+  "checkedAt": "2026-10-04T13:45:08.379Z",
   "website": "https://www.spreewaldtaxi.de/",
   "features": [
    "krankenfahrt"
@@ -5624,11 +6056,13 @@
    "krankenfahrt": "https://www.spreewaldtaxi.de/"
   },
   "finalUrl": "https://www.spreewaldtaxi.de/",
+  "email": "taxi@spreewaldtaxi.de",
+  "phone": "035423390",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/9801046796": {
-  "checkedAt": "2026-10-04T10:58:37.281Z",
+  "checkedAt": "2026-10-04T13:45:11.867Z",
   "website": "https://www.ad-fahrdienst.de/",
   "features": [
    "krankenfahrt",
@@ -5648,7 +6082,7 @@
   "status": "ok"
  },
  "way/111573428": {
-  "checkedAt": "2026-10-04T10:58:37.855Z",
+  "checkedAt": "2026-10-04T13:45:12.612Z",
   "website": "https://www.taxi-bus-reichelt.de/",
   "features": [
    "krankenfahrt"
@@ -5662,7 +6096,7 @@
   "status": "ok"
  },
  "node/9146032928": {
-  "checkedAt": "2026-10-04T10:58:36.755Z",
+  "checkedAt": "2026-10-04T13:45:11.380Z",
   "website": "https://www.taxiontime.de/",
   "features": [
    "krankenfahrt"
@@ -5672,31 +6106,32 @@
    "krankenfahrt": "https://www.taxiontime.de/"
   },
   "finalUrl": "https://www.taxiontime.de/",
+  "phone": "+49672148454",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/4584789073": {
-  "checkedAt": "2026-10-04T10:58:28.288Z",
+  "checkedAt": "2026-10-04T13:45:03.307Z",
   "website": "https://nordheide-taxi.de/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://nordheide-taxi.de/",
+  "phone": "000000000",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/9897964587": {
-  "checkedAt": "2026-10-04T10:58:37.303Z",
+  "checkedAt": "2026-10-04T13:45:11.950Z",
   "website": "https://www.taxi-schnieders.de/",
   "features": [],
   "kassen": [],
   "evidence": {},
-  "finalUrl": "https://www.taxi-schnieders.de/",
-  "pagesChecked": 1,
-  "status": "ok"
+  "status": "error",
+  "error": "UND_ERR_CONNECT_TIMEOUT"
  },
  "node/9900146243": {
-  "checkedAt": "2026-10-04T10:58:37.453Z",
+  "checkedAt": "2026-10-04T13:45:12.076Z",
   "website": "https://www.lautenbach-duderstadt.de/",
   "features": [
    "krankenfahrt",
@@ -5710,11 +6145,13 @@
    "onkologie": "https://www.lautenbach-duderstadt.de/"
   },
   "finalUrl": "https://www.lautenbach-duderstadt.de/",
+  "email": "info@lautenbach-duderstadt.de",
+  "phone": "+495527980980",
   "pagesChecked": 1,
   "status": "ok"
  },
  "way/113832129": {
-  "checkedAt": "2026-10-04T10:58:37.876Z",
+  "checkedAt": "2026-10-04T13:45:12.631Z",
   "website": "https://www.taxi-lott.de/",
   "features": [
    "krankenfahrt",
@@ -5728,11 +6165,12 @@
    "onkologie": "https://www.taxi-lott.de/"
   },
   "finalUrl": "https://www.taxi-lott.de/",
+  "phone": "76473072272631",
   "pagesChecked": 1,
   "status": "ok"
  },
  "way/102663451": {
-  "checkedAt": "2026-10-04T10:58:37.787Z",
+  "checkedAt": "2026-10-04T13:45:12.270Z",
   "website": "https://emder-taxi.com/webseite/",
   "features": [],
   "kassen": [],
@@ -5740,7 +6178,7 @@
   "status": "http-404"
  },
  "node/9952374384": {
-  "checkedAt": "2026-10-04T10:58:37.458Z",
+  "checkedAt": "2026-10-04T13:45:12.104Z",
   "website": "https://taxiko-wetzlar.de/",
   "features": [
    "krankenfahrt"
@@ -5750,11 +6188,12 @@
    "krankenfahrt": "https://taxiko-wetzlar.de/"
   },
   "finalUrl": "https://taxiko-wetzlar.de/",
+  "email": "info@taxiko-wetzlar.de",
   "pagesChecked": 4,
   "status": "ok"
  },
  "relation/18338648": {
-  "checkedAt": "2026-10-04T10:58:37.785Z",
+  "checkedAt": "2026-10-04T13:45:12.216Z",
   "website": "https://www.taxilehmann.de/",
   "features": [
    "krankenfahrt",
@@ -5768,11 +6207,13 @@
    "rollstuhl": "https://www.taxilehmann.de/"
   },
   "finalUrl": "https://www.taxilehmann.de/",
+  "email": "lehmanntaxi@t-online.de",
+  "phone": "+491638775925",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/4358590127": {
-  "checkedAt": "2026-10-04T10:58:27.756Z",
+  "checkedAt": "2026-10-04T13:45:02.865Z",
   "website": "https://taxi-verlag.de/",
   "features": [
    "rollstuhl"
@@ -5786,7 +6227,7 @@
   "status": "ok"
  },
  "way/109180854": {
-  "checkedAt": "2026-10-04T10:58:37.817Z",
+  "checkedAt": "2026-10-04T13:45:12.451Z",
   "website": "https://emder-taxi.com/webseite/",
   "features": [],
   "kassen": [],
@@ -5794,7 +6235,7 @@
   "status": "http-404"
  },
  "way/1490672933": {
-  "checkedAt": "2026-10-04T10:58:39.866Z",
+  "checkedAt": "2026-10-04T13:45:14.450Z",
   "website": "https://www.taxibochum.de/",
   "features": [
    "krankenfahrt"
@@ -5810,7 +6251,7 @@
   "status": "ok"
  },
  "node/9765218553": {
-  "checkedAt": "2026-10-04T10:58:37.272Z",
+  "checkedAt": "2026-10-04T13:45:11.689Z",
   "website": "https://ariataxi.de/",
   "features": [
    "rollstuhl",
@@ -5826,7 +6267,7 @@
   "status": "ok"
  },
  "way/150818308": {
-  "checkedAt": "2026-10-04T10:58:39.926Z",
+  "checkedAt": "2026-10-04T13:45:14.601Z",
   "website": "http://www.taxihof-lange.de/",
   "features": [],
   "kassen": [],
@@ -5836,7 +6277,7 @@
   "status": "ok"
  },
  "way/1490651452": {
-  "checkedAt": "2026-10-04T10:58:39.767Z",
+  "checkedAt": "2026-10-04T13:45:14.447Z",
   "website": "https://www.taxibochum.de/",
   "features": [
    "krankenfahrt"
@@ -5852,7 +6293,7 @@
   "status": "ok"
  },
  "way/1490545396": {
-  "checkedAt": "2026-10-04T10:58:39.766Z",
+  "checkedAt": "2026-10-04T13:45:14.412Z",
   "website": "https://www.taxibochum.de/",
   "features": [
    "krankenfahrt"
@@ -5868,7 +6309,7 @@
   "status": "ok"
  },
  "way/1560768702": {
-  "checkedAt": "2026-10-04T10:58:39.996Z",
+  "checkedAt": "2026-10-04T13:45:14.812Z",
   "website": "https://www.taxi-osterburg.de/",
   "features": [
    "krankenfahrt",
@@ -5892,7 +6333,7 @@
   "status": "ok"
  },
  "node/14134553248": {
-  "checkedAt": "2026-10-04T10:58:22.543Z",
+  "checkedAt": "2026-10-04T13:44:57.281Z",
   "website": "https://taxirheine.de/",
   "features": [
    "krankenfahrt",
@@ -5908,11 +6349,13 @@
    "onkologie": "https://taxirheine.de/"
   },
   "finalUrl": "https://taxirheine.de/",
+  "email": "info@taxirheine.de",
+  "phone": "004959712040",
   "pagesChecked": 5,
   "status": "ok"
  },
  "way/161909561": {
-  "checkedAt": "2026-10-04T10:58:40.138Z",
+  "checkedAt": "2026-10-04T13:45:14.884Z",
   "website": "https://emder-taxi.com/webseite/",
   "features": [],
   "kassen": [],
@@ -5920,7 +6363,7 @@
   "status": "http-404"
  },
  "node/8050190957": {
-  "checkedAt": "2026-10-04T10:58:34.650Z",
+  "checkedAt": "2026-10-04T13:45:09.425Z",
   "website": "http://www.taxi-nicklas.de/",
   "features": [
    "krankenfahrt",
@@ -5934,11 +6377,12 @@
    "onkologie": "https://www.nicklas-55066.de/CMS/index.php/leistungen"
   },
   "finalUrl": "https://www.nicklas-55066.de/CMS/",
+  "phone": "+49537117527",
   "pagesChecked": 2,
   "status": "ok"
  },
  "way/1490530092": {
-  "checkedAt": "2026-10-04T10:58:39.755Z",
+  "checkedAt": "2026-10-04T13:45:14.402Z",
   "website": "https://taxibochum.de/",
   "features": [
    "krankenfahrt"
@@ -5954,7 +6398,7 @@
   "status": "ok"
  },
  "node/8063408775": {
-  "checkedAt": "2026-10-04T10:58:34.660Z",
+  "checkedAt": "2026-10-04T13:45:09.535Z",
   "website": "http://taxiserviceelsdorf.de/",
   "features": [],
   "kassen": [],
@@ -5964,7 +6408,7 @@
   "status": "ok"
  },
  "way/246538419": {
-  "checkedAt": "2026-10-04T10:58:42.032Z",
+  "checkedAt": "2026-10-04T13:45:16.688Z",
   "website": "https://www.taxiberg.de/",
   "features": [],
   "kassen": [],
@@ -5973,17 +6417,19 @@
   "error": "TypeError"
  },
  "way/197826125": {
-  "checkedAt": "2026-10-04T10:58:41.252Z",
+  "checkedAt": "2026-10-04T13:45:15.844Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "way/298316762": {
-  "checkedAt": "2026-10-04T10:58:42.611Z",
+  "checkedAt": "2026-10-04T13:45:17.588Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -5997,11 +6443,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "way/1340090504": {
-  "checkedAt": "2026-10-04T10:58:38.485Z",
+  "checkedAt": "2026-10-04T13:45:13.038Z",
   "website": "https://www.taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -6013,11 +6461,12 @@
    "krankenfahrt": "https://www.taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://www.taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "way/1349601019": {
-  "checkedAt": "2026-10-04T10:58:39.097Z",
+  "checkedAt": "2026-10-04T13:45:13.772Z",
   "website": "https://taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -6029,11 +6478,12 @@
    "krankenfahrt": "https://taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "way/261880512": {
-  "checkedAt": "2026-10-04T10:58:42.261Z",
+  "checkedAt": "2026-10-04T13:45:17.003Z",
   "website": "https://www.taxi60011.de/",
   "features": [
    "krankenfahrt"
@@ -6043,11 +6493,12 @@
    "krankenfahrt": "https://www.taxi60011.de/service.html"
   },
   "finalUrl": "https://www.taxi60011.de/",
+  "phone": "025160011",
   "pagesChecked": 2,
   "status": "ok"
  },
  "way/197370748": {
-  "checkedAt": "2026-10-04T10:58:41.172Z",
+  "checkedAt": "2026-10-04T13:45:15.656Z",
   "website": "https://ausflug-web.de/",
   "features": [],
   "kassen": [],
@@ -6057,7 +6508,7 @@
   "status": "ok"
  },
  "way/1285272741": {
-  "checkedAt": "2026-10-04T10:58:38.138Z",
+  "checkedAt": "2026-10-04T13:45:12.720Z",
   "website": "https://taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -6069,11 +6520,12 @@
    "krankenfahrt": "https://taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "way/30802233": {
-  "checkedAt": "2026-10-04T10:58:42.960Z",
+  "checkedAt": "2026-10-04T13:45:18.104Z",
   "website": "http://www.auto-stephany.de/index.php",
   "features": [
    "rollstuhl"
@@ -6087,7 +6539,7 @@
   "status": "ok"
  },
  "way/1339204989": {
-  "checkedAt": "2026-10-04T10:58:38.454Z",
+  "checkedAt": "2026-10-04T13:45:12.962Z",
   "website": "https://www.taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -6099,11 +6551,12 @@
    "krankenfahrt": "https://www.taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://www.taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "way/253238617": {
-  "checkedAt": "2026-10-04T10:58:42.182Z",
+  "checkedAt": "2026-10-04T13:45:16.884Z",
   "website": "https://www.irro.de/",
   "features": [
    "dialyse",
@@ -6115,11 +6568,13 @@
    "krankenfahrt": "https://www.irro.de/unsere-firma/team"
   },
   "finalUrl": "https://www.irro.de/",
+  "email": "info@irro.de",
+  "phone": "+4958416446",
   "pagesChecked": 5,
   "status": "ok"
  },
  "way/262146931": {
-  "checkedAt": "2026-10-04T10:58:42.425Z",
+  "checkedAt": "2026-10-04T13:45:17.129Z",
   "website": "http://www.fahrdienst-ullmer.de/",
   "features": [
    "krankenfahrt"
@@ -6133,7 +6588,7 @@
   "status": "ok"
  },
  "way/262005535": {
-  "checkedAt": "2026-10-04T10:58:42.280Z",
+  "checkedAt": "2026-10-04T13:45:17.119Z",
   "website": "https://www.taxikontor.de/",
   "features": [
    "krankenfahrt",
@@ -6149,21 +6604,25 @@
    "onkologie": "https://www.taxikontor.de/services-for-heatlhcare-transportation/"
   },
   "finalUrl": "https://www.taxikontor.de/",
+  "email": "info@taxikontor.de",
+  "phone": "+44892020",
   "pagesChecked": 2,
   "status": "ok"
  },
  "way/455072950": {
-  "checkedAt": "2026-10-04T10:58:43.900Z",
+  "checkedAt": "2026-10-04T13:45:18.629Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "way/1341829946": {
-  "checkedAt": "2026-10-04T10:58:38.979Z",
+  "checkedAt": "2026-10-04T13:45:13.458Z",
   "website": "https://www.taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -6175,11 +6634,12 @@
    "krankenfahrt": "https://www.taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://www.taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "way/1341811062": {
-  "checkedAt": "2026-10-04T10:58:38.775Z",
+  "checkedAt": "2026-10-04T13:45:13.109Z",
   "website": "https://www.taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -6191,11 +6651,12 @@
    "krankenfahrt": "https://www.taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://www.taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "way/227693190": {
-  "checkedAt": "2026-10-04T10:58:42.021Z",
+  "checkedAt": "2026-10-04T13:45:16.108Z",
   "website": "http://www.gaukler-transport.de/",
   "features": [
    "krankenfahrt",
@@ -6215,7 +6676,7 @@
   "status": "ok"
  },
  "way/1341279797": {
-  "checkedAt": "2026-10-04T10:58:38.537Z",
+  "checkedAt": "2026-10-04T13:45:13.105Z",
   "website": "https://taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -6227,11 +6688,12 @@
    "krankenfahrt": "https://taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "way/1456312753": {
-  "checkedAt": "2026-10-04T10:58:39.675Z",
+  "checkedAt": "2026-10-04T13:45:14.364Z",
   "website": "https://www.taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -6243,11 +6705,12 @@
    "krankenfahrt": "https://www.taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://www.taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "way/442409730": {
-  "checkedAt": "2026-10-04T10:58:43.744Z",
+  "checkedAt": "2026-10-04T13:45:18.525Z",
   "website": "https://www.taxifuhrmann.de/",
   "features": [
    "krankenfahrt"
@@ -6257,21 +6720,25 @@
    "krankenfahrt": "https://www.taxifuhrmann.de/stellenangebote"
   },
   "finalUrl": "https://www.taxifuhrmann.de/",
+  "email": "bewerbung@taxifuhrmann.de",
+  "phone": "+49754155555",
   "pagesChecked": 3,
   "status": "ok"
  },
  "way/546660517": {
-  "checkedAt": "2026-10-04T10:58:44.343Z",
+  "checkedAt": "2026-10-04T13:45:18.938Z",
   "website": "https://www.taxi-duesseldorf.com/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://www.taxi-duesseldorf.com/",
+  "email": "info@taxi-duesseldorf.com",
+  "phone": "+4921133333",
   "pagesChecked": 2,
   "status": "ok"
  },
  "way/1349601020": {
-  "checkedAt": "2026-10-04T10:58:39.101Z",
+  "checkedAt": "2026-10-04T13:45:14.284Z",
   "website": "https://taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -6283,11 +6750,12 @@
    "krankenfahrt": "https://taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "way/733181718": {
-  "checkedAt": "2026-10-04T10:58:44.679Z",
+  "checkedAt": "2026-10-04T13:45:19.376Z",
   "website": "https://taxi-dresden.de/",
   "features": [
    "dialyse",
@@ -6301,11 +6769,13 @@
    "rollstuhl": "https://taxi-dresden.de/leistungen/patientenfahrten"
   },
   "finalUrl": "https://taxi-dresden.de/",
+  "phone": "+49351211211",
+  "booking": "https://taxi-dresden.de/taxifahrer-werden/terminbuchung",
   "pagesChecked": 4,
   "status": "ok"
  },
  "way/1341819574": {
-  "checkedAt": "2026-10-04T10:58:38.866Z",
+  "checkedAt": "2026-10-04T13:45:13.451Z",
   "website": "https://www.taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -6317,11 +6787,12 @@
    "krankenfahrt": "https://www.taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://www.taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "way/201483021": {
-  "checkedAt": "2026-10-04T10:58:41.380Z",
+  "checkedAt": "2026-10-04T13:45:16.028Z",
   "website": "https://spree-ambulance.de/",
   "features": [
    "krankenfahrt"
@@ -6335,7 +6806,7 @@
   "status": "ok"
  },
  "way/1456274241": {
-  "checkedAt": "2026-10-04T10:58:39.583Z",
+  "checkedAt": "2026-10-04T13:45:14.321Z",
   "website": "https://www.taxi-dortmund.de/",
   "features": [
    "krankenfahrt"
@@ -6347,11 +6818,12 @@
    "krankenfahrt": "https://www.taxi-dortmund.de/html/leistungen.php"
   },
   "finalUrl": "https://www.taxi-dortmund.de/",
+  "phone": "+49231144444",
   "pagesChecked": 2,
   "status": "ok"
  },
  "way/172516715": {
-  "checkedAt": "2026-10-04T10:58:40.161Z",
+  "checkedAt": "2026-10-04T13:45:14.997Z",
   "website": "https://www.taxibonn.de/",
   "features": [
    "krankenfahrt"
@@ -6361,11 +6833,12 @@
    "krankenfahrt": "https://www.taxibonn.de/start.html"
   },
   "finalUrl": "https://www.taxibonn.de/start.html",
+  "phone": "0228555555",
   "pagesChecked": 7,
   "status": "ok"
  },
  "way/52517927": {
-  "checkedAt": "2026-10-04T10:58:44.257Z",
+  "checkedAt": "2026-10-04T13:45:18.909Z",
   "website": "https://taxi-junghans.de/",
   "features": [],
   "kassen": [],
@@ -6374,7 +6847,7 @@
   "error": "CERT_HAS_EXPIRED"
  },
  "way/88644378": {
-  "checkedAt": "2026-10-04T10:58:44.829Z",
+  "checkedAt": "2026-10-04T13:45:19.599Z",
   "website": "http://www.taxi-janssen-eilts.de/",
   "features": [],
   "kassen": [],
@@ -6384,7 +6857,7 @@
   "status": "ok"
  },
  "way/490753351": {
-  "checkedAt": "2026-10-04T10:58:43.913Z",
+  "checkedAt": "2026-10-04T13:45:18.697Z",
   "website": "https://sk-taxi.de/",
   "features": [],
   "kassen": [],
@@ -6394,7 +6867,7 @@
   "status": "ok"
  },
  "way/821432572": {
-  "checkedAt": "2026-10-04T10:58:44.805Z",
+  "checkedAt": "2026-10-04T13:45:19.572Z",
   "website": "https://www.taxihamm.de/",
   "features": [],
   "kassen": [],
@@ -6404,7 +6877,7 @@
   "status": "ok"
  },
  "way/95248155": {
-  "checkedAt": "2026-10-04T10:58:44.834Z",
+  "checkedAt": "2026-10-04T13:45:19.687Z",
   "website": "https://weiterstadt.taxi/",
   "features": [
    "krankenfahrt",
@@ -6420,11 +6893,13 @@
    "onkologie": "https://weiterstadt.taxi/krankenfahrt.html"
   },
   "finalUrl": "https://weiterstadt.taxi/",
+  "email": "info@weiterstadt.taxi",
+  "phone": "+49615052700",
   "pagesChecked": 3,
   "status": "ok"
  },
  "way/338943381": {
-  "checkedAt": "2026-10-04T10:58:43.410Z",
+  "checkedAt": "2026-10-04T13:45:18.397Z",
   "website": "https://autoruf.de/",
   "features": [
    "krankenfahrt",
@@ -6438,11 +6913,12 @@
    "onkologie": "https://taxiruf441011.de/service/krankenfahrten"
   },
   "finalUrl": "https://taxiruf441011.de/",
+  "phone": "+4940441011",
   "pagesChecked": 4,
   "status": "ok"
  },
  "way/563360470": {
-  "checkedAt": "2026-10-04T10:58:44.432Z",
+  "checkedAt": "2026-10-04T13:45:19.002Z",
   "website": "http://www.taxi-cochem.de/",
   "features": [],
   "kassen": [],
@@ -6452,7 +6928,7 @@
   "status": "ok"
  },
  "way/664846891": {
-  "checkedAt": "2026-10-04T10:58:44.563Z",
+  "checkedAt": "2026-10-04T13:45:19.130Z",
   "website": "https://www.taxikaraman.de/",
   "features": [
    "krankenfahrt"
@@ -6462,11 +6938,13 @@
    "krankenfahrt": "https://www.taxikaraman.de/"
   },
   "finalUrl": "https://www.taxikaraman.de/",
+  "email": "info@taxikaraman.de",
+  "phone": "+4922081810",
   "pagesChecked": 1,
   "status": "ok"
  },
  "way/1100924358": {
-  "checkedAt": "2026-10-04T10:58:37.854Z",
+  "checkedAt": "2026-10-04T13:45:12.602Z",
   "website": "https://www.taxi-saterland.de/",
   "features": [
    "krankenfahrt",
@@ -6480,11 +6958,13 @@
    "dialyse": "https://www.taxi-saterland.de/"
   },
   "finalUrl": "https://www.taxi-saterland.de/",
+  "email": "info@taxi-saterland.de",
+  "phone": "+4944982801",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/9712353662": {
-  "checkedAt": "2026-10-04T10:58:37.109Z",
+  "checkedAt": "2026-10-04T13:45:11.592Z",
   "website": "https://www.autorufwelle.de/",
   "features": [
    "krankenfahrt",
@@ -6498,11 +6978,13 @@
    "dialyse": "https://www.autorufwelle-taxi.de/leistungen/"
   },
   "finalUrl": "https://www.autorufwelle-taxi.de/",
+  "email": "info@autorufwelle-taxi.de",
+  "phone": "+4941821480",
   "pagesChecked": 4,
   "status": "ok"
  },
  "way/453339284": {
-  "checkedAt": "2026-10-04T10:58:43.788Z",
+  "checkedAt": "2026-10-04T13:45:18.589Z",
   "website": "https://coburger-fahrdienst.de/",
   "features": [
    "krankenfahrt",
@@ -6518,11 +7000,13 @@
    "onkologie": "https://coburger-fahrdienst.de/"
   },
   "finalUrl": "https://coburger-fahrdienst.de/",
+  "email": "info@coburger-fahrdienst.de",
+  "phone": "+491752040050",
   "pagesChecked": 7,
   "status": "ok"
  },
  "way/51734089": {
-  "checkedAt": "2026-10-04T10:58:43.975Z",
+  "checkedAt": "2026-10-04T13:45:18.762Z",
   "website": "https://koeppen.de/",
   "features": [
    "krankenfahrt",
@@ -6540,11 +7024,13 @@
    "onkologie": "https://koeppen.de/rollstuhl-transport/"
   },
   "finalUrl": "https://koeppen.de/",
+  "email": "info@koeppen.de",
+  "phone": "0201303030",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/679347812": {
-  "checkedAt": "2026-10-04T10:58:33.346Z",
+  "checkedAt": "2026-10-04T13:45:08.439Z",
   "website": "https://www.rundumblick.com/",
   "features": [],
   "kassen": [],
@@ -6554,7 +7040,7 @@
   "status": "ok"
  },
  "way/677224446": {
-  "checkedAt": "2026-10-04T10:58:44.577Z",
+  "checkedAt": "2026-10-04T13:45:19.170Z",
   "website": "http://taxikespe.de/",
   "features": [
    "krankenfahrt",
@@ -6570,11 +7056,12 @@
    "onkologie": "https://taxi-kespe.de/"
   },
   "finalUrl": "https://taxi-kespe.de/",
+  "phone": "+4926023404",
   "pagesChecked": 1,
   "status": "ok"
  },
  "way/199373376": {
-  "checkedAt": "2026-10-04T10:58:41.282Z",
+  "checkedAt": "2026-10-04T13:45:15.849Z",
   "website": "https://call-taxi-bruchsal.de/",
   "features": [
    "krankenfahrt",
@@ -6592,11 +7079,13 @@
    "onkologie": "https://citytaxikarlsruhe.de/krankenfahrten/"
   },
   "finalUrl": "https://citytaxikarlsruhe.de/",
+  "email": "info@taxi-holl.de",
+  "phone": "01772252627",
   "pagesChecked": 3,
   "status": "ok"
  },
  "node/9952374385": {
-  "checkedAt": "2026-10-04T10:58:37.506Z",
+  "checkedAt": "2026-10-04T13:45:12.113Z",
   "website": "https://taxi-deniz.de/",
   "features": [
    "krankenfahrt",
@@ -6612,11 +7101,12 @@
    "onkologie": "https://taxi-deniz.de/"
   },
   "finalUrl": "https://taxi-deniz.de/",
+  "phone": "01784151480",
   "pagesChecked": 2,
   "status": "ok"
  },
  "way/191317036": {
-  "checkedAt": "2026-10-04T10:58:41.167Z",
+  "checkedAt": "2026-10-04T13:45:15.175Z",
   "website": "http://www.taxiruf-of.de/",
   "features": [
    "krankenfahrt",
@@ -6639,11 +7129,12 @@
    "onkologie": "https://taxiruf-offenbach.de/krankenfahrten/"
   },
   "finalUrl": "https://taxiruf-offenbach.de/",
+  "phone": "069818282",
   "pagesChecked": 3,
   "status": "ok"
  },
  "way/1515199425": {
-  "checkedAt": "2026-10-04T10:58:39.991Z",
+  "checkedAt": "2026-10-04T13:45:14.769Z",
   "website": "https://senioraktiv-krankenfahrdienst.de/",
   "features": [
    "krankenfahrt",
@@ -6659,11 +7150,13 @@
    "onkologie": "https://senioraktiv-krankenfahrdienst.de/service/"
   },
   "finalUrl": "https://senioraktiv-krankenfahrdienst.de/",
+  "email": "info@senioraktiv-krankenfahrdienst.de",
+  "phone": "+496147502051",
   "pagesChecked": 3,
   "status": "ok"
  },
  "way/1046540730": {
-  "checkedAt": "2026-10-04T10:58:37.811Z",
+  "checkedAt": "2026-10-04T13:45:12.359Z",
   "website": "https://www.taxi-lahnau.de/",
   "features": [
    "krankenfahrt"
@@ -6675,11 +7168,13 @@
    "krankenfahrt": "https://www.taxi-lahnau.de/"
   },
   "finalUrl": "https://www.taxi-lahnau.de/",
+  "phone": "+4964412040070",
+  "booking": "https://www.taxi-lahnau.de/flughafentransfer-reservierung-wetzlar/",
   "pagesChecked": 3,
   "status": "ok"
  },
  "node/9357696555": {
-  "checkedAt": "2026-10-04T10:58:36.905Z",
+  "checkedAt": "2026-10-04T13:45:11.428Z",
   "website": "https://mobilitas-wetzlar.de/",
   "features": [
    "krankenfahrt",
@@ -6699,11 +7194,12 @@
    "rollstuhl": "https://www.mobilitas-wetzlar.de/fahrdienste/"
   },
   "finalUrl": "https://www.mobilitas-wetzlar.de/",
+  "email": "info@mobilitas-wetzlar.de",
   "pagesChecked": 6,
   "status": "ok"
  },
  "way/325401986": {
-  "checkedAt": "2026-10-04T10:58:43.022Z",
+  "checkedAt": "2026-10-04T13:45:18.384Z",
   "website": "https://fahrdienst-am-rhein.de/",
   "features": [
    "krankenfahrt",
@@ -6715,11 +7211,12 @@
    "dialyse": "https://fahrdienst-am-rhein.de/"
   },
   "finalUrl": "https://fahrdienst-am-rhein.de/",
+  "phone": "+4922365556",
   "pagesChecked": 7,
   "status": "ok"
  },
  "way/127637333": {
-  "checkedAt": "2026-10-04T10:58:38.090Z",
+  "checkedAt": "2026-10-04T13:45:12.690Z",
   "website": "http://www.der-fahrdienst.de/",
   "features": [
    "krankenfahrt",
@@ -6733,11 +7230,13 @@
    "tragestuhl": "https://arv-nds.de/dienstleistungen/fahrdienst"
   },
   "finalUrl": "https://arv-nds.de/dienstleistungen/der-fahrdienst",
+  "email": "info@der-fahrdienst.de",
+  "phone": "+495513077500",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/8923300874": {
-  "checkedAt": "2026-10-04T10:58:36.167Z",
+  "checkedAt": "2026-10-04T13:45:10.844Z",
   "website": "https://www.taxi-traxel.de/",
   "features": [],
   "kassen": [],
@@ -6746,7 +7245,7 @@
   "error": "UND_ERR_CONNECT_TIMEOUT"
  },
  "way/374137436": {
-  "checkedAt": "2026-10-04T10:58:43.621Z",
+  "checkedAt": "2026-10-04T13:45:18.462Z",
   "website": "http://www.der-fahrdienst.de/",
   "features": [
    "krankenfahrt",
@@ -6760,11 +7259,13 @@
    "tragestuhl": "https://arv-nds.de/dienstleistungen/fahrdienst"
   },
   "finalUrl": "https://arv-nds.de/dienstleistungen/der-fahrdienst",
+  "email": "info@der-fahrdienst.de",
+  "phone": "+495513077500",
   "pagesChecked": 7,
   "status": "ok"
  },
  "way/219662928": {
-  "checkedAt": "2026-10-04T10:58:41.384Z",
+  "checkedAt": "2026-10-04T13:45:16.101Z",
   "website": "https://www.donau-taxen.de/",
   "features": [
    "krankenfahrt"
@@ -6774,6 +7275,8 @@
    "krankenfahrt": "https://www.donau-taxen.de/"
   },
   "finalUrl": "https://www.donau-taxen.de/",
+  "email": "zentrale@donau-taxen.de",
+  "phone": "+4973177000",
   "pagesChecked": 7,
   "status": "ok"
  }

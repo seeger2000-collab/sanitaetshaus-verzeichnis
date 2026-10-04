@@ -1,8 +1,22 @@
 // Führt OSM-Daten, Website-Auswertung und manuelle Ergänzungen zu src/data/*.json zusammen.
+import { BEDARF, bedarfMask } from './bedarf.mjs';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { FEATURES, KASSEN, FEATURES_BY_CAT } from './features.mjs';
 import { CATEGORIES } from './categories.mjs';
 
+// Telefonnummer ohne Leerzeichen (+4930123456, aus tel:-Links oder OSM) lesbar machen: +49 30123456
+const fmtPhone = (p) => { if (!p) return null; const d = p.trim().replace(/^0049/, '+49'); return /^\+49\(?0?\)?\d+$/.test(d) ? `+49 ${d.slice(3).replace(/^\(?0?\)?/, '')}` : d; };
+// Online-Termin nur, wenn es wirklich eine Buchungsseite ist (keine Startseite, kein Kontaktformular, keine Stellenanzeige)
+const goodBooking = (b, site) => {
+  if (!b) return null;
+  try {
+    const u = new URL(b);
+    if (/karriere|job|fahrer-werden|bewerb|widerruf|preisrechner|kontakt|standort|impressum|datenschutz/i.test(u.pathname)) return null;
+    if (site && u.hostname.replace(/^www\./, '') === new URL(site).hostname.replace(/^www\./, '') && /^\/?$/.test(u.pathname)) return null;
+    if (/landkreis-|outlook\.office|typeform\.com/i.test(u.hostname)) return null;
+    return u.href;
+  } catch { return null; }
+};
 const readJson = async (p, fallback) => { try { return JSON.parse(await readFile(p, 'utf8')); } catch { return fallback; } };
 // Manuelle Daten: Top-Einträge (bezahlt) und Korrekturen, Schlüssel = OSM-ID, z. B. "node/123"
 const overrides = await readJson('data/overrides.json', {});
@@ -59,8 +73,9 @@ for (const s of osm.shops) {
     district: s.admin['6']?.name || null,
     state: s.admin['4'].name,
     lat: s.location?.lat, lon: s.location?.lon,
-    phone: t.phone || t['contact:phone'] || null,
-    email: t.email || t['contact:email'] || null,
+    phone: fmtPhone(t.phone || t['contact:phone'] || t['contact:mobile'] || e?.phone || ''),
+    email: t.email || t['contact:email'] || e?.email || null,
+    booking: goodBooking(e?.booking, e?.finalUrl || e?.website),
     website: websiteOf(t),
     openingHours: t.opening_hours || webHours[s.id]?.oh || null,
     hoursSource: t.opening_hours ? 'osm' : webHours[s.id]?.oh ? 'website' : null,
@@ -100,8 +115,8 @@ for (const s of all) {
 }
 const shops = all.filter((s) => s.cat === 'sanitaetshaus');
 // Andere Kategorien: schlanke Einträge ohne eigene Detailseite
-const providers = all.filter((s) => s.cat !== 'sanitaetshaus').map(({ cat, id, name, street, postcode, city, citySlug, stateSlug, state, lat, lon, phone, website, openingHours, hoursSource, wheelchair, features, evidence }) =>
-  ({ cat, id, name, street, postcode, city, citySlug, stateSlug, state, lat, lon, phone, website, openingHours, hoursSource, wheelchair, features, evidence }))
+const providers = all.filter((s) => s.cat !== 'sanitaetshaus').map(({ cat, id, name, street, postcode, city, citySlug, stateSlug, state, lat, lon, phone, email, booking, website, openingHours, hoursSource, wheelchair, features, evidence }) =>
+  ({ cat, id, name, street, postcode, city, citySlug, stateSlug, state, lat, lon, phone, email, booking, website, openingHours, hoursSource, wheelchair, features, evidence }))
   .sort((a, b) => b.features.length - a.features.length || a.name.localeCompare(b.name, 'de'));
 
 // Shop-Slugs: name + stadt, bei Dopplung Straße bzw. Zähler
@@ -137,6 +152,18 @@ await writeFile('src/data/providers.json', JSON.stringify(providers));
 await mkdir('public/data', { recursive: true });
 const catIndex = Object.fromEntries(CATEGORIES.map((c, i) => [c.key, i]));
 await writeFile('public/data/karte.json', JSON.stringify(all.filter((s) => s.lat).map((s) => [catIndex[s.cat], s.lat, s.lon, s.name, s.citySlug, s.slug || ''])));
+// Finder auf der Startseite: Einträge mit Bedarfs-Maske, Orte und PLZ-Mittelpunkte
+const plzPts = {};
+for (const s of all) if (s.lat && /^\d{5}$/.test(s.postcode || '')) (plzPts[s.postcode] ||= []).push([s.lat, s.lon]);
+const r4 = (x) => Math.round(x * 1e4) / 1e4;
+const plz = Object.fromEntries(Object.entries(plzPts).sort().map(([k, v]) => [k, [r4(v.reduce((a, p) => a + p[0], 0) / v.length), r4(v.reduce((a, p) => a + p[1], 0) / v.length)]]));
+const catSlug = Object.fromEntries(CATEGORIES.map((c) => [c.key, c.slug]));
+await writeFile('public/data/finder.json', JSON.stringify({
+  orte: cities.filter((c) => c.lat).map((c) => [c.label, c.lat, c.lon, c.slug, c.counts?.sanitaetshaus || 0]),
+  plz,
+  e: all.filter((s) => s.lat).map((s) => [catIndex[s.cat], r4(s.lat), r4(s.lon), s.name, [s.street, [s.postcode, cityBySlug.get(s.citySlug)?.label || s.city].filter(Boolean).join(' ')].filter(Boolean).join(', '),
+    s.slug ? `sanitaetshaus/${s.slug}/` : `${catSlug[s.cat]}/${s.citySlug}/`, bedarfMask(s), (s.phone || '').split(';')[0].trim(), s.openingHours || '', s.website || '', (s.email || '').split(';')[0].trim(), s.booking || '']),
+}));
 await writeFile('src/data/cities.json', JSON.stringify(cities));
 await writeFile('src/data/states.json', JSON.stringify(states));
 await writeFile('src/data/meta.json', JSON.stringify({
@@ -145,6 +172,7 @@ await writeFile('src/data/meta.json', JSON.stringify({
   total: shops.length,
   withWebsiteData: shops.filter((s) => s.websiteCheckedAt).length,
   features: FEATURES.map(({ key, short, slug, label, title }) => ({ key, short, slug, label, title, count: shops.filter((s) => s.features.includes(key)).length })),
+  bedarf: BEDARF.map((b, i) => ({ key: b.key, label: b.label, short: b.short, hint: b.hint || '', leistung: b.leistung || '', seite: b.seite || '', count: all.filter((s) => bedarfMask(s) & (1 << i)).length })),
   kassen: KASSEN.map(({ key, label }) => ({ key, label })),
   categories: CATEGORIES.map(({ key, slug, label, one, many, color }) => ({ key, slug, label, one, many, color,
     count: all.filter((s) => s.cat === key).length,

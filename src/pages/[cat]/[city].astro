@@ -23,21 +23,21 @@ const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity
 const nearCities = allCities.filter((c) => c.slug !== city.slug && c.counts[cat.key]).map((c) => ({ ...c, d: km(city, c) })).sort((a, b) => a.d - b.d).slice(0, 8);
 ---
 <Base
-  title={fit([text.title(city.label, n), `${cat.label} ${city.label}: ${n}`])}
-  description={`${n} ${n === 1 ? cat.one : cat.many} in ${city.label}${nearby.length ? ` und ${nearby.length} in der Umgebung` : ''}: Adresse, Telefon, Öffnungszeiten und Leistungen. ${text.intro}`}
+  title={fit([text.title(city.label, n), `${cat.label} ${city.label}`])}
+  description={`${cat.label} in ${city.label}${nearby.length ? ' und Umgebung' : ''}: Adresse, Telefon, Öffnungszeiten und Leistungen. ${text.intro}`}
   jsonLd={[itemList, faqLd]}
   crumbs={[{ href: `/${cat.slug}/`, label: cat.label }, { href: `/${cat.slug}/${city.slug}/`, label: city.label }]}>
   <h1>{text.h1(city.label)}</h1>
-  <p class="lead">{n} {n === 1 ? cat.one : cat.many} in {city.label}{city.district && city.district !== city.name ? ` (${city.district})` : ''}. {text.intro}</p>
+  <p class="lead">{n === 1 ? cat.one : cat.many} in {city.label}{city.district && city.district !== city.name ? ` (${city.district})` : ''}. {text.intro}</p>
   <Map shops={[...local, ...nearby].map((x) => x.p)} color={cat.color} />
   <ProviderList items={local} cat={cat.key} />
   {nearby.length > 0 && (<>
     <h2>In der Umgebung von {city.label}</h2>
     <ProviderList items={nearby} cat={cat.key} showCity={true} filter={false} />
   </>)}
-  {city.count > 0 && <p class="note">Hilfsmittel wie Rollator, Kompressionsstrümpfe oder Einlagen: <a href={u(`/stadt/${city.slug}/`)}>{city.count} Sanitätshäuser in {city.label}</a></p>}
+  {city.count > 0 && <p class="note">Hilfsmittel wie Rollator, Kompressionsstrümpfe oder Einlagen: <a href={u(`/stadt/${city.slug}/`)}>Sanitätshäuser in {city.label}</a></p>}
   {text.guide && <p><a href={u(text.guide)}>Ratgeber: Wann zahlt die Kasse die Fahrt?</a></p>}
   <Faq items={text.faq} />
   <h2>{cat.label} in der Nähe</h2>
-  <ul class="grid">{nearCities.map((c) => (<li><a class="tile" href={u(`/${cat.slug}/${c.slug}/`)}>{c.label}<small>{Math.round(c.d)} km · {c.counts[cat.key]}</small></a></li>))}</ul>
+  <ul class="grid">{nearCities.map((c) => (<li><a class="tile" href={u(`/${cat.slug}/${c.slug}/`)}>{c.label}<small>{Math.round(c.d)} km entfernt</small></a></li>))}</ul>
 </Base>

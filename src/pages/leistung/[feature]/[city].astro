@@ -25,12 +25,12 @@ const itemList = { '@context': 'https://schema.org', '@type': 'ItemList', name: 
   itemListElement: list.map((s, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(u(`/sanitaetshaus/${s.slug}/`), Astro.site).href, name: s.name })) };
 ---
 <Base
-  title={fit([`${feature.short} in ${city.label}: ${n} ${one ? 'Sanitätshaus' : 'Sanitätshäuser'}${nearby.length ? ` + ${nearby.length} in der Nähe` : ''}`, `${feature.short} in ${city.label}: ${n} ${one ? 'Sanitätshaus' : 'Sanitätshäuser'}`, `${feature.short} ${city.label}`])}
-  description={`${n} ${one ? 'Sanitätshaus' : 'Sanitätshäuser'} in ${city.label} mit ${feature.label}${nearby.length ? `, dazu ${nearby.length} weitere im Umkreis von 40 km` : ''}. Adressen, Telefon und Quelle der Angabe.`}
+  title={fit([`${feature.short} in ${city.label}: Sanitätshaus mit Adresse und Telefon`, `${feature.short} in ${city.label}: Sanitätshaus finden`, `${feature.short} ${city.label}`])}
+  description={`Sanitätshaus in ${city.label} mit ${feature.label}${nearby.length ? ', dazu weitere im Umkreis von 40 km' : ''}: Adresse, Telefon, Öffnungszeiten, Route und Quelle der Angabe.`}
   jsonLd={[itemList]}
   crumbs={[{ href: '/leistung/', label: 'Leistungen' }, { href: `/leistung/${feature.slug}/`, label: feature.label }, { href: `/leistung/${feature.slug}/${city.slug}/`, label: city.label }]}>
   <h1>{feature.title} in {city.label}</h1>
-  <p class="lead">{n} {one ? 'Sanitätshaus' : 'Sanitätshäuser'} in {city.label} {one ? 'nennt' : 'nennen'} „{feature.label}“ auf der eigenen Website. Bei jedem Haus verlinken wir die Seite, auf der wir es gefunden haben. <a href={u(`/stadt/${city.slug}/`)}>Alle {city.count} Sanitätshäuser in {city.label}</a></p>
+  <p class="lead">{one ? 'Dieses Sanitätshaus' : 'Diese Sanitätshäuser'} in {city.label} {one ? 'nennt' : 'nennen'} „{feature.label}“ auf der eigenen Website. Bei jedem Haus verlinken wir die Seite, auf der wir es gefunden haben. <a href={u(`/stadt/${city.slug}/`)}>Alle Sanitätshäuser in {city.label}</a></p>
   <Map shops={[...list, ...nearby]} />
   <ShopList shops={list} filter={false} />
   {nearby.length > 0 && (<>

@@ -10,17 +10,17 @@ const list = cities.filter((c) => c.state === state.name).sort((a, b) => b.count
 const inState = shops.filter((s) => s.state === state.name);
 const feats = features.map((f) => ({ ...f, n: inState.filter((s) => s.features.includes(f.key)).length })).filter((f) => f.n > 0);
 ---
-<Base title={`Sanitätshäuser in ${state.name}: ${state.count} Adressen nach Ort`} description={`Alle ${state.count} Sanitätshäuser in ${state.name} nach Städten und Gemeinden, mit Leistungen wie Hausbesuch, Kompression und Reha-Technik.`} crumbs={[{ href: '/bundesland/', label: 'Bundesländer' }, { href: `/bundesland/${state.slug}/`, label: state.name }]} jsonLd={[{ '@context': 'https://schema.org', '@type': 'ItemList', name: `Sanitätshäuser in ${state.name}`, itemListElement: list.slice(0, 50).map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.label, url: new URL(u(`/stadt/${c.slug}/`), Astro.site).href })) }]}>
+<Base title={`Sanitätshäuser in ${state.name}: Adressen nach Ort`} description={`Sanitätshäuser in ${state.name} nach Städten und Gemeinden, mit Leistungen wie Hausbesuch, Kompression und Reha-Technik.`} crumbs={[{ href: '/bundesland/', label: 'Bundesländer' }, { href: `/bundesland/${state.slug}/`, label: state.name }]} jsonLd={[{ '@context': 'https://schema.org', '@type': 'ItemList', name: `Sanitätshäuser in ${state.name}`, itemListElement: list.slice(0, 50).map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.label, url: new URL(u(`/stadt/${c.slug}/`), Astro.site).href })) }]}>
   <h1>Sanitätshäuser in {state.name}</h1>
-  <p class="lead">{state.count} Sanitätshäuser in {list.length} Orten. Die meisten gibt es in {list.slice(0, 3).map((c) => `${c.label} (${c.count})`).join(', ')}.{feats.length > 0 && ` Am häufigsten genannte Leistungen: ${feats.slice().sort((a, b) => b.n - a.n).slice(0, 3).map((f) => `${f.label} (${f.n} Häuser)`).join(', ')}.`}</p>
+  <p class="lead">Sanitätshäuser in {state.name}, nach Ort sortiert.{feats.length > 0 && ` Am häufigsten genannte Leistungen: ${feats.slice().sort((a, b) => b.n - a.n).slice(0, 3).map((f) => f.label).join(', ')}.`}</p>
   <p>Wählen Sie Ihren Ort, um alle Häuser mit Adresse, Telefon, Öffnungszeiten und erkannten Leistungen zu sehen. Auf jeder Ortsseite können Sie nach Leistungen wie Hausbesuch, Flachstrick-Kompression oder Rollstuhl-Service filtern.</p>
   {feats.length > 0 && (<>
     <h2>Nach Leistung</h2>
-    <ul class="chips">{feats.map((f) => <li><a class="chip" href={u(`/leistung/${f.slug}/#${state.slug}`)}>{f.label} ({f.n})</a></li>)}</ul>
+    <ul class="chips">{feats.map((f) => <li><a class="chip" href={u(`/leistung/${f.slug}/#${state.slug}`)}>{f.label}</a></li>)}</ul>
   </>)}
   <h2>Orte</h2>
   <ul class="grid">
-    {list.map((c) => (<li><a class="tile" href={u(`/stadt/${c.slug}/`)}>{c.label}<small>{c.count} {c.count === 1 ? 'Sanitätshaus' : 'Sanitätshäuser'}</small></a></li>))}
+    {list.map((c) => (<li><a class="tile" href={u(`/stadt/${c.slug}/`)}>{c.label}</a></li>))}
   </ul>
 </Base>
 <style>.chip { text-decoration: none; display: inline-block; }</style>

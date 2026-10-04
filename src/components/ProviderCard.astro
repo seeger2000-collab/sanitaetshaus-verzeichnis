@@ -3,6 +3,7 @@
 import type { Provider } from '../lib/data';
 import { categories } from '../lib/data';
 import { formatHours } from '../lib/hours';
+import Kontakt from './Kontakt.astro';
 interface Props { p: Provider; showCity?: boolean; km?: number }
 const { p, showCity = false, km } = Astro.props;
 const cat = categories.find((c) => c.key === p.cat)!;
@@ -10,7 +11,6 @@ const label = Object.fromEntries(cat.features.map((f) => [f.key, f.short]));
 const place = [p.postcode, p.postcode || showCity ? p.city : null].filter(Boolean).join(' ');
 const address = [p.street, place].filter(Boolean).join(', ');
 const hours = p.openingHours ? formatHours(p.openingHours) : null;
-const mapUrl = p.lat ? `https://www.openstreetmap.org/?mlat=${p.lat}&mlon=${p.lon}#map=18/${p.lat}/${p.lon}` : null;
 ---
 <li class="shop" data-features={p.features.join(' ')} data-wheelchair={p.wheelchair === 'yes' ? '1' : ''}>
   <article class="card">
@@ -20,11 +20,7 @@ const mapUrl = p.lat ? `https://www.openstreetmap.org/?mlat=${p.lat}&mlon=${p.lo
       <ul class="chips">{p.features.map((f) => <li class="chip">{p.evidence?.[f] ? <a href={p.evidence[f]} rel="nofollow noopener" target="_blank" title="Quelle auf der Website">{label[f]}</a> : label[f]}</li>)}</ul>
     )}
     {hours && <p class="hours">{hours.join(' · ')}{p.hoursSource === 'website' && ' (laut Website)'}</p>}
-    <p class="links">
-      {p.phone && <a href={`tel:${p.phone.split(';')[0].replace(/[^+\d]/g, '')}`}>{p.phone.split(';')[0]}</a>}
-      {p.website && <a href={p.website} rel="nofollow noopener" target="_blank">Website</a>}
-      {mapUrl && <a href={mapUrl} rel="nofollow noopener" target="_blank">Karte</a>}
-    </p>
+    <Kontakt name={p.name} phone={p.phone} email={p.email} website={p.website} booking={p.booking} lat={p.lat} lon={p.lon} />
   </article>
 </li>
 <style>

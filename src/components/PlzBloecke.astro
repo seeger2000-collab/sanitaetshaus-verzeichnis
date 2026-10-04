@@ -1,0 +1,23 @@
+---
+// PLZ-Bereiche nach Leitzonen 0–9, jeweils mit den zweistelligen Bereichen und größtem Ort.
+import { u } from '../lib/url';
+import { zones } from '../lib/plz';
+const leit = [...new Set(zones.map((z) => z.zone[0]))].map((d) => ({ d, zones: zones.filter((z) => z.zone[0] === d) }));
+---
+<div class="plz">
+  {leit.map((l) => (
+    <section>
+      <h3>PLZ {l.d}…</h3>
+      <ul>{l.zones.map((z) => <li><a href={u(`/plz/${z.zone}/`)}><strong>{z.zone}</strong> {z.cities[0]?.label}</a></li>)}</ul>
+    </section>
+  ))}
+</div>
+<style>
+  .plz { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 14px; }
+  .plz section { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 14px; min-width: 0; }
+  h3 { margin: 0 0 6px; font-size: 1rem; }
+  ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 2px; font-size: .92rem; }
+  a { text-decoration: none; overflow-wrap: anywhere; }
+  a:hover { text-decoration: underline; }
+  strong { display: inline-block; min-width: 1.8em; font-variant-numeric: tabular-nums; }
+</style>

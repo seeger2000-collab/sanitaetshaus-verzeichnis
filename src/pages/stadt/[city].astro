@@ -4,6 +4,7 @@ import ShopList from '../../components/ShopList.astro';
 import Map from '../../components/Map.astro';
 import Faq from '../../components/Faq.astro';
 import PflegeboxHinweis from '../../components/PflegeboxHinweis.astro';
+import ProviderList from '../../components/ProviderList.astro';
 import { u } from '../../lib/url';
 import { cities, shopsInCity, features, nearbyCities, meta, fmtDate, fit, otherCategories, providers } from '../../lib/data';
 import { km } from '../../lib/geo';
@@ -22,45 +23,53 @@ const names = (k: string) => feats.find((f) => f.key === k)?.shops.slice(0, 3).m
 const where = `in ${city.label}`;
 
 const faq = [
-  { q: `Wie viele Sanitätshäuser gibt es ${where}?`, a: `Wir kennen ${n} ${one ? 'Sanitätshaus' : 'Sanitätshäuser'} ${where}${accessible ? `, davon ${accessible} stufenlos erreichbar` : ''}. Stand der Adressen: ${fmtDate(meta.osmFetchedAt)}.` },
-  { q: `Welches Sanitätshaus ${where} macht Hausbesuche?`, a: featCount('hausbesuch') ? `Laut eigener Website bieten ${featCount('hausbesuch')} Häuser Hausbesuche an, zum Beispiel ${names('hausbesuch')}.` : `Auf den Websites der Häuser ${where} haben wir keinen Hinweis auf Hausbesuche gefunden. Fragen Sie trotzdem nach, viele Häuser liefern auf Rezept nach Hause. Häuser mit Hausbesuch in der Nähe finden Sie unter „Hausbesuche“.` },
-  { q: `Wo bekomme ich ${where} Flachstrick-Kompression bei Lip- oder Lymphödem?`, a: featCount('lymph') ? `${featCount('lymph')} Häuser nennen Flachstrick oder Lymph-Versorgung, zum Beispiel ${names('lymph')}.` : `Keines der Häuser ${where} nennt Flachstrick auf seiner Website. In der Liste „Lymph- und Lipödem-Versorgung“ finden Sie Häuser in der Umgebung.` },
+  { q: `Welche Sanitätshäuser gibt es ${where}?`, a: `Zum Beispiel ${list.slice(0, 3).map((s) => s.name).join(', ')}. Alle Adressen mit Telefon und Route stehen oben auf dieser Seite. Stand der Adressen: ${fmtDate(meta.osmFetchedAt)}.` },
+  { q: `Welches Sanitätshaus ${where} macht Hausbesuche?`, a: featCount('hausbesuch') ? `Laut eigener Website bieten zum Beispiel diese Häuser Hausbesuche an: ${names('hausbesuch')}.` : `Auf den Websites der Häuser ${where} haben wir keinen Hinweis auf Hausbesuche gefunden. Fragen Sie trotzdem nach, viele Häuser liefern auf Rezept nach Hause. Häuser mit Hausbesuch in der Nähe finden Sie unter „Hausbesuche“.` },
+  { q: `Wo bekomme ich ${where} Flachstrick-Kompression bei Lip- oder Lymphödem?`, a: featCount('lymph') ? `Flachstrick oder Lymph-Versorgung nennen zum Beispiel ${names('lymph')}.` : `Keines der Häuser ${where} nennt Flachstrick auf seiner Website. In der Liste „Lymph- und Lipödem-Versorgung“ finden Sie Häuser in der Umgebung.` },
   { q: 'Brauche ich ein Rezept?', a: 'Für Hilfsmittel, die die Krankenkasse bezahlen soll, brauchen Sie eine Verordnung vom Arzt. Gesetzlich Versicherte zahlen meist 10 % zu, mindestens 5 € und höchstens 10 € pro Hilfsmittel. Ob ein Haus mit Ihrer Kasse einen Vertrag hat, fragen Sie am besten vorher telefonisch.' },
 ];
 const itemList = { '@context': 'https://schema.org', '@type': 'ItemList', name: `Sanitätshäuser ${where}`, numberOfItems: n,
   itemListElement: list.slice(0, 50).map((s, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(u(`/sanitaetshaus/${s.slug}/`), Astro.site).href, name: s.name })) };
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
-// Weitere Hilfe: Anzahl im Ort, sonst Entfernung zum nächsten Eintrag
+// Weitere Hilfe direkt auf der Seite: die nächsten Einträge je Kategorie (im Ort, sonst bis 25 km)
 const more = otherCategories.map((c) => {
-  const n = city.counts[c.key] || 0;
-  if (n) return { c, n, href: `/${c.slug}/${city.slug}/` };
-  const nearest = providers.filter((p) => p.cat === c.key).map((p) => ({ p, d: km(city, p) })).sort((a, b) => a.d - b.d)[0];
-  return nearest && nearest.d < 40 ? { c, n: 0, d: Math.round(nearest.d), href: `/${c.slug}/${nearest.p.citySlug}/`, where: nearest.p.city } : null;
-}).filter(Boolean) as { c: any; n: number; d?: number; href: string; where?: string }[];
+  const items = providers.filter((p) => p.cat === c.key && p.lat).map((p) => ({ p, km: km(city, p) })).filter((x) => x.p.citySlug === city.slug || x.km <= 25)
+    .sort((a, b) => Number(!(a.p.phone || a.p.website)) - Number(!(b.p.phone || b.p.website)) || a.km - b.km).slice(0, 6);
+  return { c, items, hasPage: (city.counts[c.key] || 0) > 0 };
+}).filter((m) => m.items.length);
 const topFeat = feats.slice().sort((a, b) => b.shops.length - a.shops.length).slice(0, 3).map((f) => f.label);
 ---
 <Base
-  title={fit([`Sanitätshaus ${city.label}: ${n} ${one ? 'Adresse' : 'Adressen'} nach Leistung (${new Date(meta.builtAt).getFullYear()})`, `Sanitätshaus ${city.label}: ${n} ${one ? 'Adresse' : 'Adressen'} nach Leistung`, `Sanitätshaus ${city.label}: ${n} ${one ? 'Adresse' : 'Adressen'}`, `Sanitätshaus ${city.label}`])}
-  description={`${n} ${one ? 'Sanitätshaus' : 'Sanitätshäuser'} ${where} mit Adresse, Telefon und Öffnungszeiten.${topFeat.length ? ' Filter: ' + topFeat.join(', ') + '.' : ''}`}
+  title={fit([`Sanitätshaus ${city.label}: Adresse, Telefon, Öffnungszeiten (${new Date(meta.builtAt).getFullYear()})`, `Sanitätshaus ${city.label}: Adresse, Telefon, Öffnungszeiten`, `Sanitätshaus ${city.label}: Adressen nach Leistung`, `Sanitätshaus ${city.label}`])}
+  description={`Sanitätshaus ${where} mit Adresse, Telefon und Öffnungszeiten.${topFeat.length ? ' Filter: ' + topFeat.join(', ') + '.' : ''}`}
   jsonLd={[itemList, faqLd]}
   crumbs={[{ href: `/bundesland/${city.stateSlug}/`, label: city.state }, { href: `/stadt/${city.slug}/`, label: city.label }]}>
   <h1>Sanitätshäuser in {city.label}</h1>
   <p class="lead">
-    {n} {one ? 'Sanitätshaus' : 'Sanitätshäuser'} in {city.label}{city.district && city.district !== city.name ? ` (${city.district})` : ''}{accessible ? `, ${accessible} davon barrierefrei` : ''}.
+    {one ? 'Das Sanitätshaus' : 'Die Sanitätshäuser'} in {city.label}{city.district && city.district !== city.name ? ` (${city.district})` : ''} mit Telefon, Öffnungszeiten und Route.
     {feats.length > 0 ? ' Häuser mit mehr erkannten Leistungen stehen oben. Filtern Sie nach dem, was Sie brauchen.' : ''}
   </p>
+  <nav class="jump" aria-label="Auf dieser Seite">
+    <a href="#liste">Sanitätshäuser</a>
+    {more.map((m) => <a href={`#${m.c.slug}`}>{m.c.label}</a>)}
+    <a href="#fragen">Fragen</a>
+  </nav>
   {feats.length > 0 && (
-    <ul class="chips">{feats.map((f) => <li><a class="chip" href={u(`/leistung/${f.slug}/${city.slug}/`)}>{f.label} ({f.shops.length})</a></li>)}</ul>
+    <ul class="chips">{feats.map((f) => <li><a class="chip" href={u(`/leistung/${f.slug}/${city.slug}/`)}>{f.label}</a></li>)}</ul>
   )}
   <Map shops={list} />
-  <ShopList shops={list} />
-  {more.length > 0 && (<>
-    <h2>Weitere Hilfe in {city.label}</h2>
-    <ul class="grid">{more.map((m) => (<li><a class="tile" href={u(m.href)}>{m.c.label}<small>{m.n ? `${m.n} in ${city.label}` : `nächster in ${m.where}, ${m.d} km`}</small></a></li>))}</ul>
-  </>)}
+  <div id="liste"><ShopList shops={list} /></div>
+  {more.map((m) => (
+    <section class="more" id={m.c.slug}>
+      <h2>{m.c.label} in {city.label} und Umgebung</h2>
+      <ProviderList items={m.items} cat={m.c.key} showCity={true} filter={false} />
+      {m.hasPage && <p><a href={u(`/${m.c.slug}/${city.slug}/`)}>Alle Einträge: {m.c.label} in {city.label}</a></p>}
+    </section>
+  ))}
   <PflegeboxHinweis />
   <Faq items={faq} />
   <h2>Sanitätshäuser in der Nähe von {city.label}</h2>
-  <ul class="grid">{near.map((c) => (<li><a class="tile" href={u(`/stadt/${c.slug}/`)}>{c.label}<small>{Math.round(c.km)} km · {c.count} {c.count === 1 ? 'Sanitätshaus' : 'Sanitätshäuser'}</small></a></li>))}</ul>
+  <ul class="grid">{near.map((c) => (<li><a class="tile" href={u(`/stadt/${c.slug}/`)}>{c.label}<small>{Math.round(c.km)} km entfernt</small></a></li>))}</ul>
 </Base>
-<style>.chip { text-decoration: none; display: inline-block; }</style>
+<style>.chip { text-decoration: none; display: inline-block; }
+  .jump { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 4px 0 10px; font-size: .95rem; }</style>

@@ -2,6 +2,7 @@
 import type { Shop } from '../lib/data';
 import { featureByKey } from '../lib/data';
 import { u } from '../lib/url';
+import Kontakt from './Kontakt.astro';
 interface Props { shop: Shop; showCity?: boolean }
 const { shop, showCity = false } = Astro.props;
 const place = [shop.postcode, shop.postcode || showCity ? shop.city : null].filter(Boolean).join(' ');
@@ -18,11 +19,7 @@ const address = [shop.street, place].filter(Boolean).join(', ');
     {shop.features.length > 0 && (
       <ul class="chips">{shop.features.map((f) => <li class="chip">{featureByKey[f]?.label}</li>)}</ul>
     )}
-    <p class="links">
-      {shop.phone && <a href={`tel:${shop.phone.split(';')[0].replace(/[^+\d]/g, '')}`}>{shop.phone.split(';')[0]}</a>}
-      {shop.website && <a href={shop.website} rel="nofollow noopener" target="_blank">Website</a>}
-      <a href={u(`/sanitaetshaus/${shop.slug}/`)}>Details</a>
-    </p>
+    <Kontakt name={shop.name} phone={shop.phone} email={shop.email} website={shop.website} booking={shop.booking} lat={shop.lat} lon={shop.lon} />
   </article>
 </li>
 <style>

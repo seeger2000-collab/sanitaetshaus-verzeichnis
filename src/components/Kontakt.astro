@@ -1,0 +1,22 @@
+---
+// Schnellzugriff: Anrufen, Route, Online-Termin, E-Mail, Website. Für Menschen, die schnell hin oder anrufen wollen.
+interface Props { phone?: string | null; email?: string | null; website?: string | null; booking?: string | null; lat?: number; lon?: number; name: string }
+const { phone, email, website, booking, lat, lon, name } = Astro.props;
+const tel = phone?.split(';')[0].trim();
+const mail = email?.split(';')[0].trim();
+const route = lat ? `https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}` : null;
+---
+<p class="kontakt">
+  {tel && <a class="k k-tel" href={`tel:${tel.replace(/[^+\d]/g, '')}`} aria-label={`${name} anrufen`}>☎ {tel}</a>}
+  {route && <a class="k" href={route} rel="nofollow noopener" target="_blank">Route</a>}
+  {booking && <a class="k k-book" href={booking} rel="nofollow noopener" target="_blank">Online-Termin</a>}
+  {mail && <a class="k" href={`mailto:${mail}`}>E-Mail</a>}
+  {website && <a class="k" href={website} rel="nofollow noopener" target="_blank">Website</a>}
+</p>
+<style>
+  .kontakt { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 0; }
+  .k { display: inline-block; padding: 5px 12px; border: 1px solid var(--line); border-radius: 8px; text-decoration: none; font-size: .92rem; background: var(--surface); }
+  .k:hover { border-color: var(--brand); }
+  .k-tel { background: var(--brand); color: var(--brand-ink); border-color: var(--brand); font-weight: 600; }
+  .k-book { border-color: var(--brand); font-weight: 600; }
+</style>

@@ -1,0 +1,53 @@
+---
+import Base from '../../layouts/Base.astro';
+import ShopCard from '../../components/ShopCard.astro';
+import ProviderList from '../../components/ProviderList.astro';
+import Map from '../../components/Map.astro';
+import { u } from '../../lib/url';
+import { shops, providers, otherCategories, fit } from '../../lib/data';
+import { zones, zoneOf } from '../../lib/plz';
+export function getStaticPaths() {
+  return zones.map((z) => ({ params: { zone: z.zone }, props: { z } }));
+}
+const { z } = Astro.props;
+const inZone = shops.filter((s) => zoneOf(s.postcode) === z.zone).sort((a, b) => (a.postcode ?? '').localeCompare(b.postcode ?? '') || a.name.localeCompare(b.name, 'de'));
+const others = otherCategories.map((c) => ({ c, items: providers.filter((p) => p.cat === c.key && zoneOf(p.postcode) === z.zone).sort((a, b) => (a.postcode ?? '').localeCompare(b.postcode ?? '')).map((p) => ({ p })) })).filter((o) => o.items.length);
+const idx = zones.findIndex((x) => x.zone === z.zone);
+const prev = zones[idx - 1], next = zones[idx + 1];
+---
+<Base
+  title={fit([`Sanitätshaus PLZ ${z.zone}: ${z.label} und Umgebung`, `Sanitätshaus PLZ ${z.zone}xxx`])}
+  description={`Sanitätshäuser, Physiotherapie, Pflegedienste und Krankenfahrten im Postleitzahlbereich ${z.zone} (${z.label}): Adresse, Telefon, Öffnungszeiten und Route.`}
+  crumbs={[{ href: '/plz/', label: 'Postleitzahlen' }, { href: `/plz/${z.zone}/`, label: `PLZ ${z.zone}` }]}>
+  <h1>Sanitätshaus im PLZ-Bereich {z.zone}: {z.label} und Umgebung</h1>
+  <p class="lead">Alle Adressen mit Postleitzahl {z.zone}xxx, sortiert nach Postleitzahl. Mit Telefon, E-Mail, Website und Route.</p>
+  <nav class="jump" aria-label="Auf dieser Seite">
+    {inZone.length > 0 && <a href="#sanitaetshaus">Sanitätshäuser</a>}
+    {others.map((o) => <a href={`#${o.c.slug}`}>{o.c.label}</a>)}
+    <a href="#orte">Orte</a>
+  </nav>
+  <Map shops={inZone} />
+  {inZone.length > 0 && (
+    <section id="sanitaetshaus">
+      <h2>Sanitätshäuser PLZ {z.zone}</h2>
+      <ul class="list">{inZone.map((s) => <ShopCard shop={s} showCity={true} />)}</ul>
+    </section>
+  )}
+  {others.map((o) => (
+    <section id={o.c.slug}>
+      <h2>{o.c.label} PLZ {z.zone}</h2>
+      <ProviderList items={o.items.slice(0, 40)} cat={o.c.key} showCity={true} filter={false} />
+      {o.items.length > 40 && <p class="muted">Weitere Einträge finden Sie auf den Ortsseiten unten.</p>}
+    </section>
+  ))}
+  <section id="orte">
+    <h2>Orte im PLZ-Bereich {z.zone}</h2>
+    <ul class="grid">{z.cities.map((c) => <li><a class="tile" href={u(`/stadt/${c.slug}/`)}>{c.label}</a></li>)}</ul>
+  </section>
+  <p class="pager">{prev && <a href={u(`/plz/${prev.zone}/`)}>← PLZ {prev.zone}</a>} <a href={u('/plz/')}>Alle PLZ-Bereiche</a> {next && <a href={u(`/plz/${next.zone}/`)}>PLZ {next.zone} →</a>}</p>
+</Base>
+<style>
+  .jump { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 4px 0 10px; font-size: .95rem; }
+  .list { padding: 0; display: grid; gap: 10px; }
+  .pager { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; margin-top: 24px; }
+</style>

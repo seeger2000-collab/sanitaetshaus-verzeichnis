@@ -18,14 +18,14 @@ const byState = states.map((st) => {
   return { ...st, n: inState.length, cities: [...cityMap.values()].sort((a, b) => a.label.localeCompare(b.label, 'de')) };
 }).filter((s) => s.n > 0);
 ---
-<Base title={fit([`${feature.title}: ${matching.length} Adressen`, `${feature.short}: ${matching.length} Sanitätshäuser in Deutschland`])} description={`${matching.length} Sanitätshäuser in Deutschland mit ${feature.label}. Nach Bundesland und Stadt sortiert.`} crumbs={[{ href: '/leistung/', label: 'Leistungen' }, { href: `/leistung/${feature.slug}/`, label: feature.label }]}>
+<Base title={fit([`${feature.title}: Adressen in Ihrer Nähe`, `${feature.short}: Sanitätshaus in der Nähe`])} description={`Sanitätshäuser in Deutschland mit ${feature.label}. Nach Bundesland und Stadt sortiert.`} crumbs={[{ href: '/leistung/', label: 'Leistungen' }, { href: `/leistung/${feature.slug}/`, label: feature.label }]}>
   <h1>{feature.title}</h1>
-  <p class="lead">{matching.length} Sanitätshäuser mit dem Angebot „{feature.label}“, erkannt auf ihren Websites. Wähle deinen Ort.</p>
+  <p class="lead">Sanitätshäuser mit dem Angebot „{feature.label}“, erkannt auf ihren Websites. Wähle deinen Ort.</p>
   {byState.map((st) => (
     <section id={st.slug}>
-      <h2>{st.name} <span class="muted">({st.n})</span></h2>
+      <h2>{st.name}</h2>
       <ul class="grid">
-        {st.cities.map((c) => (<li><a class="tile" href={u(`/leistung/${feature.slug}/${c.slug}/`)}>{c.label}<small>{c.n} {c.n === 1 ? 'Haus' : 'Häuser'}</small></a></li>))}
+        {st.cities.map((c) => (<li><a class="tile" href={u(`/leistung/${feature.slug}/${c.slug}/`)}>{c.label}</a></li>))}
       </ul>
     </section>
   ))}

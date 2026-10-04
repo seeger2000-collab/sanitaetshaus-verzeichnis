@@ -40,11 +40,12 @@ const pageTitle = fit([
   `${base} – Sanitätshaus`,
   base,
 ].filter(Boolean));
+import Kontakt from '../../components/Kontakt.astro';
 ---
 <Base title={pageTitle} description={`${shop.name}, Sanitätshaus in ${shop.postcode ? shop.postcode + ' ' : ''}${shop.city}${shop.street ? ', ' + shop.street : ''}: Adresse, Telefon, Öffnungszeiten${found.length ? ' und Leistungen wie ' + found.slice(0, 3).map((f) => f.label).join(', ') : ', Barrierefreiheit und Sanitätshäuser in der Nähe'}.`} jsonLd={[jsonLd]} crumbs={[{ href: `/bundesland/${shop.stateSlug}/`, label: shop.state }, { href: `/stadt/${shop.citySlug}/`, label: shop.city }, { href: `/sanitaetshaus/${shop.slug}/`, label: shop.name }]}>
   <h1>{shop.name}</h1>
   <p class="lead">Sanitätshaus in {shop.city}{shop.district && shop.district !== shop.city ? `, ${shop.district}` : ''}, {shop.state}</p>
-  <p>{shop.name} ist eines von {cityCount} {cityCount === 1 ? 'Sanitätshaus' : 'Sanitätshäusern'} in {shop.city}.{found.length > 0 ? ` Auf der eigenen Website nennt es ${found.length} der Spezialleistungen, nach denen wir suchen.` : ''}{shop.wheelchair === 'yes' ? ' Der Eingang ist laut OpenStreetMap stufenlos erreichbar.' : ''} Bitte rufen Sie vor dem Besuch kurz an, ob Ihr Hilfsmittel vorrätig ist und ob ein Vertrag mit Ihrer Krankenkasse besteht.</p>
+  <p>{found.length > 0 ? `Auf der eigenen Website nennt ${shop.name} die unten aufgeführten Leistungen.` : ''}{shop.wheelchair === 'yes' ? ' Der Eingang ist laut OpenStreetMap stufenlos erreichbar.' : ''} Bitte rufen Sie vor dem Besuch kurz an, ob Ihr Hilfsmittel vorrätig ist und ob ein Vertrag mit Ihrer Krankenkasse besteht.</p>
 
   {SITE.streetPhotos && shop.image && (
     <figure class="photo">
@@ -52,6 +53,7 @@ const pageTitle = fit([
       <figcaption>Straßenansicht in der Nähe (nicht vom Haus selbst), {shop.image.date && `aufgenommen ${new Date(shop.image.date).toLocaleDateString('de-DE', { month: 'long', year: 'numeric' })}, `}Foto: <a href={shop.image.link} rel="nofollow noopener" target="_blank">{shop.image.credit} / {shop.image.source}</a>, Lizenz {shop.image.license}</figcaption>
     </figure>
   )}
+  <Kontakt name={shop.name} phone={shop.phone} email={shop.email} website={shop.website} booking={shop.booking} lat={shop.lat} lon={shop.lon} />
   <div class="cols">
     <section class="card">
       <h2>Kontakt</h2>
@@ -59,6 +61,7 @@ const pageTitle = fit([
         <dt>Adresse</dt><dd>{shop.street && <>{shop.street}<br /></>}{shop.postcode} {shop.city}<br /><a href={mapUrl} rel="nofollow noopener" target="_blank">Auf der Karte zeigen</a></dd>
         {shop.phone && <><dt>Telefon</dt><dd>{shop.phone.split(';').map((p) => <a href={`tel:${p.replace(/[^+\d]/g, '')}`}>{p.trim()}<br /></a>)}</dd></>}
         {shop.email && <><dt>E-Mail</dt><dd><a href={`mailto:${shop.email.split(';')[0]}`}>{shop.email.split(';')[0]}</a></dd></>}
+        {shop.booking && <><dt>Termin</dt><dd><a href={shop.booking} rel="nofollow noopener" target="_blank">Online-Termin buchen</a></dd></>}
         {shop.website && <><dt>Website</dt><dd><a href={shop.website} rel="nofollow noopener" target="_blank">{shop.website.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')}</a></dd></>}
         {shop.openingHours && <><dt data-oh={shop.openingHours}>Öffnungszeiten</dt><dd>{hours ? hours.map((h) => <>{h}<br /></>) : <code>{shop.openingHours}</code>}{shop.hoursSource === 'website' && <small class="muted">Von der Website des Hauses übernommen.</small>}</dd></>}
         {!shop.openingHours && shop.website && <><dt>Öffnungszeiten</dt><dd><a href={shop.website} rel="nofollow noopener" target="_blank">Auf der Website des Hauses</a></dd></>}

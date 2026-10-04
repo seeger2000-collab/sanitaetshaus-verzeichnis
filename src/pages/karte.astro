@@ -6,10 +6,10 @@ const total = categories.reduce((a, c) => a + c.count, 0);
 ---
 <Base title="Karte: Sanitätshäuser, Physiotherapie, Pflegedienste, Krankenfahrten" description={`Alle ${total.toLocaleString('de-DE')} Einträge auf einer Karte: Sanitätshäuser, Physiotherapie, ambulante Pflegedienste und Krankenfahrten in ganz Deutschland. Mit Standortsuche.`} crumbs={[{ href: '/karte/', label: 'Karte' }]}>
   <h1>Hilfe in der Nähe auf der Karte</h1>
-  <p class="lead">{total.toLocaleString('de-DE')} Einträge in ganz Deutschland. Wählen Sie aus, was angezeigt werden soll, oder zeigen Sie Ihren Standort.</p>
+  <p class="lead">Sanitätshäuser, Physiotherapie, Pflegedienste und Krankenfahrten in ganz Deutschland. Wählen Sie aus, was angezeigt werden soll, oder zeigen Sie Ihren Standort.</p>
   <div class="controls">
     {categories.map((c, i) => (
-      <label class="toggle" style={`--c:${c.color}`}><input type="checkbox" data-cat={i} checked={c.key === 'sanitaetshaus' || c.key === 'fahrt' || c.key === 'pflege'} /> <span class="dot"></span>{c.label} ({c.count.toLocaleString('de-DE')})</label>
+      <label class="toggle" style={`--c:${c.color}`}><input type="checkbox" data-cat={i} checked={c.key === 'sanitaetshaus' || c.key === 'fahrt' || c.key === 'pflege'} /> <span class="dot"></span>{c.label}</label>
     ))}
     <button type="button" id="locate" class="btn">Meinen Standort zeigen</button>
   </div>

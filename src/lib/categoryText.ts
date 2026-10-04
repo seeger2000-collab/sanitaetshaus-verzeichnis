@@ -2,7 +2,7 @@
 export const CATEGORY_TEXT: Record<string, { h1: (c: string) => string; title: (c: string, n: number) => string; intro: string; faq: { q: string; a: string }[]; guide?: string }> = {
   physio: {
     h1: (c) => `Physiotherapie in ${c}`,
-    title: (c, n) => `Physiotherapie ${c}: ${n} ${n === 1 ? 'Praxis' : 'Praxen'}, auch mit Hausbesuch`,
+    title: (c, n) => `Physiotherapie ${c}: Praxis mit Telefon, auch Hausbesuch und Online-Termin`,
     intro: 'Praxen für Physiotherapie und Krankengymnastik. Viele Patienten suchen gezielt nach Hausbesuchen, Krankengymnastik am Gerät, Lymphdrainage oder Bobath. Diese Angaben lesen wir von den Websites der Praxen.',
     faq: [
       { q: 'Wie lange ist ein Rezept für Physiotherapie gültig?', a: 'Die Behandlung muss in der Regel innerhalb von 28 Tagen nach Ausstellung beginnen, bei dringendem Bedarf innerhalb von 14 Tagen, wenn der Arzt das vermerkt. Fragen Sie die Praxis, ob noch Termine frei sind, bevor die Frist abläuft.' },
@@ -12,7 +12,7 @@ export const CATEGORY_TEXT: Record<string, { h1: (c: string) => string; title: (
   },
   pflege: {
     h1: (c) => `Ambulante Pflegedienste in ${c}`,
-    title: (c, n) => `Pflegedienst ${c}: ${n} ambulante ${n === 1 ? 'Dienst' : 'Dienste'}`,
+    title: (c, n) => `Pflegedienst ${c}: ambulante Pflege zu Hause mit Telefon`,
     intro: 'Ambulante Pflegedienste kommen nach Hause, helfen bei Grundpflege, Medikamenten und Haushalt und entlasten Angehörige. In OpenStreetMap sind noch nicht alle Dienste eingetragen. Fehlt einer, sagen Sie uns gern Bescheid.',
     faq: [
       { q: 'Wer bezahlt den Pflegedienst?', a: 'Ab Pflegegrad 2 zahlt die Pflegekasse Pflegesachleistungen bis zu einem monatlichen Höchstbetrag. Behandlungspflege wie Spritzen oder Verbände verordnet der Arzt, sie zahlt die Krankenkasse.' },
@@ -21,7 +21,7 @@ export const CATEGORY_TEXT: Record<string, { h1: (c: string) => string; title: (
   },
   fahrt: {
     h1: (c) => `Krankenfahrten in ${c}`,
-    title: (c, n) => `Krankenfahrt ${c}: ${n} ${n === 1 ? 'Fahrdienst' : 'Fahrdienste'} für Arzt, Dialyse, Reha`,
+    title: (c, n) => `Krankenfahrt ${c}: Fahrdienst für Arzt, Dialyse, Reha`,
     intro: 'Taxi- und Fahrdienste, die Krankenfahrten anbieten, zum Beispiel zur Dialyse, Chemo- oder Strahlentherapie oder im Rollstuhl. Wir zeigen nur Dienste, die Krankenfahrten im Namen oder auf ihrer Website nennen.',
     faq: [
       { q: 'Wann zahlt die Krankenkasse die Fahrt?', a: 'Fahrten zur ambulanten Behandlung zahlt die Kasse nur in Ausnahmen und meist nur nach Genehmigung, zum Beispiel zur Dialyse, Chemo- oder Strahlentherapie, oder wenn Sie Pflegegrad 4 oder 5, Pflegegrad 3 mit dauerhaft eingeschränkter Mobilität oder die Merkzeichen aG, Bl oder H haben. Der Arzt stellt dafür eine Verordnung aus.' },

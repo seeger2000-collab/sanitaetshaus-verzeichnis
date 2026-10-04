@@ -48,6 +48,23 @@ function toText(html) {
     .replace(/\s+/g, ' ');
 }
 
+// Online-Terminbuchung: bekannte Buchungsdienste oder Links mit passendem Text
+const BOOKING_HOST = /(doctolib\.|jameda\.|samedi\.|dr-flex\.|drflex\.|terminland\.|etermin\.|timify\.|shore\.com|appointmed\.|calendly\.com|termed\.|meinarzt|terminbuchung|online-?termin|bookings?\.|treatwell\.|physio-?termin)/i;
+const BOOKING_TEXT = /(online[- ]?termin|termin(e)? online|termin(e)? (jetzt )?buchen|online[- ]?buchen|online[- ]?buchung|terminbuchung|termin vereinbaren online)/i;
+export function contactLinks(html, base) {
+  const out = {};
+  for (const m of html.matchAll(/<a\b[^>]*href\s*=\s*["']([^"']+)["'][^>]*>([\s\S]{0,300}?)<\/a>/gi)) {
+    const href = m[1].trim(), text = m[2].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+    if (!out.email && /^mailto:/i.test(href)) { const e = decodeURIComponent(href.slice(7).split('?')[0]).trim(); if (/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(e)) out.email = e.toLowerCase(); }
+    else if (!out.phone && /^tel:/i.test(href)) { const t = decodeURIComponent(href.slice(4)).replace(/[^\d+]/g, ''); if (t.length >= 6) out.phone = t; }
+    else if (!out.booking && /^https?:|^\//i.test(href)) {
+      let u; try { u = new URL(href, base); } catch { continue; }
+      if (BOOKING_HOST.test(u.hostname + u.pathname) || BOOKING_TEXT.test(text)) out.booking = u.href;
+    }
+  }
+  return out;
+}
+
 function internalLinks(html, base) {
   const host = new URL(base).hostname.replace(/^www\./, '');
   const out = new Set();
@@ -101,6 +118,8 @@ async function scan(shop, cat) {
       const d = detect(toText(p.html), cat);
       for (const f of d.features) { if (!features.has(f)) result.evidence[f] = p.url; features.add(f); }
       d.kassen.forEach((k) => kassen.add(k));
+      const c = contactLinks(p.html, p.url);
+      for (const k of ['email', 'phone', 'booking']) if (c[k] && !result[k]) result[k] = c[k];
     }
     result.features = [...features];
     result.kassen = [...kassen];
