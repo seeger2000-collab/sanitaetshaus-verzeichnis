@@ -60,7 +60,15 @@ export const FAHRT_FEATURES = [
   { key: 'dialyse', short: 'Dialyse', label: 'Dialysefahrten', patterns: [/dialyse/] },
   { key: 'onkologie', short: 'Chemo/Bestrahlung', label: 'Fahrten zu Chemo und Bestrahlung', patterns: [/bestrahlung/, /chemo/] },
 ];
-export const FEATURES_BY_CAT = { sanitaetshaus: FEATURES, physio: PHYSIO_FEATURES, pflege: PFLEGE_FEATURES, fahrt: FAHRT_FEATURES };
+export const HEIM_FEATURES = [
+  { key: 'kurzzeit', short: 'Kurzzeitpflege', label: 'Kurzzeitpflege', patterns: [/kurzzeitpflege/] },
+  { key: 'tagespflege', short: 'Tagespflege', label: 'Tagespflege', patterns: [/tagespflege/] },
+  { key: 'demenz', short: 'Demenz', label: 'Demenz-Wohnbereich', patterns: [/demenz/] },
+  { key: 'betreutes', short: 'Betreutes Wohnen', label: 'Betreutes Wohnen', patterns: [/betreutes wohnen/, /service-?wohnen/] },
+  { key: 'intensiv', short: 'Intensivpflege', label: 'Intensiv- und Beatmungspflege', patterns: [/intensivpflege/, /beatmung/] },
+  { key: 'palliativ', short: 'Palliativ', label: 'Palliativpflege', patterns: [/palliativ/] },
+];
+export const FEATURES_BY_CAT = { sanitaetshaus: FEATURES, physio: PHYSIO_FEATURES, pflege: PFLEGE_FEATURES, heim: HEIM_FEATURES, fahrt: FAHRT_FEATURES };
 
 export function detect(text, cat = 'sanitaetshaus') {
   const t = text.toLowerCase();

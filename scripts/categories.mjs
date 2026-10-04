@@ -19,6 +19,10 @@ export const CATEGORIES = [
       FILTER NOT EXISTS { ?osm osmkey:social_facility "nursing_home" }`,
   },
   {
+    key: 'heim', slug: 'pflegeheim', label: 'Pflegeheime', one: 'Pflegeheim', many: 'Pflegeheime', color: '#c2185b',
+    filter: `{ ?osm osmkey:amenity "nursing_home" } UNION { ?osm osmkey:social_facility "nursing_home" } UNION { ?osm osmkey:social_facility ?sf . ?osm osmkey:social_facility:for "senior" . FILTER(?sf IN ("assisted_living","group_home")) }`,
+  },
+  {
     key: 'fahrt', slug: 'krankenfahrten', label: 'Krankenfahrten', one: 'Fahrdienst', many: 'Fahrdienste mit Krankenfahrten', color: '#7b3fa0', needsEvidence: 'krankenfahrt',
     filter: `{ ?osm osmkey:amenity "taxi" } UNION { ?osm osmkey:office "taxi" } UNION { ${NAME('krankenfahrt|krankentransport|fahrdienst|rollstuhltaxi|rollstuhlbeförderung|behindertenfahrdienst|patientenfahrt|dialysefahrt')} FILTER NOT EXISTS { ?osm osmkey:emergency ?em } }`,
     nameEvidence: /krankenfahrt|krankentransport|fahrdienst|rollstuhltaxi|rollstuhlbeförderung|behindertenfahrdienst|patientenfahrt|dialysefahrt/i,

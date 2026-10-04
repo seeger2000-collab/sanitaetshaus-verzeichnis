@@ -19,6 +19,16 @@ export const CATEGORY_TEXT: Record<string, { h1: (c: string) => string; title: (
       { q: 'Was ist ein Beratungsbesuch nach § 37.3?', a: 'Wer nur Pflegegeld bekommt, muss bei Pflegegrad 2 und 3 halbjährlich, bei 4 und 5 vierteljährlich einen Beratungsbesuch nachweisen. Den machen ambulante Pflegedienste.' },
     ],
   },
+  heim: {
+    h1: (c) => `Pflegeheime in ${c}`,
+    title: (c, n) => `Pflegeheim ${c}: Heimplatz und Kurzzeitpflege mit Telefon`,
+    intro: 'Pflegeheime, Seniorenheime und Einrichtungen mit Kurzzeitpflege. Rufen Sie direkt an und fragen Sie nach freien Plätzen, denn die ändern sich täglich. Angaben zu Kurzzeitpflege, Demenz-Wohnbereich oder betreutem Wohnen lesen wir von den Websites der Heime.',
+    faq: [
+      { q: 'Wie finde ich schnell einen freien Heimplatz?', a: 'Rufen Sie mehrere Heime in der Nähe an, am besten vormittags. Fragen Sie auch nach Kurzzeitpflege: Ein Kurzzeitplatz wird oft später zum Dauerplatz. Der Sozialdienst im Krankenhaus hilft, wenn die Pflege nach einem Klinikaufenthalt beginnt.' },
+      { q: 'Was zahlt die Pflegekasse im Pflegeheim?', a: 'Ab Pflegegrad 2 zahlt die Pflegekasse einen festen Betrag für die Pflege, je nach Pflegegrad. Dazu kommt ein Zuschlag, der mit der Dauer im Heim steigt. Unterkunft, Verpflegung und Investitionskosten zahlen Sie selbst, notfalls hilft das Sozialamt.' },
+      { q: 'Was ist Kurzzeitpflege?', a: 'Ein vorübergehender Heimplatz, etwa nach einem Krankenhausaufenthalt oder wenn pflegende Angehörige ausfallen. Die Pflegekasse zahlt ab Pflegegrad 2 bis zu acht Wochen im Jahr.' },
+    ],
+  },
   fahrt: {
     h1: (c) => `Krankenfahrten in ${c}`,
     title: (c, n) => `Krankenfahrt ${c}: Fahrdienst für Arzt, Dialyse, Reha`,
