@@ -5,7 +5,8 @@ import { FEATURES, KASSEN, FEATURES_BY_CAT } from './features.mjs';
 import { CATEGORIES } from './categories.mjs';
 
 // Telefonnummer ohne Leerzeichen (+4930123456, aus tel:-Links oder OSM) lesbar machen: +49 30123456
-const fmtPhone = (p) => { if (!p) return null; let d = p.trim().replace(/^0049\s*/, '+49'); if (/^0[1-9]/.test(d)) d = '+49' + d.slice(1); const m = d.match(/^\+49\s*(?:\(0\)|0)?\s*(\d.*)$/); return m ? `+49 ${m[1]}` : d; };
+// Telefonnummer einheitlich als „+49 …“: Klammern und Schrägstrich weg, paarweise geschriebene Ziffern („0 68 94 …“) zusammenziehen, „49…“ ohne Plus ergänzen
+const fmtPhone = (p) => { if (!p) return null; let d = p.split(/;|,(?=\s*[+0(])/)[0].trim().replace(/[()]/g, ' ').replace(/\s*\/\s*/g, ' ').replace(/\s+/g, ' ').trim(); if (/^0( \d{1,2})+$/.test(d)) d = d.replace(/ /g, ''); else d = d.replace(/^0((?: \d{1,2})+)(?= \d{3})/, (m, g) => '0' + g.replace(/ /g, '')); if (/^49\d{8,}$/.test(d)) d = '+' + d; d = d.replace(/^0049\s*/, '+49'); if (/^1[5-7]\d{8,9}$/.test(d)) d = '+49' + d; if (/^00(41|43|31|32|33|45|48|420)/.test(d)) d = '+' + d.slice(2); if (!/^[+0]/.test(d) || /^00/.test(d)) return null; if (/^0[1-9]/.test(d)) d = '+49' + d.slice(1); const dig = d.replace(/\D/g, ''); if (dig.length < 7 || dig.length > 15 || /^(\d)\1+$/.test(dig) || /^(116117|112|110|0{3,})/.test(dig)) return null; const m = d.match(/^\+49\s*(?:\(0\)|0)?\s*(\d.*)$/); return m ? `+49 ${m[1]}` : d; };
 // Online-Termin nur, wenn es wirklich eine Buchungsseite ist (keine Startseite, kein Kontaktformular, keine Stellenanzeige)
 const goodBooking = (b, site) => {
   if (!b) return null;
@@ -164,7 +165,7 @@ const plz = Object.fromEntries(Object.entries(plzPts).sort().map(([k, v]) => [k,
 const catSlug = Object.fromEntries(CATEGORIES.map((c) => [c.key, c.slug]));
 // Finder-Daten zweigeteilt: kleine Kerndatei für Karte und Suche, Details (Adresse, Kontakt) in 1°-Kacheln, die erst beim Suchen geladen werden
 const finderAll = all.filter((s) => s.lat).map((s) => [catIndex[s.cat], r4(s.lat), r4(s.lon), s.name, [s.street, [s.postcode, cityBySlug.get(s.citySlug)?.label || s.city].filter(Boolean).join(' ')].filter(Boolean).join(', '),
-    s.slug ? `sanitaetshaus/${s.slug}/` : `${catSlug[s.cat]}/${s.citySlug}/`, bedarfMask(s), (s.phone || '').split(';')[0].trim(), s.openingHours || '', s.website || '', (s.email || '').split(';')[0].trim(), s.booking || '', s.cat === 'sanitaetshaus' ? FEATURES.reduce((m, f, i) => (s.features.includes(f.key) ? m | (1 << i) : m), 0) : 0]);
+    s.slug ? `sanitaetshaus/${s.slug}/` : `${catSlug[s.cat]}/${s.citySlug}/`, bedarfMask(s), (s.phone || '').split(';')[0].trim(), s.openingHours || '', s.website || '', (s.email || '').split(';')[0].trim(), s.booking || '', (FEATURES_BY_CAT[s.cat] || []).reduce((m, f, i) => (s.features.includes(f.key) ? m | (1 << i) : m), 0)]);
 const cells = {};
 finderAll.forEach((e, i) => { const k = `${Math.floor(e[1])}_${Math.floor(e[2])}`; (cells[k] ||= {})[i] = [e[4], e[5], e[7], e[8], e[9], e[10], e[11]]; });
 await rm('public/data/f', { recursive: true, force: true });

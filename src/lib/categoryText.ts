@@ -1,6 +1,16 @@
 import { sgb5, sgb11, heilmRL, ktRL } from './recht';
 // Texte je Kategorie. Inhalte orientieren sich an den häufigsten Suchanfragen (reports/keywords).
 export const CATEGORY_TEXT: Record<string, { h1: (c: string) => string; title: (c: string, n: number) => string; intro: string; faq: { q: string; a: string }[]; guide?: string }> = {
+  arzt: {
+    h1: (c) => `Hausärzte in ${c}`,
+    title: (c, n) => `Hausarzt ${c}: Praxen mit Telefon, Hausbesuche gekennzeichnet`,
+    intro: 'Hausarztpraxen für Allgemeinmedizin in der Nähe, mit Telefon und Route. Praxen, die auf ihrer Website Hausbesuche nennen, sind gekennzeichnet. Ob die Praxis neue Patienten aufnimmt, erfahren Sie nur am Telefon.',
+    faq: [
+      { q: 'Macht mein Hausarzt Hausbesuche?', a: 'Hausbesuche gibt es, wenn Sie wegen Ihrer Erkrankung nicht in die Praxis kommen können, zum Beispiel bettlägerig sind. Rufen Sie möglichst am Vormittag an. Praxen, die Hausbesuche auf ihrer Website nennen, kennzeichnen wir. Fehlt die Kennzeichnung, fragen Sie trotzdem nach.' },
+      { q: 'Wen rufe ich nachts oder am Wochenende an?', a: `Den ärztlichen Bereitschaftsdienst unter der bundesweiten Nummer 116117. Ihn organisieren die Kassenärztlichen Vereinigungen für die sprechstundenfreien Zeiten (${sgb5('75', 'Abs. 1b')}). Der Bereitschaftsdienst kommt bei Bedarf auch nach Hause. In Lebensgefahr wählen Sie 112.` },
+      { q: 'Was ist ein Hausarztvertrag?', a: `Gesetzlich Versicherte können sich freiwillig in die hausarztzentrierte Versorgung einschreiben (${sgb5('73b')}). Dann gehen Sie zuerst zu Ihrem Hausarzt, der Sie bei Bedarf überweist. Ob Ihre Kasse und Ihre Praxis teilnehmen, fragen Sie in der Praxis.` },
+    ],
+  },
   physio: {
     h1: (c) => `Physiotherapie in ${c}`,
     title: (c, n) => `Physiotherapie ${c}: Praxis mit Telefon, auch Hausbesuch und Online-Termin`,

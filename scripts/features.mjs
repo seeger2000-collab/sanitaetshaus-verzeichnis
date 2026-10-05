@@ -73,11 +73,17 @@ export const APOTHEKE_FEATURES = [
   { key: 'inkontinenz', short: 'Inkontinenz', label: 'Inkontinenzversorgung', patterns: [/inkontinenz/] },
   { key: 'botendienst', short: 'Botendienst', label: 'Lieferung nach Hause', patterns: [/botendienst/, /lieferservice/, /liefern (ihnen )?(ihre medikamente )?(nach hause|frei haus)/] },
 ];
-export const FEATURES_BY_CAT = { sanitaetshaus: FEATURES, physio: PHYSIO_FEATURES, pflege: PFLEGE_FEATURES, heim: HEIM_FEATURES, apotheke: APOTHEKE_FEATURES, fahrt: FAHRT_FEATURES };
+export const ARZT_FEATURES = [
+  { key: 'hausbesuch', short: 'Hausbesuche', label: 'Hausbesuche', patterns: [/hausbesuch/, /haus-besuch/, /besuche (bei ihnen )?zu ?hause/, /visiten im pflegeheim/, /heimbesuch/] },
+  { key: 'video', short: 'Videosprechstunde', label: 'Videosprechstunde', patterns: [/videosprechstunde/, /video-sprechstunde/, /onlinesprechstunde/] },
+];
+export const FEATURES_BY_CAT = { sanitaetshaus: FEATURES, arzt: ARZT_FEATURES, physio: PHYSIO_FEATURES, pflege: PFLEGE_FEATURES, heim: HEIM_FEATURES, apotheke: APOTHEKE_FEATURES, fahrt: FAHRT_FEATURES };
 
 export function detect(text, cat = 'sanitaetshaus') {
   const t = text.toLowerCase();
-  const features = FEATURES_BY_CAT[cat].filter((f) => f.patterns.some((p) => p.test(t))).map((f) => f.key);
+  // Verneinungen wie „keine Hausbesuche“ zählen nicht
+  const NEG = { hausbesuch: /keine haus-?besuche|hausbesuche (sind|werden|bieten wir) (leider )?(derzeit |aktuell )?(nicht|keine)/ };
+  const features = FEATURES_BY_CAT[cat].filter((f) => f.patterns.some((p) => p.test(t)) && !(NEG[f.key] && NEG[f.key].test(t))).map((f) => f.key);
   const kassen = KASSEN.filter((k) => k.patterns.some((p) => p.test(t))).map((k) => k.key);
   return { features, kassen };
 }

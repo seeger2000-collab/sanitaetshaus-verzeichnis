@@ -1,7 +1,7 @@
 // Tote Website-Links finden: Domain existiert nicht (DNS), Seite 404/410 oder Zertifikat ungültig.
 // Prüft nur Websites, deren Scan nicht "ok" war. Ergebnis: data/deadlinks.json { url: grund }
 import { readFile, writeFile } from 'node:fs/promises';
-const CATS = ['sanitaetshaus', 'physio', 'pflege', 'heim', 'apotheke', 'fahrt'];
+const CATS = ['sanitaetshaus', 'arzt', 'physio', 'pflege', 'heim', 'apotheke', 'fahrt'];
 // Nur eindeutige Zertifikatsfehler zählen (abgelaufen, falscher Name). Selbstsignierte und TLS-Handshake-Fehler können am Prüfweg liegen, die Links bleiben sichtbar.
 const CERT = /CERT_HAS_EXPIRED|ALTNAME_INVALID/;
 const sites = new Map();

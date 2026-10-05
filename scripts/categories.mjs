@@ -13,6 +13,11 @@ export const CATEGORIES = [
     filter: `{ ?osm osmkey:healthcare "physiotherapist" } UNION { ?osm osmkey:amenity "physiotherapist" }`,
   },
   {
+    key: 'arzt', slug: 'hausarzt', label: 'Hausärzte', one: 'Hausarztpraxis', many: 'Hausarztpraxen', color: '#00838f',
+    filter: `{ ?osm osmkey:amenity "doctors" } UNION { ?osm osmkey:healthcare "doctor" }
+      { ?osm osmkey:healthcare:speciality ?sp . FILTER(REGEX(LCASE(?sp), "(^|;) ?(general|family|general_practice|family_medicine|allgemeinmedizin)")) } UNION { ${NAME('allgemeinmedizin|allgemeinarzt|allgemeinärzt|hausarzt|hausärzt|praktische[rn]? ärzt|praktischer arzt')} }`,
+  },
+  {
     key: 'pflege', slug: 'pflegedienst', label: 'Ambulante Pflegedienste', one: 'Pflegedienst', many: 'ambulante Pflegedienste', color: '#a0522d',
     filter: `{ ?osm osmkey:office "nursing_service" } UNION { ?osm osmkey:healthcare ?hc . FILTER(?hc IN ("nursing","home_care")) } UNION { ${NAME('pflegedienst|ambulante pflege|häusliche (kranken)?pflege|sozialstation|diakoniestation|hauskrankenpflege|ambulanter dienst')} }
       FILTER NOT EXISTS { ?osm osmkey:amenity ?am . FILTER(?am IN ("nursing_home","hospital","school","social_facility","pharmacy")) }

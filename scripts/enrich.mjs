@@ -14,7 +14,7 @@ const CONCURRENCY = Number(process.env.CONCURRENCY || 16);
 const TIMEOUT_MS = 15000;
 const MAX_PAGES = 7; // Startseite + bis zu 6 Unterseiten
 const UA = 'Mozilla/5.0 (compatible; SanitaetshausVerzeichnisBot/0.1; +https://github.com/seeger2000-collab/sanitaetshaus-verzeichnis)';
-const LINK_HINTS = /leistung|therapie|behandlung|krankenfahrt|fahrdienst|pflege|team|angebot|service|versorg|kompression|lymph|brust|kinder|reha|rollstuhl|orthop|einlage|fuss|fu%c3%9f|fuß|schuh|kasse|vertrag|hausbesuch|ueber-uns|uber-uns|über-uns|about|stoma|inkontinenz|homecare|pflege|milchpumpe|produkte|sortiment/i;
+const LINK_HINTS = /leistung|therapie|behandlung|krankenfahrt|fahrdienst|pflege|team|angebot|service|versorg|kompression|lymph|brust|kinder|reha|rollstuhl|orthop|einlage|fuss|fu%c3%9f|fuß|schuh|kasse|vertrag|hausbesuch|ueber-uns|uber-uns|über-uns|about|stoma|inkontinenz|homecare|pflege|milchpumpe|produkte|sortiment|sprechstunde|sprechzeit|praxis|video/i;
 
 const CATS = args.includes('--cat') ? [args[args.indexOf('--cat') + 1]] : CATEGORIES.map((c) => c.key);
 
