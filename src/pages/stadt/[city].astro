@@ -1,4 +1,5 @@
 ---
+import { stripTags, sgb5 } from '../../lib/recht';
 import Base from '../../layouts/Base.astro';
 import ShopList from '../../components/ShopList.astro';
 import Map from '../../components/Map.astro';
@@ -26,11 +27,11 @@ const faq = [
   { q: `Welche Sanitätshäuser gibt es ${where}?`, a: `Zum Beispiel ${list.slice(0, 3).map((s) => s.name).join(', ')}. Alle Adressen mit Telefon und Route stehen oben auf dieser Seite. Stand der Adressen: ${fmtDate(meta.osmFetchedAt)}.` },
   { q: `Welches Sanitätshaus ${where} macht Hausbesuche?`, a: featCount('hausbesuch') ? `Laut eigener Website bieten zum Beispiel diese Häuser Hausbesuche an: ${names('hausbesuch')}.` : `Auf den Websites der Häuser ${where} haben wir keinen Hinweis auf Hausbesuche gefunden. Fragen Sie trotzdem nach, viele Häuser liefern auf Rezept nach Hause. Häuser mit Hausbesuch in der Nähe finden Sie unter „Hausbesuche“.` },
   { q: `Wo bekomme ich ${where} Flachstrick-Kompression bei Lip- oder Lymphödem?`, a: featCount('lymph') ? `Flachstrick oder Lymph-Versorgung nennen zum Beispiel ${names('lymph')}.` : `Keines der Häuser ${where} nennt Flachstrick auf seiner Website. In der Liste „Lymph- und Lipödem-Versorgung“ finden Sie Häuser in der Umgebung.` },
-  { q: 'Brauche ich ein Rezept?', a: 'Für Hilfsmittel, die die Krankenkasse bezahlen soll, brauchen Sie eine Verordnung vom Arzt. Gesetzlich Versicherte zahlen meist 10 % zu, mindestens 5 € und höchstens 10 € pro Hilfsmittel. Ob ein Haus mit Ihrer Kasse einen Vertrag hat, fragen Sie am besten vorher telefonisch.' },
+  { q: 'Brauche ich ein Rezept?', html: true, a: `Für Hilfsmittel, die die Krankenkasse bezahlen soll, brauchen Sie in der Regel eine Verordnung vom Arzt (${sgb5('33', 'Abs. 5a')}). Versicherte ab 18 Jahren zahlen 10 % zu, mindestens 5 € und höchstens 10 € je Hilfsmittel (${sgb5('33', 'Abs. 8')}, ${sgb5('61')}). Ihre Kasse zahlt nur bei Häusern, mit denen sie einen Vertrag hat (${sgb5('33', 'Abs. 6')}, ${sgb5('127')}). Fragen Sie deshalb vorher telefonisch nach.` },
 ];
 const itemList = { '@context': 'https://schema.org', '@type': 'ItemList', name: `Sanitätshäuser ${where}`, numberOfItems: n,
   itemListElement: list.slice(0, 50).map((s, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(u(`/sanitaetshaus/${s.slug}/`), Astro.site).href, name: s.name })) };
-const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: stripTags(f.a) } })) };
 // Weitere Hilfe direkt auf der Seite: die nächsten Einträge je Kategorie (im Ort, sonst bis 25 km)
 const more = otherCategories.map((c) => {
   const items = providers.filter((p) => p.cat === c.key && p.lat).map((p) => ({ p, km: km(city, p) })).filter((x) => x.p.citySlug === city.slug || x.km <= 25)
@@ -67,7 +68,7 @@ const topFeat = feats.slice().sort((a, b) => b.shops.length - a.shops.length).sl
     </section>
   ))}
   <PflegeboxHinweis />
-  <Faq items={faq} />
+  <Faq items={faq} kasse />
   <h2>Sanitätshäuser in der Nähe von {city.label}</h2>
   <ul class="grid">{near.map((c) => (<li><a class="tile" href={u(`/stadt/${c.slug}/`)}>{c.label}<small>{Math.round(c.km)} km entfernt</small></a></li>))}</ul>
 </Base>

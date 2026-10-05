@@ -1,4 +1,5 @@
 ---
+import { stripTags } from '../../lib/recht';
 import Base from '../../layouts/Base.astro';
 import ProviderList from '../../components/ProviderList.astro';
 import Map from '../../components/Map.astro';
@@ -19,7 +20,7 @@ const local = list.filter((p) => p.citySlug === city.slug).map((p) => ({ p }));
 const nearby = local.length >= 8 ? [] : list.filter((p) => p.citySlug !== city.slug).map((p) => ({ p, km: km(city, p) })).filter((x) => x.km <= 25).sort((a, b) => a.km - b.km).slice(0, 10);
 const n = local.length;
 const itemList = { '@context': 'https://schema.org', '@type': 'ItemList', name: text.h1(city.label), numberOfItems: n, itemListElement: local.slice(0, 50).map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.p.name })) };
-const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: text.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: text.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: stripTags(f.a) } })) };
 const nearCities = allCities.filter((c) => c.slug !== city.slug && c.counts[cat.key]).map((c) => ({ ...c, d: km(city, c) })).sort((a, b) => a.d - b.d).slice(0, 8);
 ---
 <Base
@@ -37,7 +38,7 @@ const nearCities = allCities.filter((c) => c.slug !== city.slug && c.counts[cat.
   </>)}
   {city.count > 0 && <p class="note">Hilfsmittel wie Rollator, Kompressionsstrümpfe oder Einlagen: <a href={u(`/stadt/${city.slug}/`)}>Sanitätshäuser in {city.label}</a></p>}
   {text.guide && <p><a href={u(text.guide)}>Ratgeber: Wann zahlt die Kasse die Fahrt?</a></p>}
-  <Faq items={text.faq} />
+  <Faq items={text.faq.map((f) => ({ ...f, html: true }))} kasse />
   <h2>{cat.label} in der Nähe</h2>
   <ul class="grid">{nearCities.map((c) => (<li><a class="tile" href={u(`/${cat.slug}/${c.slug}/`)}>{c.label}<small>{Math.round(c.d)} km entfernt</small></a></li>))}</ul>
 </Base>

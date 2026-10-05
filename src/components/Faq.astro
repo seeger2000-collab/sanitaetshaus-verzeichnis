@@ -1,10 +1,13 @@
 ---
-interface Props { items: { q: string; a: string }[] }
-const { items } = Astro.props;
+// html: Antwort enthält eigene Links (Normzitate), nur für Texte aus dem Code, nie für Daten aus OSM
+import { GKV_HINWEIS } from '../lib/recht';
+interface Props { items: { q: string; a: string; html?: boolean }[]; kasse?: boolean }
+const { items, kasse = false } = Astro.props;
 ---
 <section class="faq" id="fragen">
   <h2>Häufige Fragen</h2>
-  {items.map((i) => (<details><summary>{i.q}</summary><p>{i.a}</p></details>))}
+  {items.map((i) => (<details><summary>{i.q}</summary>{i.html ? <p set:html={i.a} /> : <p>{i.a}</p>}</details>))}
+  {kasse && <p class="muted"><small set:html={GKV_HINWEIS} /></p>}
 </section>
 <style>
   details { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 14px; margin-bottom: 8px; }

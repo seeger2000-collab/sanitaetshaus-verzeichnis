@@ -1,16 +1,15 @@
 ---
 import Base from '../layouts/Base.astro';
-import Finder from '../components/Finder.astro';
 import OrteListe from '../components/OrteListe.astro';
-import { meta, allCities } from '../lib/data';
+import { allCities } from '../lib/data';
+import { sgb5, sgb11, hmv, GKV_HINWEIS } from '../lib/recht';
 const orte = allCities.filter((c) => c.counts.sanitaetshaus).map((c) => ({ label: c.label, href: `/sanitaetshaus/${c.slug}/`, state: c.state }));
-const bi = meta.bedarf.findIndex((b) => b.key === 'alltag');
-// kasse: rezept = Krankenkasse mit ärztlicher Verordnung, pflege = Pflegekasse auf Antrag, teils = nur mit guter Begründung, selbst = selbst kaufen
+// kasse: rezept = Hilfsmittel nach § 33 SGB V (Bad/Toilette teils doppelfunktional, § 40 Abs. 5 SGB XI), pflege = Pflegekasse nach § 40 SGB XI, teils = nur im Einzelfall, selbst = Gebrauchsgegenstand des täglichen Lebens
 // online: später Partnerlink (Affiliate), wird dann als „Online ansehen“ gezeigt
 const KASSE = {
-  rezept: 'Krankenkasse mit Rezept',
-  pflege: 'Pflegekasse auf Antrag',
-  teils: 'Mit Rezept möglich, oft selbst gekauft',
+  rezept: 'Kasse zahlt meist, mit Rezept',
+  pflege: 'Pflegekasse, mit Pflegegrad',
+  teils: 'Kasse zahlt nur im Einzelfall',
   selbst: 'Selbst kaufen',
 };
 const gruppen = [
@@ -52,8 +51,8 @@ const gruppen = [
 ---
 <Base title="Alltagshilfen für Senioren: Strumpfanzieher, Greifzange, Badhilfen in der Nähe" description="Alltagshilfen für ältere Menschen und Menschen mit Einschränkungen: Strumpfanzieher, Knöpfhilfe, Toilettensitzerhöhung, Duschhocker, Greifzange, Besteck. Was die Kasse zahlt und welches Sanitätshaus in der Nähe sie hat." crumbs={[{ href: '/alltagshelfer/', label: 'Alltagshelfer' }]}>
   <h1>Alltagshilfen in Ihrer Nähe</h1>
-  <p class="lead">Strümpfe anziehen, duschen, essen, etwas vom Boden aufheben: Für vieles, was schwer fällt, gibt es einfache Hilfen. Ausprobieren können Sie sie im Sanitätshaus. Geben Sie Ihren Ort ein und sehen Sie die nächsten Häuser mit Telefon und Route.</p>
-  <Finder preset={{ kind: 'bedarf', i: bi, label: 'Alltagshelfer', current: '/alltagshelfer/' }} />
+  <p class="lead">Strümpfe anziehen, duschen, essen, etwas vom Boden aufheben: Für vieles, was schwer fällt, gibt es einfache Hilfen. Ausprobieren können Sie sie im Sanitätshaus.</p>
+  <p><a class="btn" href="/">Sanitätshaus in der Nähe finden</a></p>
 
   <nav class="sprung" aria-label="Bereiche">{gruppen.map((g) => <a href={`#${g.id}`}>{g.titel}</a>)}</nav>
   {gruppen.map((g) => (
@@ -73,9 +72,10 @@ const gruppen = [
   ))}
 
   <h2>Wer zahlt?</h2>
-  <p><strong>Krankenkasse:</strong> Viele Alltagshilfen stehen im Hilfsmittelverzeichnis der Krankenkassen, zum Beispiel Toilettensitzerhöhung, Duschhocker, Badewannenlifter und die Anziehhilfe für Kompressionsstrümpfe. Lassen Sie sich die Hilfe vom Hausarzt verordnen und bringen Sie das Rezept ins Sanitätshaus. Das Sanitätshaus beantragt sie bei Ihrer Kasse. Sie zahlen 10 % zu, mindestens 5 € und höchstens 10 € je Hilfsmittel.</p>
-  <p><strong>Pflegekasse:</strong> Mit Pflegegrad zahlt die Pflegekasse den Hausnotruf und gibt bis zu 4.180 € je Maßnahme für Umbauten in der Wohnung, etwa fest montierte Haltegriffe, eine bodengleiche Dusche oder einen Treppenlift. Den Antrag stellen Sie vor dem Einbau bei der Pflegekasse.</p>
-  <p><strong>Selbst kaufen:</strong> Kleine Helfer wie Knöpfhilfe, Schuhlöffel oder Tellerranderhöhung zahlt die Kasse meist nicht, weil sie als Gegenstände des täglichen Lebens gelten. Sie kosten oft nur wenige Euro und sind im Sanitätshaus, in vielen Apotheken und online erhältlich.</p>
+  <p><strong>Krankenkasse:</strong> Gesetzlich Versicherte haben Anspruch auf Hilfsmittel, die im Einzelfall erforderlich sind, um eine Behinderung auszugleichen oder einer drohenden Behinderung vorzubeugen (<Fragment set:html={sgb5('33', 'Abs. 1')} />). Viele Alltagshilfen stehen im <Fragment set:html={hmv} /> der Krankenkassen (<Fragment set:html={sgb5('139')} />), zum Beispiel Toilettensitzerhöhung, Duschhocker, Badewannenlifter und die Anziehhilfe für Kompressionsstrümpfe. Meist braucht es eine ärztliche Verordnung (<Fragment set:html={sgb5('33', 'Abs. 5a')} />). Mit dem Rezept gehen Sie in ein Sanitätshaus, das Vertragspartner Ihrer Kasse ist (<Fragment set:html={sgb5('33', 'Abs. 6')} />). Ab 18 Jahren zahlen Sie 10 % zu, mindestens 5 € und höchstens 10 € je Hilfsmittel (<Fragment set:html={sgb5('33', 'Abs. 8')} />, <Fragment set:html={sgb5('61')} />).</p>
+  <p><strong>Pflegekasse:</strong> Mit Pflegegrad (ab Pflegegrad 1) gibt es Pflegehilfsmittel, die die Pflege erleichtern oder ein selbständigeres Leben ermöglichen (<Fragment set:html={sgb11('40', 'Abs. 1')} />, <Fragment set:html={sgb11('28a')} />). Dazu gehört der Hausnotruf, wenn Sie allein leben oder oft lange allein sind (Voraussetzungen nach dem Pflegehilfsmittelverzeichnis, <Fragment set:html={sgb11('78')} />). Für Umbauten in der Wohnung, etwa fest montierte Haltegriffe, eine bodengleiche Dusche oder einen Treppenlift, gibt die Pflegekasse bis zu 4.180 € je Maßnahme (<Fragment set:html={sgb11('40', 'Abs. 4')} />). Stellen Sie den Antrag am besten vor dem Einbau. Bad- und Toilettenhilfen können Kranken- oder Pflegekasse zahlen. Die Kasse, bei der Sie den Antrag stellen, klärt das selbst (<Fragment set:html={sgb11('40', 'Abs. 5')} />).</p>
+  <p><strong>Selbst kaufen:</strong> Allgemeine Gebrauchsgegenstände des täglichen Lebens zahlt die Krankenkasse nicht (<Fragment set:html={sgb5('33', 'Abs. 1')} />). Dazu zählen meist kleine Helfer wie Knöpfhilfe, Schuhlöffel oder Tellerranderhöhung. Sie kosten oft nur wenige Euro und sind im Sanitätshaus, in vielen Apotheken und online erhältlich.</p>
+  <p class="muted"><small set:html={GKV_HINWEIS} /></p>
   <p class="muted">Diese Übersicht ersetzt keine Beratung. Ob Ihre Kasse zahlt, hängt vom Einzelfall ab. Fragen Sie im Sanitätshaus oder bei Ihrer Kasse nach.</p>
 
   <OrteListe title="Sanitätshäuser nach Ort" items={orte} />

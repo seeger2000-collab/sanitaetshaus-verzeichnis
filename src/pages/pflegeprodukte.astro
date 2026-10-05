@@ -1,11 +1,10 @@
 ---
 import Base from '../layouts/Base.astro';
-import Finder from '../components/Finder.astro';
 import PflegeboxHinweis from '../components/PflegeboxHinweis.astro';
 import OrteListe from '../components/OrteListe.astro';
-import { meta, allCities } from '../lib/data';
+import { allCities } from '../lib/data';
+import { sgb5, sgb11, GKV_HINWEIS } from '../lib/recht';
 const orte = allCities.filter((c) => c.counts.apotheke).map((c) => ({ label: c.label, href: `/apotheke/${c.slug}/`, state: c.state }));
-const bi = meta.bedarf.findIndex((b) => b.key === 'pflegebox');
 const produkte = [
   { name: 'Einmalhandschuhe', wo: 'Apotheke, Sanitätshaus, Pflegebox' },
   { name: 'Hände- und Flächendesinfektion', wo: 'Apotheke, Sanitätshaus, Pflegebox' },
@@ -18,20 +17,22 @@ const produkte = [
 ---
 <Base title="Pflegeprodukte in der Nähe: Apotheke und Sanitätshaus, Pflegebox" description="Pflegeprodukte schnell in der Nähe kaufen: Apotheken und Sanitätshäuser mit Pflegehilfsmitteln und Inkontinenzartikeln, mit Telefon und Route. Dazu: Pflegebox mit 42 € im Monat von der Pflegekasse." crumbs={[{ href: '/pflegeprodukte/', label: 'Pflegeprodukte' }]}>
   <h1>Pflegeprodukte in Ihrer Nähe</h1>
-  <p class="lead">Handschuhe, Desinfektion, Bettschutz oder Inkontinenzartikel: Geben Sie Ihren Ort ein und sehen Sie die nächsten Apotheken und Sanitätshäuser mit Telefon und Route.</p>
-  <Finder preset={{ kind: 'bedarf', i: bi, label: 'Pflegeprodukte', current: '/pflegeprodukte/' }} />
+  <p class="lead">Handschuhe, Desinfektion, Bettschutz oder Inkontinenzartikel: was es wo gibt und was die Kasse zahlt.</p>
+  <p class="wohin"><a class="btn" href="/apotheke/">Apotheke in der Nähe finden</a> <a class="btn" href="/leistung/pflegehilfsmittel/">Sanitätshaus mit Pflegehilfsmitteln finden</a></p>
   <h2>Was bekomme ich wo?</h2>
   <table class="ptab">
     <thead><tr><th>Produkt</th><th>Wo es das gibt</th></tr></thead>
     <tbody>{produkte.map((p) => <tr><td>{p.name}</td><td>{p.wo}</td></tr>)}</tbody>
   </table>
   <h2>Pflegeprodukte über die Pflegekasse</h2>
-  <p>Wer einen Pflegegrad hat und zu Hause gepflegt wird, bekommt von der Pflegekasse bis zu 42 € im Monat für Pflegehilfsmittel zum Verbrauch, also Handschuhe, Desinfektion, Bettschutz und Mundschutz. Das gibt es ab Pflegegrad 1. Sie können die Produkte in einer Apotheke oder einem Sanitätshaus holen, das mit Ihrer Pflegekasse abrechnet, oder sich jeden Monat eine Pflegebox nach Hause schicken lassen.</p>
-  <p>Inkontinenzartikel zahlt dagegen die Krankenkasse, wenn der Arzt sie verordnet. Dann zahlen Sie 10 % zu, höchstens 10 € im Monat.</p>
+  <p>Wer einen Pflegegrad hat und zu Hause gepflegt wird, bekommt von der Pflegekasse bis zu 42 € im Monat für Pflegehilfsmittel zum Verbrauch, also Handschuhe, Desinfektion, Bettschutz und Mundschutz (<Fragment set:html={sgb11('40', 'Abs. 2')} />). Das gilt ab Pflegegrad 1 (<Fragment set:html={sgb11('28a')} />). Eine Zuzahlung fällt dafür nicht an. Sie können die Produkte in einer Apotheke oder einem Sanitätshaus holen, das mit Ihrer Pflegekasse abrechnet, oder sich jeden Monat eine Pflegebox nach Hause schicken lassen.</p>
+  <p>Inkontinenzartikel zahlt dagegen die Krankenkasse, wenn der Arzt sie verordnet (<Fragment set:html={sgb5('33')} />). Ab 18 Jahren zahlen Sie 10 % zu, höchstens 15 € für den gesamten Monatsbedarf (<Fragment set:html={sgb5('33', 'Abs. 8')} />).</p>
+  <p class="muted"><small set:html={GKV_HINWEIS} /></p>
   <PflegeboxHinweis />
   <OrteListe title="Apotheken nach Ort" items={orte} />
 </Base>
 <style>
   .ptab { width: 100%; border-collapse: collapse; margin: 8px 0 16px; }
+    .wohin { display: flex; flex-wrap: wrap; gap: 8px; }
   .ptab th, .ptab td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
 </style>
