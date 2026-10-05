@@ -1,0 +1,91 @@
+---
+import Base from '../layouts/Base.astro';
+import Finder from '../components/Finder.astro';
+import OrteListe from '../components/OrteListe.astro';
+import { meta, allCities } from '../lib/data';
+const orte = allCities.filter((c) => c.counts.sanitaetshaus).map((c) => ({ label: c.label, href: `/sanitaetshaus/${c.slug}/`, state: c.state }));
+const bi = meta.bedarf.findIndex((b) => b.key === 'alltag');
+// kasse: rezept = Krankenkasse mit ärztlicher Verordnung, pflege = Pflegekasse auf Antrag, teils = nur mit guter Begründung, selbst = selbst kaufen
+// online: später Partnerlink (Affiliate), wird dann als „Online ansehen“ gezeigt
+const KASSE = {
+  rezept: 'Krankenkasse mit Rezept',
+  pflege: 'Pflegekasse auf Antrag',
+  teils: 'Mit Rezept möglich, oft selbst gekauft',
+  selbst: 'Selbst kaufen',
+};
+const gruppen = [
+  { titel: 'Anziehen', id: 'anziehen', items: [
+    { name: 'Anziehhilfe für Kompressionsstrümpfe', was: 'Gestell oder Gleitstoff, mit dem der Stützstrumpf ohne Bücken und ohne Kraft über den Fuß rutscht. Dazu passend: Gummihandschuhe zum Glattstreichen.', kasse: 'rezept', online: '' },
+    { name: 'Strumpfanzieher für normale Socken', was: 'Halbschale mit zwei Bändern: Socke aufziehen, Fuß hinein, hochziehen.', kasse: 'selbst', online: '' },
+    { name: 'Knöpfhilfe', was: 'Drahtschlaufe mit dickem Griff, zieht den Knopf durchs Knopfloch. Hilft bei Arthrose, Rheuma und nach Schlaganfall.', kasse: 'selbst', online: '' },
+    { name: 'Langer Schuhlöffel, elastische Schnürsenkel', was: 'Schuhe an- und ausziehen ohne Bücken und ohne Schleife binden.', kasse: 'selbst', online: '' },
+    { name: 'An- und Ausziehstab', was: 'Stab mit Haken, um Hose, Jacke oder Socken heranzuziehen, etwa nach Hüft-OP.', kasse: 'teils', online: '' },
+  ] },
+  { titel: 'Bad und Toilette', id: 'bad', items: [
+    { name: 'Toilettensitzerhöhung', was: 'Erhöht den Sitz um 6 bis 15 cm, Aufstehen fällt leichter. Mit oder ohne Armlehnen.', kasse: 'rezept', online: '' },
+    { name: 'Duschhocker und Duschstuhl', was: 'Sicher sitzen beim Duschen, rutschfeste Füße, höhenverstellbar.', kasse: 'rezept', online: '' },
+    { name: 'Badewannenlifter', was: 'Elektrischer Sitz, der in die Wanne hinab- und wieder hochfährt.', kasse: 'rezept', online: '' },
+    { name: 'Badewannenbrett und Badewannensitz', was: 'Zum Hinsetzen beim Ein- und Aussteigen.', kasse: 'rezept', online: '' },
+    { name: 'Toilettenstuhl', was: 'Stuhl mit Eimer für die Nacht oder wenn der Weg zum Bad zu weit ist.', kasse: 'rezept', online: '' },
+    { name: 'Fest montierte Haltegriffe', was: 'An Dusche, Wanne und WC verschraubt. Griffe mit Saugnapf sind nur eine Notlösung.', kasse: 'pflege', online: '' },
+  ] },
+  { titel: 'Essen und Trinken', id: 'essen', items: [
+    { name: 'Besteck mit dickem Griff', was: 'Leicht zu halten bei schwacher Hand oder Zittern, auch abgewinkelt erhältlich.', kasse: 'teils', online: '' },
+    { name: 'Tellerranderhöhung und Teller mit hohem Rand', was: 'Essen lässt sich mit einer Hand auf die Gabel schieben.', kasse: 'selbst', online: '' },
+    { name: 'Trinkbecher mit Nasenausschnitt oder Griffen', was: 'Trinken ohne den Kopf nach hinten zu neigen, weniger Verschlucken.', kasse: 'selbst', online: '' },
+    { name: 'Antirutschmatte', was: 'Teller und Schüsseln bleiben stehen.', kasse: 'selbst', online: '' },
+    { name: 'Öffner für Gläser, Flaschen und Dosen', was: 'Schraubdeckel aufdrehen ohne Kraft.', kasse: 'selbst', online: '' },
+  ] },
+  { titel: 'Greifen, Halten, Merken', id: 'greifen', items: [
+    { name: 'Greifzange', was: 'Dinge vom Boden oder aus dem oberen Regal holen, ohne Bücken und ohne Leiter.', kasse: 'teils', online: '' },
+    { name: 'Schlüssel- und Drehhilfen', was: 'Größerer Griff für Schlüssel, Wasserhahn oder Herdknopf.', kasse: 'selbst', online: '' },
+    { name: 'Griffverdickungen', was: 'Schaumstoffröhren für Stift, Zahnbürste oder Besteck.', kasse: 'selbst', online: '' },
+    { name: 'Tablettendose mit Wochenplan', was: 'Tabletten für jeden Tag und jede Tageszeit vorsortiert.', kasse: 'selbst', online: '' },
+  ] },
+  { titel: 'Aufstehen, Gehen, Sicherheit', id: 'gehen', items: [
+    { name: 'Rollator und Gehstock', was: 'Sicherer gehen, mit Sitz zum Ausruhen. Mehr dazu auf der Seite Rollator.', kasse: 'rezept', online: '', link: '/leistung/rollator/' },
+    { name: 'Aufrichthilfe und Bettgalgen', was: 'Griff oder Strickleiter am Bett, um sich selbst aufzusetzen.', kasse: 'rezept', online: '' },
+    { name: 'Aufstehsessel und Sitzerhöhung', was: 'Kissen oder Möbelerhöhung, damit man leichter aus Sessel oder Bett kommt.', kasse: 'teils', online: '' },
+    { name: 'Hausnotruf', was: 'Knopf am Handgelenk oder als Kette, ein Druck verbindet mit der Notrufzentrale.', kasse: 'pflege', online: '' },
+  ] },
+];
+---
+<Base title="Alltagshilfen für Senioren: Strumpfanzieher, Greifzange, Badhilfen in der Nähe" description="Alltagshilfen für ältere Menschen und Menschen mit Einschränkungen: Strumpfanzieher, Knöpfhilfe, Toilettensitzerhöhung, Duschhocker, Greifzange, Besteck. Was die Kasse zahlt und welches Sanitätshaus in der Nähe sie hat." crumbs={[{ href: '/alltagshelfer/', label: 'Alltagshelfer' }]}>
+  <h1>Alltagshilfen in Ihrer Nähe</h1>
+  <p class="lead">Strümpfe anziehen, duschen, essen, etwas vom Boden aufheben: Für vieles, was schwer fällt, gibt es einfache Hilfen. Ausprobieren können Sie sie im Sanitätshaus. Geben Sie Ihren Ort ein und sehen Sie die nächsten Häuser mit Telefon und Route.</p>
+  <Finder preset={{ kind: 'bedarf', i: bi, label: 'Alltagshelfer', current: '/alltagshelfer/' }} />
+
+  <nav class="sprung" aria-label="Bereiche">{gruppen.map((g) => <a href={`#${g.id}`}>{g.titel}</a>)}</nav>
+  {gruppen.map((g) => (
+    <section id={g.id}>
+      <h2>{g.titel}</h2>
+      <ul class="hilfen">
+        {g.items.map((p) => (
+          <li>
+            <strong>{p.link ? <a href={p.link}>{p.name}</a> : p.name}</strong>
+            <span>{p.was}</span>
+            <span class={`kasse k-${p.kasse}`}>{KASSE[p.kasse]}</span>
+            {p.online && <a class="online" href={p.online} rel="sponsored nofollow noopener" target="_blank">Online ansehen</a>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+
+  <h2>Wer zahlt?</h2>
+  <p><strong>Krankenkasse:</strong> Viele Alltagshilfen stehen im Hilfsmittelverzeichnis der Krankenkassen, zum Beispiel Toilettensitzerhöhung, Duschhocker, Badewannenlifter und die Anziehhilfe für Kompressionsstrümpfe. Lassen Sie sich die Hilfe vom Hausarzt verordnen und bringen Sie das Rezept ins Sanitätshaus. Das Sanitätshaus beantragt sie bei Ihrer Kasse. Sie zahlen 10 % zu, mindestens 5 € und höchstens 10 € je Hilfsmittel.</p>
+  <p><strong>Pflegekasse:</strong> Mit Pflegegrad zahlt die Pflegekasse den Hausnotruf und gibt bis zu 4.180 € je Maßnahme für Umbauten in der Wohnung, etwa fest montierte Haltegriffe, eine bodengleiche Dusche oder einen Treppenlift. Den Antrag stellen Sie vor dem Einbau bei der Pflegekasse.</p>
+  <p><strong>Selbst kaufen:</strong> Kleine Helfer wie Knöpfhilfe, Schuhlöffel oder Tellerranderhöhung zahlt die Kasse meist nicht, weil sie als Gegenstände des täglichen Lebens gelten. Sie kosten oft nur wenige Euro und sind im Sanitätshaus, in vielen Apotheken und online erhältlich.</p>
+  <p class="muted">Diese Übersicht ersetzt keine Beratung. Ob Ihre Kasse zahlt, hängt vom Einzelfall ab. Fragen Sie im Sanitätshaus oder bei Ihrer Kasse nach.</p>
+
+  <OrteListe title="Sanitätshäuser nach Ort" items={orte} />
+</Base>
+<style>
+  .sprung { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 4px; }
+  .sprung a { padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; }
+  .hilfen { list-style: none; padding: 0; margin: 8px 0 16px; }
+  .hilfen li { display: grid; gap: 2px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .kasse { font-size: .9em; justify-self: start; padding: 1px 8px; border-radius: 6px; background: #eef3f8; }
+  .k-rezept, .k-pflege { background: #e6f4ea; }
+  .online { font-size: .9em; }
+</style>
