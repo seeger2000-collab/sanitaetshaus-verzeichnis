@@ -1,0 +1,56 @@
+---
+// Korrekturen und neue Einträge melden. Ohne Server: Das Formular baut eine E-Mail an info@, die im eigenen Mailprogramm geöffnet wird.
+import Base from '../layouts/Base.astro';
+import { u } from '../lib/url';
+const MAIL = 'info@sanitaetshaus-suche.de';
+---
+<Base title="Eintrag ergänzen oder korrigieren: Telefon, Adresse, Betrieb" description="Fehlt eine Telefonnummer, stimmt eine Adresse nicht oder fehlt ein Sanitätshaus, eine Praxis oder ein Pflegedienst? Hier melden Sie es uns." crumbs={[{ href: '/eintrag/', label: 'Eintrag ergänzen' }]}>
+  <h1>Eintrag ergänzen oder korrigieren</h1>
+  <p class="lead">Fehlt eine Telefonnummer, ist eine Adresse falsch oder fehlt ein Betrieb ganz? Schreiben Sie es uns. Wir prüfen jede Meldung und ändern den Eintrag, meist innerhalb einer Woche.</p>
+
+  <form id="eintrag" class="card ef">
+    <fieldset>
+      <legend>Worum geht es?</legend>
+      <label><input type="radio" name="art" value="telefon" checked /> Telefonnummer fehlt oder ist falsch</label>
+      <label><input type="radio" name="art" value="korrektur" /> Etwas anderes ist falsch (Adresse, Website, Öffnungszeiten, Leistungen)</label>
+      <label><input type="radio" name="art" value="neu" /> Ein Betrieb fehlt</label>
+      <label><input type="radio" name="art" value="geschlossen" /> Der Betrieb ist geschlossen</label>
+      <label><input type="radio" name="art" value="top" /> Ich interessiere mich für einen Top-Eintrag</label>
+    </fieldset>
+    <label>Name des Betriebs<input name="name" required autocomplete="off" /></label>
+    <label>Ort oder PLZ<input name="ort" autocomplete="off" /></label>
+    <label>Was ist richtig? (z. B. die Telefonnummer, die neue Adresse oder die Website)<textarea name="text" rows="4"></textarea></label>
+    <label>Sind Sie Inhaber oder Mitarbeiter?<select name="rolle"><option value="">Bitte wählen (freiwillig)</option><option>Ja, Inhaber</option><option>Ja, Mitarbeiter</option><option>Nein, Kunde oder Besucher</option></select></label>
+    <input type="hidden" name="seite" />
+    <p><button class="btn" type="submit">E-Mail erstellen</button></p>
+    <p class="muted"><small>Der Knopf öffnet Ihr E-Mail-Programm mit einer fertigen Nachricht an {MAIL}. Sie sehen alles vor dem Absenden. Klappt das nicht, schreiben Sie bitte direkt an <a href={`mailto:${MAIL}`}>{MAIL}</a>.</small></p>
+  </form>
+
+  <p>Sie sind Inhaber und möchten mehr zeigen, etwa Fotos oder einen hervorgehobenen Eintrag? <a href={u('/fuer-sanitaetshaeuser/')}>Infos für Betriebe</a>.</p>
+</Base>
+<script is:inline define:vars={{ MAIL }}>
+  const f = document.getElementById('eintrag');
+  const q = new URLSearchParams(location.search);
+  for (const k of ['name', 'ort', 'seite']) if (q.get(k)) f.elements[k].value = q.get(k);
+  if (q.get('art')) { const r = f.querySelector(`input[name=art][value="${CSS.escape(q.get('art'))}"]`); if (r) r.checked = true; }
+  if (q.get('eintrag')) f.elements.seite.value = `${location.origin}/sanitaetshaus/${q.get('eintrag')}/`;
+  const ART = { telefon: 'Telefonnummer', korrektur: 'Korrektur', neu: 'Neuer Eintrag', geschlossen: 'Betrieb geschlossen', top: 'Top-Eintrag' };
+  f.addEventListener('submit', (ev) => {
+    ev.preventDefault();
+    const v = (k) => (f.elements[k].value || '').trim();
+    const art = f.querySelector('input[name=art]:checked').value;
+    const subject = `${ART[art]}: ${v('name')}${v('ort') ? ', ' + v('ort') : ''}`;
+    const kopf = [`Art: ${ART[art]}`, `Betrieb: ${v('name')}`, `Ort: ${v('ort')}`, v('seite') && `Seite: ${v('seite')}`, v('rolle') && `Absender: ${v('rolle')}`].filter(Boolean);
+    const body = `${kopf.join('\n')}\n\n${v('text')}`;
+    location.href = `mailto:${MAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+</script>
+<style>
+  .ef { display: grid; gap: 14px; max-width: 640px; }
+  .ef fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 6px; }
+  .ef legend { font-weight: 700; margin-bottom: 4px; }
+  .ef label { display: grid; gap: 4px; font-weight: 600; }
+  .ef fieldset label { display: flex; gap: 8px; align-items: baseline; font-weight: 400; }
+  .ef input:not([type=radio]), .ef textarea, .ef select { font: inherit; padding: 10px 12px; border: 2px solid var(--line); border-radius: 8px; background: var(--surface); }
+  .ef .btn { border: 0; cursor: pointer; font-size: 1.05rem; }
+</style>

@@ -24,7 +24,7 @@ const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity
 const nearCities = allCities.filter((c) => c.slug !== city.slug && c.counts[cat.key]).map((c) => ({ ...c, d: km(city, c) })).sort((a, b) => a.d - b.d).slice(0, 8);
 ---
 <Base
-  title={fit([text.title(city.label, n), `${cat.label} ${city.label}`])}
+  title={fit([text.title(city.label, n), text.title2(city.label), `${cat.label} ${city.label}: Telefon und Adresse`, `${cat.label} ${city.label}`])}
   description={`${cat.label} in ${city.label}${nearby.length ? ' und Umgebung' : ''}: Adresse, Telefon, Öffnungszeiten und Leistungen. ${text.intro}`}
   jsonLd={[itemList, faqLd]}
   crumbs={[{ href: `/${cat.slug}/`, label: cat.label }, { href: `/${cat.slug}/${city.slug}/`, label: city.label }]}>

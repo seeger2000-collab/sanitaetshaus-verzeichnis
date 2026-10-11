@@ -61,7 +61,9 @@ for (const s of osm.shops) {
   if (t['disused:shop'] || t['disused:amenity'] || t.opening_hours === 'closed') continue;
   const cityArea = s.admin['8'] || s.admin['6'] || s.admin['4'];
   const e = enrichment[s.id];
-  const o = overrides[s.id] || {};
+  // overrides: Korrekturen je OSM-ID, z. B. { "node/123": { "phone": "…", "featured": true, "featuredUntil": "2027-10-31" } }. Top-Einträge enden automatisch nach featuredUntil.
+  const o = { ...(overrides[s.id] || {}) };
+  if (o.featuredUntil && o.featuredUntil < new Date().toISOString().slice(0, 10)) o.featured = false;
   const features = e?.status === 'ok' ? e.features : [];
   if (cat.needsEvidence && !features.includes(cat.needsEvidence) && !cat.nameEvidence.test(t.name)) continue;
   if (cat.needsEvidence && !features.includes(cat.needsEvidence)) features.unshift(cat.needsEvidence);
@@ -166,17 +168,26 @@ const catSlug = Object.fromEntries(CATEGORIES.map((c) => [c.key, c.slug]));
 // Finder-Daten zweigeteilt: kleine Kerndatei für Karte und Suche, Details (Adresse, Kontakt) in 1°-Kacheln, die erst beim Suchen geladen werden
 const finderAll = all.filter((s) => s.lat).map((s) => [catIndex[s.cat], r4(s.lat), r4(s.lon), s.name, [s.street, [s.postcode, cityBySlug.get(s.citySlug)?.label || s.city].filter(Boolean).join(' ')].filter(Boolean).join(', '),
     s.slug ? `sanitaetshaus/${s.slug}/` : `${catSlug[s.cat]}/${s.citySlug}/`, bedarfMask(s), (s.phone || '').split(';')[0].trim(), s.openingHours || '', s.website || '', (s.email || '').split(';')[0].trim(), s.booking || '', (FEATURES_BY_CAT[s.cat] || []).reduce((m, f, i) => (s.features.includes(f.key) ? m | (1 << i) : m), 0)]);
-const cells = {};
-finderAll.forEach((e, i) => { const k = `${Math.floor(e[1])}_${Math.floor(e[2])}`; (cells[k] ||= {})[i] = [e[4], e[5], e[7], e[8], e[9], e[10], e[11]]; });
+// Pro Kategorie eine Kerndatei (nur was für Karte und Filter nötig ist), dazu Detail-Kacheln je Kategorie und 1°-Feld.
+// So lädt die Startseite zuerst nur Orte und Sanitätshäuser, weitere Kategorien erst, wenn sie gebraucht werden.
 await rm('public/data/f', { recursive: true, force: true });
+await rm('public/data/finder.json', { force: true });
 await mkdir('public/data/f', { recursive: true });
-for (const [k, v] of Object.entries(cells)) await writeFile(`public/data/f/${k}.json`, JSON.stringify(v));
-await writeFile('public/data/finder.json', JSON.stringify({
+const byCat = CATEGORIES.map(() => []);
+for (const e of finderAll) byCat[e[0]].push(e);
+for (const [ci, rows] of byCat.entries()) {
+  const cells = {};
+  rows.forEach((e, j) => { const k = `${Math.floor(e[1])}_${Math.floor(e[2])}`; (cells[k] ||= {})[j] = [e[4], e[5], e[7], e[8], e[9], e[10], e[11]]; });
+  for (const [k, v] of Object.entries(cells)) await writeFile(`public/data/f/${ci}_${k}.json`, JSON.stringify(v));
+  // [lat, lon, Name, Bedarfs-Maske, Leistungs-Maske, hat Telefon]
+  await writeFile(`public/data/f/c${ci}.json`, JSON.stringify(rows.map((e) => [e[1], e[2], e[3], e[6], e[12], e[7] ? 1 : 0])));
+}
+await writeFile('public/data/f/orte.json', JSON.stringify({
   orte: cities.filter((c) => c.lat).map((c) => [c.label, c.lat, c.lon, c.slug, c.counts?.sanitaetshaus || 0]),
   plz,
-  // [Kategorie, lat, lon, Name, Bedarfs-Maske, Leistungs-Maske, hat Telefon]
-  e: finderAll.map((e) => [e[0], e[1], e[2], e[3], e[6], e[12], e[7] ? 1 : 0]),
 }));
+// Welche Kategorien eine Rubrik braucht (damit der Finder nur diese lädt)
+const bedarfCats = BEDARF.map((b, i) => CATEGORIES.map((c, ci) => ci).filter((ci) => byCat[ci].some((e) => e[6] & (1 << i))));
 await writeFile('src/data/cities.json', JSON.stringify(cities));
 await writeFile('src/data/states.json', JSON.stringify(states));
 await writeFile('src/data/meta.json', JSON.stringify({
@@ -185,7 +196,7 @@ await writeFile('src/data/meta.json', JSON.stringify({
   total: shops.length,
   withWebsiteData: shops.filter((s) => s.websiteCheckedAt).length,
   features: FEATURES.map(({ key, short, slug, label, title }) => ({ key, short, slug, label, title, count: shops.filter((s) => s.features.includes(key)).length })),
-  bedarf: BEDARF.map((b, i) => ({ key: b.key, label: b.label, short: b.short, words: b.words || '', hint: b.hint || '', leistung: b.leistung || '', seite: b.seite || '', ohneKarte: !!b.ohneKarte, count: all.filter((s) => bedarfMask(s) & (1 << i)).length })),
+  bedarf: BEDARF.map((b, i) => ({ key: b.key, label: b.label, short: b.short, words: b.words || '', hint: b.hint || '', leistung: b.leistung || '', seite: b.seite || '', ohneKarte: !!b.ohneKarte, cats: bedarfCats[i], count: all.filter((s) => bedarfMask(s) & (1 << i)).length })),
   kassen: KASSEN.map(({ key, label }) => ({ key, label })),
   categories: CATEGORIES.map(({ key, slug, label, one, many, color }) => ({ key, slug, label, one, many, color,
     count: all.filter((s) => s.cat === key).length,

@@ -20,7 +20,7 @@ const others = cityCount > 1
 const osmUrl = `https://www.openstreetmap.org/${shop.id}`;
 const mapUrl = shop.lat ? `https://www.openstreetmap.org/?mlat=${shop.lat}&mlon=${shop.lon}#map=18/${shop.lat}/${shop.lon}` : osmUrl;
 const correction = SITE.correctionFormUrl
-  ? `${SITE.correctionFormUrl}?eintrag=${encodeURIComponent(shop.slug)}`
+  ? `${u(SITE.correctionFormUrl)}?eintrag=${encodeURIComponent(shop.slug)}&name=${encodeURIComponent(shop.name)}&ort=${encodeURIComponent(shop.city)}`
   : `${SITE.repoUrl}/issues/new?title=${encodeURIComponent('Korrektur: ' + shop.name + ', ' + shop.city)}&body=${encodeURIComponent('Eintrag: ' + shop.slug + '\n\nWas ist falsch oder fehlt?\n')}`;
 const jsonLd = {
   '@context': 'https://schema.org', '@type': 'MedicalBusiness', name: shop.name,
@@ -37,6 +37,7 @@ const base = sameName ? (shop.street ? `${nm}, ${shop.street}` : `${nm} (${shop.
 const pageTitle = fit([
   found.length >= 2 ? `${base}: ${found[0].short}, ${found[1].short}` : '',
   found.length ? `${base}: ${found[0].short}` : '',
+  `${base} – Sanitätshaus mit Telefon und Öffnungszeiten`,
   `${base} – Sanitätshaus`,
   base,
 ].filter(Boolean));
@@ -53,7 +54,7 @@ import Kontakt from '../../components/Kontakt.astro';
       <figcaption>Straßenansicht in der Nähe (nicht vom Haus selbst), {shop.image.date && `aufgenommen ${new Date(shop.image.date).toLocaleDateString('de-DE', { month: 'long', year: 'numeric' })}, `}Foto: <a href={shop.image.link} rel="nofollow noopener" target="_blank">{shop.image.credit} / {shop.image.source}</a>, Lizenz {shop.image.license}</figcaption>
     </figure>
   )}
-  <Kontakt name={shop.name} phone={shop.phone} email={shop.email} website={shop.website} booking={shop.booking} lat={shop.lat} lon={shop.lon} />
+  <Kontakt name={shop.name} city={shop.city} phone={shop.phone} email={shop.email} website={shop.website} booking={shop.booking} lat={shop.lat} lon={shop.lon} />
   <div class="cols">
     <section class="card">
       <h2>Kontakt</h2>

@@ -10,7 +10,7 @@ const address = [shop.street, place].filter(Boolean).join(', ');
 ---
 <li class:list={["shop", { nocontact: !shop.phone }]} data-features={shop.features.join(' ')} data-wheelchair={shop.wheelchair === 'yes' ? '1' : ''}>
   <article class={shop.featured ? 'card featured' : 'card'}>
-    {shop.featured && <p class="badge">Top-Eintrag</p>}
+    {shop.featured && <p class="badge">Anzeige · Top-Eintrag</p>}
     <h3 data-oh={shop.openingHours ?? undefined}><a href={u(`/sanitaetshaus/${shop.slug}/`)}>{shop.name}</a></h3>
     <p class="addr">
       {address}
@@ -19,7 +19,7 @@ const address = [shop.street, place].filter(Boolean).join(', ');
     {shop.features.length > 0 && (
       <ul class="chips">{shop.features.map((f) => <li class="chip">{featureByKey[f]?.label}</li>)}</ul>
     )}
-    <Kontakt name={shop.name} phone={shop.phone} email={shop.email} website={shop.website} booking={shop.booking} lat={shop.lat} lon={shop.lon} />
+    <Kontakt name={shop.name} city={shop.city} phone={shop.phone} email={shop.email} website={shop.website} booking={shop.booking} lat={shop.lat} lon={shop.lon} />
   </article>
 </li>
 <style>

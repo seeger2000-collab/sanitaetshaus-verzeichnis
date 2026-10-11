@@ -44,6 +44,10 @@ export const nearbyCities = (city: City, n = 10) => cities.filter((c) => c.slug 
 export const abs = (site: URL | undefined, path: string) => new URL(path, site).href;
 
 // Kürzt Meta-Beschreibungen auf ~155 Zeichen am Wortende
-export const clip = (s: string, n = 155) => (s.length <= n ? s : s.slice(0, s.lastIndexOf(' ', n - 1)).replace(/[,.:;]$/, '') + ' …');
+export const clip = (s: string, n = 155) => {
+  if (s.length <= n) return s;
+  const cut = s.lastIndexOf(' ', n - 1);
+  return (cut > n / 2 ? s.slice(0, cut) : s.slice(0, n - 2)).replace(/[,.:;]$/, '') + ' …';
+};
 // Wählt den ersten Titel, der höchstens n Zeichen hat
 export const fit = (options: string[], n = 62) => options.find((o) => o.length <= n) ?? options[options.length - 1];

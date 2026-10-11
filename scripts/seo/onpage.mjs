@@ -10,7 +10,11 @@ const args = process.argv.slice(2);
 const decode = (s) => s.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&#x27;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ').replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n))).replace(/\s+/g, ' ').trim();
 const first = (html, re) => { const m = html.match(re); return m ? decode(m[1].replace(/<[^>]+>/g, ' ')) : null; };
 const all = (html, re) => [...html.matchAll(re)].map((m) => decode(m[1].replace(/<[^>]+>/g, ' '))).filter(Boolean);
-const meta = (html, name) => first(html, new RegExp(`<meta[^>]+(?:name|property)=["']${name}["'][^>]*content=["']([^"']*)["']`, 'i')) ?? first(html, new RegExp(`<meta[^>]+content=["']([^"']*)["'][^>]*(?:name|property)=["']${name}["']`, 'i'));
+// content="…" darf Apostrophe enthalten (und umgekehrt), daher das passende Anführungszeichen merken
+const meta = (html, name) => {
+  const m = html.match(new RegExp(`<meta[^>]+(?:name|property)=["']${name}["'][^>]*content=(["'])([\\s\\S]*?)\\1`, 'i')) ?? html.match(new RegExp(`<meta[^>]+content=(["'])([\\s\\S]*?)\\1[^>]*(?:name|property)=["']${name}["']`, 'i'));
+  return m ? decode(m[2]).trim() : undefined;
+};
 
 export function analyze(html, url, extra = {}) {
   const body = html.replace(/<(script|style|noscript|svg|template)[\s\S]*?<\/\1>/gi, ' ');

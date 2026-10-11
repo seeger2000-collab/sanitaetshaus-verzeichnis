@@ -42,7 +42,7 @@ const topFeat = feats.slice().sort((a, b) => b.shops.length - a.shops.length).sl
 ---
 <Base
   title={fit([`Sanitätshaus ${city.label}: Adresse, Telefon, Öffnungszeiten (${new Date(meta.builtAt).getFullYear()})`, `Sanitätshaus ${city.label}: Adresse, Telefon, Öffnungszeiten`, `Sanitätshaus ${city.label}: Adressen nach Leistung`, `Sanitätshaus ${city.label}`])}
-  description={`Sanitätshaus ${where} mit Adresse, Telefon und Öffnungszeiten.${topFeat.length ? ' Filter: ' + topFeat.join(', ') + '.' : ''}`}
+  description={`Sanitätshaus ${where} mit Adresse, Telefon und Öffnungszeiten.${topFeat.length ? ' Filter: ' + topFeat.join(', ') + '.' : ' Dazu Physiotherapie, Pflegedienste und Krankenfahrten in der Nähe.'}`}
   jsonLd={[itemList, faqLd]}
   crumbs={[{ href: `/bundesland/${city.stateSlug}/`, label: city.state }, { href: `/stadt/${city.slug}/`, label: city.label }]}>
   <h1>Sanitätshäuser in {city.label}</h1>

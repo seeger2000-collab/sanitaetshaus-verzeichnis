@@ -4,6 +4,9 @@ const a = (href: string, label: string) => `<a href="${href}" target="_blank" re
 // § (Paragraph, Gesetz, Zusatz wie „Abs. 8“): sgb5('33', 'Abs. 8') → „§ 33 Abs. 8 SGB V“
 export const sgb5 = (p: string, zusatz = '') => a(gii('sgb_5', p), `§ ${p}${zusatz ? ' ' + zusatz : ''} SGB V`);
 export const sgb11 = (p: string, zusatz = '') => a(gii('sgb_11', p), `§ ${p}${zusatz ? ' ' + zusatz : ''} SGB XI`);
+export const estg = (p: string, zusatz = '') => a(gii('estg', p), `§ ${p}${zusatz ? ' ' + zusatz : ''} EStG`);
+export const bgb = (p: string, zusatz = '') => a(gii('bgb', p), `§ ${p}${zusatz ? ' ' + zusatz : ''} BGB`);
+export const sgg = (p: string, zusatz = '') => a(gii('sgg', p), `§ ${p}${zusatz ? ' ' + zusatz : ''} SGG`);
 export const heilmRL = a('https://www.g-ba.de/richtlinien/12/', 'Heilmittel-Richtlinie des G-BA');
 export const ktRL = a('https://www.g-ba.de/richtlinien/25/', 'Krankentransport-Richtlinie des G-BA');
 export const hmv = a('https://hilfsmittel.gkv-spitzenverband.de/', 'Hilfsmittelverzeichnis');

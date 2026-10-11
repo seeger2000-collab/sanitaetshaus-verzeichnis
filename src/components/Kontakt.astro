@@ -1,7 +1,8 @@
 ---
 // Schnellzugriff: Anrufen, Route, Online-Termin, E-Mail, Website. Für Menschen, die schnell hin oder anrufen wollen.
-interface Props { phone?: string | null; email?: string | null; website?: string | null; booking?: string | null; lat?: number; lon?: number; name: string }
-const { phone, email, website, booking, lat, lon, name } = Astro.props;
+interface Props { phone?: string | null; email?: string | null; website?: string | null; booking?: string | null; lat?: number; lon?: number; name: string; city?: string }
+import { u } from '../lib/url';
+const { phone, email, website, booking, lat, lon, name, city } = Astro.props;
 const tel = phone?.split(';')[0].trim();
 const mail = email?.split(';')[0].trim();
 const route = lat ? `https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}` : null;
@@ -12,6 +13,7 @@ const route = lat ? `https://www.google.com/maps/dir/?api=1&destination=${lat},$
   {booking && <a class="k k-book" href={booking} rel="nofollow noopener" target="_blank">Online-Termin</a>}
   {mail && <a class="k" href={`mailto:${mail}`}>E-Mail</a>}
   {website && <a class="k" href={website} rel="nofollow noopener" target="_blank">Website</a>}
+  {!tel && <a class="k k-add" href={u(`/eintrag/?art=telefon&name=${encodeURIComponent(name)}${city ? '&ort=' + encodeURIComponent(city) : ''}`)} rel="nofollow">Telefonnummer bekannt? Ergänzen</a>}
 </p>
 <style>
   .kontakt { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 0; }
@@ -19,4 +21,5 @@ const route = lat ? `https://www.google.com/maps/dir/?api=1&destination=${lat},$
   .k:hover { border-color: var(--brand); }
   .k-tel { background: var(--brand); color: var(--brand-ink); border-color: var(--brand); font-weight: 600; }
   .k-book { border-color: var(--brand); font-weight: 600; }
+  .k-add { border-style: dashed; font-size: .85rem; }
 </style>

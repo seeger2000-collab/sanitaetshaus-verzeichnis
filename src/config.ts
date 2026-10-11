@@ -5,7 +5,7 @@ export const SITE = {
   // Erst auf true stellen, wenn das Impressum ausgefüllt ist. Bis dahin: noindex für Suchmaschinen.
   indexing: true,
   // Formular für Korrekturen und neue Einträge (z. B. Tally). Leer = Link auf GitHub-Issue.
-  correctionFormUrl: '',
+  correctionFormUrl: '/eintrag/',
   repoUrl: 'https://github.com/seeger2000-collab/sanitaetshaus-verzeichnis',
   // Straßenfotos aus Panoramax/Mapillary anzeigen. Aus, weil frei verfügbare Fotos meist nur die Straße zeigen, nicht die Fassade.
   streetPhotos: false,

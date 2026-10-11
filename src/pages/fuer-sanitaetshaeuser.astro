@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import { SITE, FEATURED } from '../config';
 import { u } from '../lib/url';
 import { meta } from '../lib/data';
-const correction = SITE.correctionFormUrl || `${SITE.repoUrl}/issues/new?title=${encodeURIComponent('Eintrag ändern oder neu')}`;
+const correction = SITE.correctionFormUrl ? u(SITE.correctionFormUrl) : `${SITE.repoUrl}/issues/new?title=${encodeURIComponent('Eintrag ändern oder neu')}`;
 ---
 <Base title="Für Sanitätshäuser: Eintrag ergänzen" description="Ihr Sanitätshaus fehlt oder Leistungen sind unvollständig? So ergänzen Sie Ihren Eintrag im Sanitätshaus-Verzeichnis." crumbs={[{ href: '/fuer-sanitaetshaeuser/', label: 'Für Sanitätshäuser' }]}>
   <h1>Für Sanitätshäuser</h1>
@@ -20,7 +20,8 @@ const correction = SITE.correctionFormUrl || `${SITE.repoUrl}/issues/new?title=$
     <p>Mit einem Top-Eintrag steht Ihr Haus in Ihrer Stadt und auf den passenden Leistungsseiten ganz oben und ist hervorgehoben. Sie können zusätzlich Kassenverträge, Ansprechpartner und Fotos angeben.</p>
     {FEATURED.paymentUrl
       ? <p><strong>{FEATURED.priceText}</strong></p><p><a class="btn" href={FEATURED.paymentUrl}>Top-Eintrag buchen</a></p>
-      : <p class="muted">Top-Einträge sind bald verfügbar. Schreiben Sie uns über das Formular oben, wenn Sie Interesse haben.</p>}
+      : <p class="muted">Top-Einträge sind bald verfügbar. <a href={u('/eintrag/?art=top')}>Schreiben Sie uns</a>, wenn Sie Interesse haben.</p>}
+    <p class="muted"><small>Top-Einträge sind als Anzeige gekennzeichnet.</small></p>
   </section>
   <section class="card">
     <h2>Siegel für Ihre Website</h2>

@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { u } from '../lib/url';
 import OrteListe from '../components/OrteListe.astro';
 import { allCities } from '../lib/data';
 import { sgb5, sgb11, hmv, GKV_HINWEIS } from '../lib/recht';
@@ -26,7 +27,7 @@ const gruppen = [
     { name: 'Badewannenlifter', was: 'Elektrischer Sitz, der in die Wanne hinab- und wieder hochfährt.', kasse: 'rezept', online: '' },
     { name: 'Badewannenbrett und Badewannensitz', was: 'Zum Hinsetzen beim Ein- und Aussteigen.', kasse: 'rezept', online: '' },
     { name: 'Toilettenstuhl', was: 'Stuhl mit Eimer für die Nacht oder wenn der Weg zum Bad zu weit ist.', kasse: 'rezept', online: '' },
-    { name: 'Fest montierte Haltegriffe', was: 'An Dusche, Wanne und WC verschraubt. Griffe mit Saugnapf sind nur eine Notlösung.', kasse: 'pflege', online: '' },
+    { name: 'Fest montierte Haltegriffe', was: 'An Dusche, Wanne und WC verschraubt. Griffe mit Saugnapf sind nur eine Notlösung.', kasse: 'pflege', online: '', link: '/ratgeber/badumbau-pflegekasse/' },
   ] },
   { titel: 'Essen und Trinken', id: 'essen', items: [
     { name: 'Besteck mit dickem Griff', was: 'Leicht zu halten bei schwacher Hand oder Zittern, auch abgewinkelt erhältlich.', kasse: 'teils', online: '' },
@@ -45,11 +46,11 @@ const gruppen = [
     { name: 'Rollator und Gehstock', was: 'Sicherer gehen, mit Sitz zum Ausruhen. Mehr dazu auf der Seite Rollator.', kasse: 'rezept', online: '', link: '/leistung/rollator/' },
     { name: 'Aufrichthilfe und Bettgalgen', was: 'Griff oder Strickleiter am Bett, um sich selbst aufzusetzen.', kasse: 'rezept', online: '' },
     { name: 'Aufstehsessel und Sitzerhöhung', was: 'Kissen oder Möbelerhöhung, damit man leichter aus Sessel oder Bett kommt.', kasse: 'teils', online: '' },
-    { name: 'Hausnotruf', was: 'Knopf am Handgelenk oder als Kette, ein Druck verbindet mit der Notrufzentrale.', kasse: 'pflege', online: '' },
+    { name: 'Hausnotruf', was: 'Knopf am Handgelenk oder als Kette, ein Druck verbindet mit der Notrufzentrale.', kasse: 'pflege', online: '', link: '/ratgeber/hausnotruf-kosten-pflegekasse/' },
   ] },
 ];
 ---
-<Base title="Alltagshilfen für Senioren: Strumpfanzieher, Greifzange, Badhilfen in der Nähe" description="Alltagshilfen für ältere Menschen und Menschen mit Einschränkungen: Strumpfanzieher, Knöpfhilfe, Toilettensitzerhöhung, Duschhocker, Greifzange, Besteck. Was die Kasse zahlt und welches Sanitätshaus in der Nähe sie hat." crumbs={[{ href: '/alltagshelfer/', label: 'Alltagshelfer' }]}>
+<Base title="Alltagshilfen für Senioren: Strumpfanzieher, Greifzange, Badhilfen" description="Alltagshilfen für ältere Menschen und Menschen mit Einschränkungen: Strumpfanzieher, Knöpfhilfe, Toilettensitzerhöhung, Duschhocker, Greifzange, Besteck. Was die Kasse zahlt und welches Sanitätshaus in der Nähe sie hat." crumbs={[{ href: '/alltagshelfer/', label: 'Alltagshelfer' }]}>
   <h1>Alltagshilfen in Ihrer Nähe</h1>
   <p class="lead">Strümpfe anziehen, duschen, essen, etwas vom Boden aufheben: Für vieles, was schwer fällt, gibt es einfache Hilfen. Ausprobieren können Sie sie im Sanitätshaus.</p>
   <p><a class="btn" href="/">Sanitätshaus in der Nähe finden</a></p>
@@ -61,7 +62,7 @@ const gruppen = [
       <ul class="hilfen">
         {g.items.map((p) => (
           <li>
-            <strong>{p.link ? <a href={p.link}>{p.name}</a> : p.name}</strong>
+            <strong>{p.link ? <a href={u(p.link)}>{p.name}</a> : p.name}</strong>
             <span>{p.was}</span>
             <span class={`kasse k-${p.kasse}`}>{KASSE[p.kasse]}</span>
             {p.online && <a class="online" href={p.online} rel="sponsored nofollow noopener" target="_blank">Online ansehen</a>}

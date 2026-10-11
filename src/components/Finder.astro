@@ -31,7 +31,7 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
     </div>
   </form>
   <p class="fhead"><span id="f-msg" aria-live="polite">Geben Sie ein, was Sie brauchen und wo. Die Karte zeigt sofort, wer in der Nähe ist.</span></p>
-  <div id="f-map" data-src={u('/data/finder.json')} data-base={u('/')} data-cats={JSON.stringify(cats)} data-bedarf={JSON.stringify(bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Sanitätshaus' : b.label, words: b.words || '', leistung: b.leistung, seite: b.seite })))}></div>
+  <div id="f-map" data-src={u('/data/f/')} data-base={u('/')} data-cats={JSON.stringify(cats)} data-bedarf={JSON.stringify(bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Sanitätshaus' : b.label, words: b.words || '', leistung: b.leistung, seite: b.seite, cats: b.cats })))}></div>
   <ol id="f-list" class="flist"></ol>
   <p id="f-more" class="fmore" hidden></p>
   {preset ? <>
@@ -57,7 +57,8 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
     const $ = (id) => document.getElementById(id);
     const input = $('f-ort'), sug = $('f-sug'), rad = $('f-rad'), msg = $('f-msg'), list = $('f-list'), more = $('f-more');
     const root = $('finder');
-    const dataP = fetch(el.dataset.src).then((r) => r.json());
+    const src = el.dataset.src;
+    const dataP = fetch(`${src}orte.json`).then((r) => r.json());
     let data = null, map = null, pins = null;
     const ensureMap = () => {
       if (map) { map.invalidateSize(); return; }
@@ -66,11 +67,19 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
       pins = L.featureGroup().addTo(map);
     };
     data = await dataP;
-    // Kerndaten ins alte Zeilenformat bringen; Adresse und Kontakt kommen aus den Kacheln nach (ensureDetails)
-    data.e = data.e.map((c, i) => { const r = [c[0], c[1], c[2], c[3], '', '', c[4], c[6] ? '…' : '', '', '', '', '', c[5]]; r.i = i; r.cell = `${Math.floor(c[1])}_${Math.floor(c[2])}`; return r; });
+    data.e = [];
+    // Einträge je Kategorie erst laden, wenn sie gebraucht werden. Zeilenformat: [Kat, lat, lon, Name, Adresse, Link, Bedarf, Telefon, Zeiten, Website, E-Mail, Termin, Leistungen]
+    const byCat = {}, catP = {};
+    const loadCats = (list) => Promise.all(list.map((ci) => (catP[ci] ||= fetch(`${src}c${ci}.json`).then((r) => r.json()).then((rows) => {
+      byCat[ci] = rows.map((c, j) => { const r = [ci, c[0], c[1], c[2], '', '', c[3], c[5] ? '…' : '', '', '', '', '', c[4]]; r.j = j; r.cell = `${ci}_${Math.floor(c[0])}_${Math.floor(c[1])}`; return r; });
+      data.e = cats.flatMap((_, k) => byCat[k] || []);
+    }).catch(() => { delete catP[ci]; }))));
+    const ALLCATS = cats.map((_, k) => k);
+    // Adresse und Kontakt kommen aus den Kacheln nach
     const cellP = {};
-    const ensureDetails = (rows) => Promise.all([...new Set(rows.map((r) => r.cell))].map((k) => (cellP[k] ||= fetch(`${base}data/f/${k}.json`).then((r) => r.json()).then((d) => {
-      for (const [i, v] of Object.entries(d)) { const r = data.e[+i]; [r[4], r[5], r[7], r[8], r[9], r[10], r[11]] = v; }
+    const ensureDetails = (rows) => Promise.all([...new Set(rows.map((r) => r.cell))].map((k) => (cellP[k] ||= fetch(`${src}${k}.json`).then((r) => r.json()).then((d) => {
+      const rs = byCat[+k.split('_')[0]];
+      for (const [j, v] of Object.entries(d)) { const r = rs[+j]; [r[4], r[5], r[7], r[8], r[9], r[10], r[11]] = v; }
     }).catch(() => { delete cellP[k]; }))));
     let drawTok = 0;
     const norm = (s) => s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/ß/g, 'ss');
@@ -124,10 +133,13 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
       if (nameQ) { const q = norm(nameQ); return data.e.filter((e) => norm(e[3]).includes(q)); }
       const bit = 1 << (sel < 0 ? ALL : sel); return data.e.filter((e) => e[6] & bit);
     };
+    const needCats = () => (PRE ? (PRE.kind === 'cat' ? [PRE.i] : PRE.kind === 'feat' ? [PRE.san] : BD[PRE.i].cats) : nameQ ? ALLCATS : BD[sel < 0 ? ALL : sel].cats);
     const whatLabel = () => (PRE ? PRE.label : nameQ ? `„${nameQ}“` : BD[sel < 0 ? ALL : sel].label);
     async function draw() {
       const tok = ++drawTok;
       ensureMap();
+      await loadCats(needCats());
+      if (tok !== drawTok) return;
       const r = +rad.value, all = matches();
       pins.clearLayers(); list.innerHTML = ''; more.hidden = true;
       if (circle) { circle.remove(); circle = null; }
@@ -191,6 +203,7 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
     if (!PRE) combo(was, wsug, (q, raw) => {
       if (q.length < 2) return [];
       const rub = BDN.filter((b) => b.k.split(/[\s&,-]+/).some((w) => w.startsWith(q)) || b.k.includes(q)).slice(0, 6).map((b) => ({ rub: b.i, label: b.label }));
+      if (Object.keys(byCat).length < cats.length) loadCats(ALLCATS).then(() => { if (document.activeElement === was && norm(was.value.trim()) === q) was.dispatchEvent(new Event('input')); });
       const names = [...new Set(data.e.filter((e) => norm(e[3]).includes(q)).map((e) => e[3]))].slice(0, 4).map((n) => ({ name: n, label: n, html: `${esc(n)} <small class="muted">Name</small>` }));
       return [...rub, ...names];
     }, (h) => {

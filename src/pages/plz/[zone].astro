@@ -16,7 +16,7 @@ const idx = zones.findIndex((x) => x.zone === z.zone);
 const prev = zones[idx - 1], next = zones[idx + 1];
 ---
 <Base
-  title={fit([`Sanitätshaus PLZ ${z.zone}: ${z.label} und Umgebung`, `Sanitätshaus PLZ ${z.zone}xxx`])}
+  title={fit([`Sanitätshaus PLZ ${z.zone}: ${z.label} und Umgebung`, `Sanitätshaus PLZ ${z.zone}xxx: Adressen und Telefon`, `Sanitätshaus PLZ ${z.zone}xxx`])}
   description={`Sanitätshäuser, Physiotherapie, Pflegedienste und Krankenfahrten im Postleitzahlbereich ${z.zone} (${z.label}): Adresse, Telefon, Öffnungszeiten und Route.`}
   crumbs={[{ href: '/plz/', label: 'Postleitzahlen' }, { href: `/plz/${z.zone}/`, label: `PLZ ${z.zone}` }]}>
   <h1>Sanitätshaus im PLZ-Bereich {z.zone}: {z.label} und Umgebung</h1>

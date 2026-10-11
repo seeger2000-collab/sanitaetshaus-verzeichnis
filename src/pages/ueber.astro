@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { meta, features, fmtDate } from '../lib/data';
 ---
-<Base title="So entstehen die Daten" description="Woher die Adressen und Leistungen im Sanitätshaus-Verzeichnis stammen und wie aktuell sie sind." crumbs={[{ href: '/ueber/', label: 'Über die Daten' }]}>
+<Base title="Über die Daten: So entsteht das Sanitätshaus-Verzeichnis" description="Woher die Adressen und Leistungen im Sanitätshaus-Verzeichnis stammen und wie aktuell sie sind." crumbs={[{ href: '/ueber/', label: 'Über die Daten' }]}>
   <h1>So entstehen die Daten</h1>
   <h2>Adressen</h2>
   <p>Alle Adressen, Telefonnummern, Öffnungszeiten und Angaben zur Barrierefreiheit stammen aus <a href="https://www.openstreetmap.org/">OpenStreetMap</a>, der freien Weltkarte. Daten © OpenStreetMap-Mitwirkende, verfügbar unter der <a href="https://opendatacommons.org/licenses/odbl/">Open Database License (ODbL)</a>. Stand: {fmtDate(meta.osmFetchedAt)}.</p>

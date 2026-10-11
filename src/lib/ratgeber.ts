@@ -1,5 +1,5 @@
 // Ratgeber-Seiten. Themen und Fragen stammen aus der Keyword-Recherche (reports/keywords/keywords.json).
-import { sgb5, sgb11, ktRL, hmv } from './recht';
+import { sgb5, sgb11, ktRL, hmv, estg, bgb, sgg } from './recht';
 const Z = 'mindestens 5 € und höchstens 10 €';
 // Rechtsstand Oktober 2026 (Normen am 5.10.2026 auf gesetze-im-internet.de geprüft), ohne Gewähr. Texte dürfen Links aus recht.ts enthalten. Bei Änderungen der Regeln hier anpassen.
 export type Guide = {
@@ -160,5 +160,126 @@ export const GUIDES: Guide[] = [
     ],
     hausnotruf: true,
     finder: { href: '/krankenfahrten/', label: 'Krankenfahrten in Ihrer Nähe finden' },
+  },
+  {
+    slug: 'pflegegrad-beantragen',
+    title: 'Pflegegrad beantragen: Antrag, Begutachtung, Fristen',
+    h1: 'Pflegegrad beantragen: so geht es Schritt für Schritt',
+    description: 'Pflegegrad beantragen: Wo der Antrag hingeht, wie die Begutachtung abläuft, wie lange die Pflegekasse Zeit hat, ab wann es Geld gibt und wie Sie Widerspruch einlegen.',
+    lead: `Den Pflegegrad beantragen Sie bei Ihrer Pflegekasse. Sie sitzt bei Ihrer Krankenkasse (${sgb11('46', 'Abs. 1')}). Ein Anruf oder ein kurzer Brief reicht, Leistungen gibt es ab dem Monat des Antrags.`,
+    sections: [
+      { h: 'Schritt 1: Antrag stellen', p: [
+        `Leistungen der Pflegeversicherung gibt es nur auf Antrag (${sgb11('33', 'Abs. 1')} Satz 1). Rufen Sie Ihre Krankenkasse an und sagen Sie, dass Sie Leistungen der Pflegeversicherung beantragen. Auch Angehörige können anrufen, wenn Sie sie dazu bevollmächtigt haben. Notieren Sie sich das Datum.`,
+        `Stellen Sie den Antrag früh. Wird er nicht im Monat gestellt, in dem die Pflegebedürftigkeit begonnen hat, sondern später, gibt es Leistungen erst ab Beginn des Antragsmonats (${sgb11('33', 'Abs. 1')} Satz 3).`,
+      ] },
+      { h: 'Schritt 2: Beratung', p: [
+        `Nach dem ersten Antrag muss die Pflegekasse Ihnen innerhalb von zwei Wochen einen Beratungstermin anbieten oder einen Beratungsgutschein geben. Die Beratung geht zu Lasten der Pflegekasse und kommt auf Wunsch zu Ihnen nach Hause (${sgb11('7b', 'Abs. 1')}).`,
+      ] },
+      { h: 'Schritt 3: Begutachtung zu Hause', p: [
+        `Die Pflegekasse beauftragt den Medizinischen Dienst oder unabhängige Gutachter (${sgb11('18', 'Abs. 1')}). Die Begutachtung findet in der Regel bei Ihnen zu Hause statt (${sgb11('18a', 'Abs. 2')}).`,
+        `Begutachtet wird, wie selbständig Sie in sechs Bereichen sind, etwa Mobilität, Selbstversorgung, Erinnern und Orientierung, Umgang mit Krankheit und Alltag. Daraus ergeben sich Punkte: ab 12,5 Punkten Pflegegrad 1, ab 27 Pflegegrad 2, ab 47,5 Pflegegrad 3, ab 70 Pflegegrad 4, ab 90 Pflegegrad 5 (${sgb11('15', 'Abs. 3')}).`,
+        'Tipp: Führen Sie ein bis zwei Wochen vorher ein Pflegetagebuch. Schreiben Sie auf, wobei Sie Hilfe brauchen und wie lange es dauert. Legen Sie Arztberichte und den Medikamentenplan bereit. Eine vertraute Person sollte beim Termin dabei sein. Zeigen Sie den Alltag, wie er wirklich ist, nicht wie an einem guten Tag.',
+      ] },
+      { h: 'Schritt 4: Bescheid und Widerspruch', p: [
+        `Die Pflegekasse muss Ihnen spätestens 25 Arbeitstage nach Eingang des Antrags schriftlich mitteilen, wie sie entschieden hat. Mit dem Bescheid bekommen Sie das Gutachten, wenn Sie nicht widersprechen (${sgb11('18c', 'Abs. 1 und 2')}).`,
+        `Sind Sie mit dem Pflegegrad nicht einverstanden, legen Sie innerhalb eines Monats Widerspruch ein (${sgg('84', 'Abs. 1')}). Ein kurzer Brief genügt, die Begründung können Sie nachreichen. Lesen Sie das Gutachten genau und vergleichen Sie es mit Ihrem Pflegetagebuch.`,
+      ] },
+      { h: 'Was es ab welchem Pflegegrad gibt', p: [
+        `Schon ab Pflegegrad 1 gibt es unter anderem Pflegehilfsmittel wie die Pflegebox, Zuschüsse zum Umbau der Wohnung und den Entlastungsbetrag (${sgb11('28a')}). Der Entlastungsbetrag beträgt bis zu 131 € im Monat (${sgb11('45b', 'Abs. 1')}).`,
+        `Ab Pflegegrad 2 gibt es Pflegegeld, wenn Angehörige oder Bekannte die Pflege übernehmen: 347 € bei Pflegegrad 2, 599 € bei Pflegegrad 3, 800 € bei Pflegegrad 4 und 990 € bei Pflegegrad 5 im Monat (${sgb11('37', 'Abs. 1')}). Statt Pflegegeld oder anteilig daneben können Sie einen Pflegedienst beauftragen (${sgb11('36')}, ${sgb11('38')}).`,
+      ] },
+    ],
+    faq: [
+      { q: 'Wo beantrage ich einen Pflegegrad?', a: `Bei der Pflegekasse. Sie gehört zu Ihrer Krankenkasse (${sgb11('46', 'Abs. 1')}). Ein Anruf genügt, das Formular schickt die Kasse zu.` },
+      { q: 'Wie lange dauert es bis zum Bescheid?', a: `Höchstens 25 Arbeitstage ab Eingang des Antrags (${sgb11('18c', 'Abs. 1')}). Geld gibt es rückwirkend ab dem Antragsmonat (${sgb11('33', 'Abs. 1')}).` },
+      { q: 'Was tun, wenn der Pflegegrad zu niedrig ist?', a: `Innerhalb eines Monats nach Erhalt des Bescheids Widerspruch einlegen (${sgg('84', 'Abs. 1')}). Ein Pflegedienst oder eine Pflegeberatung hilft bei der Begründung.` },
+      { q: 'Gilt das auch für Privatversicherte?', a: `Privat Versicherte stellen den Antrag bei ihrer privaten Pflegeversicherung. Die Begutachtung macht dort Medicproof. Die Leistungen müssen gleichwertig sein (${sgb11('23', 'Abs. 1')}).` },
+    ],
+    pflegebox: true,
+    finder: { href: '/pflegedienst/', label: 'Pflegedienst in Ihrer Nähe finden' },
+  },
+  {
+    slug: 'hausnotruf-kosten-pflegekasse',
+    title: 'Hausnotruf: Kosten, Pflegekasse, Anbieter vor Ort',
+    h1: 'Hausnotruf: Was er kostet und wann die Pflegekasse zahlt',
+    description: 'Hausnotruf für Senioren: wie er funktioniert, was er kostet, wann die Pflegekasse die Grundgebühr übernimmt und worauf Sie bei Anbietern achten sollten.',
+    lead: 'Ein Hausnotruf verbindet Sie per Knopfdruck mit einer Notrufzentrale, rund um die Uhr. Mit Pflegegrad übernimmt die Pflegekasse unter bestimmten Voraussetzungen die Grundgebühr.',
+    sections: [
+      { h: 'So funktioniert ein Hausnotruf', p: [
+        'Sie tragen einen Knopf am Handgelenk oder als Kette. Ein Druck verbindet Sie über ein Gerät in der Wohnung mit der Notrufzentrale. Sie können frei sprechen, auch wenn Sie am Boden liegen. Die Zentrale ruft Angehörige, Nachbarn, den Rettungsdienst oder einen Bereitschaftsdienst, der einen Schlüssel für Ihre Wohnung hat.',
+        'Mobile Notrufgeräte mit GPS funktionieren auch unterwegs. Manche Geräte erkennen Stürze von selbst.',
+      ] },
+      { h: 'Wann die Pflegekasse zahlt', p: [
+        `Der Hausnotruf kann ein Pflegehilfsmittel sein, das ein selbständigeres Leben ermöglicht (${sgb11('40', 'Abs. 1')}). Das gilt ab Pflegegrad 1 (${sgb11('28a')}). Welche Geräte die Pflegekasse bezahlt, steht im Pflegehilfsmittelverzeichnis (${sgb11('78', 'Abs. 2')}). Dort wird in der Regel verlangt, dass Sie allein leben oder lange Zeit allein sind und im Notfall nicht selbst Hilfe rufen könnten.`,
+        'Die Pflegekasse zahlt dann die Grundgebühr für das Basisgerät bis zu einem festen Monatsbetrag. Zusatzleistungen wie Schlüsselhinterlegung, Bereitschaftsdienst oder Sturzsensor zahlen Sie meist selbst. Fragen Sie Ihre Pflegekasse vorher, mit welchen Anbietern sie zusammenarbeitet.',
+        `Wer keinen Pflegegrad hat, zahlt selbst. Die Kosten können als haushaltsnahe Dienstleistung die Einkommensteuer mindern (${estg('35a', 'Abs. 2')}). Ob das in Ihrem Fall gilt, klärt Ihre Steuerberatung.`,
+      ] },
+      { h: 'Worauf Sie achten sollten', p: [
+        'Vergleichen Sie Monatspreis, einmalige Anschlussgebühr und Kündigungsfrist. Fragen Sie, wer im Notfall kommt und wie schnell. Hausnotruf bieten Wohlfahrtsverbände, viele Pflegedienste und private Firmen an.',
+      ] },
+    ],
+    faq: [
+      { q: 'Was kostet ein Hausnotruf?', a: 'Das Basisgerät kostet je nach Anbieter einen niedrigen zweistelligen Betrag im Monat. Mit Pflegegrad und wenn die Voraussetzungen erfüllt sind, übernimmt die Pflegekasse die Grundgebühr. Zusatzleistungen kosten extra.' },
+      { q: 'Brauche ich einen Pflegegrad?', a: `Für die Kostenübernahme durch die Pflegekasse ja, Pflegegrad 1 reicht (${sgb11('28a')}, ${sgb11('40', 'Abs. 1')}). Ohne Pflegegrad können Sie einen Hausnotruf selbst bezahlen.` },
+      { q: 'Wie beantrage ich den Hausnotruf?', a: 'Meist stellt der Anbieter den Antrag bei Ihrer Pflegekasse für Sie. Sie können ihn auch selbst formlos stellen.' },
+    ],
+    hausnotruf: true,
+    finder: { href: '/pflegedienst/', label: 'Pflegedienst in Ihrer Nähe finden' },
+  },
+  {
+    slug: 'treppenlift-zuschuss',
+    title: 'Treppenlift: 4.180 € Zuschuss von der Pflegekasse',
+    h1: 'Treppenlift: Zuschuss der Pflegekasse und weitere Hilfen',
+    description: 'Treppenlift mit Zuschuss: bis zu 4.180 € von der Pflegekasse ab Pflegegrad 1, bis zu 16.720 € bei mehreren Pflegebedürftigen, Antrag, Mietwohnung und Steuer.',
+    lead: `Für einen Treppenlift gibt die Pflegekasse bis zu 4.180 € Zuschuss, wenn ein Pflegegrad vorliegt (${sgb11('40', 'Abs. 4')}). Schon Pflegegrad 1 reicht (${sgb11('28a')}).`,
+    sections: [
+      { h: 'Zuschuss der Pflegekasse', p: [
+        `Die Pflegekasse kann Maßnahmen zur Verbesserung des Wohnumfeldes bezuschussen, wenn dadurch die Pflege zu Hause möglich wird, deutlich leichter wird oder Sie wieder selbständiger leben können. Der Zuschuss beträgt höchstens 4.180 € je Maßnahme (${sgb11('40', 'Abs. 4')} Satz 1 und 2).`,
+        `Leben mehrere Pflegebedürftige in einer Wohnung, zum Beispiel ein Ehepaar, gibt es bis zu 4.180 € je Person, zusammen höchstens 16.720 € (${sgb11('40', 'Abs. 4')} Satz 3 und 4).`,
+        'Die Pflegekassen werten in der Praxis alle Umbauten, die zur gleichen Zeit nötig sind, als eine Maßnahme. Ändert sich die Pflegesituation später, kann es erneut einen Zuschuss geben. Das steht nicht im Gesetz, sondern folgt aus den gemeinsamen Hinweisen der Pflegekassen; fragen Sie Ihre Kasse.',
+      ] },
+      { h: 'So gehen Sie vor', p: [
+        'Holen Sie ein oder zwei Angebote ein und stellen Sie den Antrag bei der Pflegekasse, bevor Sie den Auftrag erteilen. Legen Sie das Angebot bei. Viele Kassen lehnen nachträgliche Anträge ab, weil sie die Notwendigkeit nicht mehr prüfen können.',
+        'Ein gebrauchter oder gemieteter Treppenlift ist oft deutlich günstiger, besonders bei geraden Treppen.',
+      ] },
+      { h: 'Mietwohnung', p: [
+        `Mieter können verlangen, dass der Vermieter bauliche Veränderungen für Menschen mit Behinderungen erlaubt, außer sie sind ihm nicht zumutbar. Der Vermieter kann eine Sicherheit für den späteren Rückbau verlangen (${bgb('554', 'Abs. 1')}).`,
+      ] },
+      { h: 'Steuer', p: [
+        `Für den Arbeitslohn von Handwerkern mindert sich die Einkommensteuer um 20 %, höchstens um 1.200 € im Jahr (${estg('35a', 'Abs. 3')}). Das gilt nicht für öffentlich geförderte Maßnahmen, für die zinsverbilligte Darlehen oder steuerfreie Zuschüsse in Anspruch genommen werden (${estg('35a', 'Abs. 3')} Satz 2). Ob und wie viel Sie geltend machen können, klärt Ihre Steuerberatung.`,
+      ] },
+    ],
+    faq: [
+      { q: 'Zahlt die Krankenkasse einen Treppenlift?', a: `Einen fest eingebauten Treppenlift nicht, er ist kein Hilfsmittel der Krankenkasse. Zuständig ist die Pflegekasse mit bis zu 4.180 € Zuschuss (${sgb11('40', 'Abs. 4')}). Ein mobiler Treppensteiger kann dagegen ein Hilfsmittel der Krankenkasse sein (${sgb5('33')}, ${hmv}).` },
+      { q: 'Brauche ich einen Pflegegrad?', a: `Ja, für den Zuschuss der Pflegekasse. Pflegegrad 1 reicht (${sgb11('28a')}).` },
+      { q: 'Muss ich den Antrag vor dem Einbau stellen?', a: 'Das Gesetz schreibt es nicht vor, aber es ist dringend zu empfehlen. Sonst riskieren Sie, dass die Kasse nicht zahlt.' },
+    ],
+    finder: { href: '/leistung/hausbesuch/', label: 'Sanitätshaus mit Hausbesuch finden' },
+  },
+  {
+    slug: 'badumbau-pflegekasse',
+    title: 'Badumbau: 4.180 € Zuschuss für bodengleiche Dusche',
+    h1: 'Barrierefreies Bad: Zuschuss der Pflegekasse',
+    description: 'Badumbau für Senioren: Wanne raus, bodengleiche Dusche rein, Haltegriffe, Toilette. Bis zu 4.180 € Zuschuss von der Pflegekasse, dazu Hilfsmittel auf Rezept.',
+    lead: `Für einen Badumbau gibt die Pflegekasse bis zu 4.180 € Zuschuss, wenn ein Pflegegrad vorliegt (${sgb11('40', 'Abs. 4')}, ab Pflegegrad 1 ${sgb11('28a')}). Viele kleine Badhilfen gibt es zusätzlich auf Rezept.`,
+    sections: [
+      { h: 'Was als Umbau bezuschusst wird', p: [
+        `Typisch sind der Austausch der Badewanne gegen eine bodengleiche Dusche, fest montierte Haltegriffe, ein unterfahrbares Waschbecken, ein erhöhtes WC und breitere Türen. Gezahlt wird, wenn die Pflege dadurch zu Hause möglich oder deutlich leichter wird oder Sie selbständiger leben können, bis zu 4.180 € je Maßnahme (${sgb11('40', 'Abs. 4')}).`,
+        `Leben mehrere Pflegebedürftige im Haushalt, gibt es bis zu 4.180 € je Person, höchstens 16.720 € (${sgb11('40', 'Abs. 4')} Satz 3 und 4). Werden Bad und Treppenlift zur gleichen Zeit gebraucht, werten die Pflegekassen das in der Praxis als eine Maßnahme.`,
+      ] },
+      { h: 'Was es ohne Umbau gibt', p: [
+        `Duschhocker, Badewannenlifter, Badewannenbrett, Toilettensitzerhöhung und Toilettenstuhl sind Hilfsmittel. Mit ärztlicher Verordnung zahlt sie die Krankenkasse, auch ohne Pflegegrad (${sgb5('33', 'Abs. 1')}, ${hmv}). Ab 18 Jahren zahlen Sie 10 % zu, ${Z} (${sgb5('33', 'Abs. 8')}, ${sgb5('61')}). Viele davon haben Sanitätshäuser vorrätig.`,
+      ] },
+      { h: 'So gehen Sie vor', p: [
+        'Lassen Sie sich von einem Sanitätshaus oder einer Wohnberatung beraten, holen Sie ein Angebot eines Handwerksbetriebs ein und stellen Sie den Antrag bei der Pflegekasse, bevor Sie den Auftrag erteilen.',
+        `In einer Mietwohnung brauchen Sie die Erlaubnis des Vermieters. Sie haben einen Anspruch darauf, wenn der Umbau dem Vermieter zumutbar ist (${bgb('554', 'Abs. 1')}).`,
+        `Für den Arbeitslohn der Handwerker mindert sich die Einkommensteuer um 20 %, höchstens um 1.200 € im Jahr, nicht aber für Maßnahmen, für die steuerfreie Zuschüsse oder zinsverbilligte Darlehen genutzt werden (${estg('35a', 'Abs. 3')}). Klären Sie das mit Ihrer Steuerberatung.`,
+      ] },
+    ],
+    faq: [
+      { q: 'Wie viel zahlt die Pflegekasse für den Badumbau?', a: `Bis zu 4.180 € je Maßnahme, bei mehreren Pflegebedürftigen in der Wohnung bis zu 16.720 € (${sgb11('40', 'Abs. 4')}).` },
+      { q: 'Bekomme ich auch ohne Pflegegrad Hilfe?', a: `Für Hilfsmittel wie Duschhocker oder Toilettensitzerhöhung ja, mit ärztlicher Verordnung über die Krankenkasse (${sgb5('33')}). Den Zuschuss für den Umbau gibt es nur mit Pflegegrad (${sgb11('40', 'Abs. 4')}).` },
+    ],
+    finder: { href: '/alltagshelfer/', label: 'Alltagshilfen für Bad und Toilette ansehen' },
   },
 ];

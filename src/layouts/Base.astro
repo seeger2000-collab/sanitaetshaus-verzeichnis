@@ -1,5 +1,5 @@
 ---
-import { SITE } from '../config';
+import { SITE, AFFILIATE } from '../config';
 import { u } from '../lib/url';
 import OpenNow from '../components/OpenNow.astro';
 import { meta, fmtDate, clip } from '../lib/data';
@@ -62,7 +62,8 @@ if (crumbs.length) ld.push({
     <footer class="site-footer">
       <div class="wrap">
         <p>Daten: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (ODbL), Stand {fmtDate(meta.osmFetchedAt)}. Leistungen automatisch von den Websites der Häuser ausgelesen, ohne Gewähr.</p>
-        <p><a href={u('/ueber/')}>So entstehen die Daten</a> · <a href={u('/bundesland/')}>Bundesländer</a> · <a href={u('/fuer-sanitaetshaeuser/')}>Eintrag ändern</a> · <a href={u('/impressum/')}>Impressum</a> · <a href={u('/datenschutz/')}>Datenschutz</a></p>
+        {(AFFILIATE.amazonTag || AFFILIATE.pflegeboxUrl || AFFILIATE.sanishopUrl || AFFILIATE.hausnotrufUrl) && <p>Mit „Werbung“ gekennzeichnete Links sind Partnerlinks. Kaufen Sie darüber, erhalten wir eine Provision, für Sie ändert sich der Preis nicht.{AFFILIATE.amazonTag && ' Als Amazon-Partner verdienen wir an qualifizierten Verkäufen.'}</p>}
+        <p><a href={u('/ueber/')}>So entstehen die Daten</a> · <a href={u('/bundesland/')}>Bundesländer</a> · <a href={u('/eintrag/')}>Eintrag ergänzen oder melden</a> · <a href={u('/fuer-sanitaetshaeuser/')}>Für Betriebe</a> · <a href={u('/impressum/')}>Impressum</a> · <a href={u('/datenschutz/')}>Datenschutz</a></p>
       </div>
     </footer>
   </body>

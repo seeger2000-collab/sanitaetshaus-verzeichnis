@@ -1,9 +1,10 @@
 import { sgb5, sgb11, heilmRL, ktRL } from './recht';
 // Texte je Kategorie. Inhalte orientieren sich an den häufigsten Suchanfragen (reports/keywords).
-export const CATEGORY_TEXT: Record<string, { h1: (c: string) => string; title: (c: string, n: number) => string; intro: string; faq: { q: string; a: string }[]; guide?: string }> = {
+export const CATEGORY_TEXT: Record<string, { h1: (c: string) => string; title: (c: string, n: number) => string; title2: (c: string) => string; intro: string; faq: { q: string; a: string }[]; guide?: string }> = {
   arzt: {
     h1: (c) => `Hausärzte in ${c}`,
     title: (c, n) => `Hausarzt ${c}: Praxen mit Telefon, Hausbesuche gekennzeichnet`,
+    title2: (c) => `Hausarzt ${c}: Praxen mit Telefon und Hausbesuch`,
     intro: 'Hausarztpraxen für Allgemeinmedizin in der Nähe, mit Telefon und Route. Praxen, die auf ihrer Website Hausbesuche nennen, sind gekennzeichnet. Ob die Praxis neue Patienten aufnimmt, erfahren Sie nur am Telefon.',
     faq: [
       { q: 'Macht mein Hausarzt Hausbesuche?', a: 'Hausbesuche gibt es, wenn Sie wegen Ihrer Erkrankung nicht in die Praxis kommen können, zum Beispiel bettlägerig sind. Rufen Sie möglichst am Vormittag an. Praxen, die Hausbesuche auf ihrer Website nennen, kennzeichnen wir. Fehlt die Kennzeichnung, fragen Sie trotzdem nach.' },
@@ -14,6 +15,7 @@ export const CATEGORY_TEXT: Record<string, { h1: (c: string) => string; title: (
   physio: {
     h1: (c) => `Physiotherapie in ${c}`,
     title: (c, n) => `Physiotherapie ${c}: Praxis mit Telefon, auch Hausbesuch und Online-Termin`,
+    title2: (c) => `Physiotherapie ${c}: Praxen mit Telefon und Hausbesuch`,
     intro: 'Praxen für Physiotherapie und Krankengymnastik. Viele Patienten suchen gezielt nach Hausbesuchen, Krankengymnastik am Gerät, Lymphdrainage oder Bobath. Diese Angaben lesen wir von den Websites der Praxen.',
     faq: [
       { q: 'Wie lange ist ein Rezept für Physiotherapie gültig?', a: `Die Behandlung muss innerhalb von 28 Tagen nach Ausstellung beginnen, bei dringendem Bedarf innerhalb von 14 Tagen, wenn der Arzt das auf der Verordnung vermerkt (${heilmRL}). Fragen Sie die Praxis, ob noch Termine frei sind, bevor die Frist abläuft.` },
@@ -24,6 +26,7 @@ export const CATEGORY_TEXT: Record<string, { h1: (c: string) => string; title: (
   pflege: {
     h1: (c) => `Ambulante Pflegedienste in ${c}`,
     title: (c, n) => `Pflegedienst ${c}: ambulante Pflege zu Hause mit Telefon`,
+    title2: (c) => `Pflegedienst ${c}: ambulante Pflege mit Telefon`,
     intro: 'Ambulante Pflegedienste kommen nach Hause, helfen bei Grundpflege, Medikamenten und Haushalt und entlasten Angehörige. In OpenStreetMap sind noch nicht alle Dienste eingetragen. Fehlt einer, sagen Sie uns gern Bescheid.',
     faq: [
       { q: 'Wer bezahlt den Pflegedienst?', a: `Ab Pflegegrad 2 zahlt die Pflegekasse Pflegesachleistungen bis zu einem monatlichen Höchstbetrag je Pflegegrad (${sgb11('36')}). Behandlungspflege wie Spritzen oder Verbände verordnet der Arzt, sie zahlt die Krankenkasse (${sgb5('37')}).` },
@@ -33,6 +36,7 @@ export const CATEGORY_TEXT: Record<string, { h1: (c: string) => string; title: (
   heim: {
     h1: (c) => `Pflegeheime in ${c}`,
     title: (c, n) => `Pflegeheim ${c}: Heimplatz und Kurzzeitpflege mit Telefon`,
+    title2: (c) => `Pflegeheim ${c}: Heimplatz mit Telefon`,
     intro: 'Pflegeheime, Seniorenheime und Einrichtungen mit Kurzzeitpflege. Rufen Sie direkt an und fragen Sie nach freien Plätzen, denn die ändern sich täglich. Angaben zu Kurzzeitpflege, Demenz-Wohnbereich oder betreutem Wohnen lesen wir von den Websites der Heime.',
     faq: [
       { q: 'Wie finde ich schnell einen freien Heimplatz?', a: 'Rufen Sie mehrere Heime in der Nähe an, am besten vormittags. Fragen Sie auch nach Kurzzeitpflege: Ein Kurzzeitplatz wird oft später zum Dauerplatz. Der Sozialdienst im Krankenhaus hilft, wenn die Pflege nach einem Klinikaufenthalt beginnt.' },
@@ -43,6 +47,7 @@ export const CATEGORY_TEXT: Record<string, { h1: (c: string) => string; title: (
   apotheke: {
     h1: (c) => `Apotheken in ${c}`,
     title: (c, n) => `Apotheke ${c}: Telefon, Öffnungszeiten, Pflegeprodukte`,
+    title2: (c) => `Apotheke ${c}: Telefon und Öffnungszeiten`,
     intro: 'Apotheken in der Nähe, mit Telefon und Öffnungszeiten. Viele Apotheken führen Pflegeprodukte wie Einmalhandschuhe, Desinfektion und Inkontinenzartikel und liefern per Botendienst nach Hause.',
     faq: [
       { q: 'Bekomme ich Pflegehilfsmittel in der Apotheke?', a: `Ja. Wer zu Hause gepflegt wird und einen Pflegegrad (1 bis 5) hat, bekommt von der Pflegekasse monatlich bis zu 42 € für Pflegehilfsmittel zum Verbrauch (${sgb11('40', 'Abs. 2')}). Viele Apotheken rechnen das direkt mit der Pflegekasse ab, fragen Sie danach.` },
@@ -52,6 +57,7 @@ export const CATEGORY_TEXT: Record<string, { h1: (c: string) => string; title: (
   fahrt: {
     h1: (c) => `Krankenfahrten in ${c}`,
     title: (c, n) => `Krankenfahrt ${c}: Fahrdienst für Arzt, Dialyse, Reha`,
+    title2: (c) => `Krankenfahrt ${c}: Fahrdienst mit Telefon`,
     intro: 'Taxi- und Fahrdienste, die Krankenfahrten anbieten, zum Beispiel zur Dialyse, Chemo- oder Strahlentherapie oder im Rollstuhl. Wir zeigen nur Dienste, die Krankenfahrten im Namen oder auf ihrer Website nennen.',
     faq: [
       { q: 'Wann zahlt die Krankenkasse die Fahrt?', a: `Fahrten zur ambulanten Behandlung zahlt die Kasse nur in Ausnahmefällen und nur nach vorheriger Genehmigung (${sgb5('60', 'Abs. 1')}), zum Beispiel zur Dialyse, Chemo- oder Strahlentherapie (${ktRL}). Bei Pflegegrad 4 oder 5, Pflegegrad 3 mit dauerhaft eingeschränkter Mobilität oder den Merkzeichen aG, Bl oder H gilt die Genehmigung als erteilt. Der Arzt stellt eine Verordnung aus.` },
