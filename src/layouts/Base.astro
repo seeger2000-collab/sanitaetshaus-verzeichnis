@@ -67,20 +67,25 @@ if (crumbs.length) ld.push({
       </div>
     </footer>
     <div id="stat-banner" class="stat-banner" role="dialog" aria-labelledby="stat-h" hidden>
-      <p id="stat-h"><strong>Dürfen wir Besuche zählen?</strong> Mit Ihrer Zustimmung zählen wir anonym, welche Seiten aufgerufen werden (GoatCounter, ohne Cookies). Das hilft uns, die Seite zu verbessern. <a href={u('/datenschutz/')}>Mehr dazu</a></p>
+      <p id="stat-h"><strong>Dürfen wir genauer zählen?</strong> Wir zählen anonym, welche Seiten aufgerufen werden, ohne Cookies und ohne etwas von Ihrem Gerät auszulesen. Mit Ihrer Zustimmung erfassen wir zusätzlich Bildschirmbreite und die Seite, von der Sie kommen (GoatCounter). Das hilft uns, die Seite zu verbessern. <a href={u('/datenschutz/')}>Mehr dazu</a></p>
       <p class="stat-btns"><button type="button" class="btn" data-stat="nein">Ablehnen</button> <button type="button" class="btn" data-stat="ja">Zustimmen</button></p>
     </div>
     <script is:inline>
-      // Besucherzählung nur nach Einwilligung (§ 25 Abs. 1 TDDDG). Gespeichert wird nur die Entscheidung selbst.
+      // Zählung: ohne Einwilligung nur ein Zählbild mit der Seitenadresse (kein Zugriff auf das Endgerät),
+      // mit Einwilligung (§ 25 Abs. 1 TDDDG) das GoatCounter-Skript. Gespeichert wird nur die Entscheidung selbst.
       (() => {
-        const KEY = 'sh-statistik', ban = document.getElementById('stat-banner');
+        const KEY = 'sh-statistik-2', ban = document.getElementById('stat-banner');
+        const GC = 'https://sanitaetshaus-suche.goatcounter.com/count';
+        const pixel = () => { new Image().src = `${GC}?p=${encodeURIComponent(location.pathname)}&rnd=${Math.random().toString(36).slice(2)}`; };
         const get = () => { try { return localStorage.getItem(KEY); } catch { return null; } };
-        const load = () => { const s = document.createElement('script'); s.async = true; s.src = 'https://gc.zgo.at/count.js'; s.dataset.goatcounter = 'https://sanitaetshaus-suche.goatcounter.com/count'; document.head.appendChild(s); };
-        const set = (v) => { try { localStorage.setItem(KEY, v); } catch {} ban.hidden = true; if (v === 'ja' && !window.goatcounter) load(); if (v === 'nein' && window.goatcounter) location.reload(); };
+        const load = () => { const s = document.createElement('script'); s.async = true; s.src = 'https://gc.zgo.at/count.js'; s.dataset.goatcounter = GC; document.head.appendChild(s); };
+        const set = (v) => { try { localStorage.setItem(KEY, v); } catch {} ban.hidden = true; if (v === 'nein' && window.goatcounter) location.reload(); };
         ban.addEventListener('click', (e) => { const b = e.target.closest('[data-stat]'); if (b) set(b.dataset.stat); });
         document.getElementById('stat-settings').addEventListener('click', (e) => { e.preventDefault(); ban.hidden = false; });
         const v = get();
-        if (v === 'ja') load(); else if (v !== 'nein') ban.hidden = false;
+        // Der Aufruf dieser Seite wird genau einmal gezählt: mit Einwilligung über das Skript, sonst über das Zählbild
+        if (v === 'ja') load(); else pixel();
+        if (v !== 'ja' && v !== 'nein') ban.hidden = false;
       })();
     </script>
   </body>
