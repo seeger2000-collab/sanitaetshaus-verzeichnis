@@ -28,8 +28,6 @@ if (crumbs.length) ld.push({
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:locale" content="de_DE" />
-    {/* Besucherzählung ohne Cookies (GoatCounter), siehe Datenschutz */}
-    <script is:inline data-goatcounter="https://sanitaetshaus-suche.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -65,9 +63,26 @@ if (crumbs.length) ld.push({
       <div class="wrap">
         <p>Daten: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (ODbL), Stand {fmtDate(meta.osmFetchedAt)}. Leistungen automatisch von den Websites der Häuser ausgelesen, ohne Gewähr.</p>
         {(AFFILIATE.amazonTag || AFFILIATE.pflegeboxUrl || AFFILIATE.sanishopUrl || AFFILIATE.hausnotrufUrl) && <p>Mit „Werbung“ gekennzeichnete Links sind Partnerlinks. Kaufen Sie darüber, erhalten wir eine Provision, für Sie ändert sich der Preis nicht.{AFFILIATE.amazonTag && ' Als Amazon-Partner verdienen wir an qualifizierten Verkäufen.'}</p>}
-        <p><a href={u('/ueber/')}>So entstehen die Daten</a> · <a href={u('/bundesland/')}>Bundesländer</a> · <a href={u('/eintrag/')}>Eintrag ergänzen oder melden</a> · <a href={u('/fuer-sanitaetshaeuser/')}>Für Betriebe</a> · <a href={u('/impressum/')}>Impressum</a> · <a href={u('/datenschutz/')}>Datenschutz</a></p>
+        <p><a href={u('/ueber/')}>So entstehen die Daten</a> · <a href={u('/bundesland/')}>Bundesländer</a> · <a href={u('/eintrag/')}>Eintrag ergänzen oder melden</a> · <a href={u('/fuer-sanitaetshaeuser/')}>Für Betriebe</a> · <a href={u('/impressum/')}>Impressum</a> · <a href={u('/datenschutz/')}>Datenschutz</a> · <a href="#statistik" id="stat-settings">Statistik-Einstellungen</a></p>
       </div>
     </footer>
+    <div id="stat-banner" class="stat-banner" role="dialog" aria-labelledby="stat-h" hidden>
+      <p id="stat-h"><strong>Dürfen wir Besuche zählen?</strong> Mit Ihrer Zustimmung zählen wir anonym, welche Seiten aufgerufen werden (GoatCounter, ohne Cookies). Das hilft uns, die Seite zu verbessern. <a href={u('/datenschutz/')}>Mehr dazu</a></p>
+      <p class="stat-btns"><button type="button" class="btn" data-stat="nein">Ablehnen</button> <button type="button" class="btn" data-stat="ja">Zustimmen</button></p>
+    </div>
+    <script is:inline>
+      // Besucherzählung nur nach Einwilligung (§ 25 Abs. 1 TDDDG). Gespeichert wird nur die Entscheidung selbst.
+      (() => {
+        const KEY = 'sh-statistik', ban = document.getElementById('stat-banner');
+        const get = () => { try { return localStorage.getItem(KEY); } catch { return null; } };
+        const load = () => { const s = document.createElement('script'); s.async = true; s.src = 'https://gc.zgo.at/count.js'; s.dataset.goatcounter = 'https://sanitaetshaus-suche.goatcounter.com/count'; document.head.appendChild(s); };
+        const set = (v) => { try { localStorage.setItem(KEY, v); } catch {} ban.hidden = true; if (v === 'ja' && !window.goatcounter) load(); if (v === 'nein' && window.goatcounter) location.reload(); };
+        ban.addEventListener('click', (e) => { const b = e.target.closest('[data-stat]'); if (b) set(b.dataset.stat); });
+        document.getElementById('stat-settings').addEventListener('click', (e) => { e.preventDefault(); ban.hidden = false; });
+        const v = get();
+        if (v === 'ja') load(); else if (v !== 'nein') ban.hidden = false;
+      })();
+    </script>
   </body>
 </html>
 <style is:global>
@@ -98,6 +113,11 @@ if (crumbs.length) ld.push({
   .crumbs a { color: var(--muted); }
   .site-footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85rem; padding: 18px 0 32px; }
   .site-footer a { color: var(--muted); }
+  .stat-banner { position: fixed; z-index: 2000; left: 12px; right: 12px; bottom: 12px; max-width: 640px; margin: 0 auto; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 8px 28px rgba(0,0,0,.18); padding: 14px 16px; font-size: .92rem; }
+  .stat-banner[hidden] { display: none; }
+  .stat-banner p { margin: 0 0 10px; }
+  .stat-btns { display: flex; gap: 10px; margin: 0 !important; }
+  .stat-btns .btn { flex: 1; border: 0; cursor: pointer; font-size: 1rem; }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; padding: 0; list-style: none; }
   .grid a.tile { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; text-decoration: none; color: var(--text); }
   .grid a.tile:hover { border-color: var(--brand); }
