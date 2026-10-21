@@ -61,10 +61,12 @@ for (const s of osm.shops) {
   if (t['disused:shop'] || t['disused:amenity'] || t.opening_hours === 'closed') continue;
   const cityArea = s.admin['8'] || s.admin['6'] || s.admin['4'];
   const e = enrichment[s.id];
-  // overrides: Korrekturen je OSM-ID, z. B. { "node/123": { "phone": "…", "featured": true, "featuredUntil": "2027-10-31" } }. Top-Einträge enden automatisch nach featuredUntil.
+  // overrides: Korrekturen je OSM-ID, z. B. { "node/123": { "phone": "…", "street": "…", "postcode": "…", "featuresByCat": { "fahrt": ["begleitfahrt"] }, "featured": true, "featuredUntil": "2027-10-31" } }. Top-Einträge enden automatisch nach featuredUntil.
   const o = { ...(overrides[s.id] || {}) };
   if (o.featuredUntil && o.featuredUntil < new Date().toISOString().slice(0, 10)) o.featured = false;
-  const features = e?.status === 'ok' ? e.features : [];
+  // featuresByCat: Leistungen, die uns gemeldet wurden, aber nicht auf der Website stehen, z. B. { "fahrt": ["begleitfahrt"] }
+  const features = [...new Set([...(e?.status === 'ok' ? e.features : []), ...(o.featuresByCat?.[cat.key] || [])])];
+  delete o.featuresByCat; delete o._quelle;
   const ev = [].concat(cat.needsEvidence || []);
   if (ev.length && !ev.some((k) => features.includes(k)) && !cat.nameEvidence.test(t.name)) continue;
   if (ev.length && !ev.some((k) => features.includes(k))) features.unshift(ev[0]);

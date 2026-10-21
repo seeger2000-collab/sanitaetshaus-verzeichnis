@@ -1,1 +1,17 @@
-{}
+{
+ "node/2124797291": {
+  "_quelle": "Meldung JS 2026-10-21 (Fahrdienst), Adresse und Telefon von nbh-eichenau.de/index.php/kontakt",
+  "street": "Fasanstraße 32",
+  "postcode": "82223",
+  "phone": "+49 8141 36910",
+  "website": "https://nbh-eichenau.de/",
+  "featuresByCat": {
+   "fahrt": [
+    "begleitfahrt"
+   ],
+   "pflege": [
+    "alltag"
+   ]
+  }
+ }
+}
