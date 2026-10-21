@@ -65,8 +65,9 @@ for (const s of osm.shops) {
   const o = { ...(overrides[s.id] || {}) };
   if (o.featuredUntil && o.featuredUntil < new Date().toISOString().slice(0, 10)) o.featured = false;
   const features = e?.status === 'ok' ? e.features : [];
-  if (cat.needsEvidence && !features.includes(cat.needsEvidence) && !cat.nameEvidence.test(t.name)) continue;
-  if (cat.needsEvidence && !features.includes(cat.needsEvidence)) features.unshift(cat.needsEvidence);
+  const ev = [].concat(cat.needsEvidence || []);
+  if (ev.length && !ev.some((k) => features.includes(k)) && !cat.nameEvidence.test(t.name)) continue;
+  if (ev.length && !ev.some((k) => features.includes(k))) features.unshift(ev[0]);
   all.push({
     cat: cat.key,
     id: s.id,

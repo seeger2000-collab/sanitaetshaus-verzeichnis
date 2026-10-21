@@ -1,6 +1,6 @@
 // Kategorien des Verzeichnisses. filter = SPARQL-Bedingung auf ?osm (OpenStreetMap über QLever).
 // detailPages: eigene Seite pro Eintrag (nur Sanitätshäuser, sonst würden es zu viele dünne Seiten).
-// needsEvidence: Eintrag erscheint nur, wenn Name oder Website die Kernleistung belegt (z. B. Taxi mit Krankenfahrten).
+// needsEvidence: Eintrag erscheint nur, wenn Name oder Website die Kernleistung belegt (eines der Merkmale) (z. B. Taxi mit Krankenfahrten).
 const NAME = (re) => `?osm osmkey:name ?nm . FILTER(REGEX(LCASE(?nm), "${re}"))`;
 
 export const CATEGORIES = [
@@ -19,9 +19,14 @@ export const CATEGORIES = [
   },
   {
     key: 'pflege', slug: 'pflegedienst', label: 'Ambulante Pflegedienste', one: 'Pflegedienst', many: 'ambulante Pflegedienste', color: '#a0522d',
-    filter: `{ ?osm osmkey:office "nursing_service" } UNION { ?osm osmkey:healthcare ?hc . FILTER(?hc IN ("nursing","home_care")) } UNION { ${NAME('pflegedienst|ambulante pflege|häusliche (kranken)?pflege|sozialstation|diakoniestation|hauskrankenpflege|ambulanter dienst')} }
-      FILTER NOT EXISTS { ?osm osmkey:amenity ?am . FILTER(?am IN ("nursing_home","hospital","school","social_facility","pharmacy")) }
-      FILTER NOT EXISTS { ?osm osmkey:social_facility "nursing_home" }`,
+    // Auch Nachbarschaftshilfen und Seniorendienste: entlasten im Alltag, oft mit Fahr- und Begleitdienst (JS 2026-10-21)
+    filter: `{ ?osm osmkey:office "nursing_service" } UNION { ?osm osmkey:healthcare ?hc . FILTER(?hc IN ("nursing","home_care")) }
+      UNION { ?osm osmkey:social_facility ?sf . FILTER(CONTAINS(?sf, "ambulatory_care")) }
+      UNION { ?osm osmkey:social_facility "outreach" . ?osm osmkey:social_facility:for ?for . FILTER(CONTAINS(?for, "senior")) }
+      UNION { ${NAME('pflegedienst|ambulante pflege|häusliche (kranken)?pflege|sozialstation|diakoniestation|hauskrankenpflege|ambulanter dienst|nachbarschaftshilfe|seniorendienst|seniorenhilfe')} }
+      FILTER NOT EXISTS { ?osm osmkey:amenity ?am . FILTER(?am IN ("nursing_home","hospital","school","pharmacy","kindergarten","childcare","place_of_worship","parking")) }
+      FILTER NOT EXISTS { ?osm osmkey:social_facility ?nsf . FILTER(?nsf IN ("nursing_home","group_home","assisted_living","shelter","day_care")) }
+      FILTER NOT EXISTS { ?osm osmkey:social_facility:for ?nfor . FILTER(REGEX(?nfor, "juvenile|mental_health|homeless|addict|refugee|migrant|abused|drug")) }`,
   },
   {
     key: 'heim', slug: 'pflegeheim', label: 'Pflegeheime', one: 'Pflegeheim', many: 'Pflegeheime', color: '#c2185b',
@@ -32,8 +37,9 @@ export const CATEGORIES = [
     filter: `?osm osmkey:amenity "pharmacy" . FILTER NOT EXISTS { ?osm osmkey:dispensing "no" }`,
   },
   {
-    key: 'fahrt', slug: 'krankenfahrten', label: 'Krankenfahrten', one: 'Fahrdienst', many: 'Fahrdienste mit Krankenfahrten', color: '#7b3fa0', needsEvidence: 'krankenfahrt',
-    filter: `{ ?osm osmkey:amenity "taxi" } UNION { ?osm osmkey:office "taxi" } UNION { ${NAME('krankenfahrt|krankentransport|fahrdienst|rollstuhltaxi|rollstuhlbeförderung|behindertenfahrdienst|patientenfahrt|dialysefahrt')} FILTER NOT EXISTS { ?osm osmkey:emergency ?em } }`,
+    key: 'fahrt', slug: 'krankenfahrten', label: 'Krankenfahrten', one: 'Fahrdienst', many: 'Fahrdienste mit Krankenfahrten', color: '#7b3fa0', needsEvidence: ['krankenfahrt', 'begleitfahrt'],
+    // Nachbarschaftshilfen nur, wenn ihre Website einen Fahrdienst nennt (needsEvidence)
+    filter: `{ ?osm osmkey:amenity "taxi" } UNION { ?osm osmkey:office "taxi" } UNION { ${NAME('nachbarschaftshilfe|seniorendienst|seniorenhilfe')} } UNION { ${NAME('krankenfahrt|krankentransport|fahrdienst|rollstuhltaxi|rollstuhlbeförderung|behindertenfahrdienst|patientenfahrt|dialysefahrt')} FILTER NOT EXISTS { ?osm osmkey:emergency ?em } }`,
     nameEvidence: /krankenfahrt|krankentransport|fahrdienst|rollstuhltaxi|rollstuhlbeförderung|behindertenfahrdienst|patientenfahrt|dialysefahrt/i,
   },
 ];

@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-10-19T05:58:12.730Z",
+ "fetchedAt": "2026-10-21T06:20:31.996Z",
  "source": "OpenStreetMap via QLever",
  "shops": [
   {
@@ -1998,6 +1998,47 @@
    }
   },
   {
+   "id": "node/10314964396",
+   "tags": {
+    "addr:city": "Großkarolinenfeld",
+    "addr:country": "DE",
+    "addr:housenumber": "11",
+    "addr:postcode": "83109",
+    "addr:street": "Bahnhofstraße",
+    "amenity": "social_facility",
+    "email": "info@nbh-karo.de",
+    "name": "Nachbarschaftshilfe Großkarolinenfeld e.V.",
+    "operator:type": "community",
+    "operator": "Ökumenische Nachbarschaftshilfe Großkarolinenfeld e. V.",
+    "phone": "+49 8031 59511",
+    "social_facility:for": "senior;family.",
+    "social_facility": "ambulatory_care",
+    "website": "https://www.nbh-grosskarolinenfeld.de/leistungen"
+   },
+   "location": {
+    "lat": 47.890093,
+    "lon": 12.082737
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/2156362",
+     "name": "Landkreis Rosenheim"
+    },
+    "8": {
+     "id": "relation/2186924",
+     "name": "Großkarolinenfeld"
+    }
+   }
+  },
+  {
    "id": "node/1033602287",
    "tags": {
     "amenity": "taxi",
@@ -2739,6 +2780,47 @@
    }
   },
   {
+   "id": "node/10709852909",
+   "tags": {
+    "addr:housenumber": "66",
+    "addr:street": "Schillerstraße",
+    "amenity": "social_facility",
+    "check_date": "2025-04-29",
+    "email": "info@seniorendienst-hohenlohe.de",
+    "fax": "+49 7941 2078 363",
+    "name": "Seniorendienst Hohenlohe",
+    "phone": "+49 7941 2078 362",
+    "social_facility": "ambulatory_care",
+    "website": "https://www.seniorendienst-hohenlohe.de/"
+   },
+   "location": {
+    "lat": 49.20212,
+    "lon": 9.504542
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62611",
+     "name": "Baden-Württemberg"
+    },
+    "5": {
+     "id": "relation/22041",
+     "name": "Regierungsbezirk Stuttgart"
+    },
+    "6": {
+     "id": "relation/62394",
+     "name": "Hohenlohekreis"
+    },
+    "7": {
+     "id": "relation/2964738",
+     "name": "VVG der Stadt Öhringen"
+    },
+    "8": {
+     "id": "relation/377452",
+     "name": "Öhringen"
+    }
+   }
+  },
+  {
    "id": "node/10710095195",
    "tags": {
     "amenity": "taxi"
@@ -2955,6 +3037,41 @@
     "8": {
      "id": "relation/1187159",
      "name": "Saarbrücken"
+    }
+   }
+  },
+  {
+   "id": "node/10782088792",
+   "tags": {
+    "addr:city": "Herne",
+    "addr:country": "DE",
+    "addr:housenumber": "240",
+    "addr:postcode": "44627",
+    "addr:street": "Mont-Cenis-Straße",
+    "amenity": "social_facility",
+    "check_date": "2026-04-20",
+    "mobile": "+49 1573 0780001",
+    "name": "MBH Melzer Seniorenhilfe",
+    "opening_hours": "Mo-Tu 09:00-13:00",
+    "phone": "+49 2323 8992747",
+    "social_facility": "ambulatory_care"
+   },
+   "location": {
+    "lat": 51.538084,
+    "lon": 7.251937
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/73340",
+     "name": "Regierungsbezirk Arnsberg"
+    },
+    "6": {
+     "id": "relation/62396",
+     "name": "Herne"
     }
    }
   },
@@ -3841,6 +3958,39 @@
    }
   },
   {
+   "id": "node/10961947562",
+   "tags": {
+    "amenity": "social_facility",
+    "contact:phone": "+49 2336 5819",
+    "contact:website": "https://www.seniorendienst-benning.de/",
+    "name": "Seniorendienst Benning",
+    "social_facility:for": "senior",
+    "social_facility": "ambulatory_care"
+   },
+   "location": {
+    "lat": 51.28659,
+    "lon": 7.294068
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/73340",
+     "name": "Regierungsbezirk Arnsberg"
+    },
+    "6": {
+     "id": "relation/1829066",
+     "name": "Ennepe-Ruhr-Kreis"
+    },
+    "8": {
+     "id": "relation/162833",
+     "name": "Schwelm"
+    }
+   }
+  },
+  {
    "id": "node/1096688934",
    "tags": {
     "amenity": "taxi",
@@ -4341,6 +4491,31 @@
    }
   },
   {
+   "id": "node/11066759717",
+   "tags": {
+    "amenity": "social_facility",
+    "name": "Ökumenische Nachbarschaftshilfe Schifferstadt"
+   },
+   "location": {
+    "lat": 49.387468,
+    "lon": 8.373005
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62341",
+     "name": "Rheinland-Pfalz"
+    },
+    "6": {
+     "id": "relation/62610",
+     "name": "Rhein-Pfalz-Kreis"
+    },
+    "8": {
+     "id": "relation/418400",
+     "name": "Schifferstadt"
+    }
+   }
+  },
+  {
    "id": "node/1107462189",
    "tags": {
     "amenity": "taxi",
@@ -4609,6 +4784,44 @@
     "8": {
      "id": "relation/88725",
      "name": "Kempen"
+    }
+   }
+  },
+  {
+   "id": "node/11105236803",
+   "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Westlicher Stadtgraben",
+    "amenity": "social_facility",
+    "contact:email": "niederbayern@seniorenhilfe-lichtblick.de",
+    "contact:phone": "+49991 38 31 67 62",
+    "contact:website": "https://seniorenhilfe-lichtblick.de/buero-deggendorf/",
+    "name": "LichtBlick Seniorenhilfe e.v.",
+    "office": "association",
+    "opening_hours": "Mo-Th 09:00-12:00",
+    "social_facility:for": "senior",
+    "social_facility": "outreach"
+   },
+   "location": {
+    "lat": 48.834782,
+    "lon": 12.960438
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/17593",
+     "name": "Niederbayern"
+    },
+    "6": {
+     "id": "relation/62711",
+     "name": "Landkreis Deggendorf"
+    },
+    "8": {
+     "id": "relation/959809",
+     "name": "Deggendorf"
     }
    }
   },
@@ -7930,6 +8143,35 @@
    }
   },
   {
+   "id": "node/11581833167",
+   "tags": {
+    "addr:city": "Leipzig",
+    "addr:housenumber": "22",
+    "addr:postcode": "04103",
+    "addr:street": "Querstraße",
+    "check_date": "2024-02-03",
+    "name": "BGL Nachbarschaftshilfeverein e.V.",
+    "office": "ngo",
+    "opening_hours": "Mo,We 09:00-16:00; Tu,Th 09:00-18:00; Fr 09:00-11:00",
+    "phone": "+49 341 9099170",
+    "website": "https://www.bgl-nhv.de"
+   },
+   "location": {
+    "lat": 51.341651,
+    "lon": 12.385372
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62467",
+     "name": "Sachsen"
+    },
+    "6": {
+     "id": "relation/62649",
+     "name": "Leipzig"
+    }
+   }
+  },
+  {
    "id": "node/1159839540",
    "tags": {
     "amenity": "taxi",
@@ -8541,6 +8783,48 @@
    }
   },
   {
+   "id": "node/11767848597",
+   "tags": {
+    "access": "customers",
+    "addr:city": "Lüdenscheid",
+    "addr:country": "DE",
+    "addr:housenumber": "144",
+    "addr:postcode": "58511",
+    "addr:street": "Werdohler Straße",
+    "contact:email": "info@seniorenhilfe-sauerland.de",
+    "contact:fax": "+49 2351 9743239",
+    "contact:phone": "+49 2351 9743246",
+    "entrance": "secondary",
+    "name": "Seniorenhilfe Sauerland – Hom & Hom GbR",
+    "office": "company",
+    "opening_hours": "Mo-Su 08:00-20:00",
+    "operator": "Michael Hom",
+    "source:addr": "ALKIS / NRW"
+   },
+   "location": {
+    "lat": 51.225504,
+    "lon": 7.64162
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/73340",
+     "name": "Regierungsbezirk Arnsberg"
+    },
+    "6": {
+     "id": "relation/1831015",
+     "name": "Märkischer Kreis"
+    },
+    "8": {
+     "id": "relation/168563",
+     "name": "Lüdenscheid"
+    }
+   }
+  },
+  {
    "id": "node/11772240009",
    "tags": {
     "addr:city": "Lünen",
@@ -8895,6 +9179,40 @@
     "6": {
      "id": "relation/62428",
      "name": "München"
+    }
+   }
+  },
+  {
+   "id": "node/11887222377",
+   "tags": {
+    "addr:housenumber": "13",
+    "addr:street": "Hochstraße",
+    "amenity": "social_facility",
+    "brand:wikidata": "Q694104",
+    "brand": "Deutsches Rotes Kreuz",
+    "check_date": "2024.09.24",
+    "email": "nachbarschaftshilfe@drkbssz.de",
+    "name": "Nachbarschaftshilfe \"Am Wasserturm\"",
+    "opening_hours": "Mo 14:00-16:00; We 09:00-12:00",
+    "operator": "DRK Kreisverband Braunschweig-Salzgitter e.V.",
+    "phone": "+49 531 80110711",
+    "social_facility:for": "senior",
+    "social_facility": "outreach",
+    "website": "https://www.drk-kv-bs-sz.de/nbh",
+    "wheelchair": "yes"
+   },
+   "location": {
+    "lat": 52.264597,
+    "lon": 10.537173
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62771",
+     "name": "Niedersachsen"
+    },
+    "6": {
+     "id": "relation/62531",
+     "name": "Braunschweig"
     }
    }
   },
@@ -9676,6 +9994,45 @@
    }
   },
   {
+   "id": "node/12069919079",
+   "tags": {
+    "addr:city": "Wipperfürth",
+    "addr:housenumber": "17",
+    "addr:postcode": "51688",
+    "addr:street": "Marktstraße",
+    "amenity": "social_facility",
+    "name": "360 Grad Seniorenhilfe",
+    "note": "öffnet August 2024",
+    "operator:type": "business",
+    "operator": "Adamski Betreuungs- & Service GmbH",
+    "social_facility:for": "senior",
+    "social_facility": "office",
+    "website": "https://leben360.com/"
+   },
+   "location": {
+    "lat": 51.116775,
+    "lon": 7.396522
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/72022",
+     "name": "Regierungsbezirk Köln"
+    },
+    "6": {
+     "id": "relation/62373",
+     "name": "Oberbergischer Kreis"
+    },
+    "8": {
+     "id": "relation/173849",
+     "name": "Wipperfürth"
+    }
+   }
+  },
+  {
    "id": "node/1206997906",
    "tags": {
     "amenity": "taxi",
@@ -10448,6 +10805,33 @@
     "6": {
      "id": "relation/62478",
      "name": "Wuppertal"
+    }
+   }
+  },
+  {
+   "id": "node/12214151157",
+   "tags": {
+    "amenity": "social_facility",
+    "name": "Arnumer Seniorenhilfe im Alltag",
+    "phone": "+49 511 94050770",
+    "social_facility": "ambulatory_care"
+   },
+   "location": {
+    "lat": 52.328589,
+    "lon": 9.720415
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62771",
+     "name": "Niedersachsen"
+    },
+    "6": {
+     "id": "relation/62764",
+     "name": "Region Hannover"
+    },
+    "8": {
+     "id": "relation/2012732",
+     "name": "Hemmingen"
     }
    }
   },
@@ -12317,6 +12701,41 @@
    }
   },
   {
+   "id": "node/12615575668",
+   "tags": {
+    "addr:city": "Karlsruhe",
+    "addr:country": "DE",
+    "addr:housenumber": "8",
+    "addr:postcode": "76185",
+    "addr:street": "Philippstraße",
+    "amenity": "social_facility",
+    "mobile": "+49 176 7176 9187",
+    "name": "Nachbarschaftshilfe Sonnenblume e.V.",
+    "opening_hours": "Mo,We 10:00-12:00; Tu,Th 13:00-15:00",
+    "phone": "+49 721 6099 5064",
+    "social_facility": "outreach",
+    "website": "https://nachbarschaftshilfe-sonnenblume.de"
+   },
+   "location": {
+    "lat": 49.012054,
+    "lon": 8.365292
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62611",
+     "name": "Baden-Württemberg"
+    },
+    "5": {
+     "id": "relation/22027",
+     "name": "Regierungsbezirk Karlsruhe"
+    },
+    "6": {
+     "id": "relation/62518",
+     "name": "Karlsruhe"
+    }
+   }
+  },
+  {
    "id": "node/12615645692",
    "tags": {
     "addr:city": "Wegberg",
@@ -12572,6 +12991,37 @@
     "8": {
      "id": "relation/415413",
      "name": "Döbeln"
+    }
+   }
+  },
+  {
+   "id": "node/12734625281",
+   "tags": {
+    "amenity": "community_centre",
+    "community_centre:for": "neighbourhood",
+    "name": "Nachbarschaftshilfe Bad Nauheim",
+    "website": "https://www.nachbarschaftshilfe-bad-nauheim.de"
+   },
+   "location": {
+    "lat": 50.364178,
+    "lon": 8.740584
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62650",
+     "name": "Hessen"
+    },
+    "5": {
+     "id": "relation/286590",
+     "name": "Regierungsbezirk Darmstadt"
+    },
+    "6": {
+     "id": "relation/62519",
+     "name": "Wetteraukreis"
+    },
+    "8": {
+     "id": "relation/167408",
+     "name": "Bad Nauheim"
     }
    }
   },
@@ -13165,6 +13615,40 @@
    }
   },
   {
+   "id": "node/12837279925",
+   "tags": {
+    "addr:city": "Garching bei München",
+    "addr:housenumber": "5",
+    "addr:postcode": "85748",
+    "addr:street": "Telschowstraße",
+    "club": "yes",
+    "name": "Nachbarschaftshilfe Garching e.V.",
+    "website": "https://nbh-garching.de/"
+   },
+   "location": {
+    "lat": 48.25064,
+    "lon": 11.649381
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62580",
+     "name": "Landkreis München"
+    },
+    "8": {
+     "id": "relation/30971",
+     "name": "Garching bei München"
+    }
+   }
+  },
+  {
    "id": "node/12839224180",
    "tags": {
     "amenity": "taxi",
@@ -13691,6 +14175,41 @@
     "8": {
      "id": "relation/1284750",
      "name": "Stendal"
+    }
+   }
+  },
+  {
+   "id": "node/12877729841",
+   "tags": {
+    "amenity": "kindergarten",
+    "check_date": "2025-10-17",
+    "education": "kindergarten",
+    "email": "buero@nbh-ush.de",
+    "name": "Familienzentrum der Nachbarschaftshilfe Unterschleißheim e.V.",
+    "operator": "Der Paritätische Bayern",
+    "phone": "+49 89 3707356",
+    "website": "https://www.nbh-ush.de"
+   },
+   "location": {
+    "lat": 48.284562,
+    "lon": 11.577038
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62580",
+     "name": "Landkreis München"
+    },
+    "8": {
+     "id": "relation/334267",
+     "name": "Unterschleißheim"
     }
    }
   },
@@ -20429,6 +20948,43 @@
    }
   },
   {
+   "id": "node/13227735243",
+   "tags": {
+    "access": "yes",
+    "addr:city": "Meckenheim",
+    "addr:country": "DE",
+    "addr:housenumber": "17",
+    "addr:postcode": "53340",
+    "addr:street": "Schützenstraße",
+    "club": "social",
+    "layer": "-1",
+    "name": "Kaleidoskop - Verein für Nachbarschaftshilfe e.V.",
+    "wheelchair": "no"
+   },
+   "location": {
+    "lat": 50.621031,
+    "lon": 7.025202
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/72022",
+     "name": "Regierungsbezirk Köln"
+    },
+    "6": {
+     "id": "relation/62544",
+     "name": "Rhein-Sieg-Kreis"
+    },
+    "8": {
+     "id": "relation/173124",
+     "name": "Meckenheim"
+    }
+   }
+  },
+  {
    "id": "node/1322808765",
    "tags": {
     "amenity": "taxi",
@@ -20453,6 +21009,36 @@
     "6": {
      "id": "relation/62539",
      "name": "Düsseldorf"
+    }
+   }
+  },
+  {
+   "id": "node/13228113069",
+   "tags": {
+    "addr:city": "Bochum",
+    "addr:country": "DE",
+    "addr:housenumber": "27",
+    "addr:postcode": "44803",
+    "addr:street": "Alte Wittener Straße",
+    "name": "Elas Seniorendienst",
+    "office": "company"
+   },
+   "location": {
+    "lat": 51.46974,
+    "lon": 7.26947
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/73340",
+     "name": "Regierungsbezirk Arnsberg"
+    },
+    "6": {
+     "id": "relation/62644",
+     "name": "Bochum"
     }
    }
   },
@@ -21661,6 +22247,43 @@
    }
   },
   {
+   "id": "node/13325910676",
+   "tags": {
+    "addr:city": "Haldensleben",
+    "addr:housenumber": "7",
+    "addr:postcode": "39340",
+    "addr:street": "Klinggraben",
+    "amenity": "social_facility",
+    "mobile": "+49 1711 142857",
+    "name": "Seniorenhilfe Sonnenschein",
+    "opening_hours": "Mo-Fr 08:00-15:30",
+    "operator:type": "private",
+    "operator": "Manuela Stepke",
+    "phone": "+49 3904 7241750",
+    "social_facility:for": "senior",
+    "social_facility": "ambulatory_care",
+    "website": "https://www.seniorenhilfe-sonnenschein.de/"
+   },
+   "location": {
+    "lat": 52.284993,
+    "lon": 11.402523
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62607",
+     "name": "Sachsen-Anhalt"
+    },
+    "6": {
+     "id": "relation/62359",
+     "name": "Börde"
+    },
+    "8": {
+     "id": "relation/1286638",
+     "name": "Haldensleben"
+    }
+   }
+  },
+  {
    "id": "node/1332658410",
    "tags": {
     "amenity": "taxi",
@@ -22155,6 +22778,40 @@
    }
   },
   {
+   "id": "node/13432589158",
+   "tags": {
+    "addr:city": "München",
+    "addr:country": "DE",
+    "addr:housenumber": "2",
+    "addr:postcode": "81541",
+    "addr:street": "Gebsattelstraße",
+    "contact:email": "kontakt@nachbarschaftshilfe-au.de",
+    "contact:phone": "+49 89 550 628 71",
+    "contact:website": "https://www.nachbarschaftstreff-au.de/",
+    "description": "Geschäftsstelle",
+    "name": "Nachbarschaftshilfe in der Au e.V.",
+    "office": "association"
+   },
+   "location": {
+    "lat": 48.125577,
+    "lon": 11.586496
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62428",
+     "name": "München"
+    }
+   }
+  },
+  {
    "id": "node/1344352048",
    "tags": {
     "amenity": "taxi",
@@ -22331,6 +22988,40 @@
     "8": {
      "id": "relation/1392806",
      "name": "Gifhorn"
+    }
+   }
+  },
+  {
+   "id": "node/13477376590",
+   "tags": {
+    "addr:housenumber": "5",
+    "addr:street": "Tölzer Straße",
+    "amenity": "kindergarten",
+    "check_date": "2026-01-22",
+    "education": "kindergarten",
+    "name": "Nachbarschaftshilfe Taufkirchen e.V. Kinderbetreuung",
+    "opening_hours:signed": "no"
+   },
+   "location": {
+    "lat": 48.043284,
+    "lon": 11.619054
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62580",
+     "name": "Landkreis München"
+    },
+    "8": {
+     "id": "relation/536184",
+     "name": "Taufkirchen"
     }
    }
   },
@@ -23860,6 +24551,28 @@
    }
   },
   {
+   "id": "node/13808424152",
+   "tags": {
+    "amenity": "community_centre",
+    "name": "NachbarschaftsHilfe Heidberg | Melverode | Stöckheim | Leiferde | e.V.",
+    "opening_hours": "Tu,Fr 09:00-12:00; We 14:00-16:00"
+   },
+   "location": {
+    "lat": 52.230477,
+    "lon": 10.535731
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62771",
+     "name": "Niedersachsen"
+    },
+    "6": {
+     "id": "relation/62531",
+     "name": "Braunschweig"
+    }
+   }
+  },
+  {
    "id": "node/13809675910",
    "tags": {
     "addr:city": "Aachen",
@@ -24526,6 +25239,39 @@
    }
   },
   {
+   "id": "node/13995519063",
+   "tags": {
+    "addr:city": "Dresden",
+    "addr:housenumber": "45",
+    "addr:postcode": "01169",
+    "addr:street": "Leutewitzer Ring",
+    "contact:email": "manja.schubert@nhv-dresden.de",
+    "contact:mobile": "+49 172 1400443",
+    "contact:phone": "+49 351 4178996",
+    "contact:website": "https://nhv-dresden.de/",
+    "drinking_water:refill:network": "Refill Deutschland",
+    "drinking_water:refill": "yes",
+    "name": "Nachbarschaftshilfeverein e.V.",
+    "office": "association",
+    "opening_hours": "Mo-Th 09:00-12:00,14:00-17:00; Fr 09:00-12:00",
+    "short_name": "NHV e.V."
+   },
+   "location": {
+    "lat": 51.045041,
+    "lon": 13.671995
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62467",
+     "name": "Sachsen"
+    },
+    "6": {
+     "id": "relation/191645",
+     "name": "Dresden"
+    }
+   }
+  },
+  {
    "id": "node/14000008809",
    "tags": {
     "access": "yes",
@@ -24599,6 +25345,32 @@
     "8": {
      "id": "relation/1303791",
      "name": "Elsterwerda"
+    }
+   }
+  },
+  {
+   "id": "node/14014615299",
+   "tags": {
+    "amenity": "social_facility",
+    "check_date": "2026-07-14",
+    "name": "Kölsch Hätz - Nachbarschaftshilfe"
+   },
+   "location": {
+    "lat": 50.983028,
+    "lon": 6.945907
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/72022",
+     "name": "Regierungsbezirk Köln"
+    },
+    "6": {
+     "id": "relation/62578",
+     "name": "Köln"
     }
    }
   },
@@ -26239,6 +27011,36 @@
     "8": {
      "id": "relation/537050",
      "name": "Lampertheim"
+    }
+   }
+  },
+  {
+   "id": "node/1455869546",
+   "tags": {
+    "amenity": "nursing_home",
+    "name": "Nachbarschaftshilfe Inning e.V.",
+    "operator": "Nachbarschaftshilfe Inning e.V."
+   },
+   "location": {
+    "lat": 48.073453,
+    "lon": 11.152746
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62458",
+     "name": "Landkreis Starnberg"
+    },
+    "8": {
+     "id": "relation/932279",
+     "name": "Inning am Ammersee"
     }
    }
   },
@@ -28795,6 +29597,41 @@
    }
   },
   {
+   "id": "node/1634662317",
+   "tags": {
+    "addr:city": "Holzminden",
+    "addr:country": "DE",
+    "addr:housenumber": "2",
+    "addr:postcode": "37603",
+    "addr:street": "Wilhelmstraße",
+    "amenity": "community_centre",
+    "email": "k-c.e.weserblume@gmx.de",
+    "name": "Weserblume e.V. Nachbarschaftshilfe",
+    "opening_hours": "Mo 10:00-13:00; Tu 10:00-13:00, 15:00-18:00; Th-Fr 15:00-18:00",
+    "phone:mobile": "+49 172 7062633",
+    "phone": "+49 5531 7069846",
+    "wheelchair:description": "Existiert nicht mehr!!!"
+   },
+   "location": {
+    "lat": 51.824662,
+    "lon": 9.451362
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62771",
+     "name": "Niedersachsen"
+    },
+    "6": {
+     "id": "relation/62510",
+     "name": "Landkreis Holzminden"
+    },
+    "8": {
+     "id": "relation/1184652",
+     "name": "Holzminden"
+    }
+   }
+  },
+  {
    "id": "node/1635660962",
    "tags": {
     "amenity": "taxi",
@@ -30903,6 +31740,36 @@
     "8": {
      "id": "relation/935131",
      "name": "Wolfratshausen"
+    }
+   }
+  },
+  {
+   "id": "node/1783982004",
+   "tags": {
+    "addr:city": "Braunschweig",
+    "addr:housenumber": "17a",
+    "addr:postcode": "38126",
+    "addr:street": "Welfenplatz",
+    "amenity": "community_centre",
+    "check_date:opening_hours": "2025-11-21",
+    "check_date": "2025-11-21",
+    "name": "Nachbarschaftshilfe Südost e.V.",
+    "opening_hours": "Mo-We,Fr 09:00-13:00; Th 09:00-13:00,15:00-17:00",
+    "phone": "+49 531 696949",
+    "website": "https://nachbarschaftshilfe-südost.de/"
+   },
+   "location": {
+    "lat": 52.233592,
+    "lon": 10.559422
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62771",
+     "name": "Niedersachsen"
+    },
+    "6": {
+     "id": "relation/62531",
+     "name": "Braunschweig"
     }
    }
   },
@@ -33880,6 +34747,36 @@
     "8": {
      "id": "relation/163307",
      "name": "Neuss"
+    }
+   }
+  },
+  {
+   "id": "node/2124797291",
+   "tags": {
+    "amenity": "social_centre",
+    "check_date": "2024-06-06",
+    "name": "Nachbarschaftshilfe Sozialdienst Eichenau e. V."
+   },
+   "location": {
+    "lat": 48.169044,
+    "lon": 11.322338
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62595",
+     "name": "Landkreis Fürstenfeldbruck"
+    },
+    "8": {
+     "id": "relation/933488",
+     "name": "Eichenau"
     }
    }
   },
@@ -37200,6 +38097,44 @@
    }
   },
   {
+   "id": "node/2362931147",
+   "tags": {
+    "addr:city": "Wipperfürth",
+    "addr:country": "DE",
+    "addr:housenumber": "29",
+    "addr:postcode": "51688",
+    "addr:street": "Hochstraße",
+    "amenity": "social_facility",
+    "name": "360 Grad Seniorenhilfe",
+    "note": "Hauptbüro ist in der Marktstrasse 17.",
+    "old_name": "Haarstudio Alanya",
+    "social_facility:for": "senior",
+    "social_facility": "office"
+   },
+   "location": {
+    "lat": 51.116159,
+    "lon": 7.395406
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/72022",
+     "name": "Regierungsbezirk Köln"
+    },
+    "6": {
+     "id": "relation/62373",
+     "name": "Oberbergischer Kreis"
+    },
+    "8": {
+     "id": "relation/173849",
+     "name": "Wipperfürth"
+    }
+   }
+  },
+  {
    "id": "node/2365997702",
    "tags": {
     "amenity": "taxi",
@@ -37414,6 +38349,38 @@
     "8": {
      "id": "relation/453372",
      "name": "Sinsheim"
+    }
+   }
+  },
+  {
+   "id": "node/2381782940",
+   "tags": {
+    "amenity": "social_facility",
+    "name": "Nachbarschaftshilfe Hallbergmoos/Goldach",
+    "operator": "Nachbarschaftshilfe Hallbergmoos/Goldach e.V.",
+    "social_facility": "outreach",
+    "website": "https://www.nbh-hallbergmoos.de"
+   },
+   "location": {
+    "lat": 48.310665,
+    "lon": 11.749265
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62633",
+     "name": "Landkreis Freising"
+    },
+    "8": {
+     "id": "relation/30008",
+     "name": "Hallbergmoos"
     }
    }
   },
@@ -38844,6 +39811,37 @@
     "6": {
      "id": "relation/62375",
      "name": "Stuttgart"
+    }
+   }
+  },
+  {
+   "id": "node/2450707802",
+   "tags": {
+    "check_date": "2026-01-10",
+    "name": "Engel in der Not Nachbarschaftshilfe Landshut e. V.",
+    "office": "ngo",
+    "website": "https://www.engelindernot.de/"
+   },
+   "location": {
+    "lat": 48.569704,
+    "lon": 12.170087
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/17593",
+     "name": "Niederbayern"
+    },
+    "6": {
+     "id": "relation/62657",
+     "name": "Landkreis Landshut"
+    },
+    "8": {
+     "id": "relation/179445",
+     "name": "Ergolding"
     }
    }
   },
@@ -40667,6 +41665,32 @@
    }
   },
   {
+   "id": "node/2560438413",
+   "tags": {
+    "amenity": "social_facility",
+    "contact:phone": "+49 531 340478",
+    "description": "Quartiersarbeit Östliches Ringgebiet Nord",
+    "name": "Nachbarschaftshilfe",
+    "opening_hours": "Tu,Fr 09:30-12:30; PH off",
+    "operator": "Der Paritätische",
+    "social_facility": "outreach"
+   },
+   "location": {
+    "lat": 52.269233,
+    "lon": 10.547661
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62771",
+     "name": "Niedersachsen"
+    },
+    "6": {
+     "id": "relation/62531",
+     "name": "Braunschweig"
+    }
+   }
+  },
+  {
    "id": "node/256408114",
    "tags": {
     "amenity": "taxi",
@@ -41524,6 +42548,43 @@
     "6": {
      "id": "relation/62591",
      "name": "Münster"
+    }
+   }
+  },
+  {
+   "id": "node/2625350973",
+   "tags": {
+    "addr:housenumber": "5",
+    "addr:street": "Am Mühlgraben",
+    "amenity": "social_facility",
+    "check_date": "2023-04-24",
+    "email": "NBH.ED@erding-mail.de",
+    "fax": "+49 8122 990433",
+    "name": "Nachbarschaftshilfe Erding e.V.",
+    "phone": "+49 8122 990410",
+    "social_facility": "outreach",
+    "website": "https://www.nbh-erding.de/"
+   },
+   "location": {
+    "lat": 48.307462,
+    "lon": 11.910132
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62356",
+     "name": "Landkreis Erding"
+    },
+    "8": {
+     "id": "relation/934743",
+     "name": "Erding"
     }
    }
   },
@@ -43043,6 +44104,42 @@
     "4": {
      "id": "relation/62782",
      "name": "Hamburg"
+    }
+   }
+  },
+  {
+   "id": "node/2694571364",
+   "tags": {
+    "amenity": "social_facility",
+    "brand": "Eli die Fee",
+    "contact:phone": "+49 2302 8894830",
+    "contact:website": "https://elidiefee.de/haushaltshilfe-witten",
+    "name": "Eli die Fee Seniorendienst",
+    "office": "insurance",
+    "opening_hours": "Mo-Fr 08:00-16:00",
+    "social_facility:for": "senior",
+    "social_facility": "ambulatory_care"
+   },
+   "location": {
+    "lat": 51.38606,
+    "lon": 7.388463
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/73340",
+     "name": "Regierungsbezirk Arnsberg"
+    },
+    "6": {
+     "id": "relation/1829066",
+     "name": "Ennepe-Ruhr-Kreis"
+    },
+    "8": {
+     "id": "relation/162832",
+     "name": "Wetter (Ruhr)"
     }
    }
   },
@@ -52591,6 +53688,36 @@
    }
   },
   {
+   "id": "node/3143738341",
+   "tags": {
+    "amenity": "kindergarten",
+    "check_date": "2025-05-11",
+    "name": "Nachbarschaftshilfe Haar, Kindergroßtagespflege"
+   },
+   "location": {
+    "lat": 48.109804,
+    "lon": 11.726564
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62580",
+     "name": "Landkreis München"
+    },
+    "8": {
+     "id": "relation/543186",
+     "name": "Haar"
+    }
+   }
+  },
+  {
    "id": "node/3143789392",
    "tags": {
     "amenity": "taxi"
@@ -54195,6 +55322,88 @@
    }
   },
   {
+   "id": "node/3224611724",
+   "tags": {
+    "addr:city": "Haar",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "85540",
+    "addr:street": "Kirchenstraße",
+    "amenity": "social_facility",
+    "check_date": "2025-05-11",
+    "contact:email": "info@nbh-haar.de",
+    "contact:fax": "+49 89 143 36 49-11",
+    "contact:phone": "+49 89 143 36 49-0",
+    "contact:website": "https://www.nbh-haar.de/",
+    "name": "Nachbarschaftshilfe Haar",
+    "opening_hours": "Mo-Fr 08:30-12:30; Tu,Th 14:00-16:00",
+    "social_facility": "outreach"
+   },
+   "location": {
+    "lat": 48.109644,
+    "lon": 11.725122
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62580",
+     "name": "Landkreis München"
+    },
+    "8": {
+     "id": "relation/543186",
+     "name": "Haar"
+    }
+   }
+  },
+  {
+   "id": "node/3224611725",
+   "tags": {
+    "addr:city": "Haar",
+    "addr:country": "DE",
+    "addr:housenumber": "5",
+    "addr:postcode": "85540",
+    "addr:street": "Frühlingsweg",
+    "amenity": "kindergarten",
+    "contact:email": "kinderpark@nbh-haar.de",
+    "contact:phone": "+49 89 46 20 13 14",
+    "contact:website": "https://www.nbh-haar.de/",
+    "max_age": "4",
+    "min_age": "2",
+    "name": "Kinderpark der Nachbarschaftshilfe Haar",
+    "opening_hours": "Mo-Fr 09:00-12:00; PH off",
+    "source": "Gemeinde Haar"
+   },
+   "location": {
+    "lat": 48.108694,
+    "lon": 11.731324
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62580",
+     "name": "Landkreis München"
+    },
+    "8": {
+     "id": "relation/543186",
+     "name": "Haar"
+    }
+   }
+  },
+  {
    "id": "node/3225516510",
    "tags": {
     "amenity": "taxi",
@@ -55123,6 +56332,31 @@
     "8": {
      "id": "relation/142681",
      "name": "Detmold"
+    }
+   }
+  },
+  {
+   "id": "node/3310133548",
+   "tags": {
+    "addr:city": "Dresden",
+    "addr:housenumber": "10",
+    "addr:postcode": "01127",
+    "addr:street": "Oschatzer Straße",
+    "amenity": "social_centre",
+    "name": "Kontaktstelle für Nachbarschaftshilfe Dresden Nord"
+   },
+   "location": {
+    "lat": 51.075349,
+    "lon": 13.723698
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62467",
+     "name": "Sachsen"
+    },
+    "6": {
+     "id": "relation/191645",
+     "name": "Dresden"
     }
    }
   },
@@ -58142,6 +59376,39 @@
     "4": {
      "id": "relation/62422",
      "name": "Berlin"
+    }
+   }
+  },
+  {
+   "id": "node/3557656220",
+   "tags": {
+    "check_date:opening_hours": "2026-05-13",
+    "name": "Nachbarschaftshilfe e.V.",
+    "opening_hours": "Tu-Fr 09:00-18:00; Sa 10:00-16:00; Su,Mo,PH off",
+    "phone": "+49 2241 8816291",
+    "shop": "second_hand",
+    "wheelchair": "yes"
+   },
+   "location": {
+    "lat": 50.814396,
+    "lon": 7.171314
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/72022",
+     "name": "Regierungsbezirk Köln"
+    },
+    "6": {
+     "id": "relation/62544",
+     "name": "Rhein-Sieg-Kreis"
+    },
+    "8": {
+     "id": "relation/55060",
+     "name": "Troisdorf"
     }
    }
   },
@@ -68820,6 +70087,35 @@
    }
   },
   {
+   "id": "node/4270106351",
+   "tags": {
+    "board_type": "notice",
+    "check_date": "2022-10-04",
+    "description": "Ankündigungen Veranstaltungen",
+    "information": "board",
+    "name": "Nachbarschaftshilfe e.V.",
+    "tourism": "information"
+   },
+   "location": {
+    "lat": 54.087338,
+    "lon": 13.432848
+   },
+   "admin": {
+    "4": {
+     "id": "relation/28322",
+     "name": "Mecklenburg-Vorpommern"
+    },
+    "6": {
+     "id": "relation/1431517",
+     "name": "Vorpommern-Greifswald"
+    },
+    "8": {
+     "id": "relation/62363",
+     "name": "Greifswald"
+    }
+   }
+  },
+  {
    "id": "node/427832651",
    "tags": {
     "amenity": "taxi"
@@ -69060,6 +70356,35 @@
     "8": {
      "id": "relation/410520",
      "name": "Eppingen"
+    }
+   }
+  },
+  {
+   "id": "node/4304880365",
+   "tags": {
+    "board_type": "notice",
+    "check_date": "2022-10-07",
+    "description": "Veranstaltungen",
+    "information": "board",
+    "name": "Nachbarschaftshilfe WGG e.V.",
+    "tourism": "information"
+   },
+   "location": {
+    "lat": 54.083637,
+    "lon": 13.414255
+   },
+   "admin": {
+    "4": {
+     "id": "relation/28322",
+     "name": "Mecklenburg-Vorpommern"
+    },
+    "6": {
+     "id": "relation/1431517",
+     "name": "Vorpommern-Greifswald"
+    },
+    "8": {
+     "id": "relation/62363",
+     "name": "Greifswald"
     }
    }
   },
@@ -72613,6 +73938,40 @@
    }
   },
   {
+   "id": "node/4547641568",
+   "tags": {
+    "addr:city": "Zeitz",
+    "addr:country": "DE",
+    "addr:housenumber": "21",
+    "addr:postcode": "06712",
+    "addr:street": "Schützenplatz",
+    "amenity": "social_facility",
+    "contact:email": "info@seniorenhilfe-zeitz.de",
+    "contact:fax": "+49 3441 631136",
+    "contact:phone": "+49 3441 631118",
+    "contact:website": "https://www.seniorenhilfe-zeitz.de/",
+    "name": "Stiftung \"Seniorenhilfe Zeitz“"
+   },
+   "location": {
+    "lat": 51.050252,
+    "lon": 12.143917
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62607",
+     "name": "Sachsen-Anhalt"
+    },
+    "6": {
+     "id": "relation/62639",
+     "name": "Burgenlandkreis"
+    },
+    "8": {
+     "id": "relation/2404586",
+     "name": "Zeitz"
+    }
+   }
+  },
+  {
    "id": "node/4548473369",
    "tags": {
     "addr:city": "Düsseldorf",
@@ -74382,6 +75741,51 @@
    }
   },
   {
+   "id": "node/4706783074",
+   "tags": {
+    "addr:city": "Ottobrunn",
+    "addr:country": "DE",
+    "addr:housenumber": "52",
+    "addr:postcode": "85521",
+    "addr:street": "Putzbrunner Straße",
+    "amenity": "social_facility",
+    "brand:wikidata": "Q627256",
+    "brand:wikipedia": "de:Arbeiterwohlfahrt",
+    "brand": "Arbeiterwohlfahrt",
+    "check_date": "2024-02-29",
+    "contact:email": "info@awo-nbh.de",
+    "name": "AWO Nachbarschaftshilfe",
+    "opening_hours": "Mo-Th 09:00-12:00",
+    "operator": "AWO",
+    "social_facility:for": "neighbourhood",
+    "social_facility": "outreach",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes"
+   },
+   "location": {
+    "lat": 48.068221,
+    "lon": 11.672929
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62580",
+     "name": "Landkreis München"
+    },
+    "8": {
+     "id": "relation/2168250",
+     "name": "Ottobrunn"
+    }
+   }
+  },
+  {
    "id": "node/4707901309",
    "tags": {
     "amenity": "taxi"
@@ -75354,6 +76758,38 @@
    }
   },
   {
+   "id": "node/4769750106",
+   "tags": {
+    "name": "Nachbarschaftshilfe Rhein-Sieg",
+    "opening_hours": "Tu-Fr 09:00-18:00; Sa 10:00-16:00",
+    "second_hand": "only",
+    "shop": "clothes",
+    "website": "https://www.nachbarschaftshilfe-ev.de/"
+   },
+   "location": {
+    "lat": 50.781047,
+    "lon": 7.19246
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/72022",
+     "name": "Regierungsbezirk Köln"
+    },
+    "6": {
+     "id": "relation/62544",
+     "name": "Rhein-Sieg-Kreis"
+    },
+    "8": {
+     "id": "relation/158642",
+     "name": "Sankt Augustin"
+    }
+   }
+  },
+  {
    "id": "node/4776796137",
    "tags": {
     "amenity": "taxi"
@@ -75901,6 +77337,42 @@
    }
   },
   {
+   "id": "node/4860541523",
+   "tags": {
+    "addr:city": "Unterhaching",
+    "addr:country": "DE",
+    "addr:housenumber": "6",
+    "addr:postcode": "82008",
+    "addr:street": "Hofmarkweg",
+    "amenity": "social_centre",
+    "check_date": "2026-08-02",
+    "name": "Nachbarschaftshilfe Unterhaching e.V.",
+    "opening_hours": "Mo-Sa 09:00-12:30; Mo-Fr 14:30-18:00"
+   },
+   "location": {
+    "lat": 48.067001,
+    "lon": 11.610229
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62580",
+     "name": "Landkreis München"
+    },
+    "8": {
+     "id": "relation/497335",
+     "name": "Unterhaching"
+    }
+   }
+  },
+  {
    "id": "node/4864194690",
    "tags": {
     "amenity": "taxi"
@@ -76259,6 +77731,43 @@
     "8": {
      "id": "relation/397076",
      "name": "Zwickau"
+    }
+   }
+  },
+  {
+   "id": "node/4893934027",
+   "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Gilchinger Straße",
+    "amenity": "social_facility",
+    "check_date": "2025-03-15",
+    "email": "nbh-alling@gmx.de",
+    "fax": "+49 8141 37073",
+    "name": "Nachbarschaftshilfe Alling e.V.",
+    "phone": "+49 8141 37073",
+    "social_facility": "outreach",
+    "website": "http://nachbarschaftshilfe-alling.de/"
+   },
+   "location": {
+    "lat": 48.140162,
+    "lon": 11.299116
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62595",
+     "name": "Landkreis Fürstenfeldbruck"
+    },
+    "8": {
+     "id": "relation/933491",
+     "name": "Alling"
     }
    }
   },
@@ -81378,6 +82887,44 @@
    }
   },
   {
+   "id": "node/5240783092",
+   "tags": {
+    "addr:city": "Hallbergmoos",
+    "addr:country": "DE",
+    "addr:housenumber": "56",
+    "addr:postcode": "85399",
+    "addr:street": "Maximilianstraße",
+    "amenity": "social_facility",
+    "email": "nbhhallbergmoos@gmx.de",
+    "name": "Nachbarschaftshilfe Hallbergmoos/Goldach e.V.",
+    "phone": "+49 811 982655",
+    "social_facility": "outreach",
+    "website": "https://www.nbh-hallbergmoos.de/"
+   },
+   "location": {
+    "lat": 48.321092,
+    "lon": 11.742953
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62633",
+     "name": "Landkreis Freising"
+    },
+    "8": {
+     "id": "relation/30008",
+     "name": "Hallbergmoos"
+    }
+   }
+  },
+  {
    "id": "node/5240968494",
    "tags": {
     "amenity": "taxi",
@@ -82973,6 +84520,44 @@
     "6": {
      "id": "relation/62539",
      "name": "Düsseldorf"
+    }
+   }
+  },
+  {
+   "id": "node/5443884026",
+   "tags": {
+    "addr:city": "Oberhaching",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "82041",
+    "addr:street": "Innerer Stockweg",
+    "amenity": "social_facility",
+    "contact:phone": "+49 89 392 97050",
+    "name": "Nachbarschaftshilfe Oberhaching e.V.",
+    "social_facility": "outreach",
+    "website": "https://nbh-oha.de/",
+    "wheelchair": "yes"
+   },
+   "location": {
+    "lat": 48.024265,
+    "lon": 11.584918
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62580",
+     "name": "Landkreis München"
+    },
+    "8": {
+     "id": "relation/538893",
+     "name": "Oberhaching"
     }
    }
   },
@@ -85793,6 +87378,42 @@
    }
   },
   {
+   "id": "node/5730395549",
+   "tags": {
+    "addr:city": "München",
+    "addr:housenumber": "19",
+    "addr:postcode": "80807",
+    "addr:street": "Griegstraße",
+    "amenity": "social_facility",
+    "check_date": "2025-04-09",
+    "email": "kontakt@msm-peichl.de",
+    "name": "Mobile Seniorenhilfe München",
+    "opening_hours": "Mo-Fr 06:00-12:00",
+    "phone": "+49 89 3596279",
+    "social_facility:for": "senior",
+    "social_facility": "nursing_home",
+    "website": "http://msm-peichl.de/"
+   },
+   "location": {
+    "lat": 48.182793,
+    "lon": 11.578921
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62428",
+     "name": "München"
+    }
+   }
+  },
+  {
    "id": "node/5732508458",
    "tags": {
     "disused": "no",
@@ -85960,6 +87581,41 @@
     "8": {
      "id": "relation/531654",
      "name": "Werder (Havel)"
+    }
+   }
+  },
+  {
+   "id": "node/5743825396",
+   "tags": {
+    "addr:city": "Bochum",
+    "addr:country": "DE",
+    "addr:housenumber": "10",
+    "addr:postcode": "44894",
+    "addr:street": "Am Heerbusch",
+    "amenity": "social_facility",
+    "check_date": "2024-06-12",
+    "contact:email": "info@elidiefee.de",
+    "contact:phone": "+49 234 5872646",
+    "contact:website": "https://www.elidiefee.de",
+    "name": "Seniorendienst Eli",
+    "social_facility": "day_care"
+   },
+   "location": {
+    "lat": 51.485557,
+    "lon": 7.308118
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/73340",
+     "name": "Regierungsbezirk Arnsberg"
+    },
+    "6": {
+     "id": "relation/62644",
+     "name": "Bochum"
     }
    }
   },
@@ -88336,6 +89992,43 @@
    }
   },
   {
+   "id": "node/5921592631",
+   "tags": {
+    "addr:city": "Fürstenfeldbruck",
+    "addr:country": "DE",
+    "addr:housenumber": "56",
+    "addr:postcode": "82256",
+    "addr:street": "Am Sulzbogen",
+    "amenity": "social_facility",
+    "name": "Ökumenische Nachbarschaftshilfe mit Sozialdienst e.V.",
+    "operator": "Ökumenische Nachbarschaftshilfe mit Sozialdienst e.V. Fürstenfeldbruck - Emmering",
+    "social_facility": "outreach",
+    "website": "https://www.nbh-fuerstenfeldbruck.de"
+   },
+   "location": {
+    "lat": 48.164376,
+    "lon": 11.227522
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62595",
+     "name": "Landkreis Fürstenfeldbruck"
+    },
+    "8": {
+     "id": "relation/933490",
+     "name": "Fürstenfeldbruck"
+    }
+   }
+  },
+  {
    "id": "node/5931236397",
    "tags": {
     "amenity": "taxi"
@@ -89069,6 +90762,48 @@
     "8": {
      "id": "relation/1310088",
      "name": "Birkenwerder"
+    }
+   }
+  },
+  {
+   "id": "node/6003160205",
+   "tags": {
+    "addr:city": "Hattingen",
+    "addr:housenumber": "3",
+    "addr:postcode": "45525",
+    "addr:street": "Walter-Schneider-Platz",
+    "amenity": "social_facility",
+    "brand:website": "https://www.elidiefee.de",
+    "brand": "Eli die Fee",
+    "check_date": "2026-07-29",
+    "contact:phone": "+49 2324 9778740",
+    "email": "info@hattingen.elidiefee.de",
+    "name": "Eli die Fee Seniorendienst",
+    "opening_hours": "Mo-Fr 08:00-16:00",
+    "social_facility:for": "senior",
+    "social_facility": "outreach",
+    "website": "https://www.elidiefee.de/haushaltshilfe-hattingen-sprockhoevel"
+   },
+   "location": {
+    "lat": 51.392571,
+    "lon": 7.181671
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/73340",
+     "name": "Regierungsbezirk Arnsberg"
+    },
+    "6": {
+     "id": "relation/1829066",
+     "name": "Ennepe-Ruhr-Kreis"
+    },
+    "8": {
+     "id": "relation/162828",
+     "name": "Hattingen"
     }
    }
   },
@@ -91378,6 +93113,37 @@
     "6": {
      "id": "relation/62410",
      "name": "Mönchengladbach"
+    }
+   }
+  },
+  {
+   "id": "node/6255983793",
+   "tags": {
+    "amenity": "social_facility",
+    "check_date": "2025-04-05",
+    "name": "Ökumenische Nachbarschaftshilfe mit Sozialdienst Maisach-Egenhofen e.V",
+    "social_facility": "ambulatory_care"
+   },
+   "location": {
+    "lat": 48.217156,
+    "lon": 11.255963
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62595",
+     "name": "Landkreis Fürstenfeldbruck"
+    },
+    "8": {
+     "id": "relation/933500",
+     "name": "Maisach"
     }
    }
   },
@@ -97413,6 +99179,45 @@
    }
   },
   {
+   "id": "node/7035975967",
+   "tags": {
+    "addr:city": "Lahr",
+    "addr:housenumber": "48",
+    "addr:postcode": "77933",
+    "addr:street": "Kaiserstraße",
+    "amenity": "social_facility",
+    "name": "Nachbarschaftshilfe Lahr e.V.",
+    "opening_hours": "Mo-Fr 09:00-12:00; Sa,Su,PH off",
+    "website": "https://www.nbh-lahr.de/"
+   },
+   "location": {
+    "lat": 48.341391,
+    "lon": 7.868727
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62611",
+     "name": "Baden-Württemberg"
+    },
+    "5": {
+     "id": "relation/2106112",
+     "name": "Regierungsbezirk Freiburg"
+    },
+    "6": {
+     "id": "relation/62624",
+     "name": "Ortenaukreis"
+    },
+    "7": {
+     "id": "relation/2979814",
+     "name": "VVG der Stadt Lahr/Schwarzwald"
+    },
+    "8": {
+     "id": "relation/453002",
+     "name": "Lahr/Schwarzwald"
+    }
+   }
+  },
+  {
    "id": "node/703607125",
    "tags": {
     "amenity": "taxi",
@@ -98038,6 +99843,41 @@
    }
   },
   {
+   "id": "node/7133507185",
+   "tags": {
+    "addr:city": "Bochum",
+    "addr:country": "DE",
+    "addr:housenumber": "90",
+    "addr:postcode": "44869",
+    "addr:street": "Wattenscheider Hellweg",
+    "amenity": "social_facility",
+    "contact:mobile": "+49 179 4602058",
+    "contact:phone": "+49 2327 9544017",
+    "name": "Seniorendienst Andrea Schimanski",
+    "opening_hours": "Mo-Fr 08:00-16:00",
+    "social_facility:for": "senior",
+    "social_facility": "outreach"
+   },
+   "location": {
+    "lat": 51.464429,
+    "lon": 7.15255
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/73340",
+     "name": "Regierungsbezirk Arnsberg"
+    },
+    "6": {
+     "id": "relation/62644",
+     "name": "Bochum"
+    }
+   }
+  },
+  {
    "id": "node/7139556821",
    "tags": {
     "amenity": "taxi"
@@ -98386,6 +100226,37 @@
     "8": {
      "id": "relation/162356",
      "name": "Bad Arolsen"
+    }
+   }
+  },
+  {
+   "id": "node/7221146723",
+   "tags": {
+    "amenity": "social_facility",
+    "name": "Krankenpflege und Nachbarschaftshilfe Moorenweis e.V.",
+    "social_facility": "outreach",
+    "website": "http://www.nbh-moorenweis.de"
+   },
+   "location": {
+    "lat": 48.156827,
+    "lon": 11.077111
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62595",
+     "name": "Landkreis Fürstenfeldbruck"
+    },
+    "8": {
+     "id": "relation/933548",
+     "name": "Moorenweis"
     }
    }
   },
@@ -98747,6 +100618,49 @@
     "6": {
      "id": "relation/62539",
      "name": "Düsseldorf"
+    }
+   }
+  },
+  {
+   "id": "node/7282596702",
+   "tags": {
+    "addr:city": "Moers",
+    "addr:country": "DE",
+    "addr:housenumber": "12",
+    "addr:postcode": "47443",
+    "addr:street": "Barbarastraße",
+    "amenity": "community_centre",
+    "check_date:opening_hours": "2026-07-29",
+    "description": "Kleinere Reperaturen / Handwerkliche Dienstleistungen",
+    "email": "jugendsozialzentrum@sci-moers.de",
+    "name": "Nachbarschaftshilfe Barbaraschule sci:moers",
+    "opening_hours:signed": "no",
+    "operator:type": "private_non_profit",
+    "operator": "Service Civil International Moers",
+    "phone": "+49 2841 95790",
+    "social_facility:for": "senior",
+    "social_facility": "assisted_living"
+   },
+   "location": {
+    "lat": 51.463878,
+    "lon": 6.646552
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/63306",
+     "name": "Regierungsbezirk Düsseldorf"
+    },
+    "6": {
+     "id": "relation/58745",
+     "name": "Kreis Wesel"
+    },
+    "8": {
+     "id": "relation/58623",
+     "name": "Moers"
     }
    }
   },
@@ -99989,6 +101903,43 @@
    }
   },
   {
+   "id": "node/7574624097",
+   "tags": {
+    "addr:city": "Germering",
+    "addr:country": "DE",
+    "addr:housenumber": "36",
+    "addr:postcode": "82110",
+    "addr:street": "Otto-Wagner-Straße",
+    "amenity": "social_facility",
+    "check_date": "2026-09-15",
+    "name": "Seniorendienst e.V.",
+    "social_facility": "outreach",
+    "website": "https://www.seniorendienst-ev.de/"
+   },
+   "location": {
+    "lat": 48.121684,
+    "lon": 11.366479
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62595",
+     "name": "Landkreis Fürstenfeldbruck"
+    },
+    "8": {
+     "id": "relation/933480",
+     "name": "Germering"
+    }
+   }
+  },
+  {
    "id": "node/7580343850",
    "tags": {
     "addr:city": "Leun",
@@ -100345,6 +102296,42 @@
     "6": {
      "id": "relation/62649",
      "name": "Leipzig"
+    }
+   }
+  },
+  {
+   "id": "node/7647463451",
+   "tags": {
+    "addr:city": "Bad Nauheim",
+    "addr:country": "DE",
+    "addr:housenumber": "10",
+    "addr:postcode": "61231",
+    "addr:street": "Rittershausstraße",
+    "association": "neighbourhood",
+    "name": "Nachbarschaftshilfe Bad Nauheim",
+    "office": "association",
+    "website": "https://www.nachbarschaftshilfe-bad-nauheim.de/"
+   },
+   "location": {
+    "lat": 50.369959,
+    "lon": 8.746278
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62650",
+     "name": "Hessen"
+    },
+    "5": {
+     "id": "relation/286590",
+     "name": "Regierungsbezirk Darmstadt"
+    },
+    "6": {
+     "id": "relation/62519",
+     "name": "Wetteraukreis"
+    },
+    "8": {
+     "id": "relation/167408",
+     "name": "Bad Nauheim"
     }
    }
   },
@@ -107711,6 +109698,43 @@
    }
   },
   {
+   "id": "node/8824357895",
+   "tags": {
+    "addr:city": "Hanau",
+    "addr:country": "DE",
+    "addr:housenumber": "36",
+    "addr:postcode": "63456",
+    "addr:street": "Steinheimer Vorstadt",
+    "addr:suburb": "Steinheim",
+    "amenity": "social_centre",
+    "description": "Die Steinheimer Nachbarschaftshilfe e.V. ist ein gemeinnütziger Verein in dem sich Bürgerinnen und Bürger zusammengeschlossen haben, um sich gegenseitig zu helfen",
+    "name": "Die Steinheimer Nachbarschaftshilfe e. V.",
+    "operator:type": "ngo",
+    "operator": "Die Steinheimer Nachbarschaftshilfe",
+    "phone": "+49 6181 610963 0",
+    "start_date": "2007-09",
+    "website": "https://www.die-steinheimer-nachbarschaftshilfe-ev.de/"
+   },
+   "location": {
+    "lat": 50.106552,
+    "lon": 8.914126
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62650",
+     "name": "Hessen"
+    },
+    "5": {
+     "id": "relation/286590",
+     "name": "Regierungsbezirk Darmstadt"
+    },
+    "6": {
+     "id": "relation/535895",
+     "name": "Hanau"
+    }
+   }
+  },
+  {
    "id": "node/8827430200",
    "tags": {
     "amenity": "taxi"
@@ -107899,6 +109923,42 @@
     "6": {
      "id": "relation/62539",
      "name": "Düsseldorf"
+    }
+   }
+  },
+  {
+   "id": "node/8873216308",
+   "tags": {
+    "addr:city": "Taufkirchen",
+    "addr:country": "DE",
+    "addr:housenumber": "100",
+    "addr:postcode": "82024",
+    "addr:street": "Rosenstraße",
+    "amenity": "social_facility",
+    "check_date": "2023-09-05",
+    "name": "Nachbarschaftshilfe Taufkirchen e.V.",
+    "social_facility": "ambulatory_care"
+   },
+   "location": {
+    "lat": 48.043157,
+    "lon": 11.626302
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62580",
+     "name": "Landkreis München"
+    },
+    "8": {
+     "id": "relation/536184",
+     "name": "Taufkirchen"
     }
    }
   },
@@ -108178,6 +110238,39 @@
     "8": {
      "id": "relation/1437544",
      "name": "Bergen auf Rügen"
+    }
+   }
+  },
+  {
+   "id": "node/8941348182",
+   "tags": {
+    "addr:city": "Dresden",
+    "addr:country": "DE",
+    "addr:housenumber": "39",
+    "addr:postcode": "01159",
+    "addr:street": "Kesselsdorfer Straße",
+    "amenity": "social_facility",
+    "check_date": "2026-04-11",
+    "club": "social",
+    "contact:phone": "+49 351 42272-513",
+    "contact:website": "https://www.sufw.de/kurse.html",
+    "name": "Kontaktstelle Nachbarschaftshilfe Dresden-West",
+    "operator": "Sächsisches Umschulungs- und Fortbildungswerk e.V.",
+    "social_facility:for": "senior",
+    "social_facility": "advice"
+   },
+   "location": {
+    "lat": 51.042662,
+    "lon": 13.691896
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62467",
+     "name": "Sachsen"
+    },
+    "6": {
+     "id": "relation/191645",
+     "name": "Dresden"
     }
    }
   },
@@ -109336,6 +111429,44 @@
     "4": {
      "id": "relation/62422",
      "name": "Berlin"
+    }
+   }
+  },
+  {
+   "id": "node/9183959596",
+   "tags": {
+    "addr:city": "Sankt Augustin",
+    "addr:housenumber": "88",
+    "addr:postcode": "53757",
+    "addr:street": "Ringstraße",
+    "name": "Nachbarschaftshilfe Rhein-Sieg",
+    "opening_hours": "Tu-Fr 09:00-18:00; Sa 10:00-16:00",
+    "operator": "Nachbarschaftshilfe Rhein-Sieg e. V.",
+    "phone": "+49 177 2339785",
+    "second_hand": "only",
+    "shop": "charity",
+    "website": "https://nachbarschaftshilfe-ev-rhein-sieg.de/index.php/standorte/sankt-augustin-buisdorf"
+   },
+   "location": {
+    "lat": 50.783298,
+    "lon": 7.238752
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/72022",
+     "name": "Regierungsbezirk Köln"
+    },
+    "6": {
+     "id": "relation/62544",
+     "name": "Rhein-Sieg-Kreis"
+    },
+    "8": {
+     "id": "relation/158642",
+     "name": "Sankt Augustin"
     }
    }
   },
@@ -118133,6 +120264,47 @@
    }
   },
   {
+   "id": "way/130190777",
+   "tags": {
+    "addr:city": "Sankt Augustin",
+    "addr:housenumber": "6",
+    "addr:postcode": "53757",
+    "addr:street": "Eifelstraße",
+    "building": "yes",
+    "name": "Nachbarschaftshilfe Rhein-Sieg",
+    "opening_hours": "Tu-Fr 09:00-18:00; Sa 10:00-16:00",
+    "operator": "Nachbarschaftshilfe e.V. Rhein-Sieg",
+    "payment:cash": "yes",
+    "phone": "+49 2241 93 28 210",
+    "second_hand": "only",
+    "shop": "charity",
+    "website": "https://www.nachbarschaftshilfe-ev.de/",
+    "wheelchair": "yes"
+   },
+   "location": {
+    "lat": 50.756383,
+    "lon": 7.170969
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/72022",
+     "name": "Regierungsbezirk Köln"
+    },
+    "6": {
+     "id": "relation/62544",
+     "name": "Rhein-Sieg-Kreis"
+    },
+    "8": {
+     "id": "relation/158642",
+     "name": "Sankt Augustin"
+    }
+   }
+  },
+  {
    "id": "way/1302059623",
    "tags": {
     "amenity": "taxi",
@@ -124330,6 +126502,41 @@
    }
   },
   {
+   "id": "way/152171064",
+   "tags": {
+    "addr:city": "Braunschweig",
+    "addr:country": "DE",
+    "addr:housenumber": "24",
+    "addr:postcode": "38120",
+    "addr:street": "Lichtenberger Straße",
+    "amenity": "community_centre",
+    "building:levels": "1",
+    "building": "yes",
+    "check_date:opening_hours": "2026-02-28",
+    "community_centre": "social_centre",
+    "name": "AWO-Begegnungsstätte und Nachbarschaftshilfe",
+    "opening_hours:signed": "no",
+    "roof:colour": "gray",
+    "roof:levels": "0",
+    "roof:shape": "flat",
+    "website": "https://www.awo-kv-bs.de/pages/angebote/begegnungsstaetten/begegnungsstaette-weststadt.php"
+   },
+   "location": {
+    "lat": 52.24095,
+    "lon": 10.477878
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62771",
+     "name": "Niedersachsen"
+    },
+    "6": {
+     "id": "relation/62531",
+     "name": "Braunschweig"
+    }
+   }
+  },
+  {
    "id": "way/1524426212",
    "tags": {
     "access": "yes",
@@ -125439,6 +127646,41 @@
    }
   },
   {
+   "id": "way/166635442",
+   "tags": {
+    "addr:city": "Mörfelden-Walldorf",
+    "addr:country": "DE",
+    "addr:housenumber": "25a",
+    "addr:postcode": "64546",
+    "addr:street": "Bürgermeister-Klingler-Straße",
+    "building": "public",
+    "name": "Nachbarschaftshilfe Mörfelden",
+    "religion": "christian"
+   },
+   "location": {
+    "lat": 49.976766,
+    "lon": 8.556692
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62650",
+     "name": "Hessen"
+    },
+    "5": {
+     "id": "relation/286590",
+     "name": "Regierungsbezirk Darmstadt"
+    },
+    "6": {
+     "id": "relation/62656",
+     "name": "Kreis Groß-Gerau"
+    },
+    "8": {
+     "id": "relation/444545",
+     "name": "Mörfelden-Walldorf"
+    }
+   }
+  },
+  {
    "id": "way/169861511",
    "tags": {
     "amenity": "taxi",
@@ -125464,6 +127706,50 @@
     "8": {
      "id": "relation/2449570",
      "name": "Gößnitz"
+    }
+   }
+  },
+  {
+   "id": "way/170342202",
+   "tags": {
+    "addr:city": "Winterbach",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "73650",
+    "addr:street": "Kronenbergele",
+    "amenity": "social_centre",
+    "building": "yes",
+    "email": "info@nachbarschaftshilfe-winterbach.de",
+    "name": "Nachbarschaftshilfe Winterbach e.V.",
+    "operator": "Nachbarschaftshilfe Winterbach e.V.",
+    "phone": "+49 7181 9695130",
+    "website": "https://www.nachbarschaftshilfe-winterbach.de",
+    "wheelchair": "no"
+   },
+   "location": {
+    "lat": 48.799751,
+    "lon": 9.479991
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62611",
+     "name": "Baden-Württemberg"
+    },
+    "5": {
+     "id": "relation/22041",
+     "name": "Regierungsbezirk Stuttgart"
+    },
+    "6": {
+     "id": "relation/62412",
+     "name": "Rems-Murr-Kreis"
+    },
+    "7": {
+     "id": "relation/1613885",
+     "name": "VVG der Stadt Schorndorf"
+    },
+    "8": {
+     "id": "relation/401644",
+     "name": "Winterbach"
     }
    }
   },
@@ -126575,6 +128861,40 @@
     "8": {
      "id": "relation/941794",
      "name": "Bad Reichenhall"
+    }
+   }
+  },
+  {
+   "id": "way/218504831",
+   "tags": {
+    "addr:city": "Köln",
+    "addr:country": "DE",
+    "addr:housenumber": "31",
+    "addr:postcode": "50858",
+    "addr:street": "Goethestraße",
+    "amenity": "social_facility",
+    "building:use": "gathering",
+    "building": "yes",
+    "check_date": "2024-03-25",
+    "name": "Nachbarschaftshilfe",
+    "social_facility": "assisted_living"
+   },
+   "location": {
+    "lat": 50.939755,
+    "lon": 6.833831
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/72022",
+     "name": "Regierungsbezirk Köln"
+    },
+    "6": {
+     "id": "relation/62578",
+     "name": "Köln"
     }
    }
   },
@@ -128514,6 +130834,38 @@
    }
   },
   {
+   "id": "way/29343351",
+   "tags": {
+    "addr:city": "Dresden",
+    "addr:country": "DE",
+    "addr:housenumber": "83",
+    "addr:postcode": "01277",
+    "addr:street": "Wittenberger Straße",
+    "building:levels": "4",
+    "building": "apartments",
+    "name": "Begegnungs- und Beratungszentrum der Ökumenischen Seniorenhilfe Dresden e.V.",
+    "phone": "+49 351 3400876",
+    "roof:levels": "1",
+    "roof:shape": "pyramidal",
+    "website": "https://www.seniorenhilfe-dresden.de/begegnungs-und-beratungszentrum/",
+    "wheelchair": "yes"
+   },
+   "location": {
+    "lat": 51.044183,
+    "lon": 13.798204
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62467",
+     "name": "Sachsen"
+    },
+    "6": {
+     "id": "relation/191645",
+     "name": "Dresden"
+    }
+   }
+  },
+  {
    "id": "way/295514862",
    "tags": {
     "amenity": "taxi"
@@ -128908,6 +131260,38 @@
    }
   },
   {
+   "id": "way/31053318",
+   "tags": {
+    "building:levels": "2",
+    "building": "public",
+    "name": "Nachbarschaftshilfe Puchheim",
+    "roof:levels": "1",
+    "roof:shape": "gabled"
+   },
+   "location": {
+    "lat": 48.172041,
+    "lon": 11.35539
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62595",
+     "name": "Landkreis Fürstenfeldbruck"
+    },
+    "8": {
+     "id": "relation/933481",
+     "name": "Puchheim"
+    }
+   }
+  },
+  {
    "id": "way/311021107",
    "tags": {
     "amenity": "taxi",
@@ -129109,6 +131493,44 @@
     "8": {
      "id": "relation/1403657",
      "name": "Euskirchen"
+    }
+   }
+  },
+  {
+   "id": "way/319374514",
+   "tags": {
+    "addr:city": "Biberach (Baden)",
+    "addr:housenumber": "11",
+    "addr:postcode": "77781",
+    "addr:street": "Mühlgartenstraße",
+    "amenity": "social_facility",
+    "building": "yes",
+    "name": "Nachbarschaftshilfe"
+   },
+   "location": {
+    "lat": 48.340749,
+    "lon": 8.027295
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62611",
+     "name": "Baden-Württemberg"
+    },
+    "5": {
+     "id": "relation/2106112",
+     "name": "Regierungsbezirk Freiburg"
+    },
+    "6": {
+     "id": "relation/62624",
+     "name": "Ortenaukreis"
+    },
+    "7": {
+     "id": "relation/2979869",
+     "name": "VVG der Stadt Zell am Harmersbach"
+    },
+    "8": {
+     "id": "relation/3375478",
+     "name": "Biberach"
     }
    }
   },
@@ -131052,6 +133474,109 @@
     "8": {
      "id": "relation/191361",
      "name": "Göttingen"
+    }
+   }
+  },
+  {
+   "id": "way/427393586",
+   "tags": {
+    "addr:city": "Reinheim",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "64354",
+    "addr:street": "Willy-Brandt-Straße",
+    "amenity": "social_facility",
+    "building": "yes",
+    "check_date": "2024-09-16",
+    "name": "Seniorendienstleistung Gersprenz gGmbH",
+    "social_facility:for": "senior",
+    "social_facility": "nursing_home",
+    "wheelchair": "yes"
+   },
+   "location": {
+    "lat": 49.834155,
+    "lon": 8.827552
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62650",
+     "name": "Hessen"
+    },
+    "5": {
+     "id": "relation/286590",
+     "name": "Regierungsbezirk Darmstadt"
+    },
+    "6": {
+     "id": "relation/62704",
+     "name": "Landkreis Darmstadt-Dieburg"
+    },
+    "8": {
+     "id": "relation/452423",
+     "name": "Reinheim"
+    }
+   }
+  },
+  {
+   "id": "way/427393678",
+   "tags": {
+    "amenity": "social_facility",
+    "building": "apartments",
+    "name": "Seniorendienstleistungszentrum Gersprenz",
+    "social_facility:for": "senior",
+    "social_facility": "nursing_home"
+   },
+   "location": {
+    "lat": 49.834196,
+    "lon": 8.82819
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62650",
+     "name": "Hessen"
+    },
+    "5": {
+     "id": "relation/286590",
+     "name": "Regierungsbezirk Darmstadt"
+    },
+    "6": {
+     "id": "relation/62704",
+     "name": "Landkreis Darmstadt-Dieburg"
+    },
+    "8": {
+     "id": "relation/452423",
+     "name": "Reinheim"
+    }
+   }
+  },
+  {
+   "id": "way/427393694",
+   "tags": {
+    "amenity": "social_facility",
+    "building": "apartments",
+    "name": "Seniorendienstleistungszentrum Gersprenz",
+    "social_facility:for": "senior",
+    "social_facility": "nursing_home"
+   },
+   "location": {
+    "lat": 49.834198,
+    "lon": 8.828076
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62650",
+     "name": "Hessen"
+    },
+    "5": {
+     "id": "relation/286590",
+     "name": "Regierungsbezirk Darmstadt"
+    },
+    "6": {
+     "id": "relation/62704",
+     "name": "Landkreis Darmstadt-Dieburg"
+    },
+    "8": {
+     "id": "relation/452423",
+     "name": "Reinheim"
     }
    }
   },
@@ -133943,6 +136468,40 @@
    }
   },
   {
+   "id": "way/557370253",
+   "tags": {
+    "access": "private",
+    "amenity": "parking",
+    "capacity:disabled": "1",
+    "capacity": "5",
+    "name": "Nachbarschaftshilfe Oberhaching e.V.",
+    "orientation": "perpendicular",
+    "parking": "street_side"
+   },
+   "location": {
+    "lat": 48.024275,
+    "lon": 11.585035
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62580",
+     "name": "Landkreis München"
+    },
+    "8": {
+     "id": "relation/538893",
+     "name": "Oberhaching"
+    }
+   }
+  },
+  {
    "id": "way/557453333",
    "tags": {
     "addr:city": "Düsseldorf",
@@ -134593,6 +137152,47 @@
    }
   },
   {
+   "id": "way/629271136",
+   "tags": {
+    "addr:city": "Hückelhoven",
+    "addr:country": "DE",
+    "addr:housenumber": "2",
+    "addr:postcode": "41836",
+    "addr:street": "Steinstraße",
+    "addr:suburb": "Ratheim",
+    "amenity": "social_facility",
+    "building": "apartments",
+    "name": "Tagespflege Ratheim St. Gereon Seniorendienste",
+    "operator": "St. Gereon Seniorendienste GmbH",
+    "phone": "+49 2433 5250696",
+    "social_facility:for": "senior",
+    "social_facility": "nursing_home",
+    "website": "https://st-gereon.info/"
+   },
+   "location": {
+    "lat": 51.064025,
+    "lon": 6.17918
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/72022",
+     "name": "Regierungsbezirk Köln"
+    },
+    "6": {
+     "id": "relation/62767",
+     "name": "Kreis Heinsberg"
+    },
+    "8": {
+     "id": "relation/158005",
+     "name": "Hückelhoven"
+    }
+   }
+  },
+  {
    "id": "way/631946079",
    "tags": {
     "amenity": "taxi",
@@ -134700,6 +137300,40 @@
     "6": {
      "id": "relation/62453",
      "name": "Worms"
+    }
+   }
+  },
+  {
+   "id": "way/65417695",
+   "tags": {
+    "addr:city": "Taufkirchen",
+    "addr:housenumber": "119",
+    "addr:postcode": "82024",
+    "addr:street": "Ahornring",
+    "building": "yes",
+    "name": "Nachbarschaftshilfe Taufkirchen e.V.",
+    "website": "https://www.nachbarschaftshilfe-tfk-uhg.de/"
+   },
+   "location": {
+    "lat": 48.048389,
+    "lon": 11.599149
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62580",
+     "name": "Landkreis München"
+    },
+    "8": {
+     "id": "relation/536184",
+     "name": "Taufkirchen"
     }
    }
   },
@@ -135971,6 +138605,73 @@
    }
   },
   {
+   "id": "way/85666585",
+   "tags": {
+    "access": "destination",
+    "amenity": "parking",
+    "capacity": "6",
+    "name": "Parkmöglichkeit am Nachbarschaftshilfe Sozialdienst",
+    "parking": "surface",
+    "surface": "ground"
+   },
+   "location": {
+    "lat": 48.07082,
+    "lon": 11.254098
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62458",
+     "name": "Landkreis Starnberg"
+    },
+    "8": {
+     "id": "relation/936656",
+     "name": "Weßling"
+    }
+   }
+  },
+  {
+   "id": "way/85682552",
+   "tags": {
+    "addr:city": "Weßling",
+    "addr:country": "DE",
+    "addr:housenumber": "1",
+    "addr:postcode": "82234",
+    "addr:street": "Am Seefeld",
+    "building": "public",
+    "name": "Nachbarschaftshilfe Weßling e.V."
+   },
+   "location": {
+    "lat": 48.070584,
+    "lon": 11.254114
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62458",
+     "name": "Landkreis Starnberg"
+    },
+    "8": {
+     "id": "relation/936656",
+     "name": "Weßling"
+    }
+   }
+  },
+  {
    "id": "way/860028086",
    "tags": {
     "amenity": "taxi"
@@ -136411,6 +139112,42 @@
    }
   },
   {
+   "id": "way/92470273",
+   "tags": {
+    "addr:city": "Steinau an der Straße",
+    "addr:country": "DE",
+    "addr:housenumber": "3",
+    "addr:postcode": "36396",
+    "addr:street": "Viehhof",
+    "amenity": "nursing_home",
+    "building": "yes",
+    "historic": "building",
+    "name": "Seniorenhilfe Steinau e.V., Viehof 3"
+   },
+   "location": {
+    "lat": 50.312093,
+    "lon": 9.462464
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62650",
+     "name": "Hessen"
+    },
+    "5": {
+     "id": "relation/286590",
+     "name": "Regierungsbezirk Darmstadt"
+    },
+    "6": {
+     "id": "relation/62694",
+     "name": "Main-Kinzig-Kreis"
+    },
+    "8": {
+     "id": "relation/535938",
+     "name": "Steinau an der Straße"
+    }
+   }
+  },
+  {
    "id": "way/927096434",
    "tags": {
     "amenity": "taxi",
@@ -136588,6 +139325,49 @@
     "6": {
      "id": "relation/62685",
      "name": "Schwerin"
+    }
+   }
+  },
+  {
+   "id": "way/94419272",
+   "tags": {
+    "addr:city": "Untereisesheim",
+    "addr:country": "DE",
+    "addr:housenumber": "25",
+    "addr:postcode": "74257",
+    "addr:street": "Hauptstraße",
+    "amenity": "social_facility",
+    "building": "yes",
+    "name": "Seniorendienste Neckartal",
+    "operator": "Seniorendienste Neckartal",
+    "social_facility:for": "senior",
+    "social_facility": "group_home",
+    "wheelchair": "yes"
+   },
+   "location": {
+    "lat": 49.209202,
+    "lon": 9.201686
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62611",
+     "name": "Baden-Württemberg"
+    },
+    "5": {
+     "id": "relation/22041",
+     "name": "Regierungsbezirk Stuttgart"
+    },
+    "6": {
+     "id": "relation/62750",
+     "name": "Landkreis Heilbronn"
+    },
+    "7": {
+     "id": "relation/2972681",
+     "name": "VVG der Stadt Neckarsulm"
+    },
+    "8": {
+     "id": "relation/410470",
+     "name": "Untereisesheim"
     }
    }
   },

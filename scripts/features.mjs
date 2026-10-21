@@ -52,9 +52,11 @@ export const PFLEGE_FEATURES = [
   { key: 'hauswirtschaft', short: 'Haushaltshilfe', label: 'Hauswirtschaftliche Hilfe', patterns: [/hauswirtschaft/, /haushaltshilfe/] },
   { key: 'beratung', short: 'Beratungsbesuch', label: 'Beratungsbesuche nach § 37.3', patterns: [/37\s?(abs\.?\s?)?3/, /beratungsbesuch/, /beratungseinsatz/] },
   { key: 'tagespflege', short: 'Tagespflege', label: 'Tagespflege', patterns: [/tagespflege/] },
+  { key: 'alltag', short: 'Alltagshilfe', label: 'Alltagshilfe, Einkauf und Begleitung', patterns: [/alltagsbegleitung/, /alltagshilfe/, /einkaufshilfe/, /einkaufsdienst/, /begleitdienst/, /fahrdienst/, /nachbarschaftshilfe/] },
 ];
 export const FAHRT_FEATURES = [
   { key: 'krankenfahrt', short: 'Krankenfahrten', label: 'Krankenfahrten (auch auf Kassenschein)', patterns: [/krankenfahrt/, /krankentransport/, /krankenkassenfahrt/, /fahrten zur dialyse/, /dialysefahrt/, /transportschein/] },
+  { key: 'begleitfahrt', short: 'Fahrdienst mit Begleitung', label: 'Fahr- und Begleitdienst zum Arzt (z. B. Nachbarschaftshilfe)', patterns: [/fahrdienst/, /begleitdienst/, /fahrten zum arzt/, /arztbegleitung/, /begleitung zum arzt/, /fahrten zu (ärzten|aerzten|arztterminen)/] },
   { key: 'rollstuhl', short: 'Rollstuhl', label: 'Fahrten im Rollstuhl', patterns: [/rollstuhl(fahrt|transport|taxi|gerecht|beförderung|befoerderung)/, /im rollstuhl sitzend/, /rampe/] },
   { key: 'tragestuhl', short: 'Tragestuhl/liegend', label: 'Tragestuhl oder liegend', patterns: [/tragestuhl/, /liegend(transport|fahrt)/, /treppenraupe/] },
   { key: 'dialyse', short: 'Dialyse', label: 'Dialysefahrten', patterns: [/dialyse/] },
