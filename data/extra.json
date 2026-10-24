@@ -1,0 +1,76 @@
+[
+ {
+  "id": "extra/caritas-pflege-eichenau",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-ambulanter-pflegedienst-eichenau.de/ (2026-10-24, gemeldet von JS)",
+  "tags": {
+   "name": "Caritas Ambulanter Pflegedienst Eichenau",
+   "addr:street": "Fasanstraße",
+   "addr:housenumber": "32",
+   "addr:postcode": "82223",
+   "addr:city": "Eichenau",
+   "phone": "+49 8141 538443",
+   "email": "ambulante-pflege-eichenau@caritasmuenchen.org",
+   "website": "https://www.caritas-ambulanter-pflegedienst-eichenau.de/"
+  },
+  "location": {
+   "lat": 48.16905,
+   "lon": 11.32245
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933488",
+    "name": "Eichenau"
+   }
+  }
+ },
+ {
+  "id": "extra/caritas-pflege-fuerstenfeldbruck",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-ambulanter-pflegedienst-fuerstenfeldbruck.de/ (2026-10-24)",
+  "tags": {
+   "name": "Caritas Ambulanter Pflegedienst Fürstenfeldbruck",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "5",
+   "addr:postcode": "82256",
+   "addr:city": "Fürstenfeldbruck",
+   "phone": "+49 8141 320728",
+   "email": "ambulante-pflege-fuerstenfeldbruck@caritasmuenchen.org",
+   "website": "https://www.caritas-ambulanter-pflegedienst-fuerstenfeldbruck.de/"
+  },
+  "location": {
+   "lat": 48.177598,
+   "lon": 11.255166
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933490",
+    "name": "Fürstenfeldbruck"
+   }
+  }
+ }
+]

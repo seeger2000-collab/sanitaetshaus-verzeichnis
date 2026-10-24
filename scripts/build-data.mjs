@@ -21,6 +21,8 @@ const goodBooking = (b, site) => {
 const readJson = async (p, fallback) => { try { return JSON.parse(await readFile(p, 'utf8')); } catch { return fallback; } };
 // Manuelle Daten: Top-Einträge (bezahlt) und Korrekturen, Schlüssel = OSM-ID, z. B. "node/123"
 const overrides = await readJson('data/overrides.json', {});
+// Einträge, die in OpenStreetMap fehlen (nur Sanitätshaus-Detailseiten verlinken auf OSM, daher hier nicht für sanitaetshaus nutzen), im gleichen Format wie data/osm/*.json plus "cat" und "quelle" (Website des Anbieters)
+const extra = await readJson('data/extra.json', []);
 // Öffnungszeiten von Websites, nur wenn OSM keine hat (scripts/enrich-hours.mjs)
 const webHoursRaw = await readJson('data/hours.json', {});
 const phones = await readJson('data/phones.json', {});
@@ -55,7 +57,7 @@ const osm = await readJson(`data/osm/${cat.key}.json`, null);
 if (!osm) { console.warn(`Keine Daten für ${cat.key}`); continue; }
 if (cat.key === 'sanitaetshaus') osmFetchedAt = osm.fetchedAt;
 const enrichment = await readJson(`data/enrichment/${cat.key}.json`, {});
-for (const s of osm.shops) {
+for (const s of [...osm.shops, ...extra.filter((x) => x.cat === cat.key)]) {
   const t = s.tags;
   if (!t.name || !s.admin?.['4']) continue;
   if (t['disused:shop'] || t['disused:amenity'] || t.opening_hours === 'closed') continue;
