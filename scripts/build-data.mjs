@@ -64,7 +64,7 @@ for (const s of [...osm.shops, ...extra.filter((x) => x.cat === cat.key)]) {
   const cityArea = s.admin['8'] || s.admin['6'] || s.admin['4'];
   const e = enrichment[s.id];
   // overrides: Korrekturen je OSM-ID, z. B. { "node/123": { "phone": "…", "street": "…", "postcode": "…", "featuresByCat": { "fahrt": ["begleitfahrt"] }, "featured": true, "featuredUntil": "2027-10-31" } }. Top-Einträge enden automatisch nach featuredUntil.
-  const o = { ...(overrides[s.id] || {}) };
+  const o = { ...(s.featuresByCat ? { featuresByCat: s.featuresByCat } : {}), ...(overrides[s.id] || {}) };
   if (o.featuredUntil && o.featuredUntil < new Date().toISOString().slice(0, 10)) o.featured = false;
   // featuresByCat: Leistungen, die uns gemeldet wurden, aber nicht auf der Website stehen, z. B. { "fahrt": ["begleitfahrt"] }
   const features = [...new Set([...(e?.status === 'ok' ? e.features : []), ...(o.featuresByCat?.[cat.key] || [])])];

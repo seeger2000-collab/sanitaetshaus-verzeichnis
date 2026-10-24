@@ -1,6 +1,6 @@
 {
  "node/2124797291": {
-  "_quelle": "Meldung JS 2026-10-21 (Fahrdienst), Adresse und Telefon von nbh-eichenau.de/index.php/kontakt",
+  "_quelle": "https://www.nbh-eichenau.de/index.php/kontakt (Fahrdienst bestätigt 2026-10-24)",
   "street": "Fasanstraße 32",
   "postcode": "82223",
   "phone": "+49 8141 36910",
@@ -13,5 +13,63 @@
     "alltag"
    ]
   }
+ },
+ "node/13177199775": {
+  "_quelle": "https://www.aura-vita-pflege.de/IMPRESSUM/",
+  "street": "Hartstraße 23",
+  "postcode": "82110",
+  "phone": "+49 89 94402881",
+  "website": "https://www.aura-vita-pflege.de/",
+  "email": "info@aura-vita-pflege.de"
+ },
+ "way/31053318": {
+  "_quelle": "https://www.sozialdienst-puchheim.de/",
+  "street": "Aubinger Weg 10",
+  "postcode": "82178",
+  "phone": "+49 89 8006310",
+  "website": "https://www.sozialdienst-puchheim.de/",
+  "email": "kontakt@sozialdienst-puchheim.de",
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ "node/5921592631": {
+  "_quelle": "https://www.nbh-fuerstenfeldbruck.de/kontakt-2/",
+  "street": "Am Sulzbogen 56",
+  "postcode": "82256",
+  "phone": "+49 8141 31660",
+  "website": "https://www.nbh-fuerstenfeldbruck.de/",
+  "email": "info@nbh-fuerstenfeldbruck.de",
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ "node/6255983793": {
+  "_quelle": "https://nbh-maisach.de/impressum/",
+  "street": "Josef-Sedlmayr-Straße 14",
+  "postcode": "82216",
+  "phone": "+49 8141 90877",
+  "website": "https://nbh-maisach.de/pflege/ambulante-pflege/",
+  "email": "info@nbh-maisach.de",
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ "node/7221146723": {
+  "_quelle": "https://www.nbh-moorenweis.de/html/kontakt.html",
+  "street": "Ringstraße 26",
+  "postcode": "82272",
+  "phone": "+49 8146 7879",
+  "website": "https://www.nbh-moorenweis.de/",
+  "email": "info@nbh-moorenweis.de"
  }
 }

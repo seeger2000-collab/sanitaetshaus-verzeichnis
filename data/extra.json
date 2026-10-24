@@ -72,5 +72,843 @@
     "name": "Fürstenfeldbruck"
    }
   }
+ },
+ {
+  "id": "extra/betreuung-und-pflege-zuhause-germering",
+  "cat": "pflege",
+  "quelle": "https://www.korian.de/pflege/wohnen-pflege/betreuung-und-pflege-zuhause-germering-wohnen-pflege/ (2026-10-24)",
+  "tags": {
+   "name": "Betreuung und Pflege zuhause Germering",
+   "addr:street": "Alfons-Baumann-Straße",
+   "addr:housenumber": "9",
+   "addr:postcode": "82110",
+   "addr:city": "Germering",
+   "phone": "+49 89 80071450",
+   "website": "https://www.korian.de/pflege/wohnen-pflege/betreuung-und-pflege-zuhause-germering-wohnen-pflege/",
+   "email": "ambulant-germering@korian.de"
+  },
+  "location": {
+   "lat": 48.121854,
+   "lon": 11.353748
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933480",
+    "name": "Germering"
+   }
+  }
+ },
+ {
+  "id": "extra/sozialdienst-olching-e-v",
+  "cat": "pflege",
+  "quelle": "https://sozialdienst-olching.de/ (2026-10-24)",
+  "tags": {
+   "name": "Sozialdienst Olching e.V.",
+   "addr:street": "Feursstraße",
+   "addr:housenumber": "50",
+   "addr:postcode": "82140",
+   "addr:city": "Olching",
+   "phone": "+49 8142 6505390",
+   "website": "https://sozialdienst-olching.de/pflegedienst/",
+   "email": "kontakt@sozialdienst-olching.de"
+  },
+  "location": {
+   "lat": 48.215303,
+   "lon": 11.345523
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933493",
+    "name": "Olching"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/sozialdienst-germering-e-v",
+  "cat": "pflege",
+  "quelle": "https://www.sozialdienst-germering.de/senioren/ambulante-pflege/ (2026-10-24)",
+  "tags": {
+   "name": "Sozialdienst Germering e.V.",
+   "addr:street": "Planegger Straße",
+   "addr:housenumber": "9",
+   "addr:postcode": "82110",
+   "addr:city": "Germering",
+   "phone": "+49 89 84060393",
+   "website": "https://www.sozialdienst-germering.de/senioren/ambulante-pflege/",
+   "email": "pflege@sozialdienst-germering.de"
+  },
+  "location": {
+   "lat": 48.126015,
+   "lon": 11.369118
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933480",
+    "name": "Germering"
+   }
+  }
+ },
+ {
+  "id": "extra/diakonie-ambulant",
+  "cat": "pflege",
+  "quelle": "https://www.diakonieffb.de/diakonie-ambulant (2026-10-24)",
+  "tags": {
+   "name": "Diakonie ambulant",
+   "addr:street": "Sattlerstraße",
+   "addr:housenumber": "13",
+   "addr:postcode": "82291",
+   "addr:city": "Mammendorf",
+   "phone": "+49 8145 3603720",
+   "website": "https://www.diakonieffb.de/diakonie-ambulant",
+   "email": "diakonieambulant@diakonieffb.de"
+  },
+  "location": {
+   "lat": 48.207156,
+   "lon": 11.162305
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "7": {
+    "id": "relation/2944630",
+    "name": "Verwaltungsgemeinschaft Mammendorf"
+   },
+   "8": {
+    "id": "relation/933535",
+    "name": "Mammendorf"
+   }
+  }
+ },
+ {
+  "id": "extra/brk-ambulante-pflege-fuerstenfeldbruck",
+  "cat": "pflege",
+  "quelle": "https://www.brk-ffb.de/angebote/pflege/ambulante-pflege.html (2026-10-24)",
+  "tags": {
+   "name": "BRK Ambulante Pflege Fürstenfeldbruck",
+   "addr:street": "Dachauer Straße",
+   "addr:housenumber": "35",
+   "addr:postcode": "82256",
+   "addr:city": "Fürstenfeldbruck",
+   "phone": "+49 8141 400438",
+   "website": "https://www.brk-ffb.de/angebote/pflege/ambulante-pflege.html"
+  },
+  "location": {
+   "lat": 48.180433,
+   "lon": 11.259846
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933490",
+    "name": "Fürstenfeldbruck"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-ambulante-pflege-fuerstenfeldbruck",
+  "cat": "fahrt",
+  "quelle": "https://www.brk-ffb.de/angebote/pflege/ambulante-pflege.html (2026-10-24)",
+  "tags": {
+   "name": "BRK Ambulante Pflege Fürstenfeldbruck",
+   "addr:street": "Dachauer Straße",
+   "addr:housenumber": "35",
+   "addr:postcode": "82256",
+   "addr:city": "Fürstenfeldbruck",
+   "phone": "+49 8141 400438",
+   "website": "https://www.brk-ffb.de/angebote/pflege/ambulante-pflege.html"
+  },
+  "location": {
+   "lat": 48.180433,
+   "lon": 11.259846
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933490",
+    "name": "Fürstenfeldbruck"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/vitolus-olching",
+  "cat": "pflege",
+  "quelle": "https://www.vitolus.de/standorte/olching (2026-10-24)",
+  "tags": {
+   "name": "Vitolus Olching",
+   "addr:street": "Senserstraße",
+   "addr:housenumber": "5",
+   "addr:postcode": "82140",
+   "addr:city": "Olching",
+   "phone": "+49 8142 4182211",
+   "website": "https://www.vitolus.de/standorte/olching",
+   "email": "olching@vitolus.de"
+  },
+  "location": {
+   "lat": 48.2142,
+   "lon": 11.318952
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933493",
+    "name": "Olching"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-cordi-esse",
+  "cat": "pflege",
+  "quelle": "https://www.cordiesse.de/kontakt/ (2026-10-24)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Cordi esse",
+   "addr:street": "Hermann-Löns-Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "82216",
+   "addr:city": "Maisach",
+   "phone": "+49 8142 6505060",
+   "website": "https://www.cordiesse.de/",
+   "email": "leitung@cordiesse.de"
+  },
+  "location": {
+   "lat": 48.21351,
+   "lon": 11.29994
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933500",
+    "name": "Maisach"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/anplus-gmbh-ambulanter-pflegedienst",
+  "cat": "pflege",
+  "quelle": "https://anplus-pflege.de/kontakt (2026-10-24)",
+  "tags": {
+   "name": "Anplus GmbH ambulanter Pflegedienst",
+   "addr:street": "Luitpoldstraße",
+   "addr:housenumber": "5",
+   "addr:postcode": "82110",
+   "addr:city": "Germering",
+   "phone": "+49 89 74442242",
+   "website": "https://anplus-pflege.de/",
+   "email": "info@anplus-pflege.de"
+  },
+  "location": {
+   "lat": 48.134803,
+   "lon": 11.37589
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933480",
+    "name": "Germering"
+   }
+  }
+ },
+ {
+  "id": "extra/anplus-gmbh-ambulanter-pflegedienst-standort-eiche",
+  "cat": "pflege",
+  "quelle": "https://anplus-pflege.de/kontakt (2026-10-24)",
+  "tags": {
+   "name": "Anplus GmbH ambulanter Pflegedienst – Standort Eichenau",
+   "addr:street": "Brucker Straße",
+   "addr:housenumber": "5",
+   "addr:postcode": "82223",
+   "addr:city": "Eichenau",
+   "phone": "+49 8141 3087973",
+   "website": "https://anplus-pflege.de/",
+   "email": "info@anplus-pflege.de"
+  },
+  "location": {
+   "lat": 48.156779,
+   "lon": 11.322535
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933488",
+    "name": "Eichenau"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-lillibrit-ug",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-lillibrit.de/impressum-pflegedienst-lillibrit/ (2026-10-24)",
+  "tags": {
+   "name": "Pflegedienst Lillibrit UG",
+   "addr:street": "Stadelbergerstraße",
+   "addr:housenumber": "23a",
+   "addr:postcode": "82256",
+   "addr:city": "Fürstenfeldbruck",
+   "phone": "+49 8141 6667808",
+   "website": "https://pflegedienst-lillibrit.de/",
+   "email": "info@pflegedienst-lillibrit.de"
+  },
+  "location": {
+   "lat": 48.183835,
+   "lon": 11.266216
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933490",
+    "name": "Fürstenfeldbruck"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/panacea-life-services-gmbh",
+  "cat": "pflege",
+  "quelle": "https://panacea-pflege.de/impressum (2026-10-24)",
+  "tags": {
+   "name": "Panacea Life Services GmbH",
+   "addr:street": "Zur Heupresse",
+   "addr:housenumber": "4",
+   "addr:postcode": "82140",
+   "addr:city": "Olching",
+   "phone": "+49 8142 4646900",
+   "website": "https://panacea-pflege.de/",
+   "email": "ffb@panacea-pflege.de"
+  },
+  "location": {
+   "lat": 48.208779,
+   "lon": 11.337748
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933493",
+    "name": "Olching"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-katarina-gmbh",
+  "cat": "pflege",
+  "quelle": "https://www.katarinapd.de/impressum (2026-10-24)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Katarina GmbH",
+   "addr:street": "Boschstraße",
+   "addr:housenumber": "6",
+   "addr:postcode": "82178",
+   "addr:city": "Puchheim",
+   "phone": "+49 89 54311506",
+   "website": "https://www.katarinapd.de/",
+   "email": "info@katarinapd.de"
+  },
+  "location": {
+   "lat": 48.170127,
+   "lon": 11.363843
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933481",
+    "name": "Puchheim"
+   }
+  }
+ },
+ {
+  "id": "extra/oekumenischer-sozialdienst-tuerkenfeld-zankenhause",
+  "cat": "pflege",
+  "quelle": "https://www.sozialdienst-tuerkenfeld.de/kontakt-team/ (2026-10-24)",
+  "tags": {
+   "name": "Ökumenischer Sozialdienst Türkenfeld/Zankenhausen e.V.",
+   "addr:street": "Ammerseestraße",
+   "addr:housenumber": "2",
+   "addr:postcode": "82299",
+   "addr:city": "Türkenfeld",
+   "phone": "+49 8193 950531",
+   "website": "https://www.sozialdienst-tuerkenfeld.de/",
+   "email": "info@sozialdienst-tuerkenfeld.de"
+  },
+  "location": {
+   "lat": 48.104582,
+   "lon": 11.078897
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933546",
+    "name": "Türkenfeld"
+   }
+  }
+ },
+ {
+  "id": "extra/johanniter-sozialstation-puchheim",
+  "cat": "pflege",
+  "quelle": "https://www.johanniter.de/juh/lv-bayern/rv-oberbayern/standorte-einrichtungen-in-oberbayern/einrichtung-vor-ort/sozialstation-puchheim-595/ (2026-10-24)",
+  "tags": {
+   "name": "Johanniter Sozialstation Puchheim",
+   "addr:street": "Dornierstraße",
+   "addr:housenumber": "2",
+   "addr:postcode": "82178",
+   "addr:city": "Puchheim",
+   "phone": "+49 89 890145960",
+   "website": "https://www.johanniter.de/juh/lv-bayern/rv-oberbayern/standorte-einrichtungen-in-oberbayern/einrichtung-vor-ort/sozialstation-puchheim-595/"
+  },
+  "location": {
+   "lat": 48.161834,
+   "lon": 11.339936
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933481",
+    "name": "Puchheim"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/altera-vita-ambulanter-pflegedienst",
+  "cat": "pflege",
+  "quelle": "https://www.altera-vita-pflege.de/impressum/ (2026-10-24)",
+  "tags": {
+   "name": "Altera Vita ambulanter Pflegedienst",
+   "addr:street": "Otto-Wagner-Straße",
+   "addr:housenumber": "22",
+   "addr:postcode": "82110",
+   "addr:city": "Germering",
+   "phone": "+49 89 80065730",
+   "website": "https://www.altera-vita-pflege.de/",
+   "email": "info@altera-vita-pflege.de"
+  },
+  "location": {
+   "lat": 48.124004,
+   "lon": 11.366164
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933480",
+    "name": "Germering"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/oekumenischer-sozialdienst-groebenzell-e-v",
+  "cat": "pflege",
+  "quelle": "https://www.oeksd-groebenzell.de/kontakt-2.html (2026-10-24)",
+  "tags": {
+   "name": "Ökumenischer Sozialdienst Gröbenzell e.V.",
+   "addr:street": "Rathausstraße",
+   "addr:housenumber": "5",
+   "addr:postcode": "82194",
+   "addr:city": "Gröbenzell",
+   "phone": "+49 8142 5939610",
+   "website": "https://www.oeksd-groebenzell.de/",
+   "email": "pflege@oeksd-groebenzell.de"
+  },
+  "location": {
+   "lat": 48.194042,
+   "lon": 11.370519
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933494",
+    "name": "Gröbenzell"
+   }
+  }
+ },
+ {
+  "id": "extra/bambuki-gmbh-bayerische-ambulante-kinderkrankenpfl",
+  "cat": "pflege",
+  "quelle": "http://www.bambuki.de/impressum.html (2026-10-24)",
+  "tags": {
+   "name": "BAMBUKI GmbH Bayerische Ambulante Kinderkrankenpflege",
+   "addr:street": "Ilzweg",
+   "addr:housenumber": "9",
+   "addr:postcode": "82140",
+   "addr:city": "Olching",
+   "phone": "+49 8142 41297",
+   "website": "http://www.bambuki.de/",
+   "email": "info@bambuki.de"
+  },
+  "location": {
+   "lat": 48.211346,
+   "lon": 11.33155
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933493",
+    "name": "Olching"
+   }
+  }
+ },
+ {
+  "id": "extra/salveo-ambulanter-pflegedienst",
+  "cat": "pflege",
+  "quelle": "https://salveo-pflegedienst.de/#impressum (2026-10-24)",
+  "tags": {
+   "name": "SALVEO Ambulanter Pflegedienst",
+   "addr:street": "Michael-Aumüller-Straße",
+   "addr:housenumber": "22",
+   "addr:postcode": "82291",
+   "addr:city": "Mammendorf",
+   "phone": "+49 8145 9958662",
+   "website": "https://salveo-pflegedienst.de/",
+   "email": "info@salveo-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.210141,
+   "lon": 11.164457
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "7": {
+    "id": "relation/2944630",
+    "name": "Verwaltungsgemeinschaft Mammendorf"
+   },
+   "8": {
+    "id": "relation/933535",
+    "name": "Mammendorf"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulante-kinderkrankenpflege-und-familienhilfe-m-",
+  "cat": "pflege",
+  "quelle": "http://www.kinderkrankenpflege-wagner.de/kontakt.php (2026-10-24)",
+  "tags": {
+   "name": "Ambulante Kinderkrankenpflege und Familienhilfe M.S.M.",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "82256",
+   "addr:city": "Fürstenfeldbruck",
+   "phone": "+49 8141 226981",
+   "website": "http://www.kinderkrankenpflege-wagner.de/",
+   "email": "info@kinderkrankenpflege-wagner.de"
+  },
+  "location": {
+   "lat": 48.177098,
+   "lon": 11.255405
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933490",
+    "name": "Fürstenfeldbruck"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-elke-goerlitz-kroneder-gmbh",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-gröbenzell-elke-görlitz.de/Impressum (2026-10-24)",
+  "tags": {
+   "name": "Pflegedienst Elke Görlitz-Kroneder GmbH",
+   "addr:street": "Kirchenstraße",
+   "addr:housenumber": "17",
+   "addr:postcode": "82194",
+   "addr:city": "Gröbenzell",
+   "phone": "+49 8142 2844491",
+   "website": "https://www.pflegedienst-gröbenzell-elke-görlitz.de/",
+   "email": "pflegedienst_groebenzell@yahoo.de"
+  },
+  "location": {
+   "lat": 48.193629,
+   "lon": 11.372545
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62595",
+    "name": "Landkreis Fürstenfeldbruck"
+   },
+   "8": {
+    "id": "relation/933494",
+    "name": "Gröbenzell"
+   }
+  }
  }
 ]
