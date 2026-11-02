@@ -9,6 +9,7 @@ export const bgb = (p: string, zusatz = '') => a(gii('bgb', p), `§ ${p}${zusatz
 export const sgg = (p: string, zusatz = '') => a(gii('sgg', p), `§ ${p}${zusatz ? ' ' + zusatz : ''} SGG`);
 export const heilmRL = a('https://www.g-ba.de/richtlinien/12/', 'Heilmittel-Richtlinie des G-BA');
 export const ktRL = a('https://www.g-ba.de/richtlinien/25/', 'Krankentransport-Richtlinie des G-BA');
+export const hilfsmRL = (p: string) => a('https://www.g-ba.de/richtlinien/13/', `${p} Hilfsmittel-Richtlinie des G-BA`);
 export const hmv = a('https://hilfsmittel.gkv-spitzenverband.de/', 'Hilfsmittelverzeichnis');
 // Hinweis unter allen Kassen-Tipps
 export const GKV_HINWEIS = `Alle Angaben gelten für die gesetzliche Kranken- und Pflegeversicherung. Privat Krankenversicherte bekommen, was ihr Tarif vorsieht. Die private Pflegepflichtversicherung muss gleichwertige Leistungen wie die gesetzliche bieten, meist als Kostenerstattung (${sgb11('23', 'Abs. 1')}). Wer beihilfeberechtigt ist, richtet sich zusätzlich nach der Beihilfeverordnung seines Dienstherrn.`;

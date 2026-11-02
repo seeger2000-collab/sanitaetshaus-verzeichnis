@@ -1,5 +1,7 @@
 // Ratgeber-Seiten. Themen und Fragen stammen aus der Keyword-Recherche (reports/keywords/keywords.json).
-import { sgb5, sgb11, ktRL, hmv, estg, bgb, sgg } from './recht';
+import { sgb5, sgb11, ktRL, hmv, estg, bgb, sgg, hilfsmRL } from './recht';
+// Häufige Suchanfrage (Keywords November 2026): „Rezept Gültigkeit“. Fassung der Richtlinie vom 20.02.2025, geprüft am 2.11.2026.
+const REZEPT_GUELTIG = { q: 'Wie lange ist das Rezept gültig?', a: `28 Kalendertage ab Ausstellung. Beginnt die Versorgung im Sanitätshaus nicht innerhalb dieser Zeit, verliert das Rezept seine Gültigkeit. Geht der Antrag in dieser Zeit bei der Krankenkasse ein, ist die Frist gewahrt (${hilfsmRL('§ 8 Abs. 2')}). Ein Rezept aus dem Krankenhaus bei der Entlassung gilt nur bis sieben Kalendertage nach der Entlassung (${hilfsmRL('§ 6a Abs. 2')}).` };
 const Z = 'mindestens 5 € und höchstens 10 €';
 // Rechtsstand Oktober 2026 (Normen am 5.10.2026 auf gesetze-im-internet.de geprüft), ohne Gewähr. Texte dürfen Links aus recht.ts enthalten. Bei Änderungen der Regeln hier anpassen.
 export type Guide = {
@@ -29,6 +31,7 @@ export const GUIDES: Guide[] = [
       ] },
     ],
     faq: [
+      REZEPT_GUELTIG,
       { q: 'Brauche ich einen Pflegegrad für einen Rollator?', a: `Nein. Der Rollator ist ein Hilfsmittel der Krankenkasse nach ${sgb5('33')}. Es reicht eine ärztliche Verordnung.` },
       { q: 'Wie viel zahle ich zu?', a: `Ab 18 Jahren 10 % des Preises, ${Z}, aber nie mehr als der Rollator kostet (${sgb5('33', 'Abs. 8')}, ${sgb5('61')} Satz 1). Mehrkosten für ein Wunschmodell, das über das Notwendige hinausgeht, zahlen Sie selbst (${sgb5('33', 'Abs. 1')} Satz 9).` },
       { q: 'Wo bekomme ich den Rollator?', a: `Bei einem Sanitätshaus, das Vertragspartner Ihrer Kasse ist (${sgb5('33', 'Abs. 6')}). Viele liefern ihn auch nach Hause.` },
@@ -57,6 +60,7 @@ export const GUIDES: Guide[] = [
       ] },
     ],
     faq: [
+      REZEPT_GUELTIG,
       { q: 'Kann ich Kompressionsstrümpfe Klasse 2 ohne Rezept kaufen?', a: 'Ja, aber ohne Rezept zahlen Sie den vollen Preis. Lassen Sie die Strümpfe trotzdem anmessen, sonst sitzen sie schlecht.' },
       { q: 'Wie lange halten Kompressionsstrümpfe?', a: 'Bei täglichem Tragen etwa sechs Monate. Danach lässt der Druck nach.' },
       { q: 'Wo bekomme ich Flachstrick-Strümpfe?', a: 'In Sanitätshäusern mit Lymph- und Lipödem-Versorgung. Diese finden Sie in unserer Liste.' },
@@ -83,6 +87,7 @@ export const GUIDES: Guide[] = [
       ] },
     ],
     faq: [
+      REZEPT_GUELTIG,
       { q: 'Was kosten orthopädische Einlagen ohne Kasse?', a: 'Einlagen nach Maß kosten meist zwischen 50 und 150 € pro Paar, je nach Material.' },
       { q: 'Wie lange halten Einlagen?', a: 'Bei täglichem Tragen etwa ein Jahr.' },
     ],
