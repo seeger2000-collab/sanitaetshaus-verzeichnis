@@ -26,6 +26,13 @@ export function websiteOf(tags) {
   try { return new URL(w).href; } catch { return null; }
 }
 
+// Node 22 (undici) wirft bei manchen kaputten Servern einen internen Assert-Fehler, der den ganzen Lauf abbricht.
+// Die betroffene Anfrage endet über den Timeout, der Rest läuft weiter.
+process.on('uncaughtException', (err) => {
+  if (err?.code === 'ERR_ASSERTION') console.warn('Interner Fehler beim Abruf ignoriert');
+  else throw err;
+});
+
 async function get(url) {
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), TIMEOUT_MS);

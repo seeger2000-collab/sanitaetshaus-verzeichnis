@@ -1,15 +1,22 @@
 {
  "node/11677973499": {
-  "checkedAt": "2026-10-04T13:43:56.189Z",
+  "checkedAt": "2026-11-09T07:37:39.311Z",
   "website": "https://www.ihrpflegeteam.com/",
-  "features": [],
+  "features": [
+   "verhinderung",
+   "hauswirtschaft"
+  ],
   "kassen": [],
-  "evidence": {},
-  "status": "error",
-  "error": "ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR"
+  "evidence": {
+   "verhinderung": "https://www.ihrpflegeteam.com/",
+   "hauswirtschaft": "https://www.ihrpflegeteam.com/"
+  },
+  "finalUrl": "https://www.ihrpflegeteam.com/",
+  "pagesChecked": 2,
+  "status": "ok"
  },
  "node/12141233471": {
-  "checkedAt": "2026-10-04T13:43:56.192Z",
+  "checkedAt": "2026-11-09T07:37:39.312Z",
   "website": "https://pflegedienstgarmisch.de/",
   "features": [],
   "kassen": [],
@@ -18,7 +25,7 @@
   "error": "ERR_SSL_SSL/TLS_ALERT_HANDSHAKE_FAILURE"
  },
  "node/12431988852": {
-  "checkedAt": "2026-10-04T13:43:56.192Z",
+  "checkedAt": "2026-11-09T07:37:40.466Z",
   "website": "https://www.stuttgarter-pflegedienst.de/",
   "features": [
    "intensiv",
@@ -37,7 +44,7 @@
   "status": "ok"
  },
  "node/11002539586": {
-  "checkedAt": "2026-10-04T13:43:56.188Z",
+  "checkedAt": "2026-11-09T07:37:39.310Z",
   "website": "https://www.pflegewerk-berlin.de/",
   "features": [],
   "kassen": [],
@@ -46,7 +53,7 @@
   "error": "ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR"
  },
  "node/10027963660": {
-  "checkedAt": "2026-10-04T13:43:56.187Z",
+  "checkedAt": "2026-11-09T07:37:39.308Z",
   "website": "http://humanuspflegedienst.de/",
   "features": [],
   "kassen": [],
@@ -58,34 +65,42 @@
   "status": "ok"
  },
  "node/10862634432": {
-  "checkedAt": "2026-10-04T13:43:56.188Z",
+  "checkedAt": "2026-11-09T07:37:39.309Z",
   "website": "https://www.siegl-krankenpflege.de/podologie/",
+  "features": [
+   "tagespflege",
+   "verhinderung",
+   "hauswirtschaft",
+   "beratung",
+   "intensiv"
+  ],
+  "kassen": [
+   "alle"
+  ],
+  "evidence": {
+   "tagespflege": "https://www.siegl-krankenpflege.de/podologie/",
+   "verhinderung": "https://www.siegl-krankenpflege.de/haeusliche-pflege/",
+   "hauswirtschaft": "https://www.siegl-krankenpflege.de/haeusliche-pflege/",
+   "beratung": "https://www.siegl-krankenpflege.de/haeusliche-pflege/",
+   "intensiv": "https://www.siegl-krankenpflege.de/stationaere-pflege/"
+  },
+  "finalUrl": "https://www.siegl-krankenpflege.de/podologie/",
+  "pagesChecked": 6,
+  "status": "ok"
+ },
+ "node/12269986069": {
+  "checkedAt": "2026-11-09T07:37:39.312Z",
+  "website": "https://www.pflegeberatung-weissbach.de/",
   "features": [],
   "kassen": [],
   "evidence": {},
-  "status": "error",
-  "error": "CERT_HAS_EXPIRED"
- },
- "node/12269986069": {
-  "checkedAt": "2026-10-04T13:43:56.192Z",
-  "website": "https://www.pflegeberatung-weissbach.de/",
-  "features": [
-   "verhinderung",
-   "hauswirtschaft"
-  ],
-  "kassen": [],
-  "evidence": {
-   "verhinderung": "https://www.pflegeberatung-weissbach.de/",
-   "hauswirtschaft": "https://www.pflegeberatung-weissbach.de/"
-  },
   "finalUrl": "https://www.pflegeberatung-weissbach.de/",
-  "email": "info@pflegeberatung-weissbach.de",
-  "phone": "039013054140",
+  "email": "info@iunctim.com",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/11521899553": {
-  "checkedAt": "2026-10-04T13:43:56.189Z",
+  "checkedAt": "2026-11-09T07:37:39.311Z",
   "website": "https://www.hamburg-pflegeteam.de/",
   "features": [
    "demenz",
@@ -103,11 +118,11 @@
   "finalUrl": "https://www.hamburg-pflegeteam.de/",
   "email": "info@hamburg-pflegeteam.de",
   "phone": "+494030936550",
-  "pagesChecked": 1,
+  "pagesChecked": 2,
   "status": "ok"
  },
  "node/1190099473": {
-  "checkedAt": "2026-10-04T13:43:56.191Z",
+  "checkedAt": "2026-11-09T07:37:39.311Z",
   "website": "https://www.pflegemitherzmd.de/",
   "features": [
    "hauswirtschaft"
@@ -121,7 +136,7 @@
   "status": "ok"
  },
  "node/12444848224": {
-  "checkedAt": "2026-10-04T13:43:56.193Z",
+  "checkedAt": "2026-11-09T07:37:40.471Z",
   "website": "https://www.diealltagsbegleiter.de/unsere-standorte/reutlingen/",
   "features": [
    "beratung"
@@ -136,15 +151,17 @@
   "status": "ok"
  },
  "node/12384620118": {
-  "checkedAt": "2026-10-04T13:43:56.192Z",
+  "checkedAt": "2026-11-09T07:37:40.287Z",
   "website": "https://www.beatusdomi.de/",
   "features": [
    "palliativ",
+   "alltag",
    "hauswirtschaft"
   ],
   "kassen": [],
   "evidence": {
    "palliativ": "https://www.beatusdomi.de/",
+   "alltag": "https://www.beatusdomi.de/",
    "hauswirtschaft": "https://www.beatusdomi.de/jobangebot"
   },
   "finalUrl": "https://www.beatusdomi.de/",
@@ -153,7 +170,7 @@
   "status": "ok"
  },
  "node/11309837263": {
-  "checkedAt": "2026-10-04T13:43:56.188Z",
+  "checkedAt": "2026-11-09T07:37:39.310Z",
   "website": "https://www.pflegeteam-wittig.de/",
   "features": [
    "verhinderung",
@@ -170,27 +187,29 @@
   "status": "ok"
  },
  "node/11468960694": {
-  "checkedAt": "2026-10-04T13:43:56.189Z",
+  "checkedAt": "2026-11-09T07:37:39.310Z",
   "website": "https://www.pflegedienstpaul.de/",
   "features": [
    "hauswirtschaft",
    "verhinderung",
    "intensiv",
-   "beratung"
+   "beratung",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "hauswirtschaft": "https://www.pflegedienstpaul.de/ueber-uns-team.php",
    "verhinderung": "https://www.pflegedienstpaul.de/ueber-uns-eilenburg.php",
    "intensiv": "https://www.pflegedienstpaul.de/leistungen.php",
-   "beratung": "https://www.pflegedienstpaul.de/leistungen.php"
+   "beratung": "https://www.pflegedienstpaul.de/leistungen.php",
+   "alltag": "https://www.pflegedienstpaul.de/leistungen.php"
   },
   "finalUrl": "https://www.pflegedienstpaul.de/",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/12060001703": {
-  "checkedAt": "2026-10-04T13:43:56.192Z",
+  "checkedAt": "2026-11-09T07:37:39.311Z",
   "website": "https://www.24stundenbetreut.com/24-stunden-betreuung-langenfeld/",
   "features": [
    "demenz",
@@ -198,6 +217,7 @@
    "hauswirtschaft",
    "beratung",
    "tagespflege",
+   "alltag",
    "palliativ"
   ],
   "kassen": [],
@@ -207,6 +227,7 @@
    "hauswirtschaft": "https://www.24stundenbetreut.com/24-stunden-betreuung-langenfeld/",
    "beratung": "https://www.24stundenbetreut.com/pflegegrade/",
    "tagespflege": "https://www.24stundenbetreut.com/pflegegrade/",
+   "alltag": "https://www.24stundenbetreut.com/pflegegrade/",
    "palliativ": "https://www.24stundenbetreut.com/pflegegrad-2/"
   },
   "finalUrl": "https://www.24stundenbetreut.com/24-stunden-betreuung-langenfeld/",
@@ -216,7 +237,7 @@
   "status": "ok"
  },
  "node/10984488128": {
-  "checkedAt": "2026-10-04T13:43:56.188Z",
+  "checkedAt": "2026-11-09T07:37:39.310Z",
   "website": "https://pflegedienstmarija.de/",
   "features": [
    "hauswirtschaft",
@@ -235,27 +256,29 @@
   "status": "ok"
  },
  "node/10743280494": {
-  "checkedAt": "2026-10-04T13:43:56.188Z",
+  "checkedAt": "2026-11-09T07:37:39.309Z",
   "website": "https://pflegedienst-dap.de/",
   "features": [
    "demenz",
    "palliativ",
    "verhinderung",
-   "hauswirtschaft"
+   "hauswirtschaft",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "demenz": "https://pflegedienst-dap.de/",
    "palliativ": "https://pflegedienst-dap.de/",
    "verhinderung": "https://pflegedienst-dap.de/",
-   "hauswirtschaft": "https://pflegedienst-dap.de/"
+   "hauswirtschaft": "https://pflegedienst-dap.de/",
+   "alltag": "https://pflegedienst-dap.de/"
   },
   "finalUrl": "https://pflegedienst-dap.de/",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/12252459759": {
-  "checkedAt": "2026-10-04T13:43:56.192Z",
+  "checkedAt": "2026-11-09T07:37:39.312Z",
   "website": "https://www.pflegedienstmalu.de/",
   "features": [
    "hauswirtschaft"
@@ -269,16 +292,18 @@
   "status": "ok"
  },
  "node/12015522671": {
-  "checkedAt": "2026-10-04T13:43:56.192Z",
+  "checkedAt": "2026-11-09T07:37:39.311Z",
   "website": "https://www.asb-hamburg.de/unsere-angebote/senioren-und-pflege/ambulante-pflege-sozialstationen/saselwalddoerfer/",
   "features": [
    "demenz",
-   "tagespflege"
+   "tagespflege",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "demenz": "https://www.asb-hamburg.de/unsere-angebote/senioren-und-pflege/ambulante-pflege-sozialstationen/saselwalddoerfer/",
-   "tagespflege": "https://www.asb-hamburg.de/unsere-angebote/senioren-und-pflege/ambulante-pflege-sozialstationen/saselwalddoerfer/"
+   "tagespflege": "https://www.asb-hamburg.de/unsere-angebote/senioren-und-pflege/ambulante-pflege-sozialstationen/saselwalddoerfer/",
+   "alltag": "https://www.asb-hamburg.de/unsere-angebote/senioren-und-pflege/ambulante-pflege-sozialstationen/saselwalddoerfer/"
   },
   "finalUrl": "https://www.asb-hamburg.de/unsere-angebote/senioren-und-pflege/ambulante-pflege-sozialstationen/saselwalddoerfer/",
   "phone": "+4940833980",
@@ -287,17 +312,19 @@
   "status": "ok"
  },
  "node/11112881620": {
-  "checkedAt": "2026-10-04T13:43:56.188Z",
+  "checkedAt": "2026-11-09T07:37:39.310Z",
   "website": "https://www.dst-pfullingen-eningen.de/",
   "features": [
    "demenz",
    "hauswirtschaft",
+   "alltag",
    "beratung"
   ],
   "kassen": [],
   "evidence": {
    "demenz": "https://www.dst-pfullingen-eningen.de/",
    "hauswirtschaft": "https://www.dst-pfullingen-eningen.de/",
+   "alltag": "https://www.dst-pfullingen-eningen.de/",
    "beratung": "https://www.dst-pfullingen-eningen.de/leistungen/beratung/"
   },
   "finalUrl": "https://www.dst-pfullingen-eningen.de/",
@@ -305,7 +332,7 @@
   "status": "ok"
  },
  "node/12576881959": {
-  "checkedAt": "2026-10-04T13:43:56.193Z",
+  "checkedAt": "2026-11-09T07:37:40.878Z",
   "website": "https://www.sozialstation-lauterecken.de/",
   "features": [
    "palliativ",
@@ -322,12 +349,13 @@
   "status": "ok"
  },
  "node/13371659216": {
-  "checkedAt": "2026-10-04T13:43:57.881Z",
+  "checkedAt": "2026-11-09T07:37:42.063Z",
   "website": "https://www.samariterstiftung.de/standorte/altenpflege/boeblingen-leonberg/diakoniestation-samariter-mobil-weissach.html",
   "features": [
    "demenz",
    "hauswirtschaft",
    "beratung",
+   "alltag",
    "tagespflege"
   ],
   "kassen": [],
@@ -335,6 +363,7 @@
    "demenz": "https://www.samariterstiftung.de/standorte/altenpflege/boeblingen-leonberg/diakoniestation-samariter-mobil-weissach.html",
    "hauswirtschaft": "https://www.samariterstiftung.de/standorte/altenpflege/boeblingen-leonberg/diakoniestation-samariter-mobil-weissach.html",
    "beratung": "https://www.samariterstiftung.de/standorte/altenpflege/boeblingen-leonberg/diakoniestation-samariter-mobil-weissach.html",
+   "alltag": "https://www.samariterstiftung.de/standorte/altenpflege/boeblingen-leonberg/diakoniestation-samariter-mobil-weissach.html",
    "tagespflege": "https://www.samariterstiftung.de/altenhilfe-und-pflege.html"
   },
   "finalUrl": "https://www.samariterstiftung.de/standorte/altenpflege/boeblingen-leonberg/diakoniestation-samariter-mobil-weissach.html",
@@ -343,25 +372,15 @@
   "status": "ok"
  },
  "node/10787233191": {
-  "checkedAt": "2026-10-04T13:43:56.188Z",
+  "checkedAt": "2026-11-09T07:37:39.309Z",
   "website": "https://www.diakonie-fuerth.de/pflegen-wohnen/ambulante-pflege/diakoniestation-fuerth/",
-  "features": [
-   "demenz",
-   "palliativ",
-   "tagespflege"
-  ],
+  "features": [],
   "kassen": [],
-  "evidence": {
-   "demenz": "https://www.diakonie-fuerth.de/pflegen-wohnen/ambulante-pflege/diakoniestation-fuerth/",
-   "palliativ": "https://www.diakonie-fuerth.de/pflegen-wohnen/ambulante-pflege/diakoniestation-fuerth/",
-   "tagespflege": "https://www.diakonie-fuerth.de/pflegen-wohnen/ambulante-pflege/diakoniestation-fuerth/"
-  },
-  "finalUrl": "https://www.diakonie-fuerth.de/pflegen-wohnen/ambulante-pflege/diakoniestation-fuerth/",
-  "pagesChecked": 7,
-  "status": "ok"
+  "evidence": {},
+  "status": "http-404"
  },
  "node/13046588615": {
-  "checkedAt": "2026-10-04T13:43:57.393Z",
+  "checkedAt": "2026-11-09T07:37:41.495Z",
   "website": "https://www.diakonie-ilsfeld.de/",
   "features": [
    "demenz",
@@ -381,7 +400,7 @@
   "status": "ok"
  },
  "node/14159919701": {
-  "checkedAt": "2026-10-04T13:44:00.363Z",
+  "checkedAt": "2026-11-09T07:37:47.137Z",
   "website": "http://www.teamda1-pflegedienst.de/",
   "features": [],
   "kassen": [],
@@ -390,7 +409,7 @@
   "error": "ENOTFOUND"
  },
  "node/1420308143": {
-  "checkedAt": "2026-10-04T13:44:00.514Z",
+  "checkedAt": "2026-11-09T07:37:47.168Z",
   "website": "http://www.pflegeteam-neumann.de/",
   "features": [],
   "kassen": [],
@@ -399,14 +418,16 @@
   "error": "ENOTFOUND"
  },
  "node/13429343005": {
-  "checkedAt": "2026-10-04T13:43:57.933Z",
+  "checkedAt": "2026-11-09T07:37:42.121Z",
   "website": "https://alltagsteam.de/",
   "features": [
-   "hauswirtschaft"
+   "hauswirtschaft",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
-   "hauswirtschaft": "https://alltagsteam.de/"
+   "hauswirtschaft": "https://alltagsteam.de/",
+   "alltag": "https://alltagsteam.de/"
   },
   "finalUrl": "https://alltagsteam.de/",
   "email": "info@alltagsteam.de",
@@ -415,17 +436,19 @@
   "status": "ok"
  },
  "node/12839360474": {
-  "checkedAt": "2026-10-04T13:43:56.193Z",
+  "checkedAt": "2026-11-09T07:37:41.037Z",
   "website": "https://www.heinrichs-gruppe.de/",
   "features": [
    "demenz",
    "tagespflege",
+   "alltag",
    "hauswirtschaft"
   ],
   "kassen": [],
   "evidence": {
    "demenz": "https://www.heinrichs-gruppe.de/",
    "tagespflege": "https://www.heinrichs-gruppe.de/",
+   "alltag": "https://www.heinrichs-gruppe.de/ambulante-pflege/servicewohnen-wegberg/",
    "hauswirtschaft": "https://www.heinrichs-gruppe.de/ambulante-pflege/servicewohnen-uebach-palenberg-friedrich-ebert-strasse/"
   },
   "finalUrl": "https://www.heinrichs-gruppe.de/",
@@ -433,7 +456,7 @@
   "status": "ok"
  },
  "node/1549120084": {
-  "checkedAt": "2026-10-04T13:44:00.607Z",
+  "checkedAt": "2026-11-09T07:37:47.242Z",
   "website": "https://www.kultursensiblepflege.info/",
   "features": [],
   "kassen": [],
@@ -442,15 +465,17 @@
   "error": "TypeError"
  },
  "node/13302468627": {
-  "checkedAt": "2026-10-04T13:43:57.734Z",
+  "checkedAt": "2026-11-09T07:37:41.895Z",
   "website": "https://blagovita.de/",
   "features": [
    "verhinderung",
+   "alltag",
    "hauswirtschaft"
   ],
   "kassen": [],
   "evidence": {
    "verhinderung": "https://blagovita.de/",
+   "alltag": "https://blagovita.de/",
    "hauswirtschaft": "https://blagovita.de/pflege/"
   },
   "finalUrl": "https://blagovita.de/",
@@ -458,7 +483,7 @@
   "status": "ok"
  },
  "node/12923900977": {
-  "checkedAt": "2026-10-04T13:43:57.131Z",
+  "checkedAt": "2026-11-09T07:37:41.390Z",
   "website": "https://dsth.de/",
   "features": [
    "palliativ",
@@ -482,7 +507,7 @@
   "status": "ok"
  },
  "node/1619323111": {
-  "checkedAt": "2026-10-04T13:44:00.967Z",
+  "checkedAt": "2026-11-09T07:37:47.473Z",
   "website": "http://www.utespflegedienst.de/",
   "features": [],
   "kassen": [],
@@ -491,7 +516,7 @@
   "error": "ENOTFOUND"
  },
  "node/13672390198": {
-  "checkedAt": "2026-10-04T13:43:58.025Z",
+  "checkedAt": "2026-11-09T07:37:42.140Z",
   "website": "https://www.diakonie-halle.de/pflege-und-betreuung/ambulante-pflege/diakoniestationen/diakoniestation-halle/",
   "features": [
    "demenz",
@@ -516,7 +541,7 @@
   "status": "ok"
  },
  "node/1747371712": {
-  "checkedAt": "2026-10-04T13:44:01.168Z",
+  "checkedAt": "2026-11-09T07:37:47.669Z",
   "website": "http://www.oek-sozialstation.com/",
   "features": [],
   "kassen": [],
@@ -525,7 +550,7 @@
   "error": "ENOTFOUND"
  },
  "node/14030340584": {
-  "checkedAt": "2026-10-04T13:43:59.157Z",
+  "checkedAt": "2026-11-09T07:37:45.584Z",
   "website": "https://www.vs-jena.de/beitraege/soziale-dienste-unsere-standorte/",
   "features": [],
   "kassen": [],
@@ -535,7 +560,7 @@
   "status": "ok"
  },
  "node/1410076863": {
-  "checkedAt": "2026-10-04T13:44:00.198Z",
+  "checkedAt": "2026-11-09T07:37:46.732Z",
   "website": "https://www.diakonie-dippoldiswalde.de/leben-im-alter/sozialstation-ambulanter-pflegedienst",
   "features": [],
   "kassen": [],
@@ -543,7 +568,7 @@
   "status": "http-404"
  },
  "node/10743212921": {
-  "checkedAt": "2026-10-04T13:43:56.188Z",
+  "checkedAt": "2026-11-09T07:37:39.309Z",
   "website": "https://www.pflegedienst-sthildegard.de/",
   "features": [
    "demenz",
@@ -567,7 +592,7 @@
   "status": "ok"
  },
  "node/12607387131": {
-  "checkedAt": "2026-10-04T13:43:56.193Z",
+  "checkedAt": "2026-11-09T07:37:40.884Z",
   "website": "https://www.seniorenassistenz-milchereit.de/",
   "features": [
    "demenz",
@@ -581,11 +606,12 @@
    "hauswirtschaft": "https://www.seniorenassistenz-milchereit.de/"
   },
   "finalUrl": "https://www.seniorenassistenz-milchereit.de/",
-  "pagesChecked": 4,
+  "phone": "+4922479682929",
+  "pagesChecked": 5,
   "status": "ok"
  },
  "node/13977859501": {
-  "checkedAt": "2026-10-04T13:43:58.533Z",
+  "checkedAt": "2026-11-09T07:37:44.501Z",
   "website": "https://inespuettcher-pflege.de/",
   "features": [
    "verhinderung",
@@ -601,7 +627,7 @@
   "status": "ok"
  },
  "node/2141296506": {
-  "checkedAt": "2026-10-04T13:44:01.679Z",
+  "checkedAt": "2026-11-09T07:37:48.444Z",
   "website": "http://www.diakoniepflege.de/index.php?id=74&tx_spdirectory_pi1[mode]=detail&tx_spdirectory_pi1[modifier]=abc&tx_spdirectory_pi1[value]=115&cHash=b846aa217527ef4339efe7b603b33c8a",
   "features": [],
   "kassen": [],
@@ -610,7 +636,7 @@
   "error": "ENOTFOUND"
  },
  "node/1850279614": {
-  "checkedAt": "2026-10-04T13:44:01.467Z",
+  "checkedAt": "2026-11-09T07:37:47.986Z",
   "website": "https://www.zap-bestwig.de/blogBestwig/",
   "features": [],
   "kassen": [],
@@ -619,7 +645,7 @@
   "error": "TypeError"
  },
  "node/1732254955": {
-  "checkedAt": "2026-10-04T13:44:01.083Z",
+  "checkedAt": "2026-11-09T07:37:47.640Z",
   "website": "https://pflegedienst-pohl.de/",
   "features": [],
   "kassen": [],
@@ -627,7 +653,7 @@
   "status": "robots-disallow"
  },
  "node/11636060025": {
-  "checkedAt": "2026-10-04T13:43:56.189Z",
+  "checkedAt": "2026-11-09T07:37:39.311Z",
   "website": "https://eichsfeld-klinikum.de/",
   "features": [
    "palliativ",
@@ -649,7 +675,7 @@
   "status": "ok"
  },
  "node/12878010987": {
-  "checkedAt": "2026-10-04T13:43:56.193Z",
+  "checkedAt": "2026-11-09T07:37:41.283Z",
   "website": "https://wl-pflege.de/",
   "features": [],
   "kassen": [],
@@ -661,7 +687,7 @@
   "status": "ok"
  },
  "node/13759178956": {
-  "checkedAt": "2026-10-04T13:43:58.322Z",
+  "checkedAt": "2026-11-09T07:37:44.075Z",
   "website": "https://www.pflegedienst-himmelblau.de/",
   "features": [
    "hauswirtschaft",
@@ -683,7 +709,7 @@
   "status": "ok"
  },
  "node/14050159439": {
-  "checkedAt": "2026-10-04T13:44:00.035Z",
+  "checkedAt": "2026-11-09T07:37:46.381Z",
   "website": "https://ombros-pflege.com/",
   "features": [],
   "kassen": [],
@@ -693,30 +719,31 @@
   "status": "ok"
  },
  "node/1569604555": {
-  "checkedAt": "2026-10-04T13:44:00.734Z",
+  "checkedAt": "2026-11-09T07:37:47.286Z",
   "website": "https://www.brambor.com/",
   "features": [
    "demenz",
    "tagespflege",
+   "alltag",
    "verhinderung",
-   "hauswirtschaft",
    "beratung"
   ],
   "kassen": [],
   "evidence": {
    "demenz": "https://www.brambor.com/",
    "tagespflege": "https://www.brambor.com/",
-   "verhinderung": "https://www.brambor.com/haeusliche-pflege.html",
-   "hauswirtschaft": "https://www.brambor.com/haeusliche-pflege.html",
-   "beratung": "https://www.brambor.com/haeusliche-pflege.html"
+   "alltag": "https://www.brambor.com/",
+   "verhinderung": "https://www.brambor.com/haeusliche-pflege/",
+   "beratung": "https://www.brambor.com/haeusliche-pflege/"
   },
   "finalUrl": "https://www.brambor.com/",
-  "phone": "0343224000",
+  "email": "info@brambor.com",
+  "phone": "+49343224000",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/13938306995": {
-  "checkedAt": "2026-10-04T13:43:58.438Z",
+  "checkedAt": "2026-11-09T07:37:44.182Z",
   "website": "https://www.tks-saarbruecken.de/dudweiler-quierschied.html",
   "features": [
    "palliativ",
@@ -739,18 +766,20 @@
   "status": "ok"
  },
  "node/14023949902": {
-  "checkedAt": "2026-10-04T13:43:58.799Z",
+  "checkedAt": "2026-11-09T07:37:44.912Z",
   "website": "https://pflege-katharina.de/",
   "features": [
    "demenz",
    "verhinderung",
-   "hauswirtschaft"
+   "hauswirtschaft",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "demenz": "https://pflege-katharina.de/",
    "verhinderung": "https://pflege-katharina.de/",
-   "hauswirtschaft": "https://pflege-katharina.de/"
+   "hauswirtschaft": "https://pflege-katharina.de/",
+   "alltag": "https://pflege-katharina.de/"
   },
   "finalUrl": "https://pflege-katharina.de/",
   "phone": "+4930220116160",
@@ -758,7 +787,7 @@
   "status": "ok"
  },
  "node/2202049460": {
-  "checkedAt": "2026-10-04T13:44:01.809Z",
+  "checkedAt": "2026-11-09T07:37:48.515Z",
   "website": "https://pflegedienst-orchidee.de/",
   "features": [],
   "kassen": [],
@@ -768,7 +797,7 @@
   "status": "ok"
  },
  "node/1398864208": {
-  "checkedAt": "2026-10-04T13:43:58.668Z",
+  "checkedAt": "2026-11-09T07:37:44.809Z",
   "website": "https://www.krankenpflege-dressen.de/",
   "features": [
    "tagespflege"
@@ -782,7 +811,7 @@
   "status": "ok"
  },
  "node/2716688994": {
-  "checkedAt": "2026-10-04T13:44:02.013Z",
+  "checkedAt": "2026-11-09T07:37:48.682Z",
   "website": "https://www.pflege-ludwigsburg.de/",
   "features": [],
   "kassen": [],
@@ -790,7 +819,7 @@
   "status": "http-200"
  },
  "node/2417415854": {
-  "checkedAt": "2026-10-04T13:44:01.905Z",
+  "checkedAt": "2026-11-09T07:37:48.596Z",
   "website": "https://www.pflegedienst-hartl.de/",
   "features": [
    "verhinderung",
@@ -808,12 +837,13 @@
   "status": "ok"
  },
  "node/2656495828": {
-  "checkedAt": "2026-10-04T13:44:01.928Z",
+  "checkedAt": "2026-11-09T07:37:48.606Z",
   "website": "https://www.deutsche-alltagshilfe.de/",
   "features": [
    "demenz",
    "palliativ",
    "hauswirtschaft",
+   "alltag",
    "beratung"
   ],
   "kassen": [],
@@ -821,6 +851,7 @@
    "demenz": "https://www.deutsche-alltagshilfe.de/",
    "palliativ": "https://www.deutsche-alltagshilfe.de/",
    "hauswirtschaft": "https://www.deutsche-alltagshilfe.de/",
+   "alltag": "https://www.deutsche-alltagshilfe.de/",
    "beratung": "https://www.deutsche-alltagshilfe.de/leistungen/pflegeberatung"
   },
   "finalUrl": "https://www.deutsche-alltagshilfe.de/",
@@ -830,7 +861,7 @@
   "status": "ok"
  },
  "node/3470932116": {
-  "checkedAt": "2026-10-04T13:44:03.181Z",
+  "checkedAt": "2026-11-09T07:37:50.573Z",
   "website": "https://www.pflegedienst-fuerstenzell.de/",
   "features": [],
   "kassen": [],
@@ -839,25 +870,16 @@
   "error": "TypeError"
  },
  "node/1649356312": {
-  "checkedAt": "2026-10-04T13:44:01.051Z",
+  "checkedAt": "2026-11-09T07:37:47.507Z",
   "website": "https://www.hauskrankenpflege-christiana.de/",
-  "features": [
-   "hauswirtschaft",
-   "verhinderung"
-  ],
+  "features": [],
   "kassen": [],
-  "evidence": {
-   "hauswirtschaft": "https://www.hauskrankenpflege-christiana.de/",
-   "verhinderung": "https://www.hauskrankenpflege-christiana.de/altenpflege"
-  },
-  "finalUrl": "https://www.hauskrankenpflege-christiana.de/",
-  "email": "info@hauskrankenpflege-christiana.de",
-  "phone": "03916099471",
-  "pagesChecked": 6,
-  "status": "ok"
+  "evidence": {},
+  "status": "error",
+  "error": "AbortError"
  },
  "node/2809069900": {
-  "checkedAt": "2026-10-04T13:44:02.161Z",
+  "checkedAt": "2026-11-09T07:37:48.824Z",
   "website": "https://www.autopflege-potsdam.eu/",
   "features": [],
   "kassen": [],
@@ -867,14 +889,15 @@
   "status": "ok"
  },
  "node/13688776971": {
-  "checkedAt": "2026-10-04T13:43:58.119Z",
+  "checkedAt": "2026-11-09T07:37:43.961Z",
   "website": "https://www.laerz-weiss.de/pflegedienst-heiligenstadt/",
   "features": [
    "verhinderung",
    "hauswirtschaft",
    "beratung",
    "tagespflege",
-   "demenz"
+   "demenz",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
@@ -882,24 +905,25 @@
    "hauswirtschaft": "https://www.laerz-weiss.de/pflegedienst-heiligenstadt/",
    "beratung": "https://www.laerz-weiss.de/pflegedienst-heiligenstadt/",
    "tagespflege": "https://www.laerz-weiss.de/pflegedienst-heiligenstadt/",
-   "demenz": "https://www.laerz-weiss.de/unsere-leistungen/"
+   "demenz": "https://www.laerz-weiss.de/unsere-leistungen/",
+   "alltag": "https://www.laerz-weiss.de/unsere-leistungen/"
   },
   "finalUrl": "https://www.laerz-weiss.de/pflegedienst-heiligenstadt/",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/1748297449": {
-  "checkedAt": "2026-10-04T13:44:01.216Z",
+  "checkedAt": "2026-11-09T07:37:47.710Z",
   "website": "https://www.pflegedienste-kern.de/",
   "features": [],
   "kassen": [],
   "evidence": {},
-  "finalUrl": "https://pflegedienste-kern.de/de",
+  "finalUrl": "https://www.pflegedienste-kern.de/",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/3908774681": {
-  "checkedAt": "2026-10-04T13:44:03.807Z",
+  "checkedAt": "2026-11-09T07:37:50.970Z",
   "website": "http://www.ambulante-pflege-emden.de/",
   "features": [],
   "kassen": [],
@@ -908,7 +932,7 @@
   "error": "ENOTFOUND"
  },
  "node/2974142798": {
-  "checkedAt": "2026-10-04T13:44:02.230Z",
+  "checkedAt": "2026-11-09T07:37:48.918Z",
   "website": "https://www.pflegemobil-braunschweig.de/",
   "features": [],
   "kassen": [],
@@ -919,7 +943,7 @@
   "status": "ok"
  },
  "node/12878764918": {
-  "checkedAt": "2026-10-04T13:43:57.057Z",
+  "checkedAt": "2026-11-09T07:37:41.295Z",
   "website": "https://www.diakoniestation-taunus.de/",
   "features": [
    "demenz"
@@ -934,7 +958,7 @@
   "status": "ok"
  },
  "node/3779014158": {
-  "checkedAt": "2026-10-04T13:44:03.212Z",
+  "checkedAt": "2026-11-09T07:37:50.691Z",
   "website": "https://www.pflege-reinheim.de/",
   "features": [],
   "kassen": [],
@@ -944,14 +968,16 @@
   "status": "ok"
  },
  "node/1831877246": {
-  "checkedAt": "2026-10-04T13:44:01.235Z",
+  "checkedAt": "2026-11-09T07:37:47.849Z",
   "website": "https://pflegedienst-koerdel.de/",
   "features": [
-   "hauswirtschaft"
+   "hauswirtschaft",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
-   "hauswirtschaft": "https://pflegedienst-koerdel.de/"
+   "hauswirtschaft": "https://pflegedienst-koerdel.de/",
+   "alltag": "https://pflegedienst-koerdel.de/hauswirtschaftliche-versorgung/"
   },
   "finalUrl": "https://pflegedienst-koerdel.de/",
   "phone": "+495619701998",
@@ -959,12 +985,13 @@
   "status": "ok"
  },
  "node/13737499015": {
-  "checkedAt": "2026-10-04T13:43:58.315Z",
+  "checkedAt": "2026-11-09T07:37:43.978Z",
   "website": "https://www.awo-leipzig-stadt.de/",
   "features": [
    "demenz",
    "hauswirtschaft",
-   "tagespflege"
+   "tagespflege",
+   "alltag"
   ],
   "kassen": [
    "alle"
@@ -972,7 +999,8 @@
   "evidence": {
    "demenz": "https://www.awo-leipzig-stadt.de/",
    "hauswirtschaft": "https://www.awo-leipzig-stadt.de/kranken-und-altenpflege/ambulante-pflege/",
-   "tagespflege": "https://www.awo-leipzig-stadt.de/kranken-und-altenpflege/tages-und-nachtpflege/"
+   "tagespflege": "https://www.awo-leipzig-stadt.de/kranken-und-altenpflege/tages-und-nachtpflege/",
+   "alltag": "https://www.awo-leipzig-stadt.de/kranken-und-altenpflege/tages-und-nachtpflege/"
   },
   "finalUrl": "https://www.awo-leipzig-stadt.de/",
   "email": "verwaltung@awo-leipzig-stadt.de",
@@ -980,7 +1008,7 @@
   "status": "ok"
  },
  "node/4022762327": {
-  "checkedAt": "2026-10-04T13:44:04.425Z",
+  "checkedAt": "2026-11-09T07:37:51.609Z",
   "website": "http://www.wb-pflegedienst.de/",
   "features": [],
   "kassen": [],
@@ -989,7 +1017,7 @@
   "error": "ENOTFOUND"
  },
  "node/3947780484": {
-  "checkedAt": "2026-10-04T13:44:03.864Z",
+  "checkedAt": "2026-11-09T07:37:51.235Z",
   "website": "https://www.pab-porta.de/",
   "features": [],
   "kassen": [],
@@ -1000,7 +1028,7 @@
   "status": "ok"
  },
  "node/3224298247": {
-  "checkedAt": "2026-10-04T13:44:02.880Z",
+  "checkedAt": "2026-11-09T07:37:49.775Z",
   "website": "https://www.pflegedienst-lebensbaum.de/",
   "features": [
    "tagespflege"
@@ -1016,7 +1044,7 @@
   "status": "ok"
  },
  "node/309419980": {
-  "checkedAt": "2026-10-04T13:44:02.546Z",
+  "checkedAt": "2026-11-09T07:37:49.311Z",
   "website": "https://www.bonum-care.de/",
   "features": [
    "intensiv",
@@ -1037,7 +1065,7 @@
   "status": "ok"
  },
  "node/3986835665": {
-  "checkedAt": "2026-10-04T13:44:04.029Z",
+  "checkedAt": "2026-11-09T07:37:51.487Z",
   "website": "http://www.jandaweb.de/",
   "features": [
    "tagespflege"
@@ -1051,7 +1079,7 @@
   "status": "ok"
  },
  "node/3039911522": {
-  "checkedAt": "2026-10-04T13:44:02.510Z",
+  "checkedAt": "2026-11-09T07:37:49.294Z",
   "website": "http://www.lebensnah.net/",
   "features": [
    "palliativ",
@@ -1073,7 +1101,7 @@
   "status": "ok"
  },
  "node/11710833752": {
-  "checkedAt": "2026-10-04T13:43:56.189Z",
+  "checkedAt": "2026-11-09T07:37:39.311Z",
   "website": "https://www.humanitas.de/standorte/pflegedienst-gelsenkirchen/",
   "features": [
    "hauswirtschaft",
@@ -1093,7 +1121,7 @@
   "status": "ok"
  },
  "node/4100745417": {
-  "checkedAt": "2026-10-04T13:44:04.945Z",
+  "checkedAt": "2026-11-09T07:37:52.310Z",
   "website": "http://pflegedienst-adp.de/",
   "features": [],
   "kassen": [],
@@ -1101,7 +1129,7 @@
   "status": "http-500"
  },
  "node/12359981076": {
-  "checkedAt": "2026-10-04T13:43:56.192Z",
+  "checkedAt": "2026-11-09T07:37:40.187Z",
   "website": "https://pflegedienst-hauf.de/",
   "features": [
    "tagespflege",
@@ -1119,12 +1147,13 @@
   "status": "ok"
  },
  "node/1573822433": {
-  "checkedAt": "2026-10-04T13:44:00.905Z",
+  "checkedAt": "2026-11-09T07:37:47.435Z",
   "website": "https://spaetsommer.de/",
   "features": [
    "tagespflege",
    "verhinderung",
    "hauswirtschaft",
+   "alltag",
    "palliativ"
   ],
   "kassen": [],
@@ -1132,6 +1161,7 @@
    "tagespflege": "https://www.spaetsommer.de/",
    "verhinderung": "https://www.spaetsommer.de/ambulante-pflege-nuernberg/",
    "hauswirtschaft": "https://www.spaetsommer.de/ambulante-pflege-nuernberg/",
+   "alltag": "https://www.spaetsommer.de/ambulante-pflege-nuernberg/",
    "palliativ": "https://www.spaetsommer.de/team-spaetsommer/"
   },
   "finalUrl": "https://www.spaetsommer.de/",
@@ -1141,7 +1171,7 @@
   "status": "ok"
  },
  "node/11792689787": {
-  "checkedAt": "2026-10-04T13:43:56.191Z",
+  "checkedAt": "2026-11-09T07:37:39.311Z",
   "website": "https://lembke-pflegedienst.de/",
   "features": [
    "intensiv",
@@ -1166,18 +1196,20 @@
   "status": "ok"
  },
  "node/4033016281": {
-  "checkedAt": "2026-10-04T13:44:04.486Z",
+  "checkedAt": "2026-11-09T07:37:51.641Z",
   "website": "https://www.pflegedienst-schwielochsee.de/",
   "features": [
    "verhinderung",
    "hauswirtschaft",
-   "beratung"
+   "beratung",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "verhinderung": "https://www.pflegedienst-schwielochsee.de/leistungen/",
    "hauswirtschaft": "https://www.pflegedienst-schwielochsee.de/leistungen/",
-   "beratung": "https://www.pflegedienst-schwielochsee.de/leistungen/"
+   "beratung": "https://www.pflegedienst-schwielochsee.de/leistungen/",
+   "alltag": "https://www.pflegedienst-schwielochsee.de/leistungen/"
   },
   "finalUrl": "https://www.pflegedienst-schwielochsee.de/",
   "email": "info@pflegedienst-schwielochsee.de",
@@ -1185,7 +1217,7 @@
   "status": "ok"
  },
  "node/4143174680": {
-  "checkedAt": "2026-10-04T13:44:05.009Z",
+  "checkedAt": "2026-11-09T07:37:52.980Z",
   "website": "https://www.sentacura.de/",
   "features": [
    "intensiv",
@@ -1206,7 +1238,7 @@
   "status": "ok"
  },
  "node/4183313191": {
-  "checkedAt": "2026-10-04T13:44:05.205Z",
+  "checkedAt": "2026-11-09T07:37:53.018Z",
   "website": "https://www.pflegedienst-meiners.de/",
   "features": [
    "beratung",
@@ -1214,7 +1246,8 @@
    "hauswirtschaft",
    "demenz",
    "palliativ",
-   "verhinderung"
+   "verhinderung",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
@@ -1223,7 +1256,8 @@
    "hauswirtschaft": "https://www.pflegedienst-meiners.de/team",
    "demenz": "https://www.pflegedienst-meiners.de/pflegedienst",
    "palliativ": "https://www.pflegedienst-meiners.de/pflegedienst",
-   "verhinderung": "https://www.pflegedienst-meiners.de/pflegedienst"
+   "verhinderung": "https://www.pflegedienst-meiners.de/pflegedienst",
+   "alltag": "https://www.pflegedienst-meiners.de/tagespflege"
   },
   "finalUrl": "https://www.pflegedienst-meiners.de/",
   "email": "kontakt@pflegedienst-meiners.de",
@@ -1232,27 +1266,29 @@
   "status": "ok"
  },
  "node/4004837868": {
-  "checkedAt": "2026-10-04T13:44:04.037Z",
+  "checkedAt": "2026-11-09T07:37:51.508Z",
   "website": "http://www.diakonie.de/",
   "features": [
    "palliativ",
    "verhinderung",
    "beratung",
-   "tagespflege"
+   "tagespflege",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "palliativ": "https://www.diakonie.de/informieren/unsere-themen/gesundheit-pflege",
    "verhinderung": "https://www.diakonie.de/informieren/aktuelles/pflegereform-pflegeneuordnungsgesetz",
    "beratung": "https://www.diakonie.de/informieren/aktuelles/pflegereform-pflegeneuordnungsgesetz",
-   "tagespflege": "https://www.diakonie.de/informieren/aktuelles/pflegereform-pflegeneuordnungsgesetz"
+   "tagespflege": "https://www.diakonie.de/informieren/aktuelles/pflegereform-pflegeneuordnungsgesetz",
+   "alltag": "https://www.diakonie.de/informieren/aktuelles/pflegereform-pflegeneuordnungsgesetz"
   },
   "finalUrl": "https://www.diakonie.de/",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/3911506258": {
-  "checkedAt": "2026-10-04T13:44:03.835Z",
+  "checkedAt": "2026-11-09T07:37:51.072Z",
   "website": "http://www.pflegedienst-mussmann.de/",
   "features": [],
   "kassen": [],
@@ -1262,7 +1298,7 @@
   "status": "ok"
  },
  "node/4720197215": {
-  "checkedAt": "2026-10-04T13:44:06.127Z",
+  "checkedAt": "2026-11-09T07:37:54.878Z",
   "website": "http://guenay-pflegedienst.de/",
   "features": [],
   "kassen": [],
@@ -1271,7 +1307,7 @@
   "error": "ENOTFOUND"
  },
  "node/11055434080": {
-  "checkedAt": "2026-10-04T13:43:56.188Z",
+  "checkedAt": "2026-11-09T07:37:39.310Z",
   "website": "https://medivital-pflege.de/",
   "features": [
    "palliativ",
@@ -1291,15 +1327,16 @@
   "status": "ok"
  },
  "node/4805593983": {
-  "checkedAt": "2026-10-04T13:44:06.270Z",
+  "checkedAt": "2026-11-09T07:37:55.051Z",
   "website": "https://pflegedienst-sander-goslar.de/",
   "features": [],
   "kassen": [],
   "evidence": {},
-  "status": "robots-disallow"
+  "status": "error",
+  "error": "ERR_TLS_CERT_ALTNAME_INVALID"
  },
  "node/4446880415": {
-  "checkedAt": "2026-10-04T13:44:05.810Z",
+  "checkedAt": "2026-11-09T07:37:53.981Z",
   "website": "https://www.michaelbethke.com/hauskrankenpflege/sozialstationen/berlin/kontakt.html",
   "features": [],
   "kassen": [],
@@ -1307,14 +1344,15 @@
   "status": "http-404"
  },
  "node/3398444824": {
-  "checkedAt": "2026-10-04T13:44:03.010Z",
+  "checkedAt": "2026-11-09T07:37:50.356Z",
   "website": "https://www.ig-ambulante-pflege.de/",
   "features": [
    "demenz",
    "palliativ",
    "hauswirtschaft",
    "beratung",
-   "tagespflege"
+   "tagespflege",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
@@ -1322,14 +1360,15 @@
    "palliativ": "https://in-ge.de/ambulante-pflege.php",
    "hauswirtschaft": "https://in-ge.de/ambulante-pflege.php",
    "beratung": "https://in-ge.de/ambulante-pflege.php",
-   "tagespflege": "https://in-ge.de/ambulante-pflege.php"
+   "tagespflege": "https://in-ge.de/ambulante-pflege.php",
+   "alltag": "https://in-ge.de/betreuungsangebote_demenz.php"
   },
   "finalUrl": "https://in-ge.de/ambulante-pflege.php",
   "pagesChecked": 7,
   "status": "ok"
  },
  "node/13311980087": {
-  "checkedAt": "2026-10-04T13:43:57.737Z",
+  "checkedAt": "2026-11-09T07:37:42.029Z",
   "website": "https://pflegedienst-lamek.de/",
   "features": [
    "verhinderung",
@@ -1348,12 +1387,13 @@
   "status": "ok"
  },
  "node/12084578596": {
-  "checkedAt": "2026-10-04T13:43:56.192Z",
+  "checkedAt": "2026-11-09T07:37:39.311Z",
   "website": "https://www.diakonie-naumburg-zeitz.de/hilfe-finden/sozialstationen/sozialstation-region-unstrut-zweigstelle-eckartsberga/",
   "features": [
    "verhinderung",
    "hauswirtschaft",
    "tagespflege",
+   "alltag",
    "demenz"
   ],
   "kassen": [],
@@ -1361,6 +1401,7 @@
    "verhinderung": "https://www.diakonie-naumburg-zeitz.de/hilfe-finden/sozialstationen/sozialstation-region-unstrut-zweigstelle-eckartsberga/",
    "hauswirtschaft": "https://www.diakonie-naumburg-zeitz.de/hilfe-finden/sozialstationen/sozialstation-region-unstrut-zweigstelle-eckartsberga/",
    "tagespflege": "https://www.diakonie-naumburg-zeitz.de/hilfe-finden/sozialstationen/sozialstation-region-unstrut-zweigstelle-eckartsberga/",
+   "alltag": "https://www.diakonie-naumburg-zeitz.de/hilfe-finden/sozialstationen/sozialstation-region-unstrut-zweigstelle-eckartsberga/",
    "demenz": "https://www.diakonie-naumburg-zeitz.de/hilfe-finden/pflegeberatung/"
   },
   "finalUrl": "https://www.diakonie-naumburg-zeitz.de/hilfe-finden/sozialstationen/sozialstation-region-unstrut-zweigstelle-eckartsberga/",
@@ -1369,7 +1410,7 @@
   "status": "ok"
  },
  "node/4938092353": {
-  "checkedAt": "2026-10-04T13:44:06.512Z",
+  "checkedAt": "2026-11-09T07:37:55.480Z",
   "website": "https://www.sst-rinteln.de/DesktopDefault.aspx?TabID=688",
   "features": [],
   "kassen": [],
@@ -1378,7 +1419,7 @@
   "error": "TypeError"
  },
  "node/4526417643": {
-  "checkedAt": "2026-10-04T13:44:05.985Z",
+  "checkedAt": "2026-11-09T07:37:54.479Z",
   "website": "https://www.sst-hochschwarzwald.de/",
   "features": [
    "demenz",
@@ -1396,7 +1437,7 @@
   "status": "ok"
  },
  "node/3794095582": {
-  "checkedAt": "2026-10-04T13:44:03.323Z",
+  "checkedAt": "2026-11-09T07:37:50.761Z",
   "website": "http://car-top.de/#section_kontakt",
   "features": [],
   "kassen": [],
@@ -1406,16 +1447,16 @@
   "status": "ok"
  },
  "node/5534166754": {
-  "checkedAt": "2026-10-04T13:44:06.867Z",
+  "checkedAt": "2026-11-09T07:37:56.322Z",
   "website": "https://www.eden-pflege.de/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "status": "error",
-  "error": "ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR"
+  "error": "TypeError"
  },
  "node/5159007485": {
-  "checkedAt": "2026-10-04T13:44:06.854Z",
+  "checkedAt": "2026-11-09T07:37:55.993Z",
   "website": "https://www.pflegedienst-gessner.de/",
   "features": [
    "verhinderung",
@@ -1436,7 +1477,7 @@
   "status": "ok"
  },
  "node/4113714448": {
-  "checkedAt": "2026-10-04T13:44:04.978Z",
+  "checkedAt": "2026-11-09T07:37:52.475Z",
   "website": "https://www.akb-ambulanter-pflegedienst.de/",
   "features": [],
   "kassen": [],
@@ -1446,7 +1487,7 @@
   "status": "ok"
  },
  "node/5538175359": {
-  "checkedAt": "2026-10-04T13:44:06.921Z",
+  "checkedAt": "2026-11-09T07:37:56.435Z",
   "website": "https://www.kosicare.de/kosicare-koln/",
   "features": [],
   "kassen": [],
@@ -1454,17 +1495,19 @@
   "status": "robots-disallow"
  },
  "node/4217635509": {
-  "checkedAt": "2026-10-04T13:44:05.489Z",
+  "checkedAt": "2026-11-09T07:37:53.212Z",
   "website": "https://www.curamed-pflegedienst.de/",
   "features": [
    "verhinderung",
    "hauswirtschaft",
+   "alltag",
    "beratung"
   ],
   "kassen": [],
   "evidence": {
    "verhinderung": "https://curamed-pflegedienst.de/",
    "hauswirtschaft": "https://curamed-pflegedienst.de/",
+   "alltag": "https://curamed-pflegedienst.de/",
    "beratung": "https://curamed-pflegedienst.de/pflegeberatung/"
   },
   "finalUrl": "https://curamed-pflegedienst.de/",
@@ -1472,7 +1515,7 @@
   "status": "ok"
  },
  "node/3883219100": {
-  "checkedAt": "2026-10-04T13:44:03.426Z",
+  "checkedAt": "2026-11-09T07:37:50.922Z",
   "website": "http://www.pflegezentrum-rohmich.de/",
   "features": [
    "verhinderung",
@@ -1490,20 +1533,22 @@
   "status": "ok"
  },
  "node/14030439367": {
-  "checkedAt": "2026-10-04T13:43:59.702Z",
+  "checkedAt": "2026-11-09T07:37:45.855Z",
   "website": "https://www.pflegeteam-camburg.de/",
   "features": [
    "demenz",
    "hauswirtschaft",
    "tagespflege",
-   "verhinderung"
+   "verhinderung",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "demenz": "https://www.pflegeteam-camburg.de/",
    "hauswirtschaft": "https://www.pflegeteam-camburg.de/",
    "tagespflege": "https://www.pflegeteam-camburg.de/",
-   "verhinderung": "https://www.pflegeteam-camburg.de/leistungen/"
+   "verhinderung": "https://www.pflegeteam-camburg.de/leistungen/",
+   "alltag": "https://www.pflegeteam-camburg.de/leistungen/"
   },
   "finalUrl": "https://www.pflegeteam-camburg.de/",
   "email": "info@pflegeteam-camburg.de",
@@ -1511,21 +1556,23 @@
   "status": "ok"
  },
  "node/6214458635": {
-  "checkedAt": "2026-10-04T13:44:07.763Z",
+  "checkedAt": "2026-11-09T07:37:56.840Z",
   "website": "https://www.agentur-fuer-haushaltshilfe.de/",
   "features": [
-   "hauswirtschaft"
+   "hauswirtschaft",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
-   "hauswirtschaft": "https://www.agentur-fuer-haushaltshilfe.de/"
+   "hauswirtschaft": "https://www.agentur-fuer-haushaltshilfe.de/",
+   "alltag": "https://www.agentur-fuer-haushaltshilfe.de/"
   },
   "finalUrl": "https://www.agentur-fuer-haushaltshilfe.de/",
   "pagesChecked": 1,
   "status": "ok"
  },
  "node/2339312340": {
-  "checkedAt": "2026-10-04T13:44:01.888Z",
+  "checkedAt": "2026-11-09T07:37:48.593Z",
   "website": "https://www.pflegedienst-akticom.de/",
   "features": [
    "hauswirtschaft",
@@ -1541,12 +1588,13 @@
   "status": "ok"
  },
  "node/4720197214": {
-  "checkedAt": "2026-10-04T13:44:06.107Z",
+  "checkedAt": "2026-11-09T07:37:54.710Z",
   "website": "http://www.diakoniestationen-kassel.de/",
   "features": [
    "hauswirtschaft",
    "tagespflege",
    "demenz",
+   "alltag",
    "palliativ"
   ],
   "kassen": [],
@@ -1554,6 +1602,7 @@
    "hauswirtschaft": "http://www.diakoniestationen-kassel.de/startseite",
    "tagespflege": "http://www.diakoniestationen-kassel.de/startseite",
    "demenz": "http://www.diakoniestationen-kassel.de/ueber-uns/selbstverstaendnis",
+   "alltag": "http://www.diakoniestationen-kassel.de/ueber-uns/selbstverstaendnis",
    "palliativ": "http://www.diakoniestationen-kassel.de/ueber-uns/kooperationen"
   },
   "finalUrl": "http://www.diakoniestationen-kassel.de/startseite",
@@ -1563,7 +1612,7 @@
   "status": "ok"
  },
  "node/2846625826": {
-  "checkedAt": "2026-10-04T13:44:02.178Z",
+  "checkedAt": "2026-11-09T07:37:48.885Z",
   "website": "https://www.diakoniestation-lauffen.de/",
   "features": [
    "demenz",
@@ -1585,7 +1634,7 @@
   "status": "ok"
  },
  "node/6249840991": {
-  "checkedAt": "2026-10-04T13:44:07.796Z",
+  "checkedAt": "2026-11-09T07:37:57.123Z",
   "website": "https://www.pflege-viktoria.de/",
   "features": [],
   "kassen": [],
@@ -1597,7 +1646,7 @@
   "status": "ok"
  },
  "node/7190657766": {
-  "checkedAt": "2026-10-04T13:44:08.801Z",
+  "checkedAt": "2026-11-09T07:37:58.750Z",
   "website": "http://pflegedienst-weggerle.de/",
   "features": [],
   "kassen": [],
@@ -1606,7 +1655,7 @@
   "error": "ENOTFOUND"
  },
  "node/590491016": {
-  "checkedAt": "2026-10-04T13:44:07.661Z",
+  "checkedAt": "2026-11-09T07:37:56.797Z",
   "website": "https://nachbarschaftsheim-jueterbog.com/",
   "features": [
    "demenz",
@@ -1624,7 +1673,7 @@
   "status": "ok"
  },
  "node/7013807598": {
-  "checkedAt": "2026-10-04T13:44:08.067Z",
+  "checkedAt": "2026-11-09T07:37:57.983Z",
   "website": "https://www.stiftungsverwaltung-freiburg.de/altenhilfe/pflege-und-betreuung/ambulanter-pflegedienst/",
   "features": [],
   "kassen": [],
@@ -1632,20 +1681,22 @@
   "status": "http-404"
  },
  "node/4017695138": {
-  "checkedAt": "2026-10-04T13:44:04.239Z",
+  "checkedAt": "2026-11-09T07:37:51.582Z",
   "website": "https://3d-pflegedienst.de/",
   "features": [
    "hauswirtschaft",
    "tagespflege",
    "beratung",
-   "verhinderung"
+   "verhinderung",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "hauswirtschaft": "https://3d-pflegedienst.de/",
    "tagespflege": "https://3d-pflegedienst.de/",
    "beratung": "https://3d-pflegedienst.de/ueber-uns",
-   "verhinderung": "https://3d-pflegedienst.de/leistungen"
+   "verhinderung": "https://3d-pflegedienst.de/leistungen",
+   "alltag": "https://3d-pflegedienst.de/tagespflege"
   },
   "finalUrl": "https://3d-pflegedienst.de/",
   "email": "koeln-rhein-erft@3d-pflegedienst.de",
@@ -1653,7 +1704,7 @@
   "status": "ok"
  },
  "node/4475949821": {
-  "checkedAt": "2026-10-04T13:44:05.870Z",
+  "checkedAt": "2026-11-09T07:37:54.281Z",
   "website": "https://www.sdogmbh.de/",
   "features": [
    "palliativ",
@@ -1673,7 +1724,7 @@
   "status": "ok"
  },
  "node/4811371122": {
-  "checkedAt": "2026-10-04T13:44:06.483Z",
+  "checkedAt": "2026-11-09T07:37:55.378Z",
   "website": "https://www.procurand.de/",
   "features": [
    "tagespflege",
@@ -1692,7 +1743,7 @@
   "status": "ok"
  },
  "node/4759553714": {
-  "checkedAt": "2026-10-04T13:44:06.195Z",
+  "checkedAt": "2026-11-09T07:37:54.910Z",
   "website": "https://proair-24.de/",
   "features": [
    "intensiv",
@@ -1710,7 +1761,7 @@
   "status": "ok"
  },
  "node/7264937931": {
-  "checkedAt": "2026-10-04T13:44:08.857Z",
+  "checkedAt": "2026-11-09T07:37:58.840Z",
   "website": "https://www.vinzenz-von-paul.de/einrichtungen/region-allgaeu/sozialstation-carl-joseph-leutkirch/",
   "features": [],
   "kassen": [],
@@ -1718,7 +1769,7 @@
   "status": "http-404"
  },
  "node/7025481188": {
-  "checkedAt": "2026-10-04T13:44:08.117Z",
+  "checkedAt": "2026-11-09T07:37:58.398Z",
   "website": "https://www.pflegedienst-kirsch.com/",
   "features": [
    "verhinderung",
@@ -1744,25 +1795,27 @@
   "status": "ok"
  },
  "node/6163432799": {
-  "checkedAt": "2026-10-04T13:44:07.697Z",
+  "checkedAt": "2026-11-09T07:37:56.831Z",
   "website": "https://www.deboer-pflegedienst.de/",
   "features": [
    "intensiv",
    "verhinderung",
-   "hauswirtschaft"
+   "hauswirtschaft",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "intensiv": "https://deboer-pflegedienst.de/",
    "verhinderung": "https://deboer-pflegedienst.de/",
-   "hauswirtschaft": "https://deboer-pflegedienst.de/"
+   "hauswirtschaft": "https://deboer-pflegedienst.de/",
+   "alltag": "https://deboer-pflegedienst.de/"
   },
   "finalUrl": "https://deboer-pflegedienst.de/",
   "pagesChecked": 2,
   "status": "ok"
  },
  "node/5815240332": {
-  "checkedAt": "2026-10-04T13:44:07.445Z",
+  "checkedAt": "2026-11-09T07:37:56.575Z",
   "website": "https://www.pflegedienst-bergen.de/",
   "features": [
    "verhinderung",
@@ -1780,7 +1833,7 @@
   "status": "ok"
  },
  "node/7353664816": {
-  "checkedAt": "2026-10-04T13:44:08.899Z",
+  "checkedAt": "2026-11-09T07:37:58.874Z",
   "website": "https://curmundo.de/standorte/standorte-schlangenbad/",
   "features": [],
   "kassen": [],
@@ -1788,12 +1841,13 @@
   "status": "http-404"
  },
  "node/14030459035": {
-  "checkedAt": "2026-10-04T13:43:59.932Z",
+  "checkedAt": "2026-11-09T07:37:45.893Z",
   "website": "https://www.diakonie-naumburg-zeitz.de/hilfe-finden/sozialstationen/sozialstation-region-bad-koesen/",
   "features": [
    "verhinderung",
    "hauswirtschaft",
    "tagespflege",
+   "alltag",
    "demenz"
   ],
   "kassen": [],
@@ -1801,6 +1855,7 @@
    "verhinderung": "https://www.diakonie-naumburg-zeitz.de/hilfe-finden/sozialstationen/sozialstation-region-bad-koesen/",
    "hauswirtschaft": "https://www.diakonie-naumburg-zeitz.de/hilfe-finden/sozialstationen/sozialstation-region-bad-koesen/",
    "tagespflege": "https://www.diakonie-naumburg-zeitz.de/hilfe-finden/sozialstationen/sozialstation-region-bad-koesen/",
+   "alltag": "https://www.diakonie-naumburg-zeitz.de/hilfe-finden/sozialstationen/sozialstation-region-bad-koesen/",
    "demenz": "https://www.diakonie-naumburg-zeitz.de/hilfe-finden/pflegeberatung/"
   },
   "finalUrl": "https://www.diakonie-naumburg-zeitz.de/hilfe-finden/sozialstationen/sozialstation-region-bad-koesen/",
@@ -1809,7 +1864,7 @@
   "status": "ok"
  },
  "node/563873648": {
-  "checkedAt": "2026-10-04T13:44:07.154Z",
+  "checkedAt": "2026-11-09T07:37:56.558Z",
   "website": "https://pflegediakonie.de/standorte/glueckstadt",
   "features": [
    "demenz",
@@ -1831,18 +1886,20 @@
   "status": "ok"
  },
  "node/6283071193": {
-  "checkedAt": "2026-10-04T13:44:07.827Z",
+  "checkedAt": "2026-11-09T07:37:57.291Z",
   "website": "https://www.promedicaplus.de/24-stunden-betreuung-pflege-leonberg-ditzingen/",
   "features": [
    "demenz",
    "hauswirtschaft",
-   "beratung"
+   "beratung",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "demenz": "https://www.promedica24.de/24-stunden-betreuung-pflege-leonberg-ditzingen/",
    "hauswirtschaft": "https://www.promedica24.de/24-stunden-betreuung-pflege-leonberg-ditzingen/",
-   "beratung": "https://www.promedica24.de/24-stunden-betreuung-pflege-leonberg-ditzingen/"
+   "beratung": "https://www.promedica24.de/24-stunden-betreuung-pflege-leonberg-ditzingen/",
+   "alltag": "https://www.promedica24.de/pflegeratgeber/24-h-pflege-und-betreuung/"
   },
   "finalUrl": "https://www.promedica24.de/24-stunden-betreuung-pflege-leonberg-ditzingen/",
   "email": "leonberg-ditzingen@promedicaplus.de",
@@ -1851,21 +1908,23 @@
   "status": "ok"
  },
  "node/7438953321": {
-  "checkedAt": "2026-10-04T13:44:09.087Z",
+  "checkedAt": "2026-11-09T07:37:58.875Z",
   "website": "https://advoco-pflegedienst.de/",
   "features": [
-   "beratung"
+   "beratung",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
-   "beratung": "https://www.advoco-pflegedienst.de/"
+   "beratung": "https://www.advoco-pflegedienst.de/",
+   "alltag": "https://www.advoco-pflegedienst.de/"
   },
   "finalUrl": "https://www.advoco-pflegedienst.de/",
-  "pagesChecked": 2,
+  "pagesChecked": 1,
   "status": "ok"
  },
  "node/7550649511": {
-  "checkedAt": "2026-10-04T13:44:09.383Z",
+  "checkedAt": "2026-11-09T07:37:59.510Z",
   "website": "https://www.schaumburger-engel.de/",
   "features": [
    "palliativ",
@@ -1887,7 +1946,7 @@
   "status": "ok"
  },
  "node/7656011675": {
-  "checkedAt": "2026-10-04T13:44:09.630Z",
+  "checkedAt": "2026-11-09T07:37:59.746Z",
   "website": "https://www.optimum-pflege.de/",
   "features": [],
   "kassen": [],
@@ -1899,7 +1958,7 @@
   "status": "ok"
  },
  "node/12944534717": {
-  "checkedAt": "2026-10-04T13:43:57.159Z",
+  "checkedAt": "2026-11-09T07:37:41.475Z",
   "website": "https://www.seniorenbetreuung-tiawa.de/",
   "features": [
    "demenz",
@@ -1917,7 +1976,7 @@
   "status": "ok"
  },
  "node/9426885990": {
-  "checkedAt": "2026-10-04T13:44:10.646Z",
+  "checkedAt": "2026-11-09T07:38:02.441Z",
   "website": "https://vica-pflege.de/",
   "features": [],
   "kassen": [],
@@ -1926,26 +1985,25 @@
   "error": "TypeError"
  },
  "node/8463200738": {
-  "checkedAt": "2026-10-04T13:44:09.772Z",
+  "checkedAt": "2026-11-09T07:37:59.864Z",
   "website": "https://www.pflegenetz.sachsen.de/pflegedatenbank/angebot/8947/ambulanter-pflegedienst-gluckskafer",
   "features": [],
   "kassen": [],
   "evidence": {},
-  "status": "http-404"
+  "status": "error",
+  "error": "ECONNRESET"
  },
  "node/6410495429": {
-  "checkedAt": "2026-10-04T13:44:07.965Z",
+  "checkedAt": "2026-11-09T07:37:57.588Z",
   "website": "http://sozialstation-burbach-malstatt.de/",
   "features": [
    "hauswirtschaft",
-   "palliativ",
-   "verhinderung"
+   "palliativ"
   ],
   "kassen": [],
   "evidence": {
    "hauswirtschaft": "https://www.oegap.de/pflegeteam-sb",
-   "palliativ": "https://www.oegap.de/pflegeteam-nk",
-   "verhinderung": "https://www.oegap.de/unsere-leistungen"
+   "palliativ": "https://www.oegap.de/pflegeteam-nk"
   },
   "finalUrl": "https://www.oegap.de/index.php?content_id=10023",
   "email": "info@oegap.de",
@@ -1953,20 +2011,22 @@
   "status": "ok"
  },
  "node/1827365183": {
-  "checkedAt": "2026-10-04T13:44:01.232Z",
+  "checkedAt": "2026-11-09T07:37:47.716Z",
   "website": "http://www.pflegedienst-ilmenau.de/",
   "features": [
    "hauswirtschaft",
    "demenz",
    "verhinderung",
-   "beratung"
+   "beratung",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "hauswirtschaft": "https://www.pflegedienst-ilmenau.de/ueber-uns",
    "demenz": "https://www.pflegedienst-ilmenau.de/pflegeleistungen",
    "verhinderung": "https://www.pflegedienst-ilmenau.de/pflegeleistungen",
-   "beratung": "https://www.pflegedienst-ilmenau.de/pflegeleistungen"
+   "beratung": "https://www.pflegedienst-ilmenau.de/pflegeleistungen",
+   "alltag": "https://www.pflegedienst-ilmenau.de/pflegeleistungen"
   },
   "finalUrl": "https://www.pflegedienst-ilmenau.de/",
   "email": "info@pflegedienst-ilmenau.de",
@@ -1975,7 +2035,7 @@
   "status": "ok"
  },
  "node/9794259984": {
-  "checkedAt": "2026-10-04T13:44:11.859Z",
+  "checkedAt": "2026-11-09T07:38:03.167Z",
   "website": "https://www.mainpflegedienst.de/",
   "features": [
    "hauswirtschaft"
@@ -1990,7 +2050,7 @@
   "status": "ok"
  },
  "node/5619346731": {
-  "checkedAt": "2026-10-04T13:44:06.996Z",
+  "checkedAt": "2026-11-09T07:37:56.521Z",
   "website": "https://www.akd-karlsruhe.de/",
   "features": [
    "verhinderung",
@@ -2012,7 +2072,7 @@
   "status": "ok"
  },
  "node/8942628720": {
-  "checkedAt": "2026-10-04T13:44:10.414Z",
+  "checkedAt": "2026-11-09T07:38:00.228Z",
   "website": "https://www.dst-hannover-neustadt.de/DesktopDefault.aspx?TabID=896",
   "features": [],
   "kassen": [],
@@ -2020,7 +2080,7 @@
   "status": "http-404"
  },
  "way/108119611": {
-  "checkedAt": "2026-10-04T13:44:12.629Z",
+  "checkedAt": "2026-11-09T07:38:04.654Z",
   "website": "http://www.hauskrankenpflege-thyrolf.de/",
   "features": [],
   "kassen": [],
@@ -2028,7 +2088,7 @@
   "status": "robots-disallow"
  },
  "node/8510053484": {
-  "checkedAt": "2026-10-04T13:44:10.210Z",
+  "checkedAt": "2026-11-09T07:38:00.218Z",
   "website": "https://pflegedienst-homeycare.de/",
   "features": [
    "verhinderung",
@@ -2045,13 +2105,14 @@
   "status": "ok"
  },
  "node/9739400999": {
-  "checkedAt": "2026-10-04T13:44:11.020Z",
+  "checkedAt": "2026-11-09T07:38:02.800Z",
   "website": "https://www.pflegedienst-hessen-sued.de/",
   "features": [
    "intensiv",
    "demenz",
    "hauswirtschaft",
    "kinder",
+   "alltag",
    "tagespflege"
   ],
   "kassen": [
@@ -2062,6 +2123,7 @@
    "demenz": "https://www.pflegedienst-hessen-sued.de/",
    "hauswirtschaft": "https://www.pflegedienst-hessen-sued.de/",
    "kinder": "https://www.pflegedienst-hessen-sued.de/stellenangebote/",
+   "alltag": "https://www.pflegedienst-hessen-sued.de/stellenangebote/",
    "tagespflege": "https://www.pflegedienst-hessen-sued.de/pflegehelfer/"
   },
   "finalUrl": "https://www.pflegedienst-hessen-sued.de/",
@@ -2071,7 +2133,7 @@
   "status": "ok"
  },
  "node/8508648492": {
-  "checkedAt": "2026-10-04T13:44:10.070Z",
+  "checkedAt": "2026-11-09T07:37:59.924Z",
   "website": "https://www.philomena-pflege.de/",
   "features": [
    "verhinderung",
@@ -2088,10 +2150,11 @@
   "status": "ok"
  },
  "way/10672289": {
-  "checkedAt": "2026-10-04T13:44:12.300Z",
+  "checkedAt": "2026-11-09T07:38:04.130Z",
   "website": "https://www.michaelbethke.com/",
   "features": [
    "tagespflege",
+   "alltag",
    "verhinderung",
    "hauswirtschaft",
    "beratung"
@@ -2099,6 +2162,7 @@
   "kassen": [],
   "evidence": {
    "tagespflege": "https://www.michaelbethke.com/",
+   "alltag": "https://www.michaelbethke.com/",
    "verhinderung": "https://www.michaelbethke.com/hauskrankenpflege.html",
    "hauswirtschaft": "https://www.michaelbethke.com/hauskrankenpflege.html",
    "beratung": "https://www.michaelbethke.com/hauskrankenpflege.html"
@@ -2108,14 +2172,16 @@
   "status": "ok"
  },
  "node/9046039855": {
-  "checkedAt": "2026-10-04T13:44:10.465Z",
+  "checkedAt": "2026-11-09T07:38:01.098Z",
   "website": "https://www.bechert-pflegeservice.de/",
   "features": [
-   "verhinderung"
+   "verhinderung",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
-   "verhinderung": "https://www.bechert-pflegeservice.de/"
+   "verhinderung": "https://www.bechert-pflegeservice.de/",
+   "alltag": "https://www.bechert-pflegeservice.de/"
   },
   "finalUrl": "https://www.bechert-pflegeservice.de/",
   "phone": "+499131991847",
@@ -2123,18 +2189,20 @@
   "status": "ok"
  },
  "node/9856345410": {
-  "checkedAt": "2026-10-04T13:44:12.132Z",
+  "checkedAt": "2026-11-09T07:38:03.655Z",
   "website": "https://www.afpp-eichsfeld.de/",
   "features": [
    "hauswirtschaft",
-   "tagespflege"
+   "tagespflege",
+   "alltag"
   ],
   "kassen": [
    "alle"
   ],
   "evidence": {
    "hauswirtschaft": "https://www.afpp-eichsfeld.de/",
-   "tagespflege": "https://www.afpp-eichsfeld.de/"
+   "tagespflege": "https://www.afpp-eichsfeld.de/",
+   "alltag": "https://www.afpp-eichsfeld.de/"
   },
   "finalUrl": "https://www.afpp-eichsfeld.de/",
   "phone": "055279983404",
@@ -2142,7 +2210,7 @@
   "status": "ok"
  },
  "way/125746570": {
-  "checkedAt": "2026-10-04T13:44:13.275Z",
+  "checkedAt": "2026-11-09T07:38:05.462Z",
   "website": "http://www.udfm.de/index.php/Diakoniestation-Muenster/156/0/",
   "features": [],
   "kassen": [],
@@ -2150,7 +2218,7 @@
   "status": "http-404"
  },
  "node/4058870318": {
-  "checkedAt": "2026-10-04T13:44:04.589Z",
+  "checkedAt": "2026-11-09T07:37:51.950Z",
   "website": "http://www.gh-pflege.com/",
   "features": [
    "demenz",
@@ -2174,7 +2242,7 @@
   "status": "ok"
  },
  "way/149868841": {
-  "checkedAt": "2026-10-04T13:44:14.580Z",
+  "checkedAt": "2026-11-09T07:38:06.572Z",
   "website": "https://pflegedienst-dieburg.de/",
   "features": [],
   "kassen": [],
@@ -2184,7 +2252,7 @@
   "status": "ok"
  },
  "node/9764037263": {
-  "checkedAt": "2026-10-04T13:44:11.117Z",
+  "checkedAt": "2026-11-09T07:38:02.877Z",
   "website": "https://www.elitepflegedienst.com/",
   "features": [
    "palliativ",
@@ -2202,7 +2270,7 @@
   "status": "ok"
  },
  "node/8437277106": {
-  "checkedAt": "2026-10-04T13:44:09.706Z",
+  "checkedAt": "2026-11-09T07:37:59.780Z",
   "website": "https://valmetaler-pflegedienst.de/",
   "features": [
    "palliativ",
@@ -2222,7 +2290,7 @@
   "status": "ok"
  },
  "node/6578323900": {
-  "checkedAt": "2026-10-04T13:44:07.969Z",
+  "checkedAt": "2026-11-09T07:37:57.932Z",
   "website": "https://pflegebande.de/",
   "features": [
    "intensiv",
@@ -2248,17 +2316,19 @@
   "status": "ok"
  },
  "node/4078728515": {
-  "checkedAt": "2026-10-04T13:44:04.827Z",
+  "checkedAt": "2026-11-09T07:37:52.189Z",
   "website": "https://www.krankenpflege-gera.de/",
   "features": [
    "hauswirtschaft",
    "tagespflege",
+   "alltag",
    "demenz"
   ],
   "kassen": [],
   "evidence": {
    "hauswirtschaft": "https://www.krankenpflege-gera.de/",
    "tagespflege": "https://www.krankenpflege-gera.de/",
+   "alltag": "https://www.krankenpflege-gera.de/",
    "demenz": "https://www.krankenpflege-gera.de/ambulante-pflege/"
   },
   "finalUrl": "https://www.krankenpflege-gera.de/",
@@ -2268,7 +2338,7 @@
   "status": "ok"
  },
  "node/712030198": {
-  "checkedAt": "2026-10-04T13:44:08.384Z",
+  "checkedAt": "2026-11-09T07:37:58.430Z",
   "website": "https://www.pflegedienst-eneh.de/",
   "features": [
    "hauswirtschaft",
@@ -2284,7 +2354,7 @@
   "status": "ok"
  },
  "node/10230356927": {
-  "checkedAt": "2026-10-04T13:43:56.187Z",
+  "checkedAt": "2026-11-09T07:37:39.309Z",
   "website": "https://auraintense24.de/",
   "features": [
    "intensiv",
@@ -2310,7 +2380,7 @@
   "status": "ok"
  },
  "way/108432033": {
-  "checkedAt": "2026-10-04T13:44:12.738Z",
+  "checkedAt": "2026-11-09T07:38:04.799Z",
   "website": "https://www.caritas-darmstadt.de/",
   "features": [
    "demenz",
@@ -2329,7 +2399,7 @@
   "status": "ok"
  },
  "way/210378248": {
-  "checkedAt": "2026-10-04T13:44:15.387Z",
+  "checkedAt": "2026-11-09T07:38:08.014Z",
   "website": "https://www.pflege-kleine.de/",
   "features": [
    "verhinderung",
@@ -2346,7 +2416,7 @@
   "status": "ok"
  },
  "way/127226939": {
-  "checkedAt": "2026-10-04T13:44:13.814Z",
+  "checkedAt": "2026-11-09T07:38:05.526Z",
   "website": "http://www.sozialstation-nord-ost.de/",
   "features": [
    "verhinderung",
@@ -2364,7 +2434,7 @@
   "status": "ok"
  },
  "way/187664295": {
-  "checkedAt": "2026-10-04T13:44:14.642Z",
+  "checkedAt": "2026-11-09T07:38:06.655Z",
   "website": "http://www.sozialstation-schorndorf.de/",
   "features": [],
   "kassen": [],
@@ -2372,7 +2442,7 @@
   "status": "http-200"
  },
  "node/7549433124": {
-  "checkedAt": "2026-10-04T13:44:09.359Z",
+  "checkedAt": "2026-11-09T07:37:59.461Z",
   "website": "https://www.ik-ambulante-pflege.de/",
   "features": [
    "intensiv",
@@ -2391,10 +2461,11 @@
   "status": "ok"
  },
  "way/121477535": {
-  "checkedAt": "2026-10-04T13:44:13.230Z",
+  "checkedAt": "2026-11-09T07:38:05.377Z",
   "website": "https://www.diakoniestation-waiblingen.de/",
   "features": [
    "tagespflege",
+   "alltag",
    "demenz",
    "kinder",
    "hauswirtschaft"
@@ -2402,6 +2473,7 @@
   "kassen": [],
   "evidence": {
    "tagespflege": "https://www.diakoniestation-waiblingen.de/",
+   "alltag": "https://www.diakoniestation-waiblingen.de/",
    "demenz": "https://www.diakoniestation-waiblingen.de/runder-tisch-fuer-pflegende-angehoerige/",
    "kinder": "https://www.diakoniestation-waiblingen.de/jobs/pflegefachkraefte-m-w-d-mit-dienstbeginn-ab-7-30-uhr-oder-frueher/",
    "hauswirtschaft": "https://www.diakoniestation-waiblingen.de/jobs/pflegefachkraft-im-betreuten-wohnen-m-w-d-mit-70/"
@@ -2412,20 +2484,22 @@
   "status": "ok"
  },
  "node/443013614": {
-  "checkedAt": "2026-10-04T13:44:05.754Z",
+  "checkedAt": "2026-11-09T07:37:53.884Z",
   "website": "https://www.medica-pflegedienst.de/",
   "features": [
    "verhinderung",
    "hauswirtschaft",
    "tagespflege",
-   "intensiv"
+   "intensiv",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "verhinderung": "https://www.hahne-pflegedienst.de/",
    "hauswirtschaft": "https://www.hahne-pflegedienst.de/",
    "tagespflege": "https://www.hahne-pflegedienst.de/",
-   "intensiv": "https://www.hahne-pflegedienst.de/pflegeleistungen/"
+   "intensiv": "https://www.hahne-pflegedienst.de/pflegeleistungen/",
+   "alltag": "https://www.hahne-pflegedienst.de/pflegeleistungen/hauswirtschaft/"
   },
   "finalUrl": "https://www.hahne-pflegedienst.de/",
   "email": "info@hahne-pflegedienst.de",
@@ -2434,7 +2508,7 @@
   "status": "ok"
  },
  "way/194461319": {
-  "checkedAt": "2026-10-04T13:44:14.792Z",
+  "checkedAt": "2026-11-09T07:38:06.908Z",
   "website": "https://www.diakonie-suedheide.de/diakoniestation-winsen",
   "features": [],
   "kassen": [],
@@ -2442,7 +2516,7 @@
   "status": "http-404"
  },
  "way/289038430": {
-  "checkedAt": "2026-10-04T13:44:16.658Z",
+  "checkedAt": "2026-11-09T07:38:10.531Z",
   "website": "https://www.apd-intensiv.de/",
   "features": [],
   "kassen": [],
@@ -2451,7 +2525,7 @@
   "error": "TypeError"
  },
  "way/211170240": {
-  "checkedAt": "2026-10-04T13:44:15.534Z",
+  "checkedAt": "2026-11-09T07:38:08.162Z",
   "website": "https://www.johannisstift.de/",
   "features": [
    "tagespflege"
@@ -2463,11 +2537,11 @@
   "finalUrl": "https://www.johannisstift.de/",
   "email": "info@johannisstift.de",
   "phone": "052514010",
-  "pagesChecked": 4,
+  "pagesChecked": 3,
   "status": "ok"
  },
  "way/285235549": {
-  "checkedAt": "2026-10-04T13:44:16.494Z",
+  "checkedAt": "2026-11-09T07:38:10.246Z",
   "website": "https://pflege-mildenberger.de/",
   "features": [],
   "kassen": [],
@@ -2477,7 +2551,7 @@
   "status": "ok"
  },
  "node/9789867009": {
-  "checkedAt": "2026-10-04T13:44:11.618Z",
+  "checkedAt": "2026-11-09T07:38:02.957Z",
   "website": "https://www.pflegedienst-schlutup.de/",
   "features": [
    "hauswirtschaft",
@@ -2495,7 +2569,7 @@
   "status": "ok"
  },
  "way/326371281": {
-  "checkedAt": "2026-10-04T13:44:16.905Z",
+  "checkedAt": "2026-11-09T07:38:11.296Z",
   "website": "https://www.dw-ol.de/pages/einrichtungen/microsites/diakonie-sozialstationen_im_oldenburger_land/index.html",
   "features": [],
   "kassen": [],
@@ -2503,7 +2577,7 @@
   "status": "http-404"
  },
  "way/120716406": {
-  "checkedAt": "2026-10-04T13:44:13.024Z",
+  "checkedAt": "2026-11-09T07:38:05.169Z",
   "website": "https://www.ipd-mv.de/standorte/wohngemeinschaft-stralsund-langendorfer-berg/",
   "features": [
    "intensiv"
@@ -2519,7 +2593,7 @@
   "status": "ok"
  },
  "node/5881016884": {
-  "checkedAt": "2026-10-04T13:44:07.636Z",
+  "checkedAt": "2026-11-09T07:37:56.635Z",
   "website": "https://proteam-gmbh.eu/",
   "features": [
    "hauswirtschaft"
@@ -2533,7 +2607,7 @@
   "status": "ok"
  },
  "way/274291463": {
-  "checkedAt": "2026-10-04T13:44:16.431Z",
+  "checkedAt": "2026-11-09T07:38:10.172Z",
   "website": "https://www.sozialstation-olbernhau.de/",
   "features": [
    "beratung",
@@ -2558,7 +2632,7 @@
   "status": "ok"
  },
  "way/314727962": {
-  "checkedAt": "2026-10-04T13:44:16.746Z",
+  "checkedAt": "2026-11-09T07:38:10.925Z",
   "website": "http://www.sozialstation-schoeffengrund.de/",
   "features": [
    "palliativ",
@@ -2578,20 +2652,20 @@
   "status": "ok"
  },
  "way/204662149": {
-  "checkedAt": "2026-10-04T13:44:15.340Z",
+  "checkedAt": "2026-11-09T07:38:07.850Z",
   "website": "https://www.caritas-main-taunus.de/beratung-und-dienste/krankheit-und-pflege/sozialstation-hofheim-eppstein/sozialstation-hofheim-eppstein",
   "features": [
-   "demenz",
    "palliativ",
-   "hauswirtschaft",
-   "tagespflege"
+   "tagespflege",
+   "demenz",
+   "hauswirtschaft"
   ],
   "kassen": [],
   "evidence": {
-   "demenz": "https://www.caritas-taunus.de/",
    "palliativ": "https://www.caritas-taunus.de/",
-   "hauswirtschaft": "https://www.caritas-taunus.de/senioren-pflegebeduerftige/senioren-pflegebeduerftige",
-   "tagespflege": "https://www.caritas-taunus.de/senioren-pflegebeduerftige/senioren-pflegebeduerftige"
+   "tagespflege": "https://www.caritas-taunus.de/",
+   "demenz": "https://www.caritas-taunus.de/senioren-pflegebeduerftige/senioren-pflegebeduerftige",
+   "hauswirtschaft": "https://www.caritas-taunus.de/senioren-pflegebeduerftige/senioren-pflegebeduerftige"
   },
   "finalUrl": "https://www.caritas-taunus.de/",
   "phone": "+496172597600",
@@ -2599,13 +2673,15 @@
   "status": "ok"
  },
  "node/3212587401": {
-  "checkedAt": "2026-10-04T13:44:02.767Z",
+  "checkedAt": "2026-11-09T07:37:49.313Z",
   "website": "https://advita.de/standorte/kreischa",
   "features": [
    "intensiv",
    "verhinderung",
    "tagespflege",
+   "alltag",
    "hauswirtschaft",
+   "beratung",
    "demenz"
   ],
   "kassen": [],
@@ -2613,28 +2689,32 @@
    "intensiv": "https://www.advita.de/standorte/sachsen/advita-haus-am-muehlgraben",
    "verhinderung": "https://www.advita.de/standorte/sachsen/advita-haus-am-muehlgraben",
    "tagespflege": "https://www.advita.de/standorte/sachsen/advita-haus-am-muehlgraben",
+   "alltag": "https://www.advita.de/standorte/sachsen/advita-haus-am-muehlgraben",
    "hauswirtschaft": "https://www.advita.de/leistungen/ambulante-pflege",
-   "demenz": "https://www.advita.de/leistungen/betreutes-wohnen"
+   "beratung": "https://www.advita.de/leistungen/ambulante-pflege",
+   "demenz": "https://www.advita.de/leistungen/pflege-wohngemeinschaft"
   },
   "finalUrl": "https://www.advita.de/standorte/sachsen/advita-haus-am-muehlgraben",
   "pagesChecked": 7,
   "status": "ok"
  },
  "way/215617219": {
-  "checkedAt": "2026-10-04T13:44:15.590Z",
+  "checkedAt": "2026-11-09T07:38:08.455Z",
   "website": "https://www.asb-neustadt-sachsen.de/Sozialstation-Sebnitz.php",
   "features": [
    "verhinderung",
    "hauswirtschaft",
    "beratung",
-   "tagespflege"
+   "tagespflege",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "verhinderung": "https://www.asb-neustadt-sachsen.de/Sozialstation-Sebnitz.php",
    "hauswirtschaft": "https://www.asb-neustadt-sachsen.de/Sozialstation-Sebnitz.php",
    "beratung": "https://www.asb-neustadt-sachsen.de/Sozialstation-Sebnitz.php",
-   "tagespflege": "https://www.asb-neustadt-sachsen.de/Sozialstation-Sebnitz.php"
+   "tagespflege": "https://www.asb-neustadt-sachsen.de/Sozialstation-Sebnitz.php",
+   "alltag": "https://www.asb-neustadt-sachsen.de/Sozialstation-Sebnitz.php"
   },
   "finalUrl": "https://www.asb-neustadt-sachsen.de/Sozialstation-Sebnitz.php",
   "email": "sst.sebnitz@asb-neustadt-sachsen.de",
@@ -2643,7 +2723,7 @@
   "status": "ok"
  },
  "way/242467037": {
-  "checkedAt": "2026-10-04T13:44:16.094Z",
+  "checkedAt": "2026-11-09T07:38:09.899Z",
   "website": "https://www.agaplesion-wup-holzminden.de/wohnen-pflegen/sozialstationen/agaplesion-diakonie-sozialstation-bevern/",
   "features": [
    "demenz",
@@ -2666,7 +2746,7 @@
   "status": "ok"
  },
  "node/1981624027": {
-  "checkedAt": "2026-10-04T13:44:01.666Z",
+  "checkedAt": "2026-11-09T07:37:48.198Z",
   "website": "http://www.pflegedienst-weitzel.de/",
   "features": [
    "hauswirtschaft"
@@ -2681,7 +2761,7 @@
   "status": "ok"
  },
  "way/194677828": {
-  "checkedAt": "2026-10-04T13:44:15.180Z",
+  "checkedAt": "2026-11-09T07:38:07.400Z",
   "website": "https://www.kuelkens.de/",
   "features": [
    "intensiv",
@@ -2702,7 +2782,7 @@
   "status": "ok"
  },
  "way/815817271": {
-  "checkedAt": "2026-10-04T13:44:18.671Z",
+  "checkedAt": "2026-11-09T07:38:15.865Z",
   "website": "https://www.goslar-pflegedienst.de/",
   "features": [],
   "kassen": [],
@@ -2711,27 +2791,16 @@
   "error": "ERR_TLS_CERT_ALTNAME_INVALID"
  },
  "node/5132338362": {
-  "checkedAt": "2026-10-04T13:44:06.663Z",
+  "checkedAt": "2026-11-09T07:37:55.834Z",
   "website": "https://www.promedicaplus.de/24-stunden-betreuung-pflege-hofheim/",
-  "features": [
-   "demenz",
-   "palliativ",
-   "hauswirtschaft"
-  ],
+  "features": [],
   "kassen": [],
-  "evidence": {
-   "demenz": "https://www.promedica24.de/24-stunden-betreuung-pflege-hochtaunus/",
-   "palliativ": "https://www.promedica24.de/24-stunden-betreuung-pflege-hochtaunus/",
-   "hauswirtschaft": "https://www.promedica24.de/24-stunden-betreuung-pflege-hochtaunus/"
-  },
-  "finalUrl": "https://www.promedica24.de/24-stunden-betreuung-pflege-hochtaunus/",
-  "email": "hochtaunus@promedicaplus.de",
-  "phone": "06172596909",
-  "pagesChecked": 7,
-  "status": "ok"
+  "evidence": {},
+  "status": "error",
+  "error": "ECONNRESET"
  },
  "way/93928910": {
-  "checkedAt": "2026-10-04T13:44:19.724Z",
+  "checkedAt": "2026-11-09T07:38:16.175Z",
   "website": "https://www.nicoles-pflegedienst.de/",
   "features": [],
   "kassen": [],
@@ -2739,18 +2808,20 @@
   "status": "http-403"
  },
  "way/38620491": {
-  "checkedAt": "2026-10-04T13:44:17.382Z",
+  "checkedAt": "2026-11-09T07:38:12.724Z",
   "website": "http://www.apd.de/",
   "features": [
    "demenz",
    "hauswirtschaft",
-   "tagespflege"
+   "tagespflege",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "demenz": "https://www.apd.de/",
    "hauswirtschaft": "https://www.apd.de/",
-   "tagespflege": "https://www.apd.de/"
+   "tagespflege": "https://www.apd.de/",
+   "alltag": "https://www.apd.de/pflegeangebot/tagespflege/"
   },
   "finalUrl": "https://www.apd.de/",
   "phone": "+498009230500",
@@ -2758,7 +2829,7 @@
   "status": "ok"
  },
  "way/438055055": {
-  "checkedAt": "2026-10-04T13:44:17.535Z",
+  "checkedAt": "2026-11-09T07:38:12.882Z",
   "website": "https://www.pflegesuche.de/pflegedienst/augenblick-in-memmingen_39266.html",
   "features": [
    "intensiv",
@@ -2776,7 +2847,7 @@
   "status": "ok"
  },
  "way/41182650": {
-  "checkedAt": "2026-10-04T13:44:17.458Z",
+  "checkedAt": "2026-11-09T07:38:12.771Z",
   "website": "https://www.pflegediakonie.de/standorte/hamburg-wilhelmsburg",
   "features": [
    "demenz",
@@ -2798,7 +2869,7 @@
   "status": "ok"
  },
  "way/615895431": {
-  "checkedAt": "2026-10-04T13:44:18.185Z",
+  "checkedAt": "2026-11-09T07:38:14.619Z",
   "website": "https://meissner-walter.de/#&panel1-1",
   "features": [
    "beratung",
@@ -2807,7 +2878,8 @@
    "kinder",
    "palliativ",
    "verhinderung",
-   "tagespflege"
+   "tagespflege",
+   "alltag"
   ],
   "kassen": [
    "dak"
@@ -2819,7 +2891,8 @@
    "kinder": "https://meissner-walter.de/ueber-uns/neuigkeiten",
    "palliativ": "https://meissner-walter.de/ueber-uns/pflegeleitbild",
    "verhinderung": "https://meissner-walter.de/ueber-uns/beratung",
-   "tagespflege": "https://meissner-walter.de/ueber-uns/beratung"
+   "tagespflege": "https://meissner-walter.de/ueber-uns/beratung",
+   "alltag": "https://meissner-walter.de/ueber-uns/beratung"
   },
   "finalUrl": "https://meissner-walter.de/",
   "phone": "+49305143738",
@@ -2827,7 +2900,7 @@
   "status": "ok"
  },
  "way/69672783": {
-  "checkedAt": "2026-10-04T13:44:18.644Z",
+  "checkedAt": "2026-11-09T07:38:15.693Z",
   "website": "http://www.sozialstation-stutensee-weingarten.de/",
   "features": [
    "demenz",
@@ -2847,27 +2920,31 @@
   "status": "ok"
  },
  "way/650645992": {
-  "checkedAt": "2026-10-04T13:44:18.317Z",
+  "checkedAt": "2026-11-09T07:38:15.120Z",
   "website": "https://curadompflege.de/",
   "features": [
    "verhinderung",
    "hauswirtschaft",
-   "demenz",
-   "beratung"
+   "beratung",
+   "alltag",
+   "demenz"
   ],
   "kassen": [],
   "evidence": {
    "verhinderung": "https://curadompflege.de/",
    "hauswirtschaft": "https://curadompflege.de/",
-   "demenz": "https://curadompflege.de/unsere-leistungen-pflegedienst-baden-baden-curadom",
-   "beratung": "https://curadompflege.de/unsere-leistungen-pflegedienst-baden-baden-curadom"
+   "beratung": "https://curadompflege.de/",
+   "alltag": "https://curadompflege.de/",
+   "demenz": "https://curadompflege.de/unsere-leistungen-pflegedienst-baden-baden-curadom"
   },
   "finalUrl": "https://curadompflege.de/",
+  "email": "info@curadompflege.de",
+  "phone": "+4972233009083",
   "pagesChecked": 7,
   "status": "ok"
  },
  "way/217561182": {
-  "checkedAt": "2026-10-04T13:44:15.836Z",
+  "checkedAt": "2026-11-09T07:38:08.789Z",
   "website": "https://www.sozialstation-sebnitz.de/",
   "features": [
    "tagespflege"
@@ -2881,36 +2958,40 @@
   "status": "ok"
  },
  "node/13167562105": {
-  "checkedAt": "2026-10-04T13:43:57.512Z",
+  "checkedAt": "2026-11-09T07:37:41.802Z",
   "website": "https://s-balt.de/",
   "features": [
    "demenz",
-   "hauswirtschaft"
+   "hauswirtschaft",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "demenz": "https://s-balt.de/",
-   "hauswirtschaft": "https://s-balt.de/"
+   "hauswirtschaft": "https://s-balt.de/",
+   "alltag": "https://s-balt.de/"
   },
   "finalUrl": "https://s-balt.de/",
   "pagesChecked": 7,
   "status": "ok"
  },
  "way/463237523": {
-  "checkedAt": "2026-10-04T13:44:18.148Z",
+  "checkedAt": "2026-11-09T07:38:14.095Z",
   "website": "https://cathamed.de/",
   "features": [
    "intensiv",
    "tagespflege",
    "verhinderung",
-   "hauswirtschaft"
+   "hauswirtschaft",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "intensiv": "https://cathamed.de/",
    "tagespflege": "https://cathamed.de/",
    "verhinderung": "https://cathamed.de/ambulante-pflege/",
-   "hauswirtschaft": "https://cathamed.de/ambulante-pflege/"
+   "hauswirtschaft": "https://cathamed.de/ambulante-pflege/",
+   "alltag": "https://cathamed.de/tagespflege/"
   },
   "finalUrl": "https://cathamed.de/",
   "email": "beratung@cathamed.de",
@@ -2919,54 +3000,51 @@
   "status": "ok"
  },
  "way/338103827": {
-  "checkedAt": "2026-10-04T13:44:17.022Z",
+  "checkedAt": "2026-11-09T07:38:12.055Z",
   "website": "https://diakonie-munster.de/",
   "features": [
-   "hauswirtschaft",
    "palliativ",
-   "kinder",
-   "verhinderung",
-   "beratung"
-  ],
-  "kassen": [],
-  "evidence": {
-   "hauswirtschaft": "https://diakonie-munster.de/de/82556-Ueber-uns",
-   "palliativ": "https://diakonie-munster.de/de/82557-Leistungen",
-   "kinder": "https://diakonie-munster.de/de/82557-Leistungen",
-   "verhinderung": "https://diakonie-munster.de/de/82557-Leistungen",
-   "beratung": "https://diakonie-munster.de/de/82557-Leistungen"
-  },
-  "finalUrl": "https://diakonie-munster.de/",
-  "email": "info@dst-munster.de",
-  "pagesChecked": 6,
-  "status": "ok"
- },
- "way/127680788": {
-  "checkedAt": "2026-10-04T13:44:14.171Z",
-  "website": "https://alltagsfuersorge.de/",
-  "features": [
-   "verhinderung",
    "hauswirtschaft"
   ],
   "kassen": [],
   "evidence": {
+   "palliativ": "https://diakonie-munster.de/",
+   "hauswirtschaft": "https://diakonie-munster.de/ueber-uns"
+  },
+  "finalUrl": "https://diakonie-munster.de/",
+  "pagesChecked": 6,
+  "status": "ok"
+ },
+ "way/127680788": {
+  "checkedAt": "2026-11-09T07:38:05.872Z",
+  "website": "https://alltagsfuersorge.de/",
+  "features": [
+   "verhinderung",
+   "hauswirtschaft",
+   "alltag"
+  ],
+  "kassen": [],
+  "evidence": {
    "verhinderung": "https://alltagsfuersorge.de/",
-   "hauswirtschaft": "https://alltagsfuersorge.de/"
+   "hauswirtschaft": "https://alltagsfuersorge.de/",
+   "alltag": "https://alltagsfuersorge.de/leistungen/"
   },
   "finalUrl": "https://alltagsfuersorge.de/",
   "pagesChecked": 5,
   "status": "ok"
  },
  "way/198274545": {
-  "checkedAt": "2026-10-04T13:44:15.187Z",
+  "checkedAt": "2026-11-09T07:38:07.746Z",
   "website": "https://www.renningen.de/sozialstation",
   "features": [
    "hauswirtschaft",
+   "alltag",
    "tagespflege"
   ],
   "kassen": [],
   "evidence": {
    "hauswirtschaft": "https://www.renningen.de/renninger-in/soziales/sozialstation/",
+   "alltag": "https://www.renningen.de/renninger-in/soziales/sozialstation/",
    "tagespflege": "https://www.renningen.de/renninger-in/familienportal/kinderbetreuung/"
   },
   "finalUrl": "https://www.renningen.de/renninger-in/soziales/sozialstation/",
@@ -2976,7 +3054,7 @@
   "status": "ok"
  },
  "node/4413088173": {
-  "checkedAt": "2026-10-04T13:44:05.656Z",
+  "checkedAt": "2026-11-09T07:37:53.638Z",
   "website": "http://www.pflegedienst-remmers.de/",
   "features": [
    "hauswirtschaft"
@@ -2991,7 +3069,7 @@
   "status": "ok"
  },
  "node/938884878": {
-  "checkedAt": "2026-10-04T13:44:10.620Z",
+  "checkedAt": "2026-11-09T07:38:02.062Z",
   "website": "https://wuelfeler-pflegedienst.de/",
   "features": [
    "hauswirtschaft",
@@ -3007,7 +3085,7 @@
   "status": "ok"
  },
  "way/227026978": {
-  "checkedAt": "2026-10-04T13:44:15.852Z",
+  "checkedAt": "2026-11-09T07:38:08.843Z",
   "website": "https://www.humanitas.de/",
   "features": [
    "hauswirtschaft",
@@ -3027,7 +3105,7 @@
   "status": "ok"
  },
  "node/3369443862": {
-  "checkedAt": "2026-10-04T13:44:02.911Z",
+  "checkedAt": "2026-11-09T07:37:49.847Z",
   "website": "https://www.kur-pflegedienst.de/",
   "features": [
    "hauswirtschaft",
@@ -3043,16 +3121,18 @@
   "status": "ok"
  },
  "way/368031176": {
-  "checkedAt": "2026-10-04T13:44:17.320Z",
+  "checkedAt": "2026-11-09T07:38:12.575Z",
   "website": "https://www.sozialstation-flinsbach.de/",
   "features": [
    "hauswirtschaft",
-   "tagespflege"
+   "tagespflege",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "hauswirtschaft": "https://www.sozialstation-flinsbach.de/home.html",
-   "tagespflege": "https://www.sozialstation-flinsbach.de/home.html"
+   "tagespflege": "https://www.sozialstation-flinsbach.de/home.html",
+   "alltag": "https://www.sozialstation-flinsbach.de/tagespflege.html"
   },
   "finalUrl": "https://www.sozialstation-flinsbach.de/home.html",
   "phone": "0726396330",
@@ -3061,7 +3141,7 @@
   "status": "ok"
  },
  "node/6316591589": {
-  "checkedAt": "2026-10-04T13:44:07.902Z",
+  "checkedAt": "2026-11-09T07:37:57.429Z",
   "website": "https://www.a-hi.de/",
   "features": [
    "hauswirtschaft",
@@ -3079,18 +3159,20 @@
   "status": "ok"
  },
  "way/91855051": {
-  "checkedAt": "2026-10-04T13:44:19.596Z",
+  "checkedAt": "2026-11-09T07:38:15.924Z",
   "website": "https://www.caritas-wuerzburg.org/pflege-betreuung/sozialstation#caritas-sozialstation-st-totnan",
   "features": [
    "demenz",
    "hauswirtschaft",
-   "tagespflege"
+   "tagespflege",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "demenz": "https://caritas-wuerzburg.org/pflege-betreuung/sozialstation/",
    "hauswirtschaft": "https://caritas-wuerzburg.org/pflege-betreuung/sozialstation/",
-   "tagespflege": "https://caritas-wuerzburg.org/pflege-betreuung/sozialstation/"
+   "tagespflege": "https://caritas-wuerzburg.org/pflege-betreuung/sozialstation/",
+   "alltag": "https://caritas-wuerzburg.org/pflege-betreuung/tagespflege/"
   },
   "finalUrl": "https://caritas-wuerzburg.org/pflege-betreuung/sozialstation/",
   "email": "sst.st-franziskus@caritas-wuerzburg.org",
@@ -3098,13 +3180,14 @@
   "status": "ok"
  },
  "way/178732272": {
-  "checkedAt": "2026-10-04T13:44:14.592Z",
+  "checkedAt": "2026-11-09T07:38:06.586Z",
   "website": "https://www.twsd-wohnenplus.de/index.php?entry_id=200",
   "features": [
    "demenz",
    "palliativ",
    "hauswirtschaft",
-   "tagespflege"
+   "tagespflege",
+   "alltag"
   ],
   "kassen": [
    "alle"
@@ -3113,7 +3196,8 @@
    "demenz": "https://www.twsd-wohnenplus.de/index.php?entry_id=200",
    "palliativ": "https://www.twsd-wohnenplus.de/index.php?entry_id=200",
    "hauswirtschaft": "https://www.twsd-wohnenplus.de/index.php?entry_id=200",
-   "tagespflege": "https://www.twsd-wohnenplus.de/index.php?entry_id=200"
+   "tagespflege": "https://www.twsd-wohnenplus.de/index.php?entry_id=200",
+   "alltag": "https://www.twsd-wohnenplus.de/pflege/seniorencampus-tagespflege.html"
   },
   "finalUrl": "https://www.twsd-wohnenplus.de/index.php?entry_id=200",
   "email": "info.wp@twsd.de",
@@ -3121,7 +3205,7 @@
   "status": "ok"
  },
  "node/9536856170": {
-  "checkedAt": "2026-10-04T13:44:10.757Z",
+  "checkedAt": "2026-11-09T07:38:02.790Z",
   "website": "https://www.sozialstation-fuessen.de/",
   "features": [
    "demenz",
@@ -3144,7 +3228,7 @@
   "status": "ok"
  },
  "way/230304730": {
-  "checkedAt": "2026-10-04T13:44:16.070Z",
+  "checkedAt": "2026-11-09T07:38:09.658Z",
   "website": "https://www.pflegedienst-reichenbach.de/",
   "features": [
    "hauswirtschaft",
@@ -3164,7 +3248,7 @@
   "status": "ok"
  },
  "way/879417127": {
-  "checkedAt": "2026-10-04T13:44:19.476Z",
+  "checkedAt": "2026-11-09T07:38:15.877Z",
   "website": "https://glueckstaedter-pflegedienst.de/",
   "features": [
    "verhinderung"
@@ -3178,14 +3262,15 @@
   "status": "ok"
  },
  "way/69992358": {
-  "checkedAt": "2026-10-04T13:44:18.653Z",
+  "checkedAt": "2026-11-09T07:38:15.793Z",
   "website": "https://www.heimggmbh.de/angebote-und-leistungen/sozialstationen/",
   "features": [
    "intensiv",
    "demenz",
    "verhinderung",
    "hauswirtschaft",
-   "tagespflege"
+   "tagespflege",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
@@ -3193,7 +3278,8 @@
    "demenz": "https://www.heimggmbh.de/angebote-und-leistungen/sozialstationen/",
    "verhinderung": "https://www.heimggmbh.de/angebote-und-leistungen/sozialstationen/",
    "hauswirtschaft": "https://www.heimggmbh.de/angebote-und-leistungen/sozialstationen/",
-   "tagespflege": "https://www.heimggmbh.de/angebote-und-leistungen/sozialstationen/"
+   "tagespflege": "https://www.heimggmbh.de/angebote-und-leistungen/sozialstationen/",
+   "alltag": "https://www.heimggmbh.de/angebote-und-leistungen/sozialstationen/"
   },
   "finalUrl": "https://www.heimggmbh.de/angebote-und-leistungen/sozialstationen/",
   "email": "sozialstation@heimggmbh.de",
@@ -3202,7 +3288,7 @@
   "status": "ok"
  },
  "way/131687879": {
-  "checkedAt": "2026-10-04T13:44:14.223Z",
+  "checkedAt": "2026-11-09T07:38:05.907Z",
   "website": "https://www.sozialstation-ahz.de/",
   "features": [
    "hauswirtschaft"
@@ -3218,16 +3304,18 @@
   "status": "ok"
  },
  "node/752885519": {
-  "checkedAt": "2026-10-04T13:44:09.201Z",
+  "checkedAt": "2026-11-09T07:37:58.992Z",
   "website": "https://pflegedienst-emsa.de/",
   "features": [
    "hauswirtschaft",
+   "alltag",
    "demenz",
    "verhinderung"
   ],
   "kassen": [],
   "evidence": {
    "hauswirtschaft": "https://pflegedienst-emsa.de/",
+   "alltag": "https://pflegedienst-emsa.de/",
    "demenz": "https://pflegedienst-emsa.de/services/grundpflege-sgb-xi/",
    "verhinderung": "https://pflegedienst-emsa.de/pflege-zu-hause-welche-leistungen-stehen-mir-eigentlich-zu/"
   },
@@ -3237,18 +3325,20 @@
   "status": "ok"
  },
  "node/9190447890": {
-  "checkedAt": "2026-10-04T13:44:10.519Z",
+  "checkedAt": "2026-11-09T07:38:01.743Z",
   "website": "https://www.sozialstation-kl.de/",
   "features": [
    "tagespflege",
    "verhinderung",
-   "demenz"
+   "demenz",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "tagespflege": "https://www.prot-altenhilfe.de/",
    "verhinderung": "https://www.prot-altenhilfe.de/pflege/kosten/",
-   "demenz": "https://www.prot-altenhilfe.de/pflege/pflegeplatzanfrage/"
+   "demenz": "https://www.prot-altenhilfe.de/pflege/pflegeplatzanfrage/",
+   "alltag": "https://www.prot-altenhilfe.de/standorte/gruene-oase-tagespflege/"
   },
   "finalUrl": "https://www.prot-altenhilfe.de/",
   "email": "oesw-tp@prot-altenhilfe.de",
@@ -3256,16 +3346,18 @@
   "status": "ok"
  },
  "node/7581135297": {
-  "checkedAt": "2026-10-04T13:44:09.575Z",
+  "checkedAt": "2026-11-09T07:37:59.584Z",
   "website": "https://sempatikcare.de/",
   "features": [
    "intensiv",
-   "verhinderung"
+   "verhinderung",
+   "alltag"
   ],
   "kassen": [],
   "evidence": {
    "intensiv": "https://sempatikcare.de/",
-   "verhinderung": "https://sempatikcare.de/"
+   "verhinderung": "https://sempatikcare.de/",
+   "alltag": "https://sempatikcare.de/services/ambulante-pflege/"
   },
   "finalUrl": "https://sempatikcare.de/",
   "email": "info@sempatikcare.de",
@@ -3274,7 +3366,7 @@
   "status": "ok"
  },
  "way/106947261": {
-  "checkedAt": "2026-10-04T13:44:12.438Z",
+  "checkedAt": "2026-11-09T07:38:04.629Z",
   "website": "https://www.awo-freiberg.de/index.php/altenhilfe/sozialstation",
   "features": [
    "hauswirtschaft",
