@@ -9668,5 +9668,2735 @@
     "alltag"
    ]
   }
+ },
+ {
+  "id": "extra/werdenfelser-ambulanter-pflegedienst-garmisch-partenkirchen",
+  "cat": "pflege",
+  "quelle": "https://www.werdenfelser-pflegedienst.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "Werdenfelser Ambulanter Pflegedienst",
+   "addr:street": "Ludwigstraße",
+   "addr:housenumber": "69",
+   "addr:postcode": "82467",
+   "addr:city": "Garmisch-Partenkirchen",
+   "phone": "+49 8821 73773",
+   "website": "https://www.werdenfelser-pflegedienst.de/",
+   "email": "info@werdenfelser-pflegedienst.de"
+  },
+  "location": {
+   "lat": 47.4947609,
+   "lon": 11.1094482
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62726",
+    "name": "Landkreis Garmisch-Partenkirchen"
+   },
+   "8": {
+    "id": "relation/939334",
+    "name": "Garmisch-Partenkirchen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/oberlaender-ambulanter-pflegedienst-garmisch-partenkirchen",
+  "cat": "pflege",
+  "quelle": "https://www.oberlaender-pflegedienst.de/impressum.php (2026-11-12)",
+  "tags": {
+   "name": "Oberländer Ambulanter Pflegedienst",
+   "addr:street": "Reintalstraße",
+   "addr:housenumber": "2",
+   "addr:postcode": "82467",
+   "addr:city": "Garmisch-Partenkirchen",
+   "phone": "+49 8821 949200",
+   "website": "https://www.oberlaender-pflegedienst.de/",
+   "email": "info@oberlaender-pflegedienst.de"
+  },
+  "location": {
+   "lat": 47.4944489,
+   "lon": 11.1024648
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62726",
+    "name": "Landkreis Garmisch-Partenkirchen"
+   },
+   "8": {
+    "id": "relation/939334",
+    "name": "Garmisch-Partenkirchen"
+   }
+  }
+ },
+ {
+  "id": "extra/caritas-ambulanter-pflegedienst-garmisch-partenkir-garmisch-part",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-ambulanter-pflegedienst-garmisch-partenkirchen.de/de (2026-11-12)",
+  "tags": {
+   "name": "Caritas Ambulanter Pflegedienst Garmisch-Partenkirchen",
+   "addr:street": "Dompfaffstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "82467",
+   "addr:city": "Garmisch-Partenkirchen",
+   "phone": "+49 8821 9434860",
+   "website": "https://www.caritas-ambulanter-pflegedienst-garmisch-partenkirchen.de/",
+   "email": "ambulante-pflege-garmisch-partenkirchen@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 47.4974994,
+   "lon": 11.0966872
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62726",
+    "name": "Landkreis Garmisch-Partenkirchen"
+   },
+   "8": {
+    "id": "relation/939334",
+    "name": "Garmisch-Partenkirchen"
+   }
+  }
+ },
+ {
+  "id": "extra/senioren-seelsorge-ggmbh-garmisch-partenkirchen",
+  "cat": "pflege",
+  "quelle": "https://www.senioren-seelsorge.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "Senioren-Seelsorge gGmbH",
+   "addr:street": "Samweberstraße",
+   "addr:housenumber": "7",
+   "addr:postcode": "82467",
+   "addr:city": "Garmisch-Partenkirchen",
+   "phone": "+49 8821 909898",
+   "website": "https://www.senioren-seelsorge.de/",
+   "email": "info@senioren-seelsorge.de"
+  },
+  "location": {
+   "lat": 47.4897917,
+   "lon": 11.1112687
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62726",
+    "name": "Landkreis Garmisch-Partenkirchen"
+   },
+   "8": {
+    "id": "relation/939334",
+    "name": "Garmisch-Partenkirchen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-kreisverband-garmisch-partenkirchen-alltagsbeg-garmisch-part",
+  "cat": "pflege",
+  "quelle": "https://www.brk-gap.de/kontakt.html (2026-11-12)",
+  "tags": {
+   "name": "BRK Kreisverband Garmisch-Partenkirchen – Alltagsbegleiter",
+   "addr:street": "Falkenstraße",
+   "addr:housenumber": "9",
+   "addr:postcode": "82467",
+   "addr:city": "Garmisch-Partenkirchen",
+   "phone": "+49 8821 6036143",
+   "website": "https://www.brk-gap.de/alltagsbegleiter.html",
+   "email": "fachstelle-pflege@kvgarmisch.brk.de"
+  },
+  "location": {
+   "lat": 47.5001034,
+   "lon": 11.0963999
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62726",
+    "name": "Landkreis Garmisch-Partenkirchen"
+   },
+   "8": {
+    "id": "relation/939334",
+    "name": "Garmisch-Partenkirchen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-kreisverband-garmisch-partenkirchen-alltagsbeg-garmisch-part",
+  "cat": "fahrt",
+  "quelle": "https://www.brk-gap.de/kontakt.html (2026-11-12)",
+  "tags": {
+   "name": "BRK Kreisverband Garmisch-Partenkirchen – Alltagsbegleiter",
+   "addr:street": "Falkenstraße",
+   "addr:housenumber": "9",
+   "addr:postcode": "82467",
+   "addr:city": "Garmisch-Partenkirchen",
+   "phone": "+49 8821 6036143",
+   "website": "https://www.brk-gap.de/alltagsbegleiter.html",
+   "email": "fachstelle-pflege@kvgarmisch.brk.de"
+  },
+  "location": {
+   "lat": 47.5001034,
+   "lon": 11.0963999
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62726",
+    "name": "Landkreis Garmisch-Partenkirchen"
+   },
+   "8": {
+    "id": "relation/939334",
+    "name": "Garmisch-Partenkirchen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/servus-ambulanter-pflegedienst-oehler-baumann-gbr-murnau-am-staf",
+  "cat": "pflege",
+  "quelle": "https://servus-ambulantepflege.de/ (2026-11-12)",
+  "tags": {
+   "name": "Servus Ambulanter Pflegedienst Oehler & Baumann GbR",
+   "addr:street": "Dr.-Friedrich-und-Ilse-Erhard-Straße",
+   "addr:housenumber": "15",
+   "addr:postcode": "82418",
+   "addr:city": "Murnau am Staffelsee",
+   "phone": "+49 8841 4891910",
+   "website": "https://servus-ambulantepflege.de/",
+   "email": "info@servus-ambulantepflege.de"
+  },
+  "location": {
+   "lat": 47.6852796,
+   "lon": 11.1975331
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62726",
+    "name": "Landkreis Garmisch-Partenkirchen"
+   },
+   "8": {
+    "id": "relation/939375",
+    "name": "Murnau am Staffelsee"
+   }
+  }
+ },
+ {
+  "id": "extra/blauweiss-pflegedienst-gmbh-murnau-am-staffelsee",
+  "cat": "pflege",
+  "quelle": "https://blauweiss-pflegedienst.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "BlauWeiss Pflegedienst GmbH",
+   "addr:street": "Kocheler Straße",
+   "addr:housenumber": "27",
+   "addr:postcode": "82418",
+   "addr:city": "Murnau am Staffelsee",
+   "phone": "+49 8841 488100",
+   "website": "https://blauweiss-pflegedienst.de/",
+   "email": "info@blauweiss-intensivpflege.de"
+  },
+  "location": {
+   "lat": 47.6726285,
+   "lon": 11.2077548
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62726",
+    "name": "Landkreis Garmisch-Partenkirchen"
+   },
+   "8": {
+    "id": "relation/939375",
+    "name": "Murnau am Staffelsee"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulante-pflege-murnau-oberland-gmbh-murnau-am-staffelsee",
+  "cat": "pflege",
+  "quelle": "https://www.amb-pflege-mo.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "Ambulante Pflege Murnau-Oberland GmbH",
+   "addr:street": "Johannisstraße",
+   "addr:housenumber": "11",
+   "addr:postcode": "82418",
+   "addr:city": "Murnau am Staffelsee",
+   "phone": "+49 8841 4490",
+   "website": "https://www.amb-pflege-mo.de/",
+   "email": "info@amb-pflege-mo.de"
+  },
+  "location": {
+   "lat": 47.6799825,
+   "lon": 11.2022649
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62726",
+    "name": "Landkreis Garmisch-Partenkirchen"
+   },
+   "8": {
+    "id": "relation/939375",
+    "name": "Murnau am Staffelsee"
+   }
+  }
+ },
+ {
+  "id": "extra/pflege4dahoam-gmbh-mittenwald",
+  "cat": "pflege",
+  "quelle": "https://pflege4dahoam.de/ (2026-11-12)",
+  "tags": {
+   "name": "Pflege4Dahoam GmbH",
+   "addr:street": "Schöttlkarstraße",
+   "addr:housenumber": "11",
+   "addr:postcode": "82481",
+   "addr:city": "Mittenwald",
+   "phone": "+49 8823 9384838",
+   "website": "https://pflege4dahoam.de/",
+   "email": "info@pflege4dahoam.de"
+  },
+  "location": {
+   "lat": 47.4452404,
+   "lon": 11.2653975
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62726",
+    "name": "Landkreis Garmisch-Partenkirchen"
+   },
+   "8": {
+    "id": "relation/939341",
+    "name": "Mittenwald"
+   }
+  }
+ },
+ {
+  "id": "extra/die-pflegemacher-gmbh-mittenwald",
+  "cat": "pflege",
+  "quelle": "https://www.die-pflegemacher.de/impressum.html (2026-11-12)",
+  "tags": {
+   "name": "Die Pflegemacher GmbH",
+   "addr:street": "Partenkirchner Straße",
+   "addr:housenumber": "10",
+   "addr:postcode": "82481",
+   "addr:city": "Mittenwald",
+   "phone": "+49 8823 932320",
+   "website": "https://www.die-pflegemacher.de/",
+   "email": "info@die-pflegemacher.de"
+  },
+  "location": {
+   "lat": 47.4436051,
+   "lon": 11.2622426
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62726",
+    "name": "Landkreis Garmisch-Partenkirchen"
+   },
+   "8": {
+    "id": "relation/939341",
+    "name": "Mittenwald"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-benz-gmbh-kruen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-benz.de/ (2026-11-12)",
+  "tags": {
+   "name": "Pflegedienst Benz GmbH",
+   "addr:street": "Soiernstraße",
+   "addr:housenumber": "8b",
+   "addr:postcode": "82494",
+   "addr:city": "Krün",
+   "phone": "+49 160 1815257",
+   "website": "https://www.pflegedienst-benz.de/",
+   "email": "info@pflegedienst-benz.de"
+  },
+  "location": {
+   "lat": 47.5039891,
+   "lon": 11.281421
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62726",
+    "name": "Landkreis Garmisch-Partenkirchen"
+   },
+   "8": {
+    "id": "relation/939340",
+    "name": "Krün"
+   }
+  }
+ },
+ {
+  "id": "extra/medicus-ambulanter-dienst-oberau-oberau",
+  "cat": "pflege",
+  "quelle": "https://www.medicus-pflege.de/oberau/ (2026-11-12)",
+  "tags": {
+   "name": "Medicus Ambulanter Dienst Oberau",
+   "addr:street": "Loisachauenstraße",
+   "addr:housenumber": "5",
+   "addr:postcode": "82496",
+   "addr:city": "Oberau",
+   "phone": "+49 89 3797940",
+   "website": "https://www.medicus-pflege.de/oberau/",
+   "email": "oberau@medicus-pflege.de"
+  },
+  "location": {
+   "lat": 47.5628548,
+   "lon": 11.1405429
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62726",
+    "name": "Landkreis Garmisch-Partenkirchen"
+   },
+   "8": {
+    "id": "relation/939349",
+    "name": "Oberau"
+   }
+  }
+ },
+ {
+  "id": "extra/sozialstation-tabea-seniorenhilfswerk-ggmbh-bad-ko-bad-kohlgrub",
+  "cat": "pflege",
+  "quelle": "http://www.sozialstation-tabea.de/badkohlgrub/ (2026-11-12)",
+  "tags": {
+   "name": "Sozialstation TABEA Seniorenhilfswerk gGmbH – Bad Kohlgrub",
+   "addr:street": "St.-Martin-Straße",
+   "addr:housenumber": "4",
+   "addr:postcode": "82433",
+   "addr:city": "Bad Kohlgrub",
+   "phone": "+49 8845 7576290",
+   "website": "http://www.sozialstation-tabea.de/badkohlgrub/",
+   "email": "Sozialstation.Tabea@t-online.de"
+  },
+  "location": {
+   "lat": 47.6665882,
+   "lon": 11.0502833
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62726",
+    "name": "Landkreis Garmisch-Partenkirchen"
+   },
+   "8": {
+    "id": "relation/937894",
+    "name": "Bad Kohlgrub"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-domicilium-weyarn",
+  "cat": "pflege",
+  "quelle": "https://domicilium.de/pflegedienst/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Domicilium",
+   "addr:street": "Holzkirchener Straße",
+   "addr:housenumber": "3a",
+   "addr:postcode": "83629",
+   "addr:city": "Weyarn",
+   "phone": "+49 8020 904831",
+   "website": "https://domicilium.de/pflegedienst/",
+   "email": "pflegedienst@domicilium.de"
+  },
+  "location": {
+   "lat": 47.862242,
+   "lon": 11.790308
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935949",
+    "name": "Weyarn"
+   }
+  }
+ },
+ {
+  "id": "extra/diakonieverein-tegernseer-tal-e-v-gmund-am-tegernsee",
+  "cat": "pflege",
+  "quelle": "https://www.diakonie-tegernseer-tal.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "Diakonieverein Tegernseer Tal e.V.",
+   "addr:street": "Wiesseer Straße",
+   "addr:housenumber": "18",
+   "addr:postcode": "83703",
+   "addr:city": "Gmund am Tegernsee",
+   "phone": "+49 8022 769581",
+   "website": "https://www.diakonie-tegernseer-tal.de/",
+   "email": "info@diakonie-tegernseer-tal.de"
+  },
+  "location": {
+   "lat": 47.750015,
+   "lon": 11.734572
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935953",
+    "name": "Gmund am Tegernsee"
+   }
+  }
+ },
+ {
+  "id": "extra/tegernseer-pflegedienst-gmbh-bad-wiessee",
+  "cat": "pflege",
+  "quelle": "https://tegernseer-pflegedienst.de/ (2026-11-12)",
+  "tags": {
+   "name": "Tegernseer Pflegedienst GmbH",
+   "addr:street": "Münchner Straße",
+   "addr:housenumber": "35",
+   "addr:postcode": "83707",
+   "addr:city": "Bad Wiessee",
+   "phone": "+49 8022 6639333",
+   "website": "https://tegernseer-pflegedienst.de/",
+   "email": "info@tegernseer-pflegedienst.de"
+  },
+  "location": {
+   "lat": 47.716256,
+   "lon": 11.719809
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935946",
+    "name": "Bad Wiessee"
+   }
+  }
+ },
+ {
+  "id": "extra/humacare-gmbh-holzkirchen",
+  "cat": "pflege",
+  "quelle": "https://www.humacare.de/ (2026-11-12)",
+  "tags": {
+   "name": "HumaCare GmbH",
+   "addr:street": "Marktplatz",
+   "addr:housenumber": "15",
+   "addr:postcode": "83607",
+   "addr:city": "Holzkirchen",
+   "phone": "+49 8024 4780851",
+   "website": "https://www.humacare.de/",
+   "email": "info@humacare.de"
+  },
+  "location": {
+   "lat": 47.876831,
+   "lon": 11.700882
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935961",
+    "name": "Holzkirchen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/oekumenische-nachbarschaftshilfe-holzkirchen-e-v-holzkirchen",
+  "cat": "pflege",
+  "quelle": "https://www.nachbarschaftshilfe-holzkirchen.de/startseitekontakt (2026-11-12)",
+  "tags": {
+   "name": "Ökumenische Nachbarschaftshilfe Holzkirchen e.V.",
+   "addr:street": "Haidstraße",
+   "addr:housenumber": "3",
+   "addr:postcode": "83607",
+   "addr:city": "Holzkirchen",
+   "phone": "+49 8024 9029471",
+   "website": "https://www.nachbarschaftshilfe-holzkirchen.de/",
+   "email": "info@nachbarschaftshilfe-holzkirchen.de"
+  },
+  "location": {
+   "lat": 47.883556,
+   "lon": 11.695469
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935961",
+    "name": "Holzkirchen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/oekumenische-nachbarschaftshilfe-holzkirchen-e-v-holzkirchen",
+  "cat": "fahrt",
+  "quelle": "https://www.nachbarschaftshilfe-holzkirchen.de/startseitekontakt (2026-11-12)",
+  "tags": {
+   "name": "Ökumenische Nachbarschaftshilfe Holzkirchen e.V.",
+   "addr:street": "Haidstraße",
+   "addr:housenumber": "3",
+   "addr:postcode": "83607",
+   "addr:city": "Holzkirchen",
+   "phone": "+49 8024 9029471",
+   "website": "https://www.nachbarschaftshilfe-holzkirchen.de/",
+   "email": "info@nachbarschaftshilfe-holzkirchen.de"
+  },
+  "location": {
+   "lat": 47.883556,
+   "lon": 11.695469
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935961",
+    "name": "Holzkirchen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-schliersee-e-v-schliersee",
+  "cat": "pflege",
+  "quelle": "https://www.nbh-schliersee.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "NachbarschaftsHilfe Schliersee e.V.",
+   "addr:street": "Rathausstraße",
+   "addr:housenumber": "8",
+   "addr:postcode": "83727",
+   "addr:city": "Schliersee",
+   "phone": "+49 8026 9293647",
+   "website": "https://www.nbh-schliersee.de/",
+   "email": "info@nbh-schliersee.de"
+  },
+  "location": {
+   "lat": 47.735165,
+   "lon": 11.863308
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935959",
+    "name": "Schliersee"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-schliersee-e-v-schliersee",
+  "cat": "fahrt",
+  "quelle": "https://www.nbh-schliersee.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "NachbarschaftsHilfe Schliersee e.V.",
+   "addr:street": "Rathausstraße",
+   "addr:housenumber": "8",
+   "addr:postcode": "83727",
+   "addr:city": "Schliersee",
+   "phone": "+49 8026 9293647",
+   "website": "https://www.nbh-schliersee.de/",
+   "email": "info@nbh-schliersee.de"
+  },
+  "location": {
+   "lat": 47.735165,
+   "lon": 11.863308
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935959",
+    "name": "Schliersee"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-warngau-e-v-warngau",
+  "cat": "pflege",
+  "quelle": "https://www.nachbarschaftshilfe-warngau.de/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Warngau e.V.",
+   "addr:street": "Taubenbergstraße",
+   "addr:housenumber": "25",
+   "addr:postcode": "83627",
+   "addr:city": "Warngau",
+   "phone": "+49 171 8656856",
+   "website": "https://www.nachbarschaftshilfe-warngau.de/",
+   "email": "info@nachbarschaftshilfe-warngau.de"
+  },
+  "location": {
+   "lat": 47.831569,
+   "lon": 11.722722
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935947",
+    "name": "Warngau"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-warngau-e-v-warngau",
+  "cat": "fahrt",
+  "quelle": "https://www.nachbarschaftshilfe-warngau.de/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Warngau e.V.",
+   "addr:street": "Taubenbergstraße",
+   "addr:housenumber": "25",
+   "addr:postcode": "83627",
+   "addr:city": "Warngau",
+   "phone": "+49 171 8656856",
+   "website": "https://www.nachbarschaftshilfe-warngau.de/",
+   "email": "info@nachbarschaftshilfe-warngau.de"
+  },
+  "location": {
+   "lat": 47.831569,
+   "lon": 11.722722
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935947",
+    "name": "Warngau"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/caritas-ambulanter-pflegedienst-miesbach-sozialsta-miesbach",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-ambulanter-pflegedienst-miesbach.de/de (2026-11-12)",
+  "tags": {
+   "name": "Caritas Ambulanter Pflegedienst Miesbach (Sozialstation)",
+   "addr:street": "Franz-und-Johann-Wallach-Straße",
+   "addr:housenumber": "12",
+   "addr:postcode": "83714",
+   "addr:city": "Miesbach",
+   "phone": "+49 8025 280650",
+   "website": "https://www.caritas-ambulanter-pflegedienst-miesbach.de/de",
+   "email": "ambulante-pflege-miesbach@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 47.790631,
+   "lon": 11.839296
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935948",
+    "name": "Miesbach"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-kreisverband-miesbach-miesbach",
+  "cat": "pflege",
+  "quelle": "https://www.kvmiesbach.brk.de/start/angebote-1/leistungen/ambulante-pflege.html (2026-11-12)",
+  "tags": {
+   "name": "BRK Kreisverband Miesbach",
+   "addr:street": "Schlierseer Straße",
+   "addr:housenumber": "3",
+   "addr:postcode": "83714",
+   "addr:city": "Miesbach",
+   "phone": "+49 8025 282533",
+   "website": "https://www.kvmiesbach.brk.de/start/angebote-1/leistungen/ambulante-pflege.html",
+   "email": "pdl.kvmb@brk.de"
+  },
+  "location": {
+   "lat": 47.788186,
+   "lon": 11.834744
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935948",
+    "name": "Miesbach"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-kreisverband-miesbach-miesbach",
+  "cat": "fahrt",
+  "quelle": "https://www.kvmiesbach.brk.de/start/angebote-1/leistungen/ambulante-pflege.html (2026-11-12)",
+  "tags": {
+   "name": "BRK Kreisverband Miesbach",
+   "addr:street": "Schlierseer Straße",
+   "addr:housenumber": "3",
+   "addr:postcode": "83714",
+   "addr:city": "Miesbach",
+   "phone": "+49 8025 282533",
+   "website": "https://www.kvmiesbach.brk.de/start/angebote-1/leistungen/ambulante-pflege.html",
+   "email": "pdl.kvmb@brk.de"
+  },
+  "location": {
+   "lat": 47.788186,
+   "lon": 11.834744
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935948",
+    "name": "Miesbach"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/sophia-mit-p-s-suedbayern-ggmbh-ambulanter-pfleged-holzkirchen",
+  "cat": "pflege",
+  "quelle": "https://www.sophia-suedbayern.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "SOPHIA mit P.S. Südbayern gGmbH – Ambulanter Pflegedienst",
+   "addr:street": "Tölzer Straße",
+   "addr:housenumber": "13",
+   "addr:postcode": "83607",
+   "addr:city": "Holzkirchen",
+   "phone": "+49 8024 902660",
+   "website": "https://www.sophia-suedbayern.de/",
+   "email": "info@sophia-suedbayern.de"
+  },
+  "location": {
+   "lat": 47.875526,
+   "lon": 11.699918
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935961",
+    "name": "Holzkirchen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegedienst-vitamed-schliersee",
+  "cat": "pflege",
+  "quelle": "https://pflegedienstvitamed.de/Impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Pflegedienst Vitamed",
+   "addr:street": "Kirchbichlweg",
+   "addr:housenumber": "4",
+   "addr:postcode": "83727",
+   "addr:city": "Schliersee",
+   "phone": "+49 8026 9209864",
+   "website": "https://pflegedienstvitamed.de/",
+   "email": "pflegedienst.vitamed@googlemail.com"
+  },
+  "location": {
+   "lat": 47.739564,
+   "lon": 11.855031
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935959",
+    "name": "Schliersee"
+   }
+  }
+ },
+ {
+  "id": "extra/vitolus-fischbachau-ambulanter-pflegedienst-fischbachau",
+  "cat": "pflege",
+  "quelle": "https://www.vitolus.de/standorte (2026-11-12)",
+  "tags": {
+   "name": "Vitolus Fischbachau – Ambulanter Pflegedienst",
+   "addr:street": "Birkensteinstraße",
+   "addr:housenumber": "6",
+   "addr:postcode": "83730",
+   "addr:city": "Fischbachau",
+   "phone": "+49 8028 4560020",
+   "website": "https://www.vitolus.de/standorte/vitolus-fischbachau",
+   "email": "fischbachau@vitolus.de"
+  },
+  "location": {
+   "lat": 47.720042,
+   "lon": 11.951996
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935958",
+    "name": "Fischbachau"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-tegernseer-tal-e-v-tegernsee",
+  "cat": "pflege",
+  "quelle": "https://www.nachbarschaftshilfe-tegernseertal.de/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Tegernseer Tal e.V.",
+   "addr:street": "Hochfeldstraße",
+   "addr:housenumber": "27",
+   "addr:postcode": "83684",
+   "addr:city": "Tegernsee",
+   "phone": "+49 8022 706563",
+   "website": "https://www.nachbarschaftshilfe-tegernseertal.de/",
+   "email": "info@nachbarschaftshilfe-tegernseertal.de"
+  },
+  "location": {
+   "lat": 47.713685,
+   "lon": 11.754302
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935954",
+    "name": "Tegernsee"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-tegernseer-tal-e-v-tegernsee",
+  "cat": "fahrt",
+  "quelle": "https://www.nachbarschaftshilfe-tegernseertal.de/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Tegernseer Tal e.V.",
+   "addr:street": "Hochfeldstraße",
+   "addr:housenumber": "27",
+   "addr:postcode": "83684",
+   "addr:city": "Tegernsee",
+   "phone": "+49 8022 706563",
+   "website": "https://www.nachbarschaftshilfe-tegernseertal.de/",
+   "email": "info@nachbarschaftshilfe-tegernseertal.de"
+  },
+  "location": {
+   "lat": 47.713685,
+   "lon": 11.754302
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935954",
+    "name": "Tegernsee"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-otterfing-e-v-otterfing",
+  "cat": "pflege",
+  "quelle": "https://nachbarschaftshilfe-otterfing.de/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Otterfing e.V.",
+   "addr:street": "Kölblweg",
+   "addr:housenumber": "6",
+   "addr:postcode": "83624",
+   "addr:city": "Otterfing",
+   "phone": "+49 157 34859939",
+   "website": "https://nachbarschaftshilfe-otterfing.de/",
+   "email": "info@nachbarschaftshilfe-otterfing.de"
+  },
+  "location": {
+   "lat": 47.907607,
+   "lon": 11.673789
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935956",
+    "name": "Otterfing"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-hausham-gemeinde-hausham-wir-s-hausham",
+  "cat": "pflege",
+  "quelle": "https://www.hausham.de/fileadmin/Dateien/Cross7/Root/de/Gemeinde/Bildung_und_Soziales/Nachbarschaftshilfe_Hausham/Text_fur_Homepage_-_07.02.2024.pdf (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Hausham (Gemeinde Hausham, \"Wir sind füreinander da\")",
+   "addr:street": "Schlierseer Straße",
+   "addr:housenumber": "18",
+   "addr:postcode": "83734",
+   "addr:city": "Hausham",
+   "phone": "+49 8026 39090",
+   "website": "https://www.hausham.de/",
+   "email": "rathaus@hausham.de"
+  },
+  "location": {
+   "lat": 47.748365,
+   "lon": 11.841176
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935951",
+    "name": "Hausham"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-hausham-gemeinde-hausham-wir-s-hausham",
+  "cat": "fahrt",
+  "quelle": "https://www.hausham.de/fileadmin/Dateien/Cross7/Root/de/Gemeinde/Bildung_und_Soziales/Nachbarschaftshilfe_Hausham/Text_fur_Homepage_-_07.02.2024.pdf (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Hausham (Gemeinde Hausham, \"Wir sind füreinander da\")",
+   "addr:street": "Schlierseer Straße",
+   "addr:housenumber": "18",
+   "addr:postcode": "83734",
+   "addr:city": "Hausham",
+   "phone": "+49 8026 39090",
+   "website": "https://www.hausham.de/",
+   "email": "rathaus@hausham.de"
+  },
+  "location": {
+   "lat": 47.748365,
+   "lon": 11.841176
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935951",
+    "name": "Hausham"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-miesbach-e-v-miesbach",
+  "cat": "pflege",
+  "quelle": "https://nbh-miesbach.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Miesbach e.V.",
+   "addr:street": "Am Burgfeld",
+   "addr:housenumber": "2",
+   "addr:postcode": "83714",
+   "addr:city": "Miesbach",
+   "phone": "+49 160 7233065",
+   "website": "https://nbh-miesbach.de/",
+   "email": "info@nbh-miesbach.de"
+  },
+  "location": {
+   "lat": 47.79022,
+   "lon": 11.8257
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168231",
+    "name": "Landkreis Miesbach"
+   },
+   "8": {
+    "id": "relation/935948",
+    "name": "Miesbach"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambuka-ambulante-kranken-und-altenpflege-gmbh-edling",
+  "cat": "pflege",
+  "quelle": "https://www.ambuka.de/kontakt.html (2026-11-12)",
+  "tags": {
+   "name": "AMBUKA - Ambulante Kranken- und Altenpflege GmbH",
+   "addr:street": "Am Gewerbering",
+   "addr:housenumber": "7a",
+   "addr:postcode": "83533",
+   "addr:city": "Edling",
+   "phone": "+49 8071 95541",
+   "website": "https://www.ambuka.de/",
+   "email": "info@ambuka.de"
+  },
+  "location": {
+   "lat": 48.061036,
+   "lon": 12.169999
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186917",
+    "name": "Edling"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-trinkl-gmbh-griesstaett",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-trinkl.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "Pflegedienst Trinkl GmbH",
+   "addr:street": "Alpenstraße",
+   "addr:housenumber": "25",
+   "addr:postcode": "83556",
+   "addr:city": "Griesstätt",
+   "phone": "+49 8039 8279341",
+   "website": "https://pflegedienst-trinkl.de/",
+   "email": "info@pflegedienst-trinkl.de"
+  },
+  "location": {
+   "lat": 47.988548,
+   "lon": 12.181132
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186923",
+    "name": "Griesstätt"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulantes-pflegeteam-moosbauer-gbr-bad-endorf",
+  "cat": "pflege",
+  "quelle": "https://pflegeteam-moosbauer.de/Impressum.html (2026-11-12)",
+  "tags": {
+   "name": "Ambulantes Pflegeteam Moosbauer GbR",
+   "addr:street": "Katharinenheimstraße",
+   "addr:housenumber": "23",
+   "addr:postcode": "83093",
+   "addr:city": "Bad Endorf",
+   "phone": "+49 8053 7998293",
+   "website": "https://pflegeteam-moosbauer.de/",
+   "email": "info@pflegeteam-moosbauer.de"
+  },
+  "location": {
+   "lat": 47.90928,
+   "lon": 12.299825
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186912",
+    "name": "Bad Endorf"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-glavas-bianca-glavas-gmbh-inkl-ausser-kiefersfelden",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-glavas.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Pflegedienst Glavas - Bianca Glavas GmbH (inkl. Außerklinische Intensivpflege)",
+   "addr:street": "Kranzhornstraße",
+   "addr:housenumber": "2",
+   "addr:postcode": "83088",
+   "addr:city": "Kiefersfelden",
+   "phone": "+49 8033 3026522",
+   "website": "https://www.pflegedienst-glavas.de/",
+   "email": "info@intensivpflege-glavas.de"
+  },
+  "location": {
+   "lat": 47.617144,
+   "lon": 12.201104
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2190046",
+    "name": "Kiefersfelden"
+   }
+  }
+ },
+ {
+  "id": "extra/sozialwerk-stephanskirchen-e-v-stephanskirchen",
+  "cat": "pflege",
+  "quelle": "https://www.sozialwerk-stephanskirchen.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Sozialwerk Stephanskirchen e.V.",
+   "addr:street": "Schömeringer Straße",
+   "addr:housenumber": "23",
+   "addr:postcode": "83071",
+   "addr:city": "Stephanskirchen",
+   "phone": "+49 8036 8227",
+   "website": "https://www.sozialwerk-stephanskirchen.de/",
+   "email": "info@sozialwerk-stephanskirchen.de"
+  },
+  "location": {
+   "lat": 47.856337,
+   "lon": 12.184441
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186942",
+    "name": "Stephanskirchen"
+   }
+  }
+ },
+ {
+  "id": "extra/sozialwerk-rohrdorf-e-v-ambulante-kranken-und-alte-rohrdorf",
+  "cat": "pflege",
+  "quelle": "https://www.sozialwerk-rohrdorf.de/ (2026-11-12)",
+  "tags": {
+   "name": "Sozialwerk Rohrdorf e.V. - Ambulante Kranken- und Altenpflege",
+   "addr:street": "Untere Dorfstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "83101",
+   "addr:city": "Rohrdorf",
+   "phone": "+49 8032 9882972",
+   "website": "https://www.sozialwerk-rohrdorf.de/",
+   "email": "info@sozialwerk-rohrdorf.de"
+  },
+  "location": {
+   "lat": 47.798349,
+   "lon": 12.167983
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186937",
+    "name": "Rohrdorf"
+   }
+  }
+ },
+ {
+  "id": "extra/sozialwerk-simssee-e-v-riedering",
+  "cat": "pflege",
+  "quelle": "https://www.sozialwerk-simssee.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Sozialwerk Simssee e.V.",
+   "addr:street": "Endorfer Straße",
+   "addr:housenumber": "17",
+   "addr:postcode": "83083",
+   "addr:city": "Riedering",
+   "phone": "+49 8036 7925",
+   "website": "https://www.sozialwerk-simssee.de/",
+   "email": "sozialwerk-simssee@t-online.de"
+  },
+  "location": {
+   "lat": 47.836407,
+   "lon": 12.254709
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186935",
+    "name": "Riedering"
+   }
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-kolbermoor-e-v-ambulanter-pfle-kolbermoor",
+  "cat": "pflege",
+  "quelle": "https://www.nachbarschaftshilfe-kolbermoor.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Kolbermoor e.V. - Ambulanter Pflegedienst",
+   "addr:street": "Bahnhofstraße",
+   "addr:housenumber": "16",
+   "addr:postcode": "83059",
+   "addr:city": "Kolbermoor",
+   "phone": "+49 8031 93400",
+   "website": "https://www.nachbarschaftshilfe-kolbermoor.de/",
+   "email": "nachbarschaftshilfe-kolbermoor@t-online.de"
+  },
+  "location": {
+   "lat": 47.851498,
+   "lon": 12.063943
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2168247",
+    "name": "Kolbermoor"
+   }
+  }
+ },
+ {
+  "id": "extra/pur-vital-mobiler-pflegedienst-gmbh-stephanskirchen",
+  "cat": "pflege",
+  "quelle": "https://www.pur-vital.de/impressum.html (2026-11-12)",
+  "tags": {
+   "name": "PUR VITAL Mobiler Pflegedienst GmbH",
+   "addr:street": "Haidenholzstraße",
+   "addr:housenumber": "42",
+   "addr:postcode": "83071",
+   "addr:city": "Stephanskirchen",
+   "phone": "+49 8036 9433915",
+   "website": "https://www.pur-vital.de/stephanskirchen-3.html",
+   "email": "mobiler-pflegedienst@pur-vital.de"
+  },
+  "location": {
+   "lat": 47.861496,
+   "lon": 12.172187
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186942",
+    "name": "Stephanskirchen"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-medial-gmbh-bad-aibling",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-medial.de/impressum.html (2026-11-12)",
+  "tags": {
+   "name": "Pflegedienst Medial GmbH",
+   "addr:street": "Marienplatz",
+   "addr:housenumber": "9",
+   "addr:postcode": "83043",
+   "addr:city": "Bad Aibling",
+   "phone": "+49 8061 9392131",
+   "website": "https://www.pflegedienst-medial.de/",
+   "email": "info@pflegedienst-medial.de"
+  },
+  "location": {
+   "lat": 47.863572,
+   "lon": 12.009849
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186911",
+    "name": "Bad Aibling"
+   }
+  }
+ },
+ {
+  "id": "extra/cosmea-pflege-kolbermoor-gmbh-kolbermoor",
+  "cat": "pflege",
+  "quelle": "https://cosmea-pflege.de/standorte/pflegedienst-in-kolbermoor/ (2026-11-12)",
+  "tags": {
+   "name": "Cosmea Pflege Kolbermoor GmbH",
+   "addr:street": "Carl-Jordan-Straße",
+   "addr:housenumber": "9",
+   "addr:postcode": "83059",
+   "addr:city": "Kolbermoor",
+   "phone": "+49 8031 282390",
+   "website": "https://cosmea-pflege.de/standorte/pflegedienst-in-kolbermoor/",
+   "email": "kolbermoor@cosmea-pflege.de"
+  },
+  "location": {
+   "lat": 47.845504,
+   "lon": 12.066317
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2168247",
+    "name": "Kolbermoor"
+   }
+  }
+ },
+ {
+  "id": "extra/buergerhilfe-pfaffing-e-v-pfaffing",
+  "cat": "pflege",
+  "quelle": "https://www.buergerhilfe-pfaffing.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "Bürgerhilfe Pfaffing e.V.",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "11",
+   "addr:postcode": "83539",
+   "addr:city": "Pfaffing",
+   "phone": "+49 8076 8883904",
+   "website": "https://www.buergerhilfe-pfaffing.de/"
+  },
+  "location": {
+   "lat": 48.055882,
+   "lon": 12.110963
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "7": {
+    "id": "relation/2985875",
+    "name": "Pfaffing (VGem)"
+   },
+   "8": {
+    "id": "relation/2186931",
+    "name": "Pfaffing"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/caritas-ambulanter-pflegedienst-bad-aibling-sozial-bad-aibling",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-ambulanter-pflegedienst-bad-aibling.de/de (2026-11-12)",
+  "tags": {
+   "name": "Caritas Ambulanter Pflegedienst Bad Aibling (Sozialstation)",
+   "addr:street": "Kirchzeile",
+   "addr:housenumber": "17",
+   "addr:postcode": "83043",
+   "addr:city": "Bad Aibling",
+   "phone": "+49 8061 350420",
+   "website": "https://www.caritas-ambulanter-pflegedienst-bad-aibling.de/de",
+   "email": "ambulante-pflege-bad-aibling@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 47.865665,
+   "lon": 12.010685
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186911",
+    "name": "Bad Aibling"
+   }
+  }
+ },
+ {
+  "id": "extra/caritas-ambulanter-pflegedienst-wasserburg-sozials-wasserburg-am",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-ambulanter-pflegedienst-wasserburg.de/de (2026-11-12)",
+  "tags": {
+   "name": "Caritas Ambulanter Pflegedienst Wasserburg (Sozialstation)",
+   "addr:street": "Heisererplatz",
+   "addr:housenumber": "7",
+   "addr:postcode": "83512",
+   "addr:city": "Wasserburg am Inn",
+   "phone": "+49 8071 90630",
+   "website": "https://www.caritas-ambulanter-pflegedienst-wasserburg.de/de",
+   "email": "ambulante-pflege-wasserburg@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 48.063395,
+   "lon": 12.232247
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186945",
+    "name": "Wasserburg am Inn"
+   }
+  }
+ },
+ {
+  "id": "extra/christliches-sozialwerk-raubling-e-v-ambulante-kra-raubling",
+  "cat": "pflege",
+  "quelle": "https://www.sozialwerkraubling.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Christliches Sozialwerk Raubling e.V. - Ambulante Kranken- und Altenpflege",
+   "addr:street": "Holzbreitenweg",
+   "addr:housenumber": "10",
+   "addr:postcode": "83064",
+   "addr:city": "Raubling",
+   "phone": "+49 8035 187010",
+   "website": "https://www.sozialwerkraubling.de/",
+   "email": "info@sozialwerkraubling.de"
+  },
+  "location": {
+   "lat": 47.790533,
+   "lon": 12.119337
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186954",
+    "name": "Raubling"
+   }
+  }
+ },
+ {
+  "id": "extra/christliches-sozialwerk-neubeuern-nussdorf-toerwan-nussdorf-am-i",
+  "cat": "pflege",
+  "quelle": "https://www.christliches-sozialwerk-neubeuern.de/impressum-1/ (2026-11-12)",
+  "tags": {
+   "name": "Christliches Sozialwerk Neubeuern-Nußdorf-Törwang e.V. - Ambulanter Pflegedienst",
+   "addr:street": "Leonhardiweg",
+   "addr:housenumber": "5b",
+   "addr:postcode": "83131",
+   "addr:city": "Nußdorf am Inn",
+   "phone": "+49 8034 709961",
+   "website": "https://www.christliches-sozialwerk-neubeuern.de/",
+   "email": "info@christliches-sozialwerk-neubeuern.de"
+  },
+  "location": {
+   "lat": 47.741101,
+   "lon": 12.152484
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186929",
+    "name": "Nußdorf am Inn"
+   }
+  }
+ },
+ {
+  "id": "extra/christliches-sozialwerk-degerndorf-brannenburg-fli-flintsbach-am",
+  "cat": "pflege",
+  "quelle": "https://www.csw-flintsbach.de/ueber-uns/impressum.html (2026-11-12)",
+  "tags": {
+   "name": "Christliches Sozialwerk Degerndorf-Brannenburg-Flintsbach e.V.",
+   "addr:street": "Oberfeldweg",
+   "addr:housenumber": "5",
+   "addr:postcode": "83126",
+   "addr:city": "Flintsbach am Inn",
+   "phone": "+49 8034 4383",
+   "website": "https://www.csw-flintsbach.de/",
+   "email": "pdl@pflegefueralle.de"
+  },
+  "location": {
+   "lat": 47.72732,
+   "lon": 12.12042
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186921",
+    "name": "Flintsbach am Inn"
+   }
+  }
+ },
+ {
+  "id": "extra/oekumenischer-sozialdienst-priental-e-v-aschau-im-chiemgau",
+  "cat": "pflege",
+  "quelle": "https://www.sozialdienst-aschau.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "Ökumenischer Sozialdienst Priental e.V.",
+   "addr:street": "Schützenstraße",
+   "addr:housenumber": "14",
+   "addr:postcode": "83229",
+   "addr:city": "Aschau im Chiemgau",
+   "phone": "+49 8052 95730810",
+   "website": "https://www.sozialdienst-aschau.de/",
+   "email": "info@sozialdienst-aschau.de"
+  },
+  "location": {
+   "lat": 47.778022,
+   "lon": 12.315916
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186909",
+    "name": "Aschau im Chiemgau"
+   }
+  }
+ },
+ {
+  "id": "extra/pflege-und-betreuung-bad-feilnbach-e-v-bad-feilnbach",
+  "cat": "pflege",
+  "quelle": "https://pflege-und-betreuung-badfeilnbach.de/kontakt (2026-11-12)",
+  "tags": {
+   "name": "Pflege und Betreuung Bad Feilnbach e.V.",
+   "addr:street": "Kufsteiner Straße",
+   "addr:housenumber": "48",
+   "addr:postcode": "83075",
+   "addr:city": "Bad Feilnbach",
+   "phone": "+49 8066 885700",
+   "website": "https://pflege-und-betreuung-badfeilnbach.de/",
+   "email": "info@pub-bf.de"
+  },
+  "location": {
+   "lat": 47.773015,
+   "lon": 12.010689
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186913",
+    "name": "Bad Feilnbach"
+   }
+  }
+ },
+ {
+  "id": "extra/mangfall-sozial-und-pflegedienst-gmbh-bad-aibling",
+  "cat": "pflege",
+  "quelle": "https://www.mangfall-sozial-pflegedienst.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Mangfall Sozial- und Pflegedienst GmbH",
+   "addr:street": "Wildstraße",
+   "addr:housenumber": "6",
+   "addr:postcode": "83043",
+   "addr:city": "Bad Aibling",
+   "phone": "+49 8061 370969",
+   "website": "https://www.mangfall-sozial-pflegedienst.de/",
+   "email": "mangfall-sozial-pflegedienst@t-online.de"
+  },
+  "location": {
+   "lat": 47.865446,
+   "lon": 12.003256
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186911",
+    "name": "Bad Aibling"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-petersen-gmbh-bad-endorf",
+  "cat": "pflege",
+  "quelle": "https://www.ambulanter-pflegedienst-petersen.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Petersen GmbH",
+   "addr:street": "Bahnhofstraße",
+   "addr:housenumber": "2",
+   "addr:postcode": "83093",
+   "addr:city": "Bad Endorf",
+   "phone": "+49 8053 7981848",
+   "website": "https://www.ambulanter-pflegedienst-petersen.de/",
+   "email": "info@ambulanter-pflegedienst-petersen.de"
+  },
+  "location": {
+   "lat": 47.908185,
+   "lon": 12.298277
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186912",
+    "name": "Bad Endorf"
+   }
+  }
+ },
+ {
+  "id": "extra/hand-aufs-herz-pflege-in-ihrem-zuhause-bernau-am-chiemsee",
+  "cat": "pflege",
+  "quelle": "https://altenpflege-chiemgau.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Hand aufs Herz - Pflege in Ihrem Zuhause",
+   "addr:street": "Chiemseestraße",
+   "addr:housenumber": "20",
+   "addr:postcode": "83233",
+   "addr:city": "Bernau am Chiemsee",
+   "phone": "+49 8051 9621606",
+   "website": "https://altenpflege-chiemgau.de/",
+   "email": "hand-aufs-herz-pflege@gmx.de"
+  },
+  "location": {
+   "lat": 47.813386,
+   "lon": 12.375541
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186914",
+    "name": "Bernau am Chiemsee"
+   }
+  }
+ },
+ {
+  "id": "extra/humano-vital-gmbh-ambulante-pflege-region-rosenhei-kolbermoor",
+  "cat": "pflege",
+  "quelle": "https://www.humano-viacare.de/ambulante-pflege/ (2026-11-12)",
+  "tags": {
+   "name": "Humano Vital GmbH - Ambulante Pflege Region Rosenheim",
+   "addr:street": "Carl-Jordan-Straße",
+   "addr:housenumber": "16",
+   "addr:postcode": "83059",
+   "addr:city": "Kolbermoor",
+   "phone": "+49 8031 2219284",
+   "website": "https://www.humano-viacare.de/ambulante-pflege/"
+  },
+  "location": {
+   "lat": 47.843918,
+   "lon": 12.064746
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2168247",
+    "name": "Kolbermoor"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-lindner-bad-endorf",
+  "cat": "pflege",
+  "quelle": "https://www.pflegelindner.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Lindner",
+   "addr:street": "Chiemseestraße",
+   "addr:housenumber": "5a",
+   "addr:postcode": "83093",
+   "addr:city": "Bad Endorf",
+   "phone": "+49 8053 7996892",
+   "website": "https://www.pflegelindner.de/",
+   "email": "mail@pflegelindner.de"
+  },
+  "location": {
+   "lat": 47.904207,
+   "lon": 12.304337
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186912",
+    "name": "Bad Endorf"
+   }
+  }
+ },
+ {
+  "id": "extra/familienhilfe-maschinenring-rosenheim-e-v-alltagsb-prutting",
+  "cat": "pflege",
+  "quelle": "https://www.mr-rosenheim.de/nachricht/alltagsbegleitung.html (2026-11-12)",
+  "tags": {
+   "name": "Familienhilfe Maschinenring Rosenheim e.V. - Alltagsbegleitung",
+   "addr:street": "Ried",
+   "addr:housenumber": "2",
+   "addr:postcode": "83134",
+   "addr:city": "Prutting",
+   "phone": "+49 8036 9433230",
+   "website": "https://www.mr-rosenheim.de/nachricht/alltagsbegleitung.html",
+   "email": "mr.rosenheim@maschinenringe.de"
+  },
+  "location": {
+   "lat": 47.87474,
+   "lon": 12.172002
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186933",
+    "name": "Prutting"
+   }
+  }
+ },
+ {
+  "id": "extra/markt-bruckmuehl-betreutes-wohnen-zu-hause-bruckmuehl",
+  "cat": "pflege",
+  "quelle": "https://www.bruckmuehl.de/fileadmin/Dateien/Aktuelles/Betreutes_Wohnen_Flyer_2026.pdf (2026-11-12)",
+  "tags": {
+   "name": "Markt Bruckmühl - Betreutes Wohnen zu Hause",
+   "addr:street": "Gewerbepark BWB",
+   "addr:housenumber": "13",
+   "addr:postcode": "83052",
+   "addr:city": "Bruckmühl",
+   "phone": "+49 8062 59820",
+   "website": "https://www.bruckmuehl.de/",
+   "email": "beratungsstelle-betreutes-wohnen@bruckmuehl.de"
+  },
+  "location": {
+   "lat": 47.876443,
+   "lon": 11.934295
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2190662",
+    "name": "Bruckmühl"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-lejlani-kolbermoor",
+  "cat": "pflege",
+  "quelle": "https://www.lejlani-pflegedienst.com/impressum (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Lejlani",
+   "addr:street": "Hechtseestraße",
+   "addr:housenumber": "8",
+   "addr:postcode": "83059",
+   "addr:city": "Kolbermoor",
+   "phone": "+49 8031 3523912",
+   "website": "https://www.lejlani-pflegedienst.com/",
+   "email": "info@lejlani-pflegedienst.com"
+  },
+  "location": {
+   "lat": 47.837282,
+   "lon": 12.051211
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2168247",
+    "name": "Kolbermoor"
+   }
+  }
+ },
+ {
+  "id": "extra/die-pflegeengl-aschau-im-chiemgau",
+  "cat": "pflege",
+  "quelle": "https://www.diepflegeengl.de/ (2026-11-12)",
+  "tags": {
+   "name": "Die Pflegeengl",
+   "addr:street": "Kampenwandstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "83229",
+   "addr:city": "Aschau im Chiemgau",
+   "phone": "+49 8052 9576717",
+   "website": "https://www.diepflegeengl.de/",
+   "email": "info@diepflegeengl.de"
+  },
+  "location": {
+   "lat": 47.777612,
+   "lon": 12.324957
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186909",
+    "name": "Aschau im Chiemgau"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegezentrum-bad-aibling-gmbh-ambulante-pflege-bad-aibling",
+  "cat": "pflege",
+  "quelle": "https://www.pflegezentrum-badaibling.de/contact (2026-11-12)",
+  "tags": {
+   "name": "Pflegezentrum Bad Aibling GmbH (ambulante Pflege)",
+   "addr:street": "Lindenstraße",
+   "addr:housenumber": "2",
+   "addr:postcode": "83043",
+   "addr:city": "Bad Aibling",
+   "phone": "+49 8061 9799364",
+   "website": "https://www.pflegezentrum-badaibling.de/",
+   "email": "info@pflegezentrum-badaibling.de"
+  },
+  "location": {
+   "lat": 47.862289,
+   "lon": 12.006683
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186911",
+    "name": "Bad Aibling"
+   }
+  }
+ },
+ {
+  "id": "extra/carover-ausserklinische-intensivpflege-bad-aibling",
+  "cat": "pflege",
+  "quelle": "https://carover-intensivpflege.de/kontakt (2026-11-12)",
+  "tags": {
+   "name": "CaroVer - Außerklinische Intensivpflege",
+   "addr:street": "Harthauser Straße",
+   "addr:housenumber": "111",
+   "addr:postcode": "83043",
+   "addr:city": "Bad Aibling",
+   "phone": "+49 8061 342896",
+   "website": "https://carover-intensivpflege.de/",
+   "email": "info@carover-intensivpflege.de"
+  },
+  "location": {
+   "lat": 47.859608,
+   "lon": 12.026965
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186911",
+    "name": "Bad Aibling"
+   }
+  }
+ },
+ {
+  "id": "extra/besser-leben-gmbh-ambulanter-pflegedienst-kolbermoor",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-besserleben.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Besser Leben GmbH - Ambulanter Pflegedienst",
+   "addr:street": "Mietrachinger Straße",
+   "addr:housenumber": "14",
+   "addr:postcode": "83059",
+   "addr:city": "Kolbermoor",
+   "phone": "+49 8031 99193",
+   "website": "https://www.pflegedienst-besserleben.de/",
+   "email": "info@pflegedienst-besserleben.de"
+  },
+  "location": {
+   "lat": 47.854288,
+   "lon": 12.042858
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2168247",
+    "name": "Kolbermoor"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-pflege-pfaffing-beate-eckstein-pfaffing",
+  "cat": "pflege",
+  "quelle": "https://www.pflege-pfaffing.de/Kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulante Pflege Pfaffing - Beate Eckstein",
+   "addr:street": "Steinbuchstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "83539",
+   "addr:city": "Pfaffing",
+   "phone": "+49 8094 9440",
+   "website": "https://www.pflege-pfaffing.de/"
+  },
+  "location": {
+   "lat": 48.082433,
+   "lon": 12.092548
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "7": {
+    "id": "relation/2985875",
+    "name": "Pfaffing (VGem)"
+   },
+   "8": {
+    "id": "relation/2186931",
+    "name": "Pfaffing"
+   }
+  }
+ },
+ {
+  "id": "extra/kursana-residenz-prien-ambulanter-pflegedienst-prien-am-chiemsee",
+  "cat": "pflege",
+  "quelle": "https://www.kursana.de/prien-am-chiemsee/kontakt (2026-11-12)",
+  "tags": {
+   "name": "Kursana Residenz Prien - Ambulanter Pflegedienst",
+   "addr:street": "Schillerstraße",
+   "addr:housenumber": "8",
+   "addr:postcode": "83209",
+   "addr:city": "Prien am Chiemsee",
+   "phone": "+49 8051 6050",
+   "website": "https://www.kursana.de/prien-am-chiemsee",
+   "email": "kursanaprien@dussmann.de"
+  },
+  "location": {
+   "lat": 47.860687,
+   "lon": 12.356664
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156362",
+    "name": "Landkreis Rosenheim"
+   },
+   "8": {
+    "id": "relation/2186932",
+    "name": "Prien am Chiemsee"
+   }
+  }
  }
 ]
