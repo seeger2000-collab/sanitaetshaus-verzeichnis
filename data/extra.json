@@ -6812,5 +6812,2861 @@
     "name": "Gevelsberg"
    }
   }
+ },
+ {
+  "id": "extra/oekumenische-sozialstation-oberland-ggmbh-zentrale-peissenberg",
+  "cat": "pflege",
+  "quelle": "https://www.sozialstation-oberland.de/kontakt/standorte/ (2026-11-12)",
+  "tags": {
+   "name": "Ökumenische Sozialstation Oberland gGmbH – Zentrale Peißenberg",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "77",
+   "addr:postcode": "82380",
+   "addr:city": "Peißenberg",
+   "phone": "+49 8803 63330",
+   "website": "https://www.sozialstation-oberland.de/",
+   "email": "info@sozialstation-oberland.de"
+  },
+  "location": {
+   "lat": 47.800657,
+   "lon": 11.07279
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "8": {
+    "id": "relation/936946",
+    "name": "Peißenberg"
+   }
+  }
+ },
+ {
+  "id": "extra/oekumenische-sozialstation-oberland-pflegebereich--weilheim-in-o",
+  "cat": "pflege",
+  "quelle": "https://www.sozialstation-oberland.de/kontakt/standorte/ (2026-11-12)",
+  "tags": {
+   "name": "Ökumenische Sozialstation Oberland – Pflegebereich Weilheim",
+   "addr:street": "Holzhofstraße",
+   "addr:housenumber": "19",
+   "addr:postcode": "82362",
+   "addr:city": "Weilheim in Oberbayern",
+   "phone": "+49 881 9279799",
+   "website": "https://www.sozialstation-oberland.de/",
+   "email": "weilheim@sozialstation-oberland.de"
+  },
+  "location": {
+   "lat": 47.831455,
+   "lon": 11.126514
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "8": {
+    "id": "relation/936925",
+    "name": "Weilheim in Oberbayern"
+   }
+  }
+ },
+ {
+  "id": "extra/oekumenische-sozialstation-oberland-pflegebereich--habach",
+  "cat": "pflege",
+  "quelle": "https://www.sozialstation-oberland.de/kontakt/standorte/ (2026-11-12)",
+  "tags": {
+   "name": "Ökumenische Sozialstation Oberland – Pflegebereich Habach/Murnau/Penzberg",
+   "addr:street": "Hofmark",
+   "addr:housenumber": "1",
+   "addr:postcode": "82392",
+   "addr:city": "Habach",
+   "phone": "+49 8847 6999746",
+   "website": "https://www.sozialstation-oberland.de/"
+  },
+  "location": {
+   "lat": 47.72871,
+   "lon": 11.279212
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "8": {
+    "id": "relation/936939",
+    "name": "Habach"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegeteam-janker-gmbh-penzberg",
+  "cat": "pflege",
+  "quelle": "https://www.pflegeteam-janker.de/ (2026-11-12)",
+  "tags": {
+   "name": "Pflegeteam Janker GmbH",
+   "addr:street": "Bichler Straße",
+   "addr:housenumber": "17",
+   "addr:postcode": "82377",
+   "addr:city": "Penzberg",
+   "phone": "+49 8856 934477",
+   "website": "https://www.pflegeteam-janker.de/",
+   "email": "kontakt@pflegeteam-janker.de"
+  },
+  "location": {
+   "lat": 47.748487,
+   "lon": 11.383993
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "8": {
+    "id": "relation/936920",
+    "name": "Penzberg"
+   }
+  }
+ },
+ {
+  "id": "extra/sancomia-pflegeservice-gmbh-penzberg",
+  "cat": "pflege",
+  "quelle": "https://www.sancomia-pflegeservice.de/ (2026-11-12)",
+  "tags": {
+   "name": "Sancomia Pflegeservice GmbH",
+   "addr:street": "Am Alten Bahnhof",
+   "addr:housenumber": "1",
+   "addr:postcode": "82377",
+   "addr:city": "Penzberg",
+   "phone": "+49 8856 82481",
+   "website": "https://www.sancomia-pflegeservice.de/",
+   "email": "info@sancomia-pflegeservice.de"
+  },
+  "location": {
+   "lat": 47.755855,
+   "lon": 11.375521
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "8": {
+    "id": "relation/936920",
+    "name": "Penzberg"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegeteam-gabel-gmbh-schongau",
+  "cat": "pflege",
+  "quelle": "https://www.pflegeteam-gabel.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Pflegeteam Gabel GmbH",
+   "addr:street": "Birkländer Straße",
+   "addr:housenumber": "4",
+   "addr:postcode": "86956",
+   "addr:city": "Schongau",
+   "phone": "+49 8861 9083184",
+   "website": "https://www.pflegeteam-gabel.de/"
+  },
+  "location": {
+   "lat": 47.812651,
+   "lon": 10.91964
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "8": {
+    "id": "relation/936750",
+    "name": "Schongau"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-weilheim-weilheim-in-oberbayern",
+  "cat": "pflege",
+  "quelle": "https://www.ap-weilheim.de/kontakt-anfahrt/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Weilheim",
+   "addr:street": "Obere Stadt",
+   "addr:housenumber": "96",
+   "addr:postcode": "82362",
+   "addr:city": "Weilheim in Oberbayern",
+   "phone": "+49 881 9279036",
+   "website": "https://www.ap-weilheim.de/",
+   "email": "info@ap-weilheim.de"
+  },
+  "location": {
+   "lat": 47.83728,
+   "lon": 11.151782
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "8": {
+    "id": "relation/936925",
+    "name": "Weilheim in Oberbayern"
+   }
+  }
+ },
+ {
+  "id": "extra/lumina-pflegedienst-gmbh-huglfing",
+  "cat": "pflege",
+  "quelle": "https://lumina-pflege.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "Lumina Pflegedienst GmbH",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "39",
+   "addr:postcode": "82386",
+   "addr:city": "Huglfing",
+   "phone": "+49 8802 9135510",
+   "website": "https://www.lumina-pflege.de/",
+   "email": "email@lumina-pflege.de"
+  },
+  "location": {
+   "lat": 47.76671,
+   "lon": 11.156493
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "7": {
+    "id": "relation/2620966",
+    "name": "Huglfing (VGem)"
+   },
+   "8": {
+    "id": "relation/936932",
+    "name": "Huglfing"
+   }
+  }
+ },
+ {
+  "id": "extra/penzberger-pflegedienst-gmbh-penzberg",
+  "cat": "pflege",
+  "quelle": "https://www.penzberger-pflegedienst.de/ (2026-11-12)",
+  "tags": {
+   "name": "Penzberger Pflegedienst GmbH",
+   "addr:street": "Im Thal",
+   "addr:housenumber": "2",
+   "addr:postcode": "82377",
+   "addr:city": "Penzberg",
+   "phone": "+49 8856 8038822",
+   "website": "https://www.penzberger-pflegedienst.de/",
+   "email": "info@penzberger-pflegedienst.de"
+  },
+  "location": {
+   "lat": 47.75572,
+   "lon": 11.377737
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "8": {
+    "id": "relation/936920",
+    "name": "Penzberg"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/awo-ambulanter-pflegedienst-peiting-peiting",
+  "cat": "pflege",
+  "quelle": "https://awo-obb.de/senioren/einrichtung/awo-seniorenzentrum-peiting (2026-11-12)",
+  "tags": {
+   "name": "AWO-Ambulanter Pflegedienst Peiting",
+   "addr:street": "Bahnhofstraße",
+   "addr:housenumber": "24",
+   "addr:postcode": "86971",
+   "addr:city": "Peiting",
+   "phone": "+49 8861 250025",
+   "website": "https://awo-obb.de/senioren/einrichtung/awo-seniorenzentrum-peiting",
+   "email": "info@sz-pei.awo-obb.de"
+  },
+  "location": {
+   "lat": 47.792153,
+   "lon": 10.930498
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "8": {
+    "id": "relation/936787",
+    "name": "Peiting"
+   }
+  }
+ },
+ {
+  "id": "extra/malda-pflegedienst-gmbh-schongau",
+  "cat": "pflege",
+  "quelle": "https://www.maldapflegedienst.de/ (2026-11-12)",
+  "tags": {
+   "name": "Malda Pflegedienst GmbH",
+   "addr:street": "Münzstraße",
+   "addr:housenumber": "47",
+   "addr:postcode": "86956",
+   "addr:city": "Schongau",
+   "phone": "+49 8861 2411789",
+   "website": "https://www.maldapflegedienst.de/",
+   "email": "malda@mail.de"
+  },
+  "location": {
+   "lat": 47.814726,
+   "lon": 10.896642
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "8": {
+    "id": "relation/936750",
+    "name": "Schongau"
+   }
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-iffeldorf-e-v-iffeldorf",
+  "cat": "pflege",
+  "quelle": "https://www.nbh-iffeldorf.de/Impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Iffeldorf e.V.",
+   "addr:street": null,
+   "addr:housenumber": null,
+   "addr:postcode": "82393",
+   "addr:city": "Iffeldorf",
+   "phone": "+49 151 56060732",
+   "website": "https://www.nbh-iffeldorf.de/",
+   "email": "info@nbh-iffeldorf.de"
+  },
+  "location": {
+   "lat": 47.772744,
+   "lon": 11.320047
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "7": {
+    "id": "relation/2620968",
+    "name": "Seeshaupt (VGem)"
+   },
+   "8": {
+    "id": "relation/936921",
+    "name": "Iffeldorf"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-iffeldorf-e-v-iffeldorf",
+  "cat": "fahrt",
+  "quelle": "https://www.nbh-iffeldorf.de/Impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Iffeldorf e.V.",
+   "addr:street": null,
+   "addr:housenumber": null,
+   "addr:postcode": "82393",
+   "addr:city": "Iffeldorf",
+   "phone": "+49 151 56060732",
+   "website": "https://www.nbh-iffeldorf.de/",
+   "email": "info@nbh-iffeldorf.de"
+  },
+  "location": {
+   "lat": 47.772744,
+   "lon": 11.320047
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "7": {
+    "id": "relation/2620968",
+    "name": "Seeshaupt (VGem)"
+   },
+   "8": {
+    "id": "relation/936921",
+    "name": "Iffeldorf"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-seeshaupt-e-v-seeshaupt",
+  "cat": "pflege",
+  "quelle": "https://www.nbh-seeshaupt.de/de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Seeshaupt e.V.",
+   "addr:street": "Tiefentalweg",
+   "addr:housenumber": "9",
+   "addr:postcode": "82402",
+   "addr:city": "Seeshaupt",
+   "phone": "+49 8801 912268",
+   "website": "https://www.nbh-seeshaupt.de/",
+   "email": "info@nbh-seeshaupt.de"
+  },
+  "location": {
+   "lat": 47.822406,
+   "lon": 11.301201
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "7": {
+    "id": "relation/2620968",
+    "name": "Seeshaupt (VGem)"
+   },
+   "8": {
+    "id": "relation/936913",
+    "name": "Seeshaupt"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-seeshaupt-e-v-seeshaupt",
+  "cat": "fahrt",
+  "quelle": "https://www.nbh-seeshaupt.de/de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Seeshaupt e.V.",
+   "addr:street": "Tiefentalweg",
+   "addr:housenumber": "9",
+   "addr:postcode": "82402",
+   "addr:city": "Seeshaupt",
+   "phone": "+49 8801 912268",
+   "website": "https://www.nbh-seeshaupt.de/",
+   "email": "info@nbh-seeshaupt.de"
+  },
+  "location": {
+   "lat": 47.822406,
+   "lon": 11.301201
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "7": {
+    "id": "relation/2620968",
+    "name": "Seeshaupt (VGem)"
+   },
+   "8": {
+    "id": "relation/936913",
+    "name": "Seeshaupt"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-sindelsdorf-e-v-sindelsdorf",
+  "cat": "pflege",
+  "quelle": "https://nachbarschaftshilfe-sindelsdorf.de/?page_id=235 (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Sindelsdorf e.V.",
+   "addr:street": "Franz-Marc-Straße",
+   "addr:housenumber": "24",
+   "addr:postcode": "82404",
+   "addr:city": "Sindelsdorf",
+   "phone": "+49 8856 1213",
+   "website": "https://nachbarschaftshilfe-sindelsdorf.de/",
+   "email": "nhs-sindelsdorf@gmx.de"
+  },
+  "location": {
+   "lat": 47.726452,
+   "lon": 11.33234
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "8": {
+    "id": "relation/936937",
+    "name": "Sindelsdorf"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-paehl-raisting-fischen-paehl",
+  "cat": "pflege",
+  "quelle": "https://www.nbh-paehlraifi.de/pages/impressum.php (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Pähl-Raisting-Fischen",
+   "addr:street": "Kirchstraße",
+   "addr:housenumber": "4",
+   "addr:postcode": "82396",
+   "addr:city": "Pähl",
+   "phone": "+49 160 93338440",
+   "website": "https://www.nbh-paehlraifi.de/"
+  },
+  "location": {
+   "lat": 47.905742,
+   "lon": 11.177254
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "8": {
+    "id": "relation/936870",
+    "name": "Pähl"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-paehl-raisting-fischen-paehl",
+  "cat": "fahrt",
+  "quelle": "https://www.nbh-paehlraifi.de/pages/impressum.php (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Pähl-Raisting-Fischen",
+   "addr:street": "Kirchstraße",
+   "addr:housenumber": "4",
+   "addr:postcode": "82396",
+   "addr:city": "Pähl",
+   "phone": "+49 160 93338440",
+   "website": "https://www.nbh-paehlraifi.de/"
+  },
+  "location": {
+   "lat": 47.905742,
+   "lon": 11.177254
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "8": {
+    "id": "relation/936870",
+    "name": "Pähl"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-wielenbach-e-v-wielenbach",
+  "cat": "pflege",
+  "quelle": "https://www.nachbarschaftshilfe-wielenbach.de/seite/545906/hilfsangebote.html (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Wielenbach e.V.",
+   "addr:street": "Hirschbergstraße",
+   "addr:housenumber": "16",
+   "addr:postcode": "82407",
+   "addr:city": "Wielenbach",
+   "phone": "+49 157 56378029",
+   "website": "https://www.nachbarschaftshilfe-wielenbach.de/",
+   "email": "nachbarschaftshilfe.wielenbach@gmail.com"
+  },
+  "location": {
+   "lat": 47.878438,
+   "lon": 11.163501
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "8": {
+    "id": "relation/936877",
+    "name": "Wielenbach"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-wielenbach-e-v-wielenbach",
+  "cat": "fahrt",
+  "quelle": "https://www.nachbarschaftshilfe-wielenbach.de/seite/545906/hilfsangebote.html (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Wielenbach e.V.",
+   "addr:street": "Hirschbergstraße",
+   "addr:housenumber": "16",
+   "addr:postcode": "82407",
+   "addr:city": "Wielenbach",
+   "phone": "+49 157 56378029",
+   "website": "https://www.nachbarschaftshilfe-wielenbach.de/",
+   "email": "nachbarschaftshilfe.wielenbach@gmail.com"
+  },
+  "location": {
+   "lat": 47.878438,
+   "lon": 11.163501
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62600",
+    "name": "Landkreis Weilheim-Schongau"
+   },
+   "8": {
+    "id": "relation/936877",
+    "name": "Wielenbach"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-kreisverband-landsberg-am-lech-landsberg-am-lech",
+  "cat": "pflege",
+  "quelle": "https://www.brk-landsberg.de/start/angebote/alltagshilfen/ambulante-pflege.html (2026-11-12)",
+  "tags": {
+   "name": "BRK Kreisverband Landsberg am Lech",
+   "addr:street": "Ehrenpreisstraße",
+   "addr:housenumber": "6c",
+   "addr:postcode": "86899",
+   "addr:city": "Landsberg am Lech",
+   "phone": "+49 8191 918872",
+   "website": "https://www.brk-landsberg.de/start/angebote/alltagshilfen/ambulante-pflege.html"
+  },
+  "location": {
+   "lat": 48.0358817,
+   "lon": 10.8626508
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "8": {
+    "id": "relation/932270",
+    "name": "Landsberg am Lech"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-kreisverband-landsberg-am-lech-landsberg-am-lech",
+  "cat": "fahrt",
+  "quelle": "https://www.brk-landsberg.de/start/angebote/alltagshilfen/ambulante-pflege.html (2026-11-12)",
+  "tags": {
+   "name": "BRK Kreisverband Landsberg am Lech",
+   "addr:street": "Ehrenpreisstraße",
+   "addr:housenumber": "6c",
+   "addr:postcode": "86899",
+   "addr:city": "Landsberg am Lech",
+   "phone": "+49 8191 918872",
+   "website": "https://www.brk-landsberg.de/start/angebote/alltagshilfen/ambulante-pflege.html"
+  },
+  "location": {
+   "lat": 48.0358817,
+   "lon": 10.8626508
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "8": {
+    "id": "relation/932270",
+    "name": "Landsberg am Lech"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflege-daheim-seniorenstift-kaufering-kaufering",
+  "cat": "pflege",
+  "quelle": "https://www.seniorenstift-kaufering.de/pflegedaheim (2026-11-12)",
+  "tags": {
+   "name": "Pflege Daheim – Seniorenstift Kaufering",
+   "addr:street": "Albert-Schweitzer-Straße",
+   "addr:housenumber": "8",
+   "addr:postcode": "86916",
+   "addr:city": "Kaufering",
+   "phone": "+49 8191 976075",
+   "website": "https://www.seniorenstift-kaufering.de/pflegedaheim",
+   "email": "ambulant@seniorenstift.kaufering.de"
+  },
+  "location": {
+   "lat": 48.0909011,
+   "lon": 10.8520687
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "8": {
+    "id": "relation/936640",
+    "name": "Kaufering"
+   }
+  }
+ },
+ {
+  "id": "extra/johanniter-sozialstation-landsberg-am-lech-landsberg-am-lech",
+  "cat": "pflege",
+  "quelle": "https://www.johanniter.de/juh/lv-bayern/rv-oberbayern/standorte-einrichtungen-in-oberbayern/einrichtung-vor-ort/sozialstation-landsberg-460/ (2026-11-12)",
+  "tags": {
+   "name": "Johanniter Sozialstation Landsberg am Lech",
+   "addr:street": "Augsburger Straße",
+   "addr:housenumber": "10",
+   "addr:postcode": "86899",
+   "addr:city": "Landsberg am Lech",
+   "phone": "+49 8191 4019706",
+   "website": "https://www.johanniter.de/juh/lv-bayern/rv-oberbayern/standorte-einrichtungen-in-oberbayern/einrichtung-vor-ort/sozialstation-landsberg-460/"
+  },
+  "location": {
+   "lat": 48.0567129,
+   "lon": 10.8737868
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "8": {
+    "id": "relation/932270",
+    "name": "Landsberg am Lech"
+   }
+  }
+ },
+ {
+  "id": "extra/bit-bayerisches-intensivpflege-team-gmbh-landsberg-am-lech",
+  "cat": "pflege",
+  "quelle": "https://www.bit-starnberg.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "BIT – Bayerisches Intensivpflege Team GmbH",
+   "addr:street": "Siemensstraße",
+   "addr:housenumber": "12",
+   "addr:postcode": "86899",
+   "addr:city": "Landsberg am Lech",
+   "phone": "+49 8191 9408793",
+   "website": "https://www.bit-starnberg.de/",
+   "email": "info@bit-starnberg.de"
+  },
+  "location": {
+   "lat": 48.0616058,
+   "lon": 10.852379
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "8": {
+    "id": "relation/932270",
+    "name": "Landsberg am Lech"
+   }
+  }
+ },
+ {
+  "id": "extra/awo-ambulanter-pflegedienst-diessen-diessen-am-ammersee",
+  "cat": "pflege",
+  "quelle": "https://awo-obb.de/senioren/einrichtung/awo-ambulanter-pflegedienst-diessen (2026-11-12)",
+  "tags": {
+   "name": "AWO-Ambulanter Pflegedienst Dießen",
+   "addr:street": "Bahnhofstraße",
+   "addr:housenumber": "30",
+   "addr:postcode": "86911",
+   "addr:city": "Dießen am Ammersee",
+   "phone": "+49 8807 92160",
+   "website": "https://awo-obb.de/senioren/einrichtung/awo-ambulanter-pflegedienst-diessen",
+   "email": "info@swp-dis.awo-obb.de"
+  },
+  "location": {
+   "lat": 47.9498967,
+   "lon": 11.1045596
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "8": {
+    "id": "relation/933895",
+    "name": "Dießen am Ammersee"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/mobile-pflege-fuchstal-gmbh-fuchstal",
+  "cat": "pflege",
+  "quelle": "https://www.mobile-pflege-fuchstal.de/ (2026-11-12)",
+  "tags": {
+   "name": "Mobile Pflege Fuchstal GmbH",
+   "addr:street": "Wegäcker",
+   "addr:housenumber": "2a",
+   "addr:postcode": "86925",
+   "addr:city": "Fuchstal",
+   "phone": "+49 8243 993550",
+   "website": "https://www.mobile-pflege-fuchstal.de/",
+   "email": "info@mobile-pflege-fuchstal.de"
+  },
+  "location": {
+   "lat": 47.9388807,
+   "lon": 10.8321704
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "7": {
+    "id": "relation/2971315",
+    "name": "Fuchstal"
+   },
+   "8": {
+    "id": "relation/936650",
+    "name": "Fuchstal"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-mobile-fuersorge-puergen",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-mobilefuersorge.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Pflegedienst Mobile Fürsorge",
+   "addr:street": "Weilheimer Straße",
+   "addr:housenumber": "11",
+   "addr:postcode": "86932",
+   "addr:city": "Pürgen",
+   "phone": "+49 8196 3189937",
+   "website": "https://pflegedienst-mobilefuersorge.de/",
+   "email": "info@mobilefuersorge.de"
+  },
+  "location": {
+   "lat": 48.0250788,
+   "lon": 10.9221697
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "7": {
+    "id": "relation/2971318",
+    "name": "Pürgen"
+   },
+   "8": {
+    "id": "relation/933964",
+    "name": "Pürgen"
+   }
+  }
+ },
+ {
+  "id": "extra/die-pflegewichtel-das-pflegeteam-penzing",
+  "cat": "pflege",
+  "quelle": "https://www.pflegewichtel.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "Die Pflegewichtel – Das Pflegeteam",
+   "addr:street": "Otto-Lilienthal-Straße",
+   "addr:housenumber": "8",
+   "addr:postcode": "86929",
+   "addr:city": "Penzing",
+   "phone": "+49 8191 9789081",
+   "website": "https://www.pflegewichtel.de/",
+   "email": "kontakt@pflegewichtel.de"
+  },
+  "location": {
+   "lat": 48.0701821,
+   "lon": 10.9221619
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "8": {
+    "id": "relation/933973",
+    "name": "Penzing"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-treib-gmbh-geschaeftsstelle-prittriching",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-treib.gmbh/impressum.html (2026-11-12)",
+  "tags": {
+   "name": "Pflegedienst Treib GmbH (Geschäftsstelle)",
+   "addr:street": "Am Rathaus",
+   "addr:housenumber": "2",
+   "addr:postcode": "86931",
+   "addr:city": "Prittriching",
+   "phone": "+49 8206 5360180",
+   "website": "https://pflegedienst-treib.gmbh/",
+   "email": "info@pflegedienst-treib.gmbh"
+  },
+  "location": {
+   "lat": 48.1977378,
+   "lon": 10.9257345
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "7": {
+    "id": "relation/2971317",
+    "name": "Prittriching"
+   },
+   "8": {
+    "id": "relation/933779",
+    "name": "Prittriching"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegedienst-treib-gmbh-geschaeftsstelle-prittriching",
+  "cat": "fahrt",
+  "quelle": "https://pflegedienst-treib.gmbh/impressum.html (2026-11-12)",
+  "tags": {
+   "name": "Pflegedienst Treib GmbH (Geschäftsstelle)",
+   "addr:street": "Am Rathaus",
+   "addr:housenumber": "2",
+   "addr:postcode": "86931",
+   "addr:city": "Prittriching",
+   "phone": "+49 8206 5360180",
+   "website": "https://pflegedienst-treib.gmbh/",
+   "email": "info@pflegedienst-treib.gmbh"
+  },
+  "location": {
+   "lat": 48.1977378,
+   "lon": 10.9257345
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "7": {
+    "id": "relation/2971317",
+    "name": "Prittriching"
+   },
+   "8": {
+    "id": "relation/933779",
+    "name": "Prittriching"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegeteam-wanika-rott",
+  "cat": "pflege",
+  "quelle": "https://www.pflegeteam-wanika.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "Pflegeteam WaNiKa",
+   "addr:street": "Dießener Straße",
+   "addr:housenumber": "3-5",
+   "addr:postcode": "86935",
+   "addr:city": "Rott",
+   "phone": "+49 173 6336441",
+   "website": "https://www.pflegeteam-wanika.de/",
+   "email": "info@pflegeteam-wanika.de"
+  },
+  "location": {
+   "lat": 47.9062163,
+   "lon": 10.9714304
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "7": {
+    "id": "relation/2971319",
+    "name": "Reichling"
+   },
+   "8": {
+    "id": "relation/933904",
+    "name": "Rott"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-pflege-cannalonga-gmbh-eching-am-ammersee",
+  "cat": "pflege",
+  "quelle": "https://www.ammersee-pflege.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulante Pflege Cannalonga GmbH",
+   "addr:street": "Zankenhauser Straße",
+   "addr:housenumber": "11",
+   "addr:postcode": "82279",
+   "addr:city": "Eching am Ammersee",
+   "phone": "+49 8143 5609461",
+   "website": "https://www.ammersee-pflege.de/",
+   "email": "info@cannalonga.com"
+  },
+  "location": {
+   "lat": 48.0815475,
+   "lon": 11.1147597
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "7": {
+    "id": "relation/950349",
+    "name": "Schondorf a.Ammersee (VGem)"
+   },
+   "8": {
+    "id": "relation/933872",
+    "name": "Eching am Ammersee"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-kathrin-klueber-schwifting",
+  "cat": "pflege",
+  "quelle": "https://www.senioren-tagespflege-schwifting.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Kathrin Klüber",
+   "addr:street": "Kiffhaber Straße",
+   "addr:housenumber": "4",
+   "addr:postcode": "86940",
+   "addr:city": "Schwifting",
+   "phone": "+49 8191 9707533",
+   "website": "https://www.senioren-tagespflege-schwifting.de/",
+   "email": "info@senioren-tagespflege-schwifting.de"
+  },
+  "location": {
+   "lat": 48.0512545,
+   "lon": 10.9307646
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "7": {
+    "id": "relation/950349",
+    "name": "Schondorf a.Ammersee (VGem)"
+   },
+   "8": {
+    "id": "relation/933971",
+    "name": "Schwifting"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegezentrum-windach-ammersee-gmbh-windach",
+  "cat": "pflege",
+  "quelle": "https://www.pflegezentrum-ammersee.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Pflegezentrum Windach-Ammersee GmbH",
+   "addr:street": "Münchener Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "86949",
+   "addr:city": "Windach",
+   "phone": "+49 8193 939708",
+   "website": "https://www.pflegezentrum-ammersee.de/",
+   "email": "info@pflegezentrum-ammersee.de"
+  },
+  "location": {
+   "lat": 48.0681293,
+   "lon": 11.0350317
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "7": {
+    "id": "relation/2971320",
+    "name": "Windach"
+   },
+   "8": {
+    "id": "relation/933972",
+    "name": "Windach"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegezentrum-windach-ammersee-gmbh-windach",
+  "cat": "fahrt",
+  "quelle": "https://www.pflegezentrum-ammersee.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Pflegezentrum Windach-Ammersee GmbH",
+   "addr:street": "Münchener Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "86949",
+   "addr:city": "Windach",
+   "phone": "+49 8193 939708",
+   "website": "https://www.pflegezentrum-ammersee.de/",
+   "email": "info@pflegezentrum-ammersee.de"
+  },
+  "location": {
+   "lat": 48.0681293,
+   "lon": 11.0350317
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "7": {
+    "id": "relation/2971320",
+    "name": "Windach"
+   },
+   "8": {
+    "id": "relation/933972",
+    "name": "Windach"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegedienst-kauth-gmbh-igling",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-igling.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "Pflegedienst Kauth GmbH",
+   "addr:street": "Unteriglinger Straße",
+   "addr:housenumber": "37",
+   "addr:postcode": "86859",
+   "addr:city": "Igling",
+   "phone": "+49 8248 265055",
+   "website": "https://pflegedienst-igling.de/",
+   "email": "info@pflegedienst-igling.de"
+  },
+  "location": {
+   "lat": 48.0778894,
+   "lon": 10.8135037
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "7": {
+    "id": "relation/2971316",
+    "name": "Igling"
+   },
+   "8": {
+    "id": "relation/933820",
+    "name": "Igling"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-betreuungsdienst-kauth-gmbh-igling",
+  "cat": "pflege",
+  "quelle": "https://www.betreuungsdienst-igling.de/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Betreuungsdienst Kauth GmbH",
+   "addr:street": "Unteriglinger Straße",
+   "addr:housenumber": "69",
+   "addr:postcode": "86859",
+   "addr:city": "Igling",
+   "phone": "+49 8248 384978",
+   "website": "https://www.betreuungsdienst-igling.de/",
+   "email": "willkommen@betreuungsdienst-igling.de"
+  },
+  "location": {
+   "lat": 48.0811271,
+   "lon": 10.8147009
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "7": {
+    "id": "relation/2971316",
+    "name": "Igling"
+   },
+   "8": {
+    "id": "relation/933820",
+    "name": "Igling"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/hauswirtschaftlicher-fachservice-lech-ammersee-hwf-vilgertshofen",
+  "cat": "pflege",
+  "quelle": "https://www.hwf-lech-ammersee.de/impressum.html (2026-11-12)",
+  "tags": {
+   "name": "Hauswirtschaftlicher Fachservice Lech-Ammersee (HWF)",
+   "addr:street": "Hartstraße",
+   "addr:housenumber": "15",
+   "addr:postcode": "86946",
+   "addr:city": "Vilgertshofen",
+   "phone": "+49 8194 931603",
+   "website": "https://www.hwf-lech-ammersee.de/",
+   "email": "mail@hwf-lech-ammersee.de"
+  },
+  "location": {
+   "lat": 47.9614173,
+   "lon": 10.9049504
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "7": {
+    "id": "relation/2971319",
+    "name": "Reichling"
+   },
+   "8": {
+    "id": "relation/933953",
+    "name": "Vilgertshofen"
+   }
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-rott-e-v-rott",
+  "cat": "pflege",
+  "quelle": "http://www.nachbarschaftshilfe-rott.de/impressum.html (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Rott e.V.",
+   "addr:street": "Ahornweg",
+   "addr:housenumber": "4",
+   "addr:postcode": "86935",
+   "addr:city": "Rott",
+   "phone": "+49 160 99590826",
+   "website": "http://www.nachbarschaftshilfe-rott.de/",
+   "email": "info@nachbarschaftshilfe-rott.de"
+  },
+  "location": {
+   "lat": 47.9095281,
+   "lon": 10.9690768
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "7": {
+    "id": "relation/2971319",
+    "name": "Reichling"
+   },
+   "8": {
+    "id": "relation/933904",
+    "name": "Rott"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-rott-e-v-rott",
+  "cat": "fahrt",
+  "quelle": "http://www.nachbarschaftshilfe-rott.de/impressum.html (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Rott e.V.",
+   "addr:street": "Ahornweg",
+   "addr:housenumber": "4",
+   "addr:postcode": "86935",
+   "addr:city": "Rott",
+   "phone": "+49 160 99590826",
+   "website": "http://www.nachbarschaftshilfe-rott.de/",
+   "email": "info@nachbarschaftshilfe-rott.de"
+  },
+  "location": {
+   "lat": 47.9095281,
+   "lon": 10.9690768
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "7": {
+    "id": "relation/2971319",
+    "name": "Reichling"
+   },
+   "8": {
+    "id": "relation/933904",
+    "name": "Rott"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/gemeinnuetziger-verein-ammersee-west-e-v-schondorf-am-ammersee",
+  "cat": "pflege",
+  "quelle": "https://www.gemeinsam-ammersee.de/ (2026-11-12)",
+  "tags": {
+   "name": "Gemeinnütziger Verein Ammersee West e.V.",
+   "addr:street": "Wilhelm-Leibl-Platz",
+   "addr:housenumber": "4",
+   "addr:postcode": "86938",
+   "addr:city": "Schondorf am Ammersee",
+   "phone": "+49 8192 222",
+   "website": "https://www.gemeinsam-ammersee.de/",
+   "email": "info@gemeinsam-ammersee.de"
+  },
+  "location": {
+   "lat": 48.0536475,
+   "lon": 11.0991864
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "7": {
+    "id": "relation/950349",
+    "name": "Schondorf a.Ammersee (VGem)"
+   },
+   "8": {
+    "id": "relation/933875",
+    "name": "Schondorf am Ammersee"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/gemeinnuetziger-verein-ammersee-west-e-v-schondorf-am-ammersee",
+  "cat": "fahrt",
+  "quelle": "https://www.gemeinsam-ammersee.de/ (2026-11-12)",
+  "tags": {
+   "name": "Gemeinnütziger Verein Ammersee West e.V.",
+   "addr:street": "Wilhelm-Leibl-Platz",
+   "addr:housenumber": "4",
+   "addr:postcode": "86938",
+   "addr:city": "Schondorf am Ammersee",
+   "phone": "+49 8192 222",
+   "website": "https://www.gemeinsam-ammersee.de/",
+   "email": "info@gemeinsam-ammersee.de"
+  },
+  "location": {
+   "lat": 48.0536475,
+   "lon": 11.0991864
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "7": {
+    "id": "relation/950349",
+    "name": "Schondorf a.Ammersee (VGem)"
+   },
+   "8": {
+    "id": "relation/933875",
+    "name": "Schondorf am Ammersee"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/alltagsengel-angela-dengler-landsberg-am-lech",
+  "cat": "pflege",
+  "quelle": "https://www.alltagsengel.bayern/kontakt (2026-11-12)",
+  "tags": {
+   "name": "Alltagsengel – Angela Dengler",
+   "addr:street": "Am Kornfeld",
+   "addr:housenumber": "36",
+   "addr:postcode": "86899",
+   "addr:city": "Landsberg am Lech",
+   "phone": "+49 172 8656916",
+   "website": "https://www.alltagsengel.bayern/",
+   "email": "a.dengler@alltagsengel.bayern"
+  },
+  "location": {
+   "lat": 48.0549407,
+   "lon": 10.8854413
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "8": {
+    "id": "relation/932270",
+    "name": "Landsberg am Lech"
+   }
+  }
+ },
+ {
+  "id": "extra/homecare-die-alltagshelfer-landsberg-km-fuersorge--landsberg-am-",
+  "cat": "pflege",
+  "quelle": "http://homecare-alltagshelfer.de/landsberg/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "HOMECARE – Die Alltagshelfer Landsberg (KM Fürsorge GmbH)",
+   "addr:street": "Roßmarkt",
+   "addr:housenumber": "193",
+   "addr:postcode": "86899",
+   "addr:city": "Landsberg am Lech",
+   "phone": "+49 8191 9369280",
+   "website": "https://homecare-alltagshelfer.de/ll/",
+   "email": "ll@homecare-alltagshelfer.de"
+  },
+  "location": {
+   "lat": 48.0514421,
+   "lon": 10.8746919
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "8": {
+    "id": "relation/932270",
+    "name": "Landsberg am Lech"
+   }
+  }
+ },
+ {
+  "id": "extra/familienhilfe-windach-e-v-windach",
+  "cat": "pflege",
+  "quelle": "https://www.familienhilfe-windach.de/76/kontakt (2026-11-12)",
+  "tags": {
+   "name": "Familienhilfe Windach e.V.",
+   "addr:street": "Gartenstraße",
+   "addr:housenumber": "6",
+   "addr:postcode": "86949",
+   "addr:city": "Windach",
+   "phone": "+49 8193 998565",
+   "website": "https://www.familienhilfe-windach.de/",
+   "email": "info@familienhilfe-windach.de"
+  },
+  "location": {
+   "lat": 48.0722418,
+   "lon": 11.0384255
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "7": {
+    "id": "relation/2971320",
+    "name": "Windach"
+   },
+   "8": {
+    "id": "relation/933972",
+    "name": "Windach"
+   }
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-diessen-e-v-diessen-am-ammersee",
+  "cat": "pflege",
+  "quelle": "https://nachbarschaftshilfe-diessen.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Dießen e.V.",
+   "addr:street": "Unterer Forst",
+   "addr:housenumber": "10",
+   "addr:postcode": "86911",
+   "addr:city": "Dießen am Ammersee",
+   "phone": "+49 152 59896061",
+   "website": "https://nachbarschaftshilfe-diessen.de/",
+   "email": "info@nachbarschaftshilfe-diessen.de"
+  },
+  "location": {
+   "lat": 47.9847154,
+   "lon": 11.086754
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "8": {
+    "id": "relation/933895",
+    "name": "Dießen am Ammersee"
+   }
+  }
+ },
+ {
+  "id": "extra/hand-in-hand-nachbarschaftshilfe-geltendorf-e-v-geltendorf",
+  "cat": "pflege",
+  "quelle": "https://hih-geltendorf.de/impressum.html (2026-11-12)",
+  "tags": {
+   "name": "Hand in Hand – Nachbarschaftshilfe Geltendorf e.V.",
+   "addr:street": "Moorenweiser Straße",
+   "addr:housenumber": "33a",
+   "addr:postcode": "82269",
+   "addr:city": "Geltendorf",
+   "phone": "+49 176 34903606",
+   "website": "https://hih-geltendorf.de/",
+   "email": "info@hih-geltendorf.de"
+  },
+  "location": {
+   "lat": 48.1256312,
+   "lon": 11.0312666
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "8": {
+    "id": "relation/933868",
+    "name": "Geltendorf"
+   }
+  }
+ },
+ {
+  "id": "extra/netzwerk-kaufering-hoit-zam-kaufering",
+  "cat": "pflege",
+  "quelle": "https://www.kaufering.de/wohnort-kaufering/soziales/netzwerk-kaufering-hoit-zam (2026-11-12)",
+  "tags": {
+   "name": "Netzwerk Kaufering-hoit-zam",
+   "addr:street": "Bayernstraße",
+   "addr:housenumber": "9a",
+   "addr:postcode": "86916",
+   "addr:city": "Kaufering",
+   "phone": "+49 8191 664450",
+   "website": "https://www.kaufering.de/wohnort-kaufering/soziales/netzwerk-kaufering-hoit-zam",
+   "email": "netzwerk@kaufering.de"
+  },
+  "location": {
+   "lat": 48.0887319,
+   "lon": 10.8658039
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "8": {
+    "id": "relation/936640",
+    "name": "Kaufering"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/netzwerk-kaufering-hoit-zam-kaufering",
+  "cat": "fahrt",
+  "quelle": "https://www.kaufering.de/wohnort-kaufering/soziales/netzwerk-kaufering-hoit-zam (2026-11-12)",
+  "tags": {
+   "name": "Netzwerk Kaufering-hoit-zam",
+   "addr:street": "Bayernstraße",
+   "addr:housenumber": "9a",
+   "addr:postcode": "86916",
+   "addr:city": "Kaufering",
+   "phone": "+49 8191 664450",
+   "website": "https://www.kaufering.de/wohnort-kaufering/soziales/netzwerk-kaufering-hoit-zam",
+   "email": "netzwerk@kaufering.de"
+  },
+  "location": {
+   "lat": 48.0887319,
+   "lon": 10.8658039
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "8": {
+    "id": "relation/936640",
+    "name": "Kaufering"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-obermeitingen-obermeitingen",
+  "cat": "pflege",
+  "quelle": "https://www.soziales-lechfeld.de/nachbarschaftshilfe/obermeitingen/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Obermeitingen",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "23",
+   "addr:postcode": "86836",
+   "addr:city": "Obermeitingen",
+   "phone": "+49 8232 2330",
+   "website": "https://www.soziales-lechfeld.de/nachbarschaftshilfe/obermeitingen/",
+   "email": "info@obermeitingen.de"
+  },
+  "location": {
+   "lat": 48.1467509,
+   "lon": 10.8060221
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62498",
+    "name": "Landkreis Landsberg am Lech"
+   },
+   "7": {
+    "id": "relation/950349",
+    "name": "Schondorf a.Ammersee (VGem)"
+   },
+   "8": {
+    "id": "relation/933794",
+    "name": "Obermeitingen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/caritas-ambulanter-pflegedienst-bad-toelz-wolfrats-geretsried",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-ambulanter-pflegedienst-bad-toelz-wolfratshausen.de (2026-11-12)",
+  "tags": {
+   "name": "Caritas Ambulanter Pflegedienst Bad Tölz-Wolfratshausen",
+   "addr:street": "Graslitzer Straße",
+   "addr:housenumber": "13",
+   "addr:postcode": "82538",
+   "addr:city": "Geretsried",
+   "phone": "+49 8171 983010",
+   "website": "https://www.caritas-ambulanter-pflegedienst-bad-toelz-wolfratshausen.de",
+   "email": "ambulante-pflege-toelz-wor@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 47.875507,
+   "lon": 11.463165
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62472",
+    "name": "Landkreis Bad Tölz-Wolfratshausen"
+   },
+   "8": {
+    "id": "relation/935148",
+    "name": "Geretsried"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-otto-rummelsberger-diakoni-bad-toelz",
+  "cat": "pflege",
+  "quelle": "https://www.rummelsberger-diakonie.de/einrichtungen/ambulanter-pflegedienst-otto/ambulanter-pflegedienst-otto-bad-toelz (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Otto (Rummelsberger Diakonie)",
+   "addr:street": "Badstraße",
+   "addr:housenumber": "24",
+   "addr:postcode": "83646",
+   "addr:city": "Bad Tölz",
+   "phone": "+49 8041 71362",
+   "website": "https://www.rummelsberger-diakonie.de/einrichtungen/ambulanter-pflegedienst-otto/ambulanter-pflegedienst-otto-bad-toelz",
+   "email": "pflegedienst-otto@rummelsberger.net"
+  },
+  "location": {
+   "lat": 47.759924,
+   "lon": 11.552985
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62472",
+    "name": "Landkreis Bad Tölz-Wolfratshausen"
+   },
+   "8": {
+    "id": "relation/935181",
+    "name": "Bad Tölz"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/toelzer-pflegedienst-gmbh-bad-toelz",
+  "cat": "pflege",
+  "quelle": "https://www.toelzer-pflegedienst.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "Tölzer Pflegedienst GmbH",
+   "addr:street": "Prof.-Max-Lange-Platz",
+   "addr:housenumber": "6",
+   "addr:postcode": "83646",
+   "addr:city": "Bad Tölz",
+   "phone": "+49 8041 7969622",
+   "website": "https://www.toelzer-pflegedienst.de",
+   "email": "info@toelzer-pflegedienst.de"
+  },
+  "location": {
+   "lat": 47.758551,
+   "lon": 11.584201
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62472",
+    "name": "Landkreis Bad Tölz-Wolfratshausen"
+   },
+   "8": {
+    "id": "relation/935181",
+    "name": "Bad Tölz"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegezentrale-wagner-gmbh-geretsried",
+  "cat": "pflege",
+  "quelle": "https://pflegezentrale.org/impressum (2026-11-12)",
+  "tags": {
+   "name": "Pflegezentrale Wagner GmbH",
+   "addr:street": "Schubertweg",
+   "addr:housenumber": "13",
+   "addr:postcode": "82538",
+   "addr:city": "Geretsried",
+   "phone": "+49 8171 908190",
+   "website": "https://pflegezentrale.org",
+   "email": "info@pflegezentrale.org"
+  },
+  "location": {
+   "lat": 47.854458,
+   "lon": 11.480992
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62472",
+    "name": "Landkreis Bad Tölz-Wolfratshausen"
+   },
+   "8": {
+    "id": "relation/935148",
+    "name": "Geretsried"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-isarwinkel-lenggries",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-isarwinkel.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "Pflegedienst Isarwinkel",
+   "addr:street": "Gebirgsjägerstraße",
+   "addr:housenumber": "17",
+   "addr:postcode": "83661",
+   "addr:city": "Lenggries",
+   "phone": "+49 8042 9989760",
+   "website": "https://www.pflegedienst-isarwinkel.de",
+   "email": "info@pflegedienst-isarwinkel.de"
+  },
+  "location": {
+   "lat": 47.684315,
+   "lon": 11.562916
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62472",
+    "name": "Landkreis Bad Tölz-Wolfratshausen"
+   },
+   "8": {
+    "id": "relation/935242",
+    "name": "Lenggries"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegedienst-bergauf-wackersberg",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-bergauf.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Pflegedienst Bergauf",
+   "addr:street": "Hahnenkammweg",
+   "addr:housenumber": "2a",
+   "addr:postcode": "83646",
+   "addr:city": "Wackersberg",
+   "phone": "+49 8042 9740121",
+   "website": "https://www.pflegedienst-bergauf.de"
+  },
+  "location": {
+   "lat": 47.709454,
+   "lon": 11.55185
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62472",
+    "name": "Landkreis Bad Tölz-Wolfratshausen"
+   },
+   "8": {
+    "id": "relation/935236",
+    "name": "Wackersberg"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-busch-theres-busch-e-k-vormals-busch--bichl",
+  "cat": "pflege",
+  "quelle": "http://pflegedienst-buschundhuber.de (2026-11-12)",
+  "tags": {
+   "name": "Pflegedienst Busch Theres Busch e.K. (vormals Busch & Huber OHG)",
+   "addr:street": "Kocheler Straße",
+   "addr:housenumber": "10",
+   "addr:postcode": "83673",
+   "addr:city": "Bichl",
+   "phone": "+49 8857 6929486",
+   "website": "https://busch-pflegedienst.de",
+   "email": "info@busch-pflegedienst.de"
+  },
+  "location": {
+   "lat": 47.719459,
+   "lon": 11.412531
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62472",
+    "name": "Landkreis Bad Tölz-Wolfratshausen"
+   },
+   "8": {
+    "id": "relation/935270",
+    "name": "Bichl"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-foral-geretsried",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-foral.de (2026-11-12)",
+  "tags": {
+   "name": "Pflegedienst Foral",
+   "addr:street": "Jeschkenstraße",
+   "addr:housenumber": "13",
+   "addr:postcode": "82538",
+   "addr:city": "Geretsried",
+   "phone": "+49 8171 52517",
+   "website": "https://www.pflegedienst-foral.de",
+   "email": "info@pflegedienst-foral.de"
+  },
+  "location": {
+   "lat": 47.849872,
+   "lon": 11.494157
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62472",
+    "name": "Landkreis Bad Tölz-Wolfratshausen"
+   },
+   "8": {
+    "id": "relation/935148",
+    "name": "Geretsried"
+   }
+  }
+ },
+ {
+  "id": "extra/hmk-hilfe-mit-kompetenz-ambulanter-pflegedienst-bad-toelz",
+  "cat": "pflege",
+  "quelle": "https://www.hilfemitkompetenz.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "HmK – Hilfe mit Kompetenz Ambulanter Pflegedienst",
+   "addr:street": "Lenggrieser Straße",
+   "addr:housenumber": "36a",
+   "addr:postcode": "83646",
+   "addr:city": "Bad Tölz",
+   "phone": "+49 8041 7954655",
+   "website": "https://www.hilfemitkompetenz.de",
+   "email": "pflegedienst@hilfemitkompetenz.de"
+  },
+  "location": {
+   "lat": 47.752505,
+   "lon": 11.561607
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62472",
+    "name": "Landkreis Bad Tölz-Wolfratshausen"
+   },
+   "8": {
+    "id": "relation/935181",
+    "name": "Bad Tölz"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/bk-homecare-gmbh-inkl-pflegeteam-wolfratshausen-wolfratshausen",
+  "cat": "pflege",
+  "quelle": "https://www.bk-homecare.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "BK HomeCare GmbH (inkl. Pflegeteam Wolfratshausen)",
+   "addr:street": "Königsdorfer Straße",
+   "addr:housenumber": "23",
+   "addr:postcode": "82515",
+   "addr:city": "Wolfratshausen",
+   "phone": "+49 8171 9080280",
+   "website": "https://www.bk-homecare.de",
+   "email": "info@bk-homecare.de"
+  },
+  "location": {
+   "lat": 47.910483,
+   "lon": 11.422083
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62472",
+    "name": "Landkreis Bad Tölz-Wolfratshausen"
+   },
+   "8": {
+    "id": "relation/935131",
+    "name": "Wolfratshausen"
+   }
+  }
+ },
+ {
+  "id": "extra/das-soziale-netzwerk-pflegedienst-geretsried",
+  "cat": "pflege",
+  "quelle": "https://www.das-soziale-netzwerk-wor.de (2026-11-12)",
+  "tags": {
+   "name": "Das soziale Netzwerk Pflegedienst",
+   "addr:street": "Leitenstraße",
+   "addr:housenumber": "26",
+   "addr:postcode": "82538",
+   "addr:city": "Geretsried",
+   "phone": "+49 8171 4888944",
+   "website": "https://www.das-soziale-netzwerk-wor.de",
+   "email": "pflegedienst@das-soziale-netzwerk-wor.de"
+  },
+  "location": {
+   "lat": 47.890077,
+   "lon": 11.436577
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62472",
+    "name": "Landkreis Bad Tölz-Wolfratshausen"
+   },
+   "8": {
+    "id": "relation/935148",
+    "name": "Geretsried"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegeteam-eurasburg-eurasburg",
+  "cat": "pflege",
+  "quelle": "https://www.pflegeteam-eurasburg.de (2026-11-12)",
+  "tags": {
+   "name": "Pflegeteam Eurasburg",
+   "addr:street": "Habichtgraben",
+   "addr:housenumber": "1",
+   "addr:postcode": "82547",
+   "addr:city": "Eurasburg",
+   "phone": "+49 8179 4979914",
+   "website": "https://www.pflegeteam-eurasburg.de",
+   "email": "pflegeteameurasburg@gmail.com"
+  },
+  "location": {
+   "lat": 47.843147,
+   "lon": 11.397937
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62472",
+    "name": "Landkreis Bad Tölz-Wolfratshausen"
+   },
+   "8": {
+    "id": "relation/935157",
+    "name": "Eurasburg"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegeteam-eurasburg-eurasburg",
+  "cat": "fahrt",
+  "quelle": "https://www.pflegeteam-eurasburg.de (2026-11-12)",
+  "tags": {
+   "name": "Pflegeteam Eurasburg",
+   "addr:street": "Habichtgraben",
+   "addr:housenumber": "1",
+   "addr:postcode": "82547",
+   "addr:city": "Eurasburg",
+   "phone": "+49 8179 4979914",
+   "website": "https://www.pflegeteam-eurasburg.de",
+   "email": "pflegeteameurasburg@gmail.com"
+  },
+  "location": {
+   "lat": 47.843147,
+   "lon": 11.397937
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62472",
+    "name": "Landkreis Bad Tölz-Wolfratshausen"
+   },
+   "8": {
+    "id": "relation/935157",
+    "name": "Eurasburg"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/intensivpflegedienst-oberland-gmbh-bad-toelz",
+  "cat": "pflege",
+  "quelle": "https://www.ipdo.bayern/impressum (2026-11-12)",
+  "tags": {
+   "name": "Intensivpflegedienst Oberland GmbH",
+   "addr:street": "Königsdorfer Straße",
+   "addr:housenumber": "8",
+   "addr:postcode": "83646",
+   "addr:city": "Bad Tölz",
+   "phone": "+49 8041 7952660",
+   "website": "https://www.ipdo.bayern",
+   "email": "info@ipdo.bayern"
+  },
+  "location": {
+   "lat": 47.760736,
+   "lon": 11.555081
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62472",
+    "name": "Landkreis Bad Tölz-Wolfratshausen"
+   },
+   "8": {
+    "id": "relation/935181",
+    "name": "Bad Tölz"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/buerger-fuer-buerger-e-v-nachbarschaftshilfe-wolfr-wolfratshause",
+  "cat": "pflege",
+  "quelle": "https://www.bfb-wor.de (2026-11-12)",
+  "tags": {
+   "name": "Bürger für Bürger e.V. – Nachbarschaftshilfe Wolfratshausen (Seniorenhilfe)",
+   "addr:street": "Loisachufer",
+   "addr:housenumber": "1",
+   "addr:postcode": "82515",
+   "addr:city": "Wolfratshausen",
+   "phone": "+49 8171 9995220",
+   "website": "https://bfb-wor.de/unsere-angebote/seniorenhilfe/",
+   "email": "vorstand1@bfb-wor.de"
+  },
+  "location": {
+   "lat": 47.914716,
+   "lon": 11.419623
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62472",
+    "name": "Landkreis Bad Tölz-Wolfratshausen"
+   },
+   "8": {
+    "id": "relation/935131",
+    "name": "Wolfratshausen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/buerger-fuer-buerger-e-v-nachbarschaftshilfe-wolfr-wolfratshause",
+  "cat": "fahrt",
+  "quelle": "https://www.bfb-wor.de (2026-11-12)",
+  "tags": {
+   "name": "Bürger für Bürger e.V. – Nachbarschaftshilfe Wolfratshausen (Seniorenhilfe)",
+   "addr:street": "Loisachufer",
+   "addr:housenumber": "1",
+   "addr:postcode": "82515",
+   "addr:city": "Wolfratshausen",
+   "phone": "+49 8171 9995220",
+   "website": "https://bfb-wor.de/unsere-angebote/seniorenhilfe/",
+   "email": "vorstand1@bfb-wor.de"
+  },
+  "location": {
+   "lat": 47.914716,
+   "lon": 11.419623
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62472",
+    "name": "Landkreis Bad Tölz-Wolfratshausen"
+   },
+   "8": {
+    "id": "relation/935131",
+    "name": "Wolfratshausen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/zammlebn-nachbarschaftshilfe-benediktbeuern-e-v-benediktbeuern",
+  "cat": "pflege",
+  "quelle": "https://zammlebn.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "Zammlebn – Nachbarschaftshilfe Benediktbeuern e.V.",
+   "addr:street": "Schäfflerweg",
+   "addr:housenumber": "4",
+   "addr:postcode": "83671",
+   "addr:city": "Benediktbeuern",
+   "phone": "+49 8857 3961",
+   "website": "https://zammlebn.de",
+   "email": "info@zammlebn.de"
+  },
+  "location": {
+   "lat": 47.706157,
+   "lon": 11.414863
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62472",
+    "name": "Landkreis Bad Tölz-Wolfratshausen"
+   },
+   "7": {
+    "id": "relation/2971420",
+    "name": "Benediktbeuern (VGem)"
+   },
+   "8": {
+    "id": "relation/935269",
+    "name": "Benediktbeuern"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
  }
 ]
