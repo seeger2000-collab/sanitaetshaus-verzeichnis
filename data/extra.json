@@ -4739,5 +4739,2041 @@
     "alltag"
    ]
   }
+ },
+ {
+  "id": "extra/caritas-ambulanter-pflegedienst-erding-erding",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-nah-am-naechsten.de/ambulanter-pflegedienst-erding (2026-11-12)",
+  "tags": {
+   "name": "Caritas Ambulanter Pflegedienst Erding",
+   "addr:street": "Am Gries",
+   "addr:housenumber": "7",
+   "addr:postcode": "85435",
+   "addr:city": "Erding",
+   "phone": "+49 8122 880980",
+   "website": "https://www.caritas-nah-am-naechsten.de/ambulanter-pflegedienst-erding",
+   "email": "ambulante-pflege-erding@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 48.3100078,
+   "lon": 11.9083807
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62356",
+    "name": "Landkreis Erding"
+   },
+   "8": {
+    "id": "relation/934743",
+    "name": "Erding"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-providus-erding",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-providus.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst PROVIDUS",
+   "addr:street": "Haager Straße",
+   "addr:housenumber": "3",
+   "addr:postcode": "85435",
+   "addr:city": "Erding",
+   "phone": "+49 8122 40151",
+   "website": "https://www.pflegedienst-providus.de/",
+   "email": "info@pflegedienst-providus.de"
+  },
+  "location": {
+   "lat": 48.3046368,
+   "lon": 11.9068495
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62356",
+    "name": "Landkreis Erding"
+   },
+   "8": {
+    "id": "relation/934743",
+    "name": "Erding"
+   }
+  }
+ },
+ {
+  "id": "extra/spitex-ambulanter-pflegedienst-wartenberg",
+  "cat": "pflege",
+  "quelle": "https://www.spitex-pflege.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "Spitex Ambulanter Pflegedienst",
+   "addr:street": "Obere Hauptstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "85456",
+   "addr:city": "Wartenberg",
+   "phone": "+49 8762 7265555",
+   "website": "https://www.spitex-pflege.de/",
+   "email": "info@spitex-pflege.de"
+  },
+  "location": {
+   "lat": 48.4044436,
+   "lon": 11.9897162
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62356",
+    "name": "Landkreis Erding"
+   },
+   "7": {
+    "id": "relation/2981618",
+    "name": "Wartenberg (VGem)"
+   },
+   "8": {
+    "id": "relation/934742",
+    "name": "Wartenberg"
+   }
+  }
+ },
+ {
+  "id": "extra/marienstift-dorfen-dorfen",
+  "cat": "pflege",
+  "quelle": "https://www.marienstift-dorfen.de/ (2026-11-12)",
+  "tags": {
+   "name": "Marienstift Dorfen",
+   "addr:street": "Ruprechtsberg",
+   "addr:housenumber": "18",
+   "addr:postcode": "84405",
+   "addr:city": "Dorfen",
+   "phone": "+49 8081 93220",
+   "website": "https://www.marienstift-dorfen.de/leistungen/ambulanter-dienst",
+   "email": "info@marienstift-dorfen.de"
+  },
+  "location": {
+   "lat": 48.2761866,
+   "lon": 12.1472574
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62356",
+    "name": "Landkreis Erding"
+   },
+   "8": {
+    "id": "relation/934750",
+    "name": "Dorfen"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-bavaria-erding",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-bavaria.com/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Bavaria",
+   "addr:street": "Franz-Brombach-Straße",
+   "addr:housenumber": "11",
+   "addr:postcode": "85435",
+   "addr:city": "Erding",
+   "phone": "+49 8122 9417530",
+   "website": "https://www.pflegedienst-bavaria.com/",
+   "email": "pflegedienst.bavaria@outlook.de"
+  },
+  "location": {
+   "lat": 48.3126794,
+   "lon": 11.8905061
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62356",
+    "name": "Landkreis Erding"
+   },
+   "8": {
+    "id": "relation/934743",
+    "name": "Erding"
+   }
+  }
+ },
+ {
+  "id": "extra/fischer-s-ambulanter-dienst-fischer-s-seniorenzent-erding",
+  "cat": "pflege",
+  "quelle": "https://seniorenzentrum-erding.de/ambulante-pflege-3/ (2026-11-12)",
+  "tags": {
+   "name": "Fischer's Ambulanter Dienst (Fischer's Seniorenzentrum Erding)",
+   "addr:street": "Haager Straße",
+   "addr:housenumber": "40",
+   "addr:postcode": "85435",
+   "addr:city": "Erding",
+   "phone": "+49 8122 88025408",
+   "website": "https://seniorenzentrum-erding.de/ambulante-pflege-3/",
+   "email": "ambulanter-dienst@fischers-seniorenzentrum.de"
+  },
+  "location": {
+   "lat": 48.3005957,
+   "lon": 11.9071073
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62356",
+    "name": "Landkreis Erding"
+   },
+   "8": {
+    "id": "relation/934743",
+    "name": "Erding"
+   }
+  }
+ },
+ {
+  "id": "extra/wuerdevolles-leben-ambulanter-pflegedienst-bergler-berglern",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-berglern.de/kontakt (2026-11-12)",
+  "tags": {
+   "name": "Würdevolles Leben – Ambulanter Pflegedienst Berglern",
+   "addr:street": "Bajuwarenhof",
+   "addr:housenumber": "35",
+   "addr:postcode": "85459",
+   "addr:city": "Berglern",
+   "phone": "+49 8762 724733",
+   "website": "https://www.pflegedienst-berglern.de/",
+   "email": "mail@pflegedienst-berglern.de"
+  },
+  "location": {
+   "lat": 48.3949173,
+   "lon": 11.9278903
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62356",
+    "name": "Landkreis Erding"
+   },
+   "7": {
+    "id": "relation/2981618",
+    "name": "Wartenberg (VGem)"
+   },
+   "8": {
+    "id": "relation/934747",
+    "name": "Berglern"
+   }
+  }
+ },
+ {
+  "id": "extra/medikof-gmbh-ambulanter-pflegedienst-und-intensivp-fraunberg",
+  "cat": "pflege",
+  "quelle": "https://medikof.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "Medikof GmbH – Ambulanter Pflegedienst und Intensivpflegedienst",
+   "addr:street": "Siedlungsstraße",
+   "addr:housenumber": "5b",
+   "addr:postcode": "85447",
+   "addr:city": "Fraunberg",
+   "phone": "+49 151 42023235",
+   "website": "https://medikof.de/ambulanter-pflegedienst-und-intensivpflegedienst/",
+   "email": "m.fendt@medikof.de"
+  },
+  "location": {
+   "lat": 48.3700313,
+   "lon": 11.9942883
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62356",
+    "name": "Landkreis Erding"
+   },
+   "7": {
+    "id": "relation/2981618",
+    "name": "Wartenberg (VGem)"
+   },
+   "8": {
+    "id": "relation/934761",
+    "name": "Fraunberg"
+   }
+  }
+ },
+ {
+  "id": "extra/home-instead-erding-ebersberg-alltagsbetreuung-ois-erding",
+  "cat": "pflege",
+  "quelle": "https://homeinstead.de/erding-ebersberg/ (2026-11-12)",
+  "tags": {
+   "name": "Home Instead Erding-Ebersberg (Alltagsbetreuung Ois Easy GmbH)",
+   "addr:street": "Landshuter Straße",
+   "addr:housenumber": "57",
+   "addr:postcode": "85435",
+   "addr:city": "Erding",
+   "phone": "+49 8122 5537930",
+   "website": "https://homeinstead.de/erding-ebersberg/",
+   "email": "Erding-Ebersberg@homeinstead.de"
+  },
+  "location": {
+   "lat": 48.3094485,
+   "lon": 11.9158147
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62356",
+    "name": "Landkreis Erding"
+   },
+   "8": {
+    "id": "relation/934743",
+    "name": "Erding"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-kreisverband-erding-pflegekrisendienst-erding",
+  "cat": "pflege",
+  "quelle": "https://www.brk-erding.de/footer-menue-deutsch/service/impressum.html (2026-11-12)",
+  "tags": {
+   "name": "BRK Kreisverband Erding – Pflegekrisendienst",
+   "addr:street": "Wilhelm-Bachmair-Straße",
+   "addr:housenumber": "2",
+   "addr:postcode": "85435",
+   "addr:city": "Erding",
+   "phone": "+49 8122 976282",
+   "website": "https://www.brk-erding.de/angebote/alltagshilfen/pflegekrisendienst.html"
+  },
+  "location": {
+   "lat": 48.2957807,
+   "lon": 11.8927186
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62356",
+    "name": "Landkreis Erding"
+   },
+   "8": {
+    "id": "relation/934743",
+    "name": "Erding"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-kreisverband-erding-pflegekrisendienst-erding",
+  "cat": "fahrt",
+  "quelle": "https://www.brk-erding.de/footer-menue-deutsch/service/impressum.html (2026-11-12)",
+  "tags": {
+   "name": "BRK Kreisverband Erding – Pflegekrisendienst",
+   "addr:street": "Wilhelm-Bachmair-Straße",
+   "addr:housenumber": "2",
+   "addr:postcode": "85435",
+   "addr:city": "Erding",
+   "phone": "+49 8122 976282",
+   "website": "https://www.brk-erding.de/angebote/alltagshilfen/pflegekrisendienst.html"
+  },
+  "location": {
+   "lat": 48.2957807,
+   "lon": 11.8927186
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62356",
+    "name": "Landkreis Erding"
+   },
+   "8": {
+    "id": "relation/934743",
+    "name": "Erding"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-moosen-und-taufkirchen-vils-e--taufkirchen-v",
+  "cat": "pflege",
+  "quelle": "https://www.nachbarschaftshilfe-moosen.de/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Moosen und Taufkirchen (Vils) e.V.",
+   "addr:street": "Weststraße",
+   "addr:housenumber": "12 1/3",
+   "addr:postcode": "84416",
+   "addr:city": "Taufkirchen (Vils)",
+   "phone": "+49 8084 2830",
+   "website": "https://www.nachbarschaftshilfe-moosen.de/",
+   "email": "vorstand@nachbarschaftshilfe-moosen.de"
+  },
+  "location": {
+   "lat": 48.3444978,
+   "lon": 12.1821038
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62356",
+    "name": "Landkreis Erding"
+   },
+   "8": {
+    "id": "relation/934755",
+    "name": "Taufkirchen (Vils)"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-moosen-und-taufkirchen-vils-e--taufkirchen-v",
+  "cat": "fahrt",
+  "quelle": "https://www.nachbarschaftshilfe-moosen.de/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Moosen und Taufkirchen (Vils) e.V.",
+   "addr:street": "Weststraße",
+   "addr:housenumber": "12 1/3",
+   "addr:postcode": "84416",
+   "addr:city": "Taufkirchen (Vils)",
+   "phone": "+49 8084 2830",
+   "website": "https://www.nachbarschaftshilfe-moosen.de/",
+   "email": "vorstand@nachbarschaftshilfe-moosen.de"
+  },
+  "location": {
+   "lat": 48.3444978,
+   "lon": 12.1821038
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62356",
+    "name": "Landkreis Erding"
+   },
+   "8": {
+    "id": "relation/934755",
+    "name": "Taufkirchen (Vils)"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-isen-lengdorf-pemmering-e-v-isen",
+  "cat": "pflege",
+  "quelle": "https://nachbarschaftshilfe-isen.de/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Isen-Lengdorf-Pemmering e.V.",
+   "addr:street": "St.-Zeno-Platz",
+   "addr:housenumber": "5",
+   "addr:postcode": "84424",
+   "addr:city": "Isen",
+   "phone": "+49 8083 907177",
+   "website": "https://nachbarschaftshilfe-isen.de/",
+   "email": "info@nachbarschaftshilfe-isen.de"
+  },
+  "location": {
+   "lat": 48.2116407,
+   "lon": 12.0580918
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62356",
+    "name": "Landkreis Erding"
+   },
+   "8": {
+    "id": "relation/934752",
+    "name": "Isen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-isen-lengdorf-pemmering-e-v-isen",
+  "cat": "fahrt",
+  "quelle": "https://nachbarschaftshilfe-isen.de/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Isen-Lengdorf-Pemmering e.V.",
+   "addr:street": "St.-Zeno-Platz",
+   "addr:housenumber": "5",
+   "addr:postcode": "84424",
+   "addr:city": "Isen",
+   "phone": "+49 8083 907177",
+   "website": "https://nachbarschaftshilfe-isen.de/",
+   "email": "info@nachbarschaftshilfe-isen.de"
+  },
+  "location": {
+   "lat": 48.2116407,
+   "lon": 12.0580918
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62356",
+    "name": "Landkreis Erding"
+   },
+   "8": {
+    "id": "relation/934752",
+    "name": "Isen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-dorfen-e-v-dorfen",
+  "cat": "pflege",
+  "quelle": "https://nachbarschaftshilfe-dorfen.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Dorfen e.V.",
+   "addr:street": "Haager Straße",
+   "addr:housenumber": "22",
+   "addr:postcode": "84405",
+   "addr:city": "Dorfen",
+   "phone": "+49 8081 9577260",
+   "website": "https://nachbarschaftshilfe-dorfen.de/",
+   "email": "info@nachbarschaftshilfe-dorfen.de"
+  },
+  "location": {
+   "lat": 48.271389,
+   "lon": 12.1530358
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62356",
+    "name": "Landkreis Erding"
+   },
+   "8": {
+    "id": "relation/934750",
+    "name": "Dorfen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-woerth-hoerlkofen-e-v-woerth",
+  "cat": "pflege",
+  "quelle": "https://www.nachbarschaftshilfe-woerth.de/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Wörth/Hörlkofen e.V.",
+   "addr:street": "Birkenweg",
+   "addr:housenumber": "12",
+   "addr:postcode": "85457",
+   "addr:city": "Wörth",
+   "phone": "+49 174 9515011",
+   "website": "https://www.nachbarschaftshilfe-woerth.de/",
+   "email": "info@nachbarschaftshilfe-woerth.de"
+  },
+  "location": {
+   "lat": 48.2425562,
+   "lon": 11.9398244
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62356",
+    "name": "Landkreis Erding"
+   },
+   "7": {
+    "id": "relation/2981613",
+    "name": "Hörlkofen (VGem)"
+   },
+   "8": {
+    "id": "relation/934776",
+    "name": "Wörth"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-woerth-hoerlkofen-e-v-woerth",
+  "cat": "fahrt",
+  "quelle": "https://www.nachbarschaftshilfe-woerth.de/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Wörth/Hörlkofen e.V.",
+   "addr:street": "Birkenweg",
+   "addr:housenumber": "12",
+   "addr:postcode": "85457",
+   "addr:city": "Wörth",
+   "phone": "+49 174 9515011",
+   "website": "https://www.nachbarschaftshilfe-woerth.de/",
+   "email": "info@nachbarschaftshilfe-woerth.de"
+  },
+  "location": {
+   "lat": 48.2425562,
+   "lon": 11.9398244
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62356",
+    "name": "Landkreis Erding"
+   },
+   "7": {
+    "id": "relation/2981613",
+    "name": "Hörlkofen (VGem)"
+   },
+   "8": {
+    "id": "relation/934776",
+    "name": "Wörth"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-sozialstation-ebersberg-ambulante-pflege-brk-k-ebersberg",
+  "cat": "pflege",
+  "quelle": "https://www.kvebersberg.brk.de/ueber-uns/impressum.html (2026-11-12)",
+  "tags": {
+   "name": "BRK-Sozialstation Ebersberg (Ambulante Pflege, BRK-Kreisverband Ebersberg)",
+   "addr:street": "Zur Gass",
+   "addr:housenumber": "5",
+   "addr:postcode": "85560",
+   "addr:city": "Ebersberg",
+   "phone": "+49 8092 209540",
+   "website": "https://www.kvebersberg.brk.de/angebote/alltagshilfen/ambulante-pflege.html",
+   "email": "info.ebe@brk.de"
+  },
+  "location": {
+   "lat": 48.0760765,
+   "lon": 11.9521235
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168230",
+    "name": "Landkreis Ebersberg"
+   },
+   "8": {
+    "id": "relation/929913",
+    "name": "Ebersberg"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-sozialstation-ebersberg-ambulante-pflege-brk-k-ebersberg",
+  "cat": "fahrt",
+  "quelle": "https://www.kvebersberg.brk.de/ueber-uns/impressum.html (2026-11-12)",
+  "tags": {
+   "name": "BRK-Sozialstation Ebersberg (Ambulante Pflege, BRK-Kreisverband Ebersberg)",
+   "addr:street": "Zur Gass",
+   "addr:housenumber": "5",
+   "addr:postcode": "85560",
+   "addr:city": "Ebersberg",
+   "phone": "+49 8092 209540",
+   "website": "https://www.kvebersberg.brk.de/angebote/alltagshilfen/ambulante-pflege.html",
+   "email": "info.ebe@brk.de"
+  },
+  "location": {
+   "lat": 48.0760765,
+   "lon": 11.9521235
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168230",
+    "name": "Landkreis Ebersberg"
+   },
+   "8": {
+    "id": "relation/929913",
+    "name": "Ebersberg"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-schneider-standort-ebersbe-ebersberg",
+  "cat": "pflege",
+  "quelle": "https://www.ambulant-schneider.de/pflegedienst/ebersberg/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Schneider – Standort Ebersberg",
+   "addr:street": "Dr.-Wintrich-Straße",
+   "addr:housenumber": "16",
+   "addr:postcode": "85560",
+   "addr:city": "Ebersberg",
+   "phone": "+49 89 20352018",
+   "website": "https://www.ambulant-schneider.de/pflegedienst/ebersberg/",
+   "email": "info@ambulant-schneider.de"
+  },
+  "location": {
+   "lat": 48.0749763,
+   "lon": 11.9650621
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168230",
+    "name": "Landkreis Ebersberg"
+   },
+   "8": {
+    "id": "relation/929913",
+    "name": "Ebersberg"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-vaterstetten-zorneding-grasbru-vaterstetten",
+  "cat": "pflege",
+  "quelle": "https://www.deine-nachbarschaftshilfe.de/dienste/ambulante-pflege/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Vaterstetten, Zorneding, Grasbrunn e.V. – Ambulante Pflege (Sozialstation)",
+   "addr:street": "Brunnenstraße",
+   "addr:housenumber": "28",
+   "addr:postcode": "85598",
+   "addr:city": "Vaterstetten",
+   "phone": "+49 8106 368470",
+   "website": "https://www.deine-nachbarschaftshilfe.de/dienste/ambulante-pflege/",
+   "email": "pflege@deine-nachbarschaftshilfe.de"
+  },
+  "location": {
+   "lat": 48.0957718,
+   "lon": 11.7917582
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168230",
+    "name": "Landkreis Ebersberg"
+   },
+   "8": {
+    "id": "relation/929822",
+    "name": "Vaterstetten"
+   }
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-kirchseeon-e-v-ambulanter-pfle-kirchseeon",
+  "cat": "pflege",
+  "quelle": "https://nhk-kirchseeon.bayern/impressum (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Kirchseeon e.V. – Ambulanter Pflegedienst",
+   "addr:street": "Schulgasse",
+   "addr:housenumber": "2",
+   "addr:postcode": "85614",
+   "addr:city": "Kirchseeon",
+   "phone": "+49 8091 4050",
+   "website": "https://nhk-kirchseeon.bayern/pflege",
+   "email": "nhk@gmx.info"
+  },
+  "location": {
+   "lat": 48.073721,
+   "lon": 11.8873513
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168230",
+    "name": "Landkreis Ebersberg"
+   },
+   "8": {
+    "id": "relation/929919",
+    "name": "Kirchseeon"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegestern-seniorenservice-ggmbh-ambulante-pflege-poing",
+  "cat": "pflege",
+  "quelle": "https://www.pflegesterngmbh.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "Pflegestern Seniorenservice gGmbH – Ambulante Pflege Poing",
+   "addr:street": "Gruber Straße",
+   "addr:housenumber": "46b",
+   "addr:postcode": "85586",
+   "addr:city": "Poing",
+   "phone": "+49 8121 7028030",
+   "website": "https://www.pflegesterngmbh.de/ambulante-pflege-poing/",
+   "email": "pflegedienst-poing@pflegesterngmbh.de"
+  },
+  "location": {
+   "lat": 48.1717704,
+   "lon": 11.8051878
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168230",
+    "name": "Landkreis Ebersberg"
+   },
+   "8": {
+    "id": "relation/929922",
+    "name": "Poing"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-gratia-plena-gmbh-st-krisp-vaterstetten",
+  "cat": "pflege",
+  "quelle": "https://www.sankt-krispin.de/kontakt-und-beratung.html (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Gratia plena GmbH (St. Krispin)",
+   "addr:street": "Wendelsteinstraße",
+   "addr:housenumber": "10",
+   "addr:postcode": "85591",
+   "addr:city": "Vaterstetten",
+   "phone": "+49 8106 9985810",
+   "website": "https://www.sankt-krispin.de/",
+   "email": "pflege@gratia-plena.de"
+  },
+  "location": {
+   "lat": 48.1051056,
+   "lon": 11.7698293
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168230",
+    "name": "Landkreis Ebersberg"
+   },
+   "8": {
+    "id": "relation/929822",
+    "name": "Vaterstetten"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-glonn-rogoll-gottwald-glonn",
+  "cat": "pflege",
+  "quelle": "https://www.ambulante-pflege-glonn.de/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Glonn (Rogoll-Gottwald)",
+   "addr:street": "Am Berg",
+   "addr:housenumber": "3",
+   "addr:postcode": "85625",
+   "addr:city": "Glonn",
+   "phone": "+49 8093 300720",
+   "website": "https://www.ambulante-pflege-glonn.de/",
+   "email": "info@ambulante-pflege-glonn.de"
+  },
+  "location": {
+   "lat": 47.9847626,
+   "lon": 11.8595553
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168230",
+    "name": "Landkreis Ebersberg"
+   },
+   "7": {
+    "id": "relation/2984857",
+    "name": "Glonn (VGem)"
+   },
+   "8": {
+    "id": "relation/929915",
+    "name": "Glonn"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegeambulanz-gisela-mautner-poing",
+  "cat": "pflege",
+  "quelle": "https://www.pflegeambulanz-mautner.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Pflegeambulanz Gisela Mautner",
+   "addr:street": "Bürgermeister-Germeier-Straße",
+   "addr:housenumber": "2",
+   "addr:postcode": "85586",
+   "addr:city": "Poing",
+   "phone": "+49 8121 912126",
+   "website": "https://www.pflegeambulanz-mautner.de/",
+   "email": "Pflegeambulanz.Mautner@web.de"
+  },
+  "location": {
+   "lat": 48.1699045,
+   "lon": 11.8194966
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168230",
+    "name": "Landkreis Ebersberg"
+   },
+   "8": {
+    "id": "relation/929922",
+    "name": "Poing"
+   }
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-poing-pliening-e-v-poing",
+  "cat": "pflege",
+  "quelle": "https://nbh.poing-pliening.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Poing, Pliening e.V.",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "15",
+   "addr:postcode": "85586",
+   "addr:city": "Poing",
+   "phone": "+49 8121 7671940",
+   "website": "https://nbh.poing-pliening.de/dienste/ambulante-pflege/",
+   "email": "pflege@deine-nbh-poing.de"
+  },
+  "location": {
+   "lat": 48.1710122,
+   "lon": 11.8149938
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168230",
+    "name": "Landkreis Ebersberg"
+   },
+   "8": {
+    "id": "relation/929922",
+    "name": "Poing"
+   }
+  }
+ },
+ {
+  "id": "extra/vitana-pflege-ambulanter-pflegedienst-petra-topolk-markt-schwabe",
+  "cat": "pflege",
+  "quelle": "https://www.vitana-pflege.de/kontakt (2026-11-12)",
+  "tags": {
+   "name": "VITANA Pflege – Ambulanter Pflegedienst (Petra Topolko)",
+   "addr:street": "Im Wiegenfeld",
+   "addr:housenumber": "4",
+   "addr:postcode": "85570",
+   "addr:city": "Markt Schwaben",
+   "phone": "+49 8121 9899097",
+   "website": "https://www.vitana-pflege.de/",
+   "email": "info@vitana-pflege.de"
+  },
+  "location": {
+   "lat": 48.1887482,
+   "lon": 11.8510749
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168230",
+    "name": "Landkreis Ebersberg"
+   },
+   "8": {
+    "id": "relation/929821",
+    "name": "Markt Schwaben"
+   }
+  }
+ },
+ {
+  "id": "extra/mandys-pflegedienst-gmbh-kirchseeon",
+  "cat": "pflege",
+  "quelle": "https://www.mandys-pflegedienst.de/ (2026-11-12)",
+  "tags": {
+   "name": "Mandys Pflegedienst GmbH",
+   "addr:street": "Wasserburger Straße",
+   "addr:housenumber": "15a",
+   "addr:postcode": "85614",
+   "addr:city": "Kirchseeon",
+   "phone": "+49 8091 5619394",
+   "website": "https://www.mandys-pflegedienst.de/",
+   "email": "info@mandys-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.0695368,
+   "lon": 11.891298
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168230",
+    "name": "Landkreis Ebersberg"
+   },
+   "8": {
+    "id": "relation/929919",
+    "name": "Kirchseeon"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegeambulanz-hohenlinden-hohenlinden",
+  "cat": "pflege",
+  "quelle": "https://www.pflegeambulanz-hohenlinden.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "Pflegeambulanz Hohenlinden",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "7",
+   "addr:postcode": "85664",
+   "addr:city": "Hohenlinden",
+   "phone": "+49 8124 4457324",
+   "website": "https://www.pflegeambulanz-hohenlinden.de/",
+   "email": "info@pflegeambulanz-hohenlinden.de"
+  },
+  "location": {
+   "lat": 48.1579785,
+   "lon": 11.9954056
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168230",
+    "name": "Landkreis Ebersberg"
+   },
+   "8": {
+    "id": "relation/929928",
+    "name": "Hohenlinden"
+   }
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-forstinning-e-v-forstinning",
+  "cat": "pflege",
+  "quelle": "https://nachbarschaftshilfe-forstinning.de/?page_id=43 (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Forstinning e.V.",
+   "addr:street": "Am Holzfeld",
+   "addr:housenumber": "9",
+   "addr:postcode": "85661",
+   "addr:city": "Forstinning",
+   "phone": "+49 8121 46602",
+   "website": "https://nachbarschaftshilfe-forstinning.de/",
+   "email": "info@nachbarschaftshilfe-forstinning.de"
+  },
+  "location": {
+   "lat": 48.1657853,
+   "lon": 11.9162817
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168230",
+    "name": "Landkreis Ebersberg"
+   },
+   "8": {
+    "id": "relation/929820",
+    "name": "Forstinning"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-forstinning-e-v-forstinning",
+  "cat": "fahrt",
+  "quelle": "https://nachbarschaftshilfe-forstinning.de/?page_id=43 (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Forstinning e.V.",
+   "addr:street": "Am Holzfeld",
+   "addr:housenumber": "9",
+   "addr:postcode": "85661",
+   "addr:city": "Forstinning",
+   "phone": "+49 8121 46602",
+   "website": "https://nachbarschaftshilfe-forstinning.de/",
+   "email": "info@nachbarschaftshilfe-forstinning.de"
+  },
+  "location": {
+   "lat": 48.1657853,
+   "lon": 11.9162817
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168230",
+    "name": "Landkreis Ebersberg"
+   },
+   "8": {
+    "id": "relation/929820",
+    "name": "Forstinning"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/sozialstation-neufahrn-e-v-ambulanter-pflegedienst-neufahrn-bei-",
+  "cat": "pflege",
+  "quelle": "https://www.sozialstation-neufahrn.de/kontakt.php (2026-11-12)",
+  "tags": {
+   "name": "Sozialstation Neufahrn e.V. – Ambulanter Pflegedienst",
+   "addr:street": "Fürholzer Weg",
+   "addr:housenumber": "8",
+   "addr:postcode": "85375",
+   "addr:city": "Neufahrn bei Freising",
+   "phone": "+49 8165 4789",
+   "website": "https://www.sozialstation-neufahrn.de/",
+   "email": "info@sozialstation-neufahrn.de"
+  },
+  "location": {
+   "lat": 48.316443,
+   "lon": 11.661014
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62633",
+    "name": "Landkreis Freising"
+   },
+   "8": {
+    "id": "relation/30012",
+    "name": "Neufahrn bei Freising"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-kreisverband-freising-freising",
+  "cat": "pflege",
+  "quelle": "https://www.kvfreising.brk.de/start/angebote/ambulante-pflege.html; https://www.kvfreising.brk.de/impressum.html (2026-11-12)",
+  "tags": {
+   "name": "BRK Kreisverband Freising",
+   "addr:street": "Rotkreuzstraße",
+   "addr:housenumber": "13-15",
+   "addr:postcode": "85354",
+   "addr:city": "Freising",
+   "phone": "+49 8161 967119",
+   "website": "https://www.kvfreising.brk.de/start/angebote/ambulante-pflege.html",
+   "email": "pflege.kv-fs@brk.de"
+  },
+  "location": {
+   "lat": 48.407484,
+   "lon": 11.744735
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62633",
+    "name": "Landkreis Freising"
+   },
+   "8": {
+    "id": "relation/30005",
+    "name": "Freising"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-kreisverband-freising-freising",
+  "cat": "fahrt",
+  "quelle": "https://www.kvfreising.brk.de/start/angebote/ambulante-pflege.html; https://www.kvfreising.brk.de/impressum.html (2026-11-12)",
+  "tags": {
+   "name": "BRK Kreisverband Freising",
+   "addr:street": "Rotkreuzstraße",
+   "addr:housenumber": "13-15",
+   "addr:postcode": "85354",
+   "addr:city": "Freising",
+   "phone": "+49 8161 967119",
+   "website": "https://www.kvfreising.brk.de/start/angebote/ambulante-pflege.html",
+   "email": "pflege.kv-fs@brk.de"
+  },
+  "location": {
+   "lat": 48.407484,
+   "lon": 11.744735
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62633",
+    "name": "Landkreis Freising"
+   },
+   "8": {
+    "id": "relation/30005",
+    "name": "Freising"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/awo-sozialdienst-freising-e-v-freising",
+  "cat": "pflege",
+  "quelle": "https://www.awo-freising.de/angebote/ (2026-11-12)",
+  "tags": {
+   "name": "AWO Sozialdienst Freising e.V.",
+   "addr:street": "Kölblstraße",
+   "addr:housenumber": "2",
+   "addr:postcode": "85356",
+   "addr:city": "Freising",
+   "phone": "+49 8161 65573",
+   "website": "https://www.awo-freising.de/",
+   "email": "awo.sozialdienst-freising@t-online.de"
+  },
+  "location": {
+   "lat": 48.403481,
+   "lon": 11.753213
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62633",
+    "name": "Landkreis Freising"
+   },
+   "8": {
+    "id": "relation/30005",
+    "name": "Freising"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/awo-sozialdienst-freising-e-v-freising",
+  "cat": "fahrt",
+  "quelle": "https://www.awo-freising.de/angebote/ (2026-11-12)",
+  "tags": {
+   "name": "AWO Sozialdienst Freising e.V.",
+   "addr:street": "Kölblstraße",
+   "addr:housenumber": "2",
+   "addr:postcode": "85356",
+   "addr:city": "Freising",
+   "phone": "+49 8161 65573",
+   "website": "https://www.awo-freising.de/",
+   "email": "awo.sozialdienst-freising@t-online.de"
+  },
+  "location": {
+   "lat": 48.403481,
+   "lon": 11.753213
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62633",
+    "name": "Landkreis Freising"
+   },
+   "8": {
+    "id": "relation/30005",
+    "name": "Freising"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/bemax-gmbh-haeusliche-krankenpflege-eching",
+  "cat": "pflege",
+  "quelle": "https://www.bemax-eching.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "BEMAX GmbH – Häusliche Krankenpflege",
+   "addr:street": "Heidestraße",
+   "addr:housenumber": "8",
+   "addr:postcode": "85386",
+   "addr:city": "Eching",
+   "phone": "+49 89 3193677",
+   "website": "https://www.bemax-eching.de/",
+   "email": "info@bemax-eching.de"
+  },
+  "location": {
+   "lat": 48.295617,
+   "lon": 11.621409
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62633",
+    "name": "Landkreis Freising"
+   },
+   "8": {
+    "id": "relation/30009",
+    "name": "Eching"
+   }
+  }
+ },
+ {
+  "id": "extra/merge-ambulanter-pflegedienst-eching",
+  "cat": "pflege",
+  "quelle": "https://merge-pflegedienst.de/ (2026-11-12)",
+  "tags": {
+   "name": "\"MERGE\" Ambulanter Pflegedienst",
+   "addr:street": "Bahnhofstraße",
+   "addr:housenumber": "4a",
+   "addr:postcode": "85386",
+   "addr:city": "Eching",
+   "phone": "+49 89 95867949",
+   "website": "https://merge-pflegedienst.de/",
+   "email": "info@merge-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.297511,
+   "lon": 11.621343
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62633",
+    "name": "Landkreis Freising"
+   },
+   "8": {
+    "id": "relation/30009",
+    "name": "Eching"
+   }
+  }
+ },
+ {
+  "id": "extra/aelter-werden-in-eching-e-v-mobile-soziale-hilfsdi-eching",
+  "cat": "pflege",
+  "quelle": "https://www.asz-eching.de/angebote/hilfsdienste; https://www.asz-eching.de/kontakt (2026-11-12)",
+  "tags": {
+   "name": "Älter werden in Eching e.V. – Mobile Soziale Hilfsdienste (ASZ Eching)",
+   "addr:street": "Bahnhofstraße",
+   "addr:housenumber": "4",
+   "addr:postcode": "85386",
+   "addr:city": "Eching",
+   "phone": "+49 89 32714229",
+   "website": "https://www.asz-eching.de/angebote/hilfsdienste",
+   "email": "koenig@asz-eching.de"
+  },
+  "location": {
+   "lat": 48.297511,
+   "lon": 11.621343
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62633",
+    "name": "Landkreis Freising"
+   },
+   "8": {
+    "id": "relation/30009",
+    "name": "Eching"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/aelter-werden-in-eching-e-v-mobile-soziale-hilfsdi-eching",
+  "cat": "fahrt",
+  "quelle": "https://www.asz-eching.de/angebote/hilfsdienste; https://www.asz-eching.de/kontakt (2026-11-12)",
+  "tags": {
+   "name": "Älter werden in Eching e.V. – Mobile Soziale Hilfsdienste (ASZ Eching)",
+   "addr:street": "Bahnhofstraße",
+   "addr:housenumber": "4",
+   "addr:postcode": "85386",
+   "addr:city": "Eching",
+   "phone": "+49 89 32714229",
+   "website": "https://www.asz-eching.de/angebote/hilfsdienste",
+   "email": "koenig@asz-eching.de"
+  },
+  "location": {
+   "lat": 48.297511,
+   "lon": 11.621343
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62633",
+    "name": "Landkreis Freising"
+   },
+   "8": {
+    "id": "relation/30009",
+    "name": "Eching"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/aha-pflegedienst-ambulante-hauspflege-allershausen-allershausen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-allershausen.de/kontakt (2026-11-12)",
+  "tags": {
+   "name": "AHA Pflegedienst – Ambulante Hauspflege Allershausen GbR",
+   "addr:street": "Breimannweg",
+   "addr:housenumber": "21",
+   "addr:postcode": "85391",
+   "addr:city": "Allershausen",
+   "phone": "+49 8166 3582",
+   "website": "https://www.pflegedienst-allershausen.de/",
+   "email": "info@aha-allershausen.de"
+  },
+  "location": {
+   "lat": 48.434091,
+   "lon": 11.591147
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62633",
+    "name": "Landkreis Freising"
+   },
+   "7": {
+    "id": "relation/2978605",
+    "name": "Allershausen (VGem)"
+   },
+   "8": {
+    "id": "relation/30015",
+    "name": "Allershausen"
+   }
+  }
+ },
+ {
+  "id": "extra/ampertalpflege-nandlstadt",
+  "cat": "pflege",
+  "quelle": "https://ampertalpflege.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Ampertalpflege",
+   "addr:street": "Marktstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "85405",
+   "addr:city": "Nandlstadt",
+   "phone": "+49 8756 9132800",
+   "website": "https://ampertalpflege.de/",
+   "email": "info@ampertalpflege.de"
+  },
+  "location": {
+   "lat": 48.537177,
+   "lon": 11.805676
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62633",
+    "name": "Landkreis Freising"
+   },
+   "8": {
+    "id": "relation/29825",
+    "name": "Nandlstadt"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/starke-pflege-zolling",
+  "cat": "pflege",
+  "quelle": "https://starkepflege.de/kontakt (2026-11-12)",
+  "tags": {
+   "name": "Starke Pflege",
+   "addr:street": "Moosburger Straße",
+   "addr:housenumber": "47",
+   "addr:postcode": "85406",
+   "addr:city": "Zolling",
+   "phone": "+49 8167 696236",
+   "website": "https://starkepflege.de/",
+   "email": "info@starkepflege.de"
+  },
+  "location": {
+   "lat": 48.453298,
+   "lon": 11.781283
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62633",
+    "name": "Landkreis Freising"
+   },
+   "7": {
+    "id": "relation/30231",
+    "name": "Zolling (VGem)"
+   },
+   "8": {
+    "id": "relation/29831",
+    "name": "Zolling"
+   }
+  }
+ },
+ {
+  "id": "extra/johanniter-sozialstation-allershausen-allershausen",
+  "cat": "pflege",
+  "quelle": "https://www.johanniter.de/juh/lv-bayern/rv-oberbayern/standorte-einrichtungen-in-oberbayern/einrichtung-vor-ort/sozialstation-allershausen-1157/ (2026-11-12)",
+  "tags": {
+   "name": "Johanniter Sozialstation Allershausen",
+   "addr:street": "Schroßlacher Straße",
+   "addr:housenumber": "3",
+   "addr:postcode": "85391",
+   "addr:city": "Allershausen",
+   "phone": "+49 8166 678711",
+   "website": "https://www.johanniter.de/juh/lv-bayern/rv-oberbayern/standorte-einrichtungen-in-oberbayern/einrichtung-vor-ort/sozialstation-allershausen-1157/"
+  },
+  "location": {
+   "lat": 48.427659,
+   "lon": 11.584923
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62633",
+    "name": "Landkreis Freising"
+   },
+   "7": {
+    "id": "relation/2978605",
+    "name": "Allershausen (VGem)"
+   },
+   "8": {
+    "id": "relation/30015",
+    "name": "Allershausen"
+   }
+  }
+ },
+ {
+  "id": "extra/vivicare-gmbh-intensivpflegedienst-neufahrn-bei-freising",
+  "cat": "pflege",
+  "quelle": "https://www.vivicare.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "VIVICARE GmbH (Intensivpflegedienst)",
+   "addr:street": "Werner-von-Siemens-Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "85375",
+   "addr:city": "Neufahrn bei Freising",
+   "phone": "+49 8165 6094566",
+   "website": "https://www.vivicare.de/",
+   "email": "info@vivicare.de"
+  },
+  "location": {
+   "lat": 48.310177,
+   "lon": 11.648527
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62633",
+    "name": "Landkreis Freising"
+   },
+   "8": {
+    "id": "relation/30012",
+    "name": "Neufahrn bei Freising"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/malteser-hilfsdienst-freising-uebergangspflege-und-freising",
+  "cat": "pflege",
+  "quelle": "https://www.malteser.de/standorte/freising/dienstleistungen.html (2026-11-12)",
+  "tags": {
+   "name": "Malteser Hilfsdienst Freising – Übergangspflege und Alltagsbegleitung",
+   "addr:street": "Veit-Adam-Straße",
+   "addr:housenumber": "31",
+   "addr:postcode": "85354",
+   "addr:city": "Freising",
+   "phone": "+49 8161 1850840",
+   "website": "https://www.malteser.de/standorte/freising.html",
+   "email": "malteser-freising@malteser.org"
+  },
+  "location": {
+   "lat": 48.410759,
+   "lon": 11.746341
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62633",
+    "name": "Landkreis Freising"
+   },
+   "8": {
+    "id": "relation/30005",
+    "name": "Freising"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/malteser-hilfsdienst-freising-uebergangspflege-und-freising",
+  "cat": "fahrt",
+  "quelle": "https://www.malteser.de/standorte/freising/dienstleistungen.html (2026-11-12)",
+  "tags": {
+   "name": "Malteser Hilfsdienst Freising – Übergangspflege und Alltagsbegleitung",
+   "addr:street": "Veit-Adam-Straße",
+   "addr:housenumber": "31",
+   "addr:postcode": "85354",
+   "addr:city": "Freising",
+   "phone": "+49 8161 1850840",
+   "website": "https://www.malteser.de/standorte/freising.html",
+   "email": "malteser-freising@malteser.org"
+  },
+  "location": {
+   "lat": 48.410759,
+   "lon": 11.746341
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62633",
+    "name": "Landkreis Freising"
+   },
+   "8": {
+    "id": "relation/30005",
+    "name": "Freising"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
  }
 ]

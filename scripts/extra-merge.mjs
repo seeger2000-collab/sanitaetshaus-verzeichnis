@@ -31,8 +31,12 @@ const adminNominatim = async (r) => {
   if (!near || nd > 30000) return null;
   const res = await fetch(`https://nominatim.openstreetmap.org/search?format=json&limit=5&q=${encodeURIComponent(r.city)}`, { headers: { 'User-Agent': 'sanitaetshaus-suche.de verzeichnis' } }).then((x) => x.json()).catch(() => []);
   await new Promise((ok) => setTimeout(ok, 1200));
-  const hit = res.find((h) => h.osm_type === 'relation' && h.type === 'administrative' && h.display_name.includes(near['6']?.name || '#'));
-  return hit ? { ...near, 8: { id: `relation/${hit.osm_id}`, name: r.city } } : null;
+  // Landkreis aus dem Nominatim-Treffer; Gebietsdaten von einem OSM-Eintrag in diesem Landkreis (nicht unbedingt dem nächsten)
+  for (const h of res.filter((x) => x.osm_type === 'relation' && x.type === 'administrative')) {
+    const lk = places.find((p) => p.admin['6'] && h.display_name.includes(p.admin['6'].name) && dist(p, r) < 40000);
+    if (lk) return { ...lk.admin, 8: { id: `relation/${h.osm_id}`, name: r.city } };
+  }
+  return null;
 };
 
 const dist = (a, b) => Math.hypot(a.lat - b.lat, (a.lon - b.lon) * 0.67) * 111000;

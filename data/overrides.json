@@ -74,5 +74,21 @@
  },
  "node/11150483603": {
   "_ausblenden": "Dublette von node/13996020169; eigene Website nennt Wallbergstraße 26 (12.11.2026)"
+ },
+ "node/2625350973": {
+  "_quelle": "https://www.pflegewerk.com/ambulant/standorte/erding.html (2026-11-12)",
+  "street": "Dorfener Straße 7a",
+  "postcode": "85435",
+  "phone": "+49 8122 943040",
+  "website": "https://www.pflegewerk.com/ambulant/standorte/erding.html",
+  "email": "info@pflegewerk-erding.de",
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ "node/2381782940": {
+  "_ausblenden": "Dublette von node/5240783092 (ohne Adresse) (12.11.2026)"
  }
 }
