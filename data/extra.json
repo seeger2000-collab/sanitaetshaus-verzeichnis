@@ -6775,5 +6775,42 @@
     "begleitfahrt"
    ]
   }
+ },
+ {
+  "id": "extra/skg-sanitaetshaus-gevelsberg",
+  "cat": "sanitaetshaus",
+  "quelle": "https://www.skg-sanitaetshaus.de/impressum (E-Mail des Betriebs und Impressum, 12.11.2026)",
+  "tags": {
+   "name": "SKG-Sanitätshaus",
+   "addr:street": "Gewerbestraße",
+   "addr:housenumber": "15",
+   "addr:postcode": "58285",
+   "addr:city": "Gevelsberg",
+   "phone": "+49 2332 555313",
+   "email": "info@skg-sanitaetshaus.de",
+   "website": "https://www.skg-sanitaetshaus.de"
+  },
+  "location": {
+   "lat": 51.3147101,
+   "lon": 7.3118571
+  },
+  "admin": {
+   "4": {
+    "id": "relation/62761",
+    "name": "Nordrhein-Westfalen"
+   },
+   "5": {
+    "id": "relation/73340",
+    "name": "Regierungsbezirk Arnsberg"
+   },
+   "6": {
+    "id": "relation/1829066",
+    "name": "Ennepe-Ruhr-Kreis"
+   },
+   "8": {
+    "id": "relation/1956782",
+    "name": "Gevelsberg"
+   }
+  }
  }
 ]
