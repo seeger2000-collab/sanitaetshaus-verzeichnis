@@ -910,5 +910,3834 @@
     "name": "Gröbenzell"
    }
   }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-feldafing-e-v-feldafing",
+  "cat": "pflege",
+  "quelle": "https://www.nachbarschaftshilfe-feldafing.de/impressum.html (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Feldafing e.V.",
+   "addr:street": "Schluchtweg",
+   "addr:housenumber": "9b",
+   "addr:postcode": "82340",
+   "addr:city": "Feldafing",
+   "phone": "+49 8157 7325",
+   "website": "https://www.nachbarschaftshilfe-feldafing.de/",
+   "email": "info@nbh-feldafing.de"
+  },
+  "location": {
+   "lat": 47.9514192,
+   "lon": 11.297323
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932437",
+    "name": "Feldafing"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-feldafing-e-v-feldafing",
+  "cat": "fahrt",
+  "quelle": "https://www.nachbarschaftshilfe-feldafing.de/impressum.html (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Feldafing e.V.",
+   "addr:street": "Schluchtweg",
+   "addr:housenumber": "9b",
+   "addr:postcode": "82340",
+   "addr:city": "Feldafing",
+   "phone": "+49 8157 7325",
+   "website": "https://www.nachbarschaftshilfe-feldafing.de/",
+   "email": "info@nbh-feldafing.de"
+  },
+  "location": {
+   "lat": 47.9514192,
+   "lon": 11.297323
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932437",
+    "name": "Feldafing"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-irmi-riedel-schleicher-berg",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-schleicher.de/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Irmi Riedel-Schleicher",
+   "addr:street": "Lärchenweg",
+   "addr:housenumber": "35",
+   "addr:postcode": "82335",
+   "addr:city": "Berg",
+   "phone": "+49 8171 407956",
+   "website": "https://www.pflegedienst-schleicher.de/",
+   "email": "schleicher-berg@t-online.de"
+  },
+  "location": {
+   "lat": 47.9402812,
+   "lon": 11.3951804
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932489",
+    "name": "Berg"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-krankenpflege-ulrike-may-gauting",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-gauting.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "Ambulante Krankenpflege Ulrike May",
+   "addr:street": "Münchener Straße",
+   "addr:housenumber": "31A",
+   "addr:postcode": "82131",
+   "addr:city": "Gauting",
+   "phone": "+49 89 89340819",
+   "website": "https://www.pflegedienst-gauting.de/",
+   "email": "ulrikemay@mail.com"
+  },
+  "location": {
+   "lat": 48.0670255,
+   "lon": 11.3846573
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932494",
+    "name": "Gauting"
+   }
+  }
+ },
+ {
+  "id": "extra/oekumenische-kranken-und-altenpflege-aufkirchen-be-berg",
+  "cat": "pflege",
+  "quelle": "https://www.kav-berg.de/pages/kontakt.php (2026-11-12)",
+  "tags": {
+   "name": "Ökumenische Kranken- und Altenpflege Aufkirchen/Berg am Starnberger See e.V.",
+   "addr:street": "Perchastraße",
+   "addr:housenumber": "11",
+   "addr:postcode": "82335",
+   "addr:city": "Berg",
+   "phone": "+49 8151 50011",
+   "website": "https://www.kav-berg.de/pages/pflegedienst.php",
+   "email": "info@kav-berg.de"
+  },
+  "location": {
+   "lat": 47.9697462,
+   "lon": 11.3583332
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932489",
+    "name": "Berg"
+   }
+  }
+ },
+ {
+  "id": "extra/caritas-marienstift-gauting-gauting",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-altenheim-gauting.de/de/ambulante-pflege (2026-11-12)",
+  "tags": {
+   "name": "Caritas Marienstift Gauting",
+   "addr:street": "Josef-Cischeck-Platz",
+   "addr:housenumber": "1",
+   "addr:postcode": "82131",
+   "addr:city": "Gauting",
+   "phone": "+49 89 89556590",
+   "website": "https://www.caritas-altenheim-gauting.de/de/ambulante-pflege",
+   "email": "marienstift-gauting@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 48.0660306,
+   "lon": 11.37713
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932494",
+    "name": "Gauting"
+   }
+  }
+ },
+ {
+  "id": "extra/p-m-pflege-ambulanter-pflegedienst-gilching",
+  "cat": "pflege",
+  "quelle": "https://www.pm-pflege.de/Impressum/ (2026-11-12)",
+  "tags": {
+   "name": "P+M Pflege Ambulanter Pflegedienst",
+   "addr:street": "Sonnenstraße",
+   "addr:housenumber": "53a",
+   "addr:postcode": "82205",
+   "addr:city": "Gilching",
+   "phone": "+49 8105 207025",
+   "website": "https://www.pm-pflege.de/",
+   "email": "info@pm-pflege.de"
+  },
+  "location": {
+   "lat": 48.0999275,
+   "lon": 11.2893702
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932423",
+    "name": "Gilching"
+   }
+  }
+ },
+ {
+  "id": "extra/provital-pflegedienst-gmbh-gauting",
+  "cat": "pflege",
+  "quelle": "https://provital-pflegedienst.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "ProVital Pflegedienst GmbH",
+   "addr:street": "Münchener Straße",
+   "addr:housenumber": "29",
+   "addr:postcode": "82131",
+   "addr:city": "Gauting",
+   "phone": "+49 89 89891111",
+   "website": "https://provital-pflegedienst.de/",
+   "email": "info@provital-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.0665745,
+   "lon": 11.3849896
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932494",
+    "name": "Gauting"
+   }
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-inning-e-v-inning-am-ammersee",
+  "cat": "pflege",
+  "quelle": "https://www.nachbarschaftshilfe-inning.de/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Inning e.V.",
+   "addr:street": "Enzenhofer Weg",
+   "addr:housenumber": "9",
+   "addr:postcode": "82266",
+   "addr:city": "Inning am Ammersee",
+   "phone": "+49 8143 241940",
+   "website": "https://www.nachbarschaftshilfe-inning.de/",
+   "email": "info@nbh-inning.de"
+  },
+  "location": {
+   "lat": 48.0702394,
+   "lon": 11.153073
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932279",
+    "name": "Inning am Ammersee"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-inning-e-v-inning-am-ammersee",
+  "cat": "fahrt",
+  "quelle": "https://www.nachbarschaftshilfe-inning.de/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Inning e.V.",
+   "addr:street": "Enzenhofer Weg",
+   "addr:housenumber": "9",
+   "addr:postcode": "82266",
+   "addr:city": "Inning am Ammersee",
+   "phone": "+49 8143 241940",
+   "website": "https://www.nachbarschaftshilfe-inning.de/",
+   "email": "info@nbh-inning.de"
+  },
+  "location": {
+   "lat": 48.0702394,
+   "lon": 11.153073
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932279",
+    "name": "Inning am Ammersee"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/sozialdienst-gilching-e-v-gilching",
+  "cat": "pflege",
+  "quelle": "https://sozialdienst-gilching.de/anfahrt/impressum-2/ (2026-11-12)",
+  "tags": {
+   "name": "Sozialdienst Gilching e.V.",
+   "addr:street": "Andechser Straße",
+   "addr:housenumber": "3",
+   "addr:postcode": "82205",
+   "addr:city": "Gilching",
+   "phone": "+49 8105 77823",
+   "website": "https://sozialdienst-gilching.de/",
+   "email": "info@sozialdienst-gilching.de"
+  },
+  "location": {
+   "lat": 48.1062944,
+   "lon": 11.2987072
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932423",
+    "name": "Gilching"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/sozialdienst-gilching-e-v-gilching",
+  "cat": "fahrt",
+  "quelle": "https://sozialdienst-gilching.de/anfahrt/impressum-2/ (2026-11-12)",
+  "tags": {
+   "name": "Sozialdienst Gilching e.V.",
+   "addr:street": "Andechser Straße",
+   "addr:housenumber": "3",
+   "addr:postcode": "82205",
+   "addr:city": "Gilching",
+   "phone": "+49 8105 77823",
+   "website": "https://sozialdienst-gilching.de/",
+   "email": "info@sozialdienst-gilching.de"
+  },
+  "location": {
+   "lat": 48.1062944,
+   "lon": 11.2987072
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932423",
+    "name": "Gilching"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/hilfsdienst-herrsching-e-v-ambulanter-pflegedienst-herrsching-am",
+  "cat": "pflege",
+  "quelle": "https://www.hilfsdienst-herrsching.de/Impressum (2026-11-12)",
+  "tags": {
+   "name": "Hilfsdienst Herrsching e.V. – Ambulanter Pflegedienst",
+   "addr:street": "Bahnhofstraße",
+   "addr:housenumber": "38",
+   "addr:postcode": "82211",
+   "addr:city": "Herrsching am Ammersee",
+   "phone": "+49 8152 989940",
+   "website": "https://www.hilfsdienst-herrsching.de/",
+   "email": "info@hilfsdienst-herrsching.de"
+  },
+  "location": {
+   "lat": 47.9985803,
+   "lon": 11.1712154
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932292",
+    "name": "Herrsching am Ammersee"
+   }
+  }
+ },
+ {
+  "id": "extra/voli-herrsching-ambulanter-pflegedienst-herrsching-am-ammersee",
+  "cat": "pflege",
+  "quelle": "https://www.voli-pflege.de/standorte/herrsching (2026-11-12)",
+  "tags": {
+   "name": "VOLI Herrsching – Ambulanter Pflegedienst",
+   "addr:street": "Weinhartstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "82211",
+   "addr:city": "Herrsching am Ammersee",
+   "phone": "+49 8152 8084",
+   "website": "https://www.voli-pflege.de/standorte/herrsching",
+   "email": "kontakt.herrsching@voli-pflege.de"
+  },
+  "location": {
+   "lat": 47.9961081,
+   "lon": 11.1759063
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932292",
+    "name": "Herrsching am Ammersee"
+   }
+  }
+ },
+ {
+  "id": "extra/hand-in-hand-betreuung-und-pflege-gmbh-poecking",
+  "cat": "pflege",
+  "quelle": "https://hih-wp.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "HAND IN HAND Betreuung und Pflege GmbH",
+   "addr:street": "Söckinger Straße",
+   "addr:housenumber": "6a",
+   "addr:postcode": "82343",
+   "addr:city": "Pöcking",
+   "phone": "+49 8151 4464999",
+   "website": "https://www.handinhand-gmbh.de/",
+   "email": "info@handinhand-gmbh.de"
+  },
+  "location": {
+   "lat": 47.9868287,
+   "lon": 11.2901944
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932449",
+    "name": "Pöcking"
+   }
+  }
+ },
+ {
+  "id": "extra/sozialdienst-poecking-e-v-poecking",
+  "cat": "pflege",
+  "quelle": "https://www.sozialdienst-poecking.de/rechtliche-informationen/impressum (2026-11-12)",
+  "tags": {
+   "name": "Sozialdienst Pöcking e.V.",
+   "addr:street": "Ahornweg",
+   "addr:housenumber": "7",
+   "addr:postcode": "82343",
+   "addr:city": "Pöcking",
+   "phone": "+49 8157 9963726",
+   "website": "https://www.sozialdienst-poecking.de/"
+  },
+  "location": {
+   "lat": 47.9666421,
+   "lon": 11.2986468
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932449",
+    "name": "Pöcking"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-pflege-pilsensee-seniorenquartier-pilsen-seefeld",
+  "cat": "pflege",
+  "quelle": "https://www.seniorenquartier-pilsensee.de/ambulante-pflege (2026-11-12)",
+  "tags": {
+   "name": "Ambulante Pflege Pilsensee (SeniorenQuartier Pilsensee)",
+   "addr:street": "Anton-Ettmayr-Straße",
+   "addr:housenumber": "2",
+   "addr:postcode": "82229",
+   "addr:city": "Seefeld",
+   "phone": "+49 8152 9041016",
+   "website": "https://www.seniorenquartier-pilsensee.de/ambulante-pflege"
+  },
+  "location": {
+   "lat": 48.0355498,
+   "lon": 11.2158578
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932388",
+    "name": "Seefeld"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegeteam-zimmermann-gmbh-seefeld",
+  "cat": "pflege",
+  "quelle": "https://www.pflege-zimmermann.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "Pflegeteam Zimmermann GmbH",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "31a",
+   "addr:postcode": "82229",
+   "addr:city": "Seefeld",
+   "phone": "+49 8152 794052",
+   "website": "https://www.pflege-zimmermann.de/",
+   "email": "info@pflege-zimmermann.de"
+  },
+  "location": {
+   "lat": 48.0333527,
+   "lon": 11.2104059
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932388",
+    "name": "Seefeld"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-la-soeur-sourire-starnberg",
+  "cat": "pflege",
+  "quelle": "https://lasoeursourire.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst La Soeur Sourire",
+   "addr:street": "Königsberger Straße",
+   "addr:housenumber": "18",
+   "addr:postcode": "82319",
+   "addr:city": "Starnberg",
+   "phone": "+49 8151 918957",
+   "website": "https://lasoeursourire.de/",
+   "email": "team@lasoeursourire.de"
+  },
+  "location": {
+   "lat": 48.0140276,
+   "lon": 11.3325665
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932485",
+    "name": "Starnberg"
+   }
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-seefeld-e-v-seefeld",
+  "cat": "pflege",
+  "quelle": "https://www.nbh-seefeld.com/Start/Impressum (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Seefeld e.V.",
+   "addr:street": "Roseggerstraße",
+   "addr:housenumber": "2",
+   "addr:postcode": "82229",
+   "addr:city": "Seefeld",
+   "phone": "+49 8152 999514",
+   "website": "https://www.nbh-seefeld.com/",
+   "email": "info@nbh-seefeld.com"
+  },
+  "location": {
+   "lat": 48.03633,
+   "lon": 11.2138448
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932388",
+    "name": "Seefeld"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegeprofis-24-starnberg",
+  "cat": "pflege",
+  "quelle": "https://www.pflegeprofis24.com/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Pflegeprofis 24",
+   "addr:street": "Enzianstraße",
+   "addr:housenumber": "2",
+   "addr:postcode": "82319",
+   "addr:city": "Starnberg",
+   "phone": "+49 8151 7502540",
+   "website": "https://www.pflegeprofis24.com/",
+   "email": "pflegedienst@pflegeprofis24.com"
+  },
+  "location": {
+   "lat": 48.0016464,
+   "lon": 11.3635743
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932485",
+    "name": "Starnberg"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegeprofis-24-starnberg",
+  "cat": "fahrt",
+  "quelle": "https://www.pflegeprofis24.com/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Pflegeprofis 24",
+   "addr:street": "Enzianstraße",
+   "addr:housenumber": "2",
+   "addr:postcode": "82319",
+   "addr:city": "Starnberg",
+   "phone": "+49 8151 7502540",
+   "website": "https://www.pflegeprofis24.com/",
+   "email": "pflegedienst@pflegeprofis24.com"
+  },
+  "location": {
+   "lat": 48.0016464,
+   "lon": 11.3635743
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932485",
+    "name": "Starnberg"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulanter-gesundheitsdienst-fuenfseenland-gmbh-wessling",
+  "cat": "pflege",
+  "quelle": "https://gesundheitsdienst.eu/kontakt-impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Gesundheitsdienst Fünfseenland GmbH",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "22",
+   "addr:postcode": "82234",
+   "addr:city": "Weßling",
+   "phone": "+49 8153 916136",
+   "website": "https://gesundheitsdienst.eu/",
+   "email": "amg@gesundheitsdienst.eu"
+  },
+  "location": {
+   "lat": 48.0770107,
+   "lon": 11.2522919
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/936656",
+    "name": "Weßling"
+   }
+  }
+ },
+ {
+  "id": "extra/home-instead-starnberg-fuenfseenland-dahoam-is-dah-starnberg",
+  "cat": "pflege",
+  "quelle": "https://www.homeinstead.de/starnberg-fuenfseenland (2026-11-12)",
+  "tags": {
+   "name": "Home Instead Starnberg Fünfseenland (Dahoam is Dahoam Betreuungs GmbH)",
+   "addr:street": "Kaiser-Wilhelm-Straße",
+   "addr:housenumber": "8",
+   "addr:postcode": "82319",
+   "addr:city": "Starnberg",
+   "phone": "+49 8151 774720",
+   "website": "https://www.homeinstead.de/starnberg-fuenfseenland",
+   "email": "fuenfseenland@homeinstead.de"
+  },
+  "location": {
+   "lat": 47.99844,
+   "lon": 11.345966
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932485",
+    "name": "Starnberg"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/oekumenische-nachbarschaftshilfe-starnberg-caritas-starnberg",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-starnberg.de/hilfe-und-beratung/oekumenische-nachbarschaftshilfe-starnberg/oekumenische-nachbarschaftshilfe-starnberg (2026-11-12)",
+  "tags": {
+   "name": "Ökumenische Nachbarschaftshilfe Starnberg (Caritasverband Starnberg e.V.)",
+   "addr:street": "Hanfelder Straße",
+   "addr:housenumber": "10",
+   "addr:postcode": "82319",
+   "addr:city": "Starnberg",
+   "phone": "+49 8151 6520818",
+   "website": "https://www.caritas-starnberg.de/hilfe-und-beratung/oekumenische-nachbarschaftshilfe-starnberg/oekumenische-nachbarschaftshilfe-starnberg"
+  },
+  "location": {
+   "lat": 48.0017521,
+   "lon": 11.3414536
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932485",
+    "name": "Starnberg"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulante-kranken-und-altenpflege-dostyar-nitschke-starnberg",
+  "cat": "pflege",
+  "quelle": "https://www.starnberger-pflegedienst.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulante Kranken- und Altenpflege Dostyar & Nitschke GbR",
+   "addr:street": "Wendelsteinstraße",
+   "addr:housenumber": "3",
+   "addr:postcode": "82319",
+   "addr:city": "Starnberg",
+   "phone": "+49 8151 449092",
+   "website": "https://www.starnberger-pflegedienst.de/",
+   "email": "info@pflegedienst.care"
+  },
+  "location": {
+   "lat": 48.0094745,
+   "lon": 11.3227542
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932485",
+    "name": "Starnberg"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-wir-starnberg",
+  "cat": "pflege",
+  "quelle": "http://pflegedienst-wir.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst WIR",
+   "addr:street": "Maisinger-Schlucht-Straße",
+   "addr:housenumber": "4C",
+   "addr:postcode": "82319",
+   "addr:city": "Starnberg",
+   "phone": "+49 8151 4441862",
+   "website": "https://pflegedienst-wir.de/",
+   "email": "starnberg@pflegedienst-wir.de"
+  },
+  "location": {
+   "lat": 47.9975728,
+   "lon": 11.3285055
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932485",
+    "name": "Starnberg"
+   }
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-woerthsee-e-v-ambulanter-pfleg-woerthsee",
+  "cat": "pflege",
+  "quelle": "https://nbh-woerthsee.de/Impressum (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Wörthsee e.V. – Ambulanter Pflegedienst",
+   "addr:street": "Etterschlager Straße",
+   "addr:housenumber": "46",
+   "addr:postcode": "82237",
+   "addr:city": "Wörthsee",
+   "phone": "+49 8153 889968",
+   "website": "https://nbh-woerthsee.de/ambulanter-pflegedienst",
+   "email": "kontakt@nbh-woerthsee.de"
+  },
+  "location": {
+   "lat": 48.0746848,
+   "lon": 11.2024411
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932238",
+    "name": "Wörthsee"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-krankenpflege-tutzing-e-v-tutzing",
+  "cat": "pflege",
+  "quelle": "https://krankenpflege-tutzing.de/kontakt (2026-11-12)",
+  "tags": {
+   "name": "Ambulante Krankenpflege Tutzing e.V.",
+   "addr:street": "Traubinger Straße",
+   "addr:housenumber": "23",
+   "addr:postcode": "82327",
+   "addr:city": "Tutzing",
+   "phone": "+49 8158 907650",
+   "website": "https://www.krankenpflege-tutzing.de/",
+   "email": "info@krankenpflege-tutzing.de"
+  },
+  "location": {
+   "lat": 47.9144913,
+   "lon": 11.2746335
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932435",
+    "name": "Tutzing"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-marion-guensel-tutzing",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-guensel.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Marion Günsel",
+   "addr:street": "Feldafinger Straße",
+   "addr:housenumber": "7",
+   "addr:postcode": "82327",
+   "addr:city": "Tutzing",
+   "phone": "+49 8157 9254440",
+   "website": "https://pflegedienst-guensel.de/",
+   "email": "info@pflegedienst-guensel.de"
+  },
+  "location": {
+   "lat": 47.9442159,
+   "lon": 11.2674698
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62458",
+    "name": "Landkreis Starnberg"
+   },
+   "8": {
+    "id": "relation/932435",
+    "name": "Tutzing"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulante-pflege-heike-kuehn-markt-indersdorf",
+  "cat": "pflege",
+  "quelle": "http://www.pflegedienst-marktindersdorf.de/Kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulante Pflege Heike Kühn",
+   "addr:street": "Ludwig-Thoma-Straße",
+   "addr:housenumber": "30",
+   "addr:postcode": "85229",
+   "addr:city": "Markt Indersdorf",
+   "phone": "+49 8136 8091162",
+   "website": "http://www.pflegedienst-marktindersdorf.de/",
+   "email": "info@pflegedienst-marktindersdorf.de"
+  },
+  "location": {
+   "lat": 48.3581763,
+   "lon": 11.3824815
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/415818",
+    "name": "Markt Indersdorf"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-damasio-standort-bergkirch-bergkirchen",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-damasio.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Damasio (Standort Bergkirchen)",
+   "addr:street": "Dieselstraße",
+   "addr:housenumber": "15",
+   "addr:postcode": "85232",
+   "addr:city": "Bergkirchen",
+   "phone": "+49 8131 1638552",
+   "website": "https://pflegedienst-damasio.de/",
+   "email": "info@pflegedienst-damasio.de"
+  },
+  "location": {
+   "lat": 48.2517701,
+   "lon": 11.391027
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/934458",
+    "name": "Bergkirchen"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-damasio-standort-odelzhaus-odelzhausen",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-damasio.de/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Damasio (Standort Odelzhausen)",
+   "addr:street": "Marktstraße",
+   "addr:housenumber": "22",
+   "addr:postcode": "85235",
+   "addr:city": "Odelzhausen",
+   "phone": "+49 8134 4989678",
+   "website": "https://pflegedienst-damasio.de/",
+   "email": "info@pflegedienst-damasio.de"
+  },
+  "location": {
+   "lat": 48.3111066,
+   "lon": 11.1975081
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/546948",
+    "name": "Odelzhausen"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-perle-gmbh-vierkirchen",
+  "cat": "pflege",
+  "quelle": "https://pflegedienstperle.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Perle GmbH",
+   "addr:street": "Unterfeldring",
+   "addr:housenumber": "1a",
+   "addr:postcode": "85256",
+   "addr:city": "Vierkirchen",
+   "phone": "+49 8139 9999553",
+   "website": "https://pflegedienstperle.de/",
+   "email": "info@pflegedienstperle.de"
+  },
+  "location": {
+   "lat": 48.3595174,
+   "lon": 11.4439573
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/934478",
+    "name": "Vierkirchen"
+   }
+  }
+ },
+ {
+  "id": "extra/augustinum-ambulanter-pflegedienst-muenchen-dachau-dachau",
+  "cat": "pflege",
+  "quelle": "https://augustinum.de/augustinum-ambulanter-pflegedienst-muenchen-/-dachau/ (2026-11-12)",
+  "tags": {
+   "name": "Augustinum Ambulanter Pflegedienst München / Dachau",
+   "addr:street": "Krankenhausstraße",
+   "addr:housenumber": "15",
+   "addr:postcode": "85221",
+   "addr:city": "Dachau",
+   "phone": "+49 8131 3339690",
+   "website": "https://augustinum.de/augustinum-ambulanter-pflegedienst-muenchen-/-dachau/",
+   "email": "pflege.muenchen-dachau@augustinum.de"
+  },
+  "location": {
+   "lat": 48.2654866,
+   "lon": 11.4281485
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/934468",
+    "name": "Dachau"
+   }
+  }
+ },
+ {
+  "id": "extra/avz-ihr-pflegeteam-haimhausen",
+  "cat": "pflege",
+  "quelle": "https://www.avz-pflegeteam.com/ (2026-11-12)",
+  "tags": {
+   "name": "AVZ Ihr Pflegeteam",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "17",
+   "addr:postcode": "85778",
+   "addr:city": "Haimhausen",
+   "phone": "+49 8133 939300",
+   "website": "https://www.avz-pflegeteam.com/",
+   "email": "info@avz-pflegeteam.com"
+  },
+  "location": {
+   "lat": 48.3146663,
+   "lon": 11.5517966
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/934470",
+    "name": "Haimhausen"
+   }
+  }
+ },
+ {
+  "id": "extra/awo-pflege-sozialstation-altomuenster-altomuenster",
+  "cat": "pflege",
+  "quelle": "https://www.awo-dachau.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "AWO Pflege Sozialstation Altomünster",
+   "addr:street": "St. Altohof",
+   "addr:housenumber": "3",
+   "addr:postcode": "85250",
+   "addr:city": "Altomünster",
+   "phone": "+49 8254 995444",
+   "website": "https://www.awo-dachau.de/senior-innen/ambulanter-dienst",
+   "email": "sozialstation-altomuenster@awo-dachau.de"
+  },
+  "location": {
+   "lat": 48.3878522,
+   "lon": 11.2567249
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/167317",
+    "name": "Altomünster"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/awo-pflege-sozialstation-altomuenster-altomuenster",
+  "cat": "fahrt",
+  "quelle": "https://www.awo-dachau.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "AWO Pflege Sozialstation Altomünster",
+   "addr:street": "St. Altohof",
+   "addr:housenumber": "3",
+   "addr:postcode": "85250",
+   "addr:city": "Altomünster",
+   "phone": "+49 8254 995444",
+   "website": "https://www.awo-dachau.de/senior-innen/ambulanter-dienst",
+   "email": "sozialstation-altomuenster@awo-dachau.de"
+  },
+  "location": {
+   "lat": 48.3878522,
+   "lon": 11.2567249
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/167317",
+    "name": "Altomünster"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/awo-pflege-sozialstation-dachau-dachau",
+  "cat": "pflege",
+  "quelle": "https://www.awo-dachau.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "AWO Pflege Sozialstation Dachau",
+   "addr:street": "Rudolf-Diesel-Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "85221",
+   "addr:city": "Dachau",
+   "phone": "+49 8131 71117",
+   "website": "https://www.awo-dachau.de/senior-innen/ambulanter-dienst",
+   "email": "sozialstation-dachau@awo-dachau.de"
+  },
+  "location": {
+   "lat": 48.2645792,
+   "lon": 11.4718513
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/934468",
+    "name": "Dachau"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/awo-pflege-sozialstation-dachau-dachau",
+  "cat": "fahrt",
+  "quelle": "https://www.awo-dachau.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "AWO Pflege Sozialstation Dachau",
+   "addr:street": "Rudolf-Diesel-Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "85221",
+   "addr:city": "Dachau",
+   "phone": "+49 8131 71117",
+   "website": "https://www.awo-dachau.de/senior-innen/ambulanter-dienst",
+   "email": "sozialstation-dachau@awo-dachau.de"
+  },
+  "location": {
+   "lat": 48.2645792,
+   "lon": 11.4718513
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/934468",
+    "name": "Dachau"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/caritas-ambulanter-pflegedienst-dachau-dachau",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-ambulanter-pflegedienst-dachau.de/de (2026-11-12)",
+  "tags": {
+   "name": "Caritas Ambulanter Pflegedienst Dachau",
+   "addr:street": "Sudetenlandstraße",
+   "addr:housenumber": "69",
+   "addr:postcode": "85221",
+   "addr:city": "Dachau",
+   "phone": "+49 8131 273110",
+   "website": "https://www.caritas-ambulanter-pflegedienst-dachau.de/de",
+   "email": "ambulante-pflege-dachau@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 48.2634568,
+   "lon": 11.4628131
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/934468",
+    "name": "Dachau"
+   }
+  }
+ },
+ {
+  "id": "extra/dachauer-pflegedienst-gmbh-dachau",
+  "cat": "pflege",
+  "quelle": "https://www.dachauer-pflegedienst.de/ (2026-11-12)",
+  "tags": {
+   "name": "Dachauer Pflegedienst GmbH",
+   "addr:street": "Münchner Straße",
+   "addr:housenumber": "37",
+   "addr:postcode": "85221",
+   "addr:city": "Dachau",
+   "phone": "+49 151 20425966",
+   "website": "https://www.dachauer-pflegedienst.de/",
+   "email": "info@dachauer-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.2530399,
+   "lon": 11.4399995
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/934468",
+    "name": "Dachau"
+   }
+  }
+ },
+ {
+  "id": "extra/glonn-pflege-odelzhausen-gmbh-odelzhausen",
+  "cat": "pflege",
+  "quelle": "https://www.glonnpflege.de/impressum.php (2026-11-12)",
+  "tags": {
+   "name": "Glonn Pflege Odelzhausen GmbH",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "85235",
+   "addr:city": "Odelzhausen",
+   "phone": "+49 8134 5564930",
+   "website": "https://www.glonnpflege.de/"
+  },
+  "location": {
+   "lat": 48.3099434,
+   "lon": 11.1933567
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/546948",
+    "name": "Odelzhausen"
+   }
+  }
+ },
+ {
+  "id": "extra/m-m-ambulanter-alten-und-krankenpflegedienst-gmbh--markt-indersd",
+  "cat": "pflege",
+  "quelle": "https://www.mmpflegedienst.de/ (2026-11-12)",
+  "tags": {
+   "name": "M&M Ambulanter Alten- und Krankenpflegedienst GmbH (Markt Indersdorf)",
+   "addr:street": "Freisinger Straße",
+   "addr:housenumber": "1b",
+   "addr:postcode": "85229",
+   "addr:city": "Markt Indersdorf",
+   "phone": "+49 8136 229840",
+   "website": "https://www.mmpflegedienst.de/",
+   "email": "info@mmpflegedienst.de"
+  },
+  "location": {
+   "lat": 48.3618554,
+   "lon": 11.3736946
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/415818",
+    "name": "Markt Indersdorf"
+   }
+  }
+ },
+ {
+  "id": "extra/mobile-engel-ug-altomuenster",
+  "cat": "pflege",
+  "quelle": "https://www.mobile-engel-pflege.de/ (2026-11-12)",
+  "tags": {
+   "name": "Mobile Engel UG",
+   "addr:street": "Bahnhofstraße",
+   "addr:housenumber": "11",
+   "addr:postcode": "85250",
+   "addr:city": "Altomünster",
+   "phone": "+49 8254 9989484",
+   "website": "https://www.mobile-engel-pflege.de/",
+   "email": "info@mobile-engel-pflege.de"
+  },
+  "location": {
+   "lat": 48.3868553,
+   "lon": 11.2551502
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/167317",
+    "name": "Altomünster"
+   }
+  }
+ },
+ {
+  "id": "extra/mobile-haeusliche-kranken-und-altenpflege-gmbh-dac-dachau",
+  "cat": "pflege",
+  "quelle": "https://www.mobile-pflege-dachau.de/ (2026-11-12)",
+  "tags": {
+   "name": "mobile Häusliche Kranken- und Altenpflege GmbH (Dachau)",
+   "addr:street": "Schleißheimer Straße",
+   "addr:housenumber": "74",
+   "addr:postcode": "85221",
+   "addr:city": "Dachau",
+   "phone": "+49 8131 539647",
+   "website": "https://www.mobile-pflege-dachau.de/",
+   "email": "info@mobile-pflege-dachau.de"
+  },
+  "location": {
+   "lat": 48.2566002,
+   "lon": 11.4551857
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/934468",
+    "name": "Dachau"
+   }
+  }
+ },
+ {
+  "id": "extra/mobile-haeusliche-kranken-und-altenpflege-gmbh-erd-erdweg",
+  "cat": "pflege",
+  "quelle": "https://www.mobile-pflege-dachau.de/ (2026-11-12)",
+  "tags": {
+   "name": "mobile Häusliche Kranken- und Altenpflege GmbH (Erdweg)",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "7",
+   "addr:postcode": "85253",
+   "addr:city": "Erdweg",
+   "phone": "+49 8138 667278",
+   "website": "https://www.mobile-pflege-dachau.de/",
+   "email": "info@mobile-pflege-dachau.de"
+  },
+  "location": {
+   "lat": 48.3329844,
+   "lon": 11.3032848
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/546905",
+    "name": "Erdweg"
+   }
+  }
+ },
+ {
+  "id": "extra/pflege-an-der-amper-dachau",
+  "cat": "pflege",
+  "quelle": "https://pflege-amper.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "Pflege an der Amper",
+   "addr:street": "Augsburger Straße",
+   "addr:housenumber": "43",
+   "addr:postcode": "85221",
+   "addr:city": "Dachau",
+   "phone": "+49 8131 9073772",
+   "website": "https://pflege-amper.de/",
+   "email": "info@pflege-amper.de"
+  },
+  "location": {
+   "lat": 48.2618894,
+   "lon": 11.4309393
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/934468",
+    "name": "Dachau"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-aml-roehrmoos",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-aml.de/ (2026-11-12)",
+  "tags": {
+   "name": "Pflegedienst AML",
+   "addr:street": "Blumenstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "85244",
+   "addr:city": "Röhrmoos",
+   "phone": "+49 8139 7518",
+   "website": "https://www.pflegedienst-aml.de/",
+   "email": "info@pflegedienst-aml.de"
+  },
+  "location": {
+   "lat": 48.3310032,
+   "lon": 11.4463701
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/934471",
+    "name": "Röhrmoos"
+   }
+  }
+ },
+ {
+  "id": "extra/unique-ausserklinische-intensivpflege-schwabhausen",
+  "cat": "pflege",
+  "quelle": "https://www.intensivpflege-unique.de/ (2026-11-12)",
+  "tags": {
+   "name": "UNIQUE Außerklinische Intensivpflege",
+   "addr:street": "Münchener Straße",
+   "addr:housenumber": "13",
+   "addr:postcode": "85247",
+   "addr:city": "Schwabhausen",
+   "phone": "+49 8138 6692704",
+   "website": "https://www.intensivpflege-unique.de/",
+   "email": "info@intensivpflege-unique.de"
+  },
+  "location": {
+   "lat": 48.3032621,
+   "lon": 11.3587589
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/934460",
+    "name": "Schwabhausen"
+   }
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-bergkirchen-bergkirchen",
+  "cat": "pflege",
+  "quelle": "https://www.bergkirchen.de/leben-in-bergkirchen/senioren-und-soziales/nachbarschaftshilfe-bergkirchen/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Bergkirchen",
+   "addr:street": "Johann-Michael-Fischer-Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "85232",
+   "addr:city": "Bergkirchen",
+   "phone": "+49 8131 2731525",
+   "website": "https://www.bergkirchen.de/leben-in-bergkirchen/senioren-und-soziales/nachbarschaftshilfe-bergkirchen/"
+  },
+  "location": {
+   "lat": 48.2561276,
+   "lon": 11.3632035
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/934458",
+    "name": "Bergkirchen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-bergkirchen-bergkirchen",
+  "cat": "fahrt",
+  "quelle": "https://www.bergkirchen.de/leben-in-bergkirchen/senioren-und-soziales/nachbarschaftshilfe-bergkirchen/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Bergkirchen",
+   "addr:street": "Johann-Michael-Fischer-Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "85232",
+   "addr:city": "Bergkirchen",
+   "phone": "+49 8131 2731525",
+   "website": "https://www.bergkirchen.de/leben-in-bergkirchen/senioren-und-soziales/nachbarschaftshilfe-bergkirchen/"
+  },
+  "location": {
+   "lat": 48.2561276,
+   "lon": 11.3632035
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/934458",
+    "name": "Bergkirchen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/caritas-fachstelle-fuer-pflegende-angehoerige-dach-dachau",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-dachau.de/de/ehrenamt-und-gemeindecaritas (2026-11-12)",
+  "tags": {
+   "name": "Caritas Fachstelle für pflegende Angehörige Dachau (Helferkreis, stundenweise Entlastung zu Hause)",
+   "addr:street": "Landsberger Straße",
+   "addr:housenumber": "11",
+   "addr:postcode": "85221",
+   "addr:city": "Dachau",
+   "phone": "+49 8131 2981400",
+   "website": "https://www.caritas-dachau.de/de/ehrenamt-und-gemeindecaritas",
+   "email": "fpa-dachau@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 48.2546659,
+   "lon": 11.4479754
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/934468",
+    "name": "Dachau"
+   }
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-hebertshausen-e-v-hebertshausen",
+  "cat": "pflege",
+  "quelle": "https://www.nachbarschaftshilfe-hebertshausen.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Hebertshausen e.V.",
+   "addr:street": "Fliederstraße",
+   "addr:housenumber": "12",
+   "addr:postcode": "85241",
+   "addr:city": "Hebertshausen",
+   "phone": "+49 8131 29286286",
+   "website": "https://www.nachbarschaftshilfe-hebertshausen.de/",
+   "email": "kontakt@nachbarschaftshilfe-hebertshausen.de"
+  },
+  "location": {
+   "lat": 48.2896469,
+   "lon": 11.4695694
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/934469",
+    "name": "Hebertshausen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-hebertshausen-e-v-hebertshausen",
+  "cat": "fahrt",
+  "quelle": "https://www.nachbarschaftshilfe-hebertshausen.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Hebertshausen e.V.",
+   "addr:street": "Fliederstraße",
+   "addr:housenumber": "12",
+   "addr:postcode": "85241",
+   "addr:city": "Hebertshausen",
+   "phone": "+49 8131 29286286",
+   "website": "https://www.nachbarschaftshilfe-hebertshausen.de/",
+   "email": "kontakt@nachbarschaftshilfe-hebertshausen.de"
+  },
+  "location": {
+   "lat": 48.2896469,
+   "lon": 11.4695694
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/934469",
+    "name": "Hebertshausen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-in-der-gemeinde-sulzemoos-e-v-sulzemoos",
+  "cat": "pflege",
+  "quelle": "http://www.nachbarschaftshilfe-sulzemoos.de/kontakt.html (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe in der Gemeinde Sulzemoos e.V.",
+   "addr:street": "Kirchstraße",
+   "addr:housenumber": "3",
+   "addr:postcode": "85254",
+   "addr:city": "Sulzemoos",
+   "phone": "+49 8134 557837",
+   "website": "http://www.nachbarschaftshilfe-sulzemoos.de/",
+   "email": "info@nachbarschaftshilfe-sulzemoos.de"
+  },
+  "location": {
+   "lat": 48.2896029,
+   "lon": 11.2635916
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/934455",
+    "name": "Sulzemoos"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-in-der-gemeinde-sulzemoos-e-v-sulzemoos",
+  "cat": "fahrt",
+  "quelle": "http://www.nachbarschaftshilfe-sulzemoos.de/kontakt.html (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe in der Gemeinde Sulzemoos e.V.",
+   "addr:street": "Kirchstraße",
+   "addr:housenumber": "3",
+   "addr:postcode": "85254",
+   "addr:city": "Sulzemoos",
+   "phone": "+49 8134 557837",
+   "website": "http://www.nachbarschaftshilfe-sulzemoos.de/",
+   "email": "info@nachbarschaftshilfe-sulzemoos.de"
+  },
+  "location": {
+   "lat": 48.2896029,
+   "lon": 11.2635916
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62556",
+    "name": "Landkreis Dachau"
+   },
+   "8": {
+    "id": "relation/934455",
+    "name": "Sulzemoos"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegedienst-sauerlach-sauerlach",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-sauerlach.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Pflegedienst Sauerlach",
+   "addr:street": "Ludwig-Thoma-Straße",
+   "addr:housenumber": "22a",
+   "addr:postcode": "82054",
+   "addr:city": "Sauerlach",
+   "phone": "+49 8104 89460",
+   "website": "https://www.pflegedienst-sauerlach.de/",
+   "email": "info@pflegedienst-sauerlach.de"
+  },
+  "location": {
+   "lat": 47.95243,
+   "lon": 11.643694
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/929730",
+    "name": "Sauerlach"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-der-nachbarschaftshilfe-as-aschheim",
+  "cat": "pflege",
+  "quelle": "https://www.nbh-aschheim-dornach.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst der Nachbarschaftshilfe Aschheim/Dornach e.V.",
+   "addr:street": "Watzmannstraße",
+   "addr:housenumber": "20",
+   "addr:postcode": "85609",
+   "addr:city": "Aschheim",
+   "phone": "+49 89 92861370",
+   "website": "https://www.nbh-aschheim-dornach.de/",
+   "email": "info@nbh-aschheim-dornach.de"
+  },
+  "location": {
+   "lat": 48.169858,
+   "lon": 11.722112
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/2168238",
+    "name": "Aschheim"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-der-nachbarschaftshilfe-as-aschheim",
+  "cat": "fahrt",
+  "quelle": "https://www.nbh-aschheim-dornach.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst der Nachbarschaftshilfe Aschheim/Dornach e.V.",
+   "addr:street": "Watzmannstraße",
+   "addr:housenumber": "20",
+   "addr:postcode": "85609",
+   "addr:city": "Aschheim",
+   "phone": "+49 89 92861370",
+   "website": "https://www.nbh-aschheim-dornach.de/",
+   "email": "info@nbh-aschheim-dornach.de"
+  },
+  "location": {
+   "lat": 48.169858,
+   "lon": 11.722112
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/2168238",
+    "name": "Aschheim"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/das-pflegeteam-gruber-wagner-unterfoehring",
+  "cat": "pflege",
+  "quelle": "https://www.pflege-unterfoehring.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Das Pflegeteam Gruber & Wagner",
+   "addr:street": "St.-Emmeram-Weg",
+   "addr:housenumber": "3b",
+   "addr:postcode": "85774",
+   "addr:city": "Unterföhring",
+   "phone": "+49 89 54199850",
+   "website": "https://www.pflege-unterfoehring.de/",
+   "email": "info@pflege-unterfoehring.de"
+  },
+  "location": {
+   "lat": 48.18974,
+   "lon": 11.640134
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/2168251",
+    "name": "Unterföhring"
+   }
+  }
+ },
+ {
+  "id": "extra/kranken-und-altenpflegeverein-oberschleissheim-e-v-oberschleissh",
+  "cat": "pflege",
+  "quelle": "https://www.kapverein.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "Kranken- und Altenpflegeverein Oberschleißheim e.V.",
+   "addr:street": "Haselsbergerstraße",
+   "addr:housenumber": "9",
+   "addr:postcode": "85764",
+   "addr:city": "Oberschleißheim",
+   "phone": "+49 89 32836415",
+   "website": "https://www.kapverein.de/"
+  },
+  "location": {
+   "lat": 48.252399,
+   "lon": 11.560138
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/30973",
+    "name": "Oberschleißheim"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/kranken-und-altenpflegeverein-oberschleissheim-e-v-oberschleissh",
+  "cat": "fahrt",
+  "quelle": "https://www.kapverein.de/kontakt/ (2026-11-12)",
+  "tags": {
+   "name": "Kranken- und Altenpflegeverein Oberschleißheim e.V.",
+   "addr:street": "Haselsbergerstraße",
+   "addr:housenumber": "9",
+   "addr:postcode": "85764",
+   "addr:city": "Oberschleißheim",
+   "phone": "+49 89 32836415",
+   "website": "https://www.kapverein.de/"
+  },
+  "location": {
+   "lat": 48.252399,
+   "lon": 11.560138
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/30973",
+    "name": "Oberschleißheim"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/mobile-ambulante-krankenpflege-hannelore-siegl-oberschleissheim",
+  "cat": "pflege",
+  "quelle": "https://pflege-schleissheim.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Mobile Ambulante Krankenpflege Hannelore Siegl",
+   "addr:street": "Mittenheimer Straße",
+   "addr:housenumber": "5",
+   "addr:postcode": "85764",
+   "addr:city": "Oberschleißheim",
+   "phone": "+49 89 3153212",
+   "website": "https://pflege-schleissheim.de/",
+   "email": "info@pflege-schleissheim.de"
+  },
+  "location": {
+   "lat": 48.251901,
+   "lon": 11.557144
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/30973",
+    "name": "Oberschleißheim"
+   }
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-gruenwald-e-v-gruenwald",
+  "cat": "pflege",
+  "quelle": "https://www.nbh-gruenwald.de/impressum (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Grünwald e.V.",
+   "addr:street": "Tobrukstraße",
+   "addr:housenumber": "2",
+   "addr:postcode": "82031",
+   "addr:city": "Grünwald",
+   "phone": "+49 89 649649990",
+   "website": "https://www.nbh-gruenwald.de/",
+   "email": "info@nbh-gruenwald.de"
+  },
+  "location": {
+   "lat": 48.038935,
+   "lon": 11.528451
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/415806",
+    "name": "Grünwald"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/verein-dorfleben-und-soziales-in-der-gemeinde-ayin-aying",
+  "cat": "pflege",
+  "quelle": "https://www.dorfleben-soziales-aying.de/kontakt (2026-11-12)",
+  "tags": {
+   "name": "Verein Dorfleben und Soziales in der Gemeinde Aying e.V. (Seniorenbetreuung häuslicher Bereich)",
+   "addr:street": "Dorfstraße",
+   "addr:housenumber": "3",
+   "addr:postcode": "85653",
+   "addr:city": "Aying",
+   "phone": "+49 8095 875977",
+   "website": "https://www.dorfleben-soziales-aying.de/"
+  },
+  "location": {
+   "lat": 47.943998,
+   "lon": 11.792118
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/539953",
+    "name": "Aying"
+   }
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-kindernetz-schaeftlarn-e-v-schaeftlarn",
+  "cat": "pflege",
+  "quelle": "https://www.kindernetz-schaeftlarn.de/pflichtseiten/impressum (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe KindErNetz Schäftlarn e.V.",
+   "addr:street": "Käthe-Kruse-Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "82069",
+   "addr:city": "Schäftlarn",
+   "phone": "+49 8178 998702",
+   "website": "https://www.kindernetz-schaeftlarn.de/",
+   "email": "buero@kindernetz-schaeftlarn.de"
+  },
+  "location": {
+   "lat": 47.98643,
+   "lon": 11.45439
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/929704",
+    "name": "Schäftlarn"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-ismaning-e-v-ambulanter-pflege-ismaning",
+  "cat": "pflege",
+  "quelle": "https://www.nbh-ismaning.de/impressum/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Ismaning e.V. – Ambulanter Pflegedienst",
+   "addr:street": "Reisingerstraße",
+   "addr:housenumber": "27",
+   "addr:postcode": "85737",
+   "addr:city": "Ismaning",
+   "phone": "+49 89 444434450",
+   "website": "https://www.nbh-ismaning.de/",
+   "email": "info@nbh-ismaning.de"
+  },
+  "location": {
+   "lat": 48.218615,
+   "lon": 11.669081
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/2168245",
+    "name": "Ismaning"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-kirchheim-heimstetten-landsham-kirchheim",
+  "cat": "pflege",
+  "quelle": "https://www.nbhk.de/pflegedienst/ambulanter-pflegedienst (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Kirchheim, Heimstetten, Landsham e.V. – Ambulanter Pflegedienst",
+   "addr:street": "Heimstettner Straße",
+   "addr:housenumber": "2",
+   "addr:postcode": "85551",
+   "addr:city": "Kirchheim",
+   "phone": "+49 89 9030759",
+   "website": "https://www.nbhk.de/",
+   "email": "info@nbhk.de"
+  },
+  "location": {
+   "lat": 48.175845,
+   "lon": 11.755101
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/2168246",
+    "name": "Kirchheim"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-neuried-e-v-neuried",
+  "cat": "pflege",
+  "quelle": "https://www.nachbarschaftshilfe-neuried.de/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Neuried e.V.",
+   "addr:street": "Planegger Straße",
+   "addr:housenumber": "4",
+   "addr:postcode": "82061",
+   "addr:city": "Neuried",
+   "phone": "+49 89 7590149",
+   "website": "https://www.nachbarschaftshilfe-neuried.de/",
+   "email": "kontakt@nachbarschaftshilfe-neuried.de"
+  },
+  "location": {
+   "lat": 48.094093,
+   "lon": 11.464808
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/306684",
+    "name": "Neuried"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-neuried-e-v-neuried",
+  "cat": "fahrt",
+  "quelle": "https://www.nachbarschaftshilfe-neuried.de/ (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Neuried e.V.",
+   "addr:street": "Planegger Straße",
+   "addr:housenumber": "4",
+   "addr:postcode": "82061",
+   "addr:city": "Neuried",
+   "phone": "+49 89 7590149",
+   "website": "https://www.nachbarschaftshilfe-neuried.de/",
+   "email": "kontakt@nachbarschaftshilfe-neuried.de"
+  },
+  "location": {
+   "lat": 48.094093,
+   "lon": 11.464808
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/306684",
+    "name": "Neuried"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-oberschleissheim-e-v-seniorenh-oberschleissh",
+  "cat": "pflege",
+  "quelle": "https://www.nbh-osh.de/leistungen/fuer-senioren/seniorenhilfe.html (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Oberschleißheim e.V. – Seniorenhilfe",
+   "addr:street": "Theodor-Heuss-Straße",
+   "addr:housenumber": "29",
+   "addr:postcode": "85764",
+   "addr:city": "Oberschleißheim",
+   "phone": "+49 89 97313890",
+   "website": "https://www.nbh-osh.de/",
+   "email": "info@nbh-osh.de"
+  },
+  "location": {
+   "lat": 48.255008,
+   "lon": 11.554026
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/30973",
+    "name": "Oberschleißheim"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-pullach-i-isartal-e-v-pullach-im-isartal",
+  "cat": "pflege",
+  "quelle": "https://www.nbh-pullach.de/angebote (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Pullach i. Isartal e.V.",
+   "addr:street": "Münchener Straße",
+   "addr:housenumber": "9a",
+   "addr:postcode": "82049",
+   "addr:city": "Pullach im Isartal",
+   "phone": "+49 89 12092696",
+   "website": "https://www.nbh-pullach.de/",
+   "email": "info@nbh-pullach.de"
+  },
+  "location": {
+   "lat": 48.058234,
+   "lon": 11.522484
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/415807",
+    "name": "Pullach im Isartal"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-pullach-i-isartal-e-v-pullach-im-isartal",
+  "cat": "fahrt",
+  "quelle": "https://www.nbh-pullach.de/angebote (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Pullach i. Isartal e.V.",
+   "addr:street": "Münchener Straße",
+   "addr:housenumber": "9a",
+   "addr:postcode": "82049",
+   "addr:city": "Pullach im Isartal",
+   "phone": "+49 89 12092696",
+   "website": "https://www.nbh-pullach.de/",
+   "email": "info@nbh-pullach.de"
+  },
+  "location": {
+   "lat": 48.058234,
+   "lon": 11.522484
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/415807",
+    "name": "Pullach im Isartal"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-sauerlach-e-v-sauerlach",
+  "cat": "pflege",
+  "quelle": "https://nbh-sauerlach.de/senioren/betreuung (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Sauerlach e.V.",
+   "addr:street": "Münchener Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "82054",
+   "addr:city": "Sauerlach",
+   "phone": "+49 8104 8882421",
+   "website": "https://nbh-sauerlach.de/",
+   "email": "info@nbh-sauerlach.de"
+  },
+  "location": {
+   "lat": 47.97193,
+   "lon": 11.653683
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/929730",
+    "name": "Sauerlach"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-unterfoehring-e-v-unterfoehring",
+  "cat": "pflege",
+  "quelle": "https://www.nachbarschaftshilfe-unterfoehring.de/altenbetreuung (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Unterföhring e.V.",
+   "addr:street": "St.-Valentin-Weg",
+   "addr:housenumber": "20a",
+   "addr:postcode": "85774",
+   "addr:city": "Unterföhring",
+   "phone": "+49 89 39291816",
+   "website": "https://www.nachbarschaftshilfe-unterfoehring.de/",
+   "email": "nbhufg@arcor.de"
+  },
+  "location": {
+   "lat": 48.190415,
+   "lon": 11.641603
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/2168251",
+    "name": "Unterföhring"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-unterschleissheim-e-v-haushalt-unterschleiss",
+  "cat": "pflege",
+  "quelle": "https://nachbarschaftshilfe-ush.de/aeltere-menschen/zu-hause-gut-versorgt/haushaltshilfe-betreuung.html (2026-11-12)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Unterschleißheim e.V. – Haushaltshilfe & Betreuung",
+   "addr:street": "Alexander-Pachmann-Straße",
+   "addr:housenumber": "40",
+   "addr:postcode": "85716",
+   "addr:city": "Unterschleißheim",
+   "phone": "+49 89 3707356",
+   "website": "https://nachbarschaftshilfe-ush.de/"
+  },
+  "location": {
+   "lat": 48.284578,
+   "lon": 11.57707
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/334267",
+    "name": "Unterschleißheim"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-herbstbaum-schaeftlarn",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-herbstbaum.de/ (2026-11-12)",
+  "tags": {
+   "name": "Pflegedienst Herbstbaum",
+   "addr:street": "Münchner Straße",
+   "addr:housenumber": "53",
+   "addr:postcode": "82069",
+   "addr:city": "Schäftlarn",
+   "phone": "+49 8178 692151",
+   "website": "https://www.pflegedienst-herbstbaum.de/"
+  },
+  "location": {
+   "lat": 47.990393,
+   "lon": 11.457454
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/929704",
+    "name": "Schäftlarn"
+   }
+  }
+ },
+ {
+  "id": "extra/rat-und-tat-pflegeberatungsservice-betreutes-wohne-ottobrunn",
+  "cat": "pflege",
+  "quelle": "http://www.betreuteswohnenzuhause.de/ (2026-11-12)",
+  "tags": {
+   "name": "Rat und Tat Pflegeberatungsservice (Betreutes Wohnen zu Hause)",
+   "addr:street": "Robert-Koch-Straße",
+   "addr:housenumber": "28",
+   "addr:postcode": "85521",
+   "addr:city": "Ottobrunn",
+   "phone": "+49 89 6092202",
+   "website": "http://www.betreuteswohnenzuhause.de/"
+  },
+  "location": {
+   "lat": 48.053358,
+   "lon": 11.663774
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/2168250",
+    "name": "Ottobrunn"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/a-bis-z-pflegedienst-gmbh-gruenwald",
+  "cat": "pflege",
+  "quelle": "https://www.senioren-tagesresidenz.de/ (2026-11-12)",
+  "tags": {
+   "name": "A bis Z Pflegedienst GmbH",
+   "addr:street": "Tölzer Straße",
+   "addr:housenumber": "1a",
+   "addr:postcode": "82031",
+   "addr:city": "Grünwald",
+   "phone": "+49 89 64955540",
+   "website": "https://www.abisz-pflegedienst.de/",
+   "email": "info@abisz-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.038212,
+   "lon": 11.522135
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/415806",
+    "name": "Grünwald"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/a-bis-z-pflegedienst-gmbh-gruenwald",
+  "cat": "fahrt",
+  "quelle": "https://www.senioren-tagesresidenz.de/ (2026-11-12)",
+  "tags": {
+   "name": "A bis Z Pflegedienst GmbH",
+   "addr:street": "Tölzer Straße",
+   "addr:housenumber": "1a",
+   "addr:postcode": "82031",
+   "addr:city": "Grünwald",
+   "phone": "+49 89 64955540",
+   "website": "https://www.abisz-pflegedienst.de/",
+   "email": "info@abisz-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.038212,
+   "lon": 11.522135
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/415806",
+    "name": "Grünwald"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulantes-pflegeteam-seerose-gmbh-unterhaching",
+  "cat": "pflege",
+  "quelle": "https://www.seerose-pflegeteam.de/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulantes Pflegeteam Seerose GmbH",
+   "addr:street": "Fasanenstraße",
+   "addr:housenumber": "8b",
+   "addr:postcode": "82008",
+   "addr:city": "Unterhaching",
+   "phone": "+49 89 66055517",
+   "website": "https://www.seerose-pflegeteam.de/",
+   "email": "info@seerose-pflegeteam.de"
+  },
+  "location": {
+   "lat": 48.069255,
+   "lon": 11.611774
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/497335",
+    "name": "Unterhaching"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-pflegecom-gbr-kirchheim",
+  "cat": "pflege",
+  "quelle": "http://www.pflegecom.com/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Pflegecom GbR",
+   "addr:street": "Schwabener Weg",
+   "addr:housenumber": "4",
+   "addr:postcode": "85551",
+   "addr:city": "Kirchheim",
+   "phone": "+49 89 41079428",
+   "website": "http://www.pflegecom.com/"
+  },
+  "location": {
+   "lat": 48.176573,
+   "lon": 11.75878
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/2168246",
+    "name": "Kirchheim"
+   }
+  }
+ },
+ {
+  "id": "extra/leitner-pflegeservice-gmbh-hohenbrunn",
+  "cat": "pflege",
+  "quelle": "https://leitner-pflege.de/ (2026-11-12)",
+  "tags": {
+   "name": "Leitner Pflegeservice GmbH",
+   "addr:street": "Rudolf-Diesel-Straße",
+   "addr:housenumber": "14",
+   "addr:postcode": "85521",
+   "addr:city": "Hohenbrunn",
+   "phone": "+49 89 93960250",
+   "website": "https://leitner-pflege.de/"
+  },
+  "location": {
+   "lat": 48.054218,
+   "lon": 11.669704
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/2168244",
+    "name": "Hohenbrunn"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-excellence-gmbh-ottobrunn",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-excellence.de/ (2026-11-12)",
+  "tags": {
+   "name": "Pflegedienst Excellence GmbH",
+   "addr:street": "Ottostraße",
+   "addr:housenumber": "132",
+   "addr:postcode": "85521",
+   "addr:city": "Ottobrunn",
+   "phone": "+49 89 25546971",
+   "website": "https://pflegedienst-excellence.de/",
+   "email": "info@pflegedienst-excellence.de"
+  },
+  "location": {
+   "lat": 48.064576,
+   "lon": 11.689515
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/2168250",
+    "name": "Ottobrunn"
+   }
+  }
+ },
+ {
+  "id": "extra/manuelas-pflege-und-betreuungsteam-hoehenkirchen-siegertsbrunn",
+  "cat": "pflege",
+  "quelle": "https://manuelas-pflegeteam.de/ (2026-11-12)",
+  "tags": {
+   "name": "Manuelas Pflege- und Betreuungsteam",
+   "addr:street": "Bahnhofstraße",
+   "addr:housenumber": "7",
+   "addr:postcode": "85635",
+   "addr:city": "Höhenkirchen-Siegertsbrunn",
+   "phone": "+49 8102 9998913",
+   "website": "https://manuelas-pflegeteam.de/",
+   "email": "info@manuelas-pflegeteam.de"
+  },
+  "location": {
+   "lat": 48.019479,
+   "lon": 11.71424
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/539089",
+    "name": "Höhenkirchen-Siegertsbrunn"
+   }
+  }
+ },
+ {
+  "id": "extra/pflege-visite-gbr-haar",
+  "cat": "pflege",
+  "quelle": "https://www.pflege-visite.de/ (2026-11-12)",
+  "tags": {
+   "name": "Pflege Visite GbR",
+   "addr:street": "Münchener Straße",
+   "addr:housenumber": "11",
+   "addr:postcode": "85540",
+   "addr:city": "Haar",
+   "phone": "+49 89 43987468",
+   "website": "https://www.pflege-visite.de/",
+   "email": "pflege@pflegevisite.de"
+  },
+  "location": {
+   "lat": 48.108948,
+   "lon": 11.723435
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/543186",
+    "name": "Haar"
+   }
+  }
+ },
+ {
+  "id": "extra/diakoniestation-ebenhausen-diakonie-muenchen-und-o-schaeftlarn",
+  "cat": "pflege",
+  "quelle": "https://pflegezentrum-ebenhausen.de (2026-11-12)",
+  "tags": {
+   "name": "Diakoniestation Ebenhausen (Diakonie München und Oberbayern)",
+   "addr:street": "Gerhart-Hauptmann-Weg",
+   "addr:housenumber": "10",
+   "addr:postcode": "82067",
+   "addr:city": "Schäftlarn",
+   "phone": "+49 8178 930112",
+   "website": "https://senioren-und-pflege.de/ambulante-pflege/ambulante-pflegedienste",
+   "email": "diakoniestation-ebenhausen@diakonie-muc-obb.de"
+  },
+  "location": {
+   "lat": 47.981804,
+   "lon": 11.449352
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/929704",
+    "name": "Schäftlarn"
+   }
+  }
+ },
+ {
+  "id": "extra/diakoniestation-gauting-stockdorf-planegg-diakonie-planegg",
+  "cat": "pflege",
+  "quelle": "https://pflegezentrum-planegg.de (2026-11-12)",
+  "tags": {
+   "name": "Diakoniestation Gauting-Stockdorf-Planegg (Diakonie München und Oberbayern)",
+   "addr:street": "Germeringer Straße",
+   "addr:housenumber": "33",
+   "addr:postcode": "82152",
+   "addr:city": "Planegg",
+   "phone": "+49 89 899224200",
+   "website": "https://senioren-und-pflege.de/ambulante-pflege/ambulante-pflegedienste",
+   "email": "diakoniestation-gauting-stockdorf@diakonie-muc-obb.de"
+  },
+  "location": {
+   "lat": 48.103669,
+   "lon": 11.430552
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/318693",
+    "name": "Planegg"
+   }
+  }
+ },
+ {
+  "id": "extra/arche-noris-mobil-ottobrunn-ambulanter-pflege-und--ottobrunn",
+  "cat": "pflege",
+  "quelle": "https://www.archenoris.net/unsere-einrichtungen/ (2026-11-12)",
+  "tags": {
+   "name": "Arche Noris Mobil Ottobrunn – Ambulanter Pflege- und Betreuungsdienst",
+   "addr:street": "An der Ottosäule",
+   "addr:housenumber": "2",
+   "addr:postcode": "85521",
+   "addr:city": "Ottobrunn",
+   "phone": "+49 89 66069320",
+   "website": "https://www.archenoris.net/einrichtungen/arche-noris-mobil-ottobrunn/",
+   "email": "info.ottobrunn.mobil@archenoris.de"
+  },
+  "location": {
+   "lat": 48.05263,
+   "lon": 11.667218
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/2168250",
+    "name": "Ottobrunn"
+   }
+  }
+ },
+ {
+  "id": "extra/paritaetischer-pflegedienst-muenchen-haus-am-wiese-pullach-im-is",
+  "cat": "pflege",
+  "quelle": "https://www.paripflege.de/de/ambulante-dienste-tagespflege/ambulanter-pflegedienst-in-muenchen (2026-11-12)",
+  "tags": {
+   "name": "Paritätischer Pflegedienst München (Haus am Wiesenweg)",
+   "addr:street": "Wiesenweg",
+   "addr:housenumber": "5",
+   "addr:postcode": "82049",
+   "addr:city": "Pullach im Isartal",
+   "phone": "+49 89 744152744",
+   "website": "https://www.paripflege.de/de/ambulante-dienste-tagespflege/ambulanter-pflegedienst-in-muenchen"
+  },
+  "location": {
+   "lat": 48.061608,
+   "lon": 11.522465
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/415807",
+    "name": "Pullach im Isartal"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-krankenpflege-breitling-gmbh-neubiberg",
+  "cat": "pflege",
+  "quelle": "https://akp-breitling.de/ (2026-11-12)",
+  "tags": {
+   "name": "Ambulante Krankenpflege Breitling GmbH",
+   "addr:street": "Professor-Messerschmitt-Straße",
+   "addr:housenumber": "1a",
+   "addr:postcode": "85579",
+   "addr:city": "Neubiberg",
+   "phone": "+49 89 595302",
+   "website": "https://akp-breitling.de/",
+   "email": "info@akp-breitling.de"
+  },
+  "location": {
+   "lat": 48.075691,
+   "lon": 11.656789
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/2168248",
+    "name": "Neubiberg"
+   }
+  }
+ },
+ {
+  "id": "extra/carepower-team-carepowerteam-gmbh-alltagsbetreuung-aschheim",
+  "cat": "pflege",
+  "quelle": "https://www.carepower.team/ (2026-11-12)",
+  "tags": {
+   "name": "carepower.team (carepowerteam GmbH) – Alltagsbetreuung",
+   "addr:street": "Otto-Hahn-Straße",
+   "addr:housenumber": "2",
+   "addr:postcode": "85609",
+   "addr:city": "Aschheim",
+   "phone": "+49 89 95428600",
+   "website": "https://www.carepower.team/",
+   "email": "info@carepower.team"
+  },
+  "location": {
+   "lat": 48.148201,
+   "lon": 11.684458
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/2168238",
+    "name": "Aschheim"
+   }
+  }
+ },
+ {
+  "id": "extra/ama-pflegedienst-oberschleissheim",
+  "cat": "pflege",
+  "quelle": "https://www.amapflegedienst.de/ (2026-11-12)",
+  "tags": {
+   "name": "AMA Pflegedienst",
+   "addr:street": "Ernst-Schneider-Weg",
+   "addr:housenumber": "10",
+   "addr:postcode": "85764",
+   "addr:city": "Oberschleißheim",
+   "phone": null,
+   "website": "https://www.amapflegedienst.de/",
+   "email": "amapflegedienst@gmail.com"
+  },
+  "location": {
+   "lat": 48.252864,
+   "lon": 11.547754
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/30973",
+    "name": "Oberschleißheim"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/die-rotkreuzschwester-ambulanter-pflegedienst-gruenwald",
+  "cat": "pflege",
+  "quelle": "https://www.rotkreuzschwester-pflegedienst.de/ (2026-11-12)",
+  "tags": {
+   "name": "Die Rotkreuzschwester – Ambulanter Pflegedienst",
+   "addr:street": "Auf der Eierwiese",
+   "addr:housenumber": "26",
+   "addr:postcode": "82031",
+   "addr:city": "Grünwald",
+   "phone": "+49 89 64145482",
+   "website": "https://www.rotkreuzschwester-pflegedienst.de/"
+  },
+  "location": {
+   "lat": 48.036727,
+   "lon": 11.518125
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/415806",
+    "name": "Grünwald"
+   }
+  }
+ },
+ {
+  "id": "extra/home-instead-landkreis-muenchen-gluecklich-zu-haus-putzbrunn",
+  "cat": "pflege",
+  "quelle": "https://homeinstead.de/landkreis-muenchen/ (2026-11-12)",
+  "tags": {
+   "name": "Home Instead Landkreis München (Glücklich zu Hause Betreuungs GmbH)",
+   "addr:street": "Wernher-von-Braun-Straße",
+   "addr:housenumber": "10a",
+   "addr:postcode": "85640",
+   "addr:city": "Putzbrunn",
+   "phone": "+49 89 41329270",
+   "website": "https://homeinstead.de/landkreis-muenchen/"
+  },
+  "location": {
+   "lat": 48.07761,
+   "lon": 11.719831
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62580",
+    "name": "Landkreis München"
+   },
+   "8": {
+    "id": "relation/56350",
+    "name": "Putzbrunn"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
  }
 ]
