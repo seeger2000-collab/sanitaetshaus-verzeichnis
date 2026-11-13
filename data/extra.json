@@ -14903,5 +14903,2298 @@
     "begleitfahrt"
    ]
   }
+ },
+ {
+  "id": "extra/sonnen-team-ambulanter-pflegedienst-oberhausen",
+  "cat": "pflege",
+  "quelle": "https://www.sonnen-team.de/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "Sonnen-Team Ambulanter Pflegedienst",
+   "addr:street": "Burgwaldring",
+   "addr:housenumber": "19",
+   "addr:postcode": "86697",
+   "addr:city": "Oberhausen",
+   "phone": "+49 8431 537986",
+   "website": "https://www.sonnen-team.de/",
+   "email": "service@sonnen-team.de"
+  },
+  "location": {
+   "lat": 48.725198,
+   "lon": 11.147603
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62655",
+    "name": "Landkreis Neuburg-Schrobenhausen"
+   },
+   "8": {
+    "id": "relation/943679",
+    "name": "Oberhausen"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-happ-gmbh-oberhausen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-happ.de/impressum (2026-11-13)",
+  "tags": {
+   "name": "Pflegedienst Happ GmbH",
+   "addr:street": "Am Burgholz",
+   "addr:housenumber": "1",
+   "addr:postcode": "86697",
+   "addr:city": "Oberhausen",
+   "phone": "+49 8431 6486168",
+   "website": "https://www.pflegedienst-happ.de/"
+  },
+  "location": {
+   "lat": 48.725817,
+   "lon": 11.147785
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62655",
+    "name": "Landkreis Neuburg-Schrobenhausen"
+   },
+   "8": {
+    "id": "relation/943679",
+    "name": "Oberhausen"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-karin-bayerl-neuburg-an-der-donau",
+  "cat": "pflege",
+  "quelle": "https://krankenpflege-bayerl.de/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Karin Bayerl",
+   "addr:street": "Bahnhofstraße",
+   "addr:housenumber": "103b",
+   "addr:postcode": "86633",
+   "addr:city": "Neuburg an der Donau",
+   "phone": "+49 8431 48472",
+   "website": "https://krankenpflege-bayerl.de/",
+   "email": "info@krankenpflege-bayerl.de"
+  },
+  "location": {
+   "lat": 48.731524,
+   "lon": 11.174862
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62655",
+    "name": "Landkreis Neuburg-Schrobenhausen"
+   },
+   "8": {
+    "id": "relation/943684",
+    "name": "Neuburg an der Donau"
+   }
+  }
+ },
+ {
+  "id": "extra/pflege-dahoam-berg-im-gau",
+  "cat": "pflege",
+  "quelle": "https://www.pflege-dahoam.de/ (2026-11-13)",
+  "tags": {
+   "name": "Pflege Dahoam",
+   "addr:street": "Raiffeisenstraße",
+   "addr:housenumber": "5",
+   "addr:postcode": "86562",
+   "addr:city": "Berg im Gau",
+   "phone": "+49 8433 9293812",
+   "website": "https://www.pflege-dahoam.de/",
+   "email": "info@pflege-dahoam.de"
+  },
+  "location": {
+   "lat": 48.633839,
+   "lon": 11.253301
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62655",
+    "name": "Landkreis Neuburg-Schrobenhausen"
+   },
+   "8": {
+    "id": "relation/943732",
+    "name": "Berg im Gau"
+   }
+  }
+ },
+ {
+  "id": "extra/sozialstation-neuburg-schrobenhausen-e-v-geschaeft-schrobenhause",
+  "cat": "pflege",
+  "quelle": "https://www.sozialstation-schrobenhausen.de/kontakt/ (2026-11-13)",
+  "tags": {
+   "name": "Sozialstation Neuburg-Schrobenhausen e.V. (Geschäftsstelle Schrobenhausen)",
+   "addr:street": "Högenauer Weg",
+   "addr:housenumber": "19",
+   "addr:postcode": "86529",
+   "addr:city": "Schrobenhausen",
+   "phone": "+49 8252 89450",
+   "website": "https://www.sozialstation-schrobenhausen.de/",
+   "email": "info@sozialstation-schrobenhausen.de"
+  },
+  "location": {
+   "lat": 48.571654,
+   "lon": 11.265041
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62655",
+    "name": "Landkreis Neuburg-Schrobenhausen"
+   },
+   "8": {
+    "id": "relation/943731",
+    "name": "Schrobenhausen"
+   }
+  }
+ },
+ {
+  "id": "extra/sozialstation-neuburg-schrobenhausen-e-v-aussenste-burgheim",
+  "cat": "pflege",
+  "quelle": "https://www.sozialstation-schrobenhausen.de/kontakt/burgheim/ (2026-11-13)",
+  "tags": {
+   "name": "Sozialstation Neuburg-Schrobenhausen e.V. (Außenstelle Burgheim)",
+   "addr:street": "Pfarrgasse",
+   "addr:housenumber": "13",
+   "addr:postcode": "86666",
+   "addr:city": "Burgheim",
+   "phone": "+49 8432 8268",
+   "website": "https://www.sozialstation-schrobenhausen.de/",
+   "email": "info@sozialstation-schrobenhausen.de"
+  },
+  "location": {
+   "lat": 48.701223,
+   "lon": 11.016319
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62655",
+    "name": "Landkreis Neuburg-Schrobenhausen"
+   },
+   "8": {
+    "id": "relation/943668",
+    "name": "Burgheim"
+   }
+  }
+ },
+ {
+  "id": "extra/sozialstation-neuburg-schrobenhausen-e-v-aussenste-oberhausen",
+  "cat": "pflege",
+  "quelle": "https://www.sozialstation-schrobenhausen.de/kontakt/neuburg-ad-donau/ (2026-11-13)",
+  "tags": {
+   "name": "Sozialstation Neuburg-Schrobenhausen e.V. (Außenstelle Neuburg)",
+   "addr:street": "Am Burgholz",
+   "addr:housenumber": "1",
+   "addr:postcode": "86697",
+   "addr:city": "Oberhausen",
+   "phone": "+49 8431 67480",
+   "website": "https://www.sozialstation-schrobenhausen.de/",
+   "email": "info@sozialstation-schrobenhausen.de"
+  },
+  "location": {
+   "lat": 48.725817,
+   "lon": 11.147785
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62655",
+    "name": "Landkreis Neuburg-Schrobenhausen"
+   },
+   "8": {
+    "id": "relation/943679",
+    "name": "Oberhausen"
+   }
+  }
+ },
+ {
+  "id": "extra/brk-ambulanter-pflegedienst-neuburg-schrobenhausen-neuburg-an-de",
+  "cat": "pflege",
+  "quelle": "https://www.kvndsob.brk.de/angebote/alltagshilfen/ambulante-pflege.html (2026-11-13)",
+  "tags": {
+   "name": "BRK Ambulanter Pflegedienst Neuburg-Schrobenhausen",
+   "addr:street": "Paula-Schlier-Straße",
+   "addr:housenumber": "19",
+   "addr:postcode": "86633",
+   "addr:city": "Neuburg an der Donau",
+   "phone": "+49 8431 677871",
+   "website": "https://www.kvndsob.brk.de/angebote/alltagshilfen/ambulante-pflege.html",
+   "email": "ambu.ndsob@brk.de"
+  },
+  "location": {
+   "lat": 48.736253,
+   "lon": 11.221329
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62655",
+    "name": "Landkreis Neuburg-Schrobenhausen"
+   },
+   "8": {
+    "id": "relation/943684",
+    "name": "Neuburg an der Donau"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-die-pflegeengel-schrobenhausen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-schrobenhausen.de/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Die PflegeENGEL",
+   "addr:street": "Bürgermeister-Stocker-Ring",
+   "addr:housenumber": "11a",
+   "addr:postcode": "86529",
+   "addr:city": "Schrobenhausen",
+   "phone": "+49 8252 915340",
+   "website": "https://www.pflegedienst-schrobenhausen.de/",
+   "email": "britta.voss.pflegeengel@gmail.com"
+  },
+  "location": {
+   "lat": 48.56294,
+   "lon": 11.267178
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62655",
+    "name": "Landkreis Neuburg-Schrobenhausen"
+   },
+   "8": {
+    "id": "relation/943731",
+    "name": "Schrobenhausen"
+   }
+  }
+ },
+ {
+  "id": "extra/elisa-familiennachsorge-ggmbh-ambulante-kinderkran-neuburg-an-de",
+  "cat": "pflege",
+  "quelle": "https://www.elisa-familiennachsorge.de/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "ELISA Familiennachsorge gGmbH – Ambulante Kinderkranken- und Intensivpflege",
+   "addr:street": "Bahnhofstraße",
+   "addr:housenumber": "103b",
+   "addr:postcode": "86633",
+   "addr:city": "Neuburg an der Donau",
+   "phone": "+49 8431 39149860",
+   "website": "https://www.elisa-familiennachsorge.de/",
+   "email": "info@elisa-familiennachsorge.de"
+  },
+  "location": {
+   "lat": 48.731524,
+   "lon": 11.174862
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62655",
+    "name": "Landkreis Neuburg-Schrobenhausen"
+   },
+   "8": {
+    "id": "relation/943684",
+    "name": "Neuburg an der Donau"
+   }
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-aresing-wir-fuereinander-aresing",
+  "cat": "pflege",
+  "quelle": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/ddd9742015d26eafd36035a9ac4cc978113735/ca6617c9e821697d9d8ca4ff19caf5f4_flyer_wir_fuereinenader_aresing_web.pdf (2026-11-13)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Aresing „Wir füreinander“",
+   "addr:street": "St.-Martin-Straße",
+   "addr:housenumber": "16",
+   "addr:postcode": "86561",
+   "addr:city": "Aresing",
+   "phone": "+49 8252 9104450",
+   "website": "https://www.wirfuereinander.de/seite/388268/nachbarschaftshilfe.html",
+   "email": "nachbarschaftshilfe@aresing.de"
+  },
+  "location": {
+   "lat": 48.53254,
+   "lon": 11.298417
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62655",
+    "name": "Landkreis Neuburg-Schrobenhausen"
+   },
+   "8": {
+    "id": "relation/943712",
+    "name": "Aresing"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-karlshuld-wir-fuereinander-karlshuld",
+  "cat": "pflege",
+  "quelle": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/5d7d1765be3201da7699f0feb79d18c0113735/Flyer_Caritas_Wir_fuereinenader_Karlshuld_mit_Beschnittrand.pdf (2026-11-13)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Karlshuld „Wir füreinander“",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "68",
+   "addr:postcode": "86668",
+   "addr:city": "Karlshuld",
+   "phone": "+49 8454 94930",
+   "website": "https://www.wirfuereinander.de/seite/388268/nachbarschaftshilfe.html",
+   "email": "nachbarschaftshilfe@karlshuld.de"
+  },
+  "location": {
+   "lat": 48.675655,
+   "lon": 11.296206
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62655",
+    "name": "Landkreis Neuburg-Schrobenhausen"
+   },
+   "8": {
+    "id": "relation/943728",
+    "name": "Karlshuld"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-karlskron-wir-fuereinander-karlskron",
+  "cat": "pflege",
+  "quelle": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/5d7d1765be3201da7699f0feb79d18c0113735/Flyer_Caritas_Wir_fuereinander_-_Karlskron99x210mm_-_01-2025_web.pdf (2026-11-13)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Karlskron „Wir füreinander“",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "34",
+   "addr:postcode": "85123",
+   "addr:city": "Karlskron",
+   "phone": "+49 8450 930111",
+   "website": "https://www.wirfuereinander.de/seite/388268/nachbarschaftshilfe.html",
+   "email": "nachbarschaftshilfe@karlskron.de"
+  },
+  "location": {
+   "lat": 48.681762,
+   "lon": 11.397621
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62655",
+    "name": "Landkreis Neuburg-Schrobenhausen"
+   },
+   "8": {
+    "id": "relation/943710",
+    "name": "Karlskron"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-koenigsmoos-wir-fuereinander-koenigsmoos",
+  "cat": "pflege",
+  "quelle": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/5d7d1765be3201da7699f0feb79d18c0113735/flyer_caritas_wir_fuereinenader_2023_-_koenigsmoos_99x210mm_2.pdf (2026-11-13)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Königsmoos „Wir füreinander“",
+   "addr:street": "Neuburger Straße",
+   "addr:housenumber": "10",
+   "addr:postcode": "86669",
+   "addr:city": "Königsmoos",
+   "phone": "+49 8433 9281378",
+   "website": "https://www.wirfuereinander.de/seite/388268/nachbarschaftshilfe.html",
+   "email": "nachbarschaftshilfe@koenigsmoos.de"
+  },
+  "location": {
+   "lat": 48.666238,
+   "lon": 11.215629
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62655",
+    "name": "Landkreis Neuburg-Schrobenhausen"
+   },
+   "8": {
+    "id": "relation/943730",
+    "name": "Königsmoos"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-langenmosen-wir-fuereinander-langenmosen",
+  "cat": "pflege",
+  "quelle": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/5d7d1765be3201da7699f0feb79d18c0113735/flyer_caritas_wir_fuereinenader_langenmosen_4_seite_198_x_210_-_30-10-2020.pdf (2026-11-13)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Langenmosen „Wir füreinander“",
+   "addr:street": "Berg-im-Gauer-Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "86571",
+   "addr:city": "Langenmosen",
+   "phone": "+49 176 42973103",
+   "website": "https://www.wirfuereinander.de/seite/388268/nachbarschaftshilfe.html",
+   "email": "NbH@langenmosen.de"
+  },
+  "location": {
+   "lat": 48.61094,
+   "lon": 11.205813
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62655",
+    "name": "Landkreis Neuburg-Schrobenhausen"
+   },
+   "8": {
+    "id": "relation/943729",
+    "name": "Langenmosen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-neuburg-wir-fuereinander-neuburg-an-der-dona",
+  "cat": "pflege",
+  "quelle": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/5d7d1765be3201da7699f0feb79d18c0113735/flyer_caritas_wir_fuereinenader_2022_-_neuburg_99x210mm_final_web.pdf (2026-11-13)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Neuburg „Wir füreinander“",
+   "addr:street": "Séter Platz",
+   "addr:housenumber": "1",
+   "addr:postcode": "86633",
+   "addr:city": "Neuburg an der Donau",
+   "phone": "+49 8431 55491",
+   "website": "https://www.wirfuereinander.de/seite/388268/nachbarschaftshilfe.html",
+   "email": "nachbarschaftshilfe@stadt-neuburg.de"
+  },
+  "location": {
+   "lat": 48.734662,
+   "lon": 11.181189
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62655",
+    "name": "Landkreis Neuburg-Schrobenhausen"
+   },
+   "8": {
+    "id": "relation/943684",
+    "name": "Neuburg an der Donau"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-rohrenfels-wir-fuereinander-neuburg-an-der-d",
+  "cat": "pflege",
+  "quelle": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/5d7d1765be3201da7699f0feb79d18c0113735/flyer_caritas_wir_fuereinenader_-_rohrenfels_99x210mm_04-2022_1.pdf (2026-11-13)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Rohrenfels „Wir füreinander“",
+   "addr:street": "Tilly-Park",
+   "addr:housenumber": "1a",
+   "addr:postcode": "86633",
+   "addr:city": "Neuburg an der Donau",
+   "phone": "+49 8431 67190",
+   "website": "https://www.wirfuereinander.de/seite/388268/nachbarschaftshilfe.html",
+   "email": "nachbarschaftshilfe@rohrenfels.de"
+  },
+  "location": {
+   "lat": 48.723754,
+   "lon": 11.150866
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62655",
+    "name": "Landkreis Neuburg-Schrobenhausen"
+   },
+   "8": {
+    "id": "relation/943684",
+    "name": "Neuburg an der Donau"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-schrobenhausen-wir-fuereinande-schrobenhause",
+  "cat": "pflege",
+  "quelle": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/5d7d1765be3201da7699f0feb79d18c0113735/flyer_caritas_wir_fuereinander_-_schrobenhausen-99x210mm_03-2023_web_1.pdf (2026-11-13)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Schrobenhausen „Wir füreinander“",
+   "addr:street": "Regensburger Straße",
+   "addr:housenumber": "5",
+   "addr:postcode": "86529",
+   "addr:city": "Schrobenhausen",
+   "phone": "+49 8252 8800159",
+   "website": "https://www.wirfuereinander.de/seite/388268/nachbarschaftshilfe.html",
+   "email": "nachbarschaftshilfe-sob@neusob.de"
+  },
+  "location": {
+   "lat": 48.56396,
+   "lon": 11.263758
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62655",
+    "name": "Landkreis Neuburg-Schrobenhausen"
+   },
+   "8": {
+    "id": "relation/943731",
+    "name": "Schrobenhausen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-weichering-wir-fuereinander-weichering",
+  "cat": "pflege",
+  "quelle": "https://daten2.verwaltungsportal.de/dateien/seitengenerator/ddd9742015d26eafd36035a9ac4cc978113735/flyer_wir_fuereinenader_weichering_web.pdf (2026-11-13)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Weichering „Wir füreinander“",
+   "addr:street": "Kapellenplatz",
+   "addr:housenumber": "3",
+   "addr:postcode": "86706",
+   "addr:city": "Weichering",
+   "phone": "+49 8454 94970",
+   "website": "https://www.wirfuereinander.de/seite/388268/nachbarschaftshilfe.html",
+   "email": "nachbarschaftshilfe@weichering.de"
+  },
+  "location": {
+   "lat": 48.717554,
+   "lon": 11.320344
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62655",
+    "name": "Landkreis Neuburg-Schrobenhausen"
+   },
+   "8": {
+    "id": "relation/943709",
+    "name": "Weichering"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-sozialstation-pfaffenhofen-pfaffenhofen-an-der-ilm",
+  "cat": "pflege",
+  "quelle": "https://www.kvpfaffenhofen.brk.de/angebote/beratung-zu/ambulanter-pflege.html (2026-11-13)",
+  "tags": {
+   "name": "BRK-Sozialstation Pfaffenhofen",
+   "addr:street": "Michael-Weingartner-Straße",
+   "addr:housenumber": "9",
+   "addr:postcode": "85276",
+   "addr:city": "Pfaffenhofen an der Ilm",
+   "phone": "+49 8441 493315",
+   "website": "https://www.kvpfaffenhofen.brk.de/angebote/beratung-zu/ambulanter-pflege.html"
+  },
+  "location": {
+   "lat": 48.520354,
+   "lon": 11.499845
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62371",
+    "name": "Landkreis Pfaffenhofen an der Ilm"
+   },
+   "8": {
+    "id": "relation/396556",
+    "name": "Pfaffenhofen an der Ilm"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-sozialstation-pfaffenhofen-pfaffenhofen-an-der-ilm",
+  "cat": "fahrt",
+  "quelle": "https://www.kvpfaffenhofen.brk.de/angebote/beratung-zu/ambulanter-pflege.html (2026-11-13)",
+  "tags": {
+   "name": "BRK-Sozialstation Pfaffenhofen",
+   "addr:street": "Michael-Weingartner-Straße",
+   "addr:housenumber": "9",
+   "addr:postcode": "85276",
+   "addr:city": "Pfaffenhofen an der Ilm",
+   "phone": "+49 8441 493315",
+   "website": "https://www.kvpfaffenhofen.brk.de/angebote/beratung-zu/ambulanter-pflege.html"
+  },
+  "location": {
+   "lat": 48.520354,
+   "lon": 11.499845
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62371",
+    "name": "Landkreis Pfaffenhofen an der Ilm"
+   },
+   "8": {
+    "id": "relation/396556",
+    "name": "Pfaffenhofen an der Ilm"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-sozialstation-reichertshofen-reichertshofen",
+  "cat": "pflege",
+  "quelle": "https://www.kvpfaffenhofen.brk.de/angebote/beratung-zu/ambulanter-pflege.html (2026-11-13)",
+  "tags": {
+   "name": "BRK-Sozialstation Reichertshofen",
+   "addr:street": "Neuburger Straße",
+   "addr:housenumber": "30",
+   "addr:postcode": "85084",
+   "addr:city": "Reichertshofen",
+   "phone": "+49 8453 330092",
+   "website": "https://www.kvpfaffenhofen.brk.de/angebote/beratung-zu/ambulanter-pflege.html"
+  },
+  "location": {
+   "lat": 48.665087,
+   "lon": 11.458133
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62371",
+    "name": "Landkreis Pfaffenhofen an der Ilm"
+   },
+   "7": {
+    "id": "relation/2978600",
+    "name": "Reichertshofen"
+   },
+   "8": {
+    "id": "relation/387305",
+    "name": "Reichertshofen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-sozialstation-reichertshofen-reichertshofen",
+  "cat": "fahrt",
+  "quelle": "https://www.kvpfaffenhofen.brk.de/angebote/beratung-zu/ambulanter-pflege.html (2026-11-13)",
+  "tags": {
+   "name": "BRK-Sozialstation Reichertshofen",
+   "addr:street": "Neuburger Straße",
+   "addr:housenumber": "30",
+   "addr:postcode": "85084",
+   "addr:city": "Reichertshofen",
+   "phone": "+49 8453 330092",
+   "website": "https://www.kvpfaffenhofen.brk.de/angebote/beratung-zu/ambulanter-pflege.html"
+  },
+  "location": {
+   "lat": 48.665087,
+   "lon": 11.458133
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62371",
+    "name": "Landkreis Pfaffenhofen an der Ilm"
+   },
+   "7": {
+    "id": "relation/2978600",
+    "name": "Reichertshofen"
+   },
+   "8": {
+    "id": "relation/387305",
+    "name": "Reichertshofen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-sozialstation-geisenfeld-geisenfeld",
+  "cat": "pflege",
+  "quelle": "https://www.kvpfaffenhofen.brk.de/angebote/beratung-zu/ambulanter-pflege.html (2026-11-13)",
+  "tags": {
+   "name": "BRK-Sozialstation Geisenfeld",
+   "addr:street": "Klostergasse",
+   "addr:housenumber": "4",
+   "addr:postcode": "85290",
+   "addr:city": "Geisenfeld",
+   "phone": "+49 8452 730705",
+   "website": "https://www.kvpfaffenhofen.brk.de/angebote/beratung-zu/ambulanter-pflege.html"
+  },
+  "location": {
+   "lat": 48.682856,
+   "lon": 11.613277
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62371",
+    "name": "Landkreis Pfaffenhofen an der Ilm"
+   },
+   "7": {
+    "id": "relation/2978598",
+    "name": "Geisenfeld (VGem)"
+   },
+   "8": {
+    "id": "relation/380977",
+    "name": "Geisenfeld"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-sozialstation-geisenfeld-geisenfeld",
+  "cat": "fahrt",
+  "quelle": "https://www.kvpfaffenhofen.brk.de/angebote/beratung-zu/ambulanter-pflege.html (2026-11-13)",
+  "tags": {
+   "name": "BRK-Sozialstation Geisenfeld",
+   "addr:street": "Klostergasse",
+   "addr:housenumber": "4",
+   "addr:postcode": "85290",
+   "addr:city": "Geisenfeld",
+   "phone": "+49 8452 730705",
+   "website": "https://www.kvpfaffenhofen.brk.de/angebote/beratung-zu/ambulanter-pflege.html"
+  },
+  "location": {
+   "lat": 48.682856,
+   "lon": 11.613277
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62371",
+    "name": "Landkreis Pfaffenhofen an der Ilm"
+   },
+   "7": {
+    "id": "relation/2978598",
+    "name": "Geisenfeld (VGem)"
+   },
+   "8": {
+    "id": "relation/380977",
+    "name": "Geisenfeld"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/vohburger-hauskrankenpflege-gmbh-vohburg-an-der-donau",
+  "cat": "pflege",
+  "quelle": "https://vohburger-hauskrankenpflege.de/kontakt/ (2026-11-13)",
+  "tags": {
+   "name": "Vohburger Hauskrankenpflege GmbH",
+   "addr:street": "Gewerbestraße",
+   "addr:housenumber": "3",
+   "addr:postcode": "85088",
+   "addr:city": "Vohburg an der Donau",
+   "phone": "+49 8457 9329885",
+   "website": "https://vohburger-hauskrankenpflege.de/",
+   "email": "verwaltung@vohburger-hauskrankenpflege.de"
+  },
+  "location": {
+   "lat": 48.769333,
+   "lon": 11.628595
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62371",
+    "name": "Landkreis Pfaffenhofen an der Ilm"
+   },
+   "8": {
+    "id": "relation/380987",
+    "name": "Vohburg an der Donau"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/vohburger-hauskrankenpflege-gmbh-vohburg-an-der-donau",
+  "cat": "fahrt",
+  "quelle": "https://vohburger-hauskrankenpflege.de/kontakt/ (2026-11-13)",
+  "tags": {
+   "name": "Vohburger Hauskrankenpflege GmbH",
+   "addr:street": "Gewerbestraße",
+   "addr:housenumber": "3",
+   "addr:postcode": "85088",
+   "addr:city": "Vohburg an der Donau",
+   "phone": "+49 8457 9329885",
+   "website": "https://vohburger-hauskrankenpflege.de/",
+   "email": "verwaltung@vohburger-hauskrankenpflege.de"
+  },
+  "location": {
+   "lat": 48.769333,
+   "lon": 11.628595
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62371",
+    "name": "Landkreis Pfaffenhofen an der Ilm"
+   },
+   "8": {
+    "id": "relation/380987",
+    "name": "Vohburg an der Donau"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulantex-ambulante-pflege-reichertshausen-reichertshausen",
+  "cat": "pflege",
+  "quelle": "https://ambulantex.de/#standorte (2026-11-13)",
+  "tags": {
+   "name": "ambulantex Ambulante Pflege Reichertshausen",
+   "addr:street": "Schloßstraße",
+   "addr:housenumber": "4a",
+   "addr:postcode": "85293",
+   "addr:city": "Reichertshausen",
+   "phone": "+49 8441 8713281",
+   "website": "https://ambulantex.de/",
+   "email": "reichertshausen@ambulantex.de"
+  },
+  "location": {
+   "lat": 48.46616,
+   "lon": 11.506712
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62371",
+    "name": "Landkreis Pfaffenhofen an der Ilm"
+   },
+   "8": {
+    "id": "relation/396546",
+    "name": "Reichertshausen"
+   }
+  }
+ },
+ {
+  "id": "extra/haus-der-generationen-hallertau-wolnzach",
+  "cat": "pflege",
+  "quelle": "https://www.hdg-hallertau.de/leistungen/ambulanter-dienst (2026-11-13)",
+  "tags": {
+   "name": "Haus der Generationen Hallertau",
+   "addr:street": "Ziegelstraße",
+   "addr:housenumber": "11",
+   "addr:postcode": "85283",
+   "addr:city": "Wolnzach",
+   "phone": "+49 8442 92422005",
+   "website": "https://www.hdg-hallertau.de/",
+   "email": "info@hdg-hallertau.de"
+  },
+  "location": {
+   "lat": 48.598705,
+   "lon": 11.631288
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62371",
+    "name": "Landkreis Pfaffenhofen an der Ilm"
+   },
+   "8": {
+    "id": "relation/252182",
+    "name": "Wolnzach"
+   }
+  }
+ },
+ {
+  "id": "extra/fips-kinderkrankenpflege-ggmbh-ambulante-kinderkra-vohburg-an-de",
+  "cat": "pflege",
+  "quelle": "https://kinderfips.de/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "FIPS Kinderkrankenpflege gGmbH (ambulante Kinderkrankenpflege)",
+   "addr:street": "Auenstraße",
+   "addr:housenumber": "16",
+   "addr:postcode": "85088",
+   "addr:city": "Vohburg an der Donau",
+   "phone": "+49 178 2846077",
+   "website": "https://kinderfips.de/",
+   "email": "info@kinderfips.de"
+  },
+  "location": {
+   "lat": 48.743021,
+   "lon": 11.59934
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62371",
+    "name": "Landkreis Pfaffenhofen an der Ilm"
+   },
+   "8": {
+    "id": "relation/380987",
+    "name": "Vohburg an der Donau"
+   }
+  }
+ },
+ {
+  "id": "extra/optimum-care-scheyern-ambulanter-pflegedienst-scheyern",
+  "cat": "pflege",
+  "quelle": "https://optimumcare-scheyern.de/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "Optimum Care Scheyern – Ambulanter Pflegedienst",
+   "addr:street": "Hochstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "85298",
+   "addr:city": "Scheyern",
+   "phone": "+49 162 9783801",
+   "website": "https://optimumcare-scheyern.de/",
+   "email": "info@optimumcare-scheyern.de"
+  },
+  "location": {
+   "lat": 48.498469,
+   "lon": 11.453787
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62371",
+    "name": "Landkreis Pfaffenhofen an der Ilm"
+   },
+   "8": {
+    "id": "relation/396553",
+    "name": "Scheyern"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-supra-zweigstelle-pfaffenh-pfaffenhofen-",
+  "cat": "pflege",
+  "quelle": "https://supra-pd.de/pflegedienst-muenchen-kontakt/ (2026-11-13)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Supra – Zweigstelle Pfaffenhofen",
+   "addr:street": "Türltorstraße",
+   "addr:housenumber": "4",
+   "addr:postcode": "85276",
+   "addr:city": "Pfaffenhofen an der Ilm",
+   "phone": "+49 89 18939716",
+   "website": "https://supra-pd.de/",
+   "email": "info@supra-pd.de"
+  },
+  "location": {
+   "lat": 48.531231,
+   "lon": 11.509493
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62371",
+    "name": "Landkreis Pfaffenhofen an der Ilm"
+   },
+   "8": {
+    "id": "relation/396556",
+    "name": "Pfaffenhofen an der Ilm"
+   }
+  }
+ },
+ {
+  "id": "extra/amalia-kranken-und-intensivpflege-gmbh-burghausen",
+  "cat": "pflege",
+  "quelle": "https://amalia-pflegedienst.de/kontakt-buero/ (2026-11-13)",
+  "tags": {
+   "name": "Amalia Kranken- und Intensivpflege GmbH",
+   "addr:street": "Marktler Straße",
+   "addr:housenumber": "15b",
+   "addr:postcode": "84489",
+   "addr:city": "Burghausen",
+   "phone": "+49 8677 8785910",
+   "website": "https://amalia-pflegedienst.de/"
+  },
+  "location": {
+   "lat": 48.169373,
+   "lon": 12.830625
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/942044",
+    "name": "Burghausen"
+   }
+  }
+ },
+ {
+  "id": "extra/aka-monika-kirnich-gmbh-co-kg-ambulante-kranken-un-altoetting",
+  "cat": "pflege",
+  "quelle": "https://aka-kirnich.net/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "AKA Monika Kirnich GmbH & Co. KG – Ambulante Kranken- und Altenpflege",
+   "addr:street": "Weiß-Ferdl-Straße",
+   "addr:housenumber": "10",
+   "addr:postcode": "84503",
+   "addr:city": "Altötting",
+   "phone": "+49 8671 5600",
+   "website": "https://aka-kirnich.net/",
+   "email": "info@aka-kirnich.de"
+  },
+  "location": {
+   "lat": 48.226808,
+   "lon": 12.675791
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/942029",
+    "name": "Altötting"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-der-seniorenwohnen-am-toer-toeging-am-in",
+  "cat": "pflege",
+  "quelle": "https://www.seniorenwohnen-am-toerringhof.de/impressum.html (2026-11-13)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst der Seniorenwohnen am Toerringhof GmbH",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "46b",
+   "addr:postcode": "84513",
+   "addr:city": "Töging am Inn",
+   "phone": "+49 8631 1688406",
+   "website": "https://www.seniorenwohnen-am-toerringhof.de/",
+   "email": "info@seniorenwohnen-am-toerringhof.de"
+  },
+  "location": {
+   "lat": 48.256712,
+   "lon": 12.592708
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/941948",
+    "name": "Töging am Inn"
+   }
+  }
+ },
+ {
+  "id": "extra/sunnysidecare-gmbh-ambulanter-pflegedienst-unterneukirchen",
+  "cat": "pflege",
+  "quelle": "https://www.sunnysidecare.de/impressum (2026-11-13)",
+  "tags": {
+   "name": "SunnySideCare GmbH – Ambulanter Pflegedienst",
+   "addr:street": "Mauerberger Straße",
+   "addr:housenumber": "2",
+   "addr:postcode": "84579",
+   "addr:city": "Unterneukirchen",
+   "phone": "+49 8634 625750",
+   "website": "https://www.sunnysidecare.de/",
+   "email": "info@sunnysidecare.de"
+  },
+  "location": {
+   "lat": 48.16528,
+   "lon": 12.615696
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/942034",
+    "name": "Unterneukirchen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/curamus-ambulanter-pflegedienst-burghausen",
+  "cat": "pflege",
+  "quelle": "https://www.curamus-pflegedienst.de/ (2026-11-13)",
+  "tags": {
+   "name": "Curamus – Ambulanter Pflegedienst",
+   "addr:street": "Adalbert-Stifter-Straße",
+   "addr:housenumber": "7",
+   "addr:postcode": "84489",
+   "addr:city": "Burghausen",
+   "phone": "+49 8677 4656",
+   "website": "https://www.curamus-pflegedienst.de/",
+   "email": "info@curamus-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.169907,
+   "lon": 12.83171
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/942044",
+    "name": "Burghausen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/dr-jauss-pflege-gmbh-garching-an-der-alz",
+  "cat": "pflege",
+  "quelle": "https://dr-jauss-pflege.de/ (2026-11-13)",
+  "tags": {
+   "name": "Dr. Jauss Pflege GmbH",
+   "addr:street": "Trostberger Straße",
+   "addr:housenumber": "40",
+   "addr:postcode": "84518",
+   "addr:city": "Garching an der Alz",
+   "phone": "+49 8634 625525",
+   "website": "https://dr-jauss-pflege.de/",
+   "email": "info@dr-jauss-pflege.de"
+  },
+  "location": {
+   "lat": 48.121996,
+   "lon": 12.57506
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/942046",
+    "name": "Garching an der Alz"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegewichtl-ambulante-alten-und-krankenpflege-ing-tuessling",
+  "cat": "pflege",
+  "quelle": "https://www.pflegewichtl.de/impressum.php (2026-11-13)",
+  "tags": {
+   "name": "PflegeWichtl – Ambulante Alten- und Krankenpflege Ingrid Klemisch",
+   "addr:street": "Marktplatz",
+   "addr:housenumber": "37",
+   "addr:postcode": "84577",
+   "addr:city": "Tüßling",
+   "phone": "+49 8633 500042",
+   "website": "https://www.pflegewichtl.de/",
+   "email": "info@pflegewichtl.de"
+  },
+  "location": {
+   "lat": 48.212328,
+   "lon": 12.59947
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/942026",
+    "name": "Tüßling"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegeteam-hofmark-ambulanter-pflegedienst-winhoering",
+  "cat": "pflege",
+  "quelle": "https://jfb-stiftung.de/pflegeteam-hofmark/kontakt/ (2026-11-13)",
+  "tags": {
+   "name": "Pflegeteam Hofmark – Ambulanter Pflegedienst",
+   "addr:street": "Obere Hofmark",
+   "addr:housenumber": "12",
+   "addr:postcode": "84543",
+   "addr:city": "Winhöring",
+   "phone": "+49 8671 20101",
+   "website": "https://jfb-stiftung.de/pflegeteam-hofmark/",
+   "email": "Pflegeteam.hofmark@jfb-stiftung.de"
+  },
+  "location": {
+   "lat": 48.26603,
+   "lon": 12.650285
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/942012",
+    "name": "Winhöring"
+   }
+  }
+ },
+ {
+  "id": "extra/caritas-sozialstation-burgkirchen-burgkirchen-an-der-alz",
+  "cat": "pflege",
+  "quelle": "https://www.sozialstation-burgkirchen.de/ (2026-11-13)",
+  "tags": {
+   "name": "Caritas Sozialstation Burgkirchen",
+   "addr:street": "Schusterbauerstraße",
+   "addr:housenumber": "16",
+   "addr:postcode": "84508",
+   "addr:city": "Burgkirchen an der Alz",
+   "phone": "+49 8679 1499",
+   "website": "https://www.sozialstation-burgkirchen.de/",
+   "email": "caritas-burgkirchen@caritas-altoetting.de"
+  },
+  "location": {
+   "lat": 48.164445,
+   "lon": 12.73708
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/942047",
+    "name": "Burgkirchen an der Alz"
+   }
+  }
+ },
+ {
+  "id": "extra/brk-soziale-dienste-ambulante-pflege-altoetting-altoetting",
+  "cat": "pflege",
+  "quelle": "https://www.kvaltoetting.brk.de/angebote/soziale-dienste/ambulante-pflege.html (2026-11-13)",
+  "tags": {
+   "name": "BRK Soziale Dienste – Ambulante Pflege Altötting",
+   "addr:street": "Mühldorfer Straße",
+   "addr:housenumber": "16c",
+   "addr:postcode": "84503",
+   "addr:city": "Altötting",
+   "phone": "+49 8671 5066748",
+   "website": "https://www.kvaltoetting.brk.de/angebote/soziale-dienste/ambulante-pflege.html",
+   "email": "pflegedienst@kvaltoetting.brk.de"
+  },
+  "location": {
+   "lat": 48.226347,
+   "lon": 12.657668
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/942029",
+    "name": "Altötting"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-soziale-dienste-ambulante-pflege-altoetting-altoetting",
+  "cat": "fahrt",
+  "quelle": "https://www.kvaltoetting.brk.de/angebote/soziale-dienste/ambulante-pflege.html (2026-11-13)",
+  "tags": {
+   "name": "BRK Soziale Dienste – Ambulante Pflege Altötting",
+   "addr:street": "Mühldorfer Straße",
+   "addr:housenumber": "16c",
+   "addr:postcode": "84503",
+   "addr:city": "Altötting",
+   "phone": "+49 8671 5066748",
+   "website": "https://www.kvaltoetting.brk.de/angebote/soziale-dienste/ambulante-pflege.html",
+   "email": "pflegedienst@kvaltoetting.brk.de"
+  },
+  "location": {
+   "lat": 48.226347,
+   "lon": 12.657668
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/942029",
+    "name": "Altötting"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-sozialstation-toeging-toeging-am-inn",
+  "cat": "pflege",
+  "quelle": "https://www.kvaltoetting.brk.de/angebote/soziale-dienste/ambulante-pflege.html (2026-11-13)",
+  "tags": {
+   "name": "BRK Sozialstation Töging",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "14",
+   "addr:postcode": "84513",
+   "addr:city": "Töging am Inn",
+   "phone": "+49 8631 920007",
+   "website": "https://www.kvaltoetting.brk.de/angebote/soziale-dienste/ambulante-pflege.html",
+   "email": "pflegedienst@kvaltoetting.brk.de"
+  },
+  "location": {
+   "lat": 48.255335,
+   "lon": 12.588827
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/941948",
+    "name": "Töging am Inn"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-sozialstation-toeging-toeging-am-inn",
+  "cat": "fahrt",
+  "quelle": "https://www.kvaltoetting.brk.de/angebote/soziale-dienste/ambulante-pflege.html (2026-11-13)",
+  "tags": {
+   "name": "BRK Sozialstation Töging",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "14",
+   "addr:postcode": "84513",
+   "addr:city": "Töging am Inn",
+   "phone": "+49 8631 920007",
+   "website": "https://www.kvaltoetting.brk.de/angebote/soziale-dienste/ambulante-pflege.html",
+   "email": "pflegedienst@kvaltoetting.brk.de"
+  },
+  "location": {
+   "lat": 48.255335,
+   "lon": 12.588827
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/941948",
+    "name": "Töging am Inn"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-sozialstation-garching-garching-an-der-alz",
+  "cat": "pflege",
+  "quelle": "https://www.kvaltoetting.brk.de/angebote/soziale-dienste/ambulante-pflege.html (2026-11-13)",
+  "tags": {
+   "name": "BRK Sozialstation Garching",
+   "addr:street": "Nikolausstraße",
+   "addr:housenumber": "44b",
+   "addr:postcode": "84518",
+   "addr:city": "Garching an der Alz",
+   "phone": "+49 8634 689609",
+   "website": "https://www.kvaltoetting.brk.de/angebote/soziale-dienste/ambulante-pflege.html",
+   "email": "pflegedienst@kvaltoetting.brk.de"
+  },
+  "location": {
+   "lat": 48.134468,
+   "lon": 12.588872
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/942046",
+    "name": "Garching an der Alz"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-sozialstation-garching-garching-an-der-alz",
+  "cat": "fahrt",
+  "quelle": "https://www.kvaltoetting.brk.de/angebote/soziale-dienste/ambulante-pflege.html (2026-11-13)",
+  "tags": {
+   "name": "BRK Sozialstation Garching",
+   "addr:street": "Nikolausstraße",
+   "addr:housenumber": "44b",
+   "addr:postcode": "84518",
+   "addr:city": "Garching an der Alz",
+   "phone": "+49 8634 689609",
+   "website": "https://www.kvaltoetting.brk.de/angebote/soziale-dienste/ambulante-pflege.html",
+   "email": "pflegedienst@kvaltoetting.brk.de"
+  },
+  "location": {
+   "lat": 48.134468,
+   "lon": 12.588872
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/942046",
+    "name": "Garching an der Alz"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/awo-ambulanter-pflegedienst-burghausen-seniorenzen-burghausen",
+  "cat": "pflege",
+  "quelle": "https://www.sz-bur.awo-obb-senioren.de/ (2026-11-13)",
+  "tags": {
+   "name": "AWO Ambulanter Pflegedienst Burghausen (Seniorenzentrum Georg-Schenk-Haus)",
+   "addr:street": "Wackerstraße",
+   "addr:housenumber": "20",
+   "addr:postcode": "84489",
+   "addr:city": "Burghausen",
+   "phone": "+49 8677 97890",
+   "website": "https://www.sz-bur.awo-obb-senioren.de/"
+  },
+  "location": {
+   "lat": 48.167147,
+   "lon": 12.834946
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/942044",
+    "name": "Burghausen"
+   }
+  }
+ },
+ {
+  "id": "extra/home-instead-senioren-und-familienbetreuung-inn-sa-toeging-am-in",
+  "cat": "pflege",
+  "quelle": "https://www.homeinstead.de/region-inn-salzach/ (2026-11-13)",
+  "tags": {
+   "name": "Home Instead Senioren- und Familienbetreuung Inn-Salzach GmbH",
+   "addr:street": "Werkstraße",
+   "addr:housenumber": "13",
+   "addr:postcode": "84513",
+   "addr:city": "Töging am Inn",
+   "phone": "+49 8631 1832980",
+   "website": "https://www.homeinstead.de/region-inn-salzach/",
+   "email": "Region-Inn-Salzach@homeinstead.de"
+  },
+  "location": {
+   "lat": 48.251607,
+   "lon": 12.588242
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/941948",
+    "name": "Töging am Inn"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/treffpunkt-herbstsonne-ambulante-alten-und-kranken-kastl",
+  "cat": "pflege",
+  "quelle": "https://treffpunkt-herbstsonne.de/ (2026-11-13)",
+  "tags": {
+   "name": "Treffpunkt Herbstsonne – Ambulante Alten- und Krankenpflege",
+   "addr:street": "Rudolf-Diesel-Straße",
+   "addr:housenumber": "3",
+   "addr:postcode": "84556",
+   "addr:city": "Kastl",
+   "phone": "+49 8671 8838081",
+   "website": "https://treffpunkt-herbstsonne.de/",
+   "email": "info@herbstsonne-pflege.de"
+  },
+  "location": {
+   "lat": 48.191918,
+   "lon": 12.709061
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/942033",
+    "name": "Kastl"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-kranken-und-altenpflegestation-st-elisab-reischach",
+  "cat": "pflege",
+  "quelle": "https://pfarrverband-reischach.bistum-passau.de/ehrenamtliche-gruppierungen/krankenpflege (2026-11-13)",
+  "tags": {
+   "name": "Ambulante Kranken- und Altenpflegestation St. Elisabeth Reischach",
+   "addr:street": "Eggenfeldener Straße",
+   "addr:housenumber": "21c",
+   "addr:postcode": "84571",
+   "addr:city": "Reischach",
+   "phone": "+49 8670 5335",
+   "website": "https://pfarrverband-reischach.bistum-passau.de/ehrenamtliche-gruppierungen/krankenpflege",
+   "email": "info@sozialstation-reischach.de"
+  },
+  "location": {
+   "lat": 48.292884,
+   "lon": 12.726257
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "7": {
+    "id": "relation/2981749",
+    "name": "Reischach (VGem)"
+   },
+   "8": {
+    "id": "relation/942011",
+    "name": "Reischach"
+   }
+  }
+ },
+ {
+  "id": "extra/burghauser-nachbarschaftshilfe-buergerinsel-burgha-burghausen",
+  "cat": "pflege",
+  "quelle": "https://www.buergerinsel.de/ (2026-11-13)",
+  "tags": {
+   "name": "Burghauser Nachbarschaftshilfe (Bürgerinsel Burghausen e.V.)",
+   "addr:street": "Prießnitzstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "84489",
+   "addr:city": "Burghausen",
+   "phone": "+49 8677 887561",
+   "website": "https://www.buergerinsel.de/eigene-projekte/nachbarschaftshilfe/",
+   "email": "info@buergerinsel.de"
+  },
+  "location": {
+   "lat": 48.16936,
+   "lon": 12.829671
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/942044",
+    "name": "Burghausen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/zuhausehelfer-mit-herz-prismamed-gmbh-neuoetting",
+  "cat": "pflege",
+  "quelle": "https://www.zuhausehelfer-mit-herz.de/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "Zuhausehelfer mit Herz (Prismamed GmbH)",
+   "addr:street": "Lehrer-Bauer-Straße",
+   "addr:housenumber": "31",
+   "addr:postcode": "84524",
+   "addr:city": "Neuötting",
+   "phone": "+49 89 20006677",
+   "website": "https://www.zuhausehelfer-mit-herz.de/",
+   "email": "info@zuhausehelfer-mit-herz.de"
+  },
+  "location": {
+   "lat": 48.244603,
+   "lon": 12.749003
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/942028",
+    "name": "Neuötting"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/generationenbuero-z-dirling-nachbarschaftshilfe-ty-tyrlaching",
+  "cat": "pflege",
+  "quelle": "https://www.tyrlaching.de/_Resources/Persistent/3/4/2/e/342ed367d29c019871fe4db394a60ce3a252ecd8/Infoblatt2026_Generationenb%C3%BCro_032026_Druck_095231.pdf (2026-11-13)",
+  "tags": {
+   "name": "Generationenbüro z´Dirling / Nachbarschaftshilfe Tyrlaching-Oberbuch",
+   "addr:street": "Schulstraße",
+   "addr:housenumber": "4",
+   "addr:postcode": "84558",
+   "addr:city": "Tyrlaching",
+   "phone": "+49 8623 985616",
+   "website": "https://www.tyrlaching.de/",
+   "email": "bettina.kolbeck@tyrlaching.de"
+  },
+  "location": {
+   "lat": 48.060167,
+   "lon": 12.668082
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/942116",
+    "name": "Tyrlaching"
+   }
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-winhoering-miteinander-fuerein-winhoering",
+  "cat": "pflege",
+  "quelle": "https://www.winhoering.de/nachbarschaftshilfe (2026-11-13)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Winhöring „Miteinander – Füreinander“",
+   "addr:street": "Obere Hofmark",
+   "addr:housenumber": "7",
+   "addr:postcode": "84543",
+   "addr:city": "Winhöring",
+   "phone": "+49 175 3670302",
+   "website": "https://www.winhoering.de/nachbarschaftshilfe"
+  },
+  "location": {
+   "lat": 48.265417,
+   "lon": 12.651299
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "8": {
+    "id": "relation/942012",
+    "name": "Winhöring"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-marktl-e-v-marktl",
+  "cat": "pflege",
+  "quelle": "https://www.vg-marktl-stammham.de/fileadmin/user_upload/medien/marktl/prospekte/Nachbarschaftshilfe-Flyer-Web.pdf (2026-11-13)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Marktl e.V.",
+   "addr:street": "Marktplatz",
+   "addr:housenumber": "1",
+   "addr:postcode": "84533",
+   "addr:city": "Marktl",
+   "phone": "+49 151 10794280",
+   "website": "https://www.vg-marktl-stammham.de/",
+   "email": "nachbarhilfe.marktl@gmail.com"
+  },
+  "location": {
+   "lat": 48.253831,
+   "lon": 12.842102
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62663",
+    "name": "Landkreis Altötting"
+   },
+   "7": {
+    "id": "relation/2981748",
+    "name": "Marktl (VGem)"
+   },
+   "8": {
+    "id": "relation/942037",
+    "name": "Marktl"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
  }
 ]

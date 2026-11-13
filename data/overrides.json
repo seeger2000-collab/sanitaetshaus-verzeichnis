@@ -90,5 +90,12 @@
  },
  "node/2381782940": {
   "_ausblenden": "Dublette von node/5240783092 (ohne Adresse) (12.11.2026)"
+ },
+ "node/6378769605": {
+  "_quelle": "https://www.kvaltoetting.brk.de/angebote/soziale-dienste/ambulante-pflege.html (2026-11-13)",
+  "street": "Poststraße 7",
+  "postcode": "84533",
+  "phone": "+49 8678 919796",
+  "website": "https://www.kvaltoetting.brk.de/angebote/soziale-dienste/ambulante-pflege.html"
  }
 }
