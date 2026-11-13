@@ -97,5 +97,27 @@
   "postcode": "84533",
   "phone": "+49 8678 919796",
   "website": "https://www.kvaltoetting.brk.de/angebote/soziale-dienste/ambulante-pflege.html"
+ },
+ "way/172544745": {
+  "_ausblenden": "ohne Namen; vollständig als extra/ Caritas-Sozialstation Gaimersheim (13.11.2026)"
+ },
+ "way/42995098": {
+  "_ausblenden": "eigene Website der Caritas Sozialstation Kösching nennt keine Stelle in Großmehring (13.11.2026)"
+ },
+ "node/11715910902": {
+  "phone": "+49 8421 50140",
+  "_quelle": "https://www.pflegedienste-caritas.de/unsere-pflegedienste/eichstaett (2026-11-13)",
+  "street": "Weißenburger Straße 17",
+  "postcode": "85072",
+  "website": "https://www.pflegedienste-caritas.de/unsere-pflegedienste/eichstaett",
+  "email": "sozialstation@caritas-eichstaett.de"
+ },
+ "way/48705674": {
+  "_quelle": "https://caritas-sozialstation-koesching.de/kontakt/ (2026-11-13)",
+  "street": "Schlehensteinstraße 2a",
+  "postcode": "85092",
+  "phone": "+49 8456 98830",
+  "website": "https://caritas-sozialstation-koesching.de/",
+  "email": "info@caritas-sozialstation-koesching.de"
  }
 }

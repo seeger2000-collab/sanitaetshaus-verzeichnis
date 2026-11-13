@@ -17196,5 +17196,1469 @@
     "alltag"
    ]
   }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-rosenheim-ambulanter-pflegedie-rosenheim",
+  "cat": "pflege",
+  "quelle": "https://www.nh-rosenheim.de/abteilung/haeusliche-pflege/ (2026-11-13)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Rosenheim - Ambulanter Pflegedienst",
+   "addr:street": "Färberstraße",
+   "addr:housenumber": "10-12",
+   "addr:postcode": "83022",
+   "addr:city": "Rosenheim",
+   "phone": "+49 8031 34805",
+   "website": "https://www.nh-rosenheim.de/",
+   "email": "info@nh-rosenheim.de"
+  },
+  "location": {
+   "lat": 47.856277,
+   "lon": 12.130958
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168233",
+    "name": "Rosenheim"
+   }
+  }
+ },
+ {
+  "id": "extra/hauskrankenpflegeverein-rosenheim-e-v-rosenheim",
+  "cat": "pflege",
+  "quelle": "https://www.hauskrankenpflege-rosenheim.de/impressum (2026-11-13)",
+  "tags": {
+   "name": "Hauskrankenpflegeverein Rosenheim e. V.",
+   "addr:street": "Freiherr-vom-Stein-Straße",
+   "addr:housenumber": "16",
+   "addr:postcode": "83022",
+   "addr:city": "Rosenheim",
+   "phone": "+49 8031 13230",
+   "website": "https://www.hauskrankenpflege-rosenheim.de/",
+   "email": "info@hkpv-ro.de"
+  },
+  "location": {
+   "lat": 47.862824,
+   "lon": 12.12669
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168233",
+    "name": "Rosenheim"
+   }
+  }
+ },
+ {
+  "id": "extra/die-mobile-krankenpflege-gmbh-rosenheim",
+  "cat": "pflege",
+  "quelle": "https://www.diemobilekrankenpflege.net/impressum (2026-11-13)",
+  "tags": {
+   "name": "Die mobile Krankenpflege GmbH",
+   "addr:street": "Heilig-Geist-Straße",
+   "addr:housenumber": "42",
+   "addr:postcode": "83022",
+   "addr:city": "Rosenheim",
+   "phone": "+49 8031 70757",
+   "website": "https://www.diemobilekrankenpflege.net/",
+   "email": "info@diemobilekrankenpflege.de"
+  },
+  "location": {
+   "lat": 47.85774,
+   "lon": 12.123115
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168233",
+    "name": "Rosenheim"
+   }
+  }
+ },
+ {
+  "id": "extra/vivus-k-h-pflege-gmbh-inntaler-pflegeteam-rosenheim",
+  "cat": "pflege",
+  "quelle": "https://vivuskhpflege.de/impressum (2026-11-13)",
+  "tags": {
+   "name": "Vivus K&H Pflege GmbH (Inntaler Pflegeteam)",
+   "addr:street": "Isarstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "83026",
+   "addr:city": "Rosenheim",
+   "phone": "+49 8031 7984601",
+   "website": "https://vivuskhpflege.de/",
+   "email": "info@vivuskhpflege.de"
+  },
+  "location": {
+   "lat": 47.841581,
+   "lon": 12.12381
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168233",
+    "name": "Rosenheim"
+   }
+  }
+ },
+ {
+  "id": "extra/caritas-ambulanter-pflegedienst-rosenheim-sozialst-rosenheim",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-ambulanter-pflegedienst-rosenheim.de/de (2026-11-13)",
+  "tags": {
+   "name": "Caritas Ambulanter Pflegedienst Rosenheim (Sozialstation)",
+   "addr:street": "Hammerweg",
+   "addr:housenumber": "10",
+   "addr:postcode": "83022",
+   "addr:city": "Rosenheim",
+   "phone": "+49 8031 203610",
+   "website": "https://www.caritas-ambulanter-pflegedienst-rosenheim.de/de",
+   "email": "ambulante-pflege-rosenheim@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 47.851829,
+   "lon": 12.127094
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168233",
+    "name": "Rosenheim"
+   }
+  }
+ },
+ {
+  "id": "extra/brk-kreisverband-rosenheim-ambulante-pflege-sozial-rosenheim",
+  "cat": "pflege",
+  "quelle": "https://www.brk-rosenheim.de/start/alltagshilfen/ambulante-pflege.html (2026-11-13)",
+  "tags": {
+   "name": "BRK Kreisverband Rosenheim - Ambulante Pflege (Sozialstation)",
+   "addr:street": "Tegernseestraße",
+   "addr:housenumber": "5",
+   "addr:postcode": "83022",
+   "addr:city": "Rosenheim",
+   "phone": "+49 8031 301945",
+   "website": "https://www.brk-rosenheim.de/start/alltagshilfen/ambulante-pflege.html"
+  },
+  "location": {
+   "lat": 47.848304,
+   "lon": 12.134417
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168233",
+    "name": "Rosenheim"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-kreisverband-rosenheim-ambulante-pflege-sozial-rosenheim",
+  "cat": "fahrt",
+  "quelle": "https://www.brk-rosenheim.de/start/alltagshilfen/ambulante-pflege.html (2026-11-13)",
+  "tags": {
+   "name": "BRK Kreisverband Rosenheim - Ambulante Pflege (Sozialstation)",
+   "addr:street": "Tegernseestraße",
+   "addr:housenumber": "5",
+   "addr:postcode": "83022",
+   "addr:city": "Rosenheim",
+   "phone": "+49 8031 301945",
+   "website": "https://www.brk-rosenheim.de/start/alltagshilfen/ambulante-pflege.html"
+  },
+  "location": {
+   "lat": 47.848304,
+   "lon": 12.134417
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168233",
+    "name": "Rosenheim"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/home-instead-rosenheim-hunze-betreuungsdienste-gmb-rosenheim",
+  "cat": "pflege",
+  "quelle": "https://homeinstead.de/rosenheim/ (2026-11-13)",
+  "tags": {
+   "name": "Home Instead Rosenheim (Hunze Betreuungsdienste GmbH)",
+   "addr:street": "Jahnstraße",
+   "addr:housenumber": "12",
+   "addr:postcode": "83022",
+   "addr:city": "Rosenheim",
+   "phone": "+49 8031 3506080",
+   "website": "https://homeinstead.de/rosenheim/",
+   "email": "Rosenheim@homeinstead.de"
+  },
+  "location": {
+   "lat": 47.850124,
+   "lon": 12.130638
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168233",
+    "name": "Rosenheim"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/alina-ambulanter-pflegedienst-ingolstadt",
+  "cat": "pflege",
+  "quelle": "http://s649227771.website-start.de/kontakt/ (2026-11-13)",
+  "tags": {
+   "name": "Alina Ambulanter Pflegedienst",
+   "addr:street": "Weckenweg",
+   "addr:housenumber": "13",
+   "addr:postcode": "85055",
+   "addr:city": "Ingolstadt",
+   "phone": "+49 841 15962271",
+   "website": "http://alina-ambulanter-pflegedienst.eu/",
+   "email": "alina.pflegedienst@gmail.com"
+  },
+  "location": {
+   "lat": 48.789377,
+   "lon": 11.441733
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62381",
+    "name": "Ingolstadt"
+   }
+  }
+ },
+ {
+  "id": "extra/aragon-ambulante-pflege-gmbh-ingolstadt",
+  "cat": "pflege",
+  "quelle": "https://aragongruppe.de/aragon-ambulante-pflege/ (2026-11-13)",
+  "tags": {
+   "name": "Aragon Ambulante Pflege GmbH",
+   "addr:street": "Peisserstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "85053",
+   "addr:city": "Ingolstadt",
+   "phone": "+49 841 73706",
+   "website": "https://aragongruppe.de/aragon-ambulante-pflege/",
+   "email": "info@aragon-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.762916,
+   "lon": 11.449291
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62381",
+    "name": "Ingolstadt"
+   }
+  }
+ },
+ {
+  "id": "extra/caritas-sozialstation-ingolstadt-e-v-ingolstadt",
+  "cat": "pflege",
+  "quelle": "http://www.caritas-sozialstation-ingolstadt.de (2026-11-13)",
+  "tags": {
+   "name": "Caritas-Sozialstation Ingolstadt e.V.",
+   "addr:street": "Münchener Straße",
+   "addr:housenumber": "69",
+   "addr:postcode": "85051",
+   "addr:city": "Ingolstadt",
+   "phone": "+49 841 973580",
+   "website": "https://www.caritas-sozialstation-ingolstadt.de/",
+   "email": "sozialstation@caritas-ingolstadt.de"
+  },
+  "location": {
+   "lat": 48.746386,
+   "lon": 11.433415
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62381",
+    "name": "Ingolstadt"
+   }
+  }
+ },
+ {
+  "id": "extra/awo-ambulanter-pflegedienst-ingolstadt-ingolstadt",
+  "cat": "pflege",
+  "quelle": "https://www.awo-in-ei.de/ambulanter-pflegedienst.html (2026-11-13)",
+  "tags": {
+   "name": "AWO Ambulanter Pflegedienst Ingolstadt",
+   "addr:street": "Nürnberger Straße",
+   "addr:housenumber": "32a",
+   "addr:postcode": "85055",
+   "addr:city": "Ingolstadt",
+   "phone": "+49 841 9319521",
+   "website": "https://www.awo-in-ei.de/ambulanter-pflegedienst.html",
+   "email": "pdl@awo-in-ei.de"
+  },
+  "location": {
+   "lat": 48.774593,
+   "lon": 11.432784
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62381",
+    "name": "Ingolstadt"
+   }
+  }
+ },
+ {
+  "id": "extra/emeis-ambulanter-pflegedienst-ingolstadt-ingolstadt",
+  "cat": "pflege",
+  "quelle": "https://www.danuviusklinik.de/danuvius-ambulante-pflege-gmbh/ (2026-11-13)",
+  "tags": {
+   "name": "emeis Ambulanter Pflegedienst Ingolstadt",
+   "addr:street": "Levelingstraße",
+   "addr:housenumber": "3",
+   "addr:postcode": "85049",
+   "addr:city": "Ingolstadt",
+   "phone": "+49 841 88548270",
+   "website": "https://www.danuviusklinik.de/danuvius-ambulante-pflege-gmbh/",
+   "email": "info@danuviusambulantepflege.de"
+  },
+  "location": {
+   "lat": 48.77142,
+   "lon": 11.386315
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62381",
+    "name": "Ingolstadt"
+   }
+  }
+ },
+ {
+  "id": "extra/home-instead-ingolstadt-familien-und-seniorenbetre-ingolstadt",
+  "cat": "pflege",
+  "quelle": "https://homeinstead.de/ingolstadt/ (2026-11-13)",
+  "tags": {
+   "name": "Home Instead Ingolstadt (Familien- und Seniorenbetreuung Arend GmbH)",
+   "addr:street": "Haunwöhrer Straße",
+   "addr:housenumber": "32",
+   "addr:postcode": "85051",
+   "addr:city": "Ingolstadt",
+   "phone": "+49 841 93892280",
+   "website": "https://homeinstead.de/ingolstadt/"
+  },
+  "location": {
+   "lat": 48.751986,
+   "lon": 11.427513
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62381",
+    "name": "Ingolstadt"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/fpi-family-pflege-ingolstadt-ingolstadt",
+  "cat": "pflege",
+  "quelle": "https://fp-in.de/impressum.html (2026-11-13)",
+  "tags": {
+   "name": "FPI – Family Pflege Ingolstadt",
+   "addr:street": "Nürnberger Straße",
+   "addr:housenumber": "99",
+   "addr:postcode": "85055",
+   "addr:city": "Ingolstadt",
+   "phone": "+49 151 62697248",
+   "website": "https://fp-in.de/",
+   "email": "info@fp-in.de"
+  },
+  "location": {
+   "lat": 48.780643,
+   "lon": 11.435193
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62381",
+    "name": "Ingolstadt"
+   }
+  }
+ },
+ {
+  "id": "extra/pflege-daheim-ingolstadt-gmbh-ingolstadt",
+  "cat": "pflege",
+  "quelle": "https://www.pflege-daheim-ingolstadt.de/impressum (2026-11-13)",
+  "tags": {
+   "name": "Pflege daheim Ingolstadt GmbH",
+   "addr:street": "Ziegeleistraße",
+   "addr:housenumber": "59",
+   "addr:postcode": "85055",
+   "addr:city": "Ingolstadt",
+   "phone": "+49 841 99479388",
+   "website": "https://www.pflege-daheim-ingolstadt.de/",
+   "email": "info@pflege-daheim-ingolstadt.de"
+  },
+  "location": {
+   "lat": 48.779416,
+   "lon": 11.456957
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62381",
+    "name": "Ingolstadt"
+   }
+  }
+ },
+ {
+  "id": "extra/livacare-gmbh-ingolstadt",
+  "cat": "pflege",
+  "quelle": "https://www.livacare-pflege.de/impressum (2026-11-13)",
+  "tags": {
+   "name": "LivaCare GmbH",
+   "addr:street": "Herschelstraße",
+   "addr:housenumber": "28",
+   "addr:postcode": "85057",
+   "addr:city": "Ingolstadt",
+   "phone": "+49 841 79417398",
+   "website": "https://www.livacare-pflege.de/",
+   "email": "info@livacare-pflege.de"
+  },
+  "location": {
+   "lat": 48.775118,
+   "lon": 11.401263
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62381",
+    "name": "Ingolstadt"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-mandy-gmbh-ingolstadt",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-mandy.com/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "Pflegedienst Mandy GmbH",
+   "addr:street": "Peisserstraße",
+   "addr:housenumber": "15a",
+   "addr:postcode": "85053",
+   "addr:city": "Ingolstadt",
+   "phone": "+49 841 99396390",
+   "website": "https://www.pflegedienst-mandy.com/",
+   "email": "info@pflegedienst-mandy.com"
+  },
+  "location": {
+   "lat": 48.76063,
+   "lon": 11.453974
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62381",
+    "name": "Ingolstadt"
+   }
+  }
+ },
+ {
+  "id": "extra/diakonie-sozialstation-ingolstadt-ingolstadt",
+  "cat": "pflege",
+  "quelle": "https://www.dw-in.de/index.php/de/einrichtungen/fachbereich-gesundheit-senioren/ambulante-einrichtungen/sozialstation-ingolstadt-de (2026-11-13)",
+  "tags": {
+   "name": "Diakonie-Sozialstation Ingolstadt",
+   "addr:street": "Stinnesstraße",
+   "addr:housenumber": "8a",
+   "addr:postcode": "85057",
+   "addr:city": "Ingolstadt",
+   "phone": "+49 841 888632",
+   "website": "https://www.dw-in.de/index.php/de/einrichtungen/fachbereich-gesundheit-senioren/ambulante-einrichtungen/sozialstation-ingolstadt-de"
+  },
+  "location": {
+   "lat": 48.775524,
+   "lon": 11.397844
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62381",
+    "name": "Ingolstadt"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/diakonie-sozialstation-ingolstadt-ingolstadt",
+  "cat": "fahrt",
+  "quelle": "https://www.dw-in.de/index.php/de/einrichtungen/fachbereich-gesundheit-senioren/ambulante-einrichtungen/sozialstation-ingolstadt-de (2026-11-13)",
+  "tags": {
+   "name": "Diakonie-Sozialstation Ingolstadt",
+   "addr:street": "Stinnesstraße",
+   "addr:housenumber": "8a",
+   "addr:postcode": "85057",
+   "addr:city": "Ingolstadt",
+   "phone": "+49 841 888632",
+   "website": "https://www.dw-in.de/index.php/de/einrichtungen/fachbereich-gesundheit-senioren/ambulante-einrichtungen/sozialstation-ingolstadt-de"
+  },
+  "location": {
+   "lat": 48.775524,
+   "lon": 11.397844
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62381",
+    "name": "Ingolstadt"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflege-und-versorgungsdienst-sonnenglanz-gmbh-ingolstadt",
+  "cat": "pflege",
+  "quelle": "http://ingolstadt-pflegedienst.de/kontakt/ (2026-11-13)",
+  "tags": {
+   "name": "Pflege- und Versorgungsdienst Sonnenglanz GmbH",
+   "addr:street": "Niederfelder Straße",
+   "addr:housenumber": "15",
+   "addr:postcode": "85053",
+   "addr:city": "Ingolstadt",
+   "phone": "+49 841 93897959",
+   "website": "https://www.ingolstadt-pflegedienst.de/",
+   "email": "info@ingolstadt-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.736799,
+   "lon": 11.471658
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62381",
+    "name": "Ingolstadt"
+   }
+  }
+ },
+ {
+  "id": "extra/gluecksbringer-alltags-und-haushaltshilfe-ingolstadt",
+  "cat": "pflege",
+  "quelle": "https://www.gluecksbringer-in.de/ (2026-11-13)",
+  "tags": {
+   "name": "Glücksbringer Alltags- und Haushaltshilfe",
+   "addr:street": "Am Pulverl",
+   "addr:housenumber": "22",
+   "addr:postcode": "85051",
+   "addr:city": "Ingolstadt",
+   "phone": "+49 151 28025628",
+   "website": "https://www.gluecksbringer-in.de/",
+   "email": "info@gluecksbringer-in.de"
+  },
+  "location": {
+   "lat": 48.743354,
+   "lon": 11.430004
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62381",
+    "name": "Ingolstadt"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/gluecksbringer-alltags-und-haushaltshilfe-ingolstadt",
+  "cat": "fahrt",
+  "quelle": "https://www.gluecksbringer-in.de/ (2026-11-13)",
+  "tags": {
+   "name": "Glücksbringer Alltags- und Haushaltshilfe",
+   "addr:street": "Am Pulverl",
+   "addr:housenumber": "22",
+   "addr:postcode": "85051",
+   "addr:city": "Ingolstadt",
+   "phone": "+49 151 28025628",
+   "website": "https://www.gluecksbringer-in.de/",
+   "email": "info@gluecksbringer-in.de"
+  },
+  "location": {
+   "lat": 48.743354,
+   "lon": 11.430004
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62381",
+    "name": "Ingolstadt"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-harmonie-gmbh-ingolstadt",
+  "cat": "pflege",
+  "quelle": "http://www.pflegedienst-in-ingolstadt.de/impressum.php (2026-11-13)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Harmonie GmbH",
+   "addr:street": "Felsenstraße",
+   "addr:housenumber": "10",
+   "addr:postcode": "85055",
+   "addr:city": "Ingolstadt",
+   "phone": "+49 841 98123111",
+   "website": "http://www.pflegedienst-in-ingolstadt.de/",
+   "email": "info@harmonie-gmbh.de"
+  },
+  "location": {
+   "lat": 48.807242,
+   "lon": 11.403649
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62381",
+    "name": "Ingolstadt"
+   }
+  }
+ },
+ {
+  "id": "extra/eli-die-fee-seniorendienst-ingolstadt-ratisbona-se-ingolstadt",
+  "cat": "pflege",
+  "quelle": "https://www.elidiefee.de/haushaltshilfe-ingolstadt (2026-11-13)",
+  "tags": {
+   "name": "Eli die Fee Seniorendienst Ingolstadt (Ratisbona Seniorendienste GmbH)",
+   "addr:street": "Schenkendorfstraße",
+   "addr:housenumber": "1a",
+   "addr:postcode": "85055",
+   "addr:city": "Ingolstadt",
+   "phone": "+49 841 90252070",
+   "website": "https://www.elidiefee.de/haushaltshilfe-ingolstadt",
+   "email": "info@elidiefee.de"
+  },
+  "location": {
+   "lat": 48.779633,
+   "lon": 11.445162
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62381",
+    "name": "Ingolstadt"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-ingolstadt-ambulanter-pflegedienst-ingolstadt",
+  "cat": "pflege",
+  "quelle": "https://www.brk-pflege-in.de/ (2026-11-13)",
+  "tags": {
+   "name": "BRK Ingolstadt – Ambulanter Pflegedienst",
+   "addr:street": "Auf der Schanz",
+   "addr:housenumber": "30",
+   "addr:postcode": "85049",
+   "addr:city": "Ingolstadt",
+   "phone": "+49 841 933360",
+   "website": "https://www.brk-pflege-in.de/",
+   "email": "pflege.in@brk.de"
+  },
+  "location": {
+   "lat": 48.766404,
+   "lon": 11.417115
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62381",
+    "name": "Ingolstadt"
+   }
+  }
+ },
+ {
+  "id": "extra/caritas-sozialstation-gaimersheim-e-v-gaimersheim",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienste-caritas.de/unsere-pflegedienste/gaimersheim/ (2026-11-13)",
+  "tags": {
+   "name": "Caritas-Sozialstation Gaimersheim e.V.",
+   "addr:street": "Am Wallgraben",
+   "addr:housenumber": "3",
+   "addr:postcode": "85080",
+   "addr:city": "Gaimersheim",
+   "phone": "+49 8458 32750",
+   "website": "https://www.pflegedienste-caritas.de/unsere-pflegedienste/gaimersheim/",
+   "email": "sozialstation@caritas-gaimersheim.de"
+  },
+  "location": {
+   "lat": 48.808471,
+   "lon": 11.366227
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62684",
+    "name": "Landkreis Eichstätt"
+   },
+   "8": {
+    "id": "relation/943539",
+    "name": "Gaimersheim"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-seniorenbetreuung-oliver-beer-adelschlag",
+  "cat": "pflege",
+  "quelle": "https://www.asb-oliverbeer.de/unternehmen/impressum (2026-11-13)",
+  "tags": {
+   "name": "Ambulante Seniorenbetreuung Oliver Beer",
+   "addr:street": "Zieglerstraße",
+   "addr:housenumber": "10 A",
+   "addr:postcode": "85111",
+   "addr:city": "Adelschlag",
+   "phone": "+49 8421 9378382",
+   "website": "https://www.asb-oliverbeer.de/",
+   "email": "oliverbeer73@gmx.de"
+  },
+  "location": {
+   "lat": 48.857479,
+   "lon": 11.243957
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62684",
+    "name": "Landkreis Eichstätt"
+   },
+   "8": {
+    "id": "relation/943553",
+    "name": "Adelschlag"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/privater-sozialer-pflegedienst-ponzer-gaimersheim",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-ponzer.de/impressum (2026-11-13)",
+  "tags": {
+   "name": "Privater Sozialer Pflegedienst Ponzer",
+   "addr:street": "Messerschmittstraße",
+   "addr:housenumber": "2",
+   "addr:postcode": "85080",
+   "addr:city": "Gaimersheim",
+   "phone": "+49 8458 3220",
+   "website": "https://www.pflegedienst-ponzer.de/",
+   "email": "info@pflegedienst-ponzer.de"
+  },
+  "location": {
+   "lat": 48.781807,
+   "lon": 11.383425
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62684",
+    "name": "Landkreis Eichstätt"
+   },
+   "8": {
+    "id": "relation/943539",
+    "name": "Gaimersheim"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-bohl-gmbh-buxheim",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-bohl.de/impressum (2026-11-13)",
+  "tags": {
+   "name": "Pflegedienst Bohl GmbH",
+   "addr:street": "Eitensheimer Straße",
+   "addr:housenumber": "6",
+   "addr:postcode": "85114",
+   "addr:city": "Buxheim",
+   "phone": "+49 8458 3437341",
+   "website": "https://www.pflegedienst-bohl.de/",
+   "email": "info@pflegedienst-bohl.de"
+  },
+  "location": {
+   "lat": 48.806031,
+   "lon": 11.29347
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62684",
+    "name": "Landkreis Eichstätt"
+   },
+   "8": {
+    "id": "relation/943562",
+    "name": "Buxheim"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-sozialstation-beilngries-beilngries",
+  "cat": "pflege",
+  "quelle": "https://www.kveichstaett.brk.de/unsere-angebote/alltagshilfen/sozialstation-beilngries.html (2026-11-13)",
+  "tags": {
+   "name": "BRK Sozialstation Beilngries",
+   "addr:street": "Maria-Hilf-Straße",
+   "addr:housenumber": "4",
+   "addr:postcode": "92339",
+   "addr:city": "Beilngries",
+   "phone": "+49 8461 19219",
+   "website": "https://www.kveichstaett.brk.de/unsere-angebote/alltagshilfen/sozialstation-beilngries.html",
+   "email": "sozialstation@kveichstaett.brk.de"
+  },
+  "location": {
+   "lat": 49.034956,
+   "lon": 11.477738
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62684",
+    "name": "Landkreis Eichstätt"
+   },
+   "8": {
+    "id": "relation/943535",
+    "name": "Beilngries"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-sozialstation-beilngries-beilngries",
+  "cat": "fahrt",
+  "quelle": "https://www.kveichstaett.brk.de/unsere-angebote/alltagshilfen/sozialstation-beilngries.html (2026-11-13)",
+  "tags": {
+   "name": "BRK Sozialstation Beilngries",
+   "addr:street": "Maria-Hilf-Straße",
+   "addr:housenumber": "4",
+   "addr:postcode": "92339",
+   "addr:city": "Beilngries",
+   "phone": "+49 8461 19219",
+   "website": "https://www.kveichstaett.brk.de/unsere-angebote/alltagshilfen/sozialstation-beilngries.html",
+   "email": "sozialstation@kveichstaett.brk.de"
+  },
+  "location": {
+   "lat": 49.034956,
+   "lon": 11.477738
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62684",
+    "name": "Landkreis Eichstätt"
+   },
+   "8": {
+    "id": "relation/943535",
+    "name": "Beilngries"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/gabi-s-pflegeteam-altmannstein",
+  "cat": "pflege",
+  "quelle": "http://gabis-pflegeteam.de/kontakt.html (2026-11-13)",
+  "tags": {
+   "name": "Gabi's Pflegeteam",
+   "addr:street": "Am Kochfeld",
+   "addr:housenumber": "3",
+   "addr:postcode": "93336",
+   "addr:city": "Altmannstein",
+   "phone": "+49 9446 919100",
+   "website": "http://gabis-pflegeteam.de/",
+   "email": "info@gabis-pflegeteam.de"
+  },
+  "location": {
+   "lat": 48.879091,
+   "lon": 11.718105
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62684",
+    "name": "Landkreis Eichstätt"
+   },
+   "8": {
+    "id": "relation/943548",
+    "name": "Altmannstein"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-plus-wettstetten-wettstetten",
+  "cat": "pflege",
+  "quelle": "http://www.ambulanter-pflegedienst-wettstetten.de/kontakt.html (2026-11-13)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Plus Wettstetten",
+   "addr:street": "Ziegelberg",
+   "addr:housenumber": "2",
+   "addr:postcode": "85139",
+   "addr:city": "Wettstetten",
+   "phone": "+49 841 9930004",
+   "website": "http://www.ambulanter-pflegedienst-wettstetten.de/",
+   "email": "a.p.plus@web.de"
+  },
+  "location": {
+   "lat": 48.816019,
+   "lon": 11.415076
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62684",
+    "name": "Landkreis Eichstätt"
+   },
+   "8": {
+    "id": "relation/943543",
+    "name": "Wettstetten"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-schwarzachhaus-eva-kinding",
+  "cat": "pflege",
+  "quelle": "https://www.schwarzachhaus.de/kontakt-pflegedienst.html (2026-11-13)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Schwarzachhaus (EVA)",
+   "addr:street": "Marktplatz",
+   "addr:housenumber": "20",
+   "addr:postcode": "85125",
+   "addr:city": "Kinding",
+   "phone": "+49 176 44448881",
+   "website": "https://www.schwarzachhaus.de/",
+   "email": "post@schwarzachhaus.de"
+  },
+  "location": {
+   "lat": 49.001065,
+   "lon": 11.383394
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62684",
+    "name": "Landkreis Eichstätt"
+   },
+   "8": {
+    "id": "relation/943546",
+    "name": "Kinding"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-jakobi-stammham",
+  "cat": "pflege",
+  "quelle": "https://pflege-jakobi.de/ux-elements-sites/default/impressum (2026-11-13)",
+  "tags": {
+   "name": "Pflegedienst Jakobi",
+   "addr:street": "Westerhofener Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "85134",
+   "addr:city": "Stammham",
+   "phone": "+49 8405 9255488",
+   "website": "https://pflege-jakobi.de/",
+   "email": "pflege@jakobi-stammham.de"
+  },
+  "location": {
+   "lat": 48.856577,
+   "lon": 11.459405
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62684",
+    "name": "Landkreis Eichstätt"
+   },
+   "8": {
+    "id": "relation/943538",
+    "name": "Stammham"
+   }
+  }
+ },
+ {
+  "id": "extra/pro-lebensfreude-gmbh-grossmehring",
+  "cat": "pflege",
+  "quelle": "https://pro-lebensfreude.com/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "Pro Lebensfreude GmbH",
+   "addr:street": "Ingolstädter Straße",
+   "addr:housenumber": "10",
+   "addr:postcode": "85098",
+   "addr:city": "Großmehring",
+   "phone": "+49 8407 9393330",
+   "website": "https://pro-lebensfreude.com/",
+   "email": "grossmehring@pro-lebensfreude.com"
+  },
+  "location": {
+   "lat": 48.765066,
+   "lon": 11.531322
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62684",
+    "name": "Landkreis Eichstätt"
+   },
+   "8": {
+    "id": "relation/943559",
+    "name": "Großmehring"
+   }
+  }
+ },
+ {
+  "id": "extra/mimma-ambulante-heimbeatmungsdienst-ug-hepberg",
+  "cat": "pflege",
+  "quelle": "https://mimma-pflegedienst.de/kontakt/ (2026-11-13)",
+  "tags": {
+   "name": "Mimma Ambulante Heimbeatmungsdienst UG",
+   "addr:street": "Schulstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "85120",
+   "addr:city": "Hepberg",
+   "phone": "+49 8456 9671682",
+   "website": "https://mimma-pflegedienst.de/",
+   "email": "info@mimma-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.822877,
+   "lon": 11.46173
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62684",
+    "name": "Landkreis Eichstätt"
+   },
+   "8": {
+    "id": "relation/943552",
+    "name": "Hepberg"
+   }
+  }
+ },
+ {
+  "id": "extra/renafan-bayern-ambulante-pflege-moernsheim-moernsheim",
+  "cat": "pflege",
+  "quelle": "https://www.renafan.de/renafan-bayern/ambulante-pflege/moernsheim (2026-11-13)",
+  "tags": {
+   "name": "RENAFAN Bayern – Ambulante Pflege Mörnsheim",
+   "addr:street": "Haunsfelder Straße",
+   "addr:housenumber": "30",
+   "addr:postcode": "91804",
+   "addr:city": "Mörnsheim",
+   "phone": "+49 9145 8399676",
+   "website": "https://www.renafan.de/renafan-bayern/ambulante-pflege/moernsheim",
+   "email": "ap-moernsheim@renafan.de"
+  },
+  "location": {
+   "lat": 48.865665,
+   "lon": 11.013826
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62684",
+    "name": "Landkreis Eichstätt"
+   },
+   "8": {
+    "id": "relation/943554",
+    "name": "Mörnsheim"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-pflege-schwarzachhaus-am-turm-rieshofen-walting",
+  "cat": "pflege",
+  "quelle": "https://www.schwarzachhaus.de/kontakt-pflegedienst.html (2026-11-13)",
+  "tags": {
+   "name": "Ambulante Pflege Schwarzachhaus / Am Turm (Rieshofen)",
+   "addr:street": "Dorfstraße",
+   "addr:housenumber": "11",
+   "addr:postcode": "85137",
+   "addr:city": "Walting",
+   "phone": "+49 176 44448881",
+   "website": "https://pflege-altmuehltal.com/",
+   "email": "post@schwarzachhaus.de"
+  },
+  "location": {
+   "lat": 48.934448,
+   "lon": 11.306338
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62684",
+    "name": "Landkreis Eichstätt"
+   },
+   "7": {
+    "id": "relation/2971578",
+    "name": "Eichstätt (VGem)"
+   },
+   "8": {
+    "id": "relation/943555",
+    "name": "Walting"
+   }
+  }
  }
 ]
