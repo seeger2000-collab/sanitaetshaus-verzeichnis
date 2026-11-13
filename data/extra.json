@@ -12398,5 +12398,2510 @@
     "name": "Prien am Chiemsee"
    }
   }
+ },
+ {
+  "id": "extra/caritas-ambulanter-pflegedienst-berchtesgadener-la-bad-reichenha",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-ambulanter-pflegedienst-berchtesgadener-land.de/de/kontakt (2026-11-13)",
+  "tags": {
+   "name": "Caritas Ambulanter Pflegedienst Berchtesgadener Land",
+   "addr:street": "Salzburger Straße",
+   "addr:housenumber": "29 B",
+   "addr:postcode": "83435",
+   "addr:city": "Bad Reichenhall",
+   "phone": "+49 8651 716917",
+   "website": "https://www.caritas-ambulanter-pflegedienst-berchtesgadener-land.de/",
+   "email": "ambulante-pflege-berchtesgaden@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 47.731338,
+   "lon": 12.886967
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62712",
+    "name": "Landkreis Berchtesgadener Land"
+   },
+   "8": {
+    "id": "relation/941794",
+    "name": "Bad Reichenhall"
+   }
+  }
+ },
+ {
+  "id": "extra/brk-sozialstation-bad-reichenhall-bad-reichenhall",
+  "cat": "pflege",
+  "quelle": "https://www.brk-bgl.de/angebote/alltagshilfen/ambulante-pflege.html (2026-11-13)",
+  "tags": {
+   "name": "BRK Sozialstation Bad Reichenhall",
+   "addr:street": "Riedelstraße",
+   "addr:housenumber": "18",
+   "addr:postcode": "83435",
+   "addr:city": "Bad Reichenhall",
+   "phone": "+49 8651 959015",
+   "website": "https://www.brk-bgl.de/angebote/alltagshilfen/ambulante-pflege.html"
+  },
+  "location": {
+   "lat": 47.728275,
+   "lon": 12.8699
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62712",
+    "name": "Landkreis Berchtesgadener Land"
+   },
+   "8": {
+    "id": "relation/941794",
+    "name": "Bad Reichenhall"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-sozialstation-bad-reichenhall-bad-reichenhall",
+  "cat": "fahrt",
+  "quelle": "https://www.brk-bgl.de/angebote/alltagshilfen/ambulante-pflege.html (2026-11-13)",
+  "tags": {
+   "name": "BRK Sozialstation Bad Reichenhall",
+   "addr:street": "Riedelstraße",
+   "addr:housenumber": "18",
+   "addr:postcode": "83435",
+   "addr:city": "Bad Reichenhall",
+   "phone": "+49 8651 959015",
+   "website": "https://www.brk-bgl.de/angebote/alltagshilfen/ambulante-pflege.html"
+  },
+  "location": {
+   "lat": 47.728275,
+   "lon": 12.8699
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62712",
+    "name": "Landkreis Berchtesgadener Land"
+   },
+   "8": {
+    "id": "relation/941794",
+    "name": "Bad Reichenhall"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-sozialstation-freilassing-freilassing",
+  "cat": "pflege",
+  "quelle": "https://www.brk-bgl.de/angebote/alltagshilfen/ambulante-pflege.html (2026-11-13)",
+  "tags": {
+   "name": "BRK Sozialstation Freilassing",
+   "addr:street": "Vinzentiusstraße",
+   "addr:housenumber": "58",
+   "addr:postcode": "83395",
+   "addr:city": "Freilassing",
+   "phone": "+49 8654 1460",
+   "website": "https://www.brk-bgl.de/angebote/alltagshilfen/ambulante-pflege.html"
+  },
+  "location": {
+   "lat": 47.849132,
+   "lon": 12.978621
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62712",
+    "name": "Landkreis Berchtesgadener Land"
+   },
+   "8": {
+    "id": "relation/941757",
+    "name": "Freilassing"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-sozialstation-freilassing-freilassing",
+  "cat": "fahrt",
+  "quelle": "https://www.brk-bgl.de/angebote/alltagshilfen/ambulante-pflege.html (2026-11-13)",
+  "tags": {
+   "name": "BRK Sozialstation Freilassing",
+   "addr:street": "Vinzentiusstraße",
+   "addr:housenumber": "58",
+   "addr:postcode": "83395",
+   "addr:city": "Freilassing",
+   "phone": "+49 8654 1460",
+   "website": "https://www.brk-bgl.de/angebote/alltagshilfen/ambulante-pflege.html"
+  },
+  "location": {
+   "lat": 47.849132,
+   "lon": 12.978621
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62712",
+    "name": "Landkreis Berchtesgadener Land"
+   },
+   "8": {
+    "id": "relation/941757",
+    "name": "Freilassing"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/die-pfleger-gmbh-bad-reichenhall",
+  "cat": "pflege",
+  "quelle": "https://diepfleger.de/impressum (2026-11-13)",
+  "tags": {
+   "name": "Die Pfleger GmbH",
+   "addr:street": "Grenzlandstraße",
+   "addr:housenumber": "14a",
+   "addr:postcode": "83435",
+   "addr:city": "Bad Reichenhall",
+   "phone": "+49 8651 62340",
+   "website": "https://diepfleger.de/",
+   "email": "info@diepfleger.de"
+  },
+  "location": {
+   "lat": 47.746079,
+   "lon": 12.913166
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62712",
+    "name": "Landkreis Berchtesgadener Land"
+   },
+   "8": {
+    "id": "relation/941794",
+    "name": "Bad Reichenhall"
+   }
+  }
+ },
+ {
+  "id": "extra/awo-ambulanter-pflegedienst-freilassing-freilassing",
+  "cat": "pflege",
+  "quelle": "https://www.awo-obb.de/senioren/einrichtung/awo-ambulanter-pflegedienst-freilassing (2026-11-13)",
+  "tags": {
+   "name": "AWO-Ambulanter Pflegedienst Freilassing",
+   "addr:street": "Münchener Straße",
+   "addr:housenumber": "49",
+   "addr:postcode": "83395",
+   "addr:city": "Freilassing",
+   "phone": "+49 8654 6605160",
+   "website": "https://www.awo-obb.de/senioren/einrichtung/awo-ambulanter-pflegedienst-freilassing",
+   "email": "info@sz-fre.awo-obb.de"
+  },
+  "location": {
+   "lat": 47.842957,
+   "lon": 12.971906
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62712",
+    "name": "Landkreis Berchtesgadener Land"
+   },
+   "8": {
+    "id": "relation/941757",
+    "name": "Freilassing"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulante-pflege-st-felicitas-caritas-bischofswiesen",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-altenheim-bischofswiesen.de/de/ambulante-pflege (2026-11-13)",
+  "tags": {
+   "name": "Ambulante Pflege St. Felicitas (Caritas)",
+   "addr:street": "Sonnleitstraße",
+   "addr:housenumber": "62",
+   "addr:postcode": "83483",
+   "addr:city": "Bischofswiesen",
+   "phone": "+49 8652 9535500",
+   "website": "https://www.caritas-altenheim-bischofswiesen.de/de/ambulante-pflege",
+   "email": "st-felicitas@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 47.63026,
+   "lon": 12.984948
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62712",
+    "name": "Landkreis Berchtesgadener Land"
+   },
+   "8": {
+    "id": "relation/941829",
+    "name": "Bischofswiesen"
+   }
+  }
+ },
+ {
+  "id": "extra/augustinum-mobile-pflege-berchtesgadener-land-bischofswiesen",
+  "cat": "pflege",
+  "quelle": "https://augustinum.de/berchtesgadenerland/senioren-pflege/mobile-pflege/ (2026-11-13)",
+  "tags": {
+   "name": "Augustinum Mobile Pflege Berchtesgadener Land",
+   "addr:street": "Insulaweg",
+   "addr:housenumber": "1",
+   "addr:postcode": "83483",
+   "addr:city": "Bischofswiesen",
+   "phone": "+49 8652 59570",
+   "website": "https://augustinum.de/berchtesgadenerland/senioren-pflege/mobile-pflege/"
+  },
+  "location": {
+   "lat": 47.625871,
+   "lon": 12.967302
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62712",
+    "name": "Landkreis Berchtesgadener Land"
+   },
+   "8": {
+    "id": "relation/941829",
+    "name": "Bischofswiesen"
+   }
+  }
+ },
+ {
+  "id": "extra/vivaldo-ambulanter-pflegedienst-ainring",
+  "cat": "pflege",
+  "quelle": "https://www.vivaldo.de/ambulante-pflege/ (2026-11-13)",
+  "tags": {
+   "name": "Vivaldo Ambulanter Pflegedienst",
+   "addr:street": "Salzburger Straße",
+   "addr:housenumber": "24",
+   "addr:postcode": "83404",
+   "addr:city": "Ainring",
+   "phone": "+49 8654 3094720",
+   "website": "https://www.vivaldo.de/ambulante-pflege/",
+   "email": "info@vivaldo.de"
+  },
+  "location": {
+   "lat": 47.813673,
+   "lon": 12.957034
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62712",
+    "name": "Landkreis Berchtesgadener Land"
+   },
+   "8": {
+    "id": "relation/941761",
+    "name": "Ainring"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegedienst-katrin-arnold-freilassing",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-freilassing.de/ (2026-11-13)",
+  "tags": {
+   "name": "Pflegedienst Katrin Arnold",
+   "addr:street": "Hermannstädter Straße",
+   "addr:housenumber": "4",
+   "addr:postcode": "83395",
+   "addr:city": "Freilassing",
+   "phone": "+49 8654 69268",
+   "website": "https://www.pflegedienst-freilassing.de/",
+   "email": "info@pflegedienst-freilassing.de"
+  },
+  "location": {
+   "lat": 47.849463,
+   "lon": 12.965163
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62712",
+    "name": "Landkreis Berchtesgadener Land"
+   },
+   "8": {
+    "id": "relation/941757",
+    "name": "Freilassing"
+   }
+  }
+ },
+ {
+  "id": "extra/primus-gmbh-ausserklinische-intensivpflege-bad-reichenhall",
+  "cat": "pflege",
+  "quelle": "https://www.primus-intensivpflege.de/ (2026-11-13)",
+  "tags": {
+   "name": "Primus GmbH Außerklinische Intensivpflege",
+   "addr:street": "Luitpoldstraße",
+   "addr:housenumber": "17",
+   "addr:postcode": "83435",
+   "addr:city": "Bad Reichenhall",
+   "phone": "+49 8651 7626080",
+   "website": "https://www.primus-intensivpflege.de/",
+   "email": "info@primus-intensivpflege.de"
+  },
+  "location": {
+   "lat": 47.728808,
+   "lon": 12.875958
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62712",
+    "name": "Landkreis Berchtesgadener Land"
+   },
+   "8": {
+    "id": "relation/941794",
+    "name": "Bad Reichenhall"
+   }
+  }
+ },
+ {
+  "id": "extra/generationenbund-bgl-e-v-nachbarschaftshilfe-anger",
+  "cat": "pflege",
+  "quelle": "https://www.generationenbund-bgl.de/impressum.html (2026-11-13)",
+  "tags": {
+   "name": "Generationenbund BGL e.V. (Nachbarschaftshilfe)",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "22",
+   "addr:postcode": "83454",
+   "addr:city": "Anger",
+   "phone": "+49 8656 9894500",
+   "website": "https://www.generationenbund-bgl.de/",
+   "email": "info@generationenbund-bgl.de"
+  },
+  "location": {
+   "lat": 47.784535,
+   "lon": 12.870779
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62712",
+    "name": "Landkreis Berchtesgadener Land"
+   },
+   "8": {
+    "id": "relation/941791",
+    "name": "Anger"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/diakoniestation-freilassing-bad-reichenhall-aussen-bad-reichenha",
+  "cat": "pflege",
+  "quelle": "https://www.diakonie-traunstein.de/diakoniestation-freilassing/ (2026-11-13)",
+  "tags": {
+   "name": "Diakoniestation Freilassing / Bad Reichenhall – Außenstelle Bad Reichenhall",
+   "addr:street": "Bahnhofstraße",
+   "addr:housenumber": "19",
+   "addr:postcode": "83435",
+   "addr:city": "Bad Reichenhall",
+   "phone": "+49 8654 3113",
+   "website": "https://www.diakonie-traunstein.de/diakoniestation-freilassing/",
+   "email": "dsf@diakonie-traunstein.de"
+  },
+  "location": {
+   "lat": 47.727894,
+   "lon": 12.879294
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62712",
+    "name": "Landkreis Berchtesgadener Land"
+   },
+   "8": {
+    "id": "relation/941794",
+    "name": "Bad Reichenhall"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/caritas-ambulanter-pflegedienst-im-landkreis-muehl-waldkraiburg",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-nah-am-naechsten.de/ambulanter-pflegedienst-muehldorf (2026-11-13)",
+  "tags": {
+   "name": "Caritas Ambulanter Pflegedienst im Landkreis Mühldorf",
+   "addr:street": "Karlsbader Straße",
+   "addr:housenumber": "3",
+   "addr:postcode": "84478",
+   "addr:city": "Waldkraiburg",
+   "phone": "+49 8638 2075",
+   "website": "https://www.caritas-nah-am-naechsten.de/ambulanter-pflegedienst-muehldorf",
+   "email": "ambulante-pflege-muehldorf@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 48.206797,
+   "lon": 12.3964817
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "8": {
+    "id": "relation/941067",
+    "name": "Waldkraiburg"
+   }
+  }
+ },
+ {
+  "id": "extra/pflege-dahoam-gmbh-muehldorf-a-inn",
+  "cat": "pflege",
+  "quelle": "https://pflege-dahoam.bayern/impressum (2026-11-13)",
+  "tags": {
+   "name": "Pflege dahoam GmbH",
+   "addr:street": "Birkenstraße",
+   "addr:housenumber": "10",
+   "addr:postcode": "84453",
+   "addr:city": "Mühldorf a. Inn",
+   "phone": "+49 8631 3550025",
+   "website": "https://www.pflege-dahoam.bayern/",
+   "email": "info@pflegedahoam.team"
+  },
+  "location": {
+   "lat": 48.2332892,
+   "lon": 12.5493129
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "8": {
+    "id": "relation/941004",
+    "name": "Mühldorf a. Inn"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflege-dahoam-gmbh-muehldorf-a-inn",
+  "cat": "fahrt",
+  "quelle": "https://pflege-dahoam.bayern/impressum (2026-11-13)",
+  "tags": {
+   "name": "Pflege dahoam GmbH",
+   "addr:street": "Birkenstraße",
+   "addr:housenumber": "10",
+   "addr:postcode": "84453",
+   "addr:city": "Mühldorf a. Inn",
+   "phone": "+49 8631 3550025",
+   "website": "https://www.pflege-dahoam.bayern/",
+   "email": "info@pflegedahoam.team"
+  },
+  "location": {
+   "lat": 48.2332892,
+   "lon": 12.5493129
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "8": {
+    "id": "relation/941004",
+    "name": "Mühldorf a. Inn"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/seelenfrieden-ambulanter-pflegedienst-gmbh-muehldorf-a-inn",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-seelenfrieden.de/standort-muehldorf-am-inn/ (2026-11-13)",
+  "tags": {
+   "name": "Seelenfrieden ambulanter Pflegedienst GmbH",
+   "addr:street": "Daxenbergergasse",
+   "addr:housenumber": "7-9",
+   "addr:postcode": "84453",
+   "addr:city": "Mühldorf a. Inn",
+   "phone": "+49 8631 9906671",
+   "website": "https://pflegedienst-seelenfrieden.de/",
+   "email": "info@pflegedienst-seelenfrieden.de"
+  },
+  "location": {
+   "lat": 48.2419417,
+   "lon": 12.5248357
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "8": {
+    "id": "relation/941004",
+    "name": "Mühldorf a. Inn"
+   }
+  }
+ },
+ {
+  "id": "extra/seelenfrieden-gmbh-zweigniederlassung-ampfing-ampfing",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-seelenfrieden.de/standort-ampfing/ (2026-11-13)",
+  "tags": {
+   "name": "Seelenfrieden GmbH, Zweigniederlassung Ampfing",
+   "addr:street": "Schweppermannpark",
+   "addr:housenumber": "",
+   "addr:postcode": "84539",
+   "addr:city": "Ampfing",
+   "phone": "+49 8636 6979098",
+   "website": "https://pflegedienst-seelenfrieden.de/",
+   "email": "info@pflegedienst-seelenfrieden.de"
+  },
+  "location": {
+   "lat": 48.2581705,
+   "lon": 12.4190339
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "8": {
+    "id": "relation/941001",
+    "name": "Ampfing"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegeteam-am-inn-muehldorf-a-inn",
+  "cat": "pflege",
+  "quelle": "https://www.pflegeteam-am-inn.de/impressum (2026-11-13)",
+  "tags": {
+   "name": "Pflegeteam am Inn",
+   "addr:street": "Moltkestraße",
+   "addr:housenumber": "2",
+   "addr:postcode": "84453",
+   "addr:city": "Mühldorf a. Inn",
+   "phone": "+49 8631 1662222",
+   "website": "https://www.pflegeteam-am-inn.de/",
+   "email": "info@pflegeteam-am-inn.de"
+  },
+  "location": {
+   "lat": 48.2462134,
+   "lon": 12.5199989
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "8": {
+    "id": "relation/941004",
+    "name": "Mühldorf a. Inn"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-krankenpflege-silvia-wolf-gmbh-haag-i-ob",
+  "cat": "pflege",
+  "quelle": "https://www.pflegeteam-silvia-wolf.de/impressum (2026-11-13)",
+  "tags": {
+   "name": "Ambulante Krankenpflege Silvia Wolf GmbH",
+   "addr:street": "Rainbachstraße",
+   "addr:housenumber": "16",
+   "addr:postcode": "83527",
+   "addr:city": "Haag i. OB",
+   "phone": "+49 8072 98985",
+   "website": "https://www.pflegeteam-silvia-wolf.de/",
+   "email": "pflege.wolf@t-online.de"
+  },
+  "location": {
+   "lat": 48.1640816,
+   "lon": 12.1767254
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "7": {
+    "id": "relation/2981691",
+    "name": "Gars am Inn (VGem)"
+   },
+   "8": {
+    "id": "relation/940688",
+    "name": "Haag i. OB"
+   }
+  }
+ },
+ {
+  "id": "extra/vivissimo-ambulanter-pflegedienst-gzbvt-gmbh-ehem--neumarkt-sank",
+  "cat": "pflege",
+  "quelle": "https://www.gzbvt.de/ (2026-11-13)",
+  "tags": {
+   "name": "vivissimo Ambulanter Pflegedienst (GzbvT GmbH, ehem. Pflegedienst Sylvia Wegner)",
+   "addr:street": "Stadtplatz",
+   "addr:housenumber": "13",
+   "addr:postcode": "84494",
+   "addr:city": "Neumarkt-Sankt Veit",
+   "phone": "+49 8639 7074138",
+   "website": "https://www.gzbvt.de/",
+   "email": "verwaltung@gzbvt.de"
+  },
+  "location": {
+   "lat": 48.3606147,
+   "lon": 12.5081332
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "7": {
+    "id": "relation/2981693",
+    "name": "Neumarkt-Sankt Veit (VGem)"
+   },
+   "8": {
+    "id": "relation/944899",
+    "name": "Neumarkt-Sankt Veit"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-paul-bielich-schaffer-neumarkt-sankt-veit",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-nsv.de/impressum (2026-11-13)",
+  "tags": {
+   "name": "Pflegedienst Paul Bielich-Schaffer",
+   "addr:street": "Hörberinger Straße",
+   "addr:housenumber": "9a",
+   "addr:postcode": "84494",
+   "addr:city": "Neumarkt-Sankt Veit",
+   "phone": "+49 8639 9863605",
+   "website": "https://www.pflegedienst-nsv.de/",
+   "email": "info@pflegedienst-nsv.de"
+  },
+  "location": {
+   "lat": 48.3627691,
+   "lon": 12.5156908
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "7": {
+    "id": "relation/2981693",
+    "name": "Neumarkt-Sankt Veit (VGem)"
+   },
+   "8": {
+    "id": "relation/944899",
+    "name": "Neumarkt-Sankt Veit"
+   }
+  }
+ },
+ {
+  "id": "extra/die-pflegeengel-gmbh-ampfing",
+  "cat": "pflege",
+  "quelle": "https://www.diepflegeengel-bb.de/impressum (2026-11-13)",
+  "tags": {
+   "name": "die Pflegeengel GmbH",
+   "addr:street": "Kirchenplatz",
+   "addr:housenumber": "4",
+   "addr:postcode": "84539",
+   "addr:city": "Ampfing",
+   "phone": "+49 173 9364271",
+   "website": "https://www.diepflegeengel-bb.de/",
+   "email": "info@diepflegeengel-bb.de"
+  },
+  "location": {
+   "lat": 48.2554045,
+   "lon": 12.4166835
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "8": {
+    "id": "relation/941001",
+    "name": "Ampfing"
+   }
+  }
+ },
+ {
+  "id": "extra/sozialstation-inntalpflege-wimmer-polling",
+  "cat": "pflege",
+  "quelle": "https://www.inntalpflege-wimmer.de/Kontakt-und-Adresse.html (2026-11-13)",
+  "tags": {
+   "name": "Sozialstation Inntalpflege Wimmer",
+   "addr:street": "Bachfeldstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "84570",
+   "addr:city": "Polling",
+   "phone": "+49 8631 160460",
+   "website": "https://www.inntalpflege-wimmer.de/",
+   "email": "info@inntalpflege-wimmer.de"
+  },
+  "location": {
+   "lat": 48.2197863,
+   "lon": 12.554644
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "7": {
+    "id": "relation/2981691",
+    "name": "Gars am Inn (VGem)"
+   },
+   "8": {
+    "id": "relation/941042",
+    "name": "Polling"
+   }
+  }
+ },
+ {
+  "id": "extra/vilstal-pflegedienst-kaertner-gmbh-buchbach",
+  "cat": "pflege",
+  "quelle": "https://vilstal-pflege.de/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "Vilstal-Pflegedienst (Kärtner GmbH)",
+   "addr:street": "Herrnbergstraße",
+   "addr:housenumber": "36",
+   "addr:postcode": "84428",
+   "addr:city": "Buchbach",
+   "phone": "+49 8086 511",
+   "website": "https://vilstal-pflege.de/",
+   "email": "info@vilstal-pflege.de"
+  },
+  "location": {
+   "lat": 48.3082842,
+   "lon": 12.3405664
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "8": {
+    "id": "relation/940862",
+    "name": "Buchbach"
+   }
+  }
+ },
+ {
+  "id": "extra/dlrg-soziale-dienste-muehldorf-ggmbh-muehldorf-a-inn",
+  "cat": "pflege",
+  "quelle": "https://muehldorf.dlrg.de/impressum-und-datenschutz/ (2026-11-13)",
+  "tags": {
+   "name": "DLRG Soziale Dienste Mühldorf gGmbH",
+   "addr:street": "Elbestraße",
+   "addr:housenumber": "28",
+   "addr:postcode": "84453",
+   "addr:city": "Mühldorf a. Inn",
+   "phone": "+49 8631 697180",
+   "website": "https://muehldorf.dlrg.de/soziale-dienste/ambulante-pflege/",
+   "email": "info@muehldorf.dlrg.de"
+  },
+  "location": {
+   "lat": 48.2361255,
+   "lon": 12.5428833
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "8": {
+    "id": "relation/941004",
+    "name": "Mühldorf a. Inn"
+   }
+  }
+ },
+ {
+  "id": "extra/mobile-care-ambulante-alten-und-krankenpflege-clau-waldkraiburg",
+  "cat": "pflege",
+  "quelle": "https://mobilecare.services/impressum (2026-11-13)",
+  "tags": {
+   "name": "Mobile Care – Ambulante Alten- und Krankenpflege (Claudia Maier-Schöne)",
+   "addr:street": "Adlergebirgsstraße",
+   "addr:housenumber": "3a",
+   "addr:postcode": "84478",
+   "addr:city": "Waldkraiburg",
+   "phone": "+49 8638 8868666",
+   "website": "https://mobilecare.services/",
+   "email": "mobilecare@gmx.de"
+  },
+  "location": {
+   "lat": 48.2091777,
+   "lon": 12.4032019
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "8": {
+    "id": "relation/941067",
+    "name": "Waldkraiburg"
+   }
+  }
+ },
+ {
+  "id": "extra/malteser-hilfsdienst-muehldorf-einkaufshilfen-allt-muehldorf-a-i",
+  "cat": "pflege",
+  "quelle": "https://www.malteser.de/standorte/muehldorf.html (2026-11-13)",
+  "tags": {
+   "name": "Malteser Hilfsdienst Mühldorf – Einkaufshilfen / Alltagsbegleitung",
+   "addr:street": "Am Industriepark",
+   "addr:housenumber": "25",
+   "addr:postcode": "84453",
+   "addr:city": "Mühldorf a. Inn",
+   "phone": "+49 8631 1848800",
+   "website": "https://www.malteser.de/standorte/muehldorf/dienstleistungen.html",
+   "email": "malteser.muehldorf@malteser.org"
+  },
+  "location": {
+   "lat": 48.2585883,
+   "lon": 12.5378764
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "8": {
+    "id": "relation/941004",
+    "name": "Mühldorf a. Inn"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/malteser-hilfsdienst-muehldorf-einkaufshilfen-allt-muehldorf-a-i",
+  "cat": "fahrt",
+  "quelle": "https://www.malteser.de/standorte/muehldorf.html (2026-11-13)",
+  "tags": {
+   "name": "Malteser Hilfsdienst Mühldorf – Einkaufshilfen / Alltagsbegleitung",
+   "addr:street": "Am Industriepark",
+   "addr:housenumber": "25",
+   "addr:postcode": "84453",
+   "addr:city": "Mühldorf a. Inn",
+   "phone": "+49 8631 1848800",
+   "website": "https://www.malteser.de/standorte/muehldorf/dienstleistungen.html",
+   "email": "malteser.muehldorf@malteser.org"
+  },
+  "location": {
+   "lat": 48.2585883,
+   "lon": 12.5378764
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "8": {
+    "id": "relation/941004",
+    "name": "Mühldorf a. Inn"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/stiftung-ecksberg-flexible-hilfe-im-alltag-familie-muehldorf-a-i",
+  "cat": "pflege",
+  "quelle": "https://www.ecksberg.de/beratung-begegnung/familienentlastender-dienst/ (2026-11-13)",
+  "tags": {
+   "name": "Stiftung Ecksberg – Flexible Hilfe im Alltag / Familienentlastender Dienst",
+   "addr:street": "Ebinger Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "84453",
+   "addr:city": "Mühldorf a. Inn",
+   "phone": "+49 8631 9847425",
+   "website": "https://www.ecksberg.de/beratung-begegnung/familienentlastender-dienst/"
+  },
+  "location": {
+   "lat": 48.2452299,
+   "lon": 12.4786611
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "8": {
+    "id": "relation/941004",
+    "name": "Mühldorf a. Inn"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/somitas-kranken-und-altenpflege-ambulanter-pfleged-waldkraiburg",
+  "cat": "pflege",
+  "quelle": "https://www.somitas.de/kontakt.html (2026-11-13)",
+  "tags": {
+   "name": "Somitas Kranken- und Altenpflege – Ambulanter Pflegedienst Waldkraiburg",
+   "addr:street": "Berliner Platz",
+   "addr:housenumber": "1",
+   "addr:postcode": "84478",
+   "addr:city": "Waldkraiburg",
+   "phone": "+49 8638 955663",
+   "website": "https://www.somitas.de/",
+   "email": "info@somitas.de"
+  },
+  "location": {
+   "lat": 48.2084819,
+   "lon": 12.3999826
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "8": {
+    "id": "relation/941067",
+    "name": "Waldkraiburg"
+   }
+  }
+ },
+ {
+  "id": "extra/somitas-kranken-und-altenpflege-ambulanter-pfleged-neumarkt-sank",
+  "cat": "pflege",
+  "quelle": "https://www.somitas.de/kontakt.html (2026-11-13)",
+  "tags": {
+   "name": "Somitas Kranken- und Altenpflege – Ambulanter Pflegedienst Neumarkt-St. Veit",
+   "addr:street": "Bahnhofstraße",
+   "addr:housenumber": "9",
+   "addr:postcode": "84494",
+   "addr:city": "Neumarkt-Sankt Veit",
+   "phone": "+49 8639 985596",
+   "website": "https://www.somitas.de/",
+   "email": "info@somitas.de"
+  },
+  "location": {
+   "lat": 48.361937,
+   "lon": 12.5067952
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "7": {
+    "id": "relation/2981693",
+    "name": "Neumarkt-Sankt Veit (VGem)"
+   },
+   "8": {
+    "id": "relation/944899",
+    "name": "Neumarkt-Sankt Veit"
+   }
+  }
+ },
+ {
+  "id": "extra/brk-kreisverband-muehldorf-haushaltsnahe-dienstlei-muehldorf-a-i",
+  "cat": "pflege",
+  "quelle": "https://www.kvmuehldorf.brk.de/footer-menue-deutsch/service/impressum.html (2026-11-13)",
+  "tags": {
+   "name": "BRK-Kreisverband Mühldorf – Haushaltsnahe Dienstleistungen",
+   "addr:street": "Ahamer Straße",
+   "addr:housenumber": "11",
+   "addr:postcode": "84453",
+   "addr:city": "Mühldorf a. Inn",
+   "phone": "+49 8631 365513",
+   "website": "https://www.kvmuehldorf.brk.de/angebote/soziale-dienste/hauswirtschaftliche-hilfen.html"
+  },
+  "location": {
+   "lat": 48.2441264,
+   "lon": 12.5310991
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "8": {
+    "id": "relation/941004",
+    "name": "Mühldorf a. Inn"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-kreisverband-muehldorf-haushaltsnahe-dienstlei-muehldorf-a-i",
+  "cat": "fahrt",
+  "quelle": "https://www.kvmuehldorf.brk.de/footer-menue-deutsch/service/impressum.html (2026-11-13)",
+  "tags": {
+   "name": "BRK-Kreisverband Mühldorf – Haushaltsnahe Dienstleistungen",
+   "addr:street": "Ahamer Straße",
+   "addr:housenumber": "11",
+   "addr:postcode": "84453",
+   "addr:city": "Mühldorf a. Inn",
+   "phone": "+49 8631 365513",
+   "website": "https://www.kvmuehldorf.brk.de/angebote/soziale-dienste/hauswirtschaftliche-hilfen.html"
+  },
+  "location": {
+   "lat": 48.2441264,
+   "lon": 12.5310991
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "8": {
+    "id": "relation/941004",
+    "name": "Mühldorf a. Inn"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/mobiler-familienservice-mofa-alltagsbegleitung-und-muehldorf-a-i",
+  "cat": "pflege",
+  "quelle": "https://mobiler-familienservice.de/#contact (2026-11-13)",
+  "tags": {
+   "name": "Mobiler Familienservice (MOFA) – Alltagsbegleitung und haushaltsnahe Dienstleistungen",
+   "addr:street": "Huterergasse",
+   "addr:housenumber": "4",
+   "addr:postcode": "84453",
+   "addr:city": "Mühldorf a. Inn",
+   "phone": "+49 8631 166371",
+   "website": "https://mobiler-familienservice.de/",
+   "email": "info@mobiler-familienservice.de"
+  },
+  "location": {
+   "lat": 48.2427752,
+   "lon": 12.5237346
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "8": {
+    "id": "relation/941004",
+    "name": "Mühldorf a. Inn"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/mobiler-familienservice-mofa-alltagsbegleitung-und-muehldorf-a-i",
+  "cat": "fahrt",
+  "quelle": "https://mobiler-familienservice.de/#contact (2026-11-13)",
+  "tags": {
+   "name": "Mobiler Familienservice (MOFA) – Alltagsbegleitung und haushaltsnahe Dienstleistungen",
+   "addr:street": "Huterergasse",
+   "addr:housenumber": "4",
+   "addr:postcode": "84453",
+   "addr:city": "Mühldorf a. Inn",
+   "phone": "+49 8631 166371",
+   "website": "https://mobiler-familienservice.de/",
+   "email": "info@mobiler-familienservice.de"
+  },
+  "location": {
+   "lat": 48.2427752,
+   "lon": 12.5237346
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2168232",
+    "name": "Landkreis Mühldorf am Inn"
+   },
+   "8": {
+    "id": "relation/941004",
+    "name": "Mühldorf a. Inn"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/apd-bader-hoiss-gmbh-co-kg-traunstein",
+  "cat": "pflege",
+  "quelle": "https://www.bader-hoiss.de/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "APD Bader & Hoiss GmbH & Co. KG",
+   "addr:street": "Schmidhamer Straße",
+   "addr:housenumber": "20",
+   "addr:postcode": "83278",
+   "addr:city": "Traunstein",
+   "phone": "+49 861 1666210",
+   "website": "https://www.bader-hoiss.de",
+   "email": "info@bader-hoiss.de"
+  },
+  "location": {
+   "lat": 47.883667,
+   "lon": 12.600155
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941745",
+    "name": "Traunstein"
+   }
+  }
+ },
+ {
+  "id": "extra/pur-vital-mobiler-pflegedienst-trostberg-trostberg",
+  "cat": "pflege",
+  "quelle": "https://www.pur-vital.de/chiemgau.html (2026-11-13)",
+  "tags": {
+   "name": "PUR VITAL Mobiler Pflegedienst Trostberg",
+   "addr:street": "Am Waltershamer Feld",
+   "addr:housenumber": "6",
+   "addr:postcode": "83308",
+   "addr:city": "Trostberg",
+   "phone": "+49 8621 8067270",
+   "website": "https://www.pur-vital.de/chiemgau.html",
+   "email": "mptrostberg@pur-vital.de"
+  },
+  "location": {
+   "lat": 48.028643,
+   "lon": 12.528655
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941651",
+    "name": "Trostberg"
+   }
+  }
+ },
+ {
+  "id": "extra/diakoniestation-traunstein-diakonie-service-pflege-traunstein",
+  "cat": "pflege",
+  "quelle": "https://www.diakonie-traunstein.de/diakoniestation-traunstein/ (2026-11-13)",
+  "tags": {
+   "name": "Diakoniestation Traunstein (Diakonie Service & Pflege gGmbH)",
+   "addr:street": "Crailsheimstraße",
+   "addr:housenumber": "3a",
+   "addr:postcode": "83278",
+   "addr:city": "Traunstein",
+   "phone": "+49 861 8005",
+   "website": "https://www.diakonie-traunstein.de/diakoniestation-traunstein/",
+   "email": "dst@diakonie-traunstein.de"
+  },
+  "location": {
+   "lat": 47.868171,
+   "lon": 12.642318
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941745",
+    "name": "Traunstein"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/caritas-ambulanter-pflegedienst-traunstein-sozials-traunstein",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-nah-am-naechsten.de/ambulanter-pflegedienst-traunstein (2026-11-13)",
+  "tags": {
+   "name": "Caritas Ambulanter Pflegedienst Traunstein (Sozialstation)",
+   "addr:street": "Herzog-Wilhelm-Straße",
+   "addr:housenumber": "20",
+   "addr:postcode": "83278",
+   "addr:city": "Traunstein",
+   "phone": "+49 861 98877310",
+   "website": "https://www.caritas-nah-am-naechsten.de/ambulanter-pflegedienst-traunstein",
+   "email": "ambulante-pflege-traunstein@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 47.873923,
+   "lon": 12.63478
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941745",
+    "name": "Traunstein"
+   }
+  }
+ },
+ {
+  "id": "extra/awo-ambulanter-dienst-traunreut-traunreut",
+  "cat": "pflege",
+  "quelle": "https://www.awo-obb.de/senioren/einrichtung/awo-ambulanter-dienst-traunreut (2026-11-13)",
+  "tags": {
+   "name": "AWO Ambulanter Dienst Traunreut",
+   "addr:street": "Dresdner Straße",
+   "addr:housenumber": "10",
+   "addr:postcode": "83301",
+   "addr:city": "Traunreut",
+   "phone": "+49 8669 858829",
+   "website": "https://www.awo-obb.de/senioren/einrichtung/awo-ambulanter-dienst-traunreut",
+   "email": "info@sz-trn.awo-obb.de"
+  },
+  "location": {
+   "lat": 47.965114,
+   "lon": 12.605907
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941741",
+    "name": "Traunreut"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/malteser-hilfsdienst-traunstein-mobile-soziale-die-traunstein",
+  "cat": "pflege",
+  "quelle": "https://www.malteser.de/standorte/traunstein/dienstleistungen.html (2026-11-13)",
+  "tags": {
+   "name": "Malteser Hilfsdienst Traunstein – Mobile Soziale Dienste (Alltagsbegleitung)",
+   "addr:street": "Axdorfer Straße",
+   "addr:housenumber": "3a",
+   "addr:postcode": "83278",
+   "addr:city": "Traunstein",
+   "phone": "+49 861 23083870",
+   "website": "https://www.malteser.de/standorte/traunstein/dienstleistungen.html",
+   "email": "malteser.traunstein@malteser.org"
+  },
+  "location": {
+   "lat": 47.850715,
+   "lon": 12.617283
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941745",
+    "name": "Traunstein"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/malteser-hilfsdienst-traunstein-mobile-soziale-die-traunstein",
+  "cat": "fahrt",
+  "quelle": "https://www.malteser.de/standorte/traunstein/dienstleistungen.html (2026-11-13)",
+  "tags": {
+   "name": "Malteser Hilfsdienst Traunstein – Mobile Soziale Dienste (Alltagsbegleitung)",
+   "addr:street": "Axdorfer Straße",
+   "addr:housenumber": "3a",
+   "addr:postcode": "83278",
+   "addr:city": "Traunstein",
+   "phone": "+49 861 23083870",
+   "website": "https://www.malteser.de/standorte/traunstein/dienstleistungen.html",
+   "email": "malteser.traunstein@malteser.org"
+  },
+  "location": {
+   "lat": 47.850715,
+   "lon": 12.617283
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941745",
+    "name": "Traunstein"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-kreisverband-traunstein-besuchsdienst-entlastu-traunstein",
+  "cat": "pflege",
+  "quelle": "https://www.brk-traunstein.de/footer-menue-deutsch/service/impressum.html (2026-11-13)",
+  "tags": {
+   "name": "BRK Kreisverband Traunstein – Besuchsdienst / Entlastung",
+   "addr:street": "Gewerbepark Kaserne",
+   "addr:housenumber": "13",
+   "addr:postcode": "83278",
+   "addr:city": "Traunstein",
+   "phone": "+49 861 9897342",
+   "website": "https://www.brk-traunstein.de/angebote/alltagshilfen/besuchsdienst.html"
+  },
+  "location": {
+   "lat": 47.879781,
+   "lon": 12.633527
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941745",
+    "name": "Traunstein"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegedienst-aigner-nussdorf",
+  "cat": "pflege",
+  "quelle": "https://www.aigner-pflegedienst.de/kontakt/ (2026-11-13)",
+  "tags": {
+   "name": "Pflegedienst Aigner",
+   "addr:street": "Kreuzbergstraße",
+   "addr:housenumber": "3",
+   "addr:postcode": "83365",
+   "addr:city": "Nußdorf",
+   "phone": "+49 8669 909750",
+   "website": "https://www.aigner-pflegedienst.de/"
+  },
+  "location": {
+   "lat": 47.913019,
+   "lon": 12.563402
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941743",
+    "name": "Nußdorf"
+   }
+  }
+ },
+ {
+  "id": "extra/gluecksmomente-ambulante-pflege-tagespflege-traunreut",
+  "cat": "pflege",
+  "quelle": "https://gluecksmomente-pflege.de/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "Glücksmomente – Ambulante Pflege & Tagespflege",
+   "addr:street": "Eichendorffstraße",
+   "addr:housenumber": "14",
+   "addr:postcode": "83301",
+   "addr:city": "Traunreut",
+   "phone": "+49 8667 8797920",
+   "website": "https://gluecksmomente-pflege.de/",
+   "email": "info@gluecksmomente-pflege.de"
+  },
+  "location": {
+   "lat": 47.963042,
+   "lon": 12.591219
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941741",
+    "name": "Traunreut"
+   }
+  }
+ },
+ {
+  "id": "extra/betreuung-persoenlich-service-gmbh-co-kg-uebersee",
+  "cat": "pflege",
+  "quelle": "https://betreuung-persoenlich.de/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "Betreuung persönlich Service GmbH & Co. KG",
+   "addr:street": "Greimelstraße",
+   "addr:housenumber": "28c",
+   "addr:postcode": "83236",
+   "addr:city": "Übersee",
+   "phone": "+49 8642 2440343",
+   "website": "https://betreuung-persoenlich.de/",
+   "email": "info@betreuung-persoenlich.de"
+  },
+  "location": {
+   "lat": 47.837713,
+   "lon": 12.484703
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941735",
+    "name": "Übersee"
+   }
+  }
+ },
+ {
+  "id": "extra/pflege-und-sozialdienste-hans-muench-gmbh-grassau",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-muench.de/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "Pflege- und Sozialdienste Hans Münch GmbH",
+   "addr:street": "Eichelreuth",
+   "addr:housenumber": "27",
+   "addr:postcode": "83224",
+   "addr:city": "Grassau",
+   "phone": "+49 8641 1300",
+   "website": "https://pflegedienst-muench.de/",
+   "email": "info@pflegedienst-muench.de"
+  },
+  "location": {
+   "lat": 47.779636,
+   "lon": 12.471977
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941728",
+    "name": "Grassau"
+   }
+  }
+ },
+ {
+  "id": "extra/la-vita-ausserklinische-intensivpflege-gmbh-traunstein",
+  "cat": "pflege",
+  "quelle": "https://www.lavita-intensivpflege.de/ (2026-11-13)",
+  "tags": {
+   "name": "La Vita außerklinische Intensivpflege GmbH",
+   "addr:street": "Kreuzstraße",
+   "addr:housenumber": "6b",
+   "addr:postcode": "83278",
+   "addr:city": "Traunstein",
+   "phone": "+49 861 2092240",
+   "website": "https://www.lavita-intensivpflege.de/",
+   "email": "info@lavita-intensivpflege.de"
+  },
+  "location": {
+   "lat": 47.869269,
+   "lon": 12.622271
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941745",
+    "name": "Traunstein"
+   }
+  }
+ },
+ {
+  "id": "extra/senvital-pflege-dahoam-ambulanter-pflegedienst-ruh-ruhpolding",
+  "cat": "pflege",
+  "quelle": "https://ruhpolding.senvital.de/ambulanter-dienst/ (2026-11-13)",
+  "tags": {
+   "name": "SenVital Pflege dahoam – Ambulanter Pflegedienst Ruhpolding",
+   "addr:street": "Rathausplatz",
+   "addr:housenumber": "7",
+   "addr:postcode": "83324",
+   "addr:city": "Ruhpolding",
+   "phone": "+49 8663 41680",
+   "website": "https://ruhpolding.senvital.de/ambulanter-dienst/",
+   "email": "info-ruhpolding@senvital.de"
+  },
+  "location": {
+   "lat": 47.761594,
+   "lon": 12.644797
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941688",
+    "name": "Ruhpolding"
+   }
+  }
+ },
+ {
+  "id": "extra/mrs-ambulant-fridolfing-mayer-reif-scheck-ambulant-fridolfing",
+  "cat": "pflege",
+  "quelle": "https://mrs-ambulant.de/kontakt-neu/ (2026-11-13)",
+  "tags": {
+   "name": "mrs ambulant Fridolfing (Mayer – Reif – Scheck Ambulante Pflege & Betreuung GmbH)",
+   "addr:street": "Strohhof",
+   "addr:housenumber": "18",
+   "addr:postcode": "83413",
+   "addr:city": "Fridolfing",
+   "phone": "+49 8684 984992",
+   "website": "https://mrs-ambulant.de/",
+   "email": "fridolfing@mrs-ambulant.de"
+  },
+  "location": {
+   "lat": 48.004446,
+   "lon": 12.818263
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941659",
+    "name": "Fridolfing"
+   }
+  }
+ },
+ {
+  "id": "extra/dertreiberhilft-alltagsunterstuetzung-fuer-seniore-traunstein",
+  "cat": "pflege",
+  "quelle": "https://dertreiberhilft.de/ (2026-11-13)",
+  "tags": {
+   "name": "DerTreiberHilft – Alltagsunterstützung für Senioren (Zentrale Traunstein)",
+   "addr:street": "Siegsdorfer Straße",
+   "addr:housenumber": "6a",
+   "addr:postcode": "83278",
+   "addr:city": "Traunstein",
+   "phone": "+49 8662 6675505",
+   "website": "https://dertreiberhilft.de/",
+   "email": "info@dertreiberhilft.de"
+  },
+  "location": {
+   "lat": 47.863683,
+   "lon": 12.646163
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941745",
+    "name": "Traunstein"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/incordes-ambulante-intensivpflege-ug-tacherting",
+  "cat": "pflege",
+  "quelle": "https://www.incordes.de/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "InCordes – Ambulante Intensivpflege UG",
+   "addr:street": "Tinninger Straße",
+   "addr:housenumber": "27",
+   "addr:postcode": "83342",
+   "addr:city": "Tacherting",
+   "phone": "+49 8621 9040380",
+   "website": "https://www.incordes.de/",
+   "email": "info@incordes.de"
+  },
+  "location": {
+   "lat": 48.052801,
+   "lon": 12.562404
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941603",
+    "name": "Tacherting"
+   }
+  }
+ },
+ {
+  "id": "extra/haeusliche-alten-und-krankenpflege-eva-muehlhammer-marquartstein",
+  "cat": "pflege",
+  "quelle": "https://www.krankenpflege-muehlhammer.de/kontakt.html (2026-11-13)",
+  "tags": {
+   "name": "Häusliche Alten- und Krankenpflege Eva Mühlhammer GmbH",
+   "addr:street": "Staudacher Straße",
+   "addr:housenumber": "28",
+   "addr:postcode": "83250",
+   "addr:city": "Marquartstein",
+   "phone": "+49 8641 1283",
+   "website": "https://www.krankenpflege-muehlhammer.de/",
+   "email": "krankenpflege@muehlhammer.de"
+  },
+  "location": {
+   "lat": 47.761158,
+   "lon": 12.463665
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "7": {
+    "id": "relation/2985480",
+    "name": "Marquartstein (VGem)"
+   },
+   "8": {
+    "id": "relation/941729",
+    "name": "Marquartstein"
+   }
+  }
+ },
+ {
+  "id": "extra/helferkreis-nachbarschaftshilfe-der-agenda-21-gras-grassau",
+  "cat": "pflege",
+  "quelle": "https://www.grassau.de/fileadmin/grassau/Buergerservice/zPDF/Rathaus/Agenda21/Rueckblick_aus_dem_Vorjahr_2025_fuer_Fahr-_und_Besuchsdienste.pdf (2026-11-13)",
+  "tags": {
+   "name": "Helferkreis Nachbarschaftshilfe der Agenda 21 Grassau",
+   "addr:street": "Marktstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "83224",
+   "addr:city": "Grassau",
+   "phone": "+49 8641 400834",
+   "website": "https://www.grassau.de/agenda21"
+  },
+  "location": {
+   "lat": 47.779516,
+   "lon": 12.451771
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941728",
+    "name": "Grassau"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/helferkreis-nachbarschaftshilfe-der-agenda-21-gras-grassau",
+  "cat": "fahrt",
+  "quelle": "https://www.grassau.de/fileadmin/grassau/Buergerservice/zPDF/Rathaus/Agenda21/Rueckblick_aus_dem_Vorjahr_2025_fuer_Fahr-_und_Besuchsdienste.pdf (2026-11-13)",
+  "tags": {
+   "name": "Helferkreis Nachbarschaftshilfe der Agenda 21 Grassau",
+   "addr:street": "Marktstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "83224",
+   "addr:city": "Grassau",
+   "phone": "+49 8641 400834",
+   "website": "https://www.grassau.de/agenda21"
+  },
+  "location": {
+   "lat": 47.779516,
+   "lon": 12.451771
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941728",
+    "name": "Grassau"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/alltagshelden-365-diakonie-365-e-v-alltagsbegleitu-trostberg",
+  "cat": "pflege",
+  "quelle": "https://alltagshelden-365.de/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "Alltagshelden 365 (Diakonie 365 e.V.) – Alltagsbegleitung",
+   "addr:street": "Schulstraße",
+   "addr:housenumber": "2",
+   "addr:postcode": "83308",
+   "addr:city": "Trostberg",
+   "phone": "+49 8621 9009790",
+   "website": "https://alltagshelden-365.de/",
+   "email": "kontakt@alltagshelden-365.de"
+  },
+  "location": {
+   "lat": 48.027574,
+   "lon": 12.554006
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941651",
+    "name": "Trostberg"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/hof-seraphim-e-v-alltagsbegleitung-und-haushaltsna-chieming",
+  "cat": "pflege",
+  "quelle": "https://www.hof-seraphim.de/ (2026-11-13)",
+  "tags": {
+   "name": "Hof Seraphim e.V. – Alltagsbegleitung und haushaltsnahe Dienstleistungen",
+   "addr:street": "Seestraße",
+   "addr:housenumber": "12",
+   "addr:postcode": "83339",
+   "addr:city": "Chieming",
+   "phone": "+49 152 05142800",
+   "website": "https://www.hof-seraphim.de/",
+   "email": "maria.casati77@gmail.com"
+  },
+  "location": {
+   "lat": 47.921493,
+   "lon": 12.494696
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941738",
+    "name": "Chieming"
+   }
+  }
+ },
+ {
+  "id": "extra/seniorengarten-auszeit-alltagsbegleitung-evang-lut-traunreut",
+  "cat": "pflege",
+  "quelle": "https://www.gemeindeverein-traunreut.de/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "Seniorengarten Auszeit – Alltagsbegleitung (Evang.-Luth. Gemeindeverein Traunreut e.V.)",
+   "addr:street": "Traunwalchner Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "83301",
+   "addr:city": "Traunreut",
+   "phone": "+49 8669 2277",
+   "website": "https://www.gemeindeverein-traunreut.de/neu-alltagsbegleitung-fuer-menschen-mit-koerperlichen-psychischen-oder-kognitiven-beeintraechtigungen/",
+   "email": "buero@gemeindeverein-traunreut.de"
+  },
+  "location": {
+   "lat": 47.962327,
+   "lon": 12.592416
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941741",
+    "name": "Traunreut"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/krankenpflegeverein-und-helferkreis-uebersee-uebersee",
+  "cat": "pflege",
+  "quelle": "https://krankenpflegevereinuebersee.wordpress.com/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "Krankenpflegeverein und Helferkreis Übersee",
+   "addr:street": "Kirchweg",
+   "addr:housenumber": "4",
+   "addr:postcode": "83236",
+   "addr:city": "Übersee",
+   "phone": "+49 8642 5972858",
+   "website": "https://krankenpflegevereinuebersee.wordpress.com/",
+   "email": "krankenpflegeverein-uebersee@t-online.de"
+  },
+  "location": {
+   "lat": 47.81851,
+   "lon": 12.480929
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941735",
+    "name": "Übersee"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/krankenpflegeverein-und-helferkreis-uebersee-uebersee",
+  "cat": "fahrt",
+  "quelle": "https://krankenpflegevereinuebersee.wordpress.com/impressum/ (2026-11-13)",
+  "tags": {
+   "name": "Krankenpflegeverein und Helferkreis Übersee",
+   "addr:street": "Kirchweg",
+   "addr:housenumber": "4",
+   "addr:postcode": "83236",
+   "addr:city": "Übersee",
+   "phone": "+49 8642 5972858",
+   "website": "https://krankenpflegevereinuebersee.wordpress.com/",
+   "email": "krankenpflegeverein-uebersee@t-online.de"
+  },
+  "location": {
+   "lat": 47.81851,
+   "lon": 12.480929
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/2156363",
+    "name": "Landkreis Traunstein"
+   },
+   "8": {
+    "id": "relation/941735",
+    "name": "Übersee"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
  }
 ]
