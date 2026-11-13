@@ -12,12 +12,12 @@ const overrides = await readJson('data/overrides.json', {});
 // Verwaltungsgebiete aus vorhandenen OSM-Daten: nächster Eintrag in derselben Gemeinde (Namen wie „Neustadt“ gibt es mehrfach)
 const places = [];
 for (const f of ['apotheke', 'arzt', 'physio', 'pflege', 'heim']) {
-  for (const s of (await readJson(`data/osm/${f}.json`)).shops) if (s.admin?.['8'] && s.location) places.push({ ...s.location, admin: s.admin });
+  for (const s of (await readJson(`data/osm/${f}.json`)).shops) if ((s.admin?.['8'] || s.admin?.['6']) && s.location) places.push({ ...s.location, admin: s.admin });
 }
 const adminFor = (r) => {
   let best = null, bd = Infinity;
   for (const p of places) {
-    if (p.admin['8'].name !== r.city) continue;
+    if ((p.admin['8'] || p.admin['6']).name !== r.city) continue; // kreisfreie Stadt: nur Ebene 6
     const d = dist(p, r);
     if (d < bd) { bd = d; best = p.admin; }
   }
