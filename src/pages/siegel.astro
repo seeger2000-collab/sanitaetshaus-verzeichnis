@@ -1,0 +1,111 @@
+---
+import Base from '../layouts/Base.astro';
+import { u } from '../lib/url';
+// Siegel für gelistete Betriebe. Wortwahl bewusst nur „Gelistet auf“ (§ 5 UWG):
+// kein „geprüft“, „empfohlen“ oder Häkchen, weil wir die Betriebe nicht prüfen.
+const abs = (p: string) => new URL(u(p), Astro.site).href;
+const home = abs('/');
+const variants = [
+  { key: 'banner', label: 'Banner', w: 256, h: 64 },
+  { key: 'kompakt', label: 'Kompakt', w: 252, h: 32 },
+  { key: 'rund', label: 'Rund', w: 120, h: 120 },
+];
+const ALT = 'Gelistet auf Sanitätshaus-Suche';
+const snippet = (href: string, v = variants[0]) =>
+  `<a href="${href}" target="_blank" rel="noopener"><img src="${abs(`/siegel/siegel-${v.key}.svg`)}" alt="${ALT}" width="${v.w}" height="${v.h}" style="border:0;max-width:100%;height:auto"></a>`;
+---
+<Base title="Siegel für Ihre Website: Gelistet auf Sanitätshaus-Suche" description="Kostenloses Siegel für Sanitätshäuser, Physiotherapie, Pflegedienste und weitere Betriebe, die auf Sanitätshaus-Suche gelistet sind. Code kopieren und auf der eigenen Website einfügen." crumbs={[{ href: '/fuer-sanitaetshaeuser/', label: 'Für Sanitätshäuser' }, { href: '/siegel/', label: 'Siegel' }]}>
+  <h1>Siegel für Ihre Website</h1>
+  <p class="lead">Ihr Betrieb steht bei uns im Verzeichnis? Dann zeigen Sie das auch auf Ihrer eigenen Website. Kunden finden über das Siegel direkt zu Ihrem Eintrag mit Leistungen, Öffnungszeiten und Anfahrt. Das Siegel ist kostenlos.</p>
+
+  <section class="card">
+    <h2>1. Ihren Eintrag angeben</h2>
+    <p>Öffnen Sie Ihren Eintrag bei uns und kopieren Sie die Adresse aus der Adresszeile des Browsers. Über den Link „Siegel für Ihre Website“ auf Ihrer Eintragsseite ist dieses Feld schon ausgefüllt. Ohne Angabe führt das Siegel auf unsere Startseite.</p>
+    <label for="sg-url">Adresse Ihres Eintrags</label>
+    <input id="sg-url" type="url" inputmode="url" placeholder={abs('/sanitaetshaus/name-ort/')} autocomplete="off" />
+    <p id="sg-warn" class="warn" hidden>Diese Adresse gehört nicht zu sanitaetshaus-suche.de. Das Siegel führt deshalb auf unsere Startseite.</p>
+  </section>
+
+  <section class="card">
+    <h2>2. Form wählen</h2>
+    <div class="variants">
+      {variants.map((v, i) => (
+        <label class="variant">
+          <input type="radio" name="sg-v" value={v.key} data-w={v.w} data-h={v.h} checked={i === 0} />
+          <img src={u(`/siegel/siegel-${v.key}.svg`)} alt="" width={v.w} height={v.h} />
+          <span>{v.label}</span>
+        </label>
+      ))}
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>3. Code kopieren und einfügen</h2>
+    <textarea id="sg-code" readonly rows="4">{snippet(home)}</textarea>
+    <p><button type="button" class="btn" id="sg-copy">Code kopieren</button> <span id="sg-ok" class="muted" hidden>Kopiert.</span></p>
+    <p>Fügen Sie den Code dort ein, wo das Siegel erscheinen soll, zum Beispiel in der Fußzeile oder auf der Kontaktseite. In den meisten Website-Baukästen gibt es dafür ein Element für HTML-Code:</p>
+    <ul>
+      <li><strong>WordPress:</strong> Seite bearbeiten, auf <em>+</em> klicken, den Block <em>Individuelles HTML</em> wählen, Code einfügen, <em>Aktualisieren</em>.</li>
+      <li><strong>Wix, Jimdo, IONOS und andere Baukästen:</strong> ein Element namens <em>HTML</em>, <em>Code einbetten</em> oder <em>Widget/HTML</em> hinzufügen und den Code hineinkopieren.</li>
+      <li><strong>Webagentur:</strong> Schicken Sie Ihrer Agentur einfach diesen Code.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Nur das Bild</h2>
+    <p>Für Druck, Newsletter oder Baukästen ohne HTML-Element. Verlinken Sie das Bild bitte auf Ihren Eintrag.</p>
+    <ul class="files">
+      {variants.map((v) => (
+        <li>{v.label}: <a href={u(`/siegel/siegel-${v.key}.svg`)} download>SVG</a> · <a href={u(`/siegel/siegel-${v.key}.png`)} download>PNG</a> · <a href={u(`/siegel/siegel-${v.key}@2x.png`)} download>PNG doppelte Größe</a></li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Was das Siegel bedeutet</h2>
+    <p>Das Siegel sagt nur, dass Ihr Betrieb auf sanitaetshaus-suche.de gelistet ist. Es ist keine Prüfung, Bewertung, Zertifizierung oder Empfehlung. Bitte ändern Sie den Text des Siegels nicht und zeigen Sie es nur, solange Ihr Betrieb bei uns gelistet ist. Fehlt Ihr Betrieb oder stimmt etwas nicht, <a href={u('/eintrag/')}>melden Sie es uns</a>.</p>
+  </section>
+
+  <script is:inline define:vars={{ home, origin: new URL(Astro.site!).origin, base: u('/'), alt: ALT }}>
+    const $ = (id) => document.getElementById(id);
+    const url = $('sg-url'), code = $('sg-code'), warn = $('sg-warn');
+    const e = new URLSearchParams(location.search).get('e');
+    if (e && /^[a-z0-9-]+$/.test(e)) url.value = `${origin}${base}sanitaetshaus/${e}/`;
+    function target() {
+      const v = url.value.trim();
+      if (!v) { warn.hidden = true; return home; }
+      try {
+        const p = new URL(v.includes('://') ? v : 'https://' + v);
+        const ok = /^(www\.)?sanitaetshaus-suche\.de$/.test(p.hostname);
+        warn.hidden = ok;
+        return ok ? `${origin}${p.pathname}` : home;
+      } catch { warn.hidden = false; return home; }
+    }
+    function render() {
+      const r = document.querySelector('input[name="sg-v"]:checked');
+      const esc = (s) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+      code.value = `<a href="${esc(target())}" target="_blank" rel="noopener"><img src="${origin}${base}siegel/siegel-${r.value}.svg" alt="${alt}" width="${r.dataset.w}" height="${r.dataset.h}" style="border:0;max-width:100%;height:auto"></a>`;
+      $('sg-ok').hidden = true;
+    }
+    url.addEventListener('input', render);
+    document.querySelectorAll('input[name="sg-v"]').forEach((r) => r.addEventListener('change', render));
+    $('sg-copy').addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(code.value); } catch { code.select(); document.execCommand('copy'); }
+      $('sg-ok').hidden = false;
+    });
+    render();
+  </script>
+</Base>
+<style>
+  .card { margin: 16px 0; } .card h2 { margin-top: 0; }
+  label[for] { display: block; font-weight: 600; margin-bottom: 4px; }
+  input[type=url], textarea { width: 100%; box-sizing: border-box; font: inherit; padding: 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--text); }
+  textarea { font-family: ui-monospace, Consolas, monospace; font-size: 0.85rem; resize: vertical; }
+  .warn { color: var(--gold); background: var(--gold-bg); padding: 8px 10px; border-radius: 8px; }
+  .variants { display: flex; flex-wrap: wrap; gap: 12px; }
+  .variant { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 12px; border: 2px solid var(--line); border-radius: var(--radius); cursor: pointer; flex: 1 1 200px; }
+  .variant:has(input:checked) { border-color: var(--brand); background: var(--accent); }
+  .variant img { max-width: 100%; height: auto; }
+  .variant input { position: absolute; opacity: 0; }
+  .variant:focus-within { outline: 2px solid var(--brand); outline-offset: 2px; }
+</style>

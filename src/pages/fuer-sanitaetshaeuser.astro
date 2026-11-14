@@ -25,8 +25,9 @@ const correction = SITE.correctionFormUrl ? u(SITE.correctionFormUrl) : `${SITE.
   </section>
   <section class="card">
     <h2>Siegel für Ihre Website</h2>
-    <p>Zeigen Sie Ihren Kunden, welche Leistungen Sie anbieten: Binden Sie diesen Link auf Ihrer Website ein. Ersetzen Sie dazu <code>IHR-EINTRAG</code> durch den letzten Teil der Adresse Ihrer Seite bei uns.</p>
-    <pre><code>{`<a href="${new URL(u('/sanitaetshaus/IHR-EINTRAG/'), Astro.site).href}">Unsere Leistungen im Sanitätshaus-Verzeichnis</a>`}</code></pre>
+    <p>Zeigen Sie Ihren Kunden, dass Ihr Betrieb bei uns gelistet ist. Das Siegel führt direkt zu Ihrem Eintrag mit Leistungen und Öffnungszeiten.</p>
+    <p><img src={u('/siegel/siegel-banner.svg')} alt="Gelistet auf Sanitätshaus-Suche" width="256" height="64" /></p>
+    <p><a class="btn" href={u('/siegel/')}>Siegel holen</a></p>
   </section>
   <p><a href={u('/ueber/')}>So entstehen die Daten</a></p>
 </Base>
