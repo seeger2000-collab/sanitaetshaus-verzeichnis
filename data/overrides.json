@@ -119,5 +119,37 @@
   "phone": "+49 8456 98830",
   "website": "https://caritas-sozialstation-koesching.de/",
   "email": "info@caritas-sozialstation-koesching.de"
+ },
+ "node/10969248311": {
+  "_quelle": "https://www.amg-pflegedienst.de (14.11.2026)",
+  "street": "Friedrich-Herschel-Straße 5",
+  "postcode": "81679",
+  "phone": "+49 89 51463830",
+  "email": "buero@amg-pflegedienst.de",
+  "website": "https://www.amg-pflegedienst.de"
+ },
+ "node/4434765149": {
+  "_quelle": "https://pflegedienst-dahoam.de/ (2026-11-14)",
+  "street": "Veldensteinstraße 12",
+  "postcode": "81249",
+  "phone": "+49 89 89997494",
+  "website": "https://pflegedienst-dahoam.de/",
+  "email": "info@pflegedienst-dahoam.de",
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ "node/13275886522": {
+  "_quelle": "https://pbm-pflegedienst.de/impressum/ (2026-11-14)",
+  "street": "Neideckstraße 6",
+  "postcode": "81249",
+  "phone": "+49 89 87129683",
+  "website": "https://pbm-pflegedienst.de/",
+  "email": "info@pbm-pflegedienst.de"
+ },
+ "node/10197614422": {
+  "_ausblenden": "Standort Sankt-Martin-Straße steht nicht mehr auf https://www.vitolus.de/standorte (14.11.2026)"
  }
 }

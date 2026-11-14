@@ -18660,5 +18660,4856 @@
     "name": "Walting"
    }
   }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-astea-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://asteapflege.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst ASTEA GmbH",
+   "addr:street": "Dom-Pedro-Straße",
+   "addr:housenumber": "6",
+   "addr:postcode": "80637",
+   "addr:city": "München",
+   "phone": "+49 89 69327769",
+   "website": "https://asteapflege.de/",
+   "email": "info@asteapflege.de"
+  },
+  "location": {
+   "lat": 48.159805,
+   "lon": 11.545717
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/hauskrankenpflege-bauer-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://bauer-hauskrankenpflege.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Hauskrankenpflege Bauer GmbH",
+   "addr:street": "Auenstraße",
+   "addr:housenumber": "78",
+   "addr:postcode": "80469",
+   "addr:city": "München",
+   "phone": "+49 89 4801712",
+   "website": "https://bauer-hauskrankenpflege.de/",
+   "email": "info@bauer-hauskrankenpflege.de"
+  },
+  "location": {
+   "lat": 48.124238,
+   "lon": 11.567714
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/bavaria-vitalpflegedienst-muenchen",
+  "cat": "pflege",
+  "quelle": "https://bavaria-vitalpflegedienst.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Bavaria Vitalpflegedienst",
+   "addr:street": "Nymphenburger Straße",
+   "addr:housenumber": "46",
+   "addr:postcode": "80335",
+   "addr:city": "München",
+   "phone": "+49 89 20071003",
+   "website": "https://bavaria-vitalpflegedienst.de/",
+   "email": "info@bavaria-vitalpflegedienst.de"
+  },
+  "location": {
+   "lat": 48.149316,
+   "lon": 11.550783
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/ip-pflegedienst-24-muenchen",
+  "cat": "pflege",
+  "quelle": "https://ip-pflegedienst24.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "IP-Pflegedienst 24",
+   "addr:street": "Elsenheimerstraße",
+   "addr:housenumber": "15",
+   "addr:postcode": "80687",
+   "addr:city": "München",
+   "phone": "+49 89 21528694",
+   "website": "https://ip-pflegedienst24.de/",
+   "email": "info@ip-pflegedienst24.de"
+  },
+  "location": {
+   "lat": 48.139626,
+   "lon": 11.519478
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/haeusliche-kinderkrankenpflege-manuela-goetz-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://kinderkrankenpflege-goetz.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Häusliche Kinderkrankenpflege Manuela Götz GmbH",
+   "addr:street": "Hedwigstraße",
+   "addr:housenumber": "3",
+   "addr:postcode": "80636",
+   "addr:city": "München",
+   "phone": "+49 89 325311",
+   "website": "https://kinderkrankenpflege-goetz.de/",
+   "email": "info@kinderkrankenpflege-goetz.de"
+  },
+  "location": {
+   "lat": 48.151923,
+   "lon": 11.539463
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/senioren-betreuungs-service-gmbh-sbs-muenchen",
+  "cat": "pflege",
+  "quelle": "https://pflege-sbs.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Senioren-Betreuungs-Service GmbH (SBS)",
+   "addr:street": "Menzinger Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "80638",
+   "addr:city": "München",
+   "phone": "+49 89 179194644",
+   "website": "https://pflege-sbs.de/",
+   "email": "info@pflege-sbs.de"
+  },
+  "location": {
+   "lat": 48.159189,
+   "lon": 11.510564
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-christine-wolf-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-wolf.com/impressum (2026-11-14)",
+  "tags": {
+   "name": "Pflegedienst Christine Wolf",
+   "addr:street": "Hirschgartenallee",
+   "addr:housenumber": "34",
+   "addr:postcode": "80639",
+   "addr:city": "München",
+   "phone": "+49 89 13038107",
+   "website": "https://www.pflegedienst-wolf.com/",
+   "email": "kontakt@pflegedienst-wolf.com"
+  },
+  "location": {
+   "lat": 48.153787,
+   "lon": 11.507532
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegende-bienen-muenchen",
+  "cat": "pflege",
+  "quelle": "https://pflegendebienen.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Pflegende Bienen",
+   "addr:street": "Fürstenrieder Straße",
+   "addr:housenumber": "137",
+   "addr:postcode": "80686",
+   "addr:city": "München",
+   "phone": "+49 89 54637889",
+   "website": "https://pflegendebienen.de/",
+   "email": "info@pflegendebienen.de"
+  },
+  "location": {
+   "lat": 48.128199,
+   "lon": 11.503074
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegeteam-muenchen-west-muenchen",
+  "cat": "pflege",
+  "quelle": "https://pflegeteam-muenchen-west.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Pflegeteam München West",
+   "addr:street": "Rushaimerstraße",
+   "addr:housenumber": "103",
+   "addr:postcode": "80689",
+   "addr:city": "München",
+   "phone": "+49 89 56827735",
+   "website": "https://pflegeteam-muenchen-west.de/",
+   "email": "info@pflegeteam-muenchen-west.de"
+  },
+  "location": {
+   "lat": 48.129643,
+   "lon": 11.492452
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-respekt-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.respekt-pflegedienst.de/ (2026-11-14)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Respekt GmbH",
+   "addr:street": "Geroltstraße",
+   "addr:housenumber": "41",
+   "addr:postcode": "80339",
+   "addr:city": "München",
+   "phone": "+49 89 72655155",
+   "website": "https://www.respekt-pflegedienst.de/",
+   "email": "info@respekt-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.13144,
+   "lon": 11.538481
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-krankenpflege-garant-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.ambulante-krankenpflege-garant.de/kontakt/ (2026-11-14)",
+  "tags": {
+   "name": "Ambulante Krankenpflege Garant",
+   "addr:street": "Bürkleinstraße",
+   "addr:housenumber": "18",
+   "addr:postcode": "80538",
+   "addr:city": "München",
+   "phone": "+49 89 21568705",
+   "website": "https://www.ambulante-krankenpflege-garant.de/",
+   "email": "infopflege-garant@gmx.de"
+  },
+  "location": {
+   "lat": 48.139122,
+   "lon": 11.586203
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-treu-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.treu-pflegedienst.de/index.php/impressum (2026-11-14)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Treu GmbH",
+   "addr:street": "Landsberger Straße",
+   "addr:housenumber": "360",
+   "addr:postcode": "80687",
+   "addr:city": "München",
+   "phone": "+49 89 58978132",
+   "website": "https://www.treu-pflegedienst.de/"
+  },
+  "location": {
+   "lat": 48.144376,
+   "lon": 11.491899
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-kata-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.kata-pflegedienst.de/impressum.html (2026-11-14)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst KaTa",
+   "addr:street": "Lindwurmstraße",
+   "addr:housenumber": "26",
+   "addr:postcode": "80337",
+   "addr:city": "München",
+   "phone": "+49 89 96168359",
+   "website": "https://www.kata-pflegedienst.de/",
+   "email": "info@kata-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.128896,
+   "lon": 11.556415
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/carepower-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.carepower.team/ (2026-11-14)",
+  "tags": {
+   "name": "CarePower GmbH",
+   "addr:street": "Elisenstraße",
+   "addr:housenumber": "3",
+   "addr:postcode": "80335",
+   "addr:city": "München",
+   "phone": "+49 89 2423500",
+   "website": "https://www.carepower.team/",
+   "email": "carepower@hkw.group"
+  },
+  "location": {
+   "lat": 48.141466,
+   "lon": 11.561779
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/elf-freunde-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.elf-freunde.net/Impressum-1-24.htm (2026-11-14)",
+  "tags": {
+   "name": "Elf Freunde",
+   "addr:street": "Wilhelm-Hale-Straße",
+   "addr:housenumber": "50",
+   "addr:postcode": "80639",
+   "addr:city": "München",
+   "phone": "+49 89 1490268113",
+   "website": "https://www.elf-freunde.net/",
+   "email": "info@elf-freunde.net"
+  },
+  "location": {
+   "lat": 48.149028,
+   "lon": 11.520646
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/pichlmayr-ambulante-pflege-muenchen-nymphenburg-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.pichlmayr.de/kontakt (2026-11-14)",
+  "tags": {
+   "name": "Pichlmayr Ambulante Pflege München-Nymphenburg",
+   "addr:street": "Ginhardtstraße",
+   "addr:housenumber": "4a",
+   "addr:postcode": "80639",
+   "addr:city": "München",
+   "phone": "+49 89 17953942",
+   "website": "https://www.pichlmayr.de/",
+   "email": "ambulant.nymphenburg@pichlmayr.de"
+  },
+  "location": {
+   "lat": 48.147826,
+   "lon": 11.506636
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-himona-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.himona.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Himona",
+   "addr:street": "Wotanstraße",
+   "addr:housenumber": "37",
+   "addr:postcode": "80639",
+   "addr:city": "München",
+   "phone": "+49 89 39294175",
+   "website": "https://www.himona.de/",
+   "email": "info@himona.de"
+  },
+  "location": {
+   "lat": 48.151698,
+   "lon": 11.504141
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-muc24-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://pflege-muc24.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Pflegedienst Muc24 GmbH",
+   "addr:street": "Gollierstraße",
+   "addr:housenumber": "34",
+   "addr:postcode": "80339",
+   "addr:city": "München",
+   "phone": "+49 89 28778850",
+   "website": "https://pflege-muc24.de/",
+   "email": "info@pflege-muc24.de"
+  },
+  "location": {
+   "lat": 48.135816,
+   "lon": 11.541132
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-ena-muenchen",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-ena.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Pflegedienst ENA",
+   "addr:street": "Heinrich-Heine-Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "80686",
+   "addr:city": "München",
+   "phone": "+49 89 54806126",
+   "website": "https://pflegedienst-ena.de/",
+   "email": "anfragen@pflegedienst-ena.de"
+  },
+  "location": {
+   "lat": 48.134197,
+   "lon": 11.51171
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/pflege-zu-hause-christel-henoch-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegezuhause-henoch.de/ (2026-11-14)",
+  "tags": {
+   "name": "Pflege zu Hause – Christel Henoch GmbH",
+   "addr:street": "Gotthardstraße",
+   "addr:housenumber": "138",
+   "addr:postcode": "80689",
+   "addr:city": "München",
+   "phone": "+49 89 58927240",
+   "website": "https://www.pflegezuhause-henoch.de/"
+  },
+  "location": {
+   "lat": 48.136614,
+   "lon": 11.489026
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/unicus-gmbh-ambulanter-pflegedienst-muenchen",
+  "cat": "pflege",
+  "quelle": "http://unicus-pflegedienst.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Unicus GmbH Ambulanter Pflegedienst",
+   "addr:street": "Artilleriestraße",
+   "addr:housenumber": "23",
+   "addr:postcode": "80636",
+   "addr:city": "München",
+   "phone": "+49 89 18008632",
+   "website": "http://unicus-pflegedienst.de/",
+   "email": "kontakt@unicus-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.157759,
+   "lon": 11.538579
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/api-gmbh-ambulanter-pflegedienst-innenstadt-muenchen",
+  "cat": "pflege",
+  "quelle": "https://api-pflegedienst.de/ (2026-11-14)",
+  "tags": {
+   "name": "api GmbH – Ambulanter Pflegedienst Innenstadt",
+   "addr:street": "Müllerstraße",
+   "addr:housenumber": "54",
+   "addr:postcode": "80469",
+   "addr:city": "München",
+   "phone": "+49 89 2609566",
+   "website": "https://www.api-pflegedienst.de/",
+   "email": "info@api-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.132223,
+   "lon": 11.567381
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/renafan-ambulante-pflege-am-isartor-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.renafan.de/ambulante-pflege/muenchen-isartor (2026-11-14)",
+  "tags": {
+   "name": "RENAFAN Ambulante Pflege am Isartor",
+   "addr:street": "Mannhardtstraße",
+   "addr:housenumber": "8",
+   "addr:postcode": "80538",
+   "addr:city": "München",
+   "phone": "+49 89 294826",
+   "website": "https://www.renafan.de/ambulante-pflege/muenchen-isartor",
+   "email": "isartor@renafan.de"
+  },
+  "location": {
+   "lat": 48.135317,
+   "lon": 11.585602
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/caritas-ambulanter-pflegedienst-muenchen-mitte-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-ambulanter-pflegedienst-muenchen-mitte.de/de/kontakt (2026-11-14)",
+  "tags": {
+   "name": "Caritas Ambulanter Pflegedienst München Mitte",
+   "addr:street": "Kreittmayrstraße",
+   "addr:housenumber": "29",
+   "addr:postcode": "80335",
+   "addr:city": "München",
+   "phone": "+49 89 12660060",
+   "website": "https://www.caritas-ambulanter-pflegedienst-muenchen-mitte.de/",
+   "email": "ambulante-pflege-mitte@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 48.151598,
+   "lon": 11.553761
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/die-mitterfelder-ambulanter-pflegedienst-laim-pasi-muenchen",
+  "cat": "pflege",
+  "quelle": "https://die-mitterfelder.de/pflege-betreuung/ambulante-pflegedienste (2026-11-14)",
+  "tags": {
+   "name": "Die Mitterfelder – Ambulanter Pflegedienst Laim/Pasing",
+   "addr:street": "Mitterfeldstraße",
+   "addr:housenumber": "20",
+   "addr:postcode": "80689",
+   "addr:city": "München",
+   "phone": "+49 89 5809111",
+   "website": "https://die-mitterfelder.de/",
+   "email": "kontakt@die-mitterfelder.de"
+  },
+  "location": {
+   "lat": 48.137862,
+   "lon": 11.482755
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/vitalexa-gmbh-ambulanter-pflegedienst-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.vitalexa.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "VitAlexa GmbH Ambulanter Pflegedienst",
+   "addr:street": "Gabelsbergerstraße",
+   "addr:housenumber": "30",
+   "addr:postcode": "80333",
+   "addr:city": "München",
+   "phone": "+49 89 18968534",
+   "website": "https://www.vitalexa.de/",
+   "email": "info@vitalexa.de"
+  },
+  "location": {
+   "lat": 48.148815,
+   "lon": 11.56413
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/lebensart-betreuung-und-pflege-susanne-bauer-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.betreuung-pflege.com/impressum-datenschutz (2026-11-14)",
+  "tags": {
+   "name": "LebensArt Betreuung und Pflege Susanne Bauer",
+   "addr:street": "Lindwurmstraße",
+   "addr:housenumber": "62",
+   "addr:postcode": "80337",
+   "addr:city": "München",
+   "phone": "+49 89 76776566",
+   "website": "https://www.betreuung-pflege.com/",
+   "email": "info@betreuung-pflege.com"
+  },
+  "location": {
+   "lat": 48.126952,
+   "lon": 11.55288
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/shd-muenchen-sozialer-pflege-und-hilfsdienst-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.shd-muenchen.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "SHD – München Sozialer Pflege- und Hilfsdienst",
+   "addr:street": "Häberlstraße",
+   "addr:housenumber": "18",
+   "addr:postcode": "80337",
+   "addr:city": "München",
+   "phone": "+49 89 28979334",
+   "website": "https://www.shd-muenchen.de/",
+   "email": "info@shd-muenchen.de"
+  },
+  "location": {
+   "lat": 48.127572,
+   "lon": 11.558188
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/dahoam-haeusliche-krankenpflege-und-altenbetreuung-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.dahoam-muenchen.de/kontakt (2026-11-14)",
+  "tags": {
+   "name": "DAHOAM Häusliche Krankenpflege und Altenbetreuung e.V.",
+   "addr:street": "Auenstraße",
+   "addr:housenumber": "60",
+   "addr:postcode": "80469",
+   "addr:city": "München",
+   "phone": "+49 89 62500728",
+   "website": "https://www.dahoam-muenchen.de/"
+  },
+  "location": {
+   "lat": 48.125124,
+   "lon": 11.569422
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/vif-vereinigung-integrations-foerderung-e-v-muenchen",
+  "cat": "pflege",
+  "quelle": "http://vif-selbstbestimmt-leben.de/kontakt/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "VIF Vereinigung Integrations-Förderung e.V.",
+   "addr:street": "Klenzestraße",
+   "addr:housenumber": "57c",
+   "addr:postcode": "80469",
+   "addr:city": "München",
+   "phone": "+49 89 30904860",
+   "website": "https://www.vif-selbstbestimmt-leben.de/",
+   "email": "kontakt@vif-selbstbestimmt-leben.de"
+  },
+  "location": {
+   "lat": 48.129128,
+   "lon": 11.573344
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/obermaier-pflege-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.obermaier-pflege.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Obermaier-Pflege GmbH",
+   "addr:street": "Valpichlerstraße",
+   "addr:housenumber": "49",
+   "addr:postcode": "80686",
+   "addr:city": "München",
+   "phone": "+49 89 20328268",
+   "website": "https://www.obermaier-pflege.de/",
+   "email": "info@obermaier-pflege.de"
+  },
+  "location": {
+   "lat": 48.137323,
+   "lon": 11.503657
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-asja-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienstasja.de/impressum.html (2026-11-14)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Asja",
+   "addr:street": "Aldegreverstraße",
+   "addr:housenumber": "32",
+   "addr:postcode": "80687",
+   "addr:city": "München",
+   "phone": "+49 89 37914826",
+   "website": "https://www.pflegedienstasja.de/",
+   "email": "info@pflegedienstasja.de"
+  },
+  "location": {
+   "lat": 48.139836,
+   "lon": 11.510201
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflege-aktiv-petra-guenther-kranken-altenpflege-muenchen",
+  "cat": "pflege",
+  "quelle": "https://pflege-guenthner.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "Pflege Aktiv – Petra Günther Kranken- & Altenpflege",
+   "addr:street": "Gotthardstraße",
+   "addr:housenumber": "87",
+   "addr:postcode": "80689",
+   "addr:city": "München",
+   "phone": "+49 89 58989712",
+   "website": "https://pflege-guenthner.de/",
+   "email": "petra.guenthner@online.de"
+  },
+  "location": {
+   "lat": 48.136078,
+   "lon": 11.491759
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/evangelischer-pflegedienst-muenchen-diakonie-muenc-muenchen",
+  "cat": "pflege",
+  "quelle": "https://senioren-und-pflege.de/ambulante-pflege/ambulante-pflegedienste (2026-11-14)",
+  "tags": {
+   "name": "Evangelischer Pflegedienst München (Diakonie München und Oberbayern)",
+   "addr:street": "Landshuter Allee",
+   "addr:housenumber": "40",
+   "addr:postcode": "80637",
+   "addr:city": "München",
+   "phone": "+49 89 4613300",
+   "website": "https://senioren-und-pflege.de/ambulante-pflege/ambulante-pflegedienste",
+   "email": "epm@diakonie-muc-obb.de"
+  },
+  "location": {
+   "lat": 48.150124,
+   "lon": 11.537293
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/brk-alten-und-service-zentrum-maxvorstadt-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.brk-muenchen.de/asz-maxvorstadt.html (2026-11-14)",
+  "tags": {
+   "name": "BRK Alten- und Service-Zentrum Maxvorstadt",
+   "addr:street": "Gabelsbergerstraße",
+   "addr:housenumber": "55a",
+   "addr:postcode": "80333",
+   "addr:city": "München",
+   "phone": "+49 89 41118440",
+   "website": "https://www.brk-muenchen.de/asz-maxvorstadt.html",
+   "email": "asz-maxvorstadt@brk-muenchen.de"
+  },
+  "location": {
+   "lat": 48.148193,
+   "lon": 11.565632
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-mobilcare-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-mobilcare.de/der-weg-zu-uns/kontakt/ (2026-11-14)",
+  "tags": {
+   "name": "Pflegedienst Mobilcare GmbH",
+   "addr:street": "Gräfstraße",
+   "addr:housenumber": "68a",
+   "addr:postcode": "81241",
+   "addr:city": "München",
+   "phone": "+49 89 54637576",
+   "website": "https://www.pflegedienst-mobilcare.de/"
+  },
+  "location": {
+   "lat": 48.142692,
+   "lon": 11.461202
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-maneval-gbr-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-maneval.de/ (2026-11-14)",
+  "tags": {
+   "name": "Pflegedienst Maneval GbR",
+   "addr:street": "Eberwurzstraße",
+   "addr:housenumber": "81",
+   "addr:postcode": "80935",
+   "addr:city": "München",
+   "phone": "+49 173 8207840",
+   "website": "https://www.pflegedienst-maneval.de/",
+   "email": "annemarie.maneval@web.de"
+  },
+  "location": {
+   "lat": 48.203995,
+   "lon": 11.553288
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/meditrue-pflegedienst-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.meditrue.de/ (2026-11-14)",
+  "tags": {
+   "name": "MediTrue Pflegedienst",
+   "addr:street": "Konstanzer Straße",
+   "addr:housenumber": "40",
+   "addr:postcode": "80809",
+   "addr:city": "München",
+   "phone": "+49 89 23751069",
+   "website": "https://www.meditrue.de/",
+   "email": "info@meditrue.de"
+  },
+  "location": {
+   "lat": 48.185555,
+   "lon": 11.5602
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/medicus-ambulanter-pflegedienst-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.medicus-pflegedienst.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "medicus Ambulanter Pflegedienst GmbH",
+   "addr:street": "Atterseestraße",
+   "addr:housenumber": "6",
+   "addr:postcode": "81241",
+   "addr:city": "München",
+   "phone": "+49 89 83928140",
+   "website": "https://www.medicus-pflegedienst.de/",
+   "email": "info@medicus-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.142837,
+   "lon": 11.47518
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ganzheitlicher-pflegedienst-wunderbar-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-wunderbar.de/impressum.html (2026-11-14)",
+  "tags": {
+   "name": "Ganzheitlicher Pflegedienst Wunderbar",
+   "addr:street": "Schopenhauerstraße",
+   "addr:housenumber": "97",
+   "addr:postcode": "80809",
+   "addr:city": "München",
+   "phone": "+49 89 23710331",
+   "website": "https://www.pflegedienst-wunderbar.de/",
+   "email": "pflegedienst.wunderbar@posteo.de"
+  },
+  "location": {
+   "lat": 48.179041,
+   "lon": 11.565793
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/gip-gesellschaft-fuer-medizinische-intensivpflege--muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.gip-intensivpflege.de/ (2026-11-14)",
+  "tags": {
+   "name": "GIP Gesellschaft für medizinische Intensivpflege – Büro München",
+   "addr:street": "Helene-Mayer-Ring",
+   "addr:housenumber": "14",
+   "addr:postcode": "80809",
+   "addr:city": "München",
+   "phone": "+49 89 726326920",
+   "website": "https://www.gip-intensivpflege.de/"
+  },
+  "location": {
+   "lat": 48.182291,
+   "lon": 11.553284
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/aubinger-nachbarschaftshilfe-e-v-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.aubinger-nachbarschaftshilfe.de/ (2026-11-14)",
+  "tags": {
+   "name": "Aubinger Nachbarschaftshilfe e.V.",
+   "addr:street": "Am Aubinger Wasserturm",
+   "addr:housenumber": "30",
+   "addr:postcode": "81249",
+   "addr:city": "München",
+   "phone": "+49 89 86369593",
+   "website": "https://www.aubinger-nachbarschaftshilfe.de/",
+   "email": "aubinger.nbh@t-online.de"
+  },
+  "location": {
+   "lat": 48.152837,
+   "lon": 11.416526
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/aubinger-nachbarschaftshilfe-e-v-muenchen",
+  "cat": "fahrt",
+  "quelle": "https://www.aubinger-nachbarschaftshilfe.de/ (2026-11-14)",
+  "tags": {
+   "name": "Aubinger Nachbarschaftshilfe e.V.",
+   "addr:street": "Am Aubinger Wasserturm",
+   "addr:housenumber": "30",
+   "addr:postcode": "81249",
+   "addr:city": "München",
+   "phone": "+49 89 86369593",
+   "website": "https://www.aubinger-nachbarschaftshilfe.de/",
+   "email": "aubinger.nbh@t-online.de"
+  },
+  "location": {
+   "lat": 48.152837,
+   "lon": 11.416526
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/bonert-alten-und-krankenpflege-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.bonert-pflege.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Bonert Alten- und Krankenpflege GmbH",
+   "addr:street": "Hans-Stützle-Straße",
+   "addr:housenumber": "21",
+   "addr:postcode": "81249",
+   "addr:city": "München",
+   "phone": "+49 89 92771313",
+   "website": "https://www.bonert-pflege.de/",
+   "email": "info@bonert-pflege.de"
+  },
+  "location": {
+   "lat": 48.14002,
+   "lon": 11.411735
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/cps-pflege-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://cps-pflege.de/ (2026-11-14)",
+  "tags": {
+   "name": "CPS Pflege GmbH",
+   "addr:street": "Schleißheimer Straße",
+   "addr:housenumber": "442",
+   "addr:postcode": "80935",
+   "addr:city": "München",
+   "phone": "+49 89 74038599",
+   "website": "https://cps-pflege.de/",
+   "email": "info@cps-pflege.de"
+  },
+  "location": {
+   "lat": 48.202778,
+   "lon": 11.564412
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/emily-pflegedienst-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.emily-pflegedienst.de/ (2026-11-14)",
+  "tags": {
+   "name": "Emily Pflegedienst GmbH",
+   "addr:street": "Limesstraße",
+   "addr:housenumber": "102",
+   "addr:postcode": "81243",
+   "addr:city": "München",
+   "phone": "+49 89 44372812",
+   "website": "https://www.emily-pflegedienst.de/",
+   "email": "info@emily-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.144192,
+   "lon": 11.422916
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/gewolf-geriatric-care-gmbh-co-kg-muenchen",
+  "cat": "pflege",
+  "quelle": "https://gewolf-geriatric-care.de/ (2026-11-14)",
+  "tags": {
+   "name": "Gewolf-Geriatric-Care GmbH & Co. KG",
+   "addr:street": "Grashofstraße",
+   "addr:housenumber": "7",
+   "addr:postcode": "80995",
+   "addr:city": "München",
+   "phone": "+49 89 15001555",
+   "website": "https://gewolf-geriatric-care.de/",
+   "email": "info@gewolf-geriatric-care.de"
+  },
+  "location": {
+   "lat": 48.217308,
+   "lon": 11.528723
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/panacea-pflege-muenchen-muenchen",
+  "cat": "pflege",
+  "quelle": "https://panacea-pflege.de/ (2026-11-14)",
+  "tags": {
+   "name": "Panacea Pflege München",
+   "addr:street": "Landsberger Straße",
+   "addr:housenumber": "434",
+   "addr:postcode": "81241",
+   "addr:city": "München",
+   "phone": "+49 89 52068407",
+   "website": "https://panacea-pflege.de/",
+   "email": "anfrage.muc@panacea-pflege.de"
+  },
+  "location": {
+   "lat": 48.145659,
+   "lon": 11.472747
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/pma-ambulanter-pflegedienst-muenchen",
+  "cat": "pflege",
+  "quelle": "https://pma-pflegedienst.de/ (2026-11-14)",
+  "tags": {
+   "name": "PMA Ambulanter Pflegedienst",
+   "addr:street": "Leopoldstraße",
+   "addr:housenumber": "169",
+   "addr:postcode": "80804",
+   "addr:city": "München",
+   "phone": "+49 89 12594099",
+   "website": "https://pma-pflegedienst.de/",
+   "email": "info@pma-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.17317,
+   "lon": 11.585405
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegezentrum-plus-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://pflegezentrum-plus.de/ (2026-11-14)",
+  "tags": {
+   "name": "Pflegezentrum Plus GmbH",
+   "addr:street": "Bodenseestraße",
+   "addr:housenumber": "217",
+   "addr:postcode": "81243",
+   "addr:city": "München",
+   "phone": "+49 89 23783292",
+   "website": "https://pflegezentrum-plus.de/",
+   "email": "kontakt@pflegezentrum-plus.de"
+  },
+  "location": {
+   "lat": 48.142926,
+   "lon": 11.42707
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/taminda-gmbh-ambulante-intensivpflege-muenchen",
+  "cat": "pflege",
+  "quelle": "https://taminda-intensiv.de/ (2026-11-14)",
+  "tags": {
+   "name": "Taminda GmbH Ambulante Intensivpflege",
+   "addr:street": "Ranertstraße",
+   "addr:housenumber": "8",
+   "addr:postcode": "81249",
+   "addr:city": "München",
+   "phone": "+49 89 20961920",
+   "website": "https://taminda-intensiv.de/",
+   "email": "info@taminda.de"
+  },
+  "location": {
+   "lat": 48.17864,
+   "lon": 11.405942
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-uzun-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-uzun.de/ (2026-11-14)",
+  "tags": {
+   "name": "Pflegedienst Uzun GmbH",
+   "addr:street": "Dachauer Straße",
+   "addr:housenumber": "178",
+   "addr:postcode": "80992",
+   "addr:city": "München",
+   "phone": "+49 89 44234977",
+   "website": "https://pflegedienst-uzun.de/",
+   "email": "info@pflegedienst-uzun.de"
+  },
+  "location": {
+   "lat": 48.173524,
+   "lon": 11.52724
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/fuer-einander-pflegedienst-und-nachbarschaftshilfe-muenchen",
+  "cat": "pflege",
+  "quelle": "http://www.fuer-einander.de/ (2026-11-14)",
+  "tags": {
+   "name": "für-einander Pflegedienst und Nachbarschaftshilfe e.V.",
+   "addr:street": "Nikolaistraße",
+   "addr:housenumber": "17",
+   "addr:postcode": "80802",
+   "addr:city": "München",
+   "phone": "+49 89 395886",
+   "website": "http://www.fuer-einander.de/",
+   "email": "info@fuer-einander.de"
+  },
+  "location": {
+   "lat": 48.158846,
+   "lon": 11.587835
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/muenchenstift-ambulanter-pflegedienst-haus-an-der--muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.muenchenstift.de/unterstuetzung-zu-hause/ambulanter-pflegedienst/ (2026-11-14)",
+  "tags": {
+   "name": "MÜNCHENSTIFT Ambulanter Pflegedienst Haus an der Rümannstraße",
+   "addr:street": "Rümannstraße",
+   "addr:housenumber": "60",
+   "addr:postcode": "80804",
+   "addr:city": "München",
+   "phone": "+49 89 30796230",
+   "website": "https://www.muenchenstift.de/unterstuetzung-zu-hause/ambulanter-pflegedienst/"
+  },
+  "location": {
+   "lat": 48.174948,
+   "lon": 11.578803
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/muenchenstift-ambulanter-pflegedienst-hans-sieber--muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.muenchenstift.de/unterstuetzung-zu-hause/ambulanter-pflegedienst/ (2026-11-14)",
+  "tags": {
+   "name": "MÜNCHENSTIFT Ambulanter Pflegedienst Hans-Sieber-Haus",
+   "addr:street": "Manzostraße",
+   "addr:housenumber": "105",
+   "addr:postcode": "80997",
+   "addr:city": "München",
+   "phone": "+49 89 14375230",
+   "website": "https://www.muenchenstift.de/unterstuetzung-zu-hause/ambulanter-pflegedienst/"
+  },
+  "location": {
+   "lat": 48.184502,
+   "lon": 11.487258
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/diakoniestation-dankeskirche-ev-diakonieverein-dan-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.diakonie-dankeskirche.de/kontakt (2026-11-14)",
+  "tags": {
+   "name": "Diakoniestation Dankeskirche (Ev. Diakonieverein Dankeskirche München Milbertshofen e.V.)",
+   "addr:street": "Keferloher Straße",
+   "addr:housenumber": "68a",
+   "addr:postcode": "80807",
+   "addr:city": "München",
+   "phone": null,
+   "website": "https://www.diakonie-dankeskirche.de/"
+  },
+  "location": {
+   "lat": 48.181578,
+   "lon": 11.568801
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/pfennigparade-ambulante-dienste-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.pfennigparade.de/wohnen/wohnformen/barrierefreie-mietwohnungen/ambulante-pflegedienste/ (2026-11-14)",
+  "tags": {
+   "name": "Pfennigparade Ambulante Dienste GmbH",
+   "addr:street": "Barlachstraße",
+   "addr:housenumber": "24-36",
+   "addr:postcode": "80804",
+   "addr:city": "München",
+   "phone": "+49 89 83936506",
+   "website": "https://www.pfennigparade.de/wohnen/wohnformen/barrierefreie-mietwohnungen/ambulante-pflegedienste/"
+  },
+  "location": {
+   "lat": 48.177435,
+   "lon": 11.576963
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-ambulanto-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "http://www.ambulanto.de/impressum.html (2026-11-14)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Ambulanto GmbH",
+   "addr:street": "Leonhard-Frank-Straße",
+   "addr:housenumber": "5",
+   "addr:postcode": "80796",
+   "addr:city": "München",
+   "phone": "+49 89 45228963",
+   "website": "http://www.ambulanto.de/",
+   "email": "info@ambulanto.de"
+  },
+  "location": {
+   "lat": 48.166286,
+   "lon": 11.56559
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-ambulanto-gmbh-muenchen",
+  "cat": "fahrt",
+  "quelle": "http://www.ambulanto.de/impressum.html (2026-11-14)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Ambulanto GmbH",
+   "addr:street": "Leonhard-Frank-Straße",
+   "addr:housenumber": "5",
+   "addr:postcode": "80796",
+   "addr:city": "München",
+   "phone": "+49 89 45228963",
+   "website": "http://www.ambulanto.de/",
+   "email": "info@ambulanto.de"
+  },
+  "location": {
+   "lat": 48.166286,
+   "lon": 11.56559
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-philius-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.philiuspflege.de/ (2026-11-14)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Philius GmbH",
+   "addr:street": "Luxemburger Straße",
+   "addr:housenumber": "1-3",
+   "addr:postcode": "80805",
+   "addr:city": "München",
+   "phone": "+49 89 18931837",
+   "website": "https://www.philiuspflege.de/",
+   "email": "hallo@philiuspflege.de"
+  },
+  "location": {
+   "lat": 48.170352,
+   "lon": 11.596127
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/caritas-ambulanter-pflegedienst-muenchen-west-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-ambulanter-pflegedienst-muenchen-west.de/de (2026-11-14)",
+  "tags": {
+   "name": "Caritas Ambulanter Pflegedienst München West",
+   "addr:street": "Pippinger Straße",
+   "addr:housenumber": "97",
+   "addr:postcode": "81247",
+   "addr:city": "München",
+   "phone": "+49 89 8911660",
+   "website": "https://www.caritas-ambulanter-pflegedienst-muenchen-west.de/de",
+   "email": "ambulante-pflege-west@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 48.16493,
+   "lon": 11.45633
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/horizont-ambulanter-alten-und-krankenpflegedienst--muenchen",
+  "cat": "pflege",
+  "quelle": "https://horizontmuc.de/ (2026-11-14)",
+  "tags": {
+   "name": "Horizont Ambulanter Alten- und Krankenpflegedienst GbR",
+   "addr:street": "Karl-Theodor-Straße",
+   "addr:housenumber": "66",
+   "addr:postcode": "80803",
+   "addr:city": "München",
+   "phone": "+49 89 2800421",
+   "website": "https://horizontmuc.de/",
+   "email": "info@horizontmuc.de"
+  },
+  "location": {
+   "lat": 48.16701,
+   "lon": 11.577084
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-drei-schwestern-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-dreischwestern.de/ (2026-11-14)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Drei Schwestern",
+   "addr:street": "Schleißheimer Straße",
+   "addr:housenumber": "464",
+   "addr:postcode": "80935",
+   "addr:city": "München",
+   "phone": "+49 89 31888185",
+   "website": "https://www.pflegedienst-dreischwestern.de/",
+   "email": "info@pflegedienst-dreischwestern.de"
+  },
+  "location": {
+   "lat": 48.20706,
+   "lon": 11.564019
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/haus-des-lebens-pflegedienst-roscher-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.haus-des-lebens.com/impressum.html (2026-11-14)",
+  "tags": {
+   "name": "Haus des Lebens – Pflegedienst Roscher",
+   "addr:street": "Lisbergstraße",
+   "addr:housenumber": "14",
+   "addr:postcode": "81249",
+   "addr:city": "München",
+   "phone": "+49 89 18920623",
+   "website": "https://www.haus-des-lebens.com/"
+  },
+  "location": {
+   "lat": 48.13853,
+   "lon": 11.427571
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflege-mit-herz-e-k-ambulanter-pflegedienst-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.pflege-herz.de/ (2026-11-14)",
+  "tags": {
+   "name": "Pflege mit Herz e.K. Ambulanter Pflegedienst",
+   "addr:street": "Allacher Straße",
+   "addr:housenumber": "191",
+   "addr:postcode": "80997",
+   "addr:city": "München",
+   "phone": "+49 89 81339301",
+   "website": "https://www.pflege-herz.de/",
+   "email": "kontakt@pmh-pflegemitherz.de"
+  },
+  "location": {
+   "lat": 48.180083,
+   "lon": 11.484019
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/alpha-krankenpflegeteam-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.alphakrankenpflegeteam.de/ (2026-11-14)",
+  "tags": {
+   "name": "ALPHA Krankenpflegeteam",
+   "addr:street": "Verdistraße",
+   "addr:housenumber": "42",
+   "addr:postcode": "81247",
+   "addr:city": "München",
+   "phone": "+49 89 885593",
+   "website": "https://www.alphakrankenpflegeteam.de/",
+   "email": "info@alphakrankenpflegeteam.de"
+  },
+  "location": {
+   "lat": 48.164403,
+   "lon": 11.480183
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/hausengel-gmbh-pflegedienststandort-muenchen-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.hausengel.de/standorte/muenchen/ (2026-11-14)",
+  "tags": {
+   "name": "Hausengel GmbH – Pflegedienststandort München",
+   "addr:street": "Eversbuschstraße",
+   "addr:housenumber": "194c",
+   "addr:postcode": "80999",
+   "addr:city": "München",
+   "phone": "+49 89 81897350",
+   "website": "https://www.hausengel.de/standorte/muenchen/",
+   "email": "muenchen@hausengel.de"
+  },
+  "location": {
+   "lat": 48.201236,
+   "lon": 11.458711
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-pflege-herzblatt-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegeherzblatt.de/ (2026-11-14)",
+  "tags": {
+   "name": "Ambulante Pflege Herzblatt",
+   "addr:street": "Lortzingstraße",
+   "addr:housenumber": "26",
+   "addr:postcode": "81241",
+   "addr:city": "München",
+   "phone": "+49 89 82988315",
+   "website": "https://www.pflegeherzblatt.de/",
+   "email": "info@pflegeherzblatt.de"
+  },
+  "location": {
+   "lat": 48.149715,
+   "lon": 11.455645
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/caritas-ambulanter-pflegedienst-muenchen-nord-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-ambulanter-pflegedienst-muenchen-nord.de/de (2026-11-14)",
+  "tags": {
+   "name": "Caritas Ambulanter Pflegedienst München Nord",
+   "addr:street": "Harpprechtstraße",
+   "addr:housenumber": "9",
+   "addr:postcode": "80933",
+   "addr:city": "München",
+   "phone": "+49 89 411141550",
+   "website": "https://www.caritas-ambulanter-pflegedienst-muenchen-nord.de/de",
+   "email": "ambulante-pflege-nord@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 48.213768,
+   "lon": 11.561674
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-vesna-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.vesnapflege.de/ (2026-11-14)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Vesna GmbH",
+   "addr:street": "Messerschmittstraße",
+   "addr:housenumber": "4",
+   "addr:postcode": "80992",
+   "addr:city": "München",
+   "phone": "+49 89 23516468",
+   "website": "https://www.vesnapflege.de/",
+   "email": "info@vesnapflege.de"
+  },
+  "location": {
+   "lat": 48.179513,
+   "lon": 11.531928
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/maximilian-pflegedienst-ug-muenchen",
+  "cat": "pflege",
+  "quelle": "http://maximilianpflegedienst.de/ (2026-11-14)",
+  "tags": {
+   "name": "Maximilian Pflegedienst UG",
+   "addr:street": "Messerschmittstraße",
+   "addr:housenumber": "4",
+   "addr:postcode": "80992",
+   "addr:city": "München",
+   "phone": null,
+   "website": "http://maximilianpflegedienst.de/",
+   "email": "info@maximilianpflegedienst.de"
+  },
+  "location": {
+   "lat": 48.179513,
+   "lon": 11.531928
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/mobile-ambulante-pflegepartner-gmbh-co-kg-muenchne-muenchen",
+  "cat": "pflege",
+  "quelle": "https://das-kindl.de/ (2026-11-14)",
+  "tags": {
+   "name": "Mobile Ambulante Pflegepartner GmbH & Co. KG – Münchner Kindl (Kinderintensivpflege)",
+   "addr:street": "Messerschmittstraße",
+   "addr:housenumber": "4",
+   "addr:postcode": "80992",
+   "addr:city": "München",
+   "phone": "+49 89 13928390",
+   "website": "https://das-kindl.de/",
+   "email": "info@das-kindl.de"
+  },
+  "location": {
+   "lat": 48.179513,
+   "lon": 11.531928
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-alten-und-krankenpflegedienst-gerlinde--muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienstrusnak.de/ (2026-11-14)",
+  "tags": {
+   "name": "Ambulanter Alten- und Krankenpflegedienst Gerlinde Rusnak",
+   "addr:street": "Am Blütenanger",
+   "addr:housenumber": "27b",
+   "addr:postcode": "80995",
+   "addr:city": "München",
+   "phone": "+49 89 1415012",
+   "website": "https://www.pflegedienstrusnak.de/",
+   "email": "info@pflegedienstrusnak.de"
+  },
+  "location": {
+   "lat": 48.199161,
+   "lon": 11.518066
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-elke-und-lucian-puscas-gbr-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.pflege-puscas.de/impressum.htm (2026-11-14)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Elke und Lucian Puscas GbR",
+   "addr:street": "Ingolstädter Straße",
+   "addr:housenumber": "233",
+   "addr:postcode": "80939",
+   "addr:city": "München",
+   "phone": "+49 89 57080363",
+   "website": "https://www.pflege-puscas.de/",
+   "email": "info@pflege-puscas.de"
+  },
+  "location": {
+   "lat": 48.213294,
+   "lon": 11.583884
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/home-instead-muenchen-nord-senioren-und-familienbe-muenchen",
+  "cat": "pflege",
+  "quelle": "https://homeinstead.de/muenchen-nord/ (2026-11-14)",
+  "tags": {
+   "name": "Home Instead München-Nord (Senioren- und Familienbetreuung Michael Junkes München e.K.)",
+   "addr:street": "Baubergerstraße",
+   "addr:housenumber": "16",
+   "addr:postcode": "80992",
+   "addr:city": "München",
+   "phone": "+49 89 24883720",
+   "website": "https://homeinstead.de/muenchen-nord/",
+   "email": "muenchen-nord@homeinstead.de"
+  },
+  "location": {
+   "lat": 48.17968,
+   "lon": 11.509255
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/carpe-diem-muenchen-e-v-pflege-und-betreuungsdiens-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.carpediem-pflegedienst.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "Carpe Diem München e. V. – Pflege- und Betreuungsdienst",
+   "addr:street": "Candidplatz",
+   "addr:housenumber": "13",
+   "addr:postcode": "81543",
+   "addr:city": "München",
+   "phone": "+49 89 20007670",
+   "website": "https://www.carpediem-pflegedienst.de/",
+   "email": "info@carpediem-muenchen.de"
+  },
+  "location": {
+   "lat": 48.111174,
+   "lon": 11.571688
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/akb-elke-dodenhoff-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.akb-pflegedienst.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "AKB Elke Dodenhoff GmbH",
+   "addr:street": "Stefan-George-Ring",
+   "addr:housenumber": "23",
+   "addr:postcode": "81929",
+   "addr:city": "München",
+   "phone": "+49 89 45205510",
+   "website": "https://www.akb-pflegedienst.de/",
+   "email": "info@akb-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.141717,
+   "lon": 11.649279
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/akb-dodenhoff-ambulanter-pflegedienst-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.akb-pflegedienst.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "AKB Dodenhoff Ambulanter Pflegedienst GmbH",
+   "addr:street": "Albert-Schweitzer-Straße",
+   "addr:housenumber": "66",
+   "addr:postcode": "81735",
+   "addr:city": "München",
+   "phone": "+49 89 452055140",
+   "website": "https://www.akb-pflegedienst.de/",
+   "email": "info@akb-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.10726,
+   "lon": 11.645835
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulant-und-intensivpflegedienst-edel-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-edel.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "Ambulant- und Intensivpflegedienst EDEL",
+   "addr:street": "Eggenfeldener Straße",
+   "addr:housenumber": "56",
+   "addr:postcode": "81929",
+   "addr:city": "München",
+   "phone": "+49 89 693138780",
+   "website": "https://www.pflegedienst-edel.de/",
+   "email": "info@pflegedienst-edel.de"
+  },
+  "location": {
+   "lat": 48.139792,
+   "lon": 11.634894
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/vitolus-bogenhausen-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.vitolus.de/standorte (2026-11-14)",
+  "tags": {
+   "name": "Vitolus Bogenhausen",
+   "addr:street": "Hornsteinstraße",
+   "addr:housenumber": "18",
+   "addr:postcode": "81679",
+   "addr:city": "München",
+   "phone": "+49 89 244188118",
+   "website": "https://www.vitolus.de/",
+   "email": "bogenhausen@vitolus.de"
+  },
+  "location": {
+   "lat": 48.152696,
+   "lon": 11.613453
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-schreyer-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-schreyer.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "Pflegedienst Schreyer",
+   "addr:street": "Heinrich-Wieland-Straße",
+   "addr:housenumber": "59",
+   "addr:postcode": "81735",
+   "addr:city": "München",
+   "phone": "+49 89 43529296",
+   "website": "https://www.pflegedienst-schreyer.de/",
+   "email": "info@pflegedienst-schreyer.de"
+  },
+  "location": {
+   "lat": 48.11689,
+   "lon": 11.640944
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/endres-i-dgapv-gmbh-ambulanter-pflegedienst-u-pfle-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.dgapv-endres.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "Endres I DGAPV GmbH Ambulanter Pflegedienst u. Pflegeberatungszentrum",
+   "addr:street": "Candidplatz",
+   "addr:housenumber": "13",
+   "addr:postcode": "81543",
+   "addr:city": "München",
+   "phone": "+49 89 6201190",
+   "website": "https://www.dgapv-endres.de/",
+   "email": "info@dgapv-endres.de"
+  },
+  "location": {
+   "lat": 48.111174,
+   "lon": 11.571688
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/die-mitterfelder-pflegedienst-bogenhausen-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.die-mitterfelder.de/pflege-betreuung/ambulante-pflegedienste (2026-11-14)",
+  "tags": {
+   "name": "Die Mitterfelder – Pflegedienst Bogenhausen",
+   "addr:street": "Cosimastraße",
+   "addr:housenumber": "100",
+   "addr:postcode": "81927",
+   "addr:city": "München",
+   "phone": "+49 89 348831",
+   "website": "https://www.die-mitterfelder.de/",
+   "email": "kontakt@die-mitterfelder.de"
+  },
+  "location": {
+   "lat": 48.162417,
+   "lon": 11.629461
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/muenchenstift-ambulanter-pflegedienst-bogenhausen-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.muenchenstift.de/unterstuetzung-zu-hause/ambulanter-pflegedienst/ (2026-11-14)",
+  "tags": {
+   "name": "MÜNCHENSTIFT Ambulanter Pflegedienst Bogenhausen",
+   "addr:street": "Effnerstraße",
+   "addr:housenumber": "76",
+   "addr:postcode": "81925",
+   "addr:city": "München",
+   "phone": "+49 89 99833230",
+   "website": "https://www.muenchenstift.de/unterstuetzung-zu-hause/ambulanter-pflegedienst/"
+  },
+  "location": {
+   "lat": 48.158644,
+   "lon": 11.620995
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/muenchenstift-ambulanter-pflegedienst-harlaching-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.muenchenstift.de/unterstuetzung-zu-hause/ambulanter-pflegedienst/ (2026-11-14)",
+  "tags": {
+   "name": "MÜNCHENSTIFT Ambulanter Pflegedienst Harlaching",
+   "addr:street": "Tauernstraße",
+   "addr:housenumber": "11",
+   "addr:postcode": "81547",
+   "addr:city": "München",
+   "phone": "+49 89 64255230",
+   "website": "https://www.muenchenstift.de/unterstuetzung-zu-hause/ambulanter-pflegedienst/"
+  },
+  "location": {
+   "lat": 48.099444,
+   "lon": 11.564067
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/muenchenstift-ambulanter-pflegedienst-sendling-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.muenchenstift.de/unterstuetzung-zu-hause/ambulanter-pflegedienst/ (2026-11-14)",
+  "tags": {
+   "name": "MÜNCHENSTIFT Ambulanter Pflegedienst Sendling",
+   "addr:street": "Luise-Kiesselbach-Platz",
+   "addr:housenumber": "2",
+   "addr:postcode": "81377",
+   "addr:city": "München",
+   "phone": "+49 89 74147230",
+   "website": "https://www.muenchenstift.de/unterstuetzung-zu-hause/ambulanter-pflegedienst/"
+  },
+  "location": {
+   "lat": 48.11426,
+   "lon": 11.518293
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/caritas-ambulanter-pflegedienst-muenchen-ost-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-ambulanter-pflegedienst-muenchen-ost.de/de (2026-11-14)",
+  "tags": {
+   "name": "Caritas Ambulanter Pflegedienst München Ost",
+   "addr:street": "Daphnestraße",
+   "addr:housenumber": "29",
+   "addr:postcode": "81925",
+   "addr:city": "München",
+   "phone": "+49 89 92004650",
+   "website": "https://www.caritas-ambulanter-pflegedienst-muenchen-ost.de/",
+   "email": "ambulante-pflege-ost@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 48.150188,
+   "lon": 11.625976
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/gap-gemeinschaft-fuer-ambulante-pflege-ggmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.gap-peklo.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "GAP Gemeinschaft für ambulante Pflege gGmbH",
+   "addr:street": "Astrid-Lindgren-Straße",
+   "addr:housenumber": "58",
+   "addr:postcode": "81829",
+   "addr:city": "München",
+   "phone": "+49 89 54848764",
+   "website": "https://www.gap-peklo.de/",
+   "email": "pflege@gap-peklo.de"
+  },
+  "location": {
+   "lat": 48.129745,
+   "lon": 11.705438
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/esd-evangelischer-sozialdienst-e-v-ambulanter-pfle-muenchen",
+  "cat": "pflege",
+  "quelle": "https://esd-m-fuerstenried.de/evangelischer-sozialdienst/kontakt/ (2026-11-14)",
+  "tags": {
+   "name": "ESD Evangelischer Sozialdienst e.V. – Ambulanter Pflegedienst",
+   "addr:street": "Walliser Straße",
+   "addr:housenumber": "13",
+   "addr:postcode": "81475",
+   "addr:city": "München",
+   "phone": "+49 89 757777",
+   "website": "https://esd-m-fuerstenried.de/",
+   "email": "info@esd-m-fuerstenried.de"
+  },
+  "location": {
+   "lat": 48.092052,
+   "lon": 11.484366
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/johanniter-unfall-hilfe-e-v-ambulante-pflege-muenc-muenchen",
+  "cat": "pflege",
+  "quelle": "https://assets.johanniter.de/assets/JUH/Bayern/Muenchen/Dateidownloads/2020/Anfahrtsskizze_Perlacher_Strasse.pdf (2026-11-14)",
+  "tags": {
+   "name": "Johanniter-Unfall-Hilfe e.V. – Ambulante Pflege München",
+   "addr:street": "Perlacher Straße",
+   "addr:housenumber": "21",
+   "addr:postcode": "81539",
+   "addr:city": "München",
+   "phone": "+49 89 720110",
+   "website": "https://www.johanniter.de/juh/lv-bayern/rv-muenchen/",
+   "email": "muenchen@johanniter.de"
+  },
+  "location": {
+   "lat": 48.112349,
+   "lon": 11.580788
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/johanniter-unfall-hilfe-e-v-ambulante-pflege-muenc-muenchen",
+  "cat": "fahrt",
+  "quelle": "https://assets.johanniter.de/assets/JUH/Bayern/Muenchen/Dateidownloads/2020/Anfahrtsskizze_Perlacher_Strasse.pdf (2026-11-14)",
+  "tags": {
+   "name": "Johanniter-Unfall-Hilfe e.V. – Ambulante Pflege München",
+   "addr:street": "Perlacher Straße",
+   "addr:housenumber": "21",
+   "addr:postcode": "81539",
+   "addr:city": "München",
+   "phone": "+49 89 720110",
+   "website": "https://www.johanniter.de/juh/lv-bayern/rv-muenchen/",
+   "email": "muenchen@johanniter.de"
+  },
+  "location": {
+   "lat": 48.112349,
+   "lon": 11.580788
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/caritas-ambulanter-pflegedienst-muenchen-sued-ost-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-ambulanter-pflegedienst-muenchen-sued-ost.de/de (2026-11-14)",
+  "tags": {
+   "name": "Caritas Ambulanter Pflegedienst München Süd-Ost",
+   "addr:street": "Balanstraße",
+   "addr:housenumber": "28",
+   "addr:postcode": "81669",
+   "addr:city": "München",
+   "phone": "+49 89 45874011",
+   "website": "https://www.caritas-ambulanter-pflegedienst-muenchen-sued-ost.de/",
+   "email": "ambulante-pflege-sued-ost@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 48.125337,
+   "lon": 11.595524
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/caritas-ambulanter-pflegedienst-muenchen-sued-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-ambulanter-pflegedienst-muenchen-sued.de/de (2026-11-14)",
+  "tags": {
+   "name": "Caritas Ambulanter Pflegedienst München Süd",
+   "addr:street": "Garmischer Straße",
+   "addr:housenumber": "211",
+   "addr:postcode": "81377",
+   "addr:city": "München",
+   "phone": "+49 89 517772101",
+   "website": "https://www.caritas-ambulanter-pflegedienst-muenchen-sued.de/",
+   "email": "ambulante-pflege-sued@caritasmuenchen.org"
+  },
+  "location": {
+   "lat": 48.119459,
+   "lon": 11.518156
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/curegia-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://curegia.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "Curegia GmbH",
+   "addr:street": "Fürstenrieder Straße",
+   "addr:housenumber": "279a",
+   "addr:postcode": "81377",
+   "addr:city": "München",
+   "phone": "+49 89 74120340",
+   "website": "https://curegia.de/",
+   "email": "info@curegia.de"
+  },
+  "location": {
+   "lat": 48.108718,
+   "lon": 11.502553
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-neugebauer-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-neugebauer.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Neugebauer GmbH",
+   "addr:street": "Bertschstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "81673",
+   "addr:city": "München",
+   "phone": "+49 89 45151550",
+   "website": "https://pflegedienst-neugebauer.de/",
+   "email": "info@pflegedienst-neugebauer.de"
+  },
+  "location": {
+   "lat": 48.12791,
+   "lon": 11.633254
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/familaris-professionelle-pflege-zu-hause-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.familaris.de/impressum.html (2026-11-14)",
+  "tags": {
+   "name": "Familaris – Professionelle Pflege zu Hause",
+   "addr:street": "Grünwalder Straße",
+   "addr:housenumber": "61",
+   "addr:postcode": "81547",
+   "addr:city": "München",
+   "phone": "+49 89 64943371",
+   "website": "https://www.familaris.de/",
+   "email": "pflege@familaris.de"
+  },
+  "location": {
+   "lat": 48.104673,
+   "lon": 11.570363
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/renafan-ambulante-pflege-neuperlach-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.renafan.de/standorte (2026-11-14)",
+  "tags": {
+   "name": "RENAFAN Ambulante Pflege Neuperlach",
+   "addr:street": "Therese-Giehse-Allee",
+   "addr:housenumber": "70",
+   "addr:postcode": "81739",
+   "addr:city": "München",
+   "phone": "+49 89 66002103",
+   "website": "https://www.renafan.de/ambulante-pflege/muenchen-neuperlach",
+   "email": "neuperlach@renafan.de"
+  },
+  "location": {
+   "lat": 48.088348,
+   "lon": 11.640269
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/renafan-ambulante-pflege-solln-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.renafan.de/standorte (2026-11-14)",
+  "tags": {
+   "name": "RENAFAN Ambulante Pflege Solln",
+   "addr:street": "Frans-Hals-Straße",
+   "addr:housenumber": "31",
+   "addr:postcode": "81479",
+   "addr:city": "München",
+   "phone": "+49 89 28855330",
+   "website": "https://www.renafan.de/ambulante-pflege/muenchen-solln",
+   "email": "solln@renafan.de"
+  },
+  "location": {
+   "lat": 48.077278,
+   "lon": 11.519937
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/holler-medic-intensivpflege-ambulanter-pflegediens-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.hollermedic.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "HOLLER MEDIC Intensivpflege, Ambulanter Pflegedienst und Pflegeberatung",
+   "addr:street": "Kistlerhofstraße",
+   "addr:housenumber": "88",
+   "addr:postcode": "81379",
+   "addr:city": "München",
+   "phone": "+49 89 87766553",
+   "website": "https://www.hollermedic.de/",
+   "email": "info@hollermedic.de"
+  },
+  "location": {
+   "lat": 48.095269,
+   "lon": 11.521964
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/hippokrat-gmbh-ambulanter-kranken-und-altenpfleged-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.hippokrat.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "HIPPOKRAT GmbH Ambulanter Kranken- und Altenpflegedienst",
+   "addr:street": "Heiglhofstraße",
+   "addr:housenumber": "1a",
+   "addr:postcode": "81377",
+   "addr:city": "München",
+   "phone": "+49 89 7806977",
+   "website": "https://www.hippokrat.de/",
+   "email": "connect24@hippokrat.de"
+  },
+  "location": {
+   "lat": 48.114732,
+   "lon": 11.479555
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-sinn-muenchen",
+  "cat": "pflege",
+  "quelle": "https://sinn-pd.de/ (2026-11-14)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst SINN",
+   "addr:street": "Stefan-George-Ring",
+   "addr:housenumber": "2",
+   "addr:postcode": "81929",
+   "addr:city": "München",
+   "phone": "+49 89 80955767",
+   "website": "https://sinn-pd.de/",
+   "email": "kontakt@sinn-pd.de"
+  },
+  "location": {
+   "lat": 48.140667,
+   "lon": 11.648469
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/volare-pflegedienst-muenchen",
+  "cat": "pflege",
+  "quelle": "https://volare-pflege.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "Volare Pflegedienst",
+   "addr:street": "Falkenstraße",
+   "addr:housenumber": "8a",
+   "addr:postcode": "81541",
+   "addr:city": "München",
+   "phone": "+49 89 32602125",
+   "website": "https://volare-pflege.de/"
+  },
+  "location": {
+   "lat": 48.123541,
+   "lon": 11.579617
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/visana-ambulanter-pflegedienst-muenchen",
+  "cat": "pflege",
+  "quelle": "https://visana-pflege.de/de/start/ (2026-11-14)",
+  "tags": {
+   "name": "Visana Ambulanter Pflegedienst",
+   "addr:street": "Drygalski-Allee",
+   "addr:housenumber": "33c",
+   "addr:postcode": "81477",
+   "addr:city": "München",
+   "phone": "+49 89 724499677",
+   "website": "https://visana-pflege.de/"
+  },
+  "location": {
+   "lat": 48.094304,
+   "lon": 11.503953
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/agram-gmbh-ambulante-krankenpflege-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.agram-muenchen.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "AGRAM GmbH Ambulante Krankenpflege",
+   "addr:street": "Brahmsstraße",
+   "addr:housenumber": "32",
+   "addr:postcode": "81677",
+   "addr:city": "München",
+   "phone": "+49 89 47077301",
+   "website": "https://www.agram-muenchen.de/",
+   "email": "info@agram-muenchen.de"
+  },
+  "location": {
+   "lat": 48.142066,
+   "lon": 11.613821
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/intensivpflegedienst-eva-muenchen",
+  "cat": "pflege",
+  "quelle": "https://intensivpflege-eva.de/kontakt/ (2026-11-14)",
+  "tags": {
+   "name": "Intensivpflegedienst EVA",
+   "addr:street": "Schatzbogen",
+   "addr:housenumber": "43",
+   "addr:postcode": "81829",
+   "addr:city": "München",
+   "phone": "+49 89 43577494",
+   "website": "https://intensivpflege-eva.de/",
+   "email": "info@intensivpflege-eva.de"
+  },
+  "location": {
+   "lat": 48.134151,
+   "lon": 11.663081
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/apoc-ambulante-pflege-olympia-czech-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.ambulante-pflege-muenchen.com/kontakt (2026-11-14)",
+  "tags": {
+   "name": "APOC – Ambulante Pflege Olympia Czech",
+   "addr:street": "Gilmstraße",
+   "addr:housenumber": "54a",
+   "addr:postcode": "81377",
+   "addr:city": "München",
+   "phone": "+49 89 71999573",
+   "website": "https://www.ambulante-pflege-muenchen.com/",
+   "email": "info@ambulante-pflege-muenchen.com"
+  },
+  "location": {
+   "lat": 48.119336,
+   "lon": 11.506193
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ari-ambulanter-pflegedienst-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.ari-pflegedienst-muenchen.de/impressum.html (2026-11-14)",
+  "tags": {
+   "name": "ARI Ambulanter Pflegedienst GmbH",
+   "addr:street": "Ottobrunner Straße",
+   "addr:housenumber": "6",
+   "addr:postcode": "81737",
+   "addr:city": "München",
+   "phone": "+49 89 64282229",
+   "website": "https://www.ari-pflegedienst-muenchen.de/",
+   "email": "ari-pflege-team@web.de"
+  },
+  "location": {
+   "lat": 48.112152,
+   "lon": 11.616708
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/ari-ambulanter-pflegedienst-gmbh-muenchen",
+  "cat": "fahrt",
+  "quelle": "https://www.ari-pflegedienst-muenchen.de/impressum.html (2026-11-14)",
+  "tags": {
+   "name": "ARI Ambulanter Pflegedienst GmbH",
+   "addr:street": "Ottobrunner Straße",
+   "addr:housenumber": "6",
+   "addr:postcode": "81737",
+   "addr:city": "München",
+   "phone": "+49 89 64282229",
+   "website": "https://www.ari-pflegedienst-muenchen.de/",
+   "email": "ari-pflege-team@web.de"
+  },
+  "location": {
+   "lat": 48.112152,
+   "lon": 11.616708
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/art-ambulanter-pflegedienst-muenchen",
+  "cat": "pflege",
+  "quelle": "https://art-pflegedienst.de/kontakt/ (2026-11-14)",
+  "tags": {
+   "name": "ART Ambulanter Pflegedienst",
+   "addr:street": "Kistlerhofstraße",
+   "addr:housenumber": "170",
+   "addr:postcode": "81379",
+   "addr:city": "München",
+   "phone": "+49 89 90180600",
+   "website": "https://art-pflegedienst.de/",
+   "email": "info@art-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.094879,
+   "lon": 11.510469
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-intensivkinderkrankenpflege-krolicki-gmb-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.annakrolicki.de/kontakt/ (2026-11-14)",
+  "tags": {
+   "name": "Ambulante Intensivkinderkrankenpflege Krolicki GmbH",
+   "addr:street": "Schatzbogen",
+   "addr:housenumber": "86",
+   "addr:postcode": "81829",
+   "addr:city": "München",
+   "phone": "+49 89 420796970",
+   "website": "https://www.annakrolicki.de/",
+   "email": "office@annakrolicki.de"
+  },
+  "location": {
+   "lat": 48.130545,
+   "lon": 11.657717
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-kranken-und-altenpflege-katharina-rastel-muenchen",
+  "cat": "pflege",
+  "quelle": "https://pflege-trudering.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Ambulante Kranken- und Altenpflege Katharina Rastel",
+   "addr:street": "Florastraße",
+   "addr:housenumber": "28a",
+   "addr:postcode": "81827",
+   "addr:city": "München",
+   "phone": "+49 89 4308883",
+   "website": "https://pflege-trudering.de/",
+   "email": "rastel@pflege-trudering.de"
+  },
+  "location": {
+   "lat": 48.115277,
+   "lon": 11.684954
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-regenbogen-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.regenbogen-pflegedienst.com/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Regenbogen",
+   "addr:street": "Machtlfinger Straße",
+   "addr:housenumber": "26",
+   "addr:postcode": "81379",
+   "addr:city": "München",
+   "phone": "+49 89 66662936",
+   "website": "https://www.regenbogen-pflegedienst.com/",
+   "email": "info@regenbogen-pflegedienst.com"
+  },
+  "location": {
+   "lat": 48.095314,
+   "lon": 11.513426
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-vera-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-vera.com/ (2026-11-14)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Vera",
+   "addr:street": "Drygalski-Allee",
+   "addr:housenumber": "117",
+   "addr:postcode": "81477",
+   "addr:city": "München",
+   "phone": "+49 89 12259520",
+   "website": "https://www.pflegedienst-vera.com/",
+   "email": "info@pflegedienst-vera.com"
+  },
+  "location": {
+   "lat": 48.082376,
+   "lon": 11.504123
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulanter-und-intensiv-pflegedienst-engel-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://pd-engel.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Ambulanter und Intensiv Pflegedienst Engel GmbH",
+   "addr:street": "Jean-Paul-Richter-Straße",
+   "addr:housenumber": "5",
+   "addr:postcode": "81369",
+   "addr:city": "München",
+   "phone": "+49 89 85633477",
+   "website": "https://pd-engel.de/",
+   "email": "pd-engel@mail.de"
+  },
+  "location": {
+   "lat": 48.111635,
+   "lon": 11.525333
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/aucura-kranken-altenpflege-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.aucura.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "AuCura Kranken- & Altenpflege",
+   "addr:street": "Neckarstraße",
+   "addr:housenumber": "7",
+   "addr:postcode": "81677",
+   "addr:city": "München",
+   "phone": "+49 89 81300052",
+   "website": "https://www.aucura.de/",
+   "email": "info@aucura.de"
+  },
+  "location": {
+   "lat": 48.142368,
+   "lon": 11.628199
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/cpd-intensivpflegedienst-claudia-schiefer-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://cpd24.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "CPD Intensivpflegedienst Claudia Schiefer GmbH",
+   "addr:street": "Stefan-George-Ring",
+   "addr:housenumber": "23",
+   "addr:postcode": "81929",
+   "addr:city": "München",
+   "phone": "+49 89 20804030",
+   "website": "https://cpd24.de/",
+   "email": "info@cpd24.de"
+  },
+  "location": {
+   "lat": 48.141717,
+   "lon": 11.649279
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/edelweiss-ambulanter-pflegedienst-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.ambulante-pflege-edelweiss.de/kontakt/ (2026-11-14)",
+  "tags": {
+   "name": "Edelweiss Ambulanter Pflegedienst",
+   "addr:street": "Martin-Empl-Ring",
+   "addr:housenumber": "4",
+   "addr:postcode": "81829",
+   "addr:city": "München",
+   "phone": "+49 89 94384956",
+   "website": "https://www.ambulante-pflege-edelweiss.de/",
+   "email": "info@ambulante-pflege-edelweiss.de"
+  },
+  "location": {
+   "lat": 48.13971,
+   "lon": 11.679944
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/hap-ihr-individueller-pflegedienst-muenchen",
+  "cat": "pflege",
+  "quelle": "http://altenpflege-albrecht-muenchen.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "HAP – Ihr individueller Pflegedienst",
+   "addr:street": "Raintaler Straße",
+   "addr:housenumber": "24",
+   "addr:postcode": "81539",
+   "addr:city": "München",
+   "phone": "+49 89 18930830",
+   "website": "https://www.altenpflege-albrecht-muenchen.de/",
+   "email": "hapalbrecht@hotmail.de"
+  },
+  "location": {
+   "lat": 48.113321,
+   "lon": 11.579797
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/heimbeatmungsservice-brambring-jaschke-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://heimbeatmung.com/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Heimbeatmungsservice Brambring Jaschke GmbH",
+   "addr:street": "Stefan-George-Ring",
+   "addr:housenumber": "23",
+   "addr:postcode": "81929",
+   "addr:city": "München",
+   "phone": "+49 89 215301323",
+   "website": "https://heimbeatmung.com/",
+   "email": "hv@heimbeatmung.com"
+  },
+  "location": {
+   "lat": 48.141717,
+   "lon": 11.649279
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/hestia-ambulanter-pflegedienst-jolanthe-hyzy-muenchen",
+  "cat": "pflege",
+  "quelle": "https://hestia-wg.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Hestia – Ambulanter Pflegedienst Jolanthe Hyzy",
+   "addr:street": "Chorherrstraße",
+   "addr:housenumber": "6",
+   "addr:postcode": "81667",
+   "addr:city": "München",
+   "phone": "+49 89 45079664",
+   "website": "https://hestia-wg.de/",
+   "email": "info@hestia-wg.de"
+  },
+  "location": {
+   "lat": 48.133997,
+   "lon": 11.597314
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/hope-haeusliche-onkologiepflege-e-v-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.hope.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "HOPE – Häusliche Onkologiepflege e.V.",
+   "addr:street": "Gaißacher Straße",
+   "addr:housenumber": "18",
+   "addr:postcode": "81371",
+   "addr:city": "München",
+   "phone": "+49 89 1266510",
+   "website": "https://www.hope.de/",
+   "email": "hope@hope.de"
+  },
+  "location": {
+   "lat": 48.114736,
+   "lon": 11.548031
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/isb-individuelle-senioren-betreuung-olaf-nuesperli-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.amb-pflegedienst-muenchen.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "ISB – Individuelle Senioren Betreuung Olaf Nüsperling",
+   "addr:street": "Aidenbachstraße",
+   "addr:housenumber": "30",
+   "addr:postcode": "81379",
+   "addr:city": "München",
+   "phone": "+49 89 7557396",
+   "website": "https://www.amb-pflegedienst-muenchen.de/",
+   "email": "Olaf.Nuesperling@t-online.de"
+  },
+  "location": {
+   "lat": 48.09881,
+   "lon": 11.52309
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/niccare-pflegedienst-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.niccare-pflegedienst.de/impressum.html (2026-11-14)",
+  "tags": {
+   "name": "Niccare Pflegedienst",
+   "addr:street": "St.-Cajetan-Straße",
+   "addr:housenumber": "13",
+   "addr:postcode": "81669",
+   "addr:city": "München",
+   "phone": "+49 89 46257059",
+   "website": "https://www.niccare-pflegedienst.de/",
+   "email": "info@niccare.de"
+  },
+  "location": {
+   "lat": 48.122788,
+   "lon": 11.600612
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/optimum-care-gmbh-ambulanter-pflegedienst-muenchen",
+  "cat": "pflege",
+  "quelle": "https://optimumcare-pflegedienst.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Optimum Care GmbH Ambulanter Pflegedienst",
+   "addr:street": "Putzbrunner Straße",
+   "addr:housenumber": "89",
+   "addr:postcode": "81739",
+   "addr:city": "München",
+   "phone": "+49 89 37914910",
+   "website": "https://optimumcare-pflegedienst.de/",
+   "email": "info@optimumcare-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.095524,
+   "lon": 11.650316
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/pflege-daheim-brigitte-notz-galow-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://pflege-daheim-muenchen.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "PFLEGE DAHEIM Brigitte Notz-Galow GmbH",
+   "addr:street": "Würmtalstraße",
+   "addr:housenumber": "88",
+   "addr:postcode": "81375",
+   "addr:city": "München",
+   "phone": "+49 89 7104880",
+   "website": "https://pflege-daheim-muenchen.de/",
+   "email": "info@pflege-daheim-muenchen.de"
+  },
+  "location": {
+   "lat": 48.114627,
+   "lon": 11.484272
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/konfido-ambulant-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://konfido-ambulant.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Konfido-AMBULANT GmbH",
+   "addr:street": "Falkenstraße",
+   "addr:housenumber": "25",
+   "addr:postcode": "81541",
+   "addr:city": "München",
+   "phone": "+49 89 62420497",
+   "website": "https://konfido-ambulant.de/",
+   "email": "info.pflegepraxis@konfido-ambulant.de"
+  },
+  "location": {
+   "lat": 48.122111,
+   "lon": 11.579365
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegeteam-wohlauf-muenchen",
+  "cat": "pflege",
+  "quelle": "https://pflegeteam-wohlauf.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "Pflegeteam Wohlauf",
+   "addr:street": "Drächslstraße",
+   "addr:housenumber": "6",
+   "addr:postcode": "81541",
+   "addr:city": "München",
+   "phone": "+49 89 95866368",
+   "website": "https://pflegeteam-wohlauf.de/",
+   "email": "info@pflegeteam-wohlauf.de"
+  },
+  "location": {
+   "lat": 48.123774,
+   "lon": 11.588367
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/premicura-pflegedienst-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.premicura.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "Premicura Pflegedienst",
+   "addr:street": "Frankenthaler Straße",
+   "addr:housenumber": "20",
+   "addr:postcode": "81539",
+   "addr:city": "München",
+   "phone": "+49 89 606657230",
+   "website": "https://www.premicura.de/",
+   "email": "info@premicura.de"
+  },
+  "location": {
+   "lat": 48.108678,
+   "lon": 11.598147
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/supra-ambulanter-pflegedienst-muenchen",
+  "cat": "pflege",
+  "quelle": "https://supra-pd.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Supra Ambulanter Pflegedienst",
+   "addr:street": "Zielstattstraße",
+   "addr:housenumber": "10a",
+   "addr:postcode": "81379",
+   "addr:city": "München",
+   "phone": "+49 89 18939716",
+   "website": "https://supra-pd.de/",
+   "email": "info@supra-pd.de"
+  },
+  "location": {
+   "lat": 48.102883,
+   "lon": 11.531413
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/vivo-ambulante-kranken-und-intensivpflege-e-k-muenchen",
+  "cat": "pflege",
+  "quelle": "https://vivo-ambulant.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "VIVO Ambulante Kranken- und Intensivpflege e.K.",
+   "addr:street": "Ungsteiner Straße",
+   "addr:housenumber": "27",
+   "addr:postcode": "81539",
+   "addr:city": "München",
+   "phone": "+49 89 40267914",
+   "website": "https://vivo-ambulant.de/",
+   "email": "ap@vivo-ambulant.de"
+  },
+  "location": {
+   "lat": 48.112113,
+   "lon": 11.597702
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/voli-muenchen-sued-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.voli-pflege.de/standorte/muenchen-sued (2026-11-14)",
+  "tags": {
+   "name": "VOLI München-Süd",
+   "addr:street": "Pognerstraße",
+   "addr:housenumber": "21",
+   "addr:postcode": "81379",
+   "addr:city": "München",
+   "phone": "+49 89 1472765920",
+   "website": "https://www.voli-pflege.de/standorte/muenchen-sued",
+   "email": "kontakt.m-sued@voli-pflege.de"
+  },
+  "location": {
+   "lat": 48.102433,
+   "lon": 11.546284
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/victum-vitae-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.victumvitae.de/kontakt (2026-11-14)",
+  "tags": {
+   "name": "Victum Vitae GmbH",
+   "addr:street": "Waakirchner Straße",
+   "addr:housenumber": "32",
+   "addr:postcode": "81379",
+   "addr:city": "München",
+   "phone": "+49 89 54843210",
+   "website": "https://www.victumvitae.de/",
+   "email": "victumv@mail.de"
+  },
+  "location": {
+   "lat": 48.101577,
+   "lon": 11.536436
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/apicur-pflegedienst-muenchen",
+  "cat": "pflege",
+  "quelle": "https://apicur.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "apicur Pflegedienst",
+   "addr:street": "Daglfinger Straße",
+   "addr:housenumber": "95",
+   "addr:postcode": "81929",
+   "addr:city": "München",
+   "phone": "+49 89 90176123",
+   "website": "https://apicur.de/",
+   "email": "info@apicur.de"
+  },
+  "location": {
+   "lat": 48.150384,
+   "lon": 11.656113
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/max-care-pflegedienst-muenchen",
+  "cat": "pflege",
+  "quelle": "https://maxcarepflegedienst.de/kontakt/ (2026-11-14)",
+  "tags": {
+   "name": "Max Care Pflegedienst",
+   "addr:street": "Putzbrunner Straße",
+   "addr:housenumber": "71",
+   "addr:postcode": "81739",
+   "addr:city": "München",
+   "phone": "+49 89 90150382",
+   "website": "https://maxcarepflegedienst.de/",
+   "email": "maxcarepflegedienst@gmail.com"
+  },
+  "location": {
+   "lat": 48.097319,
+   "lon": 11.645512
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-pflegestation-des-caritasvereins-solln-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.pfarrverband-solln.de/caritasverein (2026-11-14)",
+  "tags": {
+   "name": "Ambulante Pflegestation des Caritasvereins Solln",
+   "addr:street": "Grünbauerstraße",
+   "addr:housenumber": "45",
+   "addr:postcode": "81479",
+   "addr:city": "München",
+   "phone": "+49 89 794135",
+   "website": "https://www.pfarrverband-solln.de/caritasverein"
+  },
+  "location": {
+   "lat": 48.081776,
+   "lon": 11.516748
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ipm-intensiv-pflegewelt-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.ipm24.com/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "IPM Intensiv Pflegewelt GmbH",
+   "addr:street": "Stahlgruberring",
+   "addr:housenumber": "11",
+   "addr:postcode": "81829",
+   "addr:city": "München",
+   "phone": "+49 89 724694890",
+   "website": "https://www.ipm24.com/",
+   "email": "info@ipm24.com"
+  },
+  "location": {
+   "lat": 48.1329,
+   "lon": 11.666336
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegezentrum-muc-care-muenchen",
+  "cat": "pflege",
+  "quelle": "https://muc-care.de/impressum1 (2026-11-14)",
+  "tags": {
+   "name": "Pflegezentrum Muc Care",
+   "addr:street": "Therese-Giehse-Allee",
+   "addr:housenumber": "73",
+   "addr:postcode": "81739",
+   "addr:city": "München",
+   "phone": "+49 89 97862692",
+   "website": "https://muc-care.de/",
+   "email": "info@muc-care.de"
+  },
+  "location": {
+   "lat": 48.087995,
+   "lon": 11.641916
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/muenchner-care-ambulante-intensivpflege-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://mcare-pflege.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "MÜNCHNER CARE Ambulante Intensivpflege GmbH",
+   "addr:street": "Kronstadter Straße",
+   "addr:housenumber": "4",
+   "addr:postcode": "81677",
+   "addr:city": "München",
+   "phone": "+49 89 200081750",
+   "website": "https://mcare-pflege.de/",
+   "email": "info@mcare-pflege.de"
+  },
+  "location": {
+   "lat": 48.137204,
+   "lon": 11.647859
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/kbo-ambulanter-psychiatrischer-pflegedienst-muenchen",
+  "cat": "pflege",
+  "quelle": "https://kbo-app.de/kontakt (2026-11-14)",
+  "tags": {
+   "name": "kbo-Ambulanter Psychiatrischer Pflegedienst",
+   "addr:street": "Zamdorfer Straße",
+   "addr:housenumber": "100",
+   "addr:postcode": "81677",
+   "addr:city": "München",
+   "phone": "+49 89 21024800",
+   "website": "https://kbo-app.de/"
+  },
+  "location": {
+   "lat": 48.138233,
+   "lon": 11.644612
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/katarina-s-ambulanter-pflegedienst-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://katarinas-pflegedienst.de/ (2026-11-14)",
+  "tags": {
+   "name": "Katarina's Ambulanter Pflegedienst GmbH",
+   "addr:street": "Machtlfinger Straße",
+   "addr:housenumber": "26",
+   "addr:postcode": "81379",
+   "addr:city": "München",
+   "phone": "+49 89 21965624",
+   "website": "https://katarinas-pflegedienst.de/",
+   "email": "katarinas.pflege@gmail.com"
+  },
+  "location": {
+   "lat": 48.095314,
+   "lon": 11.513426
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/kabo-homecare-ambulanter-pflegedienst-muenchen",
+  "cat": "pflege",
+  "quelle": "https://kabo-homecare.de/ (2026-11-14)",
+  "tags": {
+   "name": "Kabo Homecare Ambulanter Pflegedienst",
+   "addr:street": "Sachranger Straße",
+   "addr:housenumber": "21",
+   "addr:postcode": "81549",
+   "addr:city": "München",
+   "phone": "+49 89 66617094",
+   "website": "https://kabo-homecare.de/",
+   "email": "info@kabo-homecare.de"
+  },
+  "location": {
+   "lat": 48.102535,
+   "lon": 11.589734
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/allmeda-gmbh-muenchen",
+  "cat": "pflege",
+  "quelle": "https://allmeda.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "Allmeda GmbH",
+   "addr:street": "Stäblistraße",
+   "addr:housenumber": "10A",
+   "addr:postcode": "81477",
+   "addr:city": "München",
+   "phone": "+49 89 24626375",
+   "website": "https://allmeda.de/",
+   "email": "office@allmeda.de"
+  },
+  "location": {
+   "lat": 48.088819,
+   "lon": 11.506472
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-glueckliches-haus-e-v-muenchen",
+  "cat": "pflege",
+  "quelle": "https://www.glueckliches-haus.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Glückliches Haus e.V.",
+   "addr:street": "Dorotheenstraße",
+   "addr:housenumber": "13a",
+   "addr:postcode": "81825",
+   "addr:city": "München",
+   "phone": "+49 8026 9205785",
+   "website": "https://www.glueckliches-haus.de/",
+   "email": "gluecklicheshaus@web.de"
+  },
+  "location": {
+   "lat": 48.118215,
+   "lon": 11.676572
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
  }
 ]
