@@ -23511,5 +23511,215 @@
     "name": "München"
    }
   }
+ },
+ {
+  "id": "extra/sozialstation-aichach-und-umgebung-caritas-sozials-aichach",
+  "cat": "pflege",
+  "quelle": "https://sozialstation-aichach.de/kontakt/ (2026-11-14)",
+  "tags": {
+   "name": "Sozialstation Aichach und Umgebung (Caritas-Sozialstation Aichach e.V.)",
+   "addr:street": "Bahnhofstraße",
+   "addr:housenumber": "28",
+   "addr:postcode": "86551",
+   "addr:city": "Aichach",
+   "phone": "+49 8251 87330",
+   "website": "https://sozialstation-aichach.de/",
+   "email": "info@sozialstation-aichach.de"
+  },
+  "location": {
+   "lat": 48.461878,
+   "lon": 11.124245
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62377",
+    "name": "Landkreis Aichach-Friedberg"
+   },
+   "8": {
+    "id": "relation/161897",
+    "name": "Aichach"
+   }
+  }
+ },
+ {
+  "id": "extra/brk-ambulanter-pflegedienst-aichach-aichach",
+  "cat": "pflege",
+  "quelle": "https://www.kvaichach-friedberg.brk.de/angebote/alltagshilfen/ambulante-pflege.html (2026-11-14)",
+  "tags": {
+   "name": "BRK Ambulanter Pflegedienst Aichach",
+   "addr:street": "Rosenau",
+   "addr:housenumber": "10",
+   "addr:postcode": "86551",
+   "addr:city": "Aichach",
+   "phone": "+49 8251 885653",
+   "website": "https://www.kvaichach-friedberg.brk.de/angebote/alltagshilfen/ambulante-pflege.html",
+   "email": "pflegedienst@brk-aic-fdb.de"
+  },
+  "location": {
+   "lat": 48.4588,
+   "lon": 11.139853
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62377",
+    "name": "Landkreis Aichach-Friedberg"
+   },
+   "8": {
+    "id": "relation/161897",
+    "name": "Aichach"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-ambulanter-pflegedienst-aichach-aichach",
+  "cat": "fahrt",
+  "quelle": "https://www.kvaichach-friedberg.brk.de/angebote/alltagshilfen/ambulante-pflege.html (2026-11-14)",
+  "tags": {
+   "name": "BRK Ambulanter Pflegedienst Aichach",
+   "addr:street": "Rosenau",
+   "addr:housenumber": "10",
+   "addr:postcode": "86551",
+   "addr:city": "Aichach",
+   "phone": "+49 8251 885653",
+   "website": "https://www.kvaichach-friedberg.brk.de/angebote/alltagshilfen/ambulante-pflege.html",
+   "email": "pflegedienst@brk-aic-fdb.de"
+  },
+  "location": {
+   "lat": 48.4588,
+   "lon": 11.139853
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62377",
+    "name": "Landkreis Aichach-Friedberg"
+   },
+   "8": {
+    "id": "relation/161897",
+    "name": "Aichach"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegezoom-ambulanter-pflegedienst-kuehbach",
+  "cat": "pflege",
+  "quelle": "https://pflegezoom.de/impressum/ (2026-11-14)",
+  "tags": {
+   "name": "pflegezoom ambulanter Pflegedienst",
+   "addr:street": "Marktplatz",
+   "addr:housenumber": "1",
+   "addr:postcode": "86556",
+   "addr:city": "Kühbach",
+   "phone": "+49 8251 8720450",
+   "website": "https://pflegezoom.de/",
+   "email": "info@pflegezoom.de"
+  },
+  "location": {
+   "lat": 48.491587,
+   "lon": 11.18453
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62377",
+    "name": "Landkreis Aichach-Friedberg"
+   },
+   "7": {
+    "id": "relation/161967",
+    "name": "Kühbach"
+   },
+   "8": {
+    "id": "relation/161966",
+    "name": "Kühbach"
+   }
+  }
+ },
+ {
+  "id": "extra/team-inge-friedberg",
+  "cat": "pflege",
+  "quelle": "https://www.team-inge.de/impressum (2026-11-14)",
+  "tags": {
+   "name": "Team Inge",
+   "addr:street": "Bahnhofstraße",
+   "addr:housenumber": "35",
+   "addr:postcode": "86316",
+   "addr:city": "Friedberg",
+   "phone": "+49 821 74771101",
+   "website": "https://www.team-inge.de/",
+   "email": "info@team-inge.de"
+  },
+  "location": {
+   "lat": 48.353028,
+   "lon": 10.983778
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62377",
+    "name": "Landkreis Aichach-Friedberg"
+   },
+   "8": {
+    "id": "relation/395731",
+    "name": "Friedberg"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
  }
 ]
