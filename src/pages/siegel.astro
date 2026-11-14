@@ -6,8 +6,8 @@ import { u } from '../lib/url';
 const abs = (p: string) => new URL(u(p), Astro.site).href;
 const home = abs('/');
 const variants = [
-  { key: 'banner', label: 'Banner', w: 256, h: 64 },
   { key: 'kompakt', label: 'Kompakt', w: 252, h: 32 },
+  { key: 'banner', label: 'Banner', w: 256, h: 64 },
   { key: 'rund', label: 'Rund', w: 120, h: 120 },
 ];
 const ALT = 'Gelistet auf Sanitätshaus-Suche';
