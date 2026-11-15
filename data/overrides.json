@@ -151,5 +151,14 @@
  },
  "node/10197614422": {
   "_ausblenden": "Standort Sankt-Martin-Straße steht nicht mehr auf https://www.vitolus.de/standorte (14.11.2026)"
+ },
+ "node/12364681199": {
+  "_quelle": "https://cosmea-pflege.de/standorte/pflegedienst-in-langweid-am-lech/ (2026-11-15)",
+  "street": "Achsheimer Straße 9",
+  "postcode": "86462",
+  "phone": "+49 8230 80113",
+  "website": "https://cosmea-pflege.de/standorte/pflegedienst-in-langweid-am-lech/",
+  "email": "augsburg-nord@cosmea-pflege.de",
+  "name": "Cosmea Pflege Augsburg Nord"
  }
 }

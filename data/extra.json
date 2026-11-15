@@ -23721,5 +23721,808 @@
     "alltag"
    ]
   }
+ },
+ {
+  "id": "extra/oekumenische-sozialstation-meitingen-und-umgebung--meitingen",
+  "cat": "pflege",
+  "quelle": "https://www.sozialstation-meitingen.de/kontakt/ (2026-11-15)",
+  "tags": {
+   "name": "Ökumenische Sozialstation Meitingen und Umgebung gGmbH",
+   "addr:street": "St.-Wolfgang-Straße",
+   "addr:housenumber": "14e",
+   "addr:postcode": "86405",
+   "addr:city": "Meitingen",
+   "phone": "+49 8271 813940",
+   "website": "https://www.sozialstation-meitingen.de/",
+   "email": "info@sozialstation-meitingen.de"
+  },
+  "location": {
+   "lat": 48.544092,
+   "lon": 10.851433
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "8": {
+    "id": "relation/445866",
+    "name": "Meitingen"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-sturm-gmbh-co-kg-standort-thierhaupte-thierhaupten",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-sturm.de/ (2026-11-15)",
+  "tags": {
+   "name": "Pflegedienst Sturm GmbH & Co. KG (Standort Thierhaupten)",
+   "addr:street": "Baarer Straße",
+   "addr:housenumber": "14a",
+   "addr:postcode": "86672",
+   "addr:city": "Thierhaupten",
+   "phone": "+49 8271 426096",
+   "website": "https://www.pflegedienst-sturm.de/",
+   "email": "info@pflegedienst-sturm.de"
+  },
+  "location": {
+   "lat": 48.568584,
+   "lon": 10.907137
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "8": {
+    "id": "relation/445865",
+    "name": "Thierhaupten"
+   }
+  }
+ },
+ {
+  "id": "extra/oekumenische-sozialstation-gersthofen-und-umgebung-gersthofen",
+  "cat": "pflege",
+  "quelle": "https://sozialstation-gersthofen.de/impressum/ (2026-11-15)",
+  "tags": {
+   "name": "Ökumenische Sozialstation Gersthofen und Umgebung gGmbH",
+   "addr:street": "Ludwig-Thoma-Straße",
+   "addr:housenumber": "7",
+   "addr:postcode": "86368",
+   "addr:city": "Gersthofen",
+   "phone": "+49 821 2990014",
+   "website": "https://sozialstation-gersthofen.de/",
+   "email": "info@sozialstation-gersthofen.de"
+  },
+  "location": {
+   "lat": 48.425669,
+   "lon": 10.876215
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "8": {
+    "id": "relation/443126",
+    "name": "Gersthofen"
+   }
+  }
+ },
+ {
+  "id": "extra/oekumenische-sozialstation-neusaess-diedorf-dietki-neusaess",
+  "cat": "pflege",
+  "quelle": "https://www.sozialstation-neusaess.de/impressum (2026-11-15)",
+  "tags": {
+   "name": "Ökumenische Sozialstation Neusäß-Diedorf-Dietkirch gGmbH",
+   "addr:street": "Bürgermeister-Kaifer-Straße",
+   "addr:housenumber": "10",
+   "addr:postcode": "86356",
+   "addr:city": "Neusäß",
+   "phone": "+49 821 467878",
+   "website": "https://www.sozialstation-neusaess.de/",
+   "email": "info@sozialstation-neusaess.de"
+  },
+  "location": {
+   "lat": 48.392986,
+   "lon": 10.838272
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "8": {
+    "id": "relation/443135",
+    "name": "Neusäß"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-sl-neusaess",
+  "cat": "pflege",
+  "quelle": "https://www.slpflegedienst.de/impressum/ (2026-11-15)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst SL",
+   "addr:street": "Trentiner Ring",
+   "addr:housenumber": "12",
+   "addr:postcode": "86356",
+   "addr:city": "Neusäß",
+   "phone": "+49 821 20719927",
+   "website": "https://www.slpflegedienst.de/",
+   "email": "info@slpflegedienst.de"
+  },
+  "location": {
+   "lat": 48.41476,
+   "lon": 10.827997
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "8": {
+    "id": "relation/443135",
+    "name": "Neusäß"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegedienst-sonnenschein-sonnenschein-pflege-gmbh-stadtbergen",
+  "cat": "pflege",
+  "quelle": "https://www.sonnenschein-team.de/impressum (2026-11-15)",
+  "tags": {
+   "name": "Pflegedienst Sonnenschein (Sonnenschein Pflege GmbH)",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "62",
+   "addr:postcode": "86391",
+   "addr:city": "Stadtbergen",
+   "phone": "+49 821 4339733",
+   "website": "https://www.sonnenschein-team.de/",
+   "email": "info@sonnenschein-team.de"
+  },
+  "location": {
+   "lat": 48.348651,
+   "lon": 10.845419
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "8": {
+    "id": "relation/406928",
+    "name": "Stadtbergen"
+   }
+  }
+ },
+ {
+  "id": "extra/a-b-pflege-team-gmbh-langenneufnach",
+  "cat": "pflege",
+  "quelle": "https://www.ab-pflegeteam.de/ (2026-11-15)",
+  "tags": {
+   "name": "A & B Pflege-Team GmbH",
+   "addr:street": "Rathausstraße",
+   "addr:housenumber": "17a",
+   "addr:postcode": "86863",
+   "addr:city": "Langenneufnach",
+   "phone": "+49 8239 1055",
+   "website": "https://www.ab-pflegeteam.de/",
+   "email": "info@ab-pflegeteam.de"
+  },
+  "location": {
+   "lat": 48.258282,
+   "lon": 10.607645
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "7": {
+    "id": "relation/2943870",
+    "name": "Stauden"
+   },
+   "8": {
+    "id": "relation/935164",
+    "name": "Langenneufnach"
+   }
+  }
+ },
+ {
+  "id": "extra/asb-pflegedienst-gessertshausen-sozialstation-schw-gessertshause",
+  "cat": "pflege",
+  "quelle": "https://www.augsburg-asb.de/adressen-und-kontakte (2026-11-15)",
+  "tags": {
+   "name": "ASB Pflegedienst Gessertshausen (Sozialstation Schwarzachtal)",
+   "addr:street": "Mitterfeld",
+   "addr:housenumber": "8",
+   "addr:postcode": "86459",
+   "addr:city": "Gessertshausen",
+   "phone": "+49 821 5977926",
+   "website": "https://www.augsburg-asb.de/"
+  },
+  "location": {
+   "lat": 48.328348,
+   "lon": 10.739117
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "7": {
+    "id": "relation/2943869",
+    "name": "Gessertshausen"
+   },
+   "8": {
+    "id": "relation/443321",
+    "name": "Gessertshausen"
+   }
+  }
+ },
+ {
+  "id": "extra/pflege-mobil-lohner-grossaitingen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegemobil-lohner.de/ (2026-11-15)",
+  "tags": {
+   "name": "Pflege-Mobil Lohner",
+   "addr:street": "Roggenstraße",
+   "addr:housenumber": "3",
+   "addr:postcode": "86845",
+   "addr:city": "Großaitingen",
+   "phone": "+49 8203 952758",
+   "website": "https://www.pflegemobil-lohner.de/",
+   "email": "info@pflegemobil-lohner.de"
+  },
+  "location": {
+   "lat": 48.223406,
+   "lon": 10.799333
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "7": {
+    "id": "relation/2943489",
+    "name": "Großaitingen"
+   },
+   "8": {
+    "id": "relation/935175",
+    "name": "Großaitingen"
+   }
+  }
+ },
+ {
+  "id": "extra/kerner-pflegedienst-ambulante-alten-und-krankenpfl-untermeitinge",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-kerner.de/kontakt (2026-11-15)",
+  "tags": {
+   "name": "Kerner Pflegedienst Ambulante Alten- und Krankenpflege",
+   "addr:street": "Lechring",
+   "addr:housenumber": "2",
+   "addr:postcode": "86836",
+   "addr:city": "Untermeitingen",
+   "phone": "+49 8232 96690",
+   "website": "https://pflegedienst-kerner.de/"
+  },
+  "location": {
+   "lat": 48.160394,
+   "lon": 10.819169
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "7": {
+    "id": "relation/2943491",
+    "name": "Lechfeld"
+   },
+   "8": {
+    "id": "relation/935161",
+    "name": "Untermeitingen"
+   }
+  }
+ },
+ {
+  "id": "extra/passt-ggmbh-persoenliche-assistenz-koenigsbrunn",
+  "cat": "pflege",
+  "quelle": "https://www.passt-assistenz.de/ (2026-11-15)",
+  "tags": {
+   "name": "PAsst! gGmbH – Persönliche Assistenz",
+   "addr:street": "Karwendelstraße",
+   "addr:housenumber": "2 ½",
+   "addr:postcode": "86343",
+   "addr:city": "Königsbrunn",
+   "phone": "+49 8231 6004510",
+   "website": "https://www.passt-assistenz.de/",
+   "email": "passt@passt-assistenz.de"
+  },
+  "location": {
+   "lat": 48.271421,
+   "lon": 10.899542
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "8": {
+    "id": "relation/935170",
+    "name": "Königsbrunn"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-ancora-gmbh-stadtbergen",
+  "cat": "pflege",
+  "quelle": "http://pflegedienst-ancora-augsburg.de/impressum-datenschutz/ (2026-11-15)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Ancora GmbH",
+   "addr:street": "Bismarckstraße",
+   "addr:housenumber": "57",
+   "addr:postcode": "86391",
+   "addr:city": "Stadtbergen",
+   "phone": "+49 821 90796588",
+   "website": "https://pflegedienst-ancora-augsburg.de/",
+   "email": "mail@pflegedienst-ancora-augsburg.de"
+  },
+  "location": {
+   "lat": 48.36572,
+   "lon": 10.855147
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "8": {
+    "id": "relation/406928",
+    "name": "Stadtbergen"
+   }
+  }
+ },
+ {
+  "id": "extra/haeusliche-pflege-schell-gmbh-neusaess",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-schell.de/impressum (2026-11-15)",
+  "tags": {
+   "name": "Häusliche Pflege Schell GmbH",
+   "addr:street": "Braillestraße",
+   "addr:housenumber": "9",
+   "addr:postcode": "86356",
+   "addr:city": "Neusäß",
+   "phone": "+49 821 56996690",
+   "website": "https://www.pflegedienst-schell.de/",
+   "email": "info@pflegedienst-schell.de"
+  },
+  "location": {
+   "lat": 48.387643,
+   "lon": 10.837893
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "8": {
+    "id": "relation/443135",
+    "name": "Neusäß"
+   }
+  }
+ },
+ {
+  "id": "extra/i-w-pflegeengel-ambulanter-pflegedienst-gmbh-gersthofen",
+  "cat": "pflege",
+  "quelle": "https://www.iw-pflegeengel.de/impressum/ (2026-11-15)",
+  "tags": {
+   "name": "I. W. Pflegeengel – Ambulanter Pflegedienst GmbH",
+   "addr:street": "Bauernstraße",
+   "addr:housenumber": "7",
+   "addr:postcode": "86368",
+   "addr:city": "Gersthofen",
+   "phone": "+49 821 20831400",
+   "website": "https://www.iw-pflegeengel.de/",
+   "email": "info@iw-pflegeengel.de"
+  },
+  "location": {
+   "lat": 48.424556,
+   "lon": 10.881056
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "8": {
+    "id": "relation/443126",
+    "name": "Gersthofen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/haeusliche-pflege-mit-herz-gmbh-koenigsbrunn",
+  "cat": "pflege",
+  "quelle": "https://www.haeuslichepflegemitherz.de/Kontakt/Impressum/ (2026-11-15)",
+  "tags": {
+   "name": "Häusliche Pflege mit Herz GmbH",
+   "addr:street": "Lilienthalstraße",
+   "addr:housenumber": "14",
+   "addr:postcode": "86343",
+   "addr:city": "Königsbrunn",
+   "phone": "+49 8231 9873003",
+   "website": "https://www.haeuslichepflegemitherz.de/",
+   "email": "kontakt@haeuslichepflegemitherz.de"
+  },
+  "location": {
+   "lat": 48.249075,
+   "lon": 10.872916
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "8": {
+    "id": "relation/935170",
+    "name": "Königsbrunn"
+   }
+  }
+ },
+ {
+  "id": "extra/sambo-care-ambulanter-pflegedienst-diedorf",
+  "cat": "pflege",
+  "quelle": "https://www.sambocare-pflegedienst.de/impressum/ (2026-11-15)",
+  "tags": {
+   "name": "Sambo Care Ambulanter Pflegedienst",
+   "addr:street": "Willishauser Straße",
+   "addr:housenumber": "2",
+   "addr:postcode": "86420",
+   "addr:city": "Diedorf",
+   "phone": "+49 821 65035583",
+   "website": "https://www.sambocare-pflegedienst.de/",
+   "email": "info@sambocare-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.373497,
+   "lon": 10.760248
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "8": {
+    "id": "relation/443306",
+    "name": "Diedorf"
+   }
+  }
+ },
+ {
+  "id": "extra/medimeran-gmbh-gersthofen",
+  "cat": "pflege",
+  "quelle": "https://www.medimeran.de/kontakt (2026-11-15)",
+  "tags": {
+   "name": "MediMeran GmbH",
+   "addr:street": "Kirchstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "86368",
+   "addr:city": "Gersthofen",
+   "phone": "+49 821 99963370",
+   "website": "https://www.medimeran.de/",
+   "email": "info@medimeran.de"
+  },
+  "location": {
+   "lat": 48.427749,
+   "lon": 10.879166
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "8": {
+    "id": "relation/443126",
+    "name": "Gersthofen"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-lauingen-standort-welden-welden",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-lauingen.com/standort-welden/ (2026-11-15)",
+  "tags": {
+   "name": "Pflegedienst Lauingen – Standort Welden",
+   "addr:street": "Obere Bahnhofstraße",
+   "addr:housenumber": "21",
+   "addr:postcode": "86465",
+   "addr:city": "Welden",
+   "phone": "+49 8293 5259944",
+   "website": "https://www.pflegedienst-lauingen.com/standort-welden/",
+   "email": "info@pflegedienst-lauingen.com"
+  },
+  "location": {
+   "lat": 48.449106,
+   "lon": 10.662353
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "7": {
+    "id": "relation/445269",
+    "name": "Welden"
+   },
+   "8": {
+    "id": "relation/445262",
+    "name": "Welden"
+   }
+  }
+ },
+ {
+  "id": "extra/care-professional-a-s-gmbh-koenigsbrunn",
+  "cat": "pflege",
+  "quelle": "https://www.care-as.de/ (2026-11-15)",
+  "tags": {
+   "name": "Care Professional A&S GmbH",
+   "addr:street": "Zeissstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "86343",
+   "addr:city": "Königsbrunn",
+   "phone": "+49 1556 3366255",
+   "website": "https://www.care-as.de/",
+   "email": "info@care-as.de"
+  },
+  "location": {
+   "lat": 48.283587,
+   "lon": 10.895869
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "8": {
+    "id": "relation/935170",
+    "name": "Königsbrunn"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-koenigsbrunn-der-johannite-koenigsbrunn",
+  "cat": "pflege",
+  "quelle": "https://www.johanniter.de/juh/lv-bayern/rv-bayerisch-schwaben/unsere-standorte-einrichtungen-in-bayerisch-schwaben/einrichtung-detailseite/johanniter-zentrum-koenigsbrunn-3363/ (2026-11-15)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Königsbrunn der Johanniter",
+   "addr:street": "Bürgermeister-Wohlfarth-Straße",
+   "addr:housenumber": "78a",
+   "addr:postcode": "86343",
+   "addr:city": "Königsbrunn",
+   "phone": "+49 8231 969060",
+   "website": "https://www.johanniter.de/juh/lv-bayern/rv-bayerisch-schwaben/unsere-standorte-einrichtungen-in-bayerisch-schwaben/einrichtung-detailseite/johanniter-zentrum-koenigsbrunn-3363/"
+  },
+  "location": {
+   "lat": 48.267868,
+   "lon": 10.886176
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "8": {
+    "id": "relation/935170",
+    "name": "Königsbrunn"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-augsburg-gersthofen-der-jo-gersthofen",
+  "cat": "pflege",
+  "quelle": "https://www.johanniter.de/juh/lv-bayern/rv-bayerisch-schwaben/unsere-standorte-einrichtungen-in-bayerisch-schwaben/einrichtung-detailseite/johanniter-sozialstation-augsburg-807/ (2026-11-15)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Augsburg/Gersthofen der Johanniter",
+   "addr:street": "Augsburger Straße",
+   "addr:housenumber": "174a",
+   "addr:postcode": "86368",
+   "addr:city": "Gersthofen",
+   "phone": "+49 821 710486410",
+   "website": "https://www.johanniter.de/juh/lv-bayern/rv-bayerisch-schwaben/unsere-standorte-einrichtungen-in-bayerisch-schwaben/einrichtung-detailseite/johanniter-sozialstation-augsburg-807/"
+  },
+  "location": {
+   "lat": 48.408171,
+   "lon": 10.880055
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62622",
+    "name": "Landkreis Augsburg"
+   },
+   "8": {
+    "id": "relation/443126",
+    "name": "Gersthofen"
+   }
+  }
  }
 ]
