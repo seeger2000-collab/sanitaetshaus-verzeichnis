@@ -137,7 +137,7 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
     };
     const needCats = () => (PRE ? (PRE.kind === 'cat' ? [PRE.i] : PRE.kind === 'feat' ? [PRE.san] : BD[PRE.i].cats) : nameQ ? ALLCATS : BD[sel < 0 ? ALL : sel].cats);
     const whatLabel = () => (PRE ? PRE.label : nameQ ? `„${nameQ}“` : BD[sel < 0 ? ALL : sel].label);
-    const item = (e, d) => `<li${e[7] ? '' : ' class="nocontact"'}><a href="${base}${e[5]}"><strong>${esc(e[3])}</strong></a>${cats[e[0]].hb >= 0 && (e[12] & (1 << cats[e[0]].hb)) ? ' <span class="hb">macht Hausbesuche</span>' : ''}${d == null ? '' : ` <span class="fkm">${d.toFixed(1).replace('.', ',')} km</span>`}${ohBadge(e[8])}${e[13] ? ` <span class="bst" title="Der Betrieb hat uns am ${e[13].split('-').reverse().join('.')} seine Kontaktdaten und Leistungen bestätigt. Das ist keine Prüfung oder Bewertung der Qualität.">Vom Betrieb bestätigt · ${e[13].slice(5, 7)}/${e[13].slice(0, 4)}</span>` : ''}<br><span class="muted">${esc(cats[e[0]].one)} · ${esc(e[4])}</span>${actions(e)}</li>`;
+    const item = (e, d) => `<li${e[7] ? '' : ' class="nocontact"'}><a href="${base}${e[5]}"><strong>${esc(e[3])}</strong></a>${cats[e[0]].hb >= 0 && (e[12] & (1 << cats[e[0]].hb)) ? ' <span class="hb">macht Hausbesuche</span>' : ''}${d == null ? '' : ` <span class="fkm">${d.toFixed(1).replace('.', ',')} km</span>`}${ohBadge(e[8])}${e[13] ? ` <span class="bst" title="Der Betrieb hat uns am ${e[13].split('-').reverse().join('.')} seine Kontaktdaten und Leistungen bestätigt. Das ist keine Prüfung oder Bewertung der Qualität."><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1l6 2.5v4c0 3.6-2.6 6.4-6 7.5-3.4-1.1-6-3.9-6-7.5v-4z" fill="currentColor"/><path d="M5 8l2 2 4-4" stroke="#fff" stroke-width="1.8" fill="none"/></svg> Vom Betrieb bestätigt · ${e[13].slice(5, 7)}/${e[13].slice(0, 4)}</span>` : ''}<br><span class="muted">${esc(cats[e[0]].one)} · ${esc(e[4])}</span>${actions(e)}</li>`;
     async function draw() {
       const tok = ++drawTok;
       ensureMap();
@@ -278,6 +278,7 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
   .flabel { margin: 22px 0 10px; font-size: 1.25rem; }
   .bedarf { list-style: none; padding: 0; margin: 0 0 10px; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
   a.bd { display: block; box-sizing: border-box; text-decoration: none; }
+  .flist .bst svg { vertical-align: -2px; }
   .flist .bst { display: inline-block; font-size: .8rem; font-weight: 600; padding: 1px 8px; border-radius: 999px; background: var(--accent); color: var(--brand); cursor: help; }
   .flist .hb { display: inline-block; font-size: .8rem; font-weight: 600; padding: 1px 8px; border-radius: 999px; background: #e0f2f1; color: #00695c; }
   .bd { width: 100%; height: 100%; text-align: left; font: inherit; background: var(--bg); color: var(--text); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 14px; cursor: pointer; }
