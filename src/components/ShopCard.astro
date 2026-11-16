@@ -13,7 +13,6 @@ const address = [shop.street, place].filter(Boolean).join(', ');
   <article class={shop.featured ? 'card featured' : 'card'}>
     {shop.featured && <p class="badge">Anzeige · Top-Eintrag</p>}
     <h3 data-oh={shop.openingHours ?? undefined}><a href={u(`/sanitaetshaus/${shop.slug}/`)}>{shop.name}</a></h3>
-    <Bestaetigt date={shop.confirmedAt} />
     <p class="addr">
       {address}
       {shop.wheelchair === 'yes' && <span class="acc">{address ? ' · ' : ''}barrierefrei</span>}
@@ -22,6 +21,7 @@ const address = [shop.street, place].filter(Boolean).join(', ');
       <ul class="chips">{shop.features.map((f) => <li class="chip">{featureByKey[f]?.label}</li>)}</ul>
     )}
     <Kontakt name={shop.name} city={shop.city} phone={shop.phone} email={shop.email} website={shop.website} booking={shop.booking} lat={shop.lat} lon={shop.lon} />
+    <Bestaetigt date={shop.confirmedAt} />
   </article>
 </li>
 <style>

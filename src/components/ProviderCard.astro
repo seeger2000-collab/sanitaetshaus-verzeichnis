@@ -16,13 +16,13 @@ const hours = p.openingHours ? formatHours(p.openingHours) : null;
 <li class:list={["shop", { nocontact: !p.phone }]} data-features={p.features.join(' ')} data-wheelchair={p.wheelchair === 'yes' ? '1' : ''}>
   <article class="card">
     <h3 data-oh={p.openingHours ?? undefined}>{p.name}</h3>
-    <Bestaetigt date={p.confirmedAt} />
     <p class="addr">{address}{km != null && ` · ${km < 1 ? 'unter 1' : Math.round(km)} km`}{p.wheelchair === 'yes' && <span class="acc">{address ? ' · ' : ''}barrierefrei</span>}</p>
     {p.features.length > 0 && (
       <ul class="chips">{p.features.map((f) => <li class="chip">{p.evidence?.[f] ? <a href={p.evidence[f]} rel="nofollow noopener" target="_blank" title="Quelle auf der Website">{label[f]}</a> : label[f]}</li>)}</ul>
     )}
     {hours && <p class="hours">{hours.join(' · ')}{p.hoursSource === 'website' && ' (laut Website)'}</p>}
     <Kontakt name={p.name} city={p.city} phone={p.phone} email={p.email} website={p.website} booking={p.booking} lat={p.lat} lon={p.lon} />
+    <Bestaetigt date={p.confirmedAt} />
   </article>
 </li>
 <style>
