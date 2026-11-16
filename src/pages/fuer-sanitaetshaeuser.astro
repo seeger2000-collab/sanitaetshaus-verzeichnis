@@ -15,6 +15,11 @@ const correction = SITE.correctionFormUrl ? u(SITE.correctionFormUrl) : `${SITE.
     <p><a class="btn" href={correction} rel="nofollow">Eintrag ändern oder hinzufügen</a></p>
   </section>
 
+  <section class="card">
+    <h2>Eintrag bestätigen</h2>
+    <p>Schreiben Sie uns von der E-Mail-Adresse Ihres Betriebs (zum Beispiel <code>info@ihr-sanitaetshaus.de</code>), dass Ihre Daten stimmen, oder was wir ändern sollen. Nach der Prüfung erscheint an Ihrem Eintrag der Hinweis <strong>„Vom Betrieb bestätigt“</strong> mit Monat und Jahr. Er gilt zwölf Monate. Danach können Sie Ihre Daten einfach erneut bestätigen.</p>
+    <p><a class="btn" href={u('/eintrag/?art=bestaetigen')} rel="nofollow">Eintrag bestätigen</a></p>
+  </section>
   <section class="card top">
     <h2>Top-Eintrag</h2>
     <p>Mit einem Top-Eintrag steht Ihr Haus in Ihrer Stadt und auf den passenden Leistungsseiten ganz oben und ist hervorgehoben. Sie können zusätzlich Kassenverträge, Ansprechpartner und Fotos angeben.</p>
@@ -25,8 +30,9 @@ const correction = SITE.correctionFormUrl ? u(SITE.correctionFormUrl) : `${SITE.
   </section>
   <section class="card">
     <h2>Siegel für Ihre Website</h2>
-    <p>Zeigen Sie Ihren Kunden, welche Leistungen Sie anbieten: Binden Sie diesen Link auf Ihrer Website ein. Ersetzen Sie dazu <code>IHR-EINTRAG</code> durch den letzten Teil der Adresse Ihrer Seite bei uns.</p>
-    <pre><code>{`<a href="${new URL(u('/sanitaetshaus/IHR-EINTRAG/'), Astro.site).href}">Unsere Leistungen im Sanitätshaus-Verzeichnis</a>`}</code></pre>
+    <p>Zeigen Sie Ihren Kunden, dass Ihr Betrieb bei uns gelistet ist. Das Siegel führt direkt zu Ihrem Eintrag mit Leistungen und Öffnungszeiten.</p>
+    <p><img src={u('/siegel/siegel-kompakt.svg')} alt="Gelistet auf Sanitätshaus-Suche" width="252" height="32" /></p>
+    <p><a class="btn" href={u('/siegel/')}>Siegel holen</a></p>
   </section>
   <p><a href={u('/ueber/')}>So entstehen die Daten</a></p>
 </Base>

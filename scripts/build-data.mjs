@@ -67,6 +67,8 @@ for (const s of [...osm.shops, ...extra.filter((x) => x.cat === cat.key)]) {
   const o = { ...(s.featuresByCat ? { featuresByCat: s.featuresByCat } : {}), ...(overrides[s.id] || {}) };
   if (o._ausblenden) continue; // Dublette oder veraltet, z. B. { "_ausblenden": "Dublette von node/…" }
   if (o.featuredUntil && o.featuredUntil < new Date().toISOString().slice(0, 10)) o.featured = false;
+  // confirmedAt: Betrieb hat seine Daten bestätigt (Siegel „Vom Betrieb bestätigt“). Gilt 12 Monate, dann fällt das Siegel weg.
+  if (o.confirmedAt && o.confirmedAt < new Date(Date.now() - 365 * 864e5).toISOString().slice(0, 10)) delete o.confirmedAt;
   // featuresByCat: Leistungen, die uns gemeldet wurden, aber nicht auf der Website stehen, z. B. { "fahrt": ["begleitfahrt"] }
   const features = [...new Set([...(e?.status === 'ok' ? e.features : []), ...(o.featuresByCat?.[cat.key] || [])])];
   delete o.featuresByCat; delete o._quelle;
@@ -97,6 +99,7 @@ for (const s of [...osm.shops, ...extra.filter((x) => x.cat === cat.key)]) {
     websiteCheckedAt: e?.status === 'ok' ? e.checkedAt.slice(0, 10) : null,
     image: images[s.id] && !images[s.id].none ? (({ thumb, link, credit, license, source, date }) => ({ thumb, link, credit, license, source, date }))(images[s.id]) : null,
     featured: false,
+    confirmedAt: null,
     ...o,
   });
 }
@@ -128,8 +131,8 @@ for (const s of all) {
 }
 const shops = all.filter((s) => s.cat === 'sanitaetshaus');
 // Andere Kategorien: schlanke Einträge ohne eigene Detailseite
-const providers = all.filter((s) => s.cat !== 'sanitaetshaus').map(({ cat, id, name, street, postcode, city, citySlug, stateSlug, state, lat, lon, phone, email, booking, website, openingHours, hoursSource, wheelchair, features, evidence }) =>
-  ({ cat, id, name, street, postcode, city, citySlug, stateSlug, state, lat, lon, phone, email, booking, website, openingHours, hoursSource, wheelchair, features, evidence }))
+const providers = all.filter((s) => s.cat !== 'sanitaetshaus').map(({ cat, id, name, street, postcode, city, citySlug, stateSlug, state, lat, lon, phone, email, booking, website, openingHours, hoursSource, wheelchair, features, evidence, confirmedAt }) =>
+  ({ cat, id, name, street, postcode, city, citySlug, stateSlug, state, lat, lon, phone, email, booking, website, openingHours, hoursSource, wheelchair, features, evidence, ...(confirmedAt ? { confirmedAt } : {}) }))
   .sort((a, b) => b.features.length - a.features.length || a.name.localeCompare(b.name, 'de'));
 
 // Shop-Slugs: name + stadt, bei Dopplung Straße bzw. Zähler
@@ -173,7 +176,7 @@ const plz = Object.fromEntries(Object.entries(plzPts).sort().map(([k, v]) => [k,
 const catSlug = Object.fromEntries(CATEGORIES.map((c) => [c.key, c.slug]));
 // Finder-Daten zweigeteilt: kleine Kerndatei für Karte und Suche, Details (Adresse, Kontakt) in 1°-Kacheln, die erst beim Suchen geladen werden
 const finderAll = all.filter((s) => s.lat).map((s) => [catIndex[s.cat], r4(s.lat), r4(s.lon), s.name, [s.street, [s.postcode, cityBySlug.get(s.citySlug)?.label || s.city].filter(Boolean).join(' ')].filter(Boolean).join(', '),
-    s.slug ? `sanitaetshaus/${s.slug}/` : `${catSlug[s.cat]}/${s.citySlug}/`, bedarfMask(s), (s.phone || '').split(';')[0].trim(), s.openingHours || '', s.website || '', (s.email || '').split(';')[0].trim(), s.booking || '', (FEATURES_BY_CAT[s.cat] || []).reduce((m, f, i) => (s.features.includes(f.key) ? m | (1 << i) : m), 0)]);
+    s.slug ? `sanitaetshaus/${s.slug}/` : `${catSlug[s.cat]}/${s.citySlug}/`, bedarfMask(s), (s.phone || '').split(';')[0].trim(), s.openingHours || '', s.website || '', (s.email || '').split(';')[0].trim(), s.booking || '', (FEATURES_BY_CAT[s.cat] || []).reduce((m, f, i) => (s.features.includes(f.key) ? m | (1 << i) : m), 0), s.confirmedAt || '']);
 // Pro Kategorie eine Kerndatei (nur was für Karte und Filter nötig ist), dazu Detail-Kacheln je Kategorie und 1°-Feld.
 // So lädt die Startseite zuerst nur Orte und Sanitätshäuser, weitere Kategorien erst, wenn sie gebraucht werden.
 await rm('public/data/f', { recursive: true, force: true });
@@ -183,7 +186,7 @@ const byCat = CATEGORIES.map(() => []);
 for (const e of finderAll) byCat[e[0]].push(e);
 for (const [ci, rows] of byCat.entries()) {
   const cells = {};
-  rows.forEach((e, j) => { const k = `${Math.floor(e[1])}_${Math.floor(e[2])}`; (cells[k] ||= {})[j] = [e[4], e[5], e[7], e[8], e[9], e[10], e[11]]; });
+  rows.forEach((e, j) => { const k = `${Math.floor(e[1])}_${Math.floor(e[2])}`; (cells[k] ||= {})[j] = [e[4], e[5], e[7], e[8], e[9], e[10], e[11], e[13]]; });
   for (const [k, v] of Object.entries(cells)) await writeFile(`public/data/f/${ci}_${k}.json`, JSON.stringify(v));
   // [lat, lon, Name, Bedarfs-Maske, Leistungs-Maske, hat Telefon]
   await writeFile(`public/data/f/c${ci}.json`, JSON.stringify(rows.map((e) => [e[1], e[2], e[3], e[6], e[12], e[7] ? 1 : 0])));

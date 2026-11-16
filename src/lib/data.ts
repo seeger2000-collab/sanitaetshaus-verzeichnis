@@ -11,14 +11,14 @@ export type Shop = {
   phone: string | null; email: string | null; website: string | null; booking?: string | null;
   openingHours: string | null; hoursSource?: string | null; wheelchair: string | null;
   features: string[]; kassen: string[]; evidence: Record<string, string>;
-  websiteCheckedAt: string | null; featured: boolean;
+  websiteCheckedAt: string | null; featured: boolean; confirmedAt?: string | null;
   image?: { thumb: string; link: string; credit: string; license: string; source: string; date: string } | null;
 };
 export type City = { id: string; name: string; label: string; slug: string; district: string | null; state: string; stateSlug: string; count: number; counts: Record<string, number>; lat: number; lon: number };
 export type Provider = {
   cat: string; id: string; name: string; street: string | null; postcode: string | null; city: string; citySlug: string; stateSlug: string; state: string;
   lat?: number; lon?: number; phone: string | null; email?: string | null; booking?: string | null; website: string | null; openingHours: string | null; hoursSource?: string | null; wheelchair: string | null;
-  features: string[]; evidence: Record<string, string>;
+  features: string[]; evidence: Record<string, string>; confirmedAt?: string | null;
 };
 
 export const shops = shopsJson as Shop[];

@@ -4,6 +4,7 @@ import type { Provider } from '../lib/data';
 import { categories } from '../lib/data';
 import { formatHours } from '../lib/hours';
 import Kontakt from './Kontakt.astro';
+import Bestaetigt from './Bestaetigt.astro';
 interface Props { p: Provider; showCity?: boolean; km?: number }
 const { p, showCity = false, km } = Astro.props;
 const cat = categories.find((c) => c.key === p.cat)!;
@@ -21,6 +22,7 @@ const hours = p.openingHours ? formatHours(p.openingHours) : null;
     )}
     {hours && <p class="hours">{hours.join(' · ')}{p.hoursSource === 'website' && ' (laut Website)'}</p>}
     <Kontakt name={p.name} city={p.city} phone={p.phone} email={p.email} website={p.website} booking={p.booking} lat={p.lat} lon={p.lon} />
+    <Bestaetigt date={p.confirmedAt} />
   </article>
 </li>
 <style>

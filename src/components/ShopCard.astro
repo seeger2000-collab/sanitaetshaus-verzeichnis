@@ -3,6 +3,7 @@ import type { Shop } from '../lib/data';
 import { featureByKey } from '../lib/data';
 import { u } from '../lib/url';
 import Kontakt from './Kontakt.astro';
+import Bestaetigt from './Bestaetigt.astro';
 interface Props { shop: Shop; showCity?: boolean }
 const { shop, showCity = false } = Astro.props;
 const place = [shop.postcode, shop.postcode || showCity ? shop.city : null].filter(Boolean).join(' ');
@@ -20,6 +21,7 @@ const address = [shop.street, place].filter(Boolean).join(', ');
       <ul class="chips">{shop.features.map((f) => <li class="chip">{featureByKey[f]?.label}</li>)}</ul>
     )}
     <Kontakt name={shop.name} city={shop.city} phone={shop.phone} email={shop.email} website={shop.website} booking={shop.booking} lat={shop.lat} lon={shop.lon} />
+    <Bestaetigt date={shop.confirmedAt} />
   </article>
 </li>
 <style>
