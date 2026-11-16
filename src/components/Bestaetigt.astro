@@ -1,0 +1,19 @@
+---
+// Siegel „Vom Betrieb bestätigt“ (Variante A, Wahl JS 2026-11-16).
+// Quelle: overrides.json "confirmedAt": "JJJJ-MM-TT", gesetzt, wenn der Betrieb uns von seiner eigenen
+// E-Mail-Domain seine Daten bestätigt hat. Läuft nach 12 Monaten ab (build-data.mjs).
+// Wortwahl: keine Prüfung, keine Empfehlung (§ 5 UWG).
+interface Props { date?: string | null }
+const { date } = Astro.props;
+const [y, m, d] = (date || '').split('-');
+---
+{date && (
+  <p class="bst" title={`Der Betrieb hat uns am ${d}.${m}.${y} seine Kontaktdaten und Leistungen bestätigt. Das ist keine Prüfung oder Bewertung der Qualität.`}>
+    <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1l6 2.5v4c0 3.6-2.6 6.4-6 7.5-3.4-1.1-6-3.9-6-7.5v-4z" fill="currentColor"/><path d="M5 8l2 2 4-4" stroke="#fff" stroke-width="1.8" fill="none"/></svg>
+    Vom Betrieb bestätigt <small>· {m}/{y}</small>
+  </p>
+)}
+<style>
+  .bst { display: inline-flex; align-items: center; gap: 6px; margin: 4px 0; padding: 3px 10px 3px 6px; border-radius: 999px; background: var(--accent); color: var(--brand); font-size: 0.85rem; font-weight: 600; cursor: help; }
+  .bst small { font-weight: 400; opacity: .85; }
+</style>

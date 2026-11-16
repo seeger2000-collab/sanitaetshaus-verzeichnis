@@ -42,9 +42,11 @@ const pageTitle = fit([
   base,
 ].filter(Boolean));
 import Kontakt from '../../components/Kontakt.astro';
+import Bestaetigt from '../../components/Bestaetigt.astro';
 ---
 <Base title={pageTitle} description={`${shop.name}, Sanitätshaus in ${shop.postcode ? shop.postcode + ' ' : ''}${shop.city}${shop.street ? ', ' + shop.street : ''}: Adresse, Telefon, Öffnungszeiten${found.length ? ' und Leistungen wie ' + found.slice(0, 3).map((f) => f.label).join(', ') : ', Barrierefreiheit und Sanitätshäuser in der Nähe'}.`} jsonLd={[jsonLd]} crumbs={[{ href: `/bundesland/${shop.stateSlug}/`, label: shop.state }, { href: `/stadt/${shop.citySlug}/`, label: shop.city }, { href: `/sanitaetshaus/${shop.slug}/`, label: shop.name }]}>
   <h1>{shop.name}</h1>
+  <Bestaetigt date={shop.confirmedAt} />
   <p class="lead">Sanitätshaus in {shop.city}{shop.district && shop.district !== shop.city ? `, ${shop.district}` : ''}, {shop.state}</p>
   <p>{found.length > 0 ? `Auf der eigenen Website nennt ${shop.name} die unten aufgeführten Leistungen.` : ''}{shop.wheelchair === 'yes' ? ' Der Eingang ist laut OpenStreetMap stufenlos erreichbar.' : ''} Bitte rufen Sie vor dem Besuch kurz an, ob Ihr Hilfsmittel vorrätig ist und ob ein Vertrag mit Ihrer Krankenkasse besteht.</p>
 
@@ -90,7 +92,7 @@ import Kontakt from '../../components/Kontakt.astro';
     </section>
   </div>
 
-  <p class="note">Ist hier etwas falsch oder fehlt eine Leistung? <a href={correction} rel="nofollow">Eintrag korrigieren</a>. Inhaber können ihren Eintrag auch <a href={u('/fuer-sanitaetshaeuser/')}>selbst ergänzen</a>.</p>
+  <p class="note">Ist hier etwas falsch oder fehlt eine Leistung? <a href={correction} rel="nofollow">Eintrag korrigieren</a>. Inhaber können ihren Eintrag auch <a href={u('/fuer-sanitaetshaeuser/')}>selbst ergänzen</a> und sich ein <a href={u(`/siegel/?e=${shop.slug}`)} rel="nofollow">Siegel für die eigene Website</a> holen.</p>
 
   <PflegeboxHinweis />
 

@@ -3,6 +3,7 @@ import type { Shop } from '../lib/data';
 import { featureByKey } from '../lib/data';
 import { u } from '../lib/url';
 import Kontakt from './Kontakt.astro';
+import Bestaetigt from './Bestaetigt.astro';
 interface Props { shop: Shop; showCity?: boolean }
 const { shop, showCity = false } = Astro.props;
 const place = [shop.postcode, shop.postcode || showCity ? shop.city : null].filter(Boolean).join(' ');
@@ -12,6 +13,7 @@ const address = [shop.street, place].filter(Boolean).join(', ');
   <article class={shop.featured ? 'card featured' : 'card'}>
     {shop.featured && <p class="badge">Anzeige · Top-Eintrag</p>}
     <h3 data-oh={shop.openingHours ?? undefined}><a href={u(`/sanitaetshaus/${shop.slug}/`)}>{shop.name}</a></h3>
+    <Bestaetigt date={shop.confirmedAt} />
     <p class="addr">
       {address}
       {shop.wheelchair === 'yes' && <span class="acc">{address ? ' · ' : ''}barrierefrei</span>}

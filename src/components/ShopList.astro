@@ -4,7 +4,10 @@ import type { Shop } from '../lib/data';
 import { features } from '../lib/data';
 import ShopCard from './ShopCard.astro';
 interface Props { shops: Shop[]; showCity?: boolean; filter?: boolean }
-const { shops, showCity = false, filter = true } = Astro.props;
+const { shops: given, showCity = false, filter = true } = Astro.props;
+// Top-Einträge (Anzeige) stehen immer oben, sonst bleibt die Reihenfolge der Seite (Entfernung, PLZ, Leistungen).
+const shops = [...given.filter((s) => s.featured), ...given.filter((s) => !s.featured)];
+const topCount = shops.filter((s) => s.featured).length;
 const available = features.filter((f) => shops.some((s) => s.features.includes(f.key)));
 ---
 <div class="shoplist">
@@ -18,12 +21,16 @@ const available = features.filter((f) => shops.some((s) => s.features.includes(f
       <p class="count" aria-live="polite"><span>{shops.length}</span> von {shops.length} Sanitätshäusern</p>
     </fieldset>
   )}
+  {topCount > 1 && (
+    <p class="tophinweis">Die gelb umrandeten Einträge ganz oben sind <strong>Top-Einträge</strong>, also bezahlte Anzeigen. Sie stehen deshalb vor den übrigen Einträgen. Untereinander sind sie genauso sortiert wie die übrigen Einträge. Ein Top-Eintrag sagt nichts über die Qualität eines Betriebs.</p>
+  )}
   <ul class="list">
     {shops.map((s) => <ShopCard shop={s} showCity={showCity} />)}
   </ul>
   <p class="empty" hidden>Kein Sanitätshaus erfüllt alle gewählten Leistungen. Nimm einen Filter heraus.</p>
 </div>
 <style>
+  .tophinweis { margin: 0 0 12px; padding: 8px 12px; border-left: 4px solid var(--gold); background: var(--gold-bg); border-radius: 6px; font-size: 0.9rem; }
   .filter { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 10px 14px 6px; margin: 0 0 14px; display: flex; flex-wrap: wrap; gap: 4px 18px; }
   legend { font-weight: 600; padding: 0 4px; }
   label { font-size: 0.95rem; cursor: pointer; }
