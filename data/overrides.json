@@ -160,5 +160,13 @@
   "website": "https://cosmea-pflege.de/standorte/pflegedienst-in-langweid-am-lech/",
   "email": "augsburg-nord@cosmea-pflege.de",
   "name": "Cosmea Pflege Augsburg Nord"
+ },
+ "node/12431966629": {
+  "_quelle": "https://awo-augsburg.de/einrichtung/ambulanter-pflegedienst-hammerschmiede/ (2026-11-16)",
+  "street": "Marienbader Straße 29a",
+  "postcode": "86169",
+  "phone": "+49 821 70021741",
+  "website": "https://awo-augsburg.de/einrichtung/ambulanter-pflegedienst-hammerschmiede/",
+  "email": "ambulante-pflege.hammerschmiede@awo-augsburg.de"
  }
 }

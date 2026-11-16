@@ -24536,5 +24536,1059 @@
     "name": "Gersthofen"
    }
   }
+ },
+ {
+  "id": "extra/aai-augsburger-ausserklinische-intensivpflege-gmbh-augsburg",
+  "cat": "pflege",
+  "quelle": "https://ai-augsburg.de/impressum (2026-11-16)",
+  "tags": {
+   "name": "AAI Augsburger Außerklinische Intensivpflege GmbH",
+   "addr:street": "Bürgermeister-Wegele-Straße",
+   "addr:housenumber": "6",
+   "addr:postcode": "86167",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 45095570",
+   "website": "https://ai-augsburg.de",
+   "email": "info@ai-augsburg.de"
+  },
+  "location": {
+   "lat": 48.396685,
+   "lon": 10.924756
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/alfamed-gmbh-ambulanter-pflegedienst-augsburg",
+  "cat": "pflege",
+  "quelle": "https://alfamed-pflege.de/impressum (2026-11-16)",
+  "tags": {
+   "name": "Alfamed GmbH Ambulanter Pflegedienst",
+   "addr:street": "Zugspitzstraße",
+   "addr:housenumber": "50",
+   "addr:postcode": "86163",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 20731943",
+   "website": "https://alfamed-pflege.de",
+   "email": "info@alfamed-pflege.de"
+  },
+  "location": {
+   "lat": 48.358979,
+   "lon": 10.941753
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-und-ausserklinischer-intensivpflegedien-augsburg",
+  "cat": "pflege",
+  "quelle": "https://pflege-avalon.de/impressum (2026-11-16)",
+  "tags": {
+   "name": "Ambulanter und außerklinischer Intensivpflegedienst Avalon",
+   "addr:street": "Curt-Frenzel-Straße",
+   "addr:housenumber": "12",
+   "addr:postcode": "86167",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 74820767",
+   "website": "https://pflege-avalon.de",
+   "email": "info@pflege-avalon.de"
+  },
+  "location": {
+   "lat": 48.396143,
+   "lon": 10.924091
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/awo-ambulanter-pflegedienst-herrenbach-augsburg",
+  "cat": "pflege",
+  "quelle": "https://awo-augsburg.de/einrichtung/ambulanter-pflegedienst-herrenbach/ (2026-11-16)",
+  "tags": {
+   "name": "AWO Ambulanter Pflegedienst Herrenbach",
+   "addr:street": "Wilhelm-Hauff-Straße",
+   "addr:housenumber": "28",
+   "addr:postcode": "86161",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 568810",
+   "website": "https://awo-augsburg.de/einrichtung/ambulanter-pflegedienst-herrenbach/",
+   "email": "ambulante-pflege.herrenbach@awo-augsburg.de"
+  },
+  "location": {
+   "lat": 48.355587,
+   "lon": 10.923496
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/awo-ambulanter-pflegedienst-pfersee-dierig-park-augsburg",
+  "cat": "pflege",
+  "quelle": "https://awo-augsburg.de/einrichtung/ambulanter-pflegedienst-pfersee/ (2026-11-16)",
+  "tags": {
+   "name": "AWO Ambulanter Pflegedienst Pfersee (Dierig-Park)",
+   "addr:street": "Eberlestraße",
+   "addr:housenumber": "27",
+   "addr:postcode": "86157",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 65072050",
+   "website": "https://awo-augsburg.de/einrichtung/ambulanter-pflegedienst-pfersee/",
+   "email": "ambulante-pflege.dierig-park@awo-augsburg.de"
+  },
+  "location": {
+   "lat": 48.366951,
+   "lon": 10.873013
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/betreuungs-und-entlastungsdienst-pfersee-james-her-augsburg",
+  "cat": "pflege",
+  "quelle": "https://awo-augsburg.de/einrichtung/haushaltshilfen/ (2026-11-16)",
+  "tags": {
+   "name": "Betreuungs- und Entlastungsdienst Pfersee (James & Hermine GmbH, AWO)",
+   "addr:street": "Dresdener Straße",
+   "addr:housenumber": "46",
+   "addr:postcode": "86157",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 65082188",
+   "website": "https://awo-augsburg.de/einrichtung/haushaltshilfen/",
+   "email": "entlastungsdienst@james-hermine.de"
+  },
+  "location": {
+   "lat": 48.356437,
+   "lon": 10.864104
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulantum-plus-ambulanter-pflegedienst-gmbh-augsburg",
+  "cat": "pflege",
+  "quelle": "https://www.ambulantum.de (2026-11-16)",
+  "tags": {
+   "name": "AMBULANTUM plus ambulanter Pflegedienst GmbH",
+   "addr:street": "Haunstetter Straße",
+   "addr:housenumber": "112",
+   "addr:postcode": "86161",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 88586505",
+   "website": "https://www.ambulantum.de",
+   "email": "info@ambulantum.de"
+  },
+  "location": {
+   "lat": 48.339395,
+   "lon": 10.906586
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-seniorenwohnen-augsburg-ha-augsburg",
+  "cat": "pflege",
+  "quelle": "https://seniorenwohnen.brk.de/locations/augsburg-haunstetten/augsburg-haunstetten-ansprechpartner-kontakt.html (2026-11-16)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst SeniorenWohnen Augsburg-Haunstetten (BRK)",
+   "addr:street": "Marconistraße",
+   "addr:housenumber": "7",
+   "addr:postcode": "86179",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 650795244",
+   "website": "https://seniorenwohnen.brk.de/locations/augsburg-haunstetten/augsburg-haunstetten-unser-haus.html",
+   "email": "info.aug@ssg.brk.de"
+  },
+  "location": {
+   "lat": 48.316495,
+   "lon": 10.911086
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/araveles-gmbh-ambulanter-pflegedienst-augsburg",
+  "cat": "pflege",
+  "quelle": "https://araveles.de/impressum/ (2026-11-16)",
+  "tags": {
+   "name": "Araveles GmbH Ambulanter Pflegedienst",
+   "addr:street": "Ulmer Straße",
+   "addr:housenumber": "116",
+   "addr:postcode": "86156",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 44943056",
+   "website": "https://araveles.de",
+   "email": "info@araveles.de"
+  },
+  "location": {
+   "lat": 48.380898,
+   "lon": 10.863509
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/atlanta-pflege-betreuung-gmbh-augsburg",
+  "cat": "pflege",
+  "quelle": "https://atlanta-pflege.de/impressum (2026-11-16)",
+  "tags": {
+   "name": "Atlanta Pflege & Betreuung GmbH",
+   "addr:street": "Steinerne Furt",
+   "addr:housenumber": "78",
+   "addr:postcode": "86167",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 700050",
+   "website": "https://atlanta-pflege.de",
+   "email": "info@atlanta-pflege.de"
+  },
+  "location": {
+   "lat": 48.395594,
+   "lon": 10.9325
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/caritas-sozialstation-st-thaddaeus-e-v-augsburg",
+  "cat": "pflege",
+  "quelle": "https://www.sozialstation-st-thaddaeus.de/ (2026-11-16)",
+  "tags": {
+   "name": "Caritas-Sozialstation St. Thaddäus e.V.",
+   "addr:street": "Ulmer Straße",
+   "addr:housenumber": "63",
+   "addr:postcode": "86156",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 4406022",
+   "website": "https://www.sozialstation-st-thaddaeus.de",
+   "email": "kontakt@sozialstation-st-thaddaeus.de"
+  },
+  "location": {
+   "lat": 48.380922,
+   "lon": 10.869551
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/caritative-dienste-augsburg-nord-west-ggmbh-augsburg",
+  "cat": "pflege",
+  "quelle": "https://caritative-dienste.de/impressum/ (2026-11-16)",
+  "tags": {
+   "name": "Caritative Dienste Augsburg Nord-West gGmbH",
+   "addr:street": "Amselweg",
+   "addr:housenumber": "32-34",
+   "addr:postcode": "86156",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 460400",
+   "website": "https://caritative-dienste.de",
+   "email": "info@caritative-dienste.de"
+  },
+  "location": {
+   "lat": 48.393112,
+   "lon": 10.859734
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/cosmea-pflege-augsburg-gmbh-augsburg",
+  "cat": "pflege",
+  "quelle": "https://cosmea-pflege.de/standorte/pflegedienst-in-augsburg/ (2026-11-16)",
+  "tags": {
+   "name": "Cosmea Pflege Augsburg GmbH",
+   "addr:street": "Kurzes Geländ",
+   "addr:housenumber": "16",
+   "addr:postcode": "86156",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 9997630",
+   "website": "https://cosmea-pflege.de/standorte/pflegedienst-in-augsburg/",
+   "email": "augsburg@cosmea-pflege.de"
+  },
+  "location": {
+   "lat": 48.387449,
+   "lon": 10.847836
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/cultura-pflegedienst-gmbh-augsburg",
+  "cat": "pflege",
+  "quelle": "https://www.culturapflegedienst.de/impressum (2026-11-16)",
+  "tags": {
+   "name": "Cultura Pflegedienst GmbH",
+   "addr:street": "Im Tal",
+   "addr:housenumber": "6½",
+   "addr:postcode": "86179",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 24423603",
+   "website": "https://www.culturapflegedienst.de",
+   "email": "culturapflegedienst@gmail.com"
+  },
+  "location": {
+   "lat": 48.316676,
+   "lon": 10.893826
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/curamed-ambulanter-pflegedienst-gmbh-augsburg",
+  "cat": "pflege",
+  "quelle": "http://pflege-curamed.de/kontakt.html (2026-11-16)",
+  "tags": {
+   "name": "CuraMed Ambulanter Pflegedienst GmbH",
+   "addr:street": "Donauwörther Straße",
+   "addr:housenumber": "123",
+   "addr:postcode": "86154",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 43085094",
+   "website": "https://pflege-curamed.de",
+   "email": "curamedpflege@mail.de"
+  },
+  "location": {
+   "lat": 48.390772,
+   "lon": 10.881156
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/ccm-ambulanter-pflegedienst-augsburg-ccm-group-augsburg",
+  "cat": "pflege",
+  "quelle": "https://ccm-group.de/impressum (2026-11-16)",
+  "tags": {
+   "name": "ccm-Ambulanter Pflegedienst Augsburg (ccm group)",
+   "addr:street": "Riedingerstraße",
+   "addr:housenumber": "26e",
+   "addr:postcode": "86153",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 45527210",
+   "website": "https://ccm-group.de",
+   "email": "info@ccm-group.de"
+  },
+  "location": {
+   "lat": 48.386008,
+   "lon": 10.889348
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/la-vie-ambulanter-pflegedienst-augsburg",
+  "cat": "pflege",
+  "quelle": "https://pflege-augsburg-lavie.de/impressum/ (2026-11-16)",
+  "tags": {
+   "name": "La Vie Ambulanter Pflegedienst",
+   "addr:street": "Neuburger Straße",
+   "addr:housenumber": "13",
+   "addr:postcode": "86167",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 40822125",
+   "website": "https://pflege-augsburg-lavie.de",
+   "email": "info@pflege-augsburg-lavie.de"
+  },
+  "location": {
+   "lat": 48.378135,
+   "lon": 10.914105
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/rh-care-ambulanter-und-intensivpflegedienst-gbr-augsburg",
+  "cat": "pflege",
+  "quelle": "https://rhcare-pflege.de/impressum/ (2026-11-16)",
+  "tags": {
+   "name": "RH Care Ambulanter und Intensivpflegedienst GbR",
+   "addr:street": "Steinerne Furt",
+   "addr:housenumber": "76",
+   "addr:postcode": "86167",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 80757933",
+   "website": "https://rhcare-pflege.de",
+   "email": "info@rhcare-pflege.de"
+  },
+  "location": {
+   "lat": 48.39544,
+   "lon": 10.93179
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/medica-pflegedienst-gmbh-augsburg",
+  "cat": "pflege",
+  "quelle": "https://medicapflegedienst.de/impressum (2026-11-16)",
+  "tags": {
+   "name": "MEDICA Pflegedienst GmbH",
+   "addr:street": "Halderstraße",
+   "addr:housenumber": "25",
+   "addr:postcode": "86150",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 3434220",
+   "website": "https://medicapflegedienst.de"
+  },
+  "location": {
+   "lat": 48.364924,
+   "lon": 10.889865
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/medicare-ambulanter-pflegedienst-gmbh-augsburg",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-medicare.de/kontakt/ (2026-11-16)",
+  "tags": {
+   "name": "Medicare Ambulanter Pflegedienst GmbH",
+   "addr:street": "Neuburger Straße",
+   "addr:housenumber": "40",
+   "addr:postcode": "86167",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 21985651",
+   "website": "https://www.pflegedienst-medicare.de",
+   "email": "info@pflegedienst-medicare.de"
+  },
+  "location": {
+   "lat": 48.380699,
+   "lon": 10.916309
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/medicare-ambulanter-pflegedienst-gmbh-augsburg",
+  "cat": "fahrt",
+  "quelle": "https://www.pflegedienst-medicare.de/kontakt/ (2026-11-16)",
+  "tags": {
+   "name": "Medicare Ambulanter Pflegedienst GmbH",
+   "addr:street": "Neuburger Straße",
+   "addr:housenumber": "40",
+   "addr:postcode": "86167",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 21985651",
+   "website": "https://www.pflegedienst-medicare.de",
+   "email": "info@pflegedienst-medicare.de"
+  },
+  "location": {
+   "lat": 48.380699,
+   "lon": 10.916309
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/menschaugsburg-ambulanter-pflegedienst-augsburg",
+  "cat": "pflege",
+  "quelle": "https://www.mensch-augsburg.de/kontakt/ (2026-11-16)",
+  "tags": {
+   "name": "MenschAugsburg Ambulanter Pflegedienst",
+   "addr:street": "Luther-King-Straße",
+   "addr:housenumber": "6",
+   "addr:postcode": "86156",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 3276608",
+   "website": "https://www.mensch-augsburg.de",
+   "email": "info@mensch-augsburg.de"
+  },
+  "location": {
+   "lat": 48.372325,
+   "lon": 10.861458
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/mobile-kranken-und-altenpflege-augsburg-sued-edith-augsburg",
+  "cat": "pflege",
+  "quelle": "https://www.sozialstation-augsburg.de/ (2026-11-16)",
+  "tags": {
+   "name": "Mobile Kranken- und Altenpflege Augsburg-Süd Edith Hipper",
+   "addr:street": "Haunstetter Straße",
+   "addr:housenumber": "234",
+   "addr:postcode": "86179",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 992082",
+   "website": "https://www.sozialstation-augsburg.de",
+   "email": "kontakt@sozialstation-augsburg.de"
+  },
+  "location": {
+   "lat": 48.320474,
+   "lon": 10.908339
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-diamant-gmbh-augsburg",
+  "cat": "pflege",
+  "quelle": "https://pflegedienstdiamant.de/ (2026-11-16)",
+  "tags": {
+   "name": "Pflegedienst Diamant GmbH",
+   "addr:street": "Hofackerstraße",
+   "addr:housenumber": "36f",
+   "addr:postcode": "86179",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 90725400",
+   "website": "https://pflegedienstdiamant.de",
+   "email": "info@pflegedienstdiamant.de"
+  },
+  "location": {
+   "lat": 48.312247,
+   "lon": 10.899522
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-ellora-gmbh-augsburg",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-ellora.de/impressum/ (2026-11-16)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Ellora GmbH",
+   "addr:street": "Stätzlinger Straße",
+   "addr:housenumber": "39",
+   "addr:postcode": "86165",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 34631662",
+   "website": "https://pflegedienst-ellora.de",
+   "email": "office@pflegedienst-ellora.de"
+  },
+  "location": {
+   "lat": 48.378005,
+   "lon": 10.928773
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-ellora-gmbh-augsburg",
+  "cat": "fahrt",
+  "quelle": "https://pflegedienst-ellora.de/impressum/ (2026-11-16)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Ellora GmbH",
+   "addr:street": "Stätzlinger Straße",
+   "addr:housenumber": "39",
+   "addr:postcode": "86165",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 34631662",
+   "website": "https://pflegedienst-ellora.de",
+   "email": "office@pflegedienst-ellora.de"
+  },
+  "location": {
+   "lat": 48.378005,
+   "lon": 10.928773
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegeteam-stuhler-gmbh-augsburg",
+  "cat": "pflege",
+  "quelle": "https://www.pflegeteam-stuhler.de/impressum (2026-11-16)",
+  "tags": {
+   "name": "Pflegeteam Stuhler GmbH",
+   "addr:street": "Prinzregentenstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "86150",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 99981005",
+   "website": "https://www.pflegeteam-stuhler.de",
+   "email": "info@pflegeteam-stuhler.de"
+  },
+  "location": {
+   "lat": 48.368883,
+   "lon": 10.89145
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/reka-ambulanter-pflegedienst-augsburg",
+  "cat": "pflege",
+  "quelle": "https://reka-ambulante-pflege.de/impressum (2026-11-16)",
+  "tags": {
+   "name": "REKA Ambulanter Pflegedienst",
+   "addr:street": "Kreitmayrstraße",
+   "addr:housenumber": "12",
+   "addr:postcode": "86165",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 40820988",
+   "website": "https://reka-ambulante-pflege.de",
+   "email": "info@reka-ambulante-pflege.de"
+  },
+  "location": {
+   "lat": 48.380045,
+   "lon": 10.917108
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/sambo-care-ambulanter-pflegedienst-buero-augsburg-augsburg",
+  "cat": "pflege",
+  "quelle": "https://www.sambocare-pflegedienst.de/kontakt/ (2026-11-16)",
+  "tags": {
+   "name": "Sambo Care – Ambulanter Pflegedienst (Büro Augsburg)",
+   "addr:street": "Kobelweg",
+   "addr:housenumber": "12 1/3",
+   "addr:postcode": "86156",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 65035583",
+   "website": "https://www.sambocare-pflegedienst.de",
+   "email": "info@sambocare-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.383914,
+   "lon": 10.866759
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/integre-psychiatrische-haeusliche-krankenpflege-vi-augsburg",
+  "cat": "pflege",
+  "quelle": "https://awo-augsburg.de/einrichtung/psychiatrische-haeusliche-krankenpflege/ (2026-11-16)",
+  "tags": {
+   "name": "INTEGRE – Psychiatrische Häusliche Krankenpflege (vincentro)",
+   "addr:street": "Frölichstraße",
+   "addr:housenumber": "18",
+   "addr:postcode": "86150",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 4553320",
+   "website": "https://awo-augsburg.de/einrichtung/psychiatrische-haeusliche-krankenpflege/",
+   "email": "kontakt@integre-gmbh.de"
+  },
+  "location": {
+   "lat": 48.368704,
+   "lon": 10.886649
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/vplusv-gmbh-ambulanter-pflegedienst-augsburg",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-vplusv.de/impressum (2026-11-16)",
+  "tags": {
+   "name": "VplusV GmbH ambulanter Pflegedienst",
+   "addr:street": "Hirblinger Straße",
+   "addr:housenumber": "48",
+   "addr:postcode": "86154",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 81069801",
+   "website": "https://pflegedienst-vplusv.de",
+   "email": "info@pflegedienst-vplusv.de"
+  },
+  "location": {
+   "lat": 48.389164,
+   "lon": 10.872598
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
  }
 ]
