@@ -15,6 +15,7 @@ const MAIL = 'info@sanitaetshaus-suche.de';
       <label><input type="radio" name="art" value="korrektur" /> Etwas anderes ist falsch (Adresse, Website, Öffnungszeiten, Leistungen)</label>
       <label><input type="radio" name="art" value="neu" /> Ein Betrieb fehlt</label>
       <label><input type="radio" name="art" value="geschlossen" /> Der Betrieb ist geschlossen</label>
+      <label><input type="radio" name="art" value="bestaetigen" /> Ich bin Inhaber und bestätige, dass die Daten stimmen (bitte von der E-Mail-Adresse des Betriebs senden)</label>
       <label><input type="radio" name="art" value="top" /> Ich interessiere mich für einen Top-Eintrag</label>
     </fieldset>
     <label>Name des Betriebs<input name="name" required autocomplete="off" /></label>
@@ -34,7 +35,7 @@ const MAIL = 'info@sanitaetshaus-suche.de';
   for (const k of ['name', 'ort', 'seite']) if (q.get(k)) f.elements[k].value = q.get(k);
   if (q.get('art')) { const r = f.querySelector(`input[name=art][value="${CSS.escape(q.get('art'))}"]`); if (r) r.checked = true; }
   if (q.get('eintrag')) f.elements.seite.value = `${location.origin}/sanitaetshaus/${q.get('eintrag')}/`;
-  const ART = { telefon: 'Telefonnummer', korrektur: 'Korrektur', neu: 'Neuer Eintrag', geschlossen: 'Betrieb geschlossen', top: 'Top-Eintrag' };
+  const ART = { telefon: 'Telefonnummer', korrektur: 'Korrektur', neu: 'Neuer Eintrag', geschlossen: 'Betrieb geschlossen', bestaetigen: 'Daten bestätigen', top: 'Top-Eintrag' };
   f.addEventListener('submit', (ev) => {
     ev.preventDefault();
     const v = (k) => (f.elements[k].value || '').trim();

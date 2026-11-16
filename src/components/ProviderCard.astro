@@ -4,6 +4,7 @@ import type { Provider } from '../lib/data';
 import { categories } from '../lib/data';
 import { formatHours } from '../lib/hours';
 import Kontakt from './Kontakt.astro';
+import Bestaetigt from './Bestaetigt.astro';
 interface Props { p: Provider; showCity?: boolean; km?: number }
 const { p, showCity = false, km } = Astro.props;
 const cat = categories.find((c) => c.key === p.cat)!;
@@ -15,6 +16,7 @@ const hours = p.openingHours ? formatHours(p.openingHours) : null;
 <li class:list={["shop", { nocontact: !p.phone }]} data-features={p.features.join(' ')} data-wheelchair={p.wheelchair === 'yes' ? '1' : ''}>
   <article class="card">
     <h3 data-oh={p.openingHours ?? undefined}>{p.name}</h3>
+    <Bestaetigt date={p.confirmedAt} />
     <p class="addr">{address}{km != null && ` · ${km < 1 ? 'unter 1' : Math.round(km)} km`}{p.wheelchair === 'yes' && <span class="acc">{address ? ' · ' : ''}barrierefrei</span>}</p>
     {p.features.length > 0 && (
       <ul class="chips">{p.features.map((f) => <li class="chip">{p.evidence?.[f] ? <a href={p.evidence[f]} rel="nofollow noopener" target="_blank" title="Quelle auf der Website">{label[f]}</a> : label[f]}</li>)}</ul>

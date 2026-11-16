@@ -15,6 +15,11 @@ const correction = SITE.correctionFormUrl ? u(SITE.correctionFormUrl) : `${SITE.
     <p><a class="btn" href={correction} rel="nofollow">Eintrag ändern oder hinzufügen</a></p>
   </section>
 
+  <section class="card">
+    <h2>Eintrag bestätigen</h2>
+    <p>Schreiben Sie uns von der E-Mail-Adresse Ihres Betriebs (zum Beispiel <code>info@ihr-sanitaetshaus.de</code>), dass Ihre Daten stimmen, oder was wir ändern sollen. Nach der Prüfung erscheint an Ihrem Eintrag der Hinweis <strong>„Vom Betrieb bestätigt“</strong> mit Monat und Jahr. Er gilt zwölf Monate. Danach können Sie Ihre Daten einfach erneut bestätigen.</p>
+    <p><a class="btn" href={u('/eintrag/?art=bestaetigen')} rel="nofollow">Eintrag bestätigen</a></p>
+  </section>
   <section class="card top">
     <h2>Top-Eintrag</h2>
     <p>Mit einem Top-Eintrag steht Ihr Haus in Ihrer Stadt und auf den passenden Leistungsseiten ganz oben und ist hervorgehoben. Sie können zusätzlich Kassenverträge, Ansprechpartner und Fotos angeben.</p>
