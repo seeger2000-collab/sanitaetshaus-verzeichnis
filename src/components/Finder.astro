@@ -127,14 +127,17 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
     const BDN = BD.map((b, i) => ({ i, label: b.label, k: norm(b.label + ' ' + b.words) }));
     const ALL = BD.length - 1;
     let nameQ = '';
+    // Name: alle Wörter der Eingabe müssen im Namen vorkommen, Reihenfolge egal
+    const nameHit = (q) => { const ws = q.split(/[\s,.\-]+/).filter(Boolean); return (e) => { const n = e.nk ||= norm(e[3]); return ws.every((w) => n.includes(w)); }; };
     const pickRubrik = (i) => { sel = i; nameQ = ''; was.value = BD[i].label; document.querySelectorAll('.bedarf .bd').forEach((x) => { const on = +x.dataset.i === i; x.classList.toggle('on', on); x.setAttribute('aria-pressed', on); }); };
     const matches = () => {
       if (PRE) return data.e.filter((e) => (PRE.kind === 'cat' ? e[0] === PRE.i : PRE.kind === 'feat' ? e[0] === PRE.san && (e[12] & (1 << PRE.i)) : e[6] & (1 << PRE.i)));
-      if (nameQ) { const q = norm(nameQ); return data.e.filter((e) => norm(e[3]).includes(q)); }
+      if (nameQ) return data.e.filter(nameHit(norm(nameQ)));
       const bit = 1 << (sel < 0 ? ALL : sel); return data.e.filter((e) => e[6] & bit);
     };
     const needCats = () => (PRE ? (PRE.kind === 'cat' ? [PRE.i] : PRE.kind === 'feat' ? [PRE.san] : BD[PRE.i].cats) : nameQ ? ALLCATS : BD[sel < 0 ? ALL : sel].cats);
     const whatLabel = () => (PRE ? PRE.label : nameQ ? `„${nameQ}“` : BD[sel < 0 ? ALL : sel].label);
+    const item = (e, d) => `<li${e[7] ? '' : ' class="nocontact"'}><a href="${base}${e[5]}"><strong>${esc(e[3])}</strong></a>${cats[e[0]].hb >= 0 && (e[12] & (1 << cats[e[0]].hb)) ? ' <span class="hb">macht Hausbesuche</span>' : ''}${d == null ? '' : ` <span class="fkm">${d.toFixed(1).replace('.', ',')} km</span>`}${ohBadge(e[8])}${e[13] ? ` <span class="bst" title="Der Betrieb hat uns am ${e[13].split('-').reverse().join('.')} seine Kontaktdaten und Leistungen bestätigt. Das ist keine Prüfung oder Bewertung der Qualität.">Vom Betrieb bestätigt · ${e[13].slice(5, 7)}/${e[13].slice(0, 4)}</span>` : ''}<br><span class="muted">${esc(cats[e[0]].one)} · ${esc(e[4])}</span>${actions(e)}</li>`;
     async function draw() {
       const tok = ++drawTok;
       ensureMap();
@@ -148,6 +151,17 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
         all.forEach((e) => pins.addLayer(marker(e, 2.5)));
         map.fitBounds([[47.3, 5.9], [55.0, 15.0]]);
         msg.textContent = (sel < 0 && !nameQ && !PRE) ? 'Geben Sie ein, was Sie brauchen und wo. Die Karte zeigt sofort, wer in der Nähe ist.' : `${whatLabel()}: Geben Sie jetzt Ihren Ort oder Ihre PLZ ein.`;
+        if (nameQ) {
+          // Name ohne Ort: Treffer bundesweit, alphabetisch
+          if (!all.length) { msg.textContent = `Kein Eintrag mit dem Namen ${whatLabel()} gefunden. Prüfen Sie die Schreibweise oder suchen Sie nach einer Leistung.`; return; }
+          const top = [...all].sort((x, y) => x[3].localeCompare(y[3], 'de')).slice(0, shown);
+          await ensureDetails(top);
+          if (tok !== drawTok) return;
+          msg.textContent = `Einträge mit dem Namen ${whatLabel()}. Mit Ihrem Ort sehen Sie die nächsten zuerst.`;
+          list.innerHTML = top.map((e) => item(e, null)).join('');
+          if (all.length === 1) map.setView([all[0][1], all[0][2]], 14); else if (all.length <= 200) map.fitBounds(L.latLngBounds(all.map((e) => [e[1], e[2]])).pad(0.15));
+          if (all.length > shown) { more.hidden = false; more.innerHTML = '<button type="button" class="btn" id="f-mehr">Weitere anzeigen</button>'; $('f-mehr').onclick = () => { shown += 30; draw(); }; }
+        }
         return;
       }
       const dist = all.map((e) => ({ e, d: km(here, { lat: e[1], lon: e[2] }) })).sort((a, b) => a.d - b.d);
@@ -165,7 +179,7 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
       const b = BD[sel < 0 ? ALL : sel];
       const extra = (nameQ || PRE) ? '' : b.leistung ? ` <a href="${base}leistung/${b.leistung}/">${esc(b.label)} nach Stadt</a>` : b.seite ? ` <a href="${base}${b.seite}/">${esc(b.label)} nach Stadt</a>` : '';
       msg.innerHTML = wider ? `Im Umkreis von ${r} km nichts gefunden. Die nächsten Adressen für ${esc(whatLabel())}:` : near.length ? `${esc(whatLabel())} bei ${esc(here.label)}, die nächsten zuerst.` : `Nichts gefunden im Umkreis von ${r} km. Vergrößern Sie den Umkreis.${extra}`;
-      list.innerHTML = near.slice(0, shown).map(({ e, d }) => `<li${e[7] ? '' : ' class="nocontact"'}><a href="${base}${e[5]}"><strong>${esc(e[3])}</strong></a>${cats[e[0]].hb >= 0 && (e[12] & (1 << cats[e[0]].hb)) ? ' <span class="hb">macht Hausbesuche</span>' : ''} <span class="fkm">${d.toFixed(1).replace('.', ',')} km</span>${ohBadge(e[8])}${e[13] ? ` <span class="bst" title="Der Betrieb hat uns am ${e[13].split('-').reverse().join('.')} seine Kontaktdaten und Leistungen bestätigt. Das ist keine Prüfung oder Bewertung der Qualität.">Vom Betrieb bestätigt · ${e[13].slice(5, 7)}/${e[13].slice(0, 4)}</span>` : ''}<br><span class="muted">${esc(cats[e[0]].one)} · ${esc(e[4])}</span>${actions(e)}</li>`).join('');
+      list.innerHTML = near.slice(0, shown).map(({ e, d }) => item(e, d)).join('');
       if (here.slug) list.insertAdjacentHTML('beforeend', PRE && PRE.city ? `<li class="fcity"><a href="${base}${PRE.city.replace('{slug}', here.slug)}">${esc(PRE.label)} in ${esc(here.label)}: Übersicht für den Ort</a></li>` : `<li class="fcity"><a href="${base}stadt/${here.slug}/">Alles in ${esc(here.label)} auf einer Seite: Sanitätshäuser, Physiotherapie, Pflege, Krankenfahrten</a></li>`);
       if (near.length > shown) { more.hidden = false; more.innerHTML = '<button type="button" class="btn" id="f-mehr">Weitere anzeigen</button>'; $('f-mehr').onclick = () => { shown += 30; draw(); }; }
     }
@@ -194,7 +208,7 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
       inp.addEventListener('keydown', (ev) => {
         if (ev.key === 'ArrowDown' && hits.length) { act = (act + 1) % hits.length; render(); ev.preventDefault(); }
         else if (ev.key === 'ArrowUp' && hits.length) { act = (act - 1 + hits.length) % hits.length; render(); ev.preventDefault(); }
-        else if (ev.key === 'Enter') { ev.preventDefault(); choose(hits.length ? hits[Math.max(act, 0)] : null); box.hidden = true; hits = []; }
+        else if (ev.key === 'Enter') { ev.preventDefault(); choose(act >= 0 ? hits[act] : hits.length && !hits[0].href ? hits[0] : null); box.hidden = true; hits = []; }
         else if (ev.key === 'Escape') box.hidden = true;
       });
       box.addEventListener('mousedown', (ev) => { const li = ev.target.closest('li'); if (li) { ev.preventDefault(); choose(hits[+li.dataset.i]); box.hidden = true; hits = []; } });
@@ -204,9 +218,16 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
       if (q.length < 2) return [];
       const rub = BDN.filter((b) => b.k.split(/[\s&,-]+/).some((w) => w.startsWith(q)) || b.k.includes(q)).slice(0, 6).map((b) => ({ rub: b.i, label: b.label }));
       if (Object.keys(byCat).length < cats.length) loadCats(ALLCATS).then(() => { if (document.activeElement === was && norm(was.value.trim()) === q) was.dispatchEvent(new Event('input')); });
-      const names = [...new Set(data.e.filter((e) => norm(e[3]).includes(q)).map((e) => e[3]))].slice(0, 4).map((n) => ({ name: n, label: n, html: `${esc(n)} <small class="muted">Name</small>` }));
+      let rows = data.e.filter(nameHit(q));
+      if (here) rows = rows.map((e) => [e, km(here, { lat: e[1], lon: e[2] })]).sort((x, y) => x[1] - y[1]).map((x) => x[0]);
+      else rows.sort((x, y) => (norm(y[3]).startsWith(q) - norm(x[3]).startsWith(q)) || x[3].localeCompare(y[3], 'de'));
+      rows = rows.slice(0, rub.length ? 4 : 6);
+      // Ort und Link der Treffer nachladen, dann Vorschläge neu zeichnen
+      if (rows.some((e) => !e[5])) ensureDetails(rows).then(() => { if (document.activeElement === was && norm(was.value.trim()) === q) was.dispatchEvent(new Event('input')); });
+      const names = rows.map((e) => ({ name: e[3], href: e[5], label: e[3], html: `${esc(e[3])} <small class="muted">${esc(cats[e[0]].one)}${e[4] ? ' · ' + esc(e[4]) : ''}</small>` }));
       return [...rub, ...names];
     }, (h) => {
+      if (h && h.href) { location.href = base + h.href; return; }
       if (h && h.rub != null) pickRubrik(h.rub);
       else { const t = h ? h.name : was.value.trim(); if (!t) { sel = -1; nameQ = ''; } else { nameQ = t; sel = -1; was.value = t; document.querySelectorAll('.bedarf .bd').forEach((x) => x.classList.remove('on')); } }
       shown = 30; draw();
