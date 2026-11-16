@@ -6779,7 +6779,7 @@
  {
   "id": "extra/skg-sanitaetshaus-gevelsberg",
   "cat": "sanitaetshaus",
-  "quelle": "https://www.skg-sanitaetshaus.de/impressum (E-Mail des Betriebs und Impressum, 12.11.2026)",
+  "quelle": "https://www.skg-sanitaetshaus.de/impressum (12.11.2026); Leistungen und Öffnungszeiten: https://www.skg-sanitaetshaus.de/leistungen (16.11.2026)",
   "tags": {
    "name": "SKG-Sanitätshaus",
    "addr:street": "Gewerbestraße",
@@ -6788,7 +6788,8 @@
    "addr:city": "Gevelsberg",
    "phone": "+49 2332 555313",
    "email": "info@skg-sanitaetshaus.de",
-   "website": "https://www.skg-sanitaetshaus.de"
+   "website": "https://www.skg-sanitaetshaus.de",
+   "opening_hours": "Mo-Fr 08:00-17:00"
   },
   "location": {
    "lat": 51.3147101,
@@ -6811,6 +6812,17 @@
     "id": "relation/1956782",
     "name": "Gevelsberg"
    }
+  },
+  "featuresByCat": {
+   "sanitaetshaus": [
+    "rollator",
+    "rollstuhl",
+    "pflegebett",
+    "kompression",
+    "stoma",
+    "brustprothetik",
+    "pflegehilfsmittel"
+   ]
   }
  },
  {
