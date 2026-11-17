@@ -168,5 +168,11 @@
   "phone": "+49 821 70021741",
   "website": "https://awo-augsburg.de/einrichtung/ambulanter-pflegedienst-hammerschmiede/",
   "email": "ambulante-pflege.hammerschmiede@awo-augsburg.de"
+ },
+ "extra/skg-sanitaetshaus-gevelsberg": {
+  "_quelle": "Mail von info@skg-sanitaetshaus.de, 16.11.2026: Daten bestätigt, kostenlosen Top-Eintrag (Gratis-Platz 1 von 10) für 12 Monate angenommen",
+  "confirmedAt": "2026-11-16",
+  "featured": true,
+  "featuredUntil": "2027-11-16"
  }
 }
