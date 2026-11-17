@@ -25590,5 +25590,591 @@
     "name": "Augsburg"
    }
   }
+ },
+ {
+  "id": "extra/brk-sozialstation-dillingen-dillingen-an-der-donau",
+  "cat": "pflege",
+  "quelle": "https://www.kvdillingen.brk.de/angebote/alltagshilfen/ambulante-pflege.html (2026-11-17)",
+  "tags": {
+   "name": "BRK Sozialstation Dillingen",
+   "addr:street": "Schillerstraße",
+   "addr:housenumber": "3",
+   "addr:postcode": "89407",
+   "addr:city": "Dillingen an der Donau",
+   "phone": "+49 9071 793029",
+   "website": "https://www.kvdillingen.brk.de/angebote/alltagshilfen/ambulante-pflege.html",
+   "email": "sozialstation@kvdillingen.brk.de"
+  },
+  "location": {
+   "lat": 48.575704,
+   "lon": 10.47604
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62521",
+    "name": "Landkreis Dillingen an der Donau"
+   },
+   "8": {
+    "id": "relation/957026",
+    "name": "Dillingen an der Donau"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-sozialstation-dillingen-dillingen-an-der-donau",
+  "cat": "fahrt",
+  "quelle": "https://www.kvdillingen.brk.de/angebote/alltagshilfen/ambulante-pflege.html (2026-11-17)",
+  "tags": {
+   "name": "BRK Sozialstation Dillingen",
+   "addr:street": "Schillerstraße",
+   "addr:housenumber": "3",
+   "addr:postcode": "89407",
+   "addr:city": "Dillingen an der Donau",
+   "phone": "+49 9071 793029",
+   "website": "https://www.kvdillingen.brk.de/angebote/alltagshilfen/ambulante-pflege.html",
+   "email": "sozialstation@kvdillingen.brk.de"
+  },
+  "location": {
+   "lat": 48.575704,
+   "lon": 10.47604
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62521",
+    "name": "Landkreis Dillingen an der Donau"
+   },
+   "8": {
+    "id": "relation/957026",
+    "name": "Dillingen an der Donau"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/vplusv-gmbh-ambulanter-pflegedienst-dillingen-dillingen-an-der-d",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-vplusv.de/impressum (2026-11-17)",
+  "tags": {
+   "name": "VplusV GmbH ambulanter Pflegedienst Dillingen",
+   "addr:street": "Große Allee",
+   "addr:housenumber": "28",
+   "addr:postcode": "89407",
+   "addr:city": "Dillingen an der Donau",
+   "phone": "+49 9071 5839696",
+   "website": "https://www.pflegedienst-vplusv.de/",
+   "email": "info.dlg@pflegedienst-vplusv.de"
+  },
+  "location": {
+   "lat": 48.580357,
+   "lon": 10.491737
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62521",
+    "name": "Landkreis Dillingen an der Donau"
+   },
+   "8": {
+    "id": "relation/957026",
+    "name": "Dillingen an der Donau"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-lauingen-gmbh-lauingen-donau",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-lauingen.com/impressum (2026-11-17)",
+  "tags": {
+   "name": "Pflegedienst Lauingen GmbH",
+   "addr:street": "Herzog-Georg-Straße",
+   "addr:housenumber": "29",
+   "addr:postcode": "89415",
+   "addr:city": "Lauingen (Donau)",
+   "phone": "+49 9072 9639500",
+   "website": "https://www.pflegedienst-lauingen.com/",
+   "email": "info@pflegedienst-lauingen.com"
+  },
+  "location": {
+   "lat": 48.569228,
+   "lon": 10.429435
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62521",
+    "name": "Landkreis Dillingen an der Donau"
+   },
+   "8": {
+    "id": "relation/956771",
+    "name": "Lauingen (Donau)"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-hito-gmbh-lauingen-donau",
+  "cat": "pflege",
+  "quelle": "https://hitopflege.de/ (2026-11-17)",
+  "tags": {
+   "name": "Pflegedienst HITO GmbH",
+   "addr:street": "Akazienstraße",
+   "addr:housenumber": "8",
+   "addr:postcode": "89415",
+   "addr:city": "Lauingen (Donau)",
+   "phone": "+49 9072 9969620",
+   "website": "https://hitopflege.de/",
+   "email": "hallo@hitopflege.de"
+  },
+  "location": {
+   "lat": 48.581001,
+   "lon": 10.43316
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62521",
+    "name": "Landkreis Dillingen an der Donau"
+   },
+   "8": {
+    "id": "relation/956771",
+    "name": "Lauingen (Donau)"
+   }
+  }
+ },
+ {
+  "id": "extra/station-mensch-oekumenische-sozialstation-im-landk-dillingen-an-",
+  "cat": "pflege",
+  "quelle": "https://www.stationmensch.de/impressum (2026-11-17)",
+  "tags": {
+   "name": "Station Mensch – Ökumenische Sozialstation im Landkreis Dillingen e.V.",
+   "addr:street": "Regens-Wagner-Straße",
+   "addr:housenumber": "2",
+   "addr:postcode": "89407",
+   "addr:city": "Dillingen an der Donau",
+   "phone": "+49 9071 1314",
+   "website": "https://www.stationmensch.de/",
+   "email": "schaal@stationmensch.de"
+  },
+  "location": {
+   "lat": 48.578274,
+   "lon": 10.490344
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62521",
+    "name": "Landkreis Dillingen an der Donau"
+   },
+   "8": {
+    "id": "relation/957026",
+    "name": "Dillingen an der Donau"
+   }
+  }
+ },
+ {
+  "id": "extra/bachtal-pflege-syrgenstein",
+  "cat": "pflege",
+  "quelle": "https://bachtal-pflege.de/ (2026-11-17)",
+  "tags": {
+   "name": "Bachtal Pflege",
+   "addr:street": "Alte Ziegelei",
+   "addr:housenumber": "9",
+   "addr:postcode": "89428",
+   "addr:city": "Syrgenstein",
+   "phone": "+49 9077 3420026",
+   "website": "https://bachtal-pflege.de/",
+   "email": "info@bachtal-pflege.de"
+  },
+  "location": {
+   "lat": 48.647674,
+   "lon": 10.301441
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62521",
+    "name": "Landkreis Dillingen an der Donau"
+   },
+   "7": {
+    "id": "relation/2972293",
+    "name": "Syrgenstein (VGem)"
+   },
+   "8": {
+    "id": "relation/956147",
+    "name": "Syrgenstein"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegedienst-fako-gmbh-wertingen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-fako.de/kontakt/ (2026-11-17)",
+  "tags": {
+   "name": "Pflegedienst FaKo GmbH",
+   "addr:street": "Marktplatz",
+   "addr:housenumber": "5",
+   "addr:postcode": "86637",
+   "addr:city": "Wertingen",
+   "phone": "+49 8272 6029470",
+   "website": "https://www.pflegedienst-fako.de/",
+   "email": "info@pflegedienst-fako.de"
+  },
+  "location": {
+   "lat": 48.562498,
+   "lon": 10.682958
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62521",
+    "name": "Landkreis Dillingen an der Donau"
+   },
+   "7": {
+    "id": "relation/2972294",
+    "name": "Wertingen"
+   },
+   "8": {
+    "id": "relation/956952",
+    "name": "Wertingen"
+   }
+  }
+ },
+ {
+  "id": "extra/awo-sozialstation-wertingen-wertingen",
+  "cat": "pflege",
+  "quelle": "https://www.awo-schwaben.de/angebote/awo-vor-ort-finden/ (2026-11-17)",
+  "tags": {
+   "name": "AWO Sozialstation Wertingen",
+   "addr:street": "Am Marienfeld",
+   "addr:housenumber": "1",
+   "addr:postcode": "86637",
+   "addr:city": "Wertingen",
+   "phone": "+49 8272 5365",
+   "website": "https://www.awo-schwaben.de/angebote/awo-vor-ort-finden/"
+  },
+  "location": {
+   "lat": 48.564336,
+   "lon": 10.678323
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62521",
+    "name": "Landkreis Dillingen an der Donau"
+   },
+   "7": {
+    "id": "relation/2972294",
+    "name": "Wertingen"
+   },
+   "8": {
+    "id": "relation/956952",
+    "name": "Wertingen"
+   }
+  }
+ },
+ {
+  "id": "extra/awo-sozialstation-hoechstaedt-hoechstaedt-an-der-donau",
+  "cat": "pflege",
+  "quelle": "https://www.awo-schwaben.de/angebote/awo-vor-ort-finden/ (2026-11-17)",
+  "tags": {
+   "name": "AWO Sozialstation Höchstädt",
+   "addr:street": "Buchenweg",
+   "addr:housenumber": "13",
+   "addr:postcode": "89420",
+   "addr:city": "Höchstädt an der Donau",
+   "phone": "+49 9074 6167",
+   "website": "https://www.awo-schwaben.de/angebote/awo-vor-ort-finden/"
+  },
+  "location": {
+   "lat": 48.611438,
+   "lon": 10.567078
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62521",
+    "name": "Landkreis Dillingen an der Donau"
+   },
+   "7": {
+    "id": "relation/2972292",
+    "name": "Höchstädt an der Donau (VGem)"
+   },
+   "8": {
+    "id": "relation/957012",
+    "name": "Höchstädt an der Donau"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-haus-der-senioren-gundelfi-gundelfingen-",
+  "cat": "pflege",
+  "quelle": "https://www.hausdersenioren.de/impressum/ (2026-11-17)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Haus der Senioren Gundelfingen",
+   "addr:street": "Sitzenbergerstraße",
+   "addr:housenumber": "4",
+   "addr:postcode": "89423",
+   "addr:city": "Gundelfingen an der Donau",
+   "phone": "+49 9073 9980",
+   "website": "https://www.hausdersenioren.de/Leistungsangebot/",
+   "email": "info@spital-hausdersenioren.de"
+  },
+  "location": {
+   "lat": 48.554298,
+   "lon": 10.367298
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62521",
+    "name": "Landkreis Dillingen an der Donau"
+   },
+   "7": {
+    "id": "relation/2972290",
+    "name": "Gundelfingen an der Donau (VGem)"
+   },
+   "8": {
+    "id": "relation/956778",
+    "name": "Gundelfingen an der Donau"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-haus-der-senioren-gundelfi-gundelfingen-",
+  "cat": "fahrt",
+  "quelle": "https://www.hausdersenioren.de/impressum/ (2026-11-17)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Haus der Senioren Gundelfingen",
+   "addr:street": "Sitzenbergerstraße",
+   "addr:housenumber": "4",
+   "addr:postcode": "89423",
+   "addr:city": "Gundelfingen an der Donau",
+   "phone": "+49 9073 9980",
+   "website": "https://www.hausdersenioren.de/Leistungsangebot/",
+   "email": "info@spital-hausdersenioren.de"
+  },
+  "location": {
+   "lat": 48.554298,
+   "lon": 10.367298
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62521",
+    "name": "Landkreis Dillingen an der Donau"
+   },
+   "7": {
+    "id": "relation/2972290",
+    "name": "Gundelfingen an der Donau (VGem)"
+   },
+   "8": {
+    "id": "relation/956778",
+    "name": "Gundelfingen an der Donau"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/senioren-gemeinschaft-dillingen-lauingen-e-v-dillingen-an-der-do",
+  "cat": "pflege",
+  "quelle": "https://mfsenioren.de/kontakt/ (2026-11-17)",
+  "tags": {
+   "name": "Senioren-Gemeinschaft Dillingen-Lauingen e.V.",
+   "addr:street": "Bischof-Hartmann-Ring",
+   "addr:housenumber": "1",
+   "addr:postcode": "89407",
+   "addr:city": "Dillingen an der Donau",
+   "phone": "+49 9071 7286000",
+   "website": "https://mfsenioren.de/",
+   "email": "info@mfsenioren.de"
+  },
+  "location": {
+   "lat": 48.588176,
+   "lon": 10.496698
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62521",
+    "name": "Landkreis Dillingen an der Donau"
+   },
+   "8": {
+    "id": "relation/957026",
+    "name": "Dillingen an der Donau"
+   }
+  }
+ },
+ {
+  "id": "extra/seniorengemeinschaft-wertingen-buttenwiesen-e-v-wertingen",
+  "cat": "pflege",
+  "quelle": "https://seniorengemeinschaft-wertingen.de/impressum/ (2026-11-17)",
+  "tags": {
+   "name": "SeniorenGemeinschaft Wertingen-Buttenwiesen e.V.",
+   "addr:street": "Marktplatz",
+   "addr:housenumber": "6",
+   "addr:postcode": "86637",
+   "addr:city": "Wertingen",
+   "phone": "+49 8272 6437074",
+   "website": "https://seniorengemeinschaft-wertingen.de/",
+   "email": "info@seniorengemeinschaft-wertingen.de"
+  },
+  "location": {
+   "lat": 48.562835,
+   "lon": 10.682866
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62521",
+    "name": "Landkreis Dillingen an der Donau"
+   },
+   "7": {
+    "id": "relation/2972294",
+    "name": "Wertingen"
+   },
+   "8": {
+    "id": "relation/956952",
+    "name": "Wertingen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
  }
 ]
