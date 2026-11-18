@@ -1,0 +1,1693 @@
+{
+ "fetchedAt": "2026-11-18T18:22:33.541Z",
+ "source": "OpenStreetMap via QLever",
+ "shops": [
+  {
+   "id": "node/10018733786",
+   "tags": {
+    "email": "Reha-Paderborn@web.de",
+    "healthcare": "rehabilitation",
+    "mobile": "+49 1523 3854240",
+    "name": "Reha-Sportgemeinschaft Paderborn von 1953 e.V.",
+    "phone": "+49 5251 5399426",
+    "sport": "gymnastics",
+    "website": "https://www.rehasport-paderborn.de/",
+    "wheelchair": "yes"
+   },
+   "location": {
+    "lat": 51.7058,
+    "lon": 8.765841
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/73347",
+     "name": "Regierungsbezirk Detmold"
+    },
+    "6": {
+     "id": "relation/62417",
+     "name": "Kreis Paderborn"
+    },
+    "8": {
+     "id": "relation/148074",
+     "name": "Paderborn"
+    }
+   }
+  },
+  {
+   "id": "node/10107214688",
+   "tags": {
+    "addr:city": "Löningen",
+    "addr:housenumber": "6",
+    "addr:postcode": "49624",
+    "addr:street": "Am Mühlenbach",
+    "club": "sport",
+    "contact:website": "https://www.bsn-ev.de/anbieter/vereinsliste/reha-sportverein-lningen-e-v/",
+    "name": "Reha-Sportverein Löningen e. V.",
+    "operator": "Behinderten-Sportverband Niedersachsen e.V.",
+    "sport": "reha"
+   },
+   "location": {
+    "lat": 52.732624,
+    "lon": 7.773751
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62771",
+     "name": "Niedersachsen"
+    },
+    "6": {
+     "id": "relation/62597",
+     "name": "Landkreis Cloppenburg"
+    },
+    "8": {
+     "id": "relation/71267",
+     "name": "Löningen"
+    }
+   }
+  },
+  {
+   "id": "node/10788424268",
+   "tags": {
+    "healthcare": "physiotherapist",
+    "name": "Rehasportzentrum Heiligenhafen",
+    "opening_hours": "Mo-Fr 08:00-21:00; Sa 10:00-16:00; Su 10:00-15:00"
+   },
+   "location": {
+    "lat": 54.378406,
+    "lon": 10.954708
+   },
+   "admin": {
+    "4": {
+     "id": "relation/51529",
+     "name": "Schleswig-Holstein"
+    },
+    "6": {
+     "id": "relation/27025",
+     "name": "Kreis Ostholstein"
+    },
+    "8": {
+     "id": "relation/382419",
+     "name": "Heiligenhafen"
+    }
+   }
+  },
+  {
+   "id": "node/1168092343",
+   "tags": {
+    "addr:city": "Berlin",
+    "addr:country": "DE",
+    "addr:housenumber": "429",
+    "addr:postcode": "12107",
+    "addr:street": "Mariendorfer Damm",
+    "addr:suburb": "Buckow",
+    "check_date:opening_hours": "2022-11-15",
+    "check_date": "2025-12-13",
+    "healthcare": "physiotherapist",
+    "name": "Reha-Sport ZGS e.V.",
+    "opening_hours": "Mo-Th 08:00-20:00; Fr 08:00-16:00",
+    "operator": "Wanke & Wanke GbR",
+    "phone": "+49 30 70766683"
+   },
+   "location": {
+    "lat": 52.416892,
+    "lon": 13.400215
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62422",
+     "name": "Berlin"
+    }
+   }
+  },
+  {
+   "id": "node/11683067292",
+   "tags": {
+    "addr:city": "Potsdam",
+    "addr:housenumber": "28",
+    "addr:postcode": "14471",
+    "addr:street": "An der Pirschheide",
+    "description": "Verein für Rehabilitation und Rehabilitationssport",
+    "leisure": "fitness_centre",
+    "level": "0",
+    "name": "Reha Sport Club Potsdam e.V.",
+    "phone": "+49 331 9512019",
+    "sport": "fitness",
+    "website": "https://www.rehasport-potsdam.de/"
+   },
+   "location": {
+    "lat": 52.372841,
+    "lon": 13.01408
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62504",
+     "name": "Brandenburg"
+    },
+    "6": {
+     "id": "relation/62369",
+     "name": "Potsdam"
+    }
+   }
+  },
+  {
+   "id": "node/11781618910",
+   "tags": {
+    "addr:city": "Greifswald",
+    "addr:housenumber": "5",
+    "addr:postcode": "17489",
+    "addr:street": "Mittelstraße",
+    "club": "sport",
+    "email": "info@reha-sv.de",
+    "name": "Rehabilitationssportverei Greifswald - Vorpommern e.V.",
+    "phone": "+493834888943",
+    "website": "https://www.reha-sv.de/"
+   },
+   "location": {
+    "lat": 54.090407,
+    "lon": 13.390995
+   },
+   "admin": {
+    "4": {
+     "id": "relation/28322",
+     "name": "Mecklenburg-Vorpommern"
+    },
+    "6": {
+     "id": "relation/1431517",
+     "name": "Vorpommern-Greifswald"
+    },
+    "8": {
+     "id": "relation/62363",
+     "name": "Greifswald"
+    }
+   }
+  },
+  {
+   "id": "node/12044173127",
+   "tags": {
+    "addr:city": "Singen (Hohentwiel)",
+    "addr:housenumber": "22",
+    "addr:postcode": "78224",
+    "addr:street": "Werner-von-Siemens-Straße",
+    "club": "yes",
+    "name": "Reha Sport Bodensee e.v.",
+    "opening_hours": "Mo-Fr 06:30-22:00; Sa-Su 09:00-18:00",
+    "phone": "+49 7731 958829",
+    "sport": "fitness",
+    "website": "https://rehasport-singen.de/"
+   },
+   "location": {
+    "lat": 47.752888,
+    "lon": 8.886256
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62611",
+     "name": "Baden-Württemberg"
+    },
+    "5": {
+     "id": "relation/2106112",
+     "name": "Regierungsbezirk Freiburg"
+    },
+    "6": {
+     "id": "relation/62603",
+     "name": "Landkreis Konstanz"
+    },
+    "7": {
+     "id": "relation/2952479",
+     "name": "VVG der Stadt Singen (Hohentwiel)"
+    },
+    "8": {
+     "id": "relation/2785095",
+     "name": "Singen (Hohentwiel)"
+    }
+   }
+  },
+  {
+   "id": "node/12348479956",
+   "tags": {
+    "addr:city": "Paderborn",
+    "addr:country": "DE",
+    "addr:housenumber": "78",
+    "addr:postcode": "33102",
+    "addr:street": "Elsener Straße",
+    "healthcare": "physiotherapist",
+    "name": "Physiotherapie & Rehasport Praxis Gogrefe Hüfner",
+    "opening_hours": "Mo-Fr 08:00-20:00",
+    "phone": "+49 5251 300900",
+    "website": "https://physio-gogrefe.de/"
+   },
+   "location": {
+    "lat": 51.727455,
+    "lon": 8.727836
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/73347",
+     "name": "Regierungsbezirk Detmold"
+    },
+    "6": {
+     "id": "relation/62417",
+     "name": "Kreis Paderborn"
+    },
+    "8": {
+     "id": "relation/148074",
+     "name": "Paderborn"
+    }
+   }
+  },
+  {
+   "id": "node/12637232303",
+   "tags": {
+    "contact:email": "info@balancefrauenfit.de",
+    "contact:phone": "+49 30 92401007",
+    "contact:website": "https://www.balance-frauenfit.de/",
+    "leisure": "fitness_centre",
+    "name": "Reha-Sport & Gesundheitstraining"
+   },
+   "location": {
+    "lat": 52.560363,
+    "lon": 13.45908
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62422",
+     "name": "Berlin"
+    }
+   }
+  },
+  {
+   "id": "node/12642566663",
+   "tags": {
+    "addr:city": "Mülheim-Kärlich",
+    "addr:housenumber": "15",
+    "addr:postcode": "56218",
+    "addr:street": "Reihe Bäume",
+    "leisure": "sports_hall",
+    "name": "Outdoorsport Personaltraining , RehaSport Susanne Wolf",
+    "operator": "Susanne Wolf",
+    "sport": "fitness",
+    "website": "https://www.susannewolf-gpt.de"
+   },
+   "location": {
+    "lat": 50.392938,
+    "lon": 7.497713
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62341",
+     "name": "Rheinland-Pfalz"
+    },
+    "6": {
+     "id": "relation/62572",
+     "name": "Landkreis Mayen-Koblenz"
+    },
+    "7": {
+     "id": "relation/541676",
+     "name": "Weißenthurm"
+    },
+    "8": {
+     "id": "relation/548979",
+     "name": "Mülheim-Kärlich"
+    }
+   }
+  },
+  {
+   "id": "node/12691980351",
+   "tags": {
+    "addr:city": "Suhl",
+    "addr:housenumber": "74",
+    "addr:postcode": "98529",
+    "addr:street": "Würzburger Straße",
+    "healthcare": "rehabilitation",
+    "name": "Rehasport Zentrum Suhl",
+    "phone": "+493681 8074570",
+    "website": "https://www.rehasport-suhl.de"
+   },
+   "location": {
+    "lat": 50.603472,
+    "lon": 10.676035
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62366",
+     "name": "Thüringen"
+    },
+    "6": {
+     "id": "relation/62450",
+     "name": "Suhl"
+    }
+   }
+  },
+  {
+   "id": "node/12844624514",
+   "tags": {
+    "board_type": "notice",
+    "information": "board",
+    "name": "Sportlehrpfad und Behindertensportlehrpfad",
+    "tourism": "information"
+   },
+   "location": {
+    "lat": 49.352205,
+    "lon": 7.687902
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62341",
+     "name": "Rheinland-Pfalz"
+    },
+    "6": {
+     "id": "relation/62451",
+     "name": "Landkreis Kaiserslautern"
+    },
+    "7": {
+     "id": "relation/9737040",
+     "name": "Landstuhl"
+    },
+    "8": {
+     "id": "relation/1186707",
+     "name": "Schopp"
+    }
+   }
+  },
+  {
+   "id": "node/13250634048",
+   "tags": {
+    "check_date": "2025-10-22",
+    "email": "info@petra-schwenter.de",
+    "healthcare:speciality": "psychiatry",
+    "healthcare": "counselling",
+    "name": "Fit durch Reha-Sport Petra Schwenter",
+    "operator": "Petra Schwenter",
+    "phone": "+49 1512 5344246",
+    "website": "https://www.petra-schwenter.de"
+   },
+   "location": {
+    "lat": 48.280448,
+    "lon": 11.554947
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62580",
+     "name": "Landkreis München"
+    },
+    "8": {
+     "id": "relation/334267",
+     "name": "Unterschleißheim"
+    }
+   }
+  },
+  {
+   "id": "node/13294109338",
+   "tags": {
+    "addr:city": "Bautzen",
+    "addr:housenumber": "32",
+    "addr:postcode": "02625",
+    "addr:street": "Wilthener Straße",
+    "email": "rehasportverein@rehazentrum-bautzen.de",
+    "fax": "+49 3591 5311535",
+    "name": "Rehasportverein Ostsachsen",
+    "office": "club",
+    "opening_hours": "Mo-Fr 08:00-16:00; PH off",
+    "phone": "+49 3591 5311533",
+    "website": "https://www.rehasportverein-ostsachsen.de"
+   },
+   "location": {
+    "lat": 51.167673,
+    "lon": 14.419702
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62467",
+     "name": "Sachsen"
+    },
+    "6": {
+     "id": "relation/62384",
+     "name": "Bautzen - Budyšin"
+    },
+    "8": {
+     "id": "relation/1309674",
+     "name": "Bautzen"
+    }
+   }
+  },
+  {
+   "id": "node/1365822613",
+   "tags": {
+    "addr:city": "München",
+    "addr:country": "DE",
+    "addr:housenumber": "175",
+    "addr:postcode": "80805",
+    "addr:street": "Ungererstraße",
+    "check_date:opening_hours": "2025-03-10",
+    "contact:website": "https://www.schwabinger-reha-sport.de/",
+    "healthcare": "physiotherapist",
+    "name": "Schwabinger Reha Sport",
+    "opening_hours:signed": "no",
+    "opening_hours": "Mo-Fr 07:00-20:00"
+   },
+   "location": {
+    "lat": 48.178446,
+    "lon": 11.602061
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/2145274",
+     "name": "Oberbayern"
+    },
+    "6": {
+     "id": "relation/62428",
+     "name": "München"
+    }
+   }
+  },
+  {
+   "id": "node/13662441587",
+   "tags": {
+    "club": "yes",
+    "name": "Reha-Sportgruppe Wardenburg",
+    "office": "club"
+   },
+   "location": {
+    "lat": 53.063468,
+    "lon": 8.194507
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62771",
+     "name": "Niedersachsen"
+    },
+    "6": {
+     "id": "relation/62648",
+     "name": "Landkreis Oldenburg"
+    },
+    "8": {
+     "id": "relation/1185589",
+     "name": "Wardenburg"
+    }
+   }
+  },
+  {
+   "id": "node/13664133357",
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "Reha-Sport Dr. Wolff Rückentraining",
+    "sport": "fitness"
+   },
+   "location": {
+    "lat": 51.481293,
+    "lon": 11.899271
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62607",
+     "name": "Sachsen-Anhalt"
+    },
+    "6": {
+     "id": "relation/62638",
+     "name": "Halle (Saale)"
+    }
+   }
+  },
+  {
+   "id": "node/13808256312",
+   "tags": {
+    "healthcare": "physiotherapist",
+    "name": "RehaSport Zentrum für Physiotherapie"
+   },
+   "location": {
+    "lat": 51.497561,
+    "lon": 9.379904
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62650",
+     "name": "Hessen"
+    },
+    "5": {
+     "id": "relation/286675",
+     "name": "Regierungsbezirk Kassel"
+    },
+    "6": {
+     "id": "relation/62401",
+     "name": "Landkreis Kassel"
+    },
+    "8": {
+     "id": "relation/1112226",
+     "name": "Hofgeismar"
+    }
+   }
+  },
+  {
+   "id": "node/2000455783",
+   "tags": {
+    "addr:city": "Wildeshausen",
+    "addr:country": "DE",
+    "addr:housenumber": "64",
+    "addr:postcode": "27793",
+    "addr:street": "Harpstedter Straße",
+    "amenity": "doctors",
+    "email": "reha-wildeshausen@web.de",
+    "name": "Reha-Sport",
+    "phone": "+49 4431 7484800",
+    "website": "https://www.reha-wildeshausen.de"
+   },
+   "location": {
+    "lat": 52.900331,
+    "lon": 8.467647
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62771",
+     "name": "Niedersachsen"
+    },
+    "6": {
+     "id": "relation/62648",
+     "name": "Landkreis Oldenburg"
+    },
+    "8": {
+     "id": "relation/1187315",
+     "name": "Wildeshausen"
+    }
+   }
+  },
+  {
+   "id": "node/2958966771",
+   "tags": {
+    "addr:city": "Lemgo",
+    "addr:country": "DE",
+    "addr:housenumber": "18",
+    "addr:postcode": "32657",
+    "addr:street": "Klingenberg",
+    "check_date": "2025-10-13",
+    "healthcare": "physiotherapist",
+    "name": "Dr. Pohl - Physiotherapie Bangemann - Rehasport MobiLe"
+   },
+   "location": {
+    "lat": 52.027434,
+    "lon": 8.894177
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/73347",
+     "name": "Regierungsbezirk Detmold"
+    },
+    "6": {
+     "id": "relation/62483",
+     "name": "Kreis Lippe"
+    },
+    "8": {
+     "id": "relation/142624",
+     "name": "Lemgo"
+    }
+   }
+  },
+  {
+   "id": "node/3048729196",
+   "tags": {
+    "club": "sport",
+    "name": "Versehrtensportgemeinschaft Wetter",
+    "sport": "multi"
+   },
+   "location": {
+    "lat": 51.384694,
+    "lon": 7.377065
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/73340",
+     "name": "Regierungsbezirk Arnsberg"
+    },
+    "6": {
+     "id": "relation/1829066",
+     "name": "Ennepe-Ruhr-Kreis"
+    },
+    "8": {
+     "id": "relation/162832",
+     "name": "Wetter (Ruhr)"
+    }
+   }
+  },
+  {
+   "id": "node/3220164198",
+   "tags": {
+    "healthcare": "physiotherapist",
+    "name": "Rehasport Zentrum Zeitz"
+   },
+   "location": {
+    "lat": 51.045373,
+    "lon": 12.143949
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62607",
+     "name": "Sachsen-Anhalt"
+    },
+    "6": {
+     "id": "relation/62639",
+     "name": "Burgenlandkreis"
+    },
+    "8": {
+     "id": "relation/2404586",
+     "name": "Zeitz"
+    }
+   }
+  },
+  {
+   "id": "node/3932839365",
+   "tags": {
+    "amenity": "social_facility",
+    "name": "Verein Reha + Herzsport e.V."
+   },
+   "location": {
+    "lat": 48.655611,
+    "lon": 9.414739
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62611",
+     "name": "Baden-Württemberg"
+    },
+    "5": {
+     "id": "relation/22041",
+     "name": "Regierungsbezirk Stuttgart"
+    },
+    "6": {
+     "id": "relation/62593",
+     "name": "Landkreis Esslingen"
+    },
+    "7": {
+     "id": "relation/2862748",
+     "name": "VVG der Stadt Kirchheim unter Teck"
+    },
+    "8": {
+     "id": "relation/2793212",
+     "name": "Kirchheim unter Teck"
+    }
+   }
+  },
+  {
+   "id": "node/4242686143",
+   "tags": {
+    "addr:city": "Rostock",
+    "addr:country": "DE",
+    "addr:housenumber": "48",
+    "addr:postcode": "18055",
+    "addr:street": "Paulstraße",
+    "addr:suburb": "Stadtmitte",
+    "name": "Zentrale der Herzgruppen",
+    "office": "association",
+    "operator": "Landesverband für Prävention und Rehabilitation von Herz-Kreislauferkrankungen e.V. Mecklenburg-Vorpommern",
+    "survey:date": "2016-06-13"
+   },
+   "location": {
+    "lat": 54.083421,
+    "lon": 12.140075
+   },
+   "admin": {
+    "4": {
+     "id": "relation/28322",
+     "name": "Mecklenburg-Vorpommern"
+    },
+    "6": {
+     "id": "relation/62405",
+     "name": "Rostock"
+    }
+   }
+  },
+  {
+   "id": "node/4466365095",
+   "tags": {
+    "addr:city": "Hausach",
+    "addr:housenumber": "17",
+    "addr:postcode": "77756",
+    "addr:street": "Eisenbahnstraße",
+    "leisure": "fitness_centre",
+    "name": "Gesund und aktiv - Rehasportverein Hausach e.V.",
+    "phone": "+49 176 53161935",
+    "sport": "exercise;fitness",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.rehasportverein-hausach.de/",
+    "wheelchair": "yes"
+   },
+   "location": {
+    "lat": 48.285742,
+    "lon": 8.177566
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62611",
+     "name": "Baden-Württemberg"
+    },
+    "5": {
+     "id": "relation/2106112",
+     "name": "Regierungsbezirk Freiburg"
+    },
+    "6": {
+     "id": "relation/62624",
+     "name": "Ortenaukreis"
+    },
+    "7": {
+     "id": "relation/2958062",
+     "name": "VVG der Stadt Hausach"
+    },
+    "8": {
+     "id": "relation/453020",
+     "name": "Hausach"
+    }
+   }
+  },
+  {
+   "id": "node/5752481840",
+   "tags": {
+    "addr:city": "Berlin",
+    "addr:country": "DE",
+    "addr:housenumber": "45-46",
+    "addr:postcode": "12161",
+    "addr:street": "Rheinstraße",
+    "addr:suburb": "Friedenau",
+    "healthcare": "physiotherapist",
+    "name": "mka Physiotherapie und Rehasport",
+    "opening_hours": "Mo-Fr 08:00-20:00",
+    "website": "https://www.mka-medizentrum.de/"
+   },
+   "location": {
+    "lat": 52.466605,
+    "lon": 13.330473
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62422",
+     "name": "Berlin"
+    }
+   }
+  },
+  {
+   "id": "node/5782077479",
+   "tags": {
+    "addr:city": "Freital",
+    "addr:housenumber": "176",
+    "addr:postcode": "01705",
+    "addr:street": "Dresdner Straße",
+    "addr:suburb": "Deuben",
+    "contact:phone": "+49 152 22513044",
+    "email": "eikobrueckner@web.de",
+    "leisure": "fitness_centre",
+    "level": "0",
+    "name": "Rehabilitationssportverein Deuben e. V.",
+    "office": "association",
+    "opening_hours": "Mo-Fr 09:00-17:00; PH,Sa-Su off",
+    "operator": "Eiko Brückner",
+    "phone": "+49 351 6418351",
+    "website": "http://www.rehasport-deuben.de/",
+    "wheelchair": "yes"
+   },
+   "location": {
+    "lat": 50.999628,
+    "lon": 13.64979
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62467",
+     "name": "Sachsen"
+    },
+    "6": {
+     "id": "relation/62485",
+     "name": "Sächsische Schweiz-Osterzgebirge"
+    },
+    "8": {
+     "id": "relation/455475",
+     "name": "Freital"
+    }
+   }
+  },
+  {
+   "id": "node/6066383016",
+   "tags": {
+    "addr:city": "Bochum",
+    "addr:country": "DE",
+    "addr:housenumber": "163",
+    "addr:postcode": "44869",
+    "addr:street": "Blumenfeldstraße",
+    "contact:email": "helen.rickmers@t-online.de",
+    "contact:phone": "+49 2327 7884271",
+    "contact:website": "http://www.riwi-bochum.de",
+    "health_facility:type": "office",
+    "health_specialty:physiotherapy": "yes",
+    "healthcare": "physiotherapist",
+    "name": "RiWi REHASPORT & KRANKENGYMNASTIK",
+    "opening_hours": "Mo 08:00-19:00; Tu 08:00-20:00; We 09:00-19:00; Th 08:00-20:00; Fr 08:00-16:00; Sa,Su,PH off",
+    "operator": "Helen Rickmers"
+   },
+   "location": {
+    "lat": 51.444856,
+    "lon": 7.1716
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/73340",
+     "name": "Regierungsbezirk Arnsberg"
+    },
+    "6": {
+     "id": "relation/62644",
+     "name": "Bochum"
+    }
+   }
+  },
+  {
+   "id": "node/6066463271",
+   "tags": {
+    "healthcare:speciality": "sports",
+    "healthcare": "rehabilitation",
+    "level": "1",
+    "name": "Reha Sport"
+   },
+   "location": {
+    "lat": 52.553652,
+    "lon": 13.382226
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62422",
+     "name": "Berlin"
+    }
+   }
+  },
+  {
+   "id": "node/6203883477",
+   "tags": {
+    "addr:city": "Bad Alexandersbad",
+    "addr:country": "DE",
+    "addr:housenumber": "28",
+    "addr:postcode": "95680",
+    "addr:street": "Markgrafenstraße",
+    "amenity": "social_facility",
+    "name": "Reha Sport Bad Alexandersbad e.V.",
+    "social_facility": "social_club"
+   },
+   "location": {
+    "lat": 50.015752,
+    "lon": 12.015238
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/17592",
+     "name": "Oberfranken"
+    },
+    "6": {
+     "id": "relation/62491",
+     "name": "Landkreis Wunsiedel im Fichtelgebirge"
+    },
+    "7": {
+     "id": "relation/2986307",
+     "name": "Tröstau (VGem)"
+    },
+    "8": {
+     "id": "relation/1022866",
+     "name": "Bad Alexandersbad"
+    }
+   }
+  },
+  {
+   "id": "node/6255833099",
+   "tags": {
+    "healthcare": "physiotherapist",
+    "name": "Physiotherapie und Rehasport Homuth",
+    "office": "therapist",
+    "wheelchair": "yes"
+   },
+   "location": {
+    "lat": 51.903567,
+    "lon": 8.361317
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/73347",
+     "name": "Regierungsbezirk Detmold"
+    },
+    "6": {
+     "id": "relation/62379",
+     "name": "Kreis Gütersloh"
+    },
+    "8": {
+     "id": "relation/138119",
+     "name": "Gütersloh"
+    }
+   }
+  },
+  {
+   "id": "node/6329026573",
+   "tags": {
+    "addr:city": "Helmbrechts",
+    "addr:country": "DE",
+    "addr:housenumber": "7",
+    "addr:postcode": "95233",
+    "addr:street": "Adolf-Haack-Straße",
+    "disused:amenity": "restaurant",
+    "healthcare": "rehabilitation",
+    "name": "RehaSport Helmbrechts",
+    "operator": "Reha-Zentrum Helmbrechts im Frankenwald",
+    "website": "https://www.rehazentrum-helmbrechts.de/"
+   },
+   "location": {
+    "lat": 50.235658,
+    "lon": 11.711335
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/17592",
+     "name": "Oberfranken"
+    },
+    "6": {
+     "id": "relation/2145179",
+     "name": "Landkreis Hof"
+    },
+    "8": {
+     "id": "relation/1021685",
+     "name": "Helmbrechts"
+    }
+   }
+  },
+  {
+   "id": "node/6338673012",
+   "tags": {
+    "addr:city": "Groitzsch",
+    "addr:country": "DE",
+    "addr:housenumber": "16",
+    "addr:postcode": "04539",
+    "addr:street": "Breitstraße",
+    "contact:email": "kontakt@physiotherapie-vogel-scholz.de",
+    "contact:fax": "+49 34296 489211",
+    "contact:phone": "+49 34296 74595",
+    "contact:website": "http://www.physiotherapie-groitzsch.de/",
+    "healthcare": "physiotherapist",
+    "name": "Praxisgemeinschaft für Physiotherapie & Rehasport",
+    "operator": "Ines Vogel & Susan Scholz"
+   },
+   "location": {
+    "lat": 51.156293,
+    "lon": 12.280911
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62467",
+     "name": "Sachsen"
+    },
+    "6": {
+     "id": "relation/62434",
+     "name": "Landkreis Leipzig"
+    },
+    "8": {
+     "id": "relation/420242",
+     "name": "Groitzsch"
+    }
+   }
+  },
+  {
+   "id": "node/6679615542",
+   "tags": {
+    "addr:city": "Bonn",
+    "addr:housenumber": "16",
+    "addr:postcode": "53225",
+    "addr:street": "Hans-Böckler-Straße",
+    "check_date": "2025-10-14",
+    "email": "info@vfb-bonn.de",
+    "fax": "+49 228 4036718",
+    "name": "Verein für Behindertensport Bonn/Rhein-Sieg e.V.",
+    "office": "yes",
+    "opening_hours": "Mo 09:30-14:30; Tu-We 09:30-16:00; Th 09:30-15:30; Fr 09:30-14:00; Sa-Su off",
+    "phone": "+49 228 403670",
+    "website": "https://www.vfb-bonn.de/"
+   },
+   "location": {
+    "lat": 50.740196,
+    "lon": 7.121722
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/72022",
+     "name": "Regierungsbezirk Köln"
+    },
+    "6": {
+     "id": "relation/62508",
+     "name": "Bonn"
+    }
+   }
+  },
+  {
+   "id": "node/6897791677",
+   "tags": {
+    "addr:city": "Dresden",
+    "addr:housenumber": "48",
+    "addr:postcode": "01219",
+    "addr:street": "Zschertnitzer Straße",
+    "check_date": "2026-09-20",
+    "healthcare:speciality": "physiotherapy",
+    "healthcare": "physiotherapist",
+    "name": "Rehasport Dresden Reha und Präventionssport Dresden e",
+    "opening_hours": "\"Therapiezeiten nach Vereinbarung, 24 h Onlineterminplanung\"",
+    "start_date": "oktober 2019",
+    "website": "https://www.praxis-wielobinski.de/"
+   },
+   "location": {
+    "lat": 51.017175,
+    "lon": 13.760921
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62467",
+     "name": "Sachsen"
+    },
+    "6": {
+     "id": "relation/191645",
+     "name": "Dresden"
+    }
+   }
+  },
+  {
+   "id": "node/6900921604",
+   "tags": {
+    "contact:email": "kontakt@st-physio.de",
+    "contact:phone": "+491742443363",
+    "contact:website": "https://www.st-physio.de",
+    "healthcare": "physiotherapist",
+    "level": "0",
+    "name": "ST | Physio Reha Sport",
+    "operator": "David Skibba und Ingolf Tuchscherer",
+    "start_date": "2025-09-20",
+    "wheelchair": "yes"
+   },
+   "location": {
+    "lat": 53.248578,
+    "lon": 8.190338
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62771",
+     "name": "Niedersachsen"
+    },
+    "6": {
+     "id": "relation/62689",
+     "name": "Landkreis Ammerland"
+    },
+    "8": {
+     "id": "relation/1186789",
+     "name": "Rastede"
+    }
+   }
+  },
+  {
+   "id": "node/7195685548",
+   "tags": {
+    "healthcare": "rehabilitation",
+    "level": "0",
+    "name": "Rehasport am Wasaplatz"
+   },
+   "location": {
+    "lat": 51.027582,
+    "lon": 13.759966
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62467",
+     "name": "Sachsen"
+    },
+    "6": {
+     "id": "relation/191645",
+     "name": "Dresden"
+    }
+   }
+  },
+  {
+   "id": "node/7363141430",
+   "tags": {
+    "addr:city": "Heimbuchenthal",
+    "addr:housenumber": "2a",
+    "addr:postcode": "63872",
+    "addr:street": "Friedenstraße",
+    "healthcare": "physiotherapist",
+    "name": "Reha-Sport & Therapie",
+    "website": "https://therapie-und-trainingszentrum.de"
+   },
+   "location": {
+    "lat": 49.882726,
+    "lon": 9.293043
+   },
+   "admin": {
+    "4": {
+     "id": "relation/2145268",
+     "name": "Bayern"
+    },
+    "5": {
+     "id": "relation/17585",
+     "name": "Unterfranken"
+    },
+    "6": {
+     "id": "relation/62497",
+     "name": "Landkreis Aschaffenburg"
+    },
+    "7": {
+     "id": "relation/387719",
+     "name": "Mespelbrunn (VGem)"
+    },
+    "8": {
+     "id": "relation/387718",
+     "name": "Heimbuchenthal"
+    }
+   }
+  },
+  {
+   "id": "node/7769507080",
+   "tags": {
+    "addr:city": "Köthen (Anhalt)",
+    "addr:housenumber": "21",
+    "addr:postcode": "06366",
+    "addr:street": "Aribertstraße",
+    "club": "yes",
+    "name": "Gesundsheit- und Rehasport Verein",
+    "opening_hours": "Mo - Th 08:00 - 18:00; Fr 08:00 - 12:00",
+    "operator": "Mirella Murawski",
+    "phone": "+49 3496 402149",
+    "website": "http://web.rehasport-koethen.de/"
+   },
+   "location": {
+    "lat": 51.746908,
+    "lon": 11.969458
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62607",
+     "name": "Sachsen-Anhalt"
+    },
+    "6": {
+     "id": "relation/62747",
+     "name": "Anhalt-Bitterfeld"
+    },
+    "8": {
+     "id": "relation/2090553",
+     "name": "Köthen (Anhalt)"
+    }
+   }
+  },
+  {
+   "id": "node/8000142436",
+   "tags": {
+    "addr:city": "Moers",
+    "addr:country": "DE",
+    "addr:housenumber": "522",
+    "addr:postcode": "47443",
+    "addr:street": "Römerstraße",
+    "club": "sport",
+    "name": "Trainingsort des Reha-, Breiten- und Behindertensportgemeinschaft Moers e.V.",
+    "phone": "+49 2841 58937",
+    "sport": "gymnastics",
+    "website": "https://rbbsg-moers.webnode.com/"
+   },
+   "location": {
+    "lat": 51.449369,
+    "lon": 6.658946
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/63306",
+     "name": "Regierungsbezirk Düsseldorf"
+    },
+    "6": {
+     "id": "relation/58745",
+     "name": "Kreis Wesel"
+    },
+    "8": {
+     "id": "relation/58623",
+     "name": "Moers"
+    }
+   }
+  },
+  {
+   "id": "node/8165248805",
+   "tags": {
+    "addr:city": "Weilmünster",
+    "addr:country": "DE",
+    "addr:housenumber": "25",
+    "addr:postcode": "35789",
+    "addr:street": "Bergstraße",
+    "addr:suburb": "Lützendorf",
+    "email": "pkkluetzendorf@t-online.de",
+    "name": "VSG Braunfels e.V. Verein für Sport und Gesundheit - REHA Sport",
+    "office": "association",
+    "operator": "Karin Lakowski",
+    "phone": "+49 6472 2573"
+   },
+   "location": {
+    "lat": 50.443192,
+    "lon": 8.367634
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62650",
+     "name": "Hessen"
+    },
+    "5": {
+     "id": "relation/286618",
+     "name": "Regierungsbezirk Gießen"
+    },
+    "6": {
+     "id": "relation/62585",
+     "name": "Landkreis Limburg-Weilburg"
+    },
+    "8": {
+     "id": "relation/324310",
+     "name": "Weilmünster"
+    }
+   }
+  },
+  {
+   "id": "node/8562847552",
+   "tags": {
+    "addr:housenumber": "16a",
+    "addr:street": "Alte Neckarelzer Straße",
+    "leisure": "fitness_centre",
+    "name": "Rehasport Muskelkater"
+   },
+   "location": {
+    "lat": 49.344676,
+    "lon": 9.128577
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62611",
+     "name": "Baden-Württemberg"
+    },
+    "5": {
+     "id": "relation/22027",
+     "name": "Regierungsbezirk Karlsruhe"
+    },
+    "6": {
+     "id": "relation/62626",
+     "name": "Neckar-Odenwald-Kreis"
+    },
+    "7": {
+     "id": "relation/2969766",
+     "name": "VVG der Stadt Mosbach"
+    },
+    "8": {
+     "id": "relation/403743",
+     "name": "Mosbach"
+    }
+   }
+  },
+  {
+   "id": "node/9624103162",
+   "tags": {
+    "addr:city": "Wetzlar",
+    "addr:housenumber": "1",
+    "addr:postcode": "35578",
+    "addr:street": "Wilhelm-Loh-Straße",
+    "club": "yes",
+    "name": "Verein Gesundheit & Rehabilitation Giessen e.V. (Reha Sport)",
+    "phone": "+4915771531890"
+   },
+   "location": {
+    "lat": 50.537508,
+    "lon": 8.532625
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62650",
+     "name": "Hessen"
+    },
+    "5": {
+     "id": "relation/286618",
+     "name": "Regierungsbezirk Gießen"
+    },
+    "6": {
+     "id": "relation/62368",
+     "name": "Lahn-Dill-Kreis"
+    },
+    "8": {
+     "id": "relation/215978",
+     "name": "Wetzlar"
+    }
+   }
+  },
+  {
+   "id": "node/9710865511",
+   "tags": {
+    "healthcare": "physiotherapist",
+    "name": "Therapie Vital Rehasport-& Physiotherapiezentrum"
+   },
+   "location": {
+    "lat": 51.191043,
+    "lon": 11.9844
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62607",
+     "name": "Sachsen-Anhalt"
+    },
+    "6": {
+     "id": "relation/62639",
+     "name": "Burgenlandkreis"
+    },
+    "8": {
+     "id": "relation/2405268",
+     "name": "Weißenfels"
+    }
+   }
+  },
+  {
+   "id": "relation/1320444",
+   "tags": {
+    "addr:city": "Bochum",
+    "addr:country": "DE",
+    "addr:housenumber": "21a",
+    "addr:street": "Brundelstraße",
+    "leisure": "sports_centre",
+    "name": "Behindertensportgemeinschaft Bochum-Langendreer 68 e. V.",
+    "site": "sport",
+    "sport": "archery",
+    "type": "site"
+   },
+   "location": {
+    "lat": 51.478589,
+    "lon": 7.334771
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/73340",
+     "name": "Regierungsbezirk Arnsberg"
+    },
+    "6": {
+     "id": "relation/62644",
+     "name": "Bochum"
+    }
+   }
+  },
+  {
+   "id": "way/112716413",
+   "tags": {
+    "addr:city": "Recklinghausen",
+    "addr:country": "DE",
+    "addr:housenumber": "29",
+    "addr:postcode": "45659",
+    "addr:street": "Mühlenstraße",
+    "building": "yes",
+    "name": "RehaSport Rhein-Ruhr e.V."
+   },
+   "location": {
+    "lat": 51.606294,
+    "lon": 7.189698
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/63594",
+     "name": "Regierungsbezirk Münster"
+    },
+    "6": {
+     "id": "relation/62770",
+     "name": "Kreis Recklinghausen"
+    },
+    "8": {
+     "id": "relation/56665",
+     "name": "Recklinghausen"
+    }
+   }
+  },
+  {
+   "id": "way/164291089",
+   "tags": {
+    "addr:city": "Baden-Baden",
+    "addr:country": "DE",
+    "addr:housenumber": "68",
+    "addr:postcode": "76532",
+    "addr:street": "Mühlstraße",
+    "building:levels": "1",
+    "building:use": "office",
+    "building": "office",
+    "name": "Badischer Behinderten- und Rehabilitationssportverband e.V.",
+    "roof:shape": "pitched",
+    "start_date": "early 2000s",
+    "website": "https://www.bbsbaden.de/"
+   },
+   "location": {
+    "lat": 48.816266,
+    "lon": 8.199899
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62611",
+     "name": "Baden-Württemberg"
+    },
+    "5": {
+     "id": "relation/22027",
+     "name": "Regierungsbezirk Karlsruhe"
+    },
+    "6": {
+     "id": "relation/62340",
+     "name": "Baden-Baden"
+    }
+   }
+  },
+  {
+   "id": "way/197355127",
+   "tags": {
+    "addr:city": "Weilerbach",
+    "addr:housenumber": "3",
+    "addr:postcode": "67685",
+    "addr:street": "Im Ehwasen",
+    "building": "yes",
+    "healthcare": "physiotherapist",
+    "name": "Gesundheitszentrum Physiotherapie & Rehasport",
+    "operator": "Doris Siegfried + Ulrike Malitius",
+    "phone": "+49 6374 3010",
+    "website": "https://www.praxis-sport-reha.de/"
+   },
+   "location": {
+    "lat": 49.479164,
+    "lon": 7.631818
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62341",
+     "name": "Rheinland-Pfalz"
+    },
+    "6": {
+     "id": "relation/62451",
+     "name": "Landkreis Kaiserslautern"
+    },
+    "7": {
+     "id": "relation/898852",
+     "name": "Weilerbach"
+    },
+    "8": {
+     "id": "relation/1253792",
+     "name": "Weilerbach"
+    }
+   }
+  },
+  {
+   "id": "way/35541220",
+   "tags": {
+    "landuse": "recreation_ground",
+    "leisure": "pitch",
+    "name": "Versehrtensportverein Rheinhausen",
+    "sport": "multi"
+   },
+   "location": {
+    "lat": 51.414655,
+    "lon": 6.7264
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/63306",
+     "name": "Regierungsbezirk Düsseldorf"
+    },
+    "6": {
+     "id": "relation/62456",
+     "name": "Duisburg"
+    }
+   }
+  },
+  {
+   "id": "way/50849444",
+   "tags": {
+    "addr:city": "Duisburg",
+    "addr:housenumber": "10",
+    "addr:postcode": "47055",
+    "addr:street": "Friedrich-Alfred-Allee",
+    "building": "yes",
+    "name": "Behinderten- und Rehabilitationssportverband NRW e.V.",
+    "website": "https://www.brsnw.de/"
+   },
+   "location": {
+    "lat": 51.405247,
+    "lon": 6.781848
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/63306",
+     "name": "Regierungsbezirk Düsseldorf"
+    },
+    "6": {
+     "id": "relation/62456",
+     "name": "Duisburg"
+    }
+   }
+  },
+  {
+   "id": "way/547058628",
+   "tags": {
+    "addr:city": "Gudensberg",
+    "addr:country": "DE",
+    "addr:housenumber": "27",
+    "addr:postcode": "34281",
+    "addr:street": "Besser Straße",
+    "building": "commercial",
+    "name": "IQvital Reha Sport"
+   },
+   "location": {
+    "lat": 51.181092,
+    "lon": 9.366973
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62650",
+     "name": "Hessen"
+    },
+    "5": {
+     "id": "relation/286675",
+     "name": "Regierungsbezirk Kassel"
+    },
+    "6": {
+     "id": "relation/62736",
+     "name": "Schwalm-Eder-Kreis"
+    },
+    "8": {
+     "id": "relation/452195",
+     "name": "Gudensberg"
+    }
+   }
+  },
+  {
+   "id": "way/61809767",
+   "tags": {
+    "building": "yes",
+    "name": "1. Kieler Behindertensportverein von 1950 e.V."
+   },
+   "location": {
+    "lat": 54.167397,
+    "lon": 10.374845
+   },
+   "admin": {
+    "4": {
+     "id": "relation/51529",
+     "name": "Schleswig-Holstein"
+    },
+    "6": {
+     "id": "relation/27026",
+     "name": "Kreis Plön"
+    },
+    "7": {
+     "id": "relation/569767",
+     "name": "Großer Plöner See"
+    },
+    "8": {
+     "id": "relation/310400",
+     "name": "Wittmoldt"
+    }
+   }
+  },
+  {
+   "id": "way/627994067",
+   "tags": {
+    "leisure": "sports_centre",
+    "name": "Behindertensportgemeinschaft Bochum-Langendreer 68 e. V.",
+    "sport": "archery"
+   },
+   "location": {
+    "lat": 51.478593,
+    "lon": 7.334686
+   },
+   "admin": {
+    "4": {
+     "id": "relation/62761",
+     "name": "Nordrhein-Westfalen"
+    },
+    "5": {
+     "id": "relation/73340",
+     "name": "Regierungsbezirk Arnsberg"
+    },
+    "6": {
+     "id": "relation/62644",
+     "name": "Bochum"
+    }
+   }
+  }
+ ]
+}
