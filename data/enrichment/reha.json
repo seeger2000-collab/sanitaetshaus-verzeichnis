@@ -1,0 +1,758 @@
+{
+ "node/10107214688": {
+  "checkedAt": "2026-11-18T18:26:36.706Z",
+  "website": "https://www.bsn-ev.de/anbieter/vereinsliste/reha-sportverein-lningen-e-v/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "http-404"
+ },
+ "node/10018733786": {
+  "checkedAt": "2026-11-18T18:26:36.664Z",
+  "website": "https://www.rehasport-paderborn.de/",
+  "features": [
+   "wasser"
+  ],
+  "kassen": [],
+  "evidence": {
+   "wasser": "https://www.rehasport-paderborn.de/"
+  },
+  "finalUrl": "https://www.rehasport-paderborn.de/",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/12642566663": {
+  "checkedAt": "2026-11-18T18:26:36.718Z",
+  "website": "https://www.susannewolf-gpt.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "http-404"
+ },
+ "node/12044173127": {
+  "checkedAt": "2026-11-18T18:26:36.716Z",
+  "website": "https://rehasport-singen.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://rehasport-singen.de/",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/12699393408": {
+  "checkedAt": "2026-11-18T18:26:36.719Z",
+  "website": "https://westendsport.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://westendsport.de/",
+  "email": "westendsport@t-online.de",
+  "phone": "+493741709790",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/12691980351": {
+  "checkedAt": "2026-11-18T18:26:36.718Z",
+  "website": "https://www.rehasport-suhl.de/",
+  "features": [
+   "funktionstraining"
+  ],
+  "kassen": [],
+  "evidence": {
+   "funktionstraining": "https://www.rehasport-suhl.de/"
+  },
+  "finalUrl": "https://www.rehasport-suhl.de/",
+  "phone": "+4936818074570",
+  "pagesChecked": 4,
+  "status": "ok"
+ },
+ "node/12637232303": {
+  "checkedAt": "2026-11-18T18:26:36.717Z",
+  "website": "https://www.balance-frauenfit.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.balance-frauenfit.de/",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/11913858205": {
+  "checkedAt": "2026-11-18T18:26:36.714Z",
+  "website": "https://www.djk-augsburg-hochzoll.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "http-503"
+ },
+ "node/11144653032": {
+  "checkedAt": "2026-11-18T18:26:36.711Z",
+  "website": "https://www.th-eilbeck.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.th-eilbeck.de/",
+  "booking": "https://www.th-eilbeck.de/sportprogramm/kinderturnen/1561-online-buchung-fuer-das-kinderturnen-und-eltern-kind-turnen",
+  "pagesChecked": 4,
+  "status": "ok"
+ },
+ "node/13294109338": {
+  "checkedAt": "2026-11-18T18:26:38.704Z",
+  "website": "https://www.rehasportverein-ostsachsen.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.rehasportverein-ostsachsen.de/",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/13250634048": {
+  "checkedAt": "2026-11-18T18:26:38.080Z",
+  "website": "https://www.petra-schwenter.de/",
+  "features": [
+   "funktionstraining",
+   "neuro"
+  ],
+  "kassen": [],
+  "evidence": {
+   "funktionstraining": "https://www.petra-schwenter.de/",
+   "neuro": "https://www.petra-schwenter.de/reha-sport/reha-sport/"
+  },
+  "finalUrl": "https://www.petra-schwenter.de/",
+  "booking": "https://calendly.com/petra-schwenter-dzk/info-s-anmeldung-zum-start-fur-reha-sport",
+  "pagesChecked": 5,
+  "status": "ok"
+ },
+ "node/12716935932": {
+  "checkedAt": "2026-11-18T18:26:37.532Z",
+  "website": "https://www.verein-leichter-leben.de/",
+  "features": [
+   "wasser"
+  ],
+  "kassen": [],
+  "evidence": {
+   "wasser": "https://www.verein-leichter-leben.de/"
+  },
+  "finalUrl": "https://www.verein-leichter-leben.de/",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/6066383016": {
+  "checkedAt": "2026-11-18T18:26:39.986Z",
+  "website": "http://www.riwi-bochum.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "ENOTFOUND"
+ },
+ "node/12348479956": {
+  "checkedAt": "2026-11-18T18:26:36.717Z",
+  "website": "https://physio-gogrefe.de/",
+  "features": [
+   "neuro"
+  ],
+  "kassen": [],
+  "evidence": {
+   "neuro": "https://physio-gogrefe.de/"
+  },
+  "finalUrl": "https://physio-gogrefe.de/",
+  "email": "info@physio-gogrefe.de",
+  "phone": "05251300900",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "node/11781618910": {
+  "checkedAt": "2026-11-18T18:26:36.713Z",
+  "website": "https://www.reha-sv.de/",
+  "features": [
+   "funktionstraining",
+   "herz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "funktionstraining": "https://www.reha-sv.de/%C3%BCber-uns",
+   "herz": "https://www.reha-sv.de/%C3%BCber-uns"
+  },
+  "finalUrl": "https://www.reha-sv.de/",
+  "email": "info@reha-sv.de",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "node/5782077479": {
+  "checkedAt": "2026-11-18T18:26:39.783Z",
+  "website": "http://www.rehasport-deuben.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "http://www.rehasport-deuben.de/",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/6338673012": {
+  "checkedAt": "2026-11-18T18:26:40.149Z",
+  "website": "http://www.physiotherapie-groitzsch.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "http://www.physiotherapie-groitzsch.de/",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/6679615542": {
+  "checkedAt": "2026-11-18T18:26:40.366Z",
+  "website": "https://www.vfb-bonn.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "http-404"
+ },
+ "node/1365822613": {
+  "checkedAt": "2026-11-18T18:26:39.142Z",
+  "website": "https://www.schwabinger-reha-sport.de/",
+  "features": [],
+  "kassen": [
+   "knappschaft"
+  ],
+  "evidence": {},
+  "finalUrl": "https://www.schwabinger-reha-sport.de/",
+  "email": "anmeldung@schwabinger-reha-sport.de",
+  "phone": "089954449320",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/4466365095": {
+  "checkedAt": "2026-11-18T18:26:39.614Z",
+  "website": "https://www.rehasportverein-hausach.de/",
+  "features": [
+   "funktionstraining",
+   "herz",
+   "lunge",
+   "neuro",
+   "krebs"
+  ],
+  "kassen": [
+   "aok"
+  ],
+  "evidence": {
+   "funktionstraining": "https://www.rehasportverein-hausach.de/rehasport.html",
+   "herz": "https://www.rehasportverein-hausach.de/rehasport.html",
+   "lunge": "https://www.rehasportverein-hausach.de/rehasport.html",
+   "neuro": "https://www.rehasportverein-hausach.de/rehasport.html",
+   "krebs": "https://www.rehasportverein-hausach.de/rehasport.html"
+  },
+  "finalUrl": "https://www.rehasportverein-hausach.de/",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/7769507080": {
+  "checkedAt": "2026-11-18T18:26:40.966Z",
+  "website": "http://web.rehasport-koethen.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "ENOTFOUND"
+ },
+ "node/2000455783": {
+  "checkedAt": "2026-11-18T18:26:39.353Z",
+  "website": "https://www.reha-wildeshausen.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://reha-wildeshausen.dipago.de/",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "node/11615114066": {
+  "checkedAt": "2026-11-18T18:26:36.711Z",
+  "website": "http://www.sportschule-mustang.de/Gruenau/",
+  "features": [
+   "herz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "herz": "http://www.sportschule-mustang.de/Gruenau/Rehasport/"
+  },
+  "finalUrl": "http://www.sportschule-mustang.de/Gruenau/",
+  "email": "info@sportschule-mustang.de",
+  "phone": "01773261942",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/8000142436": {
+  "checkedAt": "2026-11-18T18:26:41.082Z",
+  "website": "https://rbbsg-moers.webnode.com/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "http-404"
+ },
+ "node/10990182926": {
+  "checkedAt": "2026-11-18T18:26:36.709Z",
+  "website": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-adolph-diesterweg-schule-foerderschule",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.leipzig.de/kultur-und-freizeit/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-adolph-diesterweg-schule-foerderschule",
+  "email": "sportstaettenvergabe@leipzig.de",
+  "phone": "+493411239425",
+  "booking": "https://www.leipzig.de/service-portal/aemtertermine-online",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/9741001180": {
+  "checkedAt": "2026-11-18T18:26:41.975Z",
+  "website": "https://www.koerper-imlot.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://thingsreview.com/generic/korper-im-lot/",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/13463882582": {
+  "checkedAt": "2026-11-18T18:26:38.767Z",
+  "website": "https://wesel.fit/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://wesel.fit/",
+  "email": "hallo@wesel.fit",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/6900921604": {
+  "checkedAt": "2026-11-18T18:26:40.858Z",
+  "website": "https://www.st-physio.de/",
+  "features": [
+   "neuro",
+   "funktionstraining"
+  ],
+  "kassen": [],
+  "evidence": {
+   "neuro": "https://www.st-physio.de/therapie/",
+   "funktionstraining": "https://www.st-physio.de/kurse-praevention/reha-sport/"
+  },
+  "finalUrl": "https://www.st-physio.de/",
+  "phone": "+494454918077",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/6329026573": {
+  "checkedAt": "2026-11-18T18:26:40.020Z",
+  "website": "https://www.rehazentrum-helmbrechts.de/",
+  "features": [
+   "wasser"
+  ],
+  "kassen": [],
+  "evidence": {
+   "wasser": "https://rehazentrum-helmbrechts.de/"
+  },
+  "finalUrl": "https://rehazentrum-helmbrechts.de/",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/8897406150": {
+  "checkedAt": "2026-11-18T18:26:41.744Z",
+  "website": "https://jh-athletics.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "http-503"
+ },
+ "node/4231250105": {
+  "checkedAt": "2026-11-18T18:26:39.442Z",
+  "website": "https://sportzentrum-ma.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://sportzentrum-ma.de/",
+  "email": "mail@capoeiraverein-ma.de",
+  "phone": "+4917622696722",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "node/13059369048": {
+  "checkedAt": "2026-11-18T18:26:37.563Z",
+  "website": "https://maxmove-fitness.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://maxmove-fitness.de/",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "node/7363141430": {
+  "checkedAt": "2026-11-18T18:26:40.950Z",
+  "website": "https://therapie-und-trainingszentrum.de/",
+  "features": [
+   "neuro"
+  ],
+  "kassen": [
+   "alle"
+  ],
+  "evidence": {
+   "neuro": "https://therapie-und-trainingszentrum.de/"
+  },
+  "finalUrl": "https://therapie-und-trainingszentrum.de/",
+  "email": "bauer-physio@gmx.de",
+  "phone": "+4960928248855",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "way/197355127": {
+  "checkedAt": "2026-11-18T18:26:43.621Z",
+  "website": "https://www.praxis-sport-reha.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "error",
+  "error": "ENOTFOUND"
+ },
+ "node/10738944940": {
+  "checkedAt": "2026-11-18T18:26:36.708Z",
+  "website": "https://gus-hd.de/",
+  "features": [
+   "wasser",
+   "herz",
+   "krebs"
+  ],
+  "kassen": [],
+  "evidence": {
+   "wasser": "https://gus-hd.de/",
+   "herz": "https://gus-hd.de/",
+   "krebs": "https://gus-hd.de/"
+  },
+  "finalUrl": "https://gus-hd.de/",
+  "pagesChecked": 5,
+  "status": "ok"
+ },
+ "way/148799209": {
+  "checkedAt": "2026-11-18T18:26:43.543Z",
+  "website": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/segment/zweifeldsporthalle-5?t3bookingplan%5Bbuilding%5D=56&cHash=e7d81e0acb744fa1ff59d5050a7535ef",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "status": "http-404"
+ },
+ "node/8176906768": {
+  "checkedAt": "2026-11-18T18:26:41.202Z",
+  "website": "https://mir-zuliebe.nrw/",
+  "features": [
+   "neuro"
+  ],
+  "kassen": [
+   "alle"
+  ],
+  "evidence": {
+   "neuro": "https://mir-zuliebe.nrw/kurse/rehasport-mattenkurs-mit-steffi"
+  },
+  "finalUrl": "https://mir-zuliebe.nrw/",
+  "email": "info@mir-zuliebe.nrw",
+  "phone": "004915737939623",
+  "booking": "https://mir-zuliebe.nrw/#termin",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/5752481840": {
+  "checkedAt": "2026-11-18T18:26:39.742Z",
+  "website": "https://www.mka-medizentrum.de/",
+  "features": [
+   "neuro"
+  ],
+  "kassen": [],
+  "evidence": {
+   "neuro": "https://www.mka-medizentrum.de/therapieangebote/"
+  },
+  "finalUrl": "https://www.mka-medizentrum.de/",
+  "booking": "https://www.mka-medizentrum.de/online-terminbuchung/",
+  "pagesChecked": 4,
+  "status": "ok"
+ },
+ "node/6897791677": {
+  "checkedAt": "2026-11-18T18:26:40.668Z",
+  "website": "https://www.praxis-wielobinski.de/",
+  "features": [
+   "neuro"
+  ],
+  "kassen": [
+   "ikk"
+  ],
+  "evidence": {
+   "neuro": "https://www.praxis-wielobinski.de/praxis/unser-team/"
+  },
+  "finalUrl": "https://www.praxis-wielobinski.de/",
+  "phone": "+4935140752409",
+  "booking": "https://www.praxis-wielobinski.de/kontakt/terminbuchung-praxis-suedhoehe/",
+  "email": "jens.wielobinski@praxis-wielobinski.de",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/964921378": {
+  "checkedAt": "2026-11-18T18:26:41.971Z",
+  "website": "https://www.bsg-luedinghausen.de/",
+  "features": [
+   "wasser",
+   "herz",
+   "lunge",
+   "neuro"
+  ],
+  "kassen": [],
+  "evidence": {
+   "wasser": "https://www.bsg-luedinghausen.de/angebote/",
+   "herz": "https://www.bsg-luedinghausen.de/angebote/",
+   "lunge": "https://www.bsg-luedinghausen.de/angebote/",
+   "neuro": "https://www.bsg-luedinghausen.de/angebote/"
+  },
+  "finalUrl": "https://www.bsg-luedinghausen.de/",
+  "email": "info@bsg-luedinghausen.de",
+  "phone": "+4925916225",
+  "pagesChecked": 2,
+  "status": "ok"
+ },
+ "node/10989907858": {
+  "checkedAt": "2026-11-18T18:26:36.708Z",
+  "website": "https://atv-volkmarsdorf.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://atv-volkmarsdorf.de/",
+  "email": "info@atv-volkmarsdorf.de",
+  "pagesChecked": 3,
+  "status": "ok"
+ },
+ "way/1286664415": {
+  "checkedAt": "2026-11-18T18:26:42.925Z",
+  "website": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-schule-portitz-grundschule",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.leipzig.de/kultur-und-freizeit/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-schule-portitz-grundschule",
+  "email": "sportstaettenvergabe@leipzig.de",
+  "phone": "+493411239425",
+  "booking": "https://www.leipzig.de/service-portal/aemtertermine-online",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "way/121182741": {
+  "checkedAt": "2026-11-18T18:26:42.885Z",
+  "website": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-humboldtschule-gymnasium",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.leipzig.de/kultur-und-freizeit/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-humboldtschule-gymnasium",
+  "email": "sportstaettenvergabe@leipzig.de",
+  "phone": "+493411239425",
+  "booking": "https://www.leipzig.de/service-portal/aemtertermine-online",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "relation/20776440": {
+  "checkedAt": "2026-11-18T18:26:42.497Z",
+  "website": "https://ssv-hoechstaedt.de/",
+  "features": [
+   "wasser"
+  ],
+  "kassen": [],
+  "evidence": {
+   "wasser": "https://ssv-hoechstaedt.de/abteilung/reha-sport"
+  },
+  "finalUrl": "https://ssv-hoechstaedt.de/",
+  "email": "info@ssv-hoechstaedt.de",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "way/35608419": {
+  "checkedAt": "2026-11-18T18:26:45.206Z",
+  "website": "https://www.th-eilbeck.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.th-eilbeck.de/",
+  "booking": "https://www.th-eilbeck.de/sportprogramm/kinderturnen/1561-online-buchung-fuer-das-kinderturnen-und-eltern-kind-turnen",
+  "pagesChecked": 4,
+  "status": "ok"
+ },
+ "way/136386955": {
+  "checkedAt": "2026-11-18T18:26:43.463Z",
+  "website": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/sporthalle-heinrichstrasse",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.leipzig.de/kultur-und-freizeit/sport/sportstaettenbelegung/detailseite/detailseite/sporthalle-heinrichstrasse",
+  "email": "sportstaettenvergabe@leipzig.de",
+  "phone": "+493411239425",
+  "booking": "https://www.leipzig.de/service-portal/aemtertermine-online",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/11683067292": {
+  "checkedAt": "2026-11-18T18:26:36.712Z",
+  "website": "https://www.rehasport-potsdam.de/",
+  "features": [
+   "herz"
+  ],
+  "kassen": [],
+  "evidence": {
+   "herz": "https://rehasport-potsdam.de/"
+  },
+  "finalUrl": "https://rehasport-potsdam.de/",
+  "pagesChecked": 5,
+  "status": "ok"
+ },
+ "way/105783434": {
+  "checkedAt": "2026-11-18T18:26:42.606Z",
+  "website": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-franz-mehring-schule-grundschule",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.leipzig.de/kultur-und-freizeit/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-franz-mehring-schule-grundschule",
+  "email": "sportstaettenvergabe@leipzig.de",
+  "phone": "+493411239425",
+  "booking": "https://www.leipzig.de/service-portal/aemtertermine-online",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "way/241020491": {
+  "checkedAt": "2026-11-18T18:26:43.690Z",
+  "website": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-schule-paunsdorf-oberschule",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.leipzig.de/kultur-und-freizeit/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-schule-paunsdorf-oberschule",
+  "email": "sportstaettenvergabe@leipzig.de",
+  "phone": "+493411239425",
+  "booking": "https://www.leipzig.de/service-portal/aemtertermine-online",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "node/9775370097": {
+  "checkedAt": "2026-11-18T18:26:42.362Z",
+  "website": "https://www.casana-mannheim.de/",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.casana.de/mannheim/",
+  "email": "info@casana.de",
+  "phone": "+4961089744500",
+  "pagesChecked": 1,
+  "status": "ok"
+ },
+ "way/31134121": {
+  "checkedAt": "2026-11-18T18:26:44.273Z",
+  "website": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-74-schule-grundschule",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.leipzig.de/kultur-und-freizeit/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-74-schule-grundschule",
+  "email": "sportstaettenvergabe@leipzig.de",
+  "phone": "+493411239425",
+  "booking": "https://www.leipzig.de/service-portal/aemtertermine-online",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "way/31134237": {
+  "checkedAt": "2026-11-18T18:26:44.294Z",
+  "website": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-kaethe-kollwitz-schule-foerderschule",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.leipzig.de/kultur-und-freizeit/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-kaethe-kollwitz-schule-foerderschule",
+  "email": "sportstaettenvergabe@leipzig.de",
+  "phone": "+493411239425",
+  "booking": "https://www.leipzig.de/service-portal/aemtertermine-online",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "way/33689073": {
+  "checkedAt": "2026-11-18T18:26:45.196Z",
+  "website": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-brueder-grimm-schule-grundschule",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.leipzig.de/kultur-und-freizeit/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-brueder-grimm-schule-grundschule",
+  "email": "sportstaettenvergabe@leipzig.de",
+  "phone": "+493411239425",
+  "booking": "https://www.leipzig.de/service-portal/aemtertermine-online",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "way/239286192": {
+  "checkedAt": "2026-11-18T18:26:43.649Z",
+  "website": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-kurt-biedermann-schule-foerderzentrum",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.leipzig.de/kultur-und-freizeit/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-kurt-biedermann-schule-foerderzentrum",
+  "email": "sportstaettenvergabe@leipzig.de",
+  "phone": "+493411239425",
+  "booking": "https://www.leipzig.de/service-portal/aemtertermine-online",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "way/33608159": {
+  "checkedAt": "2026-11-18T18:26:44.556Z",
+  "website": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-joachim-ringelnatz-schule-grundschule",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.leipzig.de/kultur-und-freizeit/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-joachim-ringelnatz-schule-grundschule",
+  "email": "sportstaettenvergabe@leipzig.de",
+  "phone": "+493411239425",
+  "booking": "https://www.leipzig.de/service-portal/aemtertermine-online",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "way/54054229": {
+  "checkedAt": "2026-11-18T18:26:46.547Z",
+  "website": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/sporthalle-mannheimer-strasse",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.leipzig.de/kultur-und-freizeit/sport/sportstaettenbelegung/detailseite/detailseite/sporthalle-mannheimer-strasse",
+  "email": "sportstaettenvergabe@leipzig.de",
+  "phone": "+493411239425",
+  "booking": "https://www.leipzig.de/service-portal/aemtertermine-online",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "way/82042023": {
+  "checkedAt": "2026-11-18T18:26:47.232Z",
+  "website": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-hans-kroch-schule-grundschule",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.leipzig.de/kultur-und-freizeit/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-hans-kroch-schule-grundschule",
+  "email": "sportstaettenvergabe@leipzig.de",
+  "phone": "+493411239425",
+  "booking": "https://www.leipzig.de/service-portal/aemtertermine-online",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "way/401495520": {
+  "checkedAt": "2026-11-18T18:26:45.404Z",
+  "website": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-lene-voigt-schule-oberschule",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.leipzig.de/kultur-und-freizeit/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-lene-voigt-schule-oberschule",
+  "email": "sportstaettenvergabe@leipzig.de",
+  "phone": "+493411239425",
+  "booking": "https://www.leipzig.de/service-portal/aemtertermine-online",
+  "pagesChecked": 7,
+  "status": "ok"
+ },
+ "way/54054228": {
+  "checkedAt": "2026-11-18T18:26:45.551Z",
+  "website": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-friedrich-froebel-schule-grundschule",
+  "features": [],
+  "kassen": [],
+  "evidence": {},
+  "finalUrl": "https://www.leipzig.de/kultur-und-freizeit/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-friedrich-froebel-schule-grundschule",
+  "email": "sportstaettenvergabe@leipzig.de",
+  "phone": "+493411239425",
+  "booking": "https://www.leipzig.de/service-portal/aemtertermine-online",
+  "pagesChecked": 7,
+  "status": "ok"
+ }
+}
