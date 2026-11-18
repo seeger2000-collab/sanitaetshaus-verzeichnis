@@ -42,6 +42,7 @@ export const PHYSIO_FEATURES = [
   { key: 'manuelle', short: 'Manuelle Therapie', label: 'Manuelle Therapie', patterns: [/manuelle therapie/] },
   { key: 'schroth', short: 'Schroth', label: 'Skoliosetherapie nach Schroth', patterns: [/schroth/] },
   { key: 'beckenboden', short: 'Beckenboden', label: 'Beckenbodentraining', patterns: [/beckenboden/] },
+  { key: 'rehasport', short: 'Rehasport', label: 'Rehasport und Funktionstraining', patterns: [/rehasport/, /reha-sport/, /rehabilitationssport/, /funktionstraining/] },
 ];
 export const PFLEGE_FEATURES = [
   { key: 'intensiv', short: 'Intensivpflege', label: 'Außerklinische Intensivpflege', patterns: [/intensivpflege/, /beatmung/] },
@@ -79,7 +80,22 @@ export const ARZT_FEATURES = [
   { key: 'hausbesuch', short: 'Hausbesuche', label: 'Hausbesuche', patterns: [/hausbesuch/, /haus-besuch/, /besuche (bei ihnen )?zu ?hause/, /visiten im pflegeheim/, /heimbesuch/] },
   { key: 'video', short: 'Videosprechstunde', label: 'Videosprechstunde', patterns: [/videosprechstunde/, /video-sprechstunde/, /onlinesprechstunde/] },
 ];
-export const FEATURES_BY_CAT = { sanitaetshaus: FEATURES, arzt: ARZT_FEATURES, physio: PHYSIO_FEATURES, pflege: PFLEGE_FEATURES, heim: HEIM_FEATURES, apotheke: APOTHEKE_FEATURES, fahrt: FAHRT_FEATURES };
+export const FUSS_FEATURES = [
+  { key: 'hausbesuch', short: 'Hausbesuch', label: 'Hausbesuche (auch im Pflegeheim)', patterns: [/hausbesuch/, /haus-besuch/, /mobile fu(ß|ss)pflege/, /besuchen sie (gerne |auch )?(zu ?hause|daheim)/, /im pflegeheim/, /zu ihnen nach hause/] },
+  { key: 'podologe', short: 'Podologie', label: 'Podologe (staatlich anerkannt)', patterns: [/podolog/, /medizinische(r)? fu(ß|ss)pfleger/] },
+  { key: 'kasse', short: 'Auf Rezept', label: 'Behandlung auf Rezept (Kassenzulassung)', patterns: [/kassenzulassung/, /zugelassen (für|bei) (alle(n)? )?(gesetzlichen )?(krankenkassen|kassen)/, /auf (ärztliche )?verordnung/, /auf rezept/, /heilmittelverordnung/] },
+  { key: 'diabetes', short: 'Diabetiker', label: 'Diabetischer Fuß', patterns: [/diabeti/, /diabetisches fu(ß|ss)syndrom/] },
+  { key: 'nagelspange', short: 'Nagelspange', label: 'Nagelspangen bei eingewachsenen Nägeln', patterns: [/nagelspange/, /orthonyx/, /eingewachsene(r|n)? n(ä|ae)gel/] },
+];
+export const REHA_FEATURES = [
+  { key: 'wasser', short: 'Im Wasser', label: 'Wassergymnastik und Funktionstraining im Wasser', patterns: [/wassergymnastik/, /im wasser/, /aqua/, /bewegungsbad/, /warmwasser/] },
+  { key: 'funktionstraining', short: 'Funktionstraining', label: 'Funktionstraining (Rheuma, Arthrose)', patterns: [/funktionstraining/] },
+  { key: 'herz', short: 'Herzsport', label: 'Herzsport', patterns: [/herzsport/, /herzgruppe/, /koronarsport/] },
+  { key: 'lunge', short: 'Lungensport', label: 'Lungensport', patterns: [/lungensport/, /copd/] },
+  { key: 'neuro', short: 'Neurologie', label: 'Rehasport bei neurologischen Erkrankungen', patterns: [/neurolog/, /parkinson/, /multiple sklerose/, /schlaganfall/] },
+  { key: 'krebs', short: 'Nach Krebs', label: 'Rehasport nach Krebs', patterns: [/krebsnachsorge/, /krebssport/, /nach (einer )?krebs/, /onkolog/] },
+];
+export const FEATURES_BY_CAT = { sanitaetshaus: FEATURES, fuss: FUSS_FEATURES, reha: REHA_FEATURES, arzt: ARZT_FEATURES, physio: PHYSIO_FEATURES, pflege: PFLEGE_FEATURES, heim: HEIM_FEATURES, apotheke: APOTHEKE_FEATURES, fahrt: FAHRT_FEATURES };
 
 export function detect(text, cat = 'sanitaetshaus') {
   const t = text.toLowerCase();

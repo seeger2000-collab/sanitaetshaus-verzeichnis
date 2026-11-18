@@ -13,6 +13,18 @@ export const CATEGORIES = [
     filter: `{ ?osm osmkey:healthcare "physiotherapist" } UNION { ?osm osmkey:amenity "physiotherapist" }`,
   },
   {
+    // Podologen (geschützter Beruf, § 1 PodG) und Fußpflege-Studios (JS 2026-11-18)
+    key: 'fuss', slug: 'fusspflege', label: 'Fußpflege & Podologie', one: 'Fußpflege', many: 'Fußpflege-Praxen und Podologen', color: '#b5651d',
+    filter: `{ ?osm osmkey:healthcare "podiatrist" } UNION { ?osm osmkey:shop "chiropodist" } UNION { ?osm osmkey:healthcare:speciality ?sp . FILTER(CONTAINS(LCASE(?sp), "podiatr")) }
+      UNION { ?osm osmkey:beauty ?bt . FILTER(REGEX(LCASE(?bt), "pedicure|foot")) }
+      UNION { ${NAME('fußpflege|fusspflege|fuss-pflege|fuß-pflege|podolog|pediküre|fußgesundheit|fußambulanz')} FILTER NOT EXISTS { ?osm osmkey:shop ?sh . FILTER(?sh IN ("shoes","medical_supply","orthopedics","orthopaedics")) } }`,
+  },
+  {
+    // Rehasport und Funktionstraining (§ 64 Abs. 1 Nr. 3 und 4 SGB IX). In OSM selten, Rest über Websites (JS 2026-11-18)
+    key: 'reha', slug: 'rehasport', label: 'Rehasport & Funktionstraining', one: 'Rehasport-Anbieter', many: 'Anbieter für Rehasport und Funktionstraining', color: '#ef6c00',
+    filter: `{ ${NAME('rehasport|reha-sport|reha sport|rehabilitationssport|funktionstraining|herzsport|herzgruppe|lungensport|koronarsport|behindertensport|versehrtensport')} }`,
+  },
+  {
     key: 'arzt', slug: 'hausarzt', label: 'Hausärzte', one: 'Hausarztpraxis', many: 'Hausarztpraxen', color: '#00838f',
     filter: `{ ?osm osmkey:amenity "doctors" } UNION { ?osm osmkey:healthcare "doctor" }
       { ?osm osmkey:healthcare:speciality ?sp . FILTER(REGEX(LCASE(?sp), "(^|;) ?(general|family|general_practice|family_medicine|allgemeinmedizin)")) } UNION { ${NAME('allgemeinmedizin|allgemeinarzt|allgemeinärzt|hausarzt|hausärzt|praktische[rn]? ärzt|praktischer arzt')} }`,
