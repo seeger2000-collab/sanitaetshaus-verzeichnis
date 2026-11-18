@@ -26176,5 +26176,588 @@
     "alltag"
    ]
   }
+ },
+ {
+  "id": "extra/diakoniestation-deiningen-deiningen",
+  "cat": "pflege",
+  "quelle": "https://www.diakonie-donauries.de/pflege-vor-ort/pflege-zuhause/deiningen/ (2026-11-18)",
+  "tags": {
+   "name": "Diakoniestation Deiningen",
+   "addr:street": "Kirchstraße",
+   "addr:housenumber": "3",
+   "addr:postcode": "86738",
+   "addr:city": "Deiningen",
+   "phone": "+49 9081 9933",
+   "website": "https://www.diakonie-donauries.de/pflege-vor-ort/pflege-zuhause/deiningen/",
+   "email": "deiningen@diakonie-donauries.de"
+  },
+  "location": {
+   "lat": 48.864247,
+   "lon": 10.567117
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62389",
+    "name": "Landkreis Donau-Ries"
+   },
+   "7": {
+    "id": "relation/2972260",
+    "name": "Oettingen in Bayern (VGem)"
+   },
+   "8": {
+    "id": "relation/962644",
+    "name": "Deiningen"
+   }
+  }
+ },
+ {
+  "id": "extra/diakoniestation-donauwoerth-donauwoerth",
+  "cat": "pflege",
+  "quelle": "https://www.diakonie-donauries.de/pflege-vor-ort/pflege-zuhause/donauwoerth/ (2026-11-18)",
+  "tags": {
+   "name": "Diakoniestation Donauwörth",
+   "addr:street": "Dillinger Straße",
+   "addr:housenumber": "27",
+   "addr:postcode": "86609",
+   "addr:city": "Donauwörth",
+   "phone": "+49 906 70928740",
+   "website": "https://www.diakonie-donauries.de/pflege-vor-ort/pflege-zuhause/donauwoerth/",
+   "email": "donauwoerth@diakonie-donauries.de"
+  },
+  "location": {
+   "lat": 48.716515,
+   "lon": 10.769074
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62389",
+    "name": "Landkreis Donau-Ries"
+   },
+   "8": {
+    "id": "relation/582215",
+    "name": "Donauwörth"
+   }
+  }
+ },
+ {
+  "id": "extra/diakoniestation-harburg-diakonieverein-harburg-und-harburg-schwa",
+  "cat": "pflege",
+  "quelle": "https://www.diakonie-donauries.de/pflege-vor-ort/pflege-zuhause/harburg/ (2026-11-18)",
+  "tags": {
+   "name": "Diakoniestation Harburg (Diakonieverein Harburg und Umgebung e. V.)",
+   "addr:street": "Schulstraße",
+   "addr:housenumber": "9",
+   "addr:postcode": "86655",
+   "addr:city": "Harburg (Schwaben)",
+   "phone": "+49 9080 91910",
+   "website": "https://www.diakonie-donauries.de/pflege-vor-ort/pflege-zuhause/harburg/",
+   "email": "harburg@diakonie-donauries.de"
+  },
+  "location": {
+   "lat": 48.785492,
+   "lon": 10.694018
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62389",
+    "name": "Landkreis Donau-Ries"
+   },
+   "8": {
+    "id": "relation/962455",
+    "name": "Harburg (Schwaben)"
+   }
+  }
+ },
+ {
+  "id": "extra/diakoniestation-noerdlingen-noerdlingen",
+  "cat": "pflege",
+  "quelle": "https://www.diakonie-donauries.de/pflege-vor-ort/pflege-zuhause/noerdlingen/ (2026-11-18)",
+  "tags": {
+   "name": "Diakoniestation Nördlingen",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "26",
+   "addr:postcode": "86720",
+   "addr:city": "Nördlingen",
+   "phone": "+49 9081 801033",
+   "website": "https://www.diakonie-donauries.de/pflege-vor-ort/pflege-zuhause/noerdlingen/",
+   "email": "noerdlingen@diakonie-donauries.de"
+  },
+  "location": {
+   "lat": 48.824486,
+   "lon": 10.486812
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62389",
+    "name": "Landkreis Donau-Ries"
+   },
+   "8": {
+    "id": "relation/962465",
+    "name": "Nördlingen"
+   }
+  }
+ },
+ {
+  "id": "extra/diakoniestation-oettingen-hainsfarth",
+  "cat": "pflege",
+  "quelle": "https://www.diakonie-donauries.de/pflege-vor-ort/pflege-zuhause/oettingen/ (2026-11-18)",
+  "tags": {
+   "name": "Diakoniestation Oettingen",
+   "addr:street": "Gunzenhausener Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "86744",
+   "addr:city": "Hainsfarth",
+   "phone": "+49 9082 8018",
+   "website": "https://www.diakonie-donauries.de/pflege-vor-ort/pflege-zuhause/oettingen/",
+   "email": "oettingen@diakonie-donauries.de"
+  },
+  "location": {
+   "lat": 48.959215,
+   "lon": 10.623583
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62389",
+    "name": "Landkreis Donau-Ries"
+   },
+   "7": {
+    "id": "relation/2972260",
+    "name": "Oettingen in Bayern (VGem)"
+   },
+   "8": {
+    "id": "relation/962604",
+    "name": "Hainsfarth"
+   }
+  }
+ },
+ {
+  "id": "extra/caritas-sozialstation-ambulante-krankenpflege-dona-donauwoerth",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-sozialstation-donauwoerth.de/wir-ueber-uns/impressum/ (2026-11-18)",
+  "tags": {
+   "name": "Caritas-Sozialstation - Ambulante Krankenpflege Donauwörth e.V.",
+   "addr:street": "Reichsstraße",
+   "addr:housenumber": "52",
+   "addr:postcode": "86609",
+   "addr:city": "Donauwörth",
+   "phone": "+49 906 70920750",
+   "website": "https://www.caritas-sozialstation-donauwoerth.de/",
+   "email": "verwaltung@caritas-sozialstation-donauwoerth.de"
+  },
+  "location": {
+   "lat": 48.719608,
+   "lon": 10.777044
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62389",
+    "name": "Landkreis Donau-Ries"
+   },
+   "8": {
+    "id": "relation/582215",
+    "name": "Donauwörth"
+   }
+  }
+ },
+ {
+  "id": "extra/caritas-sozialstation-monheim-e-v-monheim",
+  "cat": "pflege",
+  "quelle": "http://www.caritas-sozialstation-monheim.de/ (2026-11-18)",
+  "tags": {
+   "name": "Caritas Sozialstation Monheim e.V.",
+   "addr:street": "Donauwörther Straße",
+   "addr:housenumber": "60",
+   "addr:postcode": "86653",
+   "addr:city": "Monheim",
+   "phone": "+49 9091 2010",
+   "website": "http://www.caritas-sozialstation-monheim.de/",
+   "email": "sozialstation@caritas-monheim.de"
+  },
+  "location": {
+   "lat": 48.837666,
+   "lon": 10.845579
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62389",
+    "name": "Landkreis Donau-Ries"
+   },
+   "7": {
+    "id": "relation/2972259",
+    "name": "Monheim"
+   },
+   "8": {
+    "id": "relation/962649",
+    "name": "Monheim"
+   }
+  }
+ },
+ {
+  "id": "extra/caritas-sozialstation-wemding-pflege-und-betreuung-wemding",
+  "cat": "pflege",
+  "quelle": "http://www.pflege-wemding.de/ (2026-11-18)",
+  "tags": {
+   "name": "Caritas-Sozialstation Wemding Pflege- und Betreuungsdienst e.V.",
+   "addr:street": "Forellstraße",
+   "addr:housenumber": "5",
+   "addr:postcode": "86650",
+   "addr:city": "Wemding",
+   "phone": "+49 9092 200",
+   "website": "http://www.pflege-wemding.de/",
+   "email": "ambulant@caritas-wemding.de"
+  },
+  "location": {
+   "lat": 48.874111,
+   "lon": 10.715618
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62389",
+    "name": "Landkreis Donau-Ries"
+   },
+   "7": {
+    "id": "relation/2972264",
+    "name": "Wemding (VGem)"
+   },
+   "8": {
+    "id": "relation/962647",
+    "name": "Wemding"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-pflege-st-vinzenz-noerdlingen-noerdlingen",
+  "cat": "pflege",
+  "quelle": "https://www.altenheim-noerdlingen.de/index.php/kontakt (2026-11-18)",
+  "tags": {
+   "name": "Ambulante Pflege St. Vinzenz Nördlingen",
+   "addr:street": "An der Reimlinger Mauer",
+   "addr:housenumber": "1",
+   "addr:postcode": "86720",
+   "addr:city": "Nördlingen",
+   "phone": "+49 9081 257323",
+   "website": "https://www.altenheim-noerdlingen.de/index.php/unser-verein/von-ambulant-bis-stationaer/ambulante-pflege",
+   "email": "info@ambulantepflege-st-vinzenz.de"
+  },
+  "location": {
+   "lat": 48.847892,
+   "lon": 10.489863
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62389",
+    "name": "Landkreis Donau-Ries"
+   },
+   "8": {
+    "id": "relation/962465",
+    "name": "Nördlingen"
+   }
+  }
+ },
+ {
+  "id": "extra/point-of-care-gmbh-noerdlingen",
+  "cat": "pflege",
+  "quelle": "https://www.poc-pointofcare.de/ (2026-11-18)",
+  "tags": {
+   "name": "Point of Care GmbH",
+   "addr:street": "Nürnberger Straße",
+   "addr:housenumber": "17",
+   "addr:postcode": "86720",
+   "addr:city": "Nördlingen",
+   "phone": "+49 9081 3019737",
+   "website": "https://www.poc-pointofcare.de/",
+   "email": "info@poc-pointofcare.de"
+  },
+  "location": {
+   "lat": 48.857991,
+   "lon": 10.495676
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62389",
+    "name": "Landkreis Donau-Ries"
+   },
+   "8": {
+    "id": "relation/962465",
+    "name": "Nördlingen"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-mit-herz-und-zeit-lanos-care-marxheim-marxheim",
+  "cat": "pflege",
+  "quelle": "https://www.lanos-care.de/marxheim/ (2026-11-18)",
+  "tags": {
+   "name": "Pflegedienst mit Herz und Zeit (Lanos Care Marxheim)",
+   "addr:street": "Jurastraße",
+   "addr:housenumber": "49",
+   "addr:postcode": "86688",
+   "addr:city": "Marxheim",
+   "phone": "+49 9097 8019000",
+   "website": "https://www.lanos-care.de/marxheim/",
+   "email": "marxheim@lanos-care.de"
+  },
+  "location": {
+   "lat": 48.742476,
+   "lon": 10.948586
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62389",
+    "name": "Landkreis Donau-Ries"
+   },
+   "7": {
+    "id": "relation/2972260",
+    "name": "Oettingen in Bayern (VGem)"
+   },
+   "8": {
+    "id": "relation/962386",
+    "name": "Marxheim"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-pflege-st-josef-gmbh-reimlingen",
+  "cat": "pflege",
+  "quelle": "https://ambulantepflege-st-josef.de/impressum/ (2026-11-18)",
+  "tags": {
+   "name": "Ambulante Pflege St. Josef GmbH",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "86756",
+   "addr:city": "Reimlingen",
+   "phone": "+49 9081 9024805",
+   "website": "https://ambulantepflege-st-josef.de/",
+   "email": "info@ambulantepflege-st-josef.de"
+  },
+  "location": {
+   "lat": 48.824711,
+   "lon": 10.512845
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62389",
+    "name": "Landkreis Donau-Ries"
+   },
+   "7": {
+    "id": "relation/2972260",
+    "name": "Oettingen in Bayern (VGem)"
+   },
+   "8": {
+    "id": "relation/962466",
+    "name": "Reimlingen"
+   }
+  }
+ },
+ {
+  "id": "extra/care-for-you-pflege-fuer-dich-gmbh-noerdlingen-noerdlingen",
+  "cat": "pflege",
+  "quelle": "https://pflege-fuer-dich.de/kontakt/ (2026-11-18)",
+  "tags": {
+   "name": "CARE FOR YOU – Pflege für dich GmbH (Nördlingen)",
+   "addr:street": "Emil-Eigner-Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "86720",
+   "addr:city": "Nördlingen",
+   "phone": "+49 9081 8055380",
+   "website": "https://pflege-fuer-dich.de/",
+   "email": "info@pflege-fuer-dich.de"
+  },
+  "location": {
+   "lat": 48.864576,
+   "lon": 10.514642
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62389",
+    "name": "Landkreis Donau-Ries"
+   },
+   "8": {
+    "id": "relation/962465",
+    "name": "Nördlingen"
+   }
+  }
+ },
+ {
+  "id": "extra/haeusliche-kinderkrankenpflege-unterm-regenbogen-g-noerdlingen",
+  "cat": "pflege",
+  "quelle": "https://www.unterm-regenbogen.info/kontakt/ (2026-11-18)",
+  "tags": {
+   "name": "Häusliche Kinderkrankenpflege Unterm Regenbogen GmbH",
+   "addr:street": "Voltzstraße",
+   "addr:housenumber": "8",
+   "addr:postcode": "86720",
+   "addr:city": "Nördlingen",
+   "phone": "+49 9081 2400610",
+   "website": "https://www.unterm-regenbogen.info/",
+   "email": "christina.beck@u-regenbogen.de"
+  },
+  "location": {
+   "lat": 48.845865,
+   "lon": 10.496841
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62389",
+    "name": "Landkreis Donau-Ries"
+   },
+   "8": {
+    "id": "relation/962465",
+    "name": "Nördlingen"
+   }
+  }
+ },
+ {
+  "id": "extra/delphinus-im-lechtal-gmbh-marxheim",
+  "cat": "pflege",
+  "quelle": "https://delphinus-pflege.de/impressum/ (2026-11-18)",
+  "tags": {
+   "name": "Delphinus im Lechtal GmbH",
+   "addr:street": "Heinrichshöhe",
+   "addr:housenumber": "5",
+   "addr:postcode": "86688",
+   "addr:city": "Marxheim",
+   "phone": "+49 177 8350048",
+   "website": "https://delphinus-pflege.de/",
+   "email": "info@delphinus-pflege.de"
+  },
+  "location": {
+   "lat": 48.745712,
+   "lon": 10.946118
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62389",
+    "name": "Landkreis Donau-Ries"
+   },
+   "7": {
+    "id": "relation/2972260",
+    "name": "Oettingen in Bayern (VGem)"
+   },
+   "8": {
+    "id": "relation/962386",
+    "name": "Marxheim"
+   }
+  }
  }
 ]
