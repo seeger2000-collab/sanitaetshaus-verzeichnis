@@ -32,13 +32,15 @@ if (crumbs.length) ld.push({
   <body>
     <header class="site-header">
       <div class="wrap">
-        <a class="logo" href={u('/')}><span aria-hidden="true">✚</span> {SITE.name}</a>
+        <a class="logo" href={u('/')}><span aria-hidden="true">✚</span> {SITE.name}<small class="claim">{SITE.claim}</small></a>
         <nav aria-label="Hauptnavigation">
           <a href={u('/karte/')}>Karte</a>
         <a href={u('/plz/')}>PLZ</a>
         <a href={u('/leistung/')}>Leistungen</a>
           <a href={u('/hausarzt/')}>Hausärzte</a>
           <a href={u('/physiotherapie/')}>Physiotherapie</a>
+          <a href={u('/fusspflege/')}>Fußpflege</a>
+          <a href={u('/rehasport/')}>Rehasport</a>
           <a href={u('/pflegedienst/')}>Pflegedienste</a>
           <a href={u('/krankenfahrten/')}>Krankenfahrten</a>
           <a href={u('/pflegeheim/')}>Pflegeheime</a>
@@ -112,6 +114,7 @@ if (crumbs.length) ld.push({
   .site-header .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center; justify-content: space-between; padding-top: 14px; padding-bottom: 14px; }
   .site-header a { color: var(--brand-ink); text-decoration: none; }
   .logo { font-weight: 700; font-size: 1.15rem; }
+  .logo .claim { display: block; font-weight: 400; font-size: 0.85rem; color: rgba(255,255,255,0.9); margin-left: 1.4em; }
   .site-header nav { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 0.95rem; }
   .site-header nav a:hover { text-decoration: underline; }
   main { padding-top: 20px; padding-bottom: 48px; min-height: 60vh; }

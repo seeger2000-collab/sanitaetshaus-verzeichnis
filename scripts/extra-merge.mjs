@@ -11,7 +11,7 @@ const overrides = await readJson('data/overrides.json', {});
 
 // Verwaltungsgebiete aus vorhandenen OSM-Daten: nächster Eintrag in derselben Gemeinde (Namen wie „Neustadt“ gibt es mehrfach)
 const places = [];
-for (const f of ['apotheke', 'arzt', 'physio', 'pflege', 'heim']) {
+for (const f of ['apotheke', 'arzt', 'physio', 'fuss', 'reha', 'pflege', 'heim']) {
   for (const s of (await readJson(`data/osm/${f}.json`)).shops) if ((s.admin?.['8'] || s.admin?.['6']) && s.location) places.push({ ...s.location, admin: s.admin });
 }
 const adminFor = (r) => {

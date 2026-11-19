@@ -1,7 +1,8 @@
 // Zentrale Einstellungen. Alles, was später Geld bringt, wird hier eingeschaltet.
 export const SITE = {
   name: 'Sanitätshaus-Suche',
-  claim: 'Sanitätshaus, Physiotherapie, Pflege und Krankenfahrten in der Nähe',
+  // Untertitel unter dem Logo (JS 2026-11-18: Domain bleibt, Seite deckt Gesundheit und Pflege ab)
+  claim: 'Hilfe rund um Gesundheit und Pflege in Ihrer Nähe',
   // Erst auf true stellen, wenn das Impressum ausgefüllt ist. Bis dahin: noindex für Suchmaschinen.
   indexing: true,
   // Formular für Korrekturen und neue Einträge (z. B. Tally). Leer = Link auf GitHub-Issue.

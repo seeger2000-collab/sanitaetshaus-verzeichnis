@@ -7,6 +7,9 @@ export const sgb11 = (p: string, zusatz = '') => a(gii('sgb_11', p), `§ ${p}${z
 export const estg = (p: string, zusatz = '') => a(gii('estg', p), `§ ${p}${zusatz ? ' ' + zusatz : ''} EStG`);
 export const bgb = (p: string, zusatz = '') => a(gii('bgb', p), `§ ${p}${zusatz ? ' ' + zusatz : ''} BGB`);
 export const sgg = (p: string, zusatz = '') => a(gii('sgg', p), `§ ${p}${zusatz ? ' ' + zusatz : ''} SGG`);
+export const sgb9 = (p: string, zusatz = '') => a(gii('sgb_9_2018', p), `§ ${p}${zusatz ? ' ' + zusatz : ''} SGB IX`);
+export const podg = (p: string, zusatz = '') => a(gii('podg', p), `§ ${p}${zusatz ? ' ' + zusatz : ''} PodG`);
+export const barRV = a('https://www.bar-frankfurt.de/themen/rehasport-und-funktionstraining.html', 'Rahmenvereinbarung über den Rehabilitationssport und das Funktionstraining der BAR');
 export const heilmRL = a('https://www.g-ba.de/richtlinien/12/', 'Heilmittel-Richtlinie des G-BA');
 export const ktRL = a('https://www.g-ba.de/richtlinien/25/', 'Krankentransport-Richtlinie des G-BA');
 export const hilfsmRL = (p: string) => a('https://www.g-ba.de/richtlinien/13/', `${p} Hilfsmittel-Richtlinie des G-BA`);

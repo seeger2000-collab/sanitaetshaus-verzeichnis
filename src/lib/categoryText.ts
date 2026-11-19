@@ -1,4 +1,4 @@
-import { sgb5, sgb11, heilmRL, ktRL } from './recht';
+import { sgb5, sgb9, sgb11, podg, heilmRL, ktRL, barRV } from './recht';
 // Texte je Kategorie. Inhalte orientieren sich an den häufigsten Suchanfragen (reports/keywords).
 export const CATEGORY_TEXT: Record<string, { h1: (c: string) => string; title: (c: string, n: number) => string; title2: (c: string) => string; intro: string; faq: { q: string; a: string }[]; guide?: string }> = {
   arzt: {
@@ -21,6 +21,28 @@ export const CATEGORY_TEXT: Record<string, { h1: (c: string) => string; title: (
       { q: 'Wie lange ist ein Rezept für Physiotherapie gültig?', a: `Die Behandlung muss innerhalb von 28 Tagen nach Ausstellung beginnen, bei dringendem Bedarf innerhalb von 14 Tagen, wenn der Arzt das auf der Verordnung vermerkt (${heilmRL}). Fragen Sie die Praxis, ob noch Termine frei sind, bevor die Frist abläuft.` },
       { q: 'Bekomme ich Physiotherapie auch zu Hause?', a: `Ja, wenn der Arzt „Hausbesuch“ auf der Verordnung ankreuzt, weil Sie die Praxis aus medizinischen Gründen nicht aufsuchen können (${heilmRL}). Nicht jede Praxis macht Hausbesuche. In der Liste können Sie danach filtern.` },
       { q: 'Was zahle ich zu?', a: `Gesetzlich Versicherte ab 18 Jahren zahlen 10 % der Kosten plus 10 € je Verordnung (${sgb5('32', 'Abs. 2')} mit ${sgb5('61')} Satz 3). Wer die Belastungsgrenze erreicht hat, ist für den Rest des Jahres befreit (${sgb5('62')}).` },
+    ],
+  },
+  fuss: {
+    h1: (c) => `Fußpflege und Podologie in ${c}`,
+    title: (c, n) => `Fußpflege ${c}: Podologen und Hausbesuch, mit Telefon`,
+    title2: (c) => `Fußpflege ${c}: Podologie und Hausbesuch`,
+    intro: 'Podologen und Fußpflege-Praxen in der Nähe, mit Telefon und Route. Viele kommen auch nach Hause oder ins Pflegeheim. Ob ein Betrieb Hausbesuche macht, auf Rezept behandelt oder Erfahrung mit dem diabetischen Fuß hat, lesen wir von seiner Website.',
+    faq: [
+      { q: 'Was ist der Unterschied zwischen Podologe und Fußpflege?', a: `„Podologe“ und „Medizinischer Fußpfleger“ darf sich nur nennen, wer eine staatliche Erlaubnis hat (${podg('1')}). „Fußpflege“ allein ist keine geschützte Bezeichnung. Bei Diabetes oder Durchblutungsstörungen gehen Sie besser zum Podologen.` },
+      { q: 'Zahlt die Krankenkasse die Fußpflege?', a: `Nur die podologische Behandlung auf ärztliche Verordnung. Sie ist ein Heilmittel (${sgb5('32')}) und wird vor allem beim diabetischen Fußsyndrom verordnet (${heilmRL}). Abrechnen dürfen nur zugelassene Praxen (${sgb5('124')}). Ab 18 Jahren zahlen Sie 10 % der Kosten plus 10 € je Verordnung zu (${sgb5('32', 'Abs. 2')} mit ${sgb5('61')} Satz 3). Kosmetische Fußpflege zahlen Sie selbst.` },
+      { q: 'Kommt die Fußpflege auch nach Hause?', a: `Viele Betriebe machen Hausbesuche, auch im Pflegeheim. In der Liste sind sie gekennzeichnet. Auf Rezept gibt es den Hausbesuch nur, wenn der Arzt ihn verordnet, weil Sie die Praxis aus medizinischen Gründen nicht aufsuchen können (${heilmRL}).` },
+    ],
+  },
+  reha: {
+    h1: (c) => `Rehasport und Funktionstraining in ${c}`,
+    title: (c, n) => `Rehasport ${c}: Gruppen für Rehasport und Funktionstraining`,
+    title2: (c) => `Rehasport ${c}: Funktionstraining mit Telefon`,
+    intro: 'Vereine, Studios und Praxen mit Rehasport und Funktionstraining, auch im Wasser, als Herz- oder Lungensport. Fragen Sie am Telefon nach einem freien Platz und ob der Anbieter mit Ihrer Kasse abrechnet.',
+    faq: [
+      { q: 'Wer zahlt Rehasport und Funktionstraining?', a: `Beides sind ergänzende Leistungen zur Rehabilitation (${sgb9('64', 'Abs. 1 Nr. 3 und 4')}). Die Krankenkasse erbringt sie nach ${sgb5('43', 'Abs. 1')}, nach einer Reha oft auch die Rentenversicherung. Der Arzt verordnet sie, und die Kasse muss die Verordnung vorher genehmigen (${barRV}). Reichen Sie die Verordnung also zuerst bei Ihrer Kasse ein.` },
+      { q: 'Wie lange bekomme ich Rehasport?', a: `In der Regel 50 Übungseinheiten innerhalb von 18 Monaten, Funktionstraining meist für 12 Monate. Einzelheiten regelt die ${barRV}. Bei manchen Erkrankungen sind mehr Einheiten möglich.` },
+      { q: 'Was ist der Unterschied zwischen Rehasport und Funktionstraining?', a: `Rehasport sind Bewegungsspiele und Gymnastik in der Gruppe, zum Beispiel nach einer Operation oder bei Herzerkrankungen. Funktionstraining ist gezielte Krankengymnastik in der Gruppe, vor allem bei Rheuma und Arthrose, oft im Wasser (${barRV}).` },
     ],
   },
   pflege: {
