@@ -8,6 +8,10 @@ export const de = {
   decimal: ',',
   // Name der Sprache in der Sprache selbst (für den Sprachwechsel)
   name: 'Deutsch',
+  // Flagge für den Sprachumschalter oben (Inline-SVG, weil Windows Flaggen-Emojis nicht als Flagge zeigt)
+  flag: '<svg viewBox="0 0 5 3" width="26" height="16" aria-hidden="true"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCE00"/></svg>',
+  // Beschriftung für den Umschalter (Screenreader und Tooltip), in DIESER Sprache
+  switchTo: 'Deutsche Version',
   // Hinweis bei passender Browsersprache, in DIESER Sprache formuliert
   offer: 'Diese Seite auf Deutsch anzeigen?',
   offerYes: 'Ja, auf Deutsch',
