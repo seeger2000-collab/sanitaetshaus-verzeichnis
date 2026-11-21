@@ -1,5 +1,5 @@
 ---
-import { SITE, AFFILIATE } from '../config';
+import { SITE, AFFILIATE, ANALYTICS } from '../config';
 import { u } from '../lib/url';
 import OpenNow from '../components/OpenNow.astro';
 import { meta, fmtDate, clip } from '../lib/data';
@@ -70,18 +70,33 @@ if (crumbs.length) ld.push({
     </footer>
     <button type="button" id="stat-fab" class="stat-fab" aria-label="Statistik-Einstellungen" title="Statistik-Einstellungen" hidden><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></button>
     <div id="stat-banner" class="stat-banner" role="dialog" aria-modal="true" aria-labelledby="stat-h" hidden>
-      <p id="stat-h"><strong>Dürfen wir genauer zählen?</strong> Wir zählen anonym, welche Seiten aufgerufen werden, ohne Cookies und ohne etwas von Ihrem Gerät auszulesen. Mit Ihrer Zustimmung erfassen wir zusätzlich Bildschirmbreite und die Seite, von der Sie kommen (GoatCounter). Das hilft uns, die Seite zu verbessern. <a href={u('/datenschutz/')}>Mehr dazu</a></p>
+      <p id="stat-h"><strong>Dürfen wir genauer zählen?</strong> Wir zählen anonym, welche Seiten aufgerufen werden, ohne Cookies und ohne etwas von Ihrem Gerät auszulesen. Mit Ihrer Zustimmung erfassen wir zusätzlich Bildschirmbreite und die Seite, von der Sie kommen (GoatCounter{ANALYTICS.cloudflareToken && ', dazu Ladezeiten der Seite mit Cloudflare Web Analytics'}). Das hilft uns, die Seite zu verbessern. <a href={u('/datenschutz/')}>Mehr dazu</a></p>
       <p class="stat-btns"><button type="button" class="btn" data-stat="nein">Ablehnen</button> <button type="button" class="btn" data-stat="ja">Zustimmen</button></p>
     </div>
-    <script is:inline>
+    <script is:inline define:vars={{ CF: ANALYTICS.cloudflareToken }}>
       // Zählung: ohne Einwilligung nur ein Zählbild mit der Seitenadresse (kein Zugriff auf das Endgerät),
       // mit Einwilligung (§ 25 Abs. 1 TDDDG) das GoatCounter-Skript. Gespeichert wird nur die Entscheidung selbst.
       (() => {
-        const KEY = 'sh-statistik-3', ban = document.getElementById('stat-banner');
+        const KEY = CF ? 'sh-statistik-4' : 'sh-statistik-3', // neuer Schlüssel = alle werden neu gefragt, sobald Cloudflare dazukommt
+           ban = document.getElementById('stat-banner');
         const GC = 'https://sanitaetshaus-suche.goatcounter.com/count';
+        // CF: Token für Cloudflare Web Analytics aus src/config.ts, wird nur mit Einwilligung geladen
         const pixel = () => { new Image().src = `${GC}?p=${encodeURIComponent(location.pathname)}&rnd=${Math.random().toString(36).slice(2)}`; };
         const get = () => { try { return localStorage.getItem(KEY); } catch { return null; } };
-        const load = () => { const s = document.createElement('script'); s.async = true; s.src = 'https://gc.zgo.at/count.js'; s.dataset.goatcounter = GC; document.head.appendChild(s); };
+        const load = () => { const s = document.createElement('script'); s.async = true; s.src = 'https://gc.zgo.at/count.js'; s.dataset.goatcounter = GC; document.head.appendChild(s); if (CF) { const c = document.createElement('script'); c.defer = true; c.src = 'https://static.cloudflareinsights.com/beacon.min.js'; c.dataset.cfBeacon = JSON.stringify({ token: CF }); document.head.appendChild(c); } };
+        // Klicks auf die Kontakt-Knöpfe eines Eintrags zählen (ohne Einwilligung als Zählbild wie oben, nur die Ereignis-Adresse).
+        // Name des Ereignisses: klick/<art>/<eintrags-id>, z. B. klick/telefon/sanitaetshaus/node-123. Auswertung je Betrieb: siehe docs/klickzaehlung.md
+        document.addEventListener('click', (ev) => {
+          const a = ev.target.closest && ev.target.closest('a.k');
+          if (!a || a.classList.contains('k-add')) return;
+          const box = a.closest('[data-eid]'), eid = box && box.dataset.eid;
+          if (!eid) return;
+          const h = a.getAttribute('href') || '';
+          const art = h.startsWith('tel:') ? 'telefon' : h.startsWith('mailto:') ? 'email' : a.classList.contains('k-book') ? 'buchung' : h.includes('google.com/maps') ? 'route' : 'website';
+          const path = `klick/${art}/${eid}`, title = box.dataset.n || '';
+          if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path, title, event: true });
+          else new Image().src = `${GC}?p=${encodeURIComponent(path)}&t=${encodeURIComponent(title)}&e=true&rnd=${Math.random().toString(36).slice(2)}`;
+        });
         const fab = document.getElementById('stat-fab');
         fab.addEventListener('click', () => show());
         const show = () => { ban.hidden = false; fab.hidden = true; document.documentElement.classList.add('stat-open'); ban.querySelector('[data-stat="ja"]').focus({ preventScroll: true }); };

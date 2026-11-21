@@ -79,7 +79,7 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
     const cellP = {};
     const ensureDetails = (rows) => Promise.all([...new Set(rows.map((r) => r.cell))].map((k) => (cellP[k] ||= fetch(`${src}${k}.json`).then((r) => r.json()).then((d) => {
       const rs = byCat[+k.split('_')[0]];
-      for (const [j, v] of Object.entries(d)) { const r = rs[+j]; [r[4], r[5], r[7], r[8], r[9], r[10], r[11], r[13]] = v; }
+      for (const [j, v] of Object.entries(d)) { const r = rs[+j]; [r[4], r[5], r[7], r[8], r[9], r[10], r[11], r[13], r[15]] = v; }
     }).catch(() => { delete cellP[k]; }))));
     let drawTok = 0;
     const norm = (s) => s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/ß/g, 'ss');
@@ -97,7 +97,7 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
       if (e[11]) a.push(`<a class="k k-book" href="${esc(e[11])}" target="_blank" rel="nofollow noopener">Online-Termin</a>`);
       if (e[10]) a.push(`<a class="k" href="mailto:${esc(e[10])}">E-Mail</a>`);
       if (e[9]) a.push(`<a class="k" href="${esc(e[9])}" target="_blank" rel="nofollow noopener">Website</a>`);
-      return `<span class="facts">${a.join('')}</span>`;
+      return `<span class="facts" data-eid="${esc(e[15] || '')}" data-n="${esc(e[3])}">${a.join('')}</span>`;
     };
     // Jetzt geöffnet (einfaches OSM-Format, Zeitzone Berlin)
     const ORDER = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
