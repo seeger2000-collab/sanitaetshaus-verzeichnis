@@ -100,7 +100,7 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? T.allShops
     const actions = (e) => {
       const a = [];
       if (e[7]) a.push(`<a class="k k-tel" href="tel:${esc(e[7].replace(/[^+\d]/g, ''))}">☎ ${esc(e[7])}</a>`);
-      a.push(`<a class="k" href="https://www.google.com/maps/dir/?api=1&destination=${e[1]},${e[2]}" target="_blank" rel="nofollow noopener">${esc(T.route)}</a>`);
+      a.push(`<a class="k" href="https://www.google.com/maps/dir/?api=1&destination=${/\d/.test(e[4]) && e[4].includes(',') ? encodeURIComponent(e[4]) : e[4] ? encodeURIComponent(`${e[3]}, ${e[4]}`) : `${e[1]},${e[2]}`}" target="_blank" rel="nofollow noopener">${esc(T.route)}</a>`);
       if (e[11]) a.push(`<a class="k k-book" href="${esc(e[11])}" target="_blank" rel="nofollow noopener">${esc(T.booking)}</a>`);
       if (e[10]) a.push(`<a class="k" href="mailto:${esc(e[10])}">${esc(T.email)}</a>`);
       if (e[9]) a.push(`<a class="k" href="${esc(e[9])}" target="_blank" rel="nofollow noopener">${esc(T.website)}</a>`);

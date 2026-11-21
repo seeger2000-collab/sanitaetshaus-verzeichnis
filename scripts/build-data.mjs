@@ -6,7 +6,11 @@ import { CATEGORIES } from './categories.mjs';
 
 // Telefonnummer ohne Leerzeichen (+4930123456, aus tel:-Links oder OSM) lesbar machen: +49 30123456
 // Telefonnummer einheitlich als „+49 …“: Klammern und Schrägstrich weg, paarweise geschriebene Ziffern („0 68 94 …“) zusammenziehen, „49…“ ohne Plus ergänzen
-const fmtPhone = (p) => { if (!p) return null; let d = p.split(/;|,(?=\s*[+0(])/)[0].trim().replace(/[()]/g, ' ').replace(/\s*\/\s*/g, ' ').replace(/\s+/g, ' ').trim(); if (/^0( \d{1,2})+$/.test(d)) d = d.replace(/ /g, ''); else d = d.replace(/^0((?: \d{1,2})+)(?= \d{3})/, (m, g) => '0' + g.replace(/ /g, '')); if (/^49\d{8,}$/.test(d)) d = '+' + d; d = d.replace(/^0049\s*/, '+49'); if (/^1[5-7]\d{8,9}$/.test(d)) d = '+49' + d; if (/^00(41|43|31|32|33|45|48|420)/.test(d)) d = '+' + d.slice(2); if (!/^[+0]/.test(d) || /^00/.test(d)) return null; if (/^0[1-9]/.test(d)) d = '+49' + d.slice(1); const dig = d.replace(/\D/g, ''); if (dig.length < 7 || dig.length > 15 || /^(\d)\1+$/.test(dig) || /^(116117|112|110|0{3,})/.test(dig)) return null; const m = d.match(/^\+49\s*(?:\(0\)|0)?\s*(\d.*)$/); return m ? `+49 ${m[1]}` : d; };
+const fmtPhone = (p) => { if (!p) return null; p = p.replace(/^\s*\+49\s*\+(?:49)?\s*/, '+49 '); let d = p.split(/;|,(?=\s*[+0(])/)[0].trim().replace(/[()]/g, ' ').replace(/\s*\/\s*/g, ' ').replace(/\s+/g, ' ').trim(); if (/^0( \d{1,2})+$/.test(d)) d = d.replace(/ /g, ''); else d = d.replace(/^0((?: \d{1,2})+)(?= \d{3})/, (m, g) => '0' + g.replace(/ /g, '')); if (/^49\d{8,}$/.test(d)) d = '+' + d; d = d.replace(/^0049\s*/, '+49'); if (/^1[5-7]\d{8,9}$/.test(d)) d = '+49' + d; if (/^00(41|43|31|32|33|45|48|420)/.test(d)) d = '+' + d.slice(2); if (!/^[+0]/.test(d) || /^00/.test(d)) return null; if (/^0[1-9]/.test(d)) d = '+49' + d.slice(1); const dig = d.replace(/\D/g, ''); if (dig.length < 7 || dig.length > 15 || /^(\d)\1+$/.test(dig) || /^(116117|112|110|0{3,})/.test(dig)) return null; const m = d.match(/^\+49\s*(?:\(0\)|0)?\s*(\d.*)$/); return m ? `+49 ${m[1]}` : d; };
+// E-Mail: nur die erste gültige Adresse (OSM-Felder enthalten manchmal Zusatztext oder eine Website)
+const cleanEmail = (m) => (m && String(m).match(/[^\s@;,<>()"']+@[^\s@;,<>()"']+\.[a-z]{2,}/i)?.[0]) || null;
+// Website: Leerzeichen entfernen, Host muss einen Punkt haben
+const cleanSite = (w) => { if (!w) return null; try { const u = new URL(w.replace(/%20|\s+/g, '')); return /\./.test(u.hostname) ? u.href : null; } catch { return null; } };
 // Online-Termin nur, wenn es wirklich eine Buchungsseite ist (keine Startseite, kein Kontaktformular, keine Stellenanzeige)
 const goodBooking = (b, site) => {
   if (!b) return null;
@@ -87,9 +91,9 @@ for (const s of [...osm.shops, ...extra.filter((x) => x.cat === cat.key)]) {
     state: s.admin['4'].name,
     lat: s.location?.lat, lon: s.location?.lon,
     phone: fmtPhone(t.phone || t['contact:phone'] || t['contact:mobile'] || t.mobile || t['phone:mobile'] || e?.phone || phones[s.id]?.phone || ''),
-    email: t.email || t['contact:email'] || e?.email || null,
-    booking: goodBooking(e?.booking, e?.finalUrl || e?.website),
-    website: deadLinks[websiteOf(t)] ? null : websiteOf(t),
+    email: cleanEmail(t.email || t['contact:email'] || e?.email),
+    booking: deadLinks[e?.booking] ? null : goodBooking(e?.booking, e?.finalUrl || e?.website),
+    website: deadLinks[websiteOf(t)] ? null : cleanSite(websiteOf(t)),
     openingHours: t.opening_hours || webHours[s.id]?.oh || null,
     hoursSource: t.opening_hours ? 'osm' : webHours[s.id]?.oh ? 'website' : null,
     wheelchair: t.wheelchair || null,

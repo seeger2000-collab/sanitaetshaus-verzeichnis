@@ -21,7 +21,7 @@ const hours = p.openingHours ? formatHours(p.openingHours) : null;
       <ul class="chips">{p.features.map((f) => <li class="chip">{p.evidence?.[f] ? <a href={p.evidence[f]} rel="nofollow noopener" target="_blank" title="Quelle auf der Website">{label[f]}</a> : label[f]}</li>)}</ul>
     )}
     {hours && <p class="hours">{hours.join(' · ')}{p.hoursSource === 'website' && ' (laut Website)'}</p>}
-    <Kontakt cat={p.cat} id={p.id} name={p.name} city={p.city} phone={p.phone} email={p.email} website={p.website} booking={p.booking} lat={p.lat} lon={p.lon} />
+    <Kontakt cat={p.cat} id={p.id} name={p.name} city={p.city} phone={p.phone} email={p.email} website={p.website} booking={p.booking} lat={p.lat} lon={p.lon} street={p.street} postcode={p.postcode} />
     <Bestaetigt date={p.confirmedAt} />
   </article>
 </li>

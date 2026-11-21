@@ -56,7 +56,7 @@ import Bestaetigt from '../../components/Bestaetigt.astro';
       <figcaption>Straßenansicht in der Nähe (nicht vom Haus selbst), {shop.image.date && `aufgenommen ${new Date(shop.image.date).toLocaleDateString('de-DE', { month: 'long', year: 'numeric' })}, `}Foto: <a href={shop.image.link} rel="nofollow noopener" target="_blank">{shop.image.credit} / {shop.image.source}</a>, Lizenz {shop.image.license}</figcaption>
     </figure>
   )}
-  <Kontakt cat={shop.cat} id={shop.id} name={shop.name} city={shop.city} phone={shop.phone} email={shop.email} website={shop.website} booking={shop.booking} lat={shop.lat} lon={shop.lon} />
+  <Kontakt cat={shop.cat} id={shop.id} name={shop.name} city={shop.city} phone={shop.phone} email={shop.email} website={shop.website} booking={shop.booking} lat={shop.lat} lon={shop.lon} street={shop.street} postcode={shop.postcode} />
   <div class="cols">
     <section class="card">
       <h2>Kontakt</h2>

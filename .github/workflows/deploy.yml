@@ -48,6 +48,15 @@ jobs:
           git add data
           git diff --cached --quiet || (git commit -m "Daten aktualisiert $(date -u +%F)" && git push)
       - run: npm run build
+      - name: Links prüfen
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.update }}" = "true" ]; then
+            node scripts/check-site.mjs --online
+            git add data/deadlinks.json
+            git diff --cached --quiet || (git commit -m "Tote Termin-Links ausgeblendet $(date -u +%F)" && git push)
+          else
+            node scripts/check-site.mjs
+          fi
       - uses: actions/upload-pages-artifact@v5
         with:
           path: dist

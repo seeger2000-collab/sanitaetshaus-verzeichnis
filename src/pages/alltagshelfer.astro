@@ -4,7 +4,7 @@ import { u } from '../lib/url';
 import OrteListe from '../components/OrteListe.astro';
 import { allCities } from '../lib/data';
 import { sgb5, sgb11, hmv, GKV_HINWEIS } from '../lib/recht';
-const orte = allCities.filter((c) => c.counts.sanitaetshaus).map((c) => ({ label: c.label, href: `/sanitaetshaus/${c.slug}/`, state: c.state }));
+const orte = allCities.filter((c) => c.counts.sanitaetshaus).map((c) => ({ label: c.label, href: `/stadt/${c.slug}/`, state: c.state }));
 // kasse: rezept = Hilfsmittel nach § 33 SGB V (Bad/Toilette teils doppelfunktional, § 40 Abs. 5 SGB XI), pflege = Pflegekasse nach § 40 SGB XI, teils = nur im Einzelfall, selbst = Gebrauchsgegenstand des täglichen Lebens
 // online: später Partnerlink (Affiliate), wird dann als „Online ansehen“ gezeigt
 const KASSE = {

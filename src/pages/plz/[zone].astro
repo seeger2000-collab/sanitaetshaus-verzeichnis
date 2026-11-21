@@ -4,7 +4,10 @@ import ShopCard from '../../components/ShopCard.astro';
 import ProviderList from '../../components/ProviderList.astro';
 import Map from '../../components/Map.astro';
 import { u } from '../../lib/url';
-import { shops, providers, otherCategories, fit } from '../../lib/data';
+import { shops, providers, otherCategories, fit, allCities } from '../../lib/data';
+// Ortsseite: /stadt/ gibt es nur für Orte mit Sanitätshaus, sonst die erste Kategorie-Seite, die es für den Ort gibt
+const citySlugMap = new globalThis.Map(allCities.map((c) => [c.slug, c]));
+const cityHref = (z: { slug: string }) => { const c: any = citySlugMap.get(z.slug); if (!c) return null; return (c.count > 0 ? `/stadt/${c.slug}/` : (() => { const k = otherCategories.find((oc) => c.counts?.[oc.key]); return k ? `/${k.slug}/${c.slug}/` : null; })()); };
 import { zones, zoneOf } from '../../lib/plz';
 export function getStaticPaths() {
   return zones.map((z) => ({ params: { zone: z.zone }, props: { z } }));
@@ -42,7 +45,7 @@ const prev = zones[idx - 1], next = zones[idx + 1];
   ))}
   <section id="orte">
     <h2>Orte im PLZ-Bereich {z.zone}</h2>
-    <ul class="grid">{z.cities.map((c) => <li><a class="tile" href={u(`/stadt/${c.slug}/`)}>{c.label}</a></li>)}</ul>
+    <ul class="grid">{z.cities.filter((c) => cityHref(c)).map((c) => <li><a class="tile" href={u(cityHref(c))}>{c.label}</a></li>)}</ul>
   </section>
   <p class="pager">{prev && <a href={u(`/plz/${prev.zone}/`)}>← PLZ {prev.zone}</a>} <a href={u('/plz/')}>Alle PLZ-Bereiche</a> {next && <a href={u(`/plz/${next.zone}/`)}>PLZ {next.zone} →</a>}</p>
 </Base>
