@@ -32,3 +32,9 @@ export const AFFILIATE = {
   hausnotrufUrl: '',
   hausnotrufAnbieter: '',
 };
+
+// Besucherstatistik. Cloudflare Web Analytics wird nur mit Einwilligung geladen; leer = aus.
+// Das Token ist kein Geheimnis (es steht sichtbar im Seitenquelltext).
+export const ANALYTICS = {
+  cloudflareToken: '',
+};

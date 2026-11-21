@@ -177,10 +177,12 @@ const plzPts = {};
 for (const s of all) if (s.lat && /^\d{5}$/.test(s.postcode || '')) (plzPts[s.postcode] ||= []).push([s.lat, s.lon]);
 const r4 = (x) => Math.round(x * 1e4) / 1e4;
 const plz = Object.fromEntries(Object.entries(plzPts).sort().map(([k, v]) => [k, [r4(v.reduce((a, p) => a + p[0], 0) / v.length), r4(v.reduce((a, p) => a + p[1], 0) / v.length)]]));
+// Eintrags-ID für die Klickzählung (GoatCounter), gleiche Bildung wie in src/components/Kontakt.astro
+const eintragId = (s) => `${s.cat}/${String(s.id).replace(/[^a-zA-Z0-9]+/g, '-')}`;
 const catSlug = Object.fromEntries(CATEGORIES.map((c) => [c.key, c.slug]));
 // Finder-Daten zweigeteilt: kleine Kerndatei für Karte und Suche, Details (Adresse, Kontakt) in 1°-Kacheln, die erst beim Suchen geladen werden
 const finderAll = all.filter((s) => s.lat).map((s) => [catIndex[s.cat], r4(s.lat), r4(s.lon), s.name, [s.street, [s.postcode, cityBySlug.get(s.citySlug)?.label || s.city].filter(Boolean).join(' ')].filter(Boolean).join(', '),
-    s.slug ? `sanitaetshaus/${s.slug}/` : `${catSlug[s.cat]}/${s.citySlug}/`, bedarfMask(s), (s.phone || '').split(';')[0].trim(), s.openingHours || '', s.website || '', (s.email || '').split(';')[0].trim(), s.booking || '', (FEATURES_BY_CAT[s.cat] || []).reduce((m, f, i) => (s.features.includes(f.key) ? m | (1 << i) : m), 0), s.confirmedAt || '', s.featured ? 1 : 0]);
+    s.slug ? `sanitaetshaus/${s.slug}/` : `${catSlug[s.cat]}/${s.citySlug}/`, bedarfMask(s), (s.phone || '').split(';')[0].trim(), s.openingHours || '', s.website || '', (s.email || '').split(';')[0].trim(), s.booking || '', (FEATURES_BY_CAT[s.cat] || []).reduce((m, f, i) => (s.features.includes(f.key) ? m | (1 << i) : m), 0), s.confirmedAt || '', s.featured ? 1 : 0, eintragId(s)]);
 // Pro Kategorie eine Kerndatei (nur was für Karte und Filter nötig ist), dazu Detail-Kacheln je Kategorie und 1°-Feld.
 // So lädt die Startseite zuerst nur Orte und Sanitätshäuser, weitere Kategorien erst, wenn sie gebraucht werden.
 await rm('public/data/f', { recursive: true, force: true });
@@ -190,7 +192,7 @@ const byCat = CATEGORIES.map(() => []);
 for (const e of finderAll) byCat[e[0]].push(e);
 for (const [ci, rows] of byCat.entries()) {
   const cells = {};
-  rows.forEach((e, j) => { const k = `${Math.floor(e[1])}_${Math.floor(e[2])}`; (cells[k] ||= {})[j] = [e[4], e[5], e[7], e[8], e[9], e[10], e[11], e[13]]; });
+  rows.forEach((e, j) => { const k = `${Math.floor(e[1])}_${Math.floor(e[2])}`; (cells[k] ||= {})[j] = [e[4], e[5], e[7], e[8], e[9], e[10], e[11], e[13], e[15]]; });
   for (const [k, v] of Object.entries(cells)) await writeFile(`public/data/f/${ci}_${k}.json`, JSON.stringify(v));
   // [lat, lon, Name, Bedarfs-Maske, Leistungs-Maske, hat Telefon, Top-Eintrag]
   await writeFile(`public/data/f/c${ci}.json`, JSON.stringify(rows.map((e) => [e[1], e[2], e[3], e[6], e[12], e[7] ? 1 : 0, ...(e[14] ? [1] : [])])));

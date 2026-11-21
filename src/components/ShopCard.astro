@@ -20,7 +20,7 @@ const address = [shop.street, place].filter(Boolean).join(', ');
     {shop.features.length > 0 && (
       <ul class="chips">{shop.features.map((f) => <li class="chip">{featureByKey[f]?.label}</li>)}</ul>
     )}
-    <Kontakt name={shop.name} city={shop.city} phone={shop.phone} email={shop.email} website={shop.website} booking={shop.booking} lat={shop.lat} lon={shop.lon} street={shop.street} postcode={shop.postcode} />
+    <Kontakt cat={shop.cat} id={shop.id} name={shop.name} city={shop.city} phone={shop.phone} email={shop.email} website={shop.website} booking={shop.booking} lat={shop.lat} lon={shop.lon} street={shop.street} postcode={shop.postcode} />
     <Bestaetigt date={shop.confirmedAt} />
   </article>
 </li>
