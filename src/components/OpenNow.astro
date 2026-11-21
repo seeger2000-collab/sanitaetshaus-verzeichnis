@@ -29,7 +29,7 @@
     const open = (week[day] || []).some(([a, b]) => min >= a && min < b);
     const badge = document.createElement('span');
     badge.className = open ? 'oh-badge open' : 'oh-badge closed';
-    badge.textContent = open ? 'jetzt geöffnet' : 'jetzt geschlossen';
+    badge.textContent = (open ? document.body.dataset.ohOpen : document.body.dataset.ohClosed) || (open ? 'jetzt geöffnet' : 'jetzt geschlossen');
     el.append(badge);
   }
 </script>

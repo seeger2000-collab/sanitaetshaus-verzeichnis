@@ -2,58 +2,65 @@
 // Finder auf der Startseite: Bedarf wählen, Ort/PLZ eingeben, Umkreis, Karte mit Treffern und Liste nach Entfernung.
 import { u } from '../lib/url';
 import { meta, categories } from '../lib/data';
+import { LANGS, lp, fmt } from '../i18n';
 // preset: feste Auswahl auf Leistungs- und Kategorieseiten (nur Ort-Feld). kind: bedarf | feat | cat, i = Index, city = Link-Muster für die Ortsseite mit {slug}
-interface Props { preset?: { kind: 'bedarf' | 'feat' | 'cat'; i: number; label: string; city?: string; current?: string } }
-const { preset } = Astro.props;
-const bedarf = meta.bedarf;
+// lang: Sprache der Oberfläche (src/i18n). Namen und Adressen der Einträge bleiben im Original.
+interface Props { preset?: { kind: 'bedarf' | 'feat' | 'cat'; i: number; label: string; city?: string; current?: string }; lang?: string }
+const { preset, lang = 'de' } = Astro.props;
+const L = LANGS[lang], T = L.finder;
+// Rubriken mit übersetzten Texten; Suchwörter: deutsch plus Übersetzung, damit beides gefunden wird
+const bedarf = meta.bedarf.map((b) => { const x = L.bedarf[b.key]; return x ? { ...b, label: x.label, short: x.short ?? b.short, hint: x.hint ?? b.hint, words: `${b.words || ''} ${x.words || ''}`.trim() } : b; });
+const catOne = (c: { key: string; one: string }) => L.cats[c.key]?.one ?? c.one;
 // hb: Bit der Leistung „Hausbesuch“ in der Kategorie (für die Kennzeichnung in der Trefferliste), -1 wenn es sie nicht gibt
-const cats = categories.map((c) => ({ color: c.color, one: c.one, hb: c.features.findIndex((f) => f.key === 'hausbesuch') }));
+const cats = categories.map((c) => ({ color: c.color, one: catOne(c), hb: c.features.findIndex((f) => f.key === 'hausbesuch') }));
 const sanIdx = categories.findIndex((c) => c.key === 'sanitaetshaus');
-const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sanitätshäuser' : b.short, href: b.leistung ? `/leistung/${b.leistung}/` : b.seite ? `/${b.seite}/` : '/' }));
+const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? T.allShops : b.short, href: lp(lang, b.leistung ? `/leistung/${b.leistung}/` : b.seite ? `/${b.seite}/` : '/') }));
 ---
 <section id="finder" class:list={["finder card", { fixed: !!preset }]} aria-labelledby="finder-h" data-preset={preset ? JSON.stringify({ ...preset, san: sanIdx }) : ""}>
-  <h2 id="finder-h" class="sr">Suche</h2>
+  <h2 id="finder-h" class="sr">{T.srHeading}</h2>
   <form class="fsearch" role="search" action="#" autocomplete="off">
     {!preset && <div class="fq">
-      <label for="f-was">Was suchen Sie?</label>
-      <input id="f-was" type="search" placeholder="z. B. Stützstrümpfe, Rollator, Physiotherapie oder ein Name" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="f-wsug" />
+      <label for="f-was">{T.whatLabel}</label>
+      <input id="f-was" type="search" placeholder={T.whatPlaceholder} role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="f-wsug" />
       <ul id="f-wsug" class="fsug" role="listbox" hidden></ul>
     </div>}
     <div class="fq">
-      <label for="f-ort">{preset ? `${preset.label}: Wo suchen Sie?` : 'Wo?'}</label>
-      <input id="f-ort" type="search" placeholder="Ort oder PLZ, z. B. Kassel oder 34117" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="f-sug" />
+      <label for="f-ort">{preset ? fmt(T.wherePreset, { label: preset.label }) : T.whereLabel}</label>
+      <input id="f-ort" type="search" placeholder={T.wherePlaceholder} role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="f-sug" />
       <ul id="f-sug" class="fsug" role="listbox" hidden></ul>
     </div>
     <div class="frow">
-      <button type="button" id="f-loc" class="btn btn-ghost">Mein Standort</button>
-      <label class="frad">Umkreis <select id="f-rad"><option value="5">5 km</option><option value="10">10 km</option><option value="25" selected>25 km</option><option value="50">50 km</option><option value="100">100 km</option></select></label>
-      <button type="submit" class="btn fgo">Suchen</button>
+      <button type="button" id="f-loc" class="btn btn-ghost">{T.myLocation}</button>
+      <label class="frad">{T.radius} <select id="f-rad"><option value="5">5 km</option><option value="10">10 km</option><option value="25" selected>25 km</option><option value="50">50 km</option><option value="100">100 km</option></select></label>
+      <button type="submit" class="btn fgo">{T.search}</button>
     </div>
   </form>
-  <p class="fhead"><span id="f-msg" aria-live="polite">Geben Sie ein, was Sie brauchen und wo. Die Karte zeigt sofort, wer in der Nähe ist.</span></p>
-  <div id="f-map" data-src={u('/data/f/')} data-base={u('/')} data-cats={JSON.stringify(cats)} data-bedarf={JSON.stringify(bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Sanitätshaus' : b.label, words: b.words || '', leistung: b.leistung, seite: b.seite, cats: b.cats })))}></div>
+  <p class="fhead"><span id="f-msg" aria-live="polite">{T.intro}</span></p>
+  <div id="f-map" data-src={u('/data/f/')} data-base={u('/')} data-cats={JSON.stringify(cats)} data-t={JSON.stringify({ ...T.js, intro: T.intro, ohOpen: L.oh.open, ohClosed: L.oh.closed, dec: L.decimal })} data-bedarf={JSON.stringify(bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? T.sanitaetshaus : b.label, words: b.words || '', leistung: b.leistung, seite: b.seite, cats: b.cats })))}></div>
   <ol id="f-list" class="flist"></ol>
   <p id="f-more" class="fmore" hidden></p>
   {preset ? <>
-  <h2 class="flabel">Andere Leistungen in der Nähe</h2>
+  <h2 class="flabel">{T.otherNearby}</h2>
   <ul class="chips fchips">{pages.map((p) => <li><a class:list={["chip", { on: preset.current === p.href }]} href={u(p.href)}>{p.label}</a></li>)}</ul>
   </> : <>
-  <h2 class="flabel">Rubriken</h2>
-  <ul class="bedarf" role="group" aria-label="Rubrik auswählen">
+  <h2 class="flabel">{T.rubrics}</h2>
+  <ul class="bedarf" role="group" aria-label={T.rubricGroup}>
     {bedarf.map((b, i) => (
       <li class={b.key === 'sanitaetshaus' ? 'bd-all' : ''}>{b.ohneKarte ? <a class="bd" href={u(`/${b.seite}/`)}><strong>{b.label}</strong>{b.hint && <small>{b.hint}</small>}</a> : <button type="button" class="bd" data-i={i} aria-pressed="false">
-        <strong>{b.key === 'sanitaetshaus' ? 'Alle Sanitätshäuser' : b.label.replace('Kompressionsstrümpfe', 'Kompressions\u00ADstrümpfe')}</strong>{b.hint && <small>{b.hint}</small>}
+        <strong>{b.key === 'sanitaetshaus' ? T.allShops : b.label.replace('Kompressionsstrümpfe', 'Kompressions\u00ADstrümpfe')}</strong>{b.hint && <small>{b.hint}</small>}
       </button>}</li>
     ))}
   </ul></>}
-  <p class="muted"><small>Kartendaten © OpenStreetMap-Mitwirkende. Leistungen laut Website der Betriebe, ohne Gewähr. Ihr Standort bleibt in Ihrem Browser.</small></p>
+  <p class="muted"><small>{T.fineprint}</small></p>
 </section>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
 <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script is:inline>
   (async () => {
     const el = document.getElementById('f-map');
-    const base = el.dataset.base, cats = JSON.parse(el.dataset.cats), BD = JSON.parse(el.dataset.bedarf);
+    const base = el.dataset.base, cats = JSON.parse(el.dataset.cats), BD = JSON.parse(el.dataset.bedarf), T = JSON.parse(el.dataset.t);
+    // Text aus der Sprachdatei mit Platzhaltern {name}
+    const t = (k, v = {}) => T[k].replace(/\{(\w+)\}/g, (m, n) => (n in v ? v[n] : m));
     const $ = (id) => document.getElementById(id);
     const input = $('f-ort'), sug = $('f-sug'), rad = $('f-rad'), msg = $('f-msg'), list = $('f-list'), more = $('f-more');
     const root = $('finder');
@@ -93,10 +100,10 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
     const actions = (e) => {
       const a = [];
       if (e[7]) a.push(`<a class="k k-tel" href="tel:${esc(e[7].replace(/[^+\d]/g, ''))}">☎ ${esc(e[7])}</a>`);
-      a.push(`<a class="k" href="https://www.google.com/maps/dir/?api=1&destination=${e[1]},${e[2]}" target="_blank" rel="nofollow noopener">Route</a>`);
-      if (e[11]) a.push(`<a class="k k-book" href="${esc(e[11])}" target="_blank" rel="nofollow noopener">Online-Termin</a>`);
-      if (e[10]) a.push(`<a class="k" href="mailto:${esc(e[10])}">E-Mail</a>`);
-      if (e[9]) a.push(`<a class="k" href="${esc(e[9])}" target="_blank" rel="nofollow noopener">Website</a>`);
+      a.push(`<a class="k" href="https://www.google.com/maps/dir/?api=1&destination=${e[1]},${e[2]}" target="_blank" rel="nofollow noopener">${esc(T.route)}</a>`);
+      if (e[11]) a.push(`<a class="k k-book" href="${esc(e[11])}" target="_blank" rel="nofollow noopener">${esc(T.booking)}</a>`);
+      if (e[10]) a.push(`<a class="k" href="mailto:${esc(e[10])}">${esc(T.email)}</a>`);
+      if (e[9]) a.push(`<a class="k" href="${esc(e[9])}" target="_blank" rel="nofollow noopener">${esc(T.website)}</a>`);
       return `<span class="facts" data-eid="${esc(e[15] || '')}" data-n="${esc(e[3])}">${a.join('')}</span>`;
     };
     // Jetzt geöffnet (einfaches OSM-Format, Zeitzone Berlin)
@@ -116,7 +123,7 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
         if (!days.includes(today)) continue;
         open = /off|closed/.test(m[2]) ? false : m[2].replace(/\s/g, '').split(',').some((t) => { const [a, b] = t.split('-').map((x) => +x.slice(0, 2) * 60 + +x.slice(3)); return nowMin >= a && nowMin < b; });
       }
-      return open == null ? '' : `<span class="oh ${open ? 'open' : 'closed'}">${open ? 'jetzt geöffnet' : 'jetzt geschlossen'}</span>`;
+      return open == null ? '' : `<span class="oh ${open ? 'open' : 'closed'}">${esc(open ? T.ohOpen : T.ohClosed)}</span>`;
     }
     const marker = (e, rr) => L.circleMarker([e[1], e[2]], { radius: rr, color: cats[e[0]].color, fillColor: cats[e[0]].color, fillOpacity: 0.85, weight: 1 }).bindPopup(pop(e));
 
@@ -136,8 +143,8 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
       const bit = 1 << (sel < 0 ? ALL : sel); return data.e.filter((e) => e[6] & bit);
     };
     const needCats = () => (PRE ? (PRE.kind === 'cat' ? [PRE.i] : PRE.kind === 'feat' ? [PRE.san] : BD[PRE.i].cats) : nameQ ? ALLCATS : BD[sel < 0 ? ALL : sel].cats);
-    const whatLabel = () => (PRE ? PRE.label : nameQ ? `„${nameQ}“` : BD[sel < 0 ? ALL : sel].label);
-    const item = (e, d, top) => `<li${top ? ' class="ftop"' : e[7] ? '' : ' class="nocontact"'}>${top ? '<button type="button" class="ftopb" aria-expanded="false">Anzeige · TOP-Eintrag <span aria-hidden="true">ⓘ</span></button><span class="ftopx" hidden>Bezahlte Platzierung bzw. Gratis-Platz für die ersten Partner. Top-Einträge im gewählten Umkreis stehen vor den übrigen, danach folgt alles nach Entfernung. Ein Top-Eintrag sagt nichts über die Qualität eines Betriebs.</span><br>' : ''}<a href="${base}${e[5]}"><strong>${esc(e[3])}</strong></a>${cats[e[0]].hb >= 0 && (e[12] & (1 << cats[e[0]].hb)) ? ' <span class="hb">macht Hausbesuche</span>' : ''}${d == null ? '' : ` <span class="fkm">${d.toFixed(1).replace('.', ',')} km</span>`}${ohBadge(e[8])}<br><span class="muted">${esc(cats[e[0]].one)} · ${esc(e[4])}</span>${actions(e)}${e[13] ? `<span class="bst" title="Der Betrieb hat uns am ${e[13].split('-').reverse().join('.')} seine Kontaktdaten und Leistungen bestätigt. Das ist keine Prüfung oder Bewertung der Qualität."><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1l6 2.5v4c0 3.6-2.6 6.4-6 7.5-3.4-1.1-6-3.9-6-7.5v-4z" fill="currentColor"/><path d="M5 8l2 2 4-4" stroke="#fff" stroke-width="1.8" fill="none"/></svg> Vom Betrieb bestätigt · ${e[13].slice(5, 7)}/${e[13].slice(0, 4)}</span>` : ''}</li>`;
+    const whatLabel = () => (PRE ? PRE.label : nameQ ? `${T.quoteOpen}${nameQ}${T.quoteClose}` : BD[sel < 0 ? ALL : sel].label);
+    const item = (e, d, top) => `<li${top ? ' class="ftop"' : e[7] ? '' : ' class="nocontact"'}>${top ? '<button type="button" class="ftopb" aria-expanded="false">' + esc(T.topLabel) + ' <span aria-hidden="true">ⓘ</span></button><span class="ftopx" hidden>' + esc(T.topInfo) + '</span><br>' : ''}<a href="${base}${e[5]}"><strong>${esc(e[3])}</strong></a>${cats[e[0]].hb >= 0 && (e[12] & (1 << cats[e[0]].hb)) ? ` <span class="hb">${esc(T.homeVisits)}</span>` : ''}${d == null ? '' : ` <span class="fkm">${d.toFixed(1).replace('.', T.dec)} km</span>`}${ohBadge(e[8])}<br><span class="muted">${esc(cats[e[0]].one)} · ${esc(e[4])}</span>${actions(e)}${e[13] ? `<span class="bst" title="${esc(t('confirmedTitle', { date: e[13].split('-').reverse().join('.') }))}"><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1l6 2.5v4c0 3.6-2.6 6.4-6 7.5-3.4-1.1-6-3.9-6-7.5v-4z" fill="currentColor"/><path d="M5 8l2 2 4-4" stroke="#fff" stroke-width="1.8" fill="none"/></svg> ${esc(T.confirmed)} · ${e[13].slice(5, 7)}/${e[13].slice(0, 4)}</span>` : ''}</li>`;
     async function draw() {
       const tok = ++drawTok;
       ensureMap();
@@ -150,17 +157,17 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
       if (!here) {
         all.forEach((e) => pins.addLayer(marker(e, 2.5)));
         map.fitBounds([[47.3, 5.9], [55.0, 15.0]]);
-        msg.textContent = (sel < 0 && !nameQ && !PRE) ? 'Geben Sie ein, was Sie brauchen und wo. Die Karte zeigt sofort, wer in der Nähe ist.' : `${whatLabel()}: Geben Sie jetzt Ihren Ort oder Ihre PLZ ein.`;
+        msg.textContent = (sel < 0 && !nameQ && !PRE) ? T.intro : t('nowWhere', { what: whatLabel() });
         if (nameQ) {
           // Name ohne Ort: Treffer bundesweit, alphabetisch
-          if (!all.length) { msg.textContent = `Kein Eintrag mit dem Namen ${whatLabel()} gefunden. Prüfen Sie die Schreibweise oder suchen Sie nach einer Leistung.`; return; }
+          if (!all.length) { msg.textContent = t('noName', { what: whatLabel() }); return; }
           const top = [...all].sort((x, y) => x[3].localeCompare(y[3], 'de')).slice(0, shown);
           await ensureDetails(top);
           if (tok !== drawTok) return;
-          msg.textContent = `Einträge mit dem Namen ${whatLabel()}. Mit Ihrem Ort sehen Sie die nächsten zuerst.`;
+          msg.textContent = t('nameHits', { what: whatLabel() });
           list.innerHTML = top.map((e) => item(e, null)).join('');
           if (all.length === 1) map.setView([all[0][1], all[0][2]], 14); else if (all.length <= 200) map.fitBounds(L.latLngBounds(all.map((e) => [e[1], e[2]])).pad(0.15));
-          if (all.length > shown) { more.hidden = false; more.innerHTML = '<button type="button" class="btn" id="f-mehr">Weitere anzeigen</button>'; $('f-mehr').onclick = () => { shown += 30; draw(); }; }
+          if (all.length > shown) { more.hidden = false; more.innerHTML = `<button type="button" class="btn" id="f-mehr">${esc(T.more)}</button>`; $('f-mehr').onclick = () => { shown += 30; draw(); }; }
         }
         return;
       }
@@ -180,11 +187,11 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
       me = L.circleMarker([here.lat, here.lon], { radius: 8, color: '#fff', fillColor: '#d9480f', fillOpacity: 1, weight: 3 }).addTo(map);
       map.fitBounds(wider ? L.latLngBounds(near.map((x) => [x.e[1], x.e[2]])).extend([here.lat, here.lon]).pad(0.15) : circle.getBounds());
       const b = BD[sel < 0 ? ALL : sel];
-      const extra = (nameQ || PRE) ? '' : b.leistung ? ` <a href="${base}leistung/${b.leistung}/">${esc(b.label)} nach Stadt</a>` : b.seite ? ` <a href="${base}${b.seite}/">${esc(b.label)} nach Stadt</a>` : '';
-      msg.innerHTML = wider ? `Im Umkreis von ${r} km nichts gefunden. Die nächsten Adressen für ${esc(whatLabel())}:` : near.length ? `${esc(whatLabel())} bei ${esc(here.label)}, die nächsten zuerst.` : `Nichts gefunden im Umkreis von ${r} km. Vergrößern Sie den Umkreis.${extra}`;
+      const extra = (nameQ || PRE) ? '' : b.leistung ? ` <a href="${base}leistung/${b.leistung}/">${esc(t('byTown', { label: b.label }))}</a>` : b.seite ? ` <a href="${base}${b.seite}/">${esc(t('byTown', { label: b.label }))}</a>` : '';
+      msg.innerHTML = wider ? esc(t('wider', { r, what: whatLabel() })) : near.length ? esc(t('near', { what: whatLabel(), where: here.label })) : esc(t('none', { r })) + extra;
       list.innerHTML = near.slice(0, shown).map(({ e, d }) => item(e, d, tops.some((t) => t.e === e))).join('');
-      if (here.slug) list.insertAdjacentHTML('beforeend', PRE && PRE.city ? `<li class="fcity"><a href="${base}${PRE.city.replace('{slug}', here.slug)}">${esc(PRE.label)} in ${esc(here.label)}: Übersicht für den Ort</a></li>` : `<li class="fcity"><a href="${base}stadt/${here.slug}/">Alles in ${esc(here.label)} auf einer Seite: Sanitätshäuser, Physiotherapie, Pflege, Krankenfahrten</a></li>`);
-      if (near.length > shown) { more.hidden = false; more.innerHTML = '<button type="button" class="btn" id="f-mehr">Weitere anzeigen</button>'; $('f-mehr').onclick = () => { shown += 30; draw(); }; }
+      if (here.slug) list.insertAdjacentHTML('beforeend', PRE && PRE.city ? `<li class="fcity"><a href="${base}${PRE.city.replace('{slug}', here.slug)}">${esc(t('cityPreset', { label: PRE.label, where: here.label }))}</a></li>` : `<li class="fcity"><a href="${base}stadt/${here.slug}/">${esc(t('cityAll', { where: here.label }))}</a></li>`);
+      if (near.length > shown) { more.hidden = false; more.innerHTML = `<button type="button" class="btn" id="f-mehr">${esc(T.more)}</button>`; $('f-mehr').onclick = () => { shown += 30; draw(); }; }
     }
     if (!PRE) document.querySelector('.bedarf').addEventListener('click', (ev) => {
       const btn = ev.target.closest('button'); if (!btn) return;
@@ -237,7 +244,7 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
       if (!here) input.focus();
     });
     combo(input, sug, (q) => {
-      if (/^\d{5}$/.test(q)) { const p = plzHit(q); return p ? [{ label: `PLZ ${q}`, lat: p[0], lon: p[1] }] : []; }
+      if (/^\d{5}$/.test(q)) { const p = plzHit(q); return p ? [{ label: t('plz', { q }), lat: p[0], lon: p[1] }] : []; }
       if (q.length < 2) return [];
       return orte.filter((o) => o.k.includes(q)).sort((a, b) => (b.k.startsWith(q) - a.k.startsWith(q)) || b.n - a.n).slice(0, 8);
     }, (h) => { if (h) setHere(h); });
@@ -251,11 +258,11 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
     const nearestOrt = (lat, lon) => orte.reduce((best, o) => { const d = (o.lat - lat) ** 2 + ((o.lon - lon) * 0.63) ** 2; return d < best.d ? { o, d } : best; }, { o: null, d: 1e9 }).o;
     const locate = (silent) => {
       if (!navigator.geolocation) return;
-      if (!silent) msg.textContent = 'Standort wird ermittelt …';
+      if (!silent) msg.textContent = T.locating;
       navigator.geolocation.getCurrentPosition((p) => {
         const lat = p.coords.latitude, lon = p.coords.longitude, plz = nearestPlz(lat, lon), o = nearestOrt(lat, lon);
-        setHere({ label: plz ? `PLZ ${plz}` : 'Ihrem Standort', lat, lon, slug: o ? o.slug : undefined });
-      }, () => { if (!silent) msg.textContent = 'Standort nicht verfügbar, bitte Ort oder PLZ eingeben.'; }, { timeout: 10000, maximumAge: 600000 });
+        setHere({ label: plz ? t('plz', { q: plz }) : T.yourLocation, lat, lon, slug: o ? o.slug : undefined });
+      }, () => { if (!silent) msg.textContent = T.noLocation; }, { timeout: 10000, maximumAge: 600000 });
     };
     $('f-loc').addEventListener('click', () => locate(false));
     // Hat der Nutzer die Standortfreigabe für diese Seite schon erteilt und noch keinen Ort gesucht, gleich verwenden (ohne neue Abfrage)

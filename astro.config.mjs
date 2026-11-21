@@ -9,5 +9,6 @@ export default defineConfig({
   trailingSlash: 'always',
   build: { format: 'directory' },
   // Seiten mit noindex nicht in die Sitemap
-  integrations: [sitemap({ filter: (page) => !/\/(impressum|datenschutz|404)\/?$/.test(page) })],
+  // i18n: verknüpft /x/ und /en/x/ in der Sitemap (hreflang). Neue Sprache hier und in src/i18n/index.ts eintragen.
+  integrations: [sitemap({ filter: (page) => !/\/(impressum|datenschutz|404)\/?$/.test(page), i18n: { defaultLocale: 'de', locales: { de: 'de', en: 'en' } } })],
 });
