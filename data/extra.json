@@ -26759,5 +26759,534 @@
     "name": "Marxheim"
    }
   }
+ },
+ {
+  "id": "extra/ambulante-krankenpflege-thannhausen-e-v-thannhausen",
+  "cat": "pflege",
+  "quelle": "https://krankenpflege-thannhausen.de/impressum/ (2026-11-21)",
+  "tags": {
+   "name": "Ambulante Krankenpflege Thannhausen e.V.",
+   "addr:street": "Frühmeßstraße",
+   "addr:housenumber": "9",
+   "addr:postcode": "86470",
+   "addr:city": "Thannhausen",
+   "phone": "+49 8281 6868",
+   "website": "https://krankenpflege-thannhausen.de/",
+   "email": "info@krankenpflege-thannhausen.de"
+  },
+  "location": {
+   "lat": 48.28588,
+   "lon": 10.467236
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62664",
+    "name": "Landkreis Günzburg"
+   },
+   "7": {
+    "id": "relation/2943882",
+    "name": "Thannhausen"
+   },
+   "8": {
+    "id": "relation/963832",
+    "name": "Thannhausen"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-burtenbach-rummelsberger-d-burtenbach",
+  "cat": "pflege",
+  "quelle": "https://www.rummelsberger-diakonie.de/sites/default/files/2026-03/6927_Folder_Ambulanter_Dienst_Burtenbach_vND_low.pdf (2026-11-21)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Burtenbach (Rummelsberger Diakonie)",
+   "addr:street": "Rummelsberger Straße",
+   "addr:housenumber": "3",
+   "addr:postcode": "89349",
+   "addr:city": "Burtenbach",
+   "phone": "+49 8285 3319970",
+   "website": "https://www.rummelsberger-diakonie.de/",
+   "email": "ambulanter-dienst-burtenbach@rummelsberger.net"
+  },
+  "location": {
+   "lat": 48.341145,
+   "lon": 10.452285
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62664",
+    "name": "Landkreis Günzburg"
+   },
+   "8": {
+    "id": "relation/964145",
+    "name": "Burtenbach"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-harald-tenta-krumbach-schwaben",
+  "cat": "pflege",
+  "quelle": "http://www.pflegedienst-tenta.de/impressum.html (2026-11-21)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Harald Tenta",
+   "addr:street": "Jakob-Bader-Straße",
+   "addr:housenumber": "6",
+   "addr:postcode": "86381",
+   "addr:city": "Krumbach (Schwaben)",
+   "phone": "+49 8282 827651",
+   "website": "http://www.pflegedienst-tenta.de/",
+   "email": "service@pflegedienst-tenta.de"
+  },
+  "location": {
+   "lat": 48.251114,
+   "lon": 10.368744
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62664",
+    "name": "Landkreis Günzburg"
+   },
+   "8": {
+    "id": "relation/444105",
+    "name": "Krumbach (Schwaben)"
+   }
+  }
+ },
+ {
+  "id": "extra/diakonische-sozialstation-leipheim-e-v-leipheim",
+  "cat": "pflege",
+  "quelle": "https://sozialstation-leipheim.de/impressum (2026-11-21)",
+  "tags": {
+   "name": "Diakonische Sozialstation Leipheim e.V.",
+   "addr:street": "Hintere Gasse",
+   "addr:housenumber": "10",
+   "addr:postcode": "89340",
+   "addr:city": "Leipheim",
+   "phone": "+49 8221 71504",
+   "website": "https://sozialstation-leipheim.de/",
+   "email": "info@sozialstation-leipheim.de"
+  },
+  "location": {
+   "lat": 48.45072,
+   "lon": 10.220619
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62664",
+    "name": "Landkreis Günzburg"
+   },
+   "8": {
+    "id": "relation/964466",
+    "name": "Leipheim"
+   }
+  }
+ },
+ {
+  "id": "extra/herzblut-care-gmbh-mobile-pflege-aus-leidenschaft-kammeltal",
+  "cat": "pflege",
+  "quelle": "https://herzblut.care/Impressum (2026-11-21)",
+  "tags": {
+   "name": "herzblut.care GmbH – Mobile Pflege aus Leidenschaft",
+   "addr:street": "Burgauer Straße",
+   "addr:housenumber": "3",
+   "addr:postcode": "89358",
+   "addr:city": "Kammeltal",
+   "phone": "+49 8223 7640024",
+   "website": "https://herzblut.care/",
+   "email": "info@herzblut.care"
+  },
+  "location": {
+   "lat": 48.373454,
+   "lon": 10.364702
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62664",
+    "name": "Landkreis Günzburg"
+   },
+   "8": {
+    "id": "relation/964148",
+    "name": "Kammeltal"
+   }
+  }
+ },
+ {
+  "id": "extra/krankenpflegeverein-burgau-e-v-burgau",
+  "cat": "pflege",
+  "quelle": "https://krankenpflegeverein-burgau.de/impressum (2026-11-21)",
+  "tags": {
+   "name": "Krankenpflegeverein Burgau e.V.",
+   "addr:street": "Bleichstraße",
+   "addr:housenumber": "18",
+   "addr:postcode": "89331",
+   "addr:city": "Burgau",
+   "phone": "+49 8222 40990",
+   "website": "https://krankenpflegeverein-burgau.de/",
+   "email": "info@krankenpflegeverein-burgau.de"
+  },
+  "location": {
+   "lat": 48.431076,
+   "lon": 10.410826
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62664",
+    "name": "Landkreis Günzburg"
+   },
+   "8": {
+    "id": "relation/964473",
+    "name": "Burgau"
+   }
+  }
+ },
+ {
+  "id": "extra/oekumenische-sozialdienste-mittelschwaben-ggmbh-so-guenzburg",
+  "cat": "pflege",
+  "quelle": "https://sozialstation-guenzburg.de/impressum (2026-11-21)",
+  "tags": {
+   "name": "Ökumenische Sozialdienste Mittelschwaben gGmbH (Sozialstation Günzburg)",
+   "addr:street": "Auf der Bleiche",
+   "addr:housenumber": "2",
+   "addr:postcode": "89312",
+   "addr:city": "Günzburg",
+   "phone": "+49 8221 36420",
+   "website": "https://sozialstation-guenzburg.de/",
+   "email": "info@sozialstation-guenzburg.de"
+  },
+  "location": {
+   "lat": 48.452801,
+   "lon": 10.272046
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62664",
+    "name": "Landkreis Günzburg"
+   },
+   "8": {
+    "id": "relation/964472",
+    "name": "Günzburg"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-riederle-thannhausen-thannhausen",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-riederle.de/impressum (2026-11-21)",
+  "tags": {
+   "name": "Pflegedienst Riederle Thannhausen",
+   "addr:street": "Mühlstraße",
+   "addr:housenumber": "9",
+   "addr:postcode": "86470",
+   "addr:city": "Thannhausen",
+   "phone": "+49 8281 9949080",
+   "website": "https://pflegedienst-riederle.de/",
+   "email": "kontakt@pflegedienst-riederle.de"
+  },
+  "location": {
+   "lat": 48.289408,
+   "lon": 10.463496
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62664",
+    "name": "Landkreis Günzburg"
+   },
+   "7": {
+    "id": "relation/2943882",
+    "name": "Thannhausen"
+   },
+   "8": {
+    "id": "relation/963832",
+    "name": "Thannhausen"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-riederle-jettingen-jettingen-scheppach",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-riederle.de/kontakt-jettingen/ (2026-11-21)",
+  "tags": {
+   "name": "Pflegedienst Riederle Jettingen",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "104",
+   "addr:postcode": "89343",
+   "addr:city": "Jettingen-Scheppach",
+   "phone": "+49 8225 9949010",
+   "website": "https://pflegedienst-riederle.de/ambulanter-pflegedienst-jettingen-scheppach/",
+   "email": "kontakt@pflegedienst-riederle.de"
+  },
+  "location": {
+   "lat": 48.393203,
+   "lon": 10.438962
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62664",
+    "name": "Landkreis Günzburg"
+   },
+   "8": {
+    "id": "relation/964236",
+    "name": "Jettingen-Scheppach"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegeservice-schneider-ichenhausen-ichenhausen",
+  "cat": "pflege",
+  "quelle": "https://pflegeservice-schneider.de/impressum (2026-11-21)",
+  "tags": {
+   "name": "Pflegeservice Schneider Ichenhausen",
+   "addr:street": "Von-Roth-Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "89335",
+   "addr:city": "Ichenhausen",
+   "phone": "+49 8223 9677110",
+   "website": "https://pflegeservice-schneider.de/",
+   "email": "info@pss-th.de"
+  },
+  "location": {
+   "lat": 48.370901,
+   "lon": 10.305796
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62664",
+    "name": "Landkreis Günzburg"
+   },
+   "7": {
+    "id": "relation/2943880",
+    "name": "Ichenhausen (VGem)"
+   },
+   "8": {
+    "id": "relation/964467",
+    "name": "Ichenhausen"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegeservice-waldkirch-duerrlauingen",
+  "cat": "pflege",
+  "quelle": "https://www.pflege-waldkirch.de/ (2026-11-21)",
+  "tags": {
+   "name": "Ambulanter Pflegeservice Waldkirch",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "39",
+   "addr:postcode": "89350",
+   "addr:city": "Dürrlauingen",
+   "phone": "+49 8222 965316",
+   "website": "https://www.pflege-waldkirch.de/"
+  },
+  "location": {
+   "lat": 48.468468,
+   "lon": 10.436779
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62664",
+    "name": "Landkreis Günzburg"
+   },
+   "8": {
+    "id": "relation/964238",
+    "name": "Dürrlauingen"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegeteam-huber-guenzburg",
+  "cat": "pflege",
+  "quelle": "https://pflegeteam-huber.de/impressum (2026-11-21)",
+  "tags": {
+   "name": "Pflegeteam Huber",
+   "addr:street": "Dillinger Straße",
+   "addr:housenumber": "9",
+   "addr:postcode": "89312",
+   "addr:city": "Günzburg",
+   "phone": "+49 8221 9667727",
+   "website": "https://pflegeteam-huber.de/",
+   "email": "info@pflegeteam-huber.de"
+  },
+  "location": {
+   "lat": 48.457704,
+   "lon": 10.279379
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62664",
+    "name": "Landkreis Günzburg"
+   },
+   "8": {
+    "id": "relation/964472",
+    "name": "Günzburg"
+   }
+  }
+ },
+ {
+  "id": "extra/snehotta-pflegeteam-ambulanter-pflegedienst-krumbach-schwaben",
+  "cat": "pflege",
+  "quelle": "https://www.snehotta.de/impressum/ (2026-11-21)",
+  "tags": {
+   "name": "Snehotta Pflegeteam – Ambulanter Pflegedienst",
+   "addr:street": "Marktplatz",
+   "addr:housenumber": "19",
+   "addr:postcode": "86381",
+   "addr:city": "Krumbach (Schwaben)",
+   "phone": "+49 8282 207000",
+   "website": "https://www.snehotta.de/",
+   "email": "info@snehotta.de"
+  },
+  "location": {
+   "lat": 48.242804,
+   "lon": 10.362072
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62664",
+    "name": "Landkreis Günzburg"
+   },
+   "8": {
+    "id": "relation/444105",
+    "name": "Krumbach (Schwaben)"
+   }
+  }
+ },
+ {
+  "id": "extra/wir-fuer-uns-seniorengemeinschaft-landkreis-guenzb-guenzburg",
+  "cat": "pflege",
+  "quelle": "https://wirfueruns-gz.bayern/Kontakt (2026-11-21)",
+  "tags": {
+   "name": "Wir für uns – Seniorengemeinschaft Landkreis Günzburg e.V.",
+   "addr:street": "Kapuzinergasse",
+   "addr:housenumber": "10",
+   "addr:postcode": "89312",
+   "addr:city": "Günzburg",
+   "phone": "+49 8221 9301792",
+   "website": "https://wirfueruns-gz.bayern/",
+   "email": "info@wirfueruns-gz.bayern"
+  },
+  "location": {
+   "lat": 48.454467,
+   "lon": 10.277515
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62664",
+    "name": "Landkreis Günzburg"
+   },
+   "8": {
+    "id": "relation/964472",
+    "name": "Günzburg"
+   }
+  }
  }
 ]
