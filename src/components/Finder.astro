@@ -32,6 +32,7 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
   </form>
   <p class="fhead"><span id="f-msg" aria-live="polite">Geben Sie ein, was Sie brauchen und wo. Die Karte zeigt sofort, wer in der Nähe ist.</span></p>
   <div id="f-map" data-src={u('/data/f/')} data-base={u('/')} data-cats={JSON.stringify(cats)} data-bedarf={JSON.stringify(bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Sanitätshaus' : b.label, words: b.words || '', leistung: b.leistung, seite: b.seite, cats: b.cats })))}></div>
+  <p id="f-tophint" class="ftophint" hidden>Gelb umrandet ganz oben: <strong>Top-Eintrag</strong>, also eine Anzeige. Danach folgen alle Einträge nach Entfernung. Ein Top-Eintrag sagt nichts über die Qualität eines Betriebs.</p>
   <ol id="f-list" class="flist"></ol>
   <p id="f-more" class="fmore" hidden></p>
   {preset ? <>
@@ -71,7 +72,7 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
     // Einträge je Kategorie erst laden, wenn sie gebraucht werden. Zeilenformat: [Kat, lat, lon, Name, Adresse, Link, Bedarf, Telefon, Zeiten, Website, E-Mail, Termin, Leistungen]
     const byCat = {}, catP = {};
     const loadCats = (list) => Promise.all(list.map((ci) => (catP[ci] ||= fetch(`${src}c${ci}.json`).then((r) => r.json()).then((rows) => {
-      byCat[ci] = rows.map((c, j) => { const r = [ci, c[0], c[1], c[2], '', '', c[3], c[5] ? '…' : '', '', '', '', '', c[4]]; r.j = j; r.cell = `${ci}_${Math.floor(c[0])}_${Math.floor(c[1])}`; return r; });
+      byCat[ci] = rows.map((c, j) => { const r = [ci, c[0], c[1], c[2], '', '', c[3], c[5] ? '…' : '', '', '', '', '', c[4]]; r.j = j; r.top = c[6] === 1; r.cell = `${ci}_${Math.floor(c[0])}_${Math.floor(c[1])}`; return r; });
       data.e = cats.flatMap((_, k) => byCat[k] || []);
     }).catch(() => { delete catP[ci]; }))));
     const ALLCATS = cats.map((_, k) => k);
@@ -137,14 +138,14 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
     };
     const needCats = () => (PRE ? (PRE.kind === 'cat' ? [PRE.i] : PRE.kind === 'feat' ? [PRE.san] : BD[PRE.i].cats) : nameQ ? ALLCATS : BD[sel < 0 ? ALL : sel].cats);
     const whatLabel = () => (PRE ? PRE.label : nameQ ? `„${nameQ}“` : BD[sel < 0 ? ALL : sel].label);
-    const item = (e, d) => `<li${e[7] ? '' : ' class="nocontact"'}><a href="${base}${e[5]}"><strong>${esc(e[3])}</strong></a>${cats[e[0]].hb >= 0 && (e[12] & (1 << cats[e[0]].hb)) ? ' <span class="hb">macht Hausbesuche</span>' : ''}${d == null ? '' : ` <span class="fkm">${d.toFixed(1).replace('.', ',')} km</span>`}${ohBadge(e[8])}${e[13] ? ` <span class="bst" title="Der Betrieb hat uns am ${e[13].split('-').reverse().join('.')} seine Kontaktdaten und Leistungen bestätigt. Das ist keine Prüfung oder Bewertung der Qualität."><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1l6 2.5v4c0 3.6-2.6 6.4-6 7.5-3.4-1.1-6-3.9-6-7.5v-4z" fill="currentColor"/><path d="M5 8l2 2 4-4" stroke="#fff" stroke-width="1.8" fill="none"/></svg> Vom Betrieb bestätigt · ${e[13].slice(5, 7)}/${e[13].slice(0, 4)}</span>` : ''}<br><span class="muted">${esc(cats[e[0]].one)} · ${esc(e[4])}</span>${actions(e)}</li>`;
+    const item = (e, d, top) => `<li${top ? ' class="ftop"' : e[7] ? '' : ' class="nocontact"'}>${top ? '<span class="ftopb">Anzeige · Top-Eintrag</span><br>' : ''}<a href="${base}${e[5]}"><strong>${esc(e[3])}</strong></a>${cats[e[0]].hb >= 0 && (e[12] & (1 << cats[e[0]].hb)) ? ' <span class="hb">macht Hausbesuche</span>' : ''}${d == null ? '' : ` <span class="fkm">${d.toFixed(1).replace('.', ',')} km</span>`}${ohBadge(e[8])}${e[13] ? ` <span class="bst" title="Der Betrieb hat uns am ${e[13].split('-').reverse().join('.')} seine Kontaktdaten und Leistungen bestätigt. Das ist keine Prüfung oder Bewertung der Qualität."><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1l6 2.5v4c0 3.6-2.6 6.4-6 7.5-3.4-1.1-6-3.9-6-7.5v-4z" fill="currentColor"/><path d="M5 8l2 2 4-4" stroke="#fff" stroke-width="1.8" fill="none"/></svg> Vom Betrieb bestätigt · ${e[13].slice(5, 7)}/${e[13].slice(0, 4)}</span>` : ''}<br><span class="muted">${esc(cats[e[0]].one)} · ${esc(e[4])}</span>${actions(e)}</li>`;
     async function draw() {
       const tok = ++drawTok;
       ensureMap();
       await loadCats(needCats());
       if (tok !== drawTok) return;
       const r = +rad.value, all = matches();
-      pins.clearLayers(); list.innerHTML = ''; more.hidden = true;
+      pins.clearLayers(); list.innerHTML = ''; more.hidden = true; $('f-tophint').hidden = true;
       if (circle) { circle.remove(); circle = null; }
       if (me) { me.remove(); me = null; }
       if (!here) {
@@ -172,6 +173,9 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
       await ensureDetails(near.map((x) => x.e));
       if (tok !== drawTok) return;
       near = [...near.filter((x) => x.e[7]), ...near.filter((x) => !x.e[7])];
+      // Top-Einträge (bezahlt oder Gratis-Platz) im Umkreis zuerst, höchstens 3, mit Hinweis „Anzeige“
+      const tops = wider ? [] : near.filter((x) => x.e.top).slice(0, 3);
+      near = [...tops, ...near.filter((x) => !tops.includes(x))];
       near.forEach((x) => pins.addLayer(x.e[7] ? marker(x.e, 7) : L.circleMarker([x.e[1], x.e[2]], { radius: 6, color: '#aaa', fillColor: '#ccc', fillOpacity: 0.8, weight: 1 }).bindPopup(pop(x.e))));
       circle = L.circle([here.lat, here.lon], { radius: r * 1000, color: '#0f6b57', weight: 1, dashArray: '5 4', fillOpacity: 0.04, interactive: false }).addTo(map);
       me = L.circleMarker([here.lat, here.lon], { radius: 8, color: '#fff', fillColor: '#d9480f', fillOpacity: 1, weight: 3 }).addTo(map);
@@ -179,7 +183,8 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
       const b = BD[sel < 0 ? ALL : sel];
       const extra = (nameQ || PRE) ? '' : b.leistung ? ` <a href="${base}leistung/${b.leistung}/">${esc(b.label)} nach Stadt</a>` : b.seite ? ` <a href="${base}${b.seite}/">${esc(b.label)} nach Stadt</a>` : '';
       msg.innerHTML = wider ? `Im Umkreis von ${r} km nichts gefunden. Die nächsten Adressen für ${esc(whatLabel())}:` : near.length ? `${esc(whatLabel())} bei ${esc(here.label)}, die nächsten zuerst.` : `Nichts gefunden im Umkreis von ${r} km. Vergrößern Sie den Umkreis.${extra}`;
-      list.innerHTML = near.slice(0, shown).map(({ e, d }) => item(e, d)).join('');
+      list.innerHTML = near.slice(0, shown).map(({ e, d }) => item(e, d, tops.some((t) => t.e === e))).join('');
+      $('f-tophint').hidden = !tops.length;
       if (here.slug) list.insertAdjacentHTML('beforeend', PRE && PRE.city ? `<li class="fcity"><a href="${base}${PRE.city.replace('{slug}', here.slug)}">${esc(PRE.label)} in ${esc(here.label)}: Übersicht für den Ort</a></li>` : `<li class="fcity"><a href="${base}stadt/${here.slug}/">Alles in ${esc(here.label)} auf einer Seite: Sanitätshäuser, Physiotherapie, Pflege, Krankenfahrten</a></li>`);
       if (near.length > shown) { more.hidden = false; more.innerHTML = '<button type="button" class="btn" id="f-mehr">Weitere anzeigen</button>'; $('f-mehr').onclick = () => { shown += 30; draw(); }; }
     }
@@ -279,6 +284,9 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? 'Alle Sani
   .bedarf { list-style: none; padding: 0; margin: 0 0 10px; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
   a.bd { display: block; box-sizing: border-box; text-decoration: none; }
   .flist .bst svg { vertical-align: -2px; }
+  .flist li.ftop { border: 2px solid var(--gold); border-radius: var(--radius); padding: 8px 10px; background: var(--gold-bg); }
+  .flist .ftopb { font-size: .75rem; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: .03em; }
+  .ftophint { margin: 8px 0; padding: 8px 12px; border-left: 4px solid var(--gold); background: var(--gold-bg); border-radius: 6px; font-size: 0.9rem; }
   .flist .bst { display: inline-block; font-size: .8rem; font-weight: 600; padding: 1px 8px; border-radius: 999px; background: var(--accent); color: var(--brand); cursor: help; }
   .flist .hb { display: inline-block; font-size: .8rem; font-weight: 600; padding: 1px 8px; border-radius: 999px; background: #e0f2f1; color: #00695c; }
   .bd { width: 100%; height: 100%; text-align: left; font: inherit; background: var(--bg); color: var(--text); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 14px; cursor: pointer; }
