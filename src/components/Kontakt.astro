@@ -1,11 +1,15 @@
 ---
 // Schnellzugriff: Anrufen, Route, Online-Termin, E-Mail, Website. Für Menschen, die schnell hin oder anrufen wollen.
-interface Props { phone?: string | null; email?: string | null; website?: string | null; booking?: string | null; lat?: number; lon?: number; name: string; city?: string }
+interface Props { phone?: string | null; email?: string | null; website?: string | null; booking?: string | null; lat?: number; lon?: number; name: string; city?: string; street?: string | null; postcode?: string | null }
 import { u } from '../lib/url';
-const { phone, email, website, booking, lat, lon, name, city } = Astro.props;
+const { phone, email, website, booking, lat, lon, name, city, street, postcode } = Astro.props;
 const tel = phone?.split(';')[0].trim();
 const mail = email?.split(';')[0].trim();
-const route = lat ? `https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}` : null;
+// Ziel ist die Postadresse, nicht die Koordinaten: Bei Koordinaten setzt Google den nächstgelegenen Ort aus seiner
+// eigenen Datenbank als Ziel ein, oft einen anderen Betrieb im selben Haus (Fehler Ortec/High Class Fitness, 21.11.2026).
+// Ohne Straße: Name und Ort, damit Google den Betrieb selbst findet statt eines Nachbarn an den Koordinaten
+const addr = street ? [street, [postcode, city].filter(Boolean).join(' ')].filter(Boolean).join(', ') : city ? `${name}, ${[postcode, city].filter(Boolean).join(' ')}` : '';
+const route = addr ? `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(addr)}` : lat ? `https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}` : null;
 ---
 <p class="kontakt">
   {tel && <a class="k k-tel" href={`tel:${tel.replace(/[^+\d]/g, '')}`} aria-label={`${name} anrufen`}>☎ {tel}</a>}
