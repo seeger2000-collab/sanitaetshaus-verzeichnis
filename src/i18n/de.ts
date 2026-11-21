@@ -24,7 +24,7 @@ export const de = {
     settings: 'Statistik-Einstellungen',
     heading: 'Dürfen wir genauer zählen?',
     text: 'Wir zählen anonym, welche Seiten aufgerufen werden, ohne Cookies und ohne etwas von Ihrem Gerät auszulesen. Mit Ihrer Zustimmung erfassen wir zusätzlich Bildschirmbreite und die Seite, von der Sie kommen (GoatCounter{cf}). Das hilft uns, die Seite zu verbessern.',
-    cf: ', dazu Ladezeiten der Seite mit Cloudflare Web Analytics',
+    cf: ', dazu Ladezeiten der Seite mit Cloudflare Web Analytics, Anbieter in den USA',
     more: 'Mehr dazu',
     no: 'Ablehnen',
     yes: 'Zustimmen',

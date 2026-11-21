@@ -36,5 +36,5 @@ export const AFFILIATE = {
 // Besucherstatistik. Cloudflare Web Analytics wird nur mit Einwilligung geladen; leer = aus.
 // Das Token ist kein Geheimnis (es steht sichtbar im Seitenquelltext).
 export const ANALYTICS = {
-  cloudflareToken: '',
+  cloudflareToken: '79b87a5df0f848faab4d292fd94b42be',
 };

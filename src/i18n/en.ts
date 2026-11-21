@@ -21,7 +21,7 @@ export const en: Dict = {
     settings: 'Statistics settings',
     heading: 'May we count in more detail?',
     text: 'We count anonymously which pages are visited, without cookies and without reading anything from your device. With your consent we also record the screen width and the page you came from (GoatCounter{cf}). This helps us improve the site.',
-    cf: ', plus page loading times with Cloudflare Web Analytics',
+    cf: ', plus page loading times with Cloudflare Web Analytics, a provider based in the USA',
     more: 'Learn more (in German)',
     no: 'Decline',
     yes: 'Accept',
