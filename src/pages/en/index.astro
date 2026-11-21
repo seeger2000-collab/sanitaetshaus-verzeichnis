@@ -1,0 +1,29 @@
+---
+// Englische Startseite. Texte: src/i18n/en.ts. Einträge bleiben im Original (deutsch).
+import Base from '../../layouts/Base.astro';
+import Finder from '../../components/Finder.astro';
+import { SITE } from '../../config';
+import { u } from '../../lib/url';
+import { otherCategories } from '../../lib/data';
+import { LANGS, lp } from '../../i18n';
+const lang = 'en', L = LANGS[lang], H = L.home!;
+---
+<Base title={H.title} description={H.description} jsonLd={[{ '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: new URL(u(lp(lang, '/')), Astro.site).href, inLanguage: 'en' }]}>
+  <h1>{H.h1}</h1>
+  <p class="lead">{H.lead}</p>
+  <Finder lang={lang} />
+  <h2>{H.categories}</h2>
+  <ul class="grid">
+    {otherCategories.filter((c) => L.cats[c.key]).map((c) => (<li><a class="tile" href={u(lp(lang, `/${c.slug}/`))}>{L.cats[c.key].label}</a></li>))}
+  </ul>
+  <h2>{H.germanOnly}</h2>
+  <p>{H.germanPages}</p>
+  <ul class="chips" lang="de">
+    <li><a class="chip" href={u('/karte/')} hreflang="de">Karte</a></li>
+    <li><a class="chip" href={u('/plz/')} hreflang="de">PLZ</a></li>
+    <li><a class="chip" href={u('/leistung/')} hreflang="de">Leistungen</a></li>
+    <li><a class="chip" href={u('/ratgeber/')} hreflang="de">Ratgeber</a></li>
+    <li><a class="chip" href={u('/bundesland/')} hreflang="de">Bundesländer</a></li>
+  </ul>
+</Base>
+<style>.chips .chip { text-decoration: none; display: inline-block; }</style>

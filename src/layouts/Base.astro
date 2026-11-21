@@ -2,38 +2,53 @@
 import { SITE, AFFILIATE, ANALYTICS } from '../config';
 import { u } from '../lib/url';
 import OpenNow from '../components/OpenNow.astro';
-import { meta, fmtDate, clip } from '../lib/data';
+import { meta, clip, otherCategories } from '../lib/data';
+import { LANGS, DEFAULT_LANG, langOf, dePath, lp, isTranslated, fmt } from '../i18n';
 interface Props { title: string; description: string; crumbs?: { href: string; label: string }[]; noindex?: boolean; jsonLd?: object[] }
 const { title, crumbs = [], noindex = false, jsonLd = [] } = Astro.props;
 const description = clip(Astro.props.description);
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const abs = (path: string) => new URL(u(path), Astro.site).href;
+// Sprache aus dem Pfad: / = Deutsch, /en/ = Englisch usw. (src/i18n)
+const rel = '/' + Astro.url.pathname.slice(import.meta.env.BASE_URL.length).replace(/^\//, '');
+const lang = langOf(rel), T = LANGS[lang], de = lang === DEFAULT_LANG;
+const basePath = dePath(rel), translated = isTranslated(rel);
+// Gegenstücke in allen Sprachen (für hreflang und den Sprachhinweis)
+const alternates = translated ? Object.keys(LANGS).map((l) => ({ lang: l, href: abs(lp(l, basePath)) })) : [];
+const otherLangs = Object.keys(LANGS).filter((l) => l !== lang).map((l) => ({ code: l, name: LANGS[l].name, offer: LANGS[l].offer, yes: LANGS[l].offerYes, no: LANGS[l].offerNo, href: u(translated ? lp(l, basePath) : lp(l, '/')), page: translated }));
+const navCats = otherCategories.filter((c) => T.cats[c.key]);
 const ld = [...jsonLd];
 if (crumbs.length) ld.push({
   '@context': 'https://schema.org', '@type': 'BreadcrumbList',
-  itemListElement: [{ href: '/', label: 'Start' }, ...crumbs].map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.label, item: abs(c.href) })),
+  itemListElement: [{ href: lp(lang, '/'), label: T.start }, ...crumbs].map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.label, item: abs(c.href) })),
 });
 ---
 <!doctype html>
-<html lang="de">
+<html lang={T.htmlLang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {alternates.map((a) => <link rel="alternate" hreflang={LANGS[a.lang].htmlLang} href={a.href} />)}
+    {alternates.length > 0 && <link rel="alternate" hreflang="x-default" href={alternates[0].href} />}
     {(!SITE.indexing || noindex) && <meta name="robots" content={SITE.indexing ? 'noindex, follow' : 'noindex, nofollow'} />}
     {ld.map((o) => <script type="application/ld+json" set:html={JSON.stringify(o)} />)}
     <link rel="icon" href={u('/favicon.svg')} type="image/svg+xml" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:locale" content="de_DE" />
+    <meta property="og:locale" content={T.ogLocale} />
   </head>
-  <body>
+  <body data-oh-open={T.oh.open} data-oh-closed={T.oh.closed}>
+    <div id="lang-offer" class="lang-offer" hidden data-langs={JSON.stringify(otherLangs.filter((o) => o.page))}></div>
     <header class="site-header">
       <div class="wrap">
-        <a class="logo" href={u('/')}><span aria-hidden="true">✚</span> {SITE.name}<small class="claim">{SITE.claim}</small></a>
-        <nav aria-label="Hauptnavigation">
+        <a class="logo" href={u(lp(lang, '/'))}><span aria-hidden="true">✚</span> {SITE.name}<small class="claim">{de ? SITE.claim : T.claim}</small></a>
+        <nav aria-label={T.navLabel}>
+          {otherLangs.map((o) => <a class="lang-link" href={o.href} hreflang={LANGS[o.code].htmlLang} lang={LANGS[o.code].htmlLang}>{o.name}</a>)}
+          {!de && navCats.map((c) => <a href={u(lp(lang, `/${c.slug}/`))}>{T.cats[c.key].label}</a>)}
+          {de && <>
           <a href={u('/karte/')}>Karte</a>
         <a href={u('/plz/')}>PLZ</a>
         <a href={u('/leistung/')}>Leistungen</a>
@@ -48,13 +63,14 @@ if (crumbs.length) ld.push({
           <a href={u('/alltagshelfer/')}>Alltagshelfer</a>
           <a href={u('/ratgeber/')}>Ratgeber</a>
           <a href={u('/fuer-sanitaetshaeuser/')}>Für Sanitätshäuser</a>
+          </>}
         </nav>
       </div>
     </header>
     <main class="wrap">
       {crumbs.length > 0 && (
-        <nav class="crumbs" aria-label="Brotkrumen">
-          <a href={u('/')}>Start</a>
+        <nav class="crumbs" aria-label={T.crumbsLabel}>
+          <a href={u(lp(lang, '/'))}>{T.start}</a>
           {crumbs.map((c) => (<><span aria-hidden="true">›</span><a href={u(c.href)}>{c.label}</a></>))}
         </nav>
       )}
@@ -63,16 +79,37 @@ if (crumbs.length) ld.push({
     <OpenNow />
     <footer class="site-footer">
       <div class="wrap">
-        <p>Daten: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (ODbL), Stand {fmtDate(meta.osmFetchedAt)}. Leistungen automatisch von den Websites der Häuser ausgelesen, ohne Gewähr.</p>
-        {(AFFILIATE.amazonTag || AFFILIATE.pflegeboxUrl || AFFILIATE.sanishopUrl || AFFILIATE.hausnotrufUrl) && <p>Mit „Werbung“ gekennzeichnete Links sind Partnerlinks. Kaufen Sie darüber, erhalten wir eine Provision, für Sie ändert sich der Preis nicht.{AFFILIATE.amazonTag && ' Als Amazon-Partner verdienen wir an qualifizierten Verkäufen.'}</p>}
-        <p><a href={u('/ueber/')}>So entstehen die Daten</a> · <a href={u('/bundesland/')}>Bundesländer</a> · <a href={u('/eintrag/')}>Eintrag ergänzen oder melden</a> · <a href={u('/fuer-sanitaetshaeuser/')}>Für Betriebe</a> · <a href={u('/impressum/')}>Impressum</a> · <a href={u('/datenschutz/')}>Datenschutz</a> · <a href="#statistik" id="stat-settings">Statistik-Einstellungen</a></p>
+        <p set:html={fmt(T.footerData, { osm: `<a href="https://www.openstreetmap.org/copyright">${T.osmContributors}</a>`, date: new Date(meta.osmFetchedAt).toLocaleDateString(T.dateLocale, { day: 'numeric', month: 'long', year: 'numeric' }) })} />
+        {de ? <>{(AFFILIATE.amazonTag || AFFILIATE.pflegeboxUrl || AFFILIATE.sanishopUrl || AFFILIATE.hausnotrufUrl) && <p>Mit „Werbung“ gekennzeichnete Links sind Partnerlinks. Kaufen Sie darüber, erhalten wir eine Provision, für Sie ändert sich der Preis nicht.{AFFILIATE.amazonTag && ' Als Amazon-Partner verdienen wir an qualifizierten Verkäufen.'}</p>}
+        <p><a href={u('/ueber/')}>So entstehen die Daten</a> · <a href={u('/bundesland/')}>Bundesländer</a> · <a href={u('/eintrag/')}>Eintrag ergänzen oder melden</a> · <a href={u('/fuer-sanitaetshaeuser/')}>Für Betriebe</a> · <a href={u('/impressum/')}>Impressum</a> · <a href={u('/datenschutz/')}>Datenschutz</a> · <a href="#statistik" id="stat-settings">Statistik-Einstellungen</a></p></>
+        : <><p>{T.legalNote}</p><p><a href={u('/')} hreflang="de" lang="de">Deutsche Version</a> · <a href={u('/impressum/')} hreflang="de">Legal notice (Impressum)</a> · <a href={u('/datenschutz/')} hreflang="de">Privacy policy (Datenschutz)</a> · <a href={u('/eintrag/')} hreflang="de">Correct or add an entry (in German)</a> · <a href="#statistik" id="stat-settings">{T.stat.settings}</a></p></>}
       </div>
     </footer>
-    <button type="button" id="stat-fab" class="stat-fab" aria-label="Statistik-Einstellungen" title="Statistik-Einstellungen" hidden><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></button>
+    <button type="button" id="stat-fab" class="stat-fab" aria-label={T.stat.settings} title={T.stat.settings} hidden><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></button>
     <div id="stat-banner" class="stat-banner" role="dialog" aria-modal="true" aria-labelledby="stat-h" hidden>
-      <p id="stat-h"><strong>Dürfen wir genauer zählen?</strong> Wir zählen anonym, welche Seiten aufgerufen werden, ohne Cookies und ohne etwas von Ihrem Gerät auszulesen. Mit Ihrer Zustimmung erfassen wir zusätzlich Bildschirmbreite und die Seite, von der Sie kommen (GoatCounter{ANALYTICS.cloudflareToken && ', dazu Ladezeiten der Seite mit Cloudflare Web Analytics, Anbieter in den USA'}). Das hilft uns, die Seite zu verbessern. <a href={u('/datenschutz/')}>Mehr dazu</a></p>
-      <p class="stat-btns"><button type="button" class="btn" data-stat="nein">Ablehnen</button> <button type="button" class="btn" data-stat="ja">Zustimmen</button></p>
+      <p id="stat-h"><strong>{T.stat.heading}</strong> {fmt(T.stat.text, { cf: ANALYTICS.cloudflareToken ? T.stat.cf : '' })} <a href={u('/datenschutz/')}>{T.stat.more}</a></p>
+      <p class="stat-btns"><button type="button" class="btn" data-stat="nein">{T.stat.no}</button> <button type="button" class="btn" data-stat="ja">{T.stat.yes}</button></p>
     </div>
+    <script>
+      // Sprachhinweis: passt die Browsersprache zu einer Übersetzung dieser Seite, einmal anbieten. Keine automatische Umleitung.
+      (() => {
+        const box = document.getElementById('lang-offer') as HTMLElement, K = 'sh-sprache';
+        let langs: { code: string; offer: string; yes: string; no: string; href: string }[] = []; try { langs = JSON.parse(box.dataset.langs || '[]'); } catch {}
+        let saved = null; try { saved = localStorage.getItem(K); } catch {}
+        if (saved || !langs.length) return;
+        const here = document.documentElement.lang;
+        const pref = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || '']).map((l) => String(l).slice(0, 2).toLowerCase());
+        if (!pref.length || pref[0] === here) return;
+        const o = langs.find((x) => x.code === pref[0]);
+        if (!o) return;
+        const esc = (s: string) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' } as Record<string, string>)[c]);
+        box.innerHTML = `<p lang="${esc(o.code)}"><span>${esc(o.offer)}</span> <a class="btn" href="${esc(o.href)}" hreflang="${esc(o.code)}">${esc(o.yes)}</a> <button type="button" class="lang-no">${esc(o.no)}</button></p>`;
+        box.hidden = false;
+        const remember = (v: string) => { try { localStorage.setItem(K, v); } catch {} };
+        box.querySelector('a')!.addEventListener('click', () => remember(o.code));
+        box.querySelector('.lang-no')!.addEventListener('click', () => { remember(here); box.hidden = true; });
+      })();
+    </script>
     <script is:inline define:vars={{ CF: ANALYTICS.cloudflareToken }}>
       // Zählung: ohne Einwilligung nur ein Zählbild mit der Seitenadresse (kein Zugriff auf das Endgerät),
       // mit Einwilligung (§ 25 Abs. 1 TDDDG) das GoatCounter-Skript. Gespeichert wird nur die Entscheidung selbst.
@@ -147,6 +184,12 @@ if (crumbs.length) ld.push({
   html.stat-open { overflow: hidden; }
   .stat-fab { position: fixed; z-index: 1500; left: 14px; bottom: 14px; width: 44px; height: 44px; border-radius: 50%; border: 0; background: var(--brand); color: var(--brand-ink); display: grid; place-items: center; cursor: pointer; box-shadow: 0 4px 14px rgba(0,0,0,.2); }
   .stat-fab[hidden] { display: none; }
+  .lang-offer { position: relative; z-index: 2100; background: #fff4dc; color: var(--text); border-bottom: 1px solid var(--line); }
+  .lang-offer[hidden] { display: none; }
+  .lang-offer p { max-width: 1040px; margin: 0 auto; padding: 10px 16px; display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; font-size: .95rem; }
+  .lang-offer .btn { padding: 6px 14px; }
+  .lang-offer .lang-no { font: inherit; font-size: .95rem; background: none; border: 0; color: var(--brand); text-decoration: underline; cursor: pointer; padding: 6px 4px; }
+  .site-header nav a.lang-link { font-weight: 700; }
   .stat-banner[hidden] { display: none; }
   .stat-banner p { margin: 0 0 10px; }
   .stat-btns { display: flex; gap: 10px; margin: 0 !important; }
