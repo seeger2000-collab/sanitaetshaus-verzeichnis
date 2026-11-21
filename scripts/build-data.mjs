@@ -168,10 +168,12 @@ const states = [...new Set(cities.map((c) => c.state))].sort((a, b) => a.localeC
 await mkdir('src/data', { recursive: true });
 await writeFile('src/data/shops.json', JSON.stringify(shops));
 await writeFile('src/data/providers.json', JSON.stringify(providers));
-// Kartendaten für /karte/: [Kategorie-Index, lat, lon, Name, Stadt-Slug, Detail-Slug oder ""]
+// Sprungmarke des Eintrags auf seiner Ortsseite (gleiche Bildung in ProviderCard.astro)
+const ankerId = (s) => `e-${s.cat}-${String(s.id).replace(/[^a-zA-Z0-9]+/g, '-')}`;
+// Kartendaten für /karte/: [Kategorie-Index, lat, lon, Name, Stadt-Slug, Detail-Slug oder #Sprungmarke auf der Ortsseite]
 await mkdir('public/data', { recursive: true });
 const catIndex = Object.fromEntries(CATEGORIES.map((c, i) => [c.key, i]));
-await writeFile('public/data/karte.json', JSON.stringify(all.filter((s) => s.lat).map((s) => [catIndex[s.cat], s.lat, s.lon, s.name, s.citySlug, s.slug || ''])));
+await writeFile('public/data/karte.json', JSON.stringify(all.filter((s) => s.lat).map((s) => [catIndex[s.cat], s.lat, s.lon, s.name, s.citySlug, s.slug || '#' + ankerId(s)])));
 // Finder auf der Startseite: Einträge mit Bedarfs-Maske, Orte und PLZ-Mittelpunkte
 const plzPts = {};
 for (const s of all) if (s.lat && /^\d{5}$/.test(s.postcode || '')) (plzPts[s.postcode] ||= []).push([s.lat, s.lon]);
@@ -182,7 +184,7 @@ const eintragId = (s) => `${s.cat}/${String(s.id).replace(/[^a-zA-Z0-9]+/g, '-')
 const catSlug = Object.fromEntries(CATEGORIES.map((c) => [c.key, c.slug]));
 // Finder-Daten zweigeteilt: kleine Kerndatei für Karte und Suche, Details (Adresse, Kontakt) in 1°-Kacheln, die erst beim Suchen geladen werden
 const finderAll = all.filter((s) => s.lat).map((s) => [catIndex[s.cat], r4(s.lat), r4(s.lon), s.name, [s.street, [s.postcode, cityBySlug.get(s.citySlug)?.label || s.city].filter(Boolean).join(' ')].filter(Boolean).join(', '),
-    s.slug ? `sanitaetshaus/${s.slug}/` : `${catSlug[s.cat]}/${s.citySlug}/`, bedarfMask(s), (s.phone || '').split(';')[0].trim(), s.openingHours || '', s.website || '', (s.email || '').split(';')[0].trim(), s.booking || '', (FEATURES_BY_CAT[s.cat] || []).reduce((m, f, i) => (s.features.includes(f.key) ? m | (1 << i) : m), 0), s.confirmedAt || '', s.featured ? 1 : 0, eintragId(s)]);
+    s.slug ? `sanitaetshaus/${s.slug}/` : `${catSlug[s.cat]}/${s.citySlug}/#${ankerId(s)}`, bedarfMask(s), (s.phone || '').split(';')[0].trim(), s.openingHours || '', s.website || '', (s.email || '').split(';')[0].trim(), s.booking || '', (FEATURES_BY_CAT[s.cat] || []).reduce((m, f, i) => (s.features.includes(f.key) ? m | (1 << i) : m), 0), s.confirmedAt || '', s.featured ? 1 : 0, eintragId(s)]);
 // Pro Kategorie eine Kerndatei (nur was für Karte und Filter nötig ist), dazu Detail-Kacheln je Kategorie und 1°-Feld.
 // So lädt die Startseite zuerst nur Orte und Sanitätshäuser, weitere Kategorien erst, wenn sie gebraucht werden.
 await rm('public/data/f', { recursive: true, force: true });

@@ -4,3 +4,4 @@ dist/
 reports/onpage/eigene-seite.json
 public/data/
 reports/link-check.json
+reports/ziel-*.png

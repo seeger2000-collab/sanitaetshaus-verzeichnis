@@ -1,9 +1,9 @@
 ---
 // Karte mit OpenStreetMap-Kacheln (Leaflet). Lädt erst, wenn sie ins Bild scrollt.
 import { u } from '../lib/url';
-interface Props { shops: { lat?: number; lon?: number; name: string; slug?: string }[]; color?: string }
+interface Props { shops: { lat?: number; lon?: number; name: string; slug?: string; cat?: string; id?: string }[]; color?: string }
 const color = Astro.props.color ?? '#0f6b57';
-const points = Astro.props.shops.filter((s) => s.lat).map((s) => [s.lat, s.lon, s.name, s.slug ? u(`/sanitaetshaus/${s.slug}/`) : '']);
+const points = Astro.props.shops.filter((s) => s.lat).map((s) => [s.lat, s.lon, s.name, s.slug ? u(`/sanitaetshaus/${s.slug}/`) : s.cat && s.id ? `#e-${s.cat}-${String(s.id).replace(/[^a-zA-Z0-9]+/g, '-')}` : '']);
 ---
 {points.length > 0 && (
   <div class="map" data-color={color} data-points={JSON.stringify(points)} role="region" aria-label="Karte der Sanitätshäuser"></div>

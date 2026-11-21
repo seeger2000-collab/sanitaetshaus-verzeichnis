@@ -34,7 +34,7 @@ const total = categories.reduce((a, c) => a + c.count, 0);
         return L.divIcon({ html: `<span style="background:${c.color};width:${s}px;height:${s}px">${n}</span>`, className: 'cl', iconSize: [s, s] }); } }));
     for (const [ci, lat, lon, name, citySlug, slug] of data) {
       const c = cats[ci];
-      const href = slug ? `${base}sanitaetshaus/${slug}/` : `${base}${c.slug}/${citySlug}/`;
+      const href = slug.startsWith('#') ? `${base}${c.slug}/${citySlug}/${slug}` : slug ? `${base}sanitaetshaus/${slug}/` : `${base}${c.slug}/${citySlug}/`;
       const pop = document.createElement('div');
       const a = document.createElement('a'); a.href = href; a.textContent = name;
       const s = document.createElement('div'); s.textContent = c.one; s.style.color = c.color;

@@ -13,7 +13,7 @@ const place = [p.postcode, p.postcode || showCity ? p.city : null].filter(Boolea
 const address = [p.street, place].filter(Boolean).join(', ');
 const hours = p.openingHours ? formatHours(p.openingHours) : null;
 ---
-<li class:list={["shop", { nocontact: !p.phone }]} data-features={p.features.join(' ')} data-wheelchair={p.wheelchair === 'yes' ? '1' : ''}>
+<li id={`e-${p.cat}-${String(p.id).replace(/[^a-zA-Z0-9]+/g, '-')}`} class:list={["shop", { nocontact: !p.phone }]} data-features={p.features.join(' ')} data-wheelchair={p.wheelchair === 'yes' ? '1' : ''}>
   <article class="card">
     <h3 data-oh={p.openingHours ?? undefined}>{p.name}</h3>
     <p class="addr">{address}{km != null && ` · ${km < 1 ? 'unter 1' : Math.round(km)} km`}{p.wheelchair === 'yes' && <span class="acc">{address ? ' · ' : ''}barrierefrei</span>}</p>
@@ -26,7 +26,8 @@ const hours = p.openingHours ? formatHours(p.openingHours) : null;
   </article>
 </li>
 <style>
-  .shop { list-style: none; }
+  .shop { list-style: none; scroll-margin-top: 80px; }
+  .shop:target .card { outline: 3px solid var(--brand); outline-offset: 2px; }
   h3 { margin: 0 0 4px; font-size: 1.1rem; }
   .addr, .hours { margin: 0; color: var(--muted); font-size: 0.95rem; }
   .hours { font-size: 0.85rem; margin-top: 4px; }

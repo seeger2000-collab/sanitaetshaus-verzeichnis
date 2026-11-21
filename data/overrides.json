@@ -174,5 +174,9 @@
   "confirmedAt": "2026-11-16",
   "featured": true,
   "featuredUntil": "2027-11-16"
+ },
+ "node/13180769633": {
+  "name": "Massagepraxis für Fußpflege",
+  "_quelle": "Tippfehler im OSM-Namen („Fußpflegeq“), JS 21.11.2026"
  }
 }

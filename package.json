@@ -13,6 +13,7 @@
     "preview": "astro preview",
     "check": "node scripts/check-site.mjs",
     "check:online": "node scripts/check-site.mjs --online",
+    "test:funktion": "node scripts/test-funktion.mjs",
     "indexnow": "node scripts/indexnow.mjs",
     "seo:onpage": "node scripts/seo/onpage.mjs scripts/seo/konkurrenz.txt > reports/onpage/konkurrenz.json",
     "seo:audit": "npm run build && node scripts/seo/onpage.mjs --dir dist --base https://sanitaetshaus-suche.de > reports/onpage/eigene-seite.json && node scripts/seo/audit.mjs reports/onpage/eigene-seite.json",
