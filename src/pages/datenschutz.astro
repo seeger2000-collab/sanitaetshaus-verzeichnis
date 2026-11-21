@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { ANALYTICS } from '../config';
 ---
 <Base noindex title="Datenschutz" description="Datenschutzerklärung der Sanitätshaus-Suche" crumbs={[{ href: '/datenschutz/', label: 'Datenschutz' }]}>
   <h1>Datenschutzerklärung</h1>
@@ -16,8 +17,13 @@ import Base from '../layouts/Base.astro';
   <h2>Besucherstatistik (GoatCounter)</h2>
   <p>Wir zählen Seitenaufrufe mit GoatCounter (goatcounter.com, Open-Source-Dienst von Martin Tournoij). GoatCounter speichert nur zusammengefasste Zahlen je Tag oder Stunde, die sich keiner Person zuordnen lassen. Ihre IP-Adresse wird übertragen, aber nur verwendet, um das Land zu bestimmen, und nicht gespeichert. Es werden keine Cookies gesetzt. Mehr dazu in der <a href="https://www.goatcounter.com/help/privacy">Datenschutzerklärung von GoatCounter</a>.</p>
   <p><strong>Ohne Einwilligung</strong> ruft Ihr Browser beim Laden einer Seite ein unsichtbares Zählbild von sanitaetshaus-suche.goatcounter.com ab. Übermittelt werden nur die Adresse der aufgerufenen Seite und die Angaben, die jeder Browser bei jedem Abruf ohnehin mitsendet (IP-Adresse, Browser und Betriebssystem, Spracheinstellung). Auf Informationen in Ihrem Gerät wird dabei nicht zugegriffen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer anonymen Zählung der Seitenaufrufe).</p>
+  <p><strong>Klicks auf Kontakt-Knöpfe:</strong> Tippen Sie bei einem Eintrag auf die Telefonnummer, „Route“, „E-Mail“, „Website“ oder „Online-Termin“, zählen wir das auf dieselbe Weise. Übermittelt werden nur die Art des Knopfs, eine Kennung des Eintrags und sein Name, zum Beispiel „Telefon, Sanitätshaus Muster“. So sehen wir, wie oft ein Betrieb über unsere Seite kontaktiert wird. Wer geklickt hat, erfahren wir nicht, und die Zahlen lassen sich keiner Person zuordnen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse, den Nutzen des Verzeichnisses für Besucher und Betriebe zu messen).</p>
   <p><strong>Mit Einwilligung</strong> (Hinweis unten auf der Seite, „Zustimmen“) lädt Ihr Browser stattdessen ein kleines Skript von gc.zgo.at. Es liest zusätzlich Bildschirmbreite und die Seite aus, von der Sie gekommen sind. Rechtsgrundlage ist Ihre Einwilligung (§ 25 Abs. 1 TDDDG, Art. 6 Abs. 1 lit. a DSGVO). Sie können sie jederzeit mit Wirkung für die Zukunft widerrufen: unten auf jeder Seite über „Statistik-Einstellungen“ und dann „Ablehnen“.</p>
   <p>Ihre Entscheidung speichern wir im lokalen Speicher Ihres Browsers, damit der Hinweis nicht bei jedem Seitenaufruf erscheint. Diese Speicherung ist dafür unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG).</p>
+  {ANALYTICS.cloudflareToken && (<>
+  <h2>Ladezeiten-Statistik (Cloudflare Web Analytics)</h2>
+  <p>Nur mit Ihrer Einwilligung (Hinweis unten auf der Seite, „Zustimmen“) lädt Ihr Browser zusätzlich ein Skript von static.cloudflareinsights.com (Cloudflare Inc., USA). Es übermittelt die aufgerufene Seite, die Seite, von der Sie kommen, Browser, Gerätetyp und Ladezeiten der Seite. Cloudflare setzt dafür keine Cookies und bildet nach eigenen Angaben keine Nutzerprofile. Ihre IP-Adresse wird übertragen, um das Land zu bestimmen. Rechtsgrundlage ist Ihre Einwilligung (§ 25 Abs. 1 TDDDG, Art. 6 Abs. 1 lit. a DSGVO), die Sie jederzeit über „Statistik-Einstellungen“ widerrufen können. Cloudflare ist nach dem EU-US Data Privacy Framework zertifiziert; die Übermittlung in die USA stützt sich auf den Angemessenheitsbeschluss der EU-Kommission vom 10. Juli 2023 (Art. 45 Abs. 1 DSGVO). Mehr dazu in der <a href="https://www.cloudflare.com/de-de/privacypolicy/">Datenschutzerklärung von Cloudflare</a>.</p>
+  </>)}
   <h2>Cookies</h2>
   <p>Wir setzen keine Cookies.</p>
   <h2>E-Mail</h2>

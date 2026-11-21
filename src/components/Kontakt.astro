@@ -1,13 +1,15 @@
 ---
 // Schnellzugriff: Anrufen, Route, Online-Termin, E-Mail, Website. Für Menschen, die schnell hin oder anrufen wollen.
-interface Props { phone?: string | null; email?: string | null; website?: string | null; booking?: string | null; lat?: number; lon?: number; name: string; city?: string }
+interface Props { phone?: string | null; email?: string | null; website?: string | null; booking?: string | null; lat?: number; lon?: number; name: string; city?: string; cat?: string; id?: string }
 import { u } from '../lib/url';
-const { phone, email, website, booking, lat, lon, name, city } = Astro.props;
+const { phone, email, website, booking, lat, lon, name, city, cat, id } = Astro.props;
+// Eintrags-ID für die Klickzählung, gleiche Bildung wie eintragId() in scripts/build-data.mjs
+const eid = cat && id ? `${cat}/${String(id).replace(/[^a-zA-Z0-9]+/g, '-')}` : undefined;
 const tel = phone?.split(';')[0].trim();
 const mail = email?.split(';')[0].trim();
 const route = lat ? `https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}` : null;
 ---
-<p class="kontakt">
+<p class="kontakt" data-eid={eid} data-n={name}>
   {tel && <a class="k k-tel" href={`tel:${tel.replace(/[^+\d]/g, '')}`} aria-label={`${name} anrufen`}>☎ {tel}</a>}
   {route && <a class="k" href={route} rel="nofollow noopener" target="_blank">Route</a>}
   {booking && <a class="k k-book" href={booking} rel="nofollow noopener" target="_blank">Online-Termin</a>}
