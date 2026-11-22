@@ -18,6 +18,7 @@ export const en: Dict = {
   start: 'Home',
   footerData: 'Data: © {osm} (ODbL), as of {date}. Services are read automatically from the businesses’ websites, without guarantee.',
   osmContributors: 'OpenStreetMap contributors',
+  whyLink: 'Why we built this site (in German)',
   legalNote: 'The legal notice (Impressum) and the privacy policy are available in German only. The German version is legally binding.',
   stat: {
     settings: 'Statistics settings',

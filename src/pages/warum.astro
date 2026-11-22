@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import { u } from '../lib/url';
+import { sgb5, sgb11, GKV_HINWEIS } from '../lib/recht';
+// Persönliche Geschichte von Jan Seeger (Text freigegeben von JS, 22.11.2026).
+// Kostenaussagen nur mit Normzitat (CLAUDE.md, src/lib/recht.ts).
+---
+<Base title="Warum Sanitätshaus-Suche? Die Geschichte hinter der Seite" description="Wie aus einem Fahrradunfall und der Suche nach einem Pflegebett die Idee für Sanitätshaus-Suche entstand: ein Ort, an dem Suchende schnell die richtigen Fachleute in ihrer Nähe finden." crumbs={[{ href: '/warum/', label: 'Warum Sanitätshaus-Suche' }]}>
+  <h1>Warum Sanitätshaus-Suche?</h1>
+  <p class="lead">Diese Seite gibt es, weil ich selbst einmal nicht weiterwusste.</p>
+
+  <h2>Sechs gebrochene Rippen und kein Bett, aus dem ich allein hochkam</h2>
+  <p>Nach einem schweren Fahrradunfall lag ich mit sechs gebrochenen Rippen im Bett. Jede Bewegung tat weh, und wegen meiner Statur war es mir nicht möglich, allein aufzustehen. Ein ganz normales Bett wurde plötzlich zum Hindernis. Was ich brauchte, war ein Pflegebett, das sich verstellen lässt und beim Aufrichten hilft, und zwar schnell.</p>
+  <p>Die Suche danach war nicht so einfach wie gedacht. Welches Sanitätshaus in der Nähe hat so etwas überhaupt? Wer verleiht, wer liefert, wer kommt nach Hause? Wer hat heute noch geöffnet, und wen erreicht man am Telefon? Die Antworten waren über viele Websites verstreut, manche Angaben veraltet, und gerade dann, wenn man selbst kaum sitzen kann, kostet jede weitere Suche Kraft.</p>
+
+  <h2>Die Idee: alles an einem Ort</h2>
+  <p>Aus dieser Erfahrung ist Sanitätshaus-Suche entstanden. Die Idee ist einfach: Wer Hilfe braucht, soll an <strong>einem</strong> Ort sehen, wer in der Nähe helfen kann, und diese Menschen direkt erreichen. Mit Telefonnummer, Öffnungszeiten, Anfahrt und, wo es das gibt, einem Link zur Online-Terminbuchung.</p>
+  <p>Inzwischen geht es nicht mehr nur um Sanitätshäuser. Auf der Seite finden Sie auch <a href={u('/physiotherapie/')}>Physiotherapie</a>, <a href={u('/pflegedienst/')}>Pflegedienste</a>, <a href={u('/pflegeheim/')}>Pflegeheime</a>, <a href={u('/fusspflege/')}>Fußpflege</a>, <a href={u('/rehasport/')}>Rehasport</a> und <a href={u('/krankenfahrten/')}>Krankenfahrten</a>. Denn nach einem Unfall, einer Operation oder wenn ein Angehöriger pflegebedürftig wird, braucht man selten nur eine einzige Stelle.</p>
+
+  <h2>Was Ihnen das bringt</h2>
+  <ul>
+    <li><strong>Schnell zum Ziel:</strong> Ort oder Postleitzahl eingeben, Umkreis wählen, fertig. Die Ergebnisse sind nach Entfernung sortiert.</li>
+    <li><strong>Direkt Kontakt:</strong> Anrufen, Route planen, E-Mail schreiben oder einen Termin buchen, mit einem Klick.</li>
+    <li><strong>Nach Bedarf suchen:</strong> Zum Beispiel nach <a href={u('/leistung/pflegebett/')}>Pflegebett</a>, <a href={u('/leistung/rollator/')}>Rollator</a> oder <a href={u('/leistung/kompressionsstruempfe/')}>Kompressionsstrümpfen</a>.</li>
+    <li><strong>Wissen, wer zahlt:</strong> Die <a href={u('/ratgeber/')}>Ratgeber</a> erklären, was Kranken- und Pflegekasse übernehmen, immer mit der Rechtsgrundlage.</li>
+    <li><strong>Kostenlos und ohne Anmeldung.</strong></li>
+  </ul>
+
+  <h2>Gut zu wissen: das Pflegebett</h2>
+  <p>Ein Pflegebett müssen Sie oft nicht selbst bezahlen. Brauchen Sie es wegen einer Krankheit oder nach einem Unfall, kann die Krankenkasse es als Hilfsmittel übernehmen (<Fragment set:html={sgb5('33', 'Abs. 1')} />), meist mit ärztlicher Verordnung. Haben Sie einen Pflegegrad, kommt auch die Pflegekasse in Frage (<Fragment set:html={sgb11('40', 'Abs. 1')} />). Mehr dazu im Ratgeber <a href={u('/ratgeber/pflegebett-beantragen-mieten/')}>Pflegebett beantragen oder mieten</a>.</p>
+  <p class="muted" set:html={GKV_HINWEIS} />
+
+  <h2>Woher die Angaben stammen</h2>
+  <p>Die Adressen kommen aus <a href="https://www.openstreetmap.org/">OpenStreetMap</a>, der freien Weltkarte, und von den Websites der Betriebe. Wie das genau funktioniert, steht unter <a href={u('/ueber/')}>So entstehen die Daten</a>. Fehlt ein Betrieb oder stimmt etwas nicht, können Sie es <a href={u('/eintrag/')}>hier melden</a>. Ich korrigiere es dann.</p>
+  <p>Betriebe können ihren Eintrag kostenlos bestätigen lassen. Bezahlte Platzierungen sind immer als „Anzeige“ gekennzeichnet.</p>
+
+  <h2>Kontakt</h2>
+  <p>Ich freue mich über Rückmeldungen, Hinweise und Verbesserungsvorschläge: <a href="mailto:info@sanitaetshaus-suche.de">info@sanitaetshaus-suche.de</a></p>
+  <p>Jan Seeger, Eichenau</p>
+</Base>

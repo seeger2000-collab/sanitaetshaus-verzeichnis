@@ -23,6 +23,7 @@ export const de = {
   footerData: 'Daten: © {osm} (ODbL), Stand {date}. Leistungen automatisch von den Websites der Häuser ausgelesen, ohne Gewähr.',
   osmContributors: 'OpenStreetMap-Mitwirkende',
   // nur in Übersetzungen gefüllt: Hinweis, dass Impressum und Datenschutz auf Deutsch maßgeblich sind
+  whyLink: 'Warum Sanitätshaus-Suche',
   legalNote: '',
   stat: {
     settings: 'Statistik-Einstellungen',
