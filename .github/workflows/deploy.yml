@@ -70,3 +70,27 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v5
+
+  # Nach der Veröffentlichung nur neue oder geänderte Seiten an IndexNow (Bing) melden, nicht die ganze Sitemap
+  indexnow:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          path: pages
+      - name: Geänderte Seiten melden
+        run: |
+          mkdir dist && tar -xf pages/artifact.tar -C dist
+          node scripts/indexnow.mjs --senden
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/indexnow.json
+          git diff --cached --quiet || (git commit -m "IndexNow-Stand $(date -u +%F)" && git pull --rebase -q && git push)
