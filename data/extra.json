@@ -27288,5 +27288,652 @@
     "name": "Günzburg"
    }
   }
+ },
+ {
+  "id": "extra/pflegedienst-lichtblick-gmbh-co-kg-stuetzpunkt-buc-buch",
+  "cat": "pflege",
+  "quelle": "https://www.pflege-lichtblick.de/kontakt (2026-11-22)",
+  "tags": {
+   "name": "Pflegedienst Lichtblick GmbH & Co. KG – Stützpunkt Buch",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "9",
+   "addr:postcode": "89290",
+   "addr:city": "Buch",
+   "phone": "+49 7343 9298877",
+   "website": "https://www.pflege-lichtblick.de/"
+  },
+  "location": {
+   "lat": 48.224335,
+   "lon": 10.179539
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62469",
+    "name": "Landkreis Neu-Ulm"
+   },
+   "7": {
+    "id": "relation/2617749",
+    "name": "Buch (VGem)"
+   },
+   "8": {
+    "id": "relation/941086",
+    "name": "Buch"
+   }
+  }
+ },
+ {
+  "id": "extra/oekumenische-sozialstation-elchingen-e-v-elchingen",
+  "cat": "pflege",
+  "quelle": "https://www.haustobit.de/ambulanter-dienst/ (2026-11-22)",
+  "tags": {
+   "name": "Ökumenische Sozialstation Elchingen e.V.",
+   "addr:street": "Donaustraße",
+   "addr:housenumber": "13",
+   "addr:postcode": "89275",
+   "addr:city": "Elchingen",
+   "phone": "+49 731 9277751",
+   "website": "https://www.haustobit.de/",
+   "email": "ambulanterdienst@haustobit.de"
+  },
+  "location": {
+   "lat": 48.436118,
+   "lon": 10.052974
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62469",
+    "name": "Landkreis Neu-Ulm"
+   },
+   "8": {
+    "id": "relation/941078",
+    "name": "Elchingen"
+   }
+  }
+ },
+ {
+  "id": "extra/pflege-zuhause-pflegedienst-elchingen-elchingen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-elchingen.de/impressum (2026-11-22)",
+  "tags": {
+   "name": "Pflege Zuhause (Pflegedienst Elchingen)",
+   "addr:street": "Milchgasse",
+   "addr:housenumber": "14",
+   "addr:postcode": "89275",
+   "addr:city": "Elchingen",
+   "phone": "+49 7308 41706",
+   "website": "https://www.pflegedienst-elchingen.de/",
+   "email": "info@pflegedienst-elchingen.de"
+  },
+  "location": {
+   "lat": 48.458313,
+   "lon": 10.106682
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62469",
+    "name": "Landkreis Neu-Ulm"
+   },
+   "8": {
+    "id": "relation/941078",
+    "name": "Elchingen"
+   }
+  }
+ },
+ {
+  "id": "extra/illersenio-sozialstation-illertissen-caritasverein-illertissen",
+  "cat": "pflege",
+  "quelle": "https://www.illersenio.de/aktiv-im-alter/ambulante-pflege (2026-11-22)",
+  "tags": {
+   "name": "illerSENIO Sozialstation Illertissen (Caritasverein Illertissen)",
+   "addr:street": "Pestalozzistraße",
+   "addr:housenumber": "6",
+   "addr:postcode": "89257",
+   "addr:city": "Illertissen",
+   "phone": "+49 7303 9677100",
+   "website": "https://www.illersenio.de/",
+   "email": "info@illersenio.de"
+  },
+  "location": {
+   "lat": 48.224428,
+   "lon": 10.09657
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62469",
+    "name": "Landkreis Neu-Ulm"
+   },
+   "8": {
+    "id": "relation/941089",
+    "name": "Illertissen"
+   }
+  }
+ },
+ {
+  "id": "extra/illersenio-sozialstation-voehringen-caritasverein--voehringen",
+  "cat": "pflege",
+  "quelle": "https://www.illersenio.de/aktiv-im-alter/ambulante-pflege (2026-11-22)",
+  "tags": {
+   "name": "illerSENIO Sozialstation Vöhringen (Caritasverein Illertissen)",
+   "addr:street": "Sperberweg",
+   "addr:housenumber": "4",
+   "addr:postcode": "89269",
+   "addr:city": "Vöhringen",
+   "phone": "+49 7306 9677200",
+   "website": "https://www.illersenio.de/",
+   "email": "info@illersenio.de"
+  },
+  "location": {
+   "lat": 48.285562,
+   "lon": 10.075032
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62469",
+    "name": "Landkreis Neu-Ulm"
+   },
+   "8": {
+    "id": "relation/941075",
+    "name": "Vöhringen"
+   }
+  }
+ },
+ {
+  "id": "extra/illersenio-sozialstation-weissenhorn-caritasverein-weissenhorn",
+  "cat": "pflege",
+  "quelle": "https://www.illersenio.de/aktiv-im-alter/ambulante-pflege (2026-11-22)",
+  "tags": {
+   "name": "illerSENIO Sozialstation Weißenhorn (Caritasverein Illertissen)",
+   "addr:street": "Bodelschwinghstraße",
+   "addr:housenumber": "7",
+   "addr:postcode": "89264",
+   "addr:city": "Weißenhorn",
+   "phone": "+49 7309 5757",
+   "website": "https://www.illersenio.de/",
+   "email": "info@illersenio.de"
+  },
+  "location": {
+   "lat": 48.304704,
+   "lon": 10.166504
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62469",
+    "name": "Landkreis Neu-Ulm"
+   },
+   "8": {
+    "id": "relation/941081",
+    "name": "Weißenhorn"
+   }
+  }
+ },
+ {
+  "id": "extra/illersenio-sozialstation-neu-ulm-caritasverein-ill-neu-ulm",
+  "cat": "pflege",
+  "quelle": "https://www.illersenio.de/aktiv-im-alter/ambulante-pflege (2026-11-22)",
+  "tags": {
+   "name": "illerSENIO Sozialstation Neu-Ulm (Caritasverein Illertissen)",
+   "addr:street": "Petrusplatz",
+   "addr:housenumber": "8",
+   "addr:postcode": "89231",
+   "addr:city": "Neu-Ulm",
+   "phone": "+49 731 73256",
+   "website": "https://www.illersenio.de/",
+   "email": "info@illersenio.de"
+  },
+  "location": {
+   "lat": 48.393694,
+   "lon": 9.999557
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62469",
+    "name": "Landkreis Neu-Ulm"
+   },
+   "8": {
+    "id": "relation/941087",
+    "name": "Neu-Ulm"
+   }
+  }
+ },
+ {
+  "id": "extra/asb-kreisverband-neu-ulm-e-v-illertissen",
+  "cat": "pflege",
+  "quelle": "https://www.asb-neu-ulm.de/unsere-angebote/seniorenhilfe/ambulante-pflege (2026-11-22)",
+  "tags": {
+   "name": "ASB Kreisverband Neu-Ulm e.V.",
+   "addr:street": "Eschenweg",
+   "addr:housenumber": "10",
+   "addr:postcode": "89257",
+   "addr:city": "Illertissen",
+   "phone": "+49 7303 96630",
+   "website": "https://www.asb-neu-ulm.de/",
+   "email": "info@asb-nu.de"
+  },
+  "location": {
+   "lat": 48.221375,
+   "lon": 10.098274
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62469",
+    "name": "Landkreis Neu-Ulm"
+   },
+   "8": {
+    "id": "relation/941089",
+    "name": "Illertissen"
+   }
+  }
+ },
+ {
+  "id": "extra/caritas-pflegedienst-st-damian-neu-ulm",
+  "cat": "pflege",
+  "quelle": "https://ambulante-pflege.cab-caritas.de/ueber-uns/sozialstationen/caritas-pflegedienst-st-damian-in-neu-ulm/ (2026-11-22)",
+  "tags": {
+   "name": "Caritas-Pflegedienst St. Damian",
+   "addr:street": "Heinz-Rühmann-Straße",
+   "addr:housenumber": "14",
+   "addr:postcode": "89231",
+   "addr:city": "Neu-Ulm",
+   "phone": "+49 731 88071680",
+   "website": "https://ambulante-pflege.cab-caritas.de/ueber-uns/sozialstationen/caritas-pflegedienst-st-damian-in-neu-ulm/",
+   "email": "info@damian.cas-caritas.de"
+  },
+  "location": {
+   "lat": 48.38628,
+   "lon": 10.00776
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62469",
+    "name": "Landkreis Neu-Ulm"
+   },
+   "8": {
+    "id": "relation/941087",
+    "name": "Neu-Ulm"
+   }
+  }
+ },
+ {
+  "id": "extra/avizena-neu-ulm-kg-ambulanter-pflegedienst-neu-ulm",
+  "cat": "pflege",
+  "quelle": "https://mobiler-pflegedienst-ulm.de/impressum-und-datenschutz.html (2026-11-22)",
+  "tags": {
+   "name": "AviZenA Neu-Ulm KG Ambulanter Pflegedienst",
+   "addr:street": "Wiblinger Straße",
+   "addr:housenumber": "26",
+   "addr:postcode": "89231",
+   "addr:city": "Neu-Ulm",
+   "phone": "+49 731 9809743",
+   "website": "https://mobiler-pflegedienst-ulm.de/"
+  },
+  "location": {
+   "lat": 48.387869,
+   "lon": 9.988796
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62469",
+    "name": "Landkreis Neu-Ulm"
+   },
+   "8": {
+    "id": "relation/941087",
+    "name": "Neu-Ulm"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-k-i-neu-ulm",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-ki.de/impressum (2026-11-22)",
+  "tags": {
+   "name": "Pflegedienst K & I",
+   "addr:street": "Gerstmayrstraße",
+   "addr:housenumber": "35",
+   "addr:postcode": "89233",
+   "addr:city": "Neu-Ulm",
+   "phone": "+49 731 92600080",
+   "website": "https://pflegedienst-ki.de/",
+   "email": "info@pflegedienst-ki.de"
+  },
+  "location": {
+   "lat": 48.411784,
+   "lon": 10.065036
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62469",
+    "name": "Landkreis Neu-Ulm"
+   },
+   "8": {
+    "id": "relation/941087",
+    "name": "Neu-Ulm"
+   }
+  }
+ },
+ {
+  "id": "extra/pflege-fuer-menschen-zuhause-gmbh-neu-ulm",
+  "cat": "pflege",
+  "quelle": "https://pflege-fuer-menschen.de/index.php/pfm-hilfe-und-information/pfm-impressum (2026-11-22)",
+  "tags": {
+   "name": "Pflege für Menschen Zuhause GmbH",
+   "addr:street": "Gerstmayrstraße",
+   "addr:housenumber": "3",
+   "addr:postcode": "89233",
+   "addr:city": "Neu-Ulm",
+   "phone": "+49 731 71889594",
+   "website": "https://pflege-fuer-menschen.de/",
+   "email": "pflegedienst@pflege-fuer-menschen.de"
+  },
+  "location": {
+   "lat": 48.41369,
+   "lon": 10.068113
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62469",
+    "name": "Landkreis Neu-Ulm"
+   },
+   "8": {
+    "id": "relation/941087",
+    "name": "Neu-Ulm"
+   }
+  }
+ },
+ {
+  "id": "extra/sozialstation-st-elisabeth-senden-senden",
+  "cat": "pflege",
+  "quelle": "https://www.stelisabeth-senden.de/st-elisabeth/sozialstation-st-elisabeth-senden (2026-11-22)",
+  "tags": {
+   "name": "Sozialstation St. Elisabeth Senden",
+   "addr:street": "Zeisestraße",
+   "addr:housenumber": "19",
+   "addr:postcode": "89250",
+   "addr:city": "Senden",
+   "phone": "+49 7307 8080",
+   "website": "https://www.stelisabeth-senden.de/",
+   "email": "sozialstation@stelisabeth-senden.de"
+  },
+  "location": {
+   "lat": 48.326017,
+   "lon": 10.038491
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62469",
+    "name": "Landkreis Neu-Ulm"
+   },
+   "8": {
+    "id": "relation/941091",
+    "name": "Senden"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/sozialstation-st-elisabeth-senden-senden",
+  "cat": "fahrt",
+  "quelle": "https://www.stelisabeth-senden.de/st-elisabeth/sozialstation-st-elisabeth-senden (2026-11-22)",
+  "tags": {
+   "name": "Sozialstation St. Elisabeth Senden",
+   "addr:street": "Zeisestraße",
+   "addr:housenumber": "19",
+   "addr:postcode": "89250",
+   "addr:city": "Senden",
+   "phone": "+49 7307 8080",
+   "website": "https://www.stelisabeth-senden.de/",
+   "email": "sozialstation@stelisabeth-senden.de"
+  },
+  "location": {
+   "lat": 48.326017,
+   "lon": 10.038491
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62469",
+    "name": "Landkreis Neu-Ulm"
+   },
+   "8": {
+    "id": "relation/941091",
+    "name": "Senden"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegedienst-luna-senden",
+  "cat": "pflege",
+  "quelle": "https://pflege-luna.de/impressum (2026-11-22)",
+  "tags": {
+   "name": "Pflegedienst Luna",
+   "addr:street": "Haydnstraße",
+   "addr:housenumber": "7",
+   "addr:postcode": "89250",
+   "addr:city": "Senden",
+   "phone": "+49 7307 2019130",
+   "website": "https://pflege-luna.de/",
+   "email": "info@pflege-luna.de"
+  },
+  "location": {
+   "lat": 48.328593,
+   "lon": 10.042844
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62469",
+    "name": "Landkreis Neu-Ulm"
+   },
+   "8": {
+    "id": "relation/941091",
+    "name": "Senden"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-wuest-gmbh-weissenhorn",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-wuest.de/impressum/ (2026-11-22)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Wüst GmbH",
+   "addr:street": "Hauptplatz",
+   "addr:housenumber": "5",
+   "addr:postcode": "89264",
+   "addr:city": "Weißenhorn",
+   "phone": "+49 7309 425090",
+   "website": "https://pflegedienst-wuest.de/",
+   "email": "info@pflegedienst-wuest.de"
+  },
+  "location": {
+   "lat": 48.303945,
+   "lon": 10.160585
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62469",
+    "name": "Landkreis Neu-Ulm"
+   },
+   "8": {
+    "id": "relation/941081",
+    "name": "Weißenhorn"
+   }
+  }
+ },
+ {
+  "id": "extra/fau-frei-atmen-ulm-gmbh-ambulante-intensivpflege-neu-ulm",
+  "cat": "pflege",
+  "quelle": "https://fau-ulm.de/kontakt/ (2026-11-22)",
+  "tags": {
+   "name": "FAU frei atmen Ulm GmbH – Ambulante Intensivpflege",
+   "addr:street": "Edisonallee",
+   "addr:housenumber": "15",
+   "addr:postcode": "89231",
+   "addr:city": "Neu-Ulm",
+   "phone": "+49 731 94587055",
+   "website": "https://fau-ulm.de/",
+   "email": "info@fau-ulm.de"
+  },
+  "location": {
+   "lat": 48.377501,
+   "lon": 10.007348
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62469",
+    "name": "Landkreis Neu-Ulm"
+   },
+   "8": {
+    "id": "relation/941087",
+    "name": "Neu-Ulm"
+   }
+  }
  }
 ]

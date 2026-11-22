@@ -178,5 +178,16 @@
  "node/13180769633": {
   "name": "Massagepraxis für Fußpflege",
   "_quelle": "Tippfehler im OSM-Namen („Fußpflegeq“), JS 21.11.2026"
+ },
+ "node/4338228692": {
+  "_ausblenden": "Abgelöst durch illerSENIO Sozialstation Neu-Ulm (Petrusplatz 8), alte Website tot, laut illersenio.de 22.11.2026"
+ },
+ "node/12010533935": {
+  "_quelle": "https://pflegedienst-medina.de/impressum/ (2026-11-22)",
+  "street": "Stadtcenter 16",
+  "postcode": "89269",
+  "phone": "+49 7306 923258",
+  "website": "https://pflegedienst-medina.de/",
+  "email": "info@pflegedienst-medina.de"
  }
 }
