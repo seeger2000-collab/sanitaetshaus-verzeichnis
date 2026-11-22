@@ -12,7 +12,7 @@ Lesen, wenn eine neue Sprache dazukommt oder Oberflächentexte geändert werden.
 - Sprachhinweis: Passt die Browsersprache zu einer Übersetzung der aktuellen Seite, erscheint oben einmal „Diese Seite auf X anzeigen?“. Keine automatische Umleitung. Die Wahl wird im Browser unter `sh-sprache` gespeichert.
 
 ## Neue Sprache (z. B. Türkisch `tr`)
-1. `src/i18n/en.ts` nach `src/i18n/tr.ts` kopieren, `code`, `htmlLang`, `ogLocale`, `dateLocale`, `decimal` anpassen und alle Texte übersetzen. Bei `bedarf.*.words` Suchwörter in der neuen Sprache eintragen.
+1. `src/i18n/en.ts` nach `src/i18n/tr.ts` kopieren, `flag` (Flagge als SVG), `switchTo`, `code`, `htmlLang`, `ogLocale`, `dateLocale`, `decimal` anpassen und alle Texte übersetzen. Bei `bedarf.*.words` Suchwörter in der neuen Sprache eintragen.
 2. In `src/i18n/index.ts` in `LANGS` eintragen.
 3. In `astro.config.mjs` bei `sitemap({ i18n: { locales } })` eintragen.
 4. Seiten anlegen: `src/pages/en/` nach `src/pages/tr/` kopieren und darin `const lang = 'en'` bzw. `LANGS.en` auf `tr` ändern.
