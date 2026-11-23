@@ -28595,5 +28595,661 @@
     "name": "Mindelheim"
    }
   }
+ },
+ {
+  "id": "extra/esv-sportfreunde-muenchen-neuaubing-e-v-muenchen",
+  "cat": "reha",
+  "quelle": "https://www.esv-neuaubing.de/anfahrt-kontakt (2026-11-23)",
+  "tags": {
+   "name": "ESV Sportfreunde München-Neuaubing e.V.",
+   "addr:street": "Papinstraße",
+   "addr:housenumber": "22",
+   "addr:postcode": "81249",
+   "addr:city": "München",
+   "phone": "+49 89 3090417-0",
+   "website": "https://www.esv-neuaubing.de/abteilungen/reha-sport",
+   "email": "info@esv-neuaubing.de"
+  },
+  "location": {
+   "lat": 48.139421,
+   "lon": 11.416994
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "herz",
+    "lunge",
+    "neuro",
+    "krebs"
+   ]
+  }
+ },
+ {
+  "id": "extra/tsv-milbertshofen-e-v-muenchen",
+  "cat": "reha",
+  "quelle": "https://www.tsv-milbertshofen.de/verwaltung/reha-sport/ (2026-11-23)",
+  "tags": {
+   "name": "TSV Milbertshofen e.V.",
+   "addr:street": "Hans-Denzinger-Straße",
+   "addr:housenumber": "2",
+   "addr:postcode": "80807",
+   "addr:city": "München",
+   "phone": "+49 89 3582716",
+   "website": "https://www.tsv-milbertshofen.de/verwaltung/reha-sport/",
+   "email": "brunsch@tsv-milbertshofen.de"
+  },
+  "location": {
+   "lat": 48.180235,
+   "lon": 11.575991
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/kuratorium-fuer-praevention-und-rehabilitation-der-muenchen",
+  "cat": "reha",
+  "quelle": "https://www.ktu.vo.tum.de/de/abteilungen/herz-kreislauf-und-gefaessbiologie/herzgruppen/index.html (2026-11-23)",
+  "tags": {
+   "name": "Kuratorium für Prävention und Rehabilitation der Technischen Universität München e.V.",
+   "addr:street": "Am Olympiacampus",
+   "addr:housenumber": "11",
+   "addr:postcode": "80809",
+   "addr:city": "München",
+   "phone": "+49 89 28924420",
+   "website": "https://www.ktu.vo.tum.de/",
+   "email": "kuratorium@lrz.tum.de"
+  },
+  "location": {
+   "lat": 48.178563,
+   "lon": 11.544063
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "herz",
+    "neuro",
+    "krebs"
+   ]
+  }
+ },
+ {
+  "id": "extra/aquabell-schwimmschule-zeitler-muenchen",
+  "cat": "reha",
+  "quelle": "https://www.aquabell.de/rehasport (2026-11-23)",
+  "tags": {
+   "name": "Aquabell Schwimmschule Zeitler",
+   "addr:street": "Schwanseestraße",
+   "addr:housenumber": "81",
+   "addr:postcode": "81539",
+   "addr:city": "München",
+   "phone": "+49 89 69371740",
+   "website": "https://www.aquabell.de/rehasport",
+   "email": "info@aquabell.de"
+  },
+  "location": {
+   "lat": 48.103543,
+   "lon": 11.597545
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "wasser"
+   ]
+  }
+ },
+ {
+  "id": "extra/zab-e-v-zusammen-aktiv-bleiben-muenchen",
+  "cat": "reha",
+  "quelle": "https://www.zab-ev.de/kontakt/ (2026-11-23)",
+  "tags": {
+   "name": "ZAB e.V. Zusammen Aktiv Bleiben",
+   "addr:street": "Schleißheimer Straße",
+   "addr:housenumber": "161",
+   "addr:postcode": "80797",
+   "addr:city": "München",
+   "phone": "+49 89 299920",
+   "website": "https://www.zab-ev.de/",
+   "email": "zab@zab-ev.de"
+  },
+  "location": {
+   "lat": 48.166084,
+   "lon": 11.564455
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/siemens-active-muenchen-e-v-muenchen",
+  "cat": "reha",
+  "quelle": "https://www.sam-mch.de/sportabteilungen/rehasport (2026-11-23)",
+  "tags": {
+   "name": "Siemens Active München e.V.",
+   "addr:street": "Otto-Hahn-Ring",
+   "addr:housenumber": "6",
+   "addr:postcode": "81739",
+   "addr:city": "München",
+   "phone": "+49 89 4161237 74",
+   "website": "https://www.sam-mch.de/sportabteilungen/rehasport",
+   "email": "info@sam-mch.de"
+  },
+  "location": {
+   "lat": 48.090627,
+   "lon": 11.64829
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "herz",
+    "krebs"
+   ]
+  }
+ },
+ {
+  "id": "extra/spiel-raum-bildung-gesundheit-sport-e-v-muenchen",
+  "cat": "reha",
+  "quelle": "https://spielraum-ev.org/impressum/ (2026-11-23)",
+  "tags": {
+   "name": "spiel raum bildung – gesundheit – sport e.V.",
+   "addr:street": "Trimburgstraße",
+   "addr:housenumber": "2",
+   "addr:postcode": "81249",
+   "addr:city": "München",
+   "phone": "+49 89 74260861",
+   "website": "https://spielraum-ev.org/gesundheit/rehabilitation/",
+   "email": "spielraum.schule@mail.de"
+  },
+  "location": {
+   "lat": 48.139697,
+   "lon": 11.429156
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "lunge"
+   ]
+  }
+ },
+ {
+  "id": "extra/zar-muenchen-nord-muenchen",
+  "cat": "reha",
+  "quelle": "https://www.zar.de/muenchen-nord/herzsport (2026-11-23)",
+  "tags": {
+   "name": "ZAR München Nord",
+   "addr:street": "Frankfurter Ring",
+   "addr:housenumber": "15-17",
+   "addr:postcode": "80807",
+   "addr:city": "München",
+   "phone": "+49 89 2323810",
+   "website": "https://www.zar.de/muenchen-nord/herzsport",
+   "email": "info@zar-muenchen-nord.de"
+  },
+  "location": {
+   "lat": 48.186885,
+   "lon": 11.602038
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "herz"
+   ]
+  }
+ },
+ {
+  "id": "extra/tsv-muenchen-solln-e-v-muenchen",
+  "cat": "reha",
+  "quelle": "https://www.tsvsolln.de/reha/ (2026-11-23)",
+  "tags": {
+   "name": "TSV München-Solln e.V.",
+   "addr:street": "Herterichstraße",
+   "addr:housenumber": "141",
+   "addr:postcode": "81476",
+   "addr:city": "München",
+   "phone": "+49 89 7917941",
+   "website": "https://www.tsvsolln.de/reha/",
+   "email": "info@tsvsolln.de"
+  },
+  "location": {
+   "lat": 48.079974,
+   "lon": 11.498197
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "herz"
+   ]
+  }
+ },
+ {
+  "id": "extra/zar-muenchen-west-muenchen",
+  "cat": "reha",
+  "quelle": "https://www.zar.de/muenchen-west/rehasport (2026-11-23)",
+  "tags": {
+   "name": "ZAR München West",
+   "addr:street": "Garmischer Straße",
+   "addr:housenumber": "7",
+   "addr:postcode": "80339",
+   "addr:city": "München",
+   "phone": "+49 89 5403567-53",
+   "website": "https://www.zar.de/muenchen-west/rehasport",
+   "email": "nachsorge@zar-muenchen-west.de"
+  },
+  "location": {
+   "lat": 48.132454,
+   "lon": 11.533093
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/mednord-fitnessfloor-muenchen",
+  "cat": "reha",
+  "quelle": "https://www.fitnessfloor.de/angebote/rehasport/ (2026-11-23)",
+  "tags": {
+   "name": "Mednord fitnessfloor",
+   "addr:street": "Heidemannstraße",
+   "addr:housenumber": "5b",
+   "addr:postcode": "80939",
+   "addr:city": "München",
+   "phone": "+49 89 3190830",
+   "website": "https://www.fitnessfloor.de/angebote/rehasport/",
+   "email": "info@fitnessfloor.de"
+  },
+  "location": {
+   "lat": 48.201915,
+   "lon": 11.58711
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/sport-verein-muenchen-von-1880-e-v-muenchen",
+  "cat": "reha",
+  "quelle": "https://www.sv1880.de/verein/geschaeftsstelle/ (2026-11-23)",
+  "tags": {
+   "name": "Sport-Verein München von 1880 e.V.",
+   "addr:street": "Tübinger Straße",
+   "addr:housenumber": "10",
+   "addr:postcode": "80686",
+   "addr:city": "München",
+   "phone": "+49 89 571556",
+   "website": "https://www.sv1880.de/sportangebot/reha-sport/",
+   "email": "geschaeftsstelle@sv1880.de"
+  },
+  "location": {
+   "lat": 48.132211,
+   "lon": 11.524351
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/phc-pro-health-club-muenchen-muenchen",
+  "cat": "reha",
+  "quelle": "https://phc-muenchen.de/rehasport (2026-11-23)",
+  "tags": {
+   "name": "phc Pro-Health-Club München",
+   "addr:street": "Wilhelm-Wagenfeld-Straße",
+   "addr:housenumber": "6",
+   "addr:postcode": "80807",
+   "addr:city": "München",
+   "phone": "+49 89 4613350",
+   "website": "https://phc-muenchen.de/rehasport",
+   "email": "kontakt@phc-muenchen.de"
+  },
+  "location": {
+   "lat": 48.18263,
+   "lon": 11.593741
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/rehavital-gesundheitssport-e-v-muenchen-neuperlach-muenchen",
+  "cat": "reha",
+  "quelle": "https://www.rehavital.info/rehavital-gesundheitssport-muenchen-neuperlach (2026-11-23)",
+  "tags": {
+   "name": "rehavital gesundheitssport e.V. München Neuperlach (Womans Fitness Neuperlach)",
+   "addr:street": "Albert-Schweitzer-Straße",
+   "addr:housenumber": "74",
+   "addr:postcode": "81735",
+   "addr:city": "München",
+   "phone": "+49 89 66682030",
+   "website": "https://www.rehavital.info/rehavital-gesundheitssport-muenchen-neuperlach",
+   "email": "rehavital@womans-neuperlach.de"
+  },
+  "location": {
+   "lat": 48.106489,
+   "lon": 11.644354
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  }
+ },
+ {
+  "id": "extra/fc-hertha-muenchen-e-v-koronarsport-muenchen",
+  "cat": "reha",
+  "quelle": "https://fcherthamuenchen.de/koronar/ueberblick/ (2026-11-23)",
+  "tags": {
+   "name": "FC Hertha München e.V. – Koronarsport",
+   "addr:street": "Drygalski-Allee",
+   "addr:housenumber": "2",
+   "addr:postcode": "81477",
+   "addr:city": "München",
+   "phone": "+49 89 7809379",
+   "website": "https://fcherthamuenchen.de/koronar/ueberblick/",
+   "email": "info@fchertha.de"
+  },
+  "location": {
+   "lat": 48.098063,
+   "lon": 11.507308
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "herz"
+   ]
+  }
+ },
+ {
+  "id": "extra/tsv-muenchen-grosshadern-von-1926-e-v-muenchen",
+  "cat": "reha",
+  "quelle": "https://tsv-grosshadern.de/kontakt/ (2026-11-23)",
+  "tags": {
+   "name": "TSV München-Großhadern von 1926 e.V.",
+   "addr:street": "Heiglhofstraße",
+   "addr:housenumber": "25",
+   "addr:postcode": "81377",
+   "addr:city": "München",
+   "phone": "+49 89 7146705",
+   "website": "https://tsv-grosshadern.de/mc-events/herzsport-koronar/",
+   "email": "verwaltung@tsv-grosshadern.de"
+  },
+  "location": {
+   "lat": 48.111781,
+   "lon": 11.478245
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "herz"
+   ]
+  }
+ },
+ {
+  "id": "extra/besser-atmen-in-muenchen-e-v-lungensport-muenchen",
+  "cat": "reha",
+  "quelle": "https://www.besser-atmen-in-münchen.de/ (2026-11-23)",
+  "tags": {
+   "name": "Besser-Atmen-in-München e.V. (Lungensport)",
+   "addr:street": "Fromundstraße",
+   "addr:housenumber": "2",
+   "addr:postcode": "81547",
+   "addr:city": "München",
+   "phone": "+49 89 62103547",
+   "website": "https://www.besser-atmen-in-münchen.de/",
+   "email": "baim1@gmx.de"
+  },
+  "location": {
+   "lat": 48.107963,
+   "lon": 11.575167
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "lunge"
+   ]
+  }
+ },
+ {
+  "id": "extra/deutsche-rheuma-liga-landesverband-bayern-e-v-arbe-muenchen",
+  "cat": "reha",
+  "quelle": "https://www.rheuma-liga-muenchen.de/kontakt.html (2026-11-23)",
+  "tags": {
+   "name": "Deutsche Rheuma-Liga Landesverband Bayern e.V. – Arbeitsgemeinschaft München",
+   "addr:street": "Bonner Platz",
+   "addr:housenumber": "1",
+   "addr:postcode": "80803",
+   "addr:city": "München",
+   "phone": "+49 89 309542",
+   "website": "https://www.rheuma-liga-muenchen.de/bewegung.html",
+   "email": "kontakt@rheuma-liga-muenchen.de"
+  },
+  "location": {
+   "lat": 48.166998,
+   "lon": 11.577888
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/2145274",
+    "name": "Oberbayern"
+   },
+   "6": {
+    "id": "relation/62428",
+    "name": "München"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "funktionstraining",
+    "wasser"
+   ]
+  }
  }
 ]

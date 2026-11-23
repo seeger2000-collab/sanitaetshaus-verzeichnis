@@ -192,5 +192,14 @@
  },
  "node/12151404770": {
   "_ausblenden": "Dublette von node/5231446995 (gleiche Adresse und Telefon, Wochen-Check 23.11.2026)"
+ },
+ "node/4466595772": {
+  "_quelle": "https://thera-plus.com/physiotherapie-muenchen/reha-sport/ (2026-11-23)",
+  "street": "Koppstraße 18",
+  "postcode": "81379",
+  "phone": "+49 89 72019697",
+  "website": "https://thera-plus.com/physiotherapie-muenchen/reha-sport/",
+  "lat": 48.094495,
+  "lon": 11.533613
  }
 }

@@ -1,11 +1,15 @@
 // Übernimmt geprüfte Pflegedienste (von den eigenen Websites der Anbieter) in data/extra.json bzw. data/overrides.json.
-// Aufruf: node scripts/extra-merge.mjs <ergebnis.json> [<ergebnis2.json> …]
+// Aufruf: node scripts/extra-merge.mjs [--cat reha] <ergebnis.json> [<ergebnis2.json> …]
+// --cat reha: Rehasport-Anbieter; „angebote“ je Eintrag (Schlüssel aus REHA_FEATURES) werden zu Leistungen.
 // Eingabe je Eintrag: { name, street, housenumber, postcode, city, phone, email, website, lat, lon, fahrdienst, quelle, nurIntern? }
 // fahrdienst: Zitat von der Website. Nennt es ein Fahren (Fahrdienst, Fahrten, fahren), kommt der Dienst auch zu den Krankenfahrten.
 import { readFile, writeFile } from 'node:fs/promises';
 
 const readJson = async (f, d) => { try { return JSON.parse(await readFile(f, 'utf8')); } catch { return d; } };
-const osm = (await readJson('data/osm/pflege.json')).shops;
+const ci = process.argv.indexOf('--cat');
+const CAT = ci > 0 ? process.argv[ci + 1] : 'pflege';
+const files = process.argv.slice(2).filter((a, i, all) => a !== '--cat' && all[i - 1] !== '--cat');
+const osm = (await readJson(`data/osm/${CAT}.json`)).shops;
 const extra = await readJson('data/extra.json', []);
 const overrides = await readJson('data/overrides.json', {});
 
@@ -49,13 +53,14 @@ const fahrt = (f) => f && /fahrdienst|fahrten|fahren|fahrmöglichkeit|beförder/
 const heute = new Date().toISOString().slice(0, 10);
 
 let neu = 0, korr = 0, ohne = [];
-for (const file of process.argv.slice(2)) {
+for (const file of files) {
   for (const r of await readJson(file, [])) {
     if (r.nurIntern) continue;
     const name = clean(r.name);
     const feats = {};
-    if (r.fahrdienst) feats.pflege = ['alltag'];
-    if (fahrt(r.fahrdienst)) feats.fahrt = ['begleitfahrt'];
+    if (CAT === 'pflege' && r.fahrdienst) feats.pflege = ['alltag'];
+    if (CAT === 'pflege' && fahrt(r.fahrdienst)) feats.fahrt = ['begleitfahrt'];
+    if (CAT !== 'pflege' && r.angebote?.length) feats[CAT] = r.angebote;
     // schon in OSM? Dann nur Kontaktdaten ergänzen
     const m = osm.find((s) => s.location && dist(s.location, r) < 250 && overlap(s.tags.name || '', r.name));
     if (m) {
@@ -68,7 +73,7 @@ for (const file of process.argv.slice(2)) {
     const a = adminFor(r) || (await adminNominatim(r));
     if (!a) { ohne.push(`${name} (${r.city})`); continue; }
     const tags = { name, 'addr:street': r.street, 'addr:housenumber': r.housenumber, 'addr:postcode': r.postcode, 'addr:city': r.city, phone: r.phone, website: r.website, ...(r.email ? { email: r.email } : {}) };
-    for (const cat of ['pflege', ...(feats.fahrt ? ['fahrt'] : [])]) {
+    for (const cat of [CAT, ...(feats.fahrt ? ['fahrt'] : [])]) {
       extra.push({ id, cat, quelle: `${r.quelle} (${heute})`, tags, location: { lat: r.lat, lon: r.lon }, admin: a, ...(Object.keys(feats).length ? { featuresByCat: feats } : {}) });
     }
     neu++;
