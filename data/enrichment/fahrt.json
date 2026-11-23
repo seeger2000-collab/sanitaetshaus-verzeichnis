@@ -7675,16 +7675,16 @@
   "status": "ok"
  },
  "node/13325910676": {
-  "checkedAt": "2026-10-21T06:23:12.811Z",
+  "checkedAt": "2026-11-23T07:13:09.647Z",
   "website": "https://www.seniorenhilfe-sonnenschein.de/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "status": "error",
-  "error": "TypeError"
+  "error": "ENOTFOUND"
  },
  "node/12069919079": {
-  "checkedAt": "2026-10-21T06:23:12.808Z",
+  "checkedAt": "2026-11-23T07:13:09.644Z",
   "website": "https://leben360.com/",
   "features": [],
   "kassen": [],
@@ -7696,7 +7696,7 @@
   "status": "ok"
  },
  "node/10961947562": {
-  "checkedAt": "2026-10-21T06:23:12.804Z",
+  "checkedAt": "2026-11-23T07:13:09.640Z",
   "website": "https://www.seniorendienst-benning.de/",
   "features": [],
   "kassen": [],
@@ -7706,7 +7706,7 @@
   "status": "ok"
  },
  "node/11581833167": {
-  "checkedAt": "2026-10-21T06:23:12.807Z",
+  "checkedAt": "2026-11-23T07:13:09.642Z",
   "website": "https://www.bgl-nhv.de/",
   "features": [],
   "kassen": [],
@@ -7716,7 +7716,7 @@
   "status": "ok"
  },
  "node/10709852909": {
-  "checkedAt": "2026-10-21T06:23:12.802Z",
+  "checkedAt": "2026-11-23T07:13:09.639Z",
   "website": "https://www.seniorendienst-hohenlohe.de/",
   "features": [],
   "kassen": [],
@@ -7727,7 +7727,7 @@
   "status": "ok"
  },
  "node/12837279925": {
-  "checkedAt": "2026-10-21T06:23:12.810Z",
+  "checkedAt": "2026-11-23T07:13:09.646Z",
   "website": "https://nbh-garching.de/",
   "features": [],
   "kassen": [],
@@ -7739,7 +7739,7 @@
   "status": "ok"
  },
  "node/2450707802": {
-  "checkedAt": "2026-10-21T06:23:12.813Z",
+  "checkedAt": "2026-11-23T07:13:10.091Z",
   "website": "https://www.engelindernot.de/",
   "features": [],
   "kassen": [],
@@ -7750,7 +7750,7 @@
   "status": "ok"
  },
  "node/13995519063": {
-  "checkedAt": "2026-10-21T06:23:12.811Z",
+  "checkedAt": "2026-11-23T07:13:09.649Z",
   "website": "https://nhv-dresden.de/",
   "features": [
    "begleitfahrt"
@@ -7766,7 +7766,7 @@
   "status": "ok"
  },
  "node/12615575668": {
-  "checkedAt": "2026-10-21T06:23:12.808Z",
+  "checkedAt": "2026-11-23T07:13:09.644Z",
   "website": "https://nachbarschaftshilfe-sonnenblume.de/",
   "features": [],
   "kassen": [],
@@ -7776,7 +7776,7 @@
   "status": "ok"
  },
  "node/4893934027": {
-  "checkedAt": "2026-10-21T06:23:12.815Z",
+  "checkedAt": "2026-11-23T07:13:11.726Z",
   "website": "http://nachbarschaftshilfe-alling.de/",
   "features": [],
   "kassen": [],
@@ -7786,7 +7786,7 @@
   "status": "ok"
  },
  "node/3224611725": {
-  "checkedAt": "2026-10-21T06:23:12.814Z",
+  "checkedAt": "2026-11-23T07:13:11.015Z",
   "website": "https://www.nbh-haar.de/",
   "features": [
    "begleitfahrt"
@@ -7800,7 +7800,7 @@
   "status": "ok"
  },
  "node/11105236803": {
-  "checkedAt": "2026-10-21T06:23:12.805Z",
+  "checkedAt": "2026-11-23T07:13:09.641Z",
   "website": "https://seniorenhilfe-lichtblick.de/buero-deggendorf/",
   "features": [],
   "kassen": [],
@@ -7808,7 +7808,7 @@
   "status": "http-404"
  },
  "node/1783982004": {
-  "checkedAt": "2026-10-21T06:23:12.812Z",
+  "checkedAt": "2026-11-23T07:13:09.649Z",
   "website": "https://xn--nachbarschaftshilfe-sdost-zwc.de/",
   "features": [
    "begleitfahrt"
@@ -7823,7 +7823,7 @@
   "status": "ok"
  },
  "node/2381782940": {
-  "checkedAt": "2026-10-21T06:23:12.812Z",
+  "checkedAt": "2026-11-23T07:13:09.650Z",
   "website": "https://www.nbh-hallbergmoos.de/",
   "features": [],
   "kassen": [],
@@ -7833,7 +7833,7 @@
   "status": "ok"
  },
  "node/5240783092": {
-  "checkedAt": "2026-10-21T06:23:13.420Z",
+  "checkedAt": "2026-11-23T07:13:11.752Z",
   "website": "https://www.nbh-hallbergmoos.de/",
   "features": [],
   "kassen": [],
@@ -7843,7 +7843,7 @@
   "status": "ok"
  },
  "node/3224611724": {
-  "checkedAt": "2026-10-21T06:23:12.814Z",
+  "checkedAt": "2026-11-23T07:13:10.917Z",
   "website": "https://www.nbh-haar.de/",
   "features": [
    "begleitfahrt"
@@ -7857,16 +7857,15 @@
   "status": "ok"
  },
  "node/7035975967": {
-  "checkedAt": "2026-10-21T06:23:15.399Z",
+  "checkedAt": "2026-11-23T07:13:12.812Z",
   "website": "https://www.nbh-lahr.de/",
   "features": [],
   "kassen": [],
   "evidence": {},
-  "status": "error",
-  "error": "UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+  "status": "http-503"
  },
  "node/7221146723": {
-  "checkedAt": "2026-10-21T06:23:15.579Z",
+  "checkedAt": "2026-11-23T07:13:12.817Z",
   "website": "http://www.nbh-moorenweis.de/",
   "features": [],
   "kassen": [],
@@ -7876,14 +7875,14 @@
   "status": "ok"
  },
  "node/5443884026": {
-  "checkedAt": "2026-10-21T06:23:14.157Z",
+  "checkedAt": "2026-11-23T07:13:11.890Z",
   "website": "https://nbh-oha.de/",
   "features": [
    "begleitfahrt"
   ],
   "kassen": [],
   "evidence": {
-   "begleitfahrt": "https://nbh-oha.de/ueber-uns/unser-team"
+   "begleitfahrt": "https://nbh-oha.de/ueber-uns/unser-team/"
   },
   "finalUrl": "https://nbh-oha.de/",
   "email": "sabine.muehlbauer@nbh-oha.de",
@@ -7891,7 +7890,7 @@
   "status": "ok"
  },
  "node/5921592631": {
-  "checkedAt": "2026-10-21T06:23:14.875Z",
+  "checkedAt": "2026-11-23T07:13:12.281Z",
   "website": "https://www.nbh-fuerstenfeldbruck.de/",
   "features": [],
   "kassen": [],
@@ -7901,7 +7900,7 @@
   "status": "ok"
  },
  "node/8824357895": {
-  "checkedAt": "2026-10-21T06:23:15.690Z",
+  "checkedAt": "2026-11-23T07:13:13.025Z",
   "website": "https://www.die-steinheimer-nachbarschaftshilfe-ev.de/",
   "features": [],
   "kassen": [],
@@ -7912,7 +7911,7 @@
   "status": "ok"
  },
  "node/7574624097": {
-  "checkedAt": "2026-10-21T06:23:15.590Z",
+  "checkedAt": "2026-11-23T07:13:12.889Z",
   "website": "https://www.seniorendienst-ev.de/",
   "features": [
    "begleitfahrt"
@@ -7926,7 +7925,7 @@
   "status": "ok"
  },
  "node/5730395549": {
-  "checkedAt": "2026-10-21T06:23:14.522Z",
+  "checkedAt": "2026-11-23T07:13:12.214Z",
   "website": "http://msm-peichl.de/",
   "features": [],
   "kassen": [],
@@ -7936,23 +7935,23 @@
   "status": "ok"
  },
  "node/2625350973": {
-  "checkedAt": "2026-10-21T06:23:12.813Z",
+  "checkedAt": "2026-11-23T07:13:10.617Z",
   "website": "https://www.nbh-erding.de/",
   "features": [
    "begleitfahrt"
   ],
   "kassen": [],
   "evidence": {
-   "begleitfahrt": "https://www.nbh-erding.de/leistungen/kindergruppen"
+   "begleitfahrt": "https://www.nbh-erding.de/leistungen"
   },
   "finalUrl": "https://www.nbh-erding.de/",
   "email": "info@nbh-erding.de",
   "phone": "081228682850",
-  "pagesChecked": 6,
+  "pagesChecked": 7,
   "status": "ok"
  },
  "way/152171064": {
-  "checkedAt": "2026-10-21T06:23:16.183Z",
+  "checkedAt": "2026-11-23T07:13:13.847Z",
   "website": "https://www.awo-kv-bs.de/pages/angebote/begegnungsstaetten/begegnungsstaette-weststadt.php",
   "features": [],
   "kassen": [],
@@ -7962,14 +7961,16 @@
   "status": "ok"
  },
  "node/6003160205": {
-  "checkedAt": "2026-10-21T06:23:14.916Z",
+  "checkedAt": "2026-11-23T07:13:12.498Z",
   "website": "https://www.elidiefee.de/haushaltshilfe-hattingen-sprockhoevel",
   "features": [
-   "krankenfahrt"
+   "krankenfahrt",
+   "dialyse"
   ],
   "kassen": [],
   "evidence": {
-   "krankenfahrt": "https://www.elidiefee.de/ueber-uns"
+   "krankenfahrt": "https://www.elidiefee.de/ueber-uns",
+   "dialyse": "https://www.elidiefee.de/ueber-uns"
   },
   "finalUrl": "https://www.elidiefee.de/haushaltshilfe-hattingen-sprockhoevel",
   "email": "info@elidiefee.de",
@@ -7978,16 +7979,18 @@
   "status": "ok"
  },
  "node/5743825396": {
-  "checkedAt": "2026-10-21T06:23:14.599Z",
+  "checkedAt": "2026-11-23T07:13:12.264Z",
   "website": "https://www.elidiefee.de/",
   "features": [
-   "krankenfahrt"
+   "krankenfahrt",
+   "dialyse"
   ],
   "kassen": [
    "tk"
   ],
   "evidence": {
-   "krankenfahrt": "https://www.elidiefee.de/ueber-uns"
+   "krankenfahrt": "https://www.elidiefee.de/",
+   "dialyse": "https://www.elidiefee.de/"
   },
   "finalUrl": "https://www.elidiefee.de/",
   "email": "info@elidiefee.de",
@@ -7996,14 +7999,16 @@
   "status": "ok"
  },
  "node/2694571364": {
-  "checkedAt": "2026-10-21T06:23:12.813Z",
+  "checkedAt": "2026-11-23T07:13:10.794Z",
   "website": "https://elidiefee.de/haushaltshilfe-witten",
   "features": [
-   "krankenfahrt"
+   "krankenfahrt",
+   "dialyse"
   ],
   "kassen": [],
   "evidence": {
-   "krankenfahrt": "https://www.elidiefee.de/ueber-uns"
+   "krankenfahrt": "https://www.elidiefee.de/ueber-uns",
+   "dialyse": "https://www.elidiefee.de/ueber-uns"
   },
   "finalUrl": "https://www.elidiefee.de/haushaltshilfe-witten",
   "email": "info@elidiefee.de",
@@ -8012,7 +8017,7 @@
   "status": "ok"
  },
  "node/4547641568": {
-  "checkedAt": "2026-10-21T06:23:12.814Z",
+  "checkedAt": "2026-11-23T07:13:11.383Z",
   "website": "https://www.seniorenhilfe-zeitz.de/",
   "features": [
    "begleitfahrt"
@@ -8027,7 +8032,7 @@
   "status": "ok"
  },
  "node/10314964396": {
-  "checkedAt": "2026-10-21T06:23:12.790Z",
+  "checkedAt": "2026-11-23T07:13:09.638Z",
   "website": "https://www.nbh-grosskarolinenfeld.de/leistungen",
   "features": [],
   "kassen": [],
@@ -8037,7 +8042,7 @@
   "status": "ok"
  },
  "node/11887222377": {
-  "checkedAt": "2026-10-21T06:23:12.807Z",
+  "checkedAt": "2026-11-23T07:13:09.643Z",
   "website": "https://www.drk-kv-bs-sz.de/nbh",
   "features": [
    "krankenfahrt"
@@ -8051,7 +8056,7 @@
   "status": "ok"
  },
  "way/170342202": {
-  "checkedAt": "2026-10-21T06:23:16.231Z",
+  "checkedAt": "2026-11-23T07:13:13.888Z",
   "website": "https://www.nachbarschaftshilfe-winterbach.de/",
   "features": [
    "begleitfahrt"
@@ -8067,7 +8072,7 @@
   "status": "ok"
  },
  "node/12734625281": {
-  "checkedAt": "2026-10-21T06:23:12.809Z",
+  "checkedAt": "2026-11-23T07:13:09.645Z",
   "website": "https://www.nachbarschaftshilfe-bad-nauheim.de/",
   "features": [
    "begleitfahrt"
@@ -8081,7 +8086,7 @@
   "status": "ok"
  },
  "node/8941348182": {
-  "checkedAt": "2026-10-21T06:23:15.765Z",
+  "checkedAt": "2026-11-23T07:13:13.075Z",
   "website": "https://www.sufw.de/kurse.html",
   "features": [
    "begleitfahrt"
@@ -8092,11 +8097,11 @@
   },
   "finalUrl": "https://www.sufw.de/kurse",
   "phone": "0351422720",
-  "pagesChecked": 4,
+  "pagesChecked": 7,
   "status": "ok"
  },
  "way/65417695": {
-  "checkedAt": "2026-10-21T06:23:16.851Z",
+  "checkedAt": "2026-11-23T07:13:14.329Z",
   "website": "https://www.nachbarschaftshilfe-tfk-uhg.de/",
   "features": [],
   "kassen": [],
@@ -8108,7 +8113,7 @@
   "status": "ok"
  },
  "node/7647463451": {
-  "checkedAt": "2026-10-21T06:23:15.620Z",
+  "checkedAt": "2026-11-23T07:13:12.984Z",
   "website": "https://www.nachbarschaftshilfe-bad-nauheim.de/",
   "features": [
    "begleitfahrt"
@@ -8122,7 +8127,7 @@
   "status": "ok"
  },
  "way/629271136": {
-  "checkedAt": "2026-10-21T06:23:16.771Z",
+  "checkedAt": "2026-11-23T07:13:14.264Z",
   "website": "https://st-gereon.info/",
   "features": [
    "begleitfahrt",
@@ -8140,7 +8145,7 @@
   "status": "ok"
  },
  "node/12877729841": {
-  "checkedAt": "2026-10-21T06:23:12.811Z",
+  "checkedAt": "2026-11-23T07:13:09.646Z",
   "website": "https://www.nbh-ush.de/",
   "features": [],
   "kassen": [],
@@ -8152,7 +8157,7 @@
   "status": "ok"
  },
  "way/29343351": {
-  "checkedAt": "2026-10-21T06:23:16.332Z",
+  "checkedAt": "2026-11-23T07:13:14.140Z",
   "website": "https://www.seniorenhilfe-dresden.de/begegnungs-und-beratungszentrum/",
   "features": [],
   "kassen": [],
@@ -8160,7 +8165,7 @@
   "status": "http-404"
  },
  "node/9183959596": {
-  "checkedAt": "2026-10-21T06:23:15.793Z",
+  "checkedAt": "2026-11-23T07:13:13.125Z",
   "website": "https://nachbarschaftshilfe-ev-rhein-sieg.de/index.php/standorte/sankt-augustin-buisdorf",
   "features": [],
   "kassen": [],
@@ -8170,7 +8175,7 @@
   "status": "ok"
  },
  "node/13432589158": {
-  "checkedAt": "2026-10-21T06:23:12.811Z",
+  "checkedAt": "2026-11-23T07:13:09.648Z",
   "website": "https://www.nachbarschaftstreff-au.de/",
   "features": [],
   "kassen": [],
@@ -8180,17 +8185,17 @@
   "status": "ok"
  },
  "way/130190777": {
-  "checkedAt": "2026-10-21T06:23:16.146Z",
+  "checkedAt": "2026-11-23T07:13:13.283Z",
   "website": "https://www.nachbarschaftshilfe-ev.de/",
   "features": [],
   "kassen": [],
   "evidence": {},
   "finalUrl": "https://nachbarschaftshilfe-ev-rhein-sieg.de/",
-  "pagesChecked": 5,
+  "pagesChecked": 7,
   "status": "ok"
  },
  "node/4769750106": {
-  "checkedAt": "2026-10-21T06:23:12.814Z",
+  "checkedAt": "2026-11-23T07:13:11.466Z",
   "website": "https://www.nachbarschaftshilfe-ev.de/",
   "features": [],
   "kassen": [],
