@@ -27935,5 +27935,665 @@
     "name": "Neu-Ulm"
    }
   }
+ },
+ {
+  "id": "extra/die-ambulante-ambulante-krankenpflege-bad-woerisho-bad-woerishof",
+  "cat": "pflege",
+  "quelle": "https://www.ambulante.de/kontakt/ (2026-11-23)",
+  "tags": {
+   "name": "Die Ambulante – Ambulante Krankenpflege Bad Wörishofen gGmbH",
+   "addr:street": "Ulmenweg",
+   "addr:housenumber": "1",
+   "addr:postcode": "86825",
+   "addr:city": "Bad Wörishofen",
+   "phone": "+49 8247 96260",
+   "website": "https://www.ambulante.de/",
+   "email": "info@ambulante.de"
+  },
+  "location": {
+   "lat": 48.011713,
+   "lon": 10.593717
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62398",
+    "name": "Landkreis Unterallgäu"
+   },
+   "8": {
+    "id": "relation/445544",
+    "name": "Bad Wörishofen"
+   }
+  }
+ },
+ {
+  "id": "extra/die-ambulante-ambulante-krankenpflege-bad-woerisho-mindelheim",
+  "cat": "pflege",
+  "quelle": "https://www.ambulante.de/kontakt/ (2026-11-23)",
+  "tags": {
+   "name": "Die Ambulante – Ambulante Krankenpflege Bad Wörishofen, Außenstelle Mindelheim",
+   "addr:street": "Bürgermeister-Krach-Straße",
+   "addr:housenumber": "4",
+   "addr:postcode": "87719",
+   "addr:city": "Mindelheim",
+   "phone": "+49 8261 2328771",
+   "website": "https://www.ambulante.de/",
+   "email": "info@ambulante.de"
+  },
+  "location": {
+   "lat": 48.051739,
+   "lon": 10.494027
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62398",
+    "name": "Landkreis Unterallgäu"
+   },
+   "8": {
+    "id": "relation/445772",
+    "name": "Mindelheim"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-krankenpflege-unterallgaeu-ggmbh-ottobeuren",
+  "cat": "pflege",
+  "quelle": "https://pflege-unterallgaeu.de/impressum/ (2026-11-23)",
+  "tags": {
+   "name": "Ambulante Krankenpflege Unterallgäu gGmbH",
+   "addr:street": "Adelgundeweg",
+   "addr:housenumber": "3",
+   "addr:postcode": "87724",
+   "addr:city": "Ottobeuren",
+   "phone": "+49 8332 923740",
+   "website": "https://pflege-unterallgaeu.de/",
+   "email": "post@pflege-unterallgaeu.de"
+  },
+  "location": {
+   "lat": 47.942997,
+   "lon": 10.297224
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62398",
+    "name": "Landkreis Unterallgäu"
+   },
+   "7": {
+    "id": "relation/2601532",
+    "name": "Ottobeuren"
+   },
+   "8": {
+    "id": "relation/958671",
+    "name": "Ottobeuren"
+   }
+  }
+ },
+ {
+  "id": "extra/vitolus-tuerkheim-tuerkheim",
+  "cat": "pflege",
+  "quelle": "https://www.vitolus.de/standorte/tuerkheim (2026-11-23)",
+  "tags": {
+   "name": "Vitolus Türkheim",
+   "addr:street": "Tussenhauser Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "86842",
+   "addr:city": "Türkheim",
+   "phone": "+49 8245 90905",
+   "website": "https://www.vitolus.de/standorte/tuerkheim",
+   "email": "tuerkheim@vitolus.de"
+  },
+  "location": {
+   "lat": 48.062574,
+   "lon": 10.640349
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62398",
+    "name": "Landkreis Unterallgäu"
+   },
+   "7": {
+    "id": "relation/2601534",
+    "name": "Verwaltungsgemeinschaft Türkheim"
+   },
+   "8": {
+    "id": "relation/958165",
+    "name": "Türkheim"
+   }
+  }
+ },
+ {
+  "id": "extra/johanniter-sozialstation-bad-woerishofen-bad-woerishofen",
+  "cat": "pflege",
+  "quelle": "https://www.johanniter.de/juh/lv-bayern/rv-oberbayern/standorte-einrichtungen-in-oberbayern/einrichtung-vor-ort/johanniter-sozialstation-bad-woerishofen-1322/ (2026-11-23)",
+  "tags": {
+   "name": "Johanniter Sozialstation Bad Wörishofen",
+   "addr:street": "Kaufbeurer Straße",
+   "addr:housenumber": "28",
+   "addr:postcode": "86825",
+   "addr:city": "Bad Wörishofen",
+   "phone": "+49 8247 310754001",
+   "website": "https://www.johanniter.de/juh/lv-bayern/rv-oberbayern/standorte-einrichtungen-in-oberbayern/einrichtung-vor-ort/johanniter-sozialstation-bad-woerishofen-1322/"
+  },
+  "location": {
+   "lat": 48.003114,
+   "lon": 10.601698
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62398",
+    "name": "Landkreis Unterallgäu"
+   },
+   "8": {
+    "id": "relation/445544",
+    "name": "Bad Wörishofen"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-pflege-lebenswege-benjamin-akel-dirlewang",
+  "cat": "pflege",
+  "quelle": "https://pflege-lebenswege.de/impressum/ (2026-11-23)",
+  "tags": {
+   "name": "Ambulante-Pflege Lebenswege Benjamin Akel",
+   "addr:street": "Mindelheimer Straße",
+   "addr:housenumber": "12",
+   "addr:postcode": "87742",
+   "addr:city": "Dirlewang",
+   "phone": "+49 8267 369",
+   "website": "https://pflege-lebenswege.de/",
+   "email": "info@pflege-lebenswege.de"
+  },
+  "location": {
+   "lat": 48.00364,
+   "lon": 10.50474
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62398",
+    "name": "Landkreis Unterallgäu"
+   },
+   "7": {
+    "id": "relation/2601527",
+    "name": "Dirlewang"
+   },
+   "8": {
+    "id": "relation/957117",
+    "name": "Dirlewang"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-und-pflegeberatung-heider-markt-wald",
+  "cat": "pflege",
+  "quelle": "https://pflegedienst-heider.de/impressum/ (2026-11-23)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst und Pflegeberatung Heider",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "31",
+   "addr:postcode": "86865",
+   "addr:city": "Markt Wald",
+   "phone": "+49 8262 960722",
+   "website": "https://pflegedienst-heider.de/",
+   "email": "pflegedienstheider@web.de"
+  },
+  "location": {
+   "lat": 48.139662,
+   "lon": 10.584477
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62398",
+    "name": "Landkreis Unterallgäu"
+   },
+   "8": {
+    "id": "relation/958168",
+    "name": "Markt Wald"
+   }
+  }
+ },
+ {
+  "id": "extra/illerwinkel-pflege-sandra-knobl-legau",
+  "cat": "pflege",
+  "quelle": "https://www.illerwinkel-pflege.com/impressum (2026-11-23)",
+  "tags": {
+   "name": "Illerwinkel Pflege Sandra Knobl",
+   "addr:street": "Altusrieder Straße",
+   "addr:housenumber": "17",
+   "addr:postcode": "87764",
+   "addr:city": "Legau",
+   "phone": "+49 8330 9118720",
+   "website": "https://www.illerwinkel-pflege.com/",
+   "email": "info@illerwinkel-pflege.com"
+  },
+  "location": {
+   "lat": 47.854897,
+   "lon": 10.132991
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62398",
+    "name": "Landkreis Unterallgäu"
+   },
+   "7": {
+    "id": "relation/2601529",
+    "name": "Illerwinkel"
+   },
+   "8": {
+    "id": "relation/958684",
+    "name": "Legau"
+   }
+  }
+ },
+ {
+  "id": "extra/das-pflegeteam-gmbh-mindelheim",
+  "cat": "pflege",
+  "quelle": "http://pflegeteam-mindelheim.de/ (2026-11-23)",
+  "tags": {
+   "name": "Das Pflegeteam GmbH",
+   "addr:street": "Bahnhofstraße",
+   "addr:housenumber": "45",
+   "addr:postcode": "87719",
+   "addr:city": "Mindelheim",
+   "phone": "+49 8261 7391042",
+   "website": "https://pflegeteam-mindelheim.de/",
+   "email": "mail@pflegeteam-mindelheim.de"
+  },
+  "location": {
+   "lat": 48.045929,
+   "lon": 10.49297
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62398",
+    "name": "Landkreis Unterallgäu"
+   },
+   "8": {
+    "id": "relation/445772",
+    "name": "Mindelheim"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegeservice-schneider-gmbh-kirchheim-in-schwaben",
+  "cat": "pflege",
+  "quelle": "https://www.pflegeservice-schneider.de/impressum (2026-11-23)",
+  "tags": {
+   "name": "Pflegeservice Schneider GmbH",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "22",
+   "addr:postcode": "87757",
+   "addr:city": "Kirchheim in Schwaben",
+   "phone": "+49 8266 80015",
+   "website": "https://www.pflegeservice-schneider.de/",
+   "email": "info@pflegeservice-schneider.de"
+  },
+  "location": {
+   "lat": 48.172125,
+   "lon": 10.480154
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62398",
+    "name": "Landkreis Unterallgäu"
+   },
+   "7": {
+    "id": "relation/2601530",
+    "name": "Kirchheim in Schwaben"
+   },
+   "8": {
+    "id": "relation/957744",
+    "name": "Kirchheim in Schwaben"
+   }
+  }
+ },
+ {
+  "id": "extra/mindelheimer-pflegedienst-mindelheim",
+  "cat": "pflege",
+  "quelle": "https://www.mindelheimer-pflegedienst.de/impressum (2026-11-23)",
+  "tags": {
+   "name": "Mindelheimer Pflegedienst",
+   "addr:street": "Homannstraße",
+   "addr:housenumber": "5",
+   "addr:postcode": "87719",
+   "addr:city": "Mindelheim",
+   "phone": "+49 8261 738236",
+   "website": "https://www.mindelheimer-pflegedienst.de/",
+   "email": "info@mindelheimer-pflegedienst.de"
+  },
+  "location": {
+   "lat": 48.04909,
+   "lon": 10.498634
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62398",
+    "name": "Landkreis Unterallgäu"
+   },
+   "8": {
+    "id": "relation/445772",
+    "name": "Mindelheim"
+   }
+  }
+ },
+ {
+  "id": "extra/swana-ihre-pflege-zuhause-ug-haftungsbeschraenkt-mindelheim",
+  "cat": "pflege",
+  "quelle": "https://www.swanapflege.de/impressum (2026-11-23)",
+  "tags": {
+   "name": "Swana – Ihre Pflege Zuhause UG (haftungsbeschränkt)",
+   "addr:street": "Reichenwaller Straße",
+   "addr:housenumber": "12",
+   "addr:postcode": "87719",
+   "addr:city": "Mindelheim",
+   "phone": "+49 8261 7635204",
+   "website": "https://www.swanapflege.de/",
+   "email": "info@swanapflege.de"
+  },
+  "location": {
+   "lat": 48.048293,
+   "lon": 10.491517
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62398",
+    "name": "Landkreis Unterallgäu"
+   },
+   "8": {
+    "id": "relation/445772",
+    "name": "Mindelheim"
+   }
+  }
+ },
+ {
+  "id": "extra/seniormobil-gmbh-bad-groenenbach",
+  "cat": "pflege",
+  "quelle": "https://www.mein-seniormobil.de/kontakt (2026-11-23)",
+  "tags": {
+   "name": "seniormobil GmbH",
+   "addr:street": "Bahnhofstraße",
+   "addr:housenumber": "35",
+   "addr:postcode": "87730",
+   "addr:city": "Bad Grönenbach",
+   "phone": "+49 8334 988990",
+   "website": "https://www.mein-seniormobil.de/",
+   "email": "info@mein-seniormobil.de"
+  },
+  "location": {
+   "lat": 47.878504,
+   "lon": 10.227962
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62398",
+    "name": "Landkreis Unterallgäu"
+   },
+   "7": {
+    "id": "relation/2601525",
+    "name": "Bad Grönenbach"
+   },
+   "8": {
+    "id": "relation/958686",
+    "name": "Bad Grönenbach"
+   }
+  }
+ },
+ {
+  "id": "extra/zu-hause-leben-gmbh-markt-rettenbach",
+  "cat": "pflege",
+  "quelle": "https://www.zu-hause-leben.org/impressum (2026-11-23)",
+  "tags": {
+   "name": "zu Hause leben GmbH",
+   "addr:street": "Engetrieder Hauptstraße",
+   "addr:housenumber": "14",
+   "addr:postcode": "87733",
+   "addr:city": "Markt Rettenbach",
+   "phone": "+49 8392 934369",
+   "website": "https://www.zu-hause-leben.org/",
+   "email": "info@zu-hause-leben.org"
+  },
+  "location": {
+   "lat": 47.929721,
+   "lon": 10.396753
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62398",
+    "name": "Landkreis Unterallgäu"
+   },
+   "8": {
+    "id": "relation/958231",
+    "name": "Markt Rettenbach"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegeteam-pfaffenhausen-gmbh-pfaffenhausen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegeteampfaffenhausen.de/impressum (2026-11-23)",
+  "tags": {
+   "name": "Pflegeteam Pfaffenhausen GmbH",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "22",
+   "addr:postcode": "87772",
+   "addr:city": "Pfaffenhausen",
+   "phone": "+49 8265 7339323",
+   "website": "https://www.pflegeteampfaffenhausen.de/",
+   "email": "info@pflegeteam-pfaffenhausen.de"
+  },
+  "location": {
+   "lat": 48.119275,
+   "lon": 10.453904
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62398",
+    "name": "Landkreis Unterallgäu"
+   },
+   "7": {
+    "id": "relation/2601533",
+    "name": "Pfaffenhausen"
+   },
+   "8": {
+    "id": "relation/957724",
+    "name": "Pfaffenhausen"
+   }
+  }
+ },
+ {
+  "id": "extra/seniorenzentrum-und-ambulante-krankenpflege-babenh-babenhausen",
+  "cat": "pflege",
+  "quelle": "https://seniorenzentrum-babenhausen.de/impressum/ (2026-11-23)",
+  "tags": {
+   "name": "Seniorenzentrum und Ambulante Krankenpflege Babenhausen GmbH",
+   "addr:street": "Am Espach",
+   "addr:housenumber": "6",
+   "addr:postcode": "87727",
+   "addr:city": "Babenhausen",
+   "phone": "+49 8333 94060",
+   "website": "https://seniorenzentrum-babenhausen.de/",
+   "email": "info@krankenpflege-ambulant.de"
+  },
+  "location": {
+   "lat": 48.143461,
+   "lon": 10.259383
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62398",
+    "name": "Landkreis Unterallgäu"
+   },
+   "7": {
+    "id": "relation/2601523",
+    "name": "Babenhausen"
+   },
+   "8": {
+    "id": "relation/958621",
+    "name": "Babenhausen"
+   }
+  }
+ },
+ {
+  "id": "extra/nachbarschaftshilfe-mindelheim-familiengesundheit--mindelheim",
+  "cat": "pflege",
+  "quelle": "https://www.familiengesundheit21.de/nachbarschaftshilfe-mindelheim (2026-11-23)",
+  "tags": {
+   "name": "Nachbarschaftshilfe Mindelheim (Familiengesundheit 21 e.V. / Seniorenbüro Mindelheim)",
+   "addr:street": "Maximilianstraße",
+   "addr:housenumber": "26",
+   "addr:postcode": "87719",
+   "addr:city": "Mindelheim",
+   "phone": "+49 8261 9915462",
+   "website": "https://www.familiengesundheit21.de/nachbarschaftshilfe-mindelheim",
+   "email": "seniorenbuero@mindelheim.de"
+  },
+  "location": {
+   "lat": 48.046735,
+   "lon": 10.488651
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62398",
+    "name": "Landkreis Unterallgäu"
+   },
+   "8": {
+    "id": "relation/445772",
+    "name": "Mindelheim"
+   }
+  }
  }
 ]
