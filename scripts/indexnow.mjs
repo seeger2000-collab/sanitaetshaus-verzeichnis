@@ -30,7 +30,9 @@ async function* walk(dir) {
 const speichern = (o) => writeFile(STAND, '{\n' + Object.keys(o).sort().map((k) => `${JSON.stringify(k)}:${JSON.stringify(o[k])}`).join(',\n') + '\n}\n');
 const fingerabdruck = (html) => {
   const m = html.match(/<main[^>]*>([\s\S]*?)<\/main>/);
-  const text = (m ? m[1] : html).replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  const text = (m ? m[1] : html).replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')
+    // Datumsangaben („Stand 23. November 2026“, „2026-11-23“) ändern sich bei jeder Datenrunde, ohne dass sich der Inhalt ändert
+    .replace(/\d{1,2}\.\s*(Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember)\s+\d{4}|\d{1,2}\.\d{1,2}\.\d{4}|\d{4}-\d{2}-\d{2}/g, '').trim();
   return createHash('sha1').update(text).digest('base64url').slice(0, 10);
 };
 
