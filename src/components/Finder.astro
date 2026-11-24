@@ -69,7 +69,7 @@ const pages = bedarf.map((b) => ({ label: b.key === 'sanitaetshaus' ? T.allShops
     let data = null, map = null, pins = null;
     const ensureMap = () => {
       if (map) { map.invalidateSize(); return; }
-      map = L.map(el, { scrollWheelZoom: false, preferCanvas: true, zoomSnap: 0.25 }).setView([51.2, 10.4], 6);
+      map = L.map(el, { scrollWheelZoom: true, dragging: !L.Browser.mobile, preferCanvas: true, zoomSnap: 0.25 }).setView([51.2, 10.4], 6);
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map);
       pins = L.featureGroup().addTo(map);
     };

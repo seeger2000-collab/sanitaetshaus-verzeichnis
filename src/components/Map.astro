@@ -15,7 +15,8 @@ const points = Astro.props.shops.filter((s) => s.lat).map((s) => [s.lat, s.lon, 
     const L = (window as any).L;
     if (!L) return void setTimeout(() => init(el), 200);
     const pts: [number, number, string, string][] = JSON.parse(el.dataset.points!);
-    const map = L.map(el, { scrollWheelZoom: false });
+    // PC: Mausrad zoomt, gedrückte Maus verschiebt. Handy: ein Finger scrollt die Seite, zwei Finger zoomen und verschieben die Karte.
+    const map = L.map(el, { scrollWheelZoom: true, dragging: !L.Browser.mobile });
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map);
     const markers = pts.map(([lat, lon, name, href]) => {
       const a = document.createElement(href ? 'a' : 'span'); if (href) (a as HTMLAnchorElement).href = href; a.textContent = name;
