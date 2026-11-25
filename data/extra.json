@@ -29251,5 +29251,235 @@
     "wasser"
    ]
   }
+ },
+ {
+  "id": "extra/caritas-sozialstation-memmingen-und-umgebung-ggmbh-memmingen",
+  "cat": "pflege",
+  "quelle": "https://www.caritas-sozialstation-memmingen.de/ (2026-11-25)",
+  "tags": {
+   "name": "Caritas Sozialstation Memmingen und Umgebung gGmbH",
+   "addr:street": "Marienrain",
+   "addr:housenumber": "4",
+   "addr:postcode": "87700",
+   "addr:city": "Memmingen",
+   "phone": "+49 8331 924340",
+   "website": "https://www.caritas-sozialstation-memmingen.de/",
+   "email": "sozialstation@caritas-memmingen.de"
+  },
+  "location": {
+   "lat": 47.9868918,
+   "lon": 10.1902082
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62590",
+    "name": "Memmingen"
+   }
+  }
+ },
+ {
+  "id": "extra/haeuslicher-pflegedienst-memmingen-diakonie-allgae-memmingen",
+  "cat": "pflege",
+  "quelle": "https://www.diakonie-allgaeu.de/ich-suche-hilfe/hilfe-fuer-senioren/abulante-pflegedienste/haeuslicher-pflegedienst-memmingen (2026-11-25)",
+  "tags": {
+   "name": "Häuslicher Pflegedienst Memmingen (Diakonie Allgäu)",
+   "addr:street": "Rheineckstraße",
+   "addr:housenumber": "14",
+   "addr:postcode": "87700",
+   "addr:city": "Memmingen",
+   "phone": "+49 8331 75838",
+   "website": "https://www.diakonie-allgaeu.de/ich-suche-hilfe/hilfe-fuer-senioren/abulante-pflegedienste/haeuslicher-pflegedienst-memmingen",
+   "email": "haeusliche-pflege@diakonie-allgaeu.de"
+  },
+  "location": {
+   "lat": 47.9832376,
+   "lon": 10.1737938
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62590",
+    "name": "Memmingen"
+   }
+  }
+ },
+ {
+  "id": "extra/vitolus-memmingen-memmingen",
+  "cat": "pflege",
+  "quelle": "https://www.vitolus.de/standorte (2026-11-25)",
+  "tags": {
+   "name": "Vitolus Memmingen",
+   "addr:street": "In der Neuen Welt",
+   "addr:housenumber": "8",
+   "addr:postcode": "87700",
+   "addr:city": "Memmingen",
+   "phone": "+49 8331 7852630",
+   "website": "https://www.vitolus.de/standorte/vitolus-memmingen",
+   "email": "memmingen@vitolus.de"
+  },
+  "location": {
+   "lat": 47.9997432,
+   "lon": 10.1863999
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62590",
+    "name": "Memmingen"
+   }
+  }
+ },
+ {
+  "id": "extra/korbinian-kranken-und-intensivpflege-gmbh-memmingen",
+  "cat": "pflege",
+  "quelle": "https://korbinian-pflege.de/kontakt/ (2026-11-25)",
+  "tags": {
+   "name": "Korbinian Kranken- und Intensivpflege GmbH",
+   "addr:street": "Keltenstraße",
+   "addr:housenumber": "10",
+   "addr:postcode": "87700",
+   "addr:city": "Memmingen",
+   "phone": "+49 8331 929999",
+   "website": "https://korbinian-pflege.de/"
+  },
+  "location": {
+   "lat": 47.9978747,
+   "lon": 10.1785142
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62590",
+    "name": "Memmingen"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-karl-engst-memmingen",
+  "cat": "pflege",
+  "quelle": "http://www.pflegedienst-engst.de/ (2026-11-25)",
+  "tags": {
+   "name": "Pflegedienst Karl Engst",
+   "addr:street": "Obere Straße",
+   "addr:housenumber": "7",
+   "addr:postcode": "87700",
+   "addr:city": "Memmingen",
+   "phone": "+49 8331 3010",
+   "website": "http://www.pflegedienst-engst.de/",
+   "email": "info@pflegedienst-engst.de"
+  },
+  "location": {
+   "lat": 48.0036551,
+   "lon": 10.1789322
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62590",
+    "name": "Memmingen"
+   }
+  }
+ },
+ {
+  "id": "extra/regens-wagner-offene-hilfen-ambulanter-pflegediens-memmingen",
+  "cat": "pflege",
+  "quelle": "https://regens-wagner-lautrach.de/unsere-angebote-fuer-menschen-mit-behinderung/offene-hilfen/ambulanter-pflegedienst/ (2026-11-25)",
+  "tags": {
+   "name": "Regens Wagner Offene Hilfen – Ambulanter Pflegedienst Memmingen",
+   "addr:street": "Kempter Straße",
+   "addr:housenumber": "52",
+   "addr:postcode": "87700",
+   "addr:city": "Memmingen",
+   "phone": "+49 8331 97476205",
+   "website": "https://regens-wagner-lautrach.de/unsere-angebote-fuer-menschen-mit-behinderung/offene-hilfen/ambulanter-pflegedienst/",
+   "email": "lc-pdl-memmingen@regens-wagner.de"
+  },
+  "location": {
+   "lat": 47.979515,
+   "lon": 10.1825323
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62590",
+    "name": "Memmingen"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-buergerstift-memmingen",
+  "cat": "pflege",
+  "quelle": "https://buergerstift.memmingen.de/unsere-angebote-fuer-sie/ambulanter-pflegedienst-buergerstift.html (2026-11-25)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Bürgerstift",
+   "addr:street": "Spitalgasse",
+   "addr:housenumber": "8",
+   "addr:postcode": "87700",
+   "addr:city": "Memmingen",
+   "phone": "+49 8331 927550",
+   "website": "https://buergerstift.memmingen.de/unsere-angebote-fuer-sie/ambulanter-pflegedienst-buergerstift.html",
+   "email": "buergerstift@memmingen.de"
+  },
+  "location": {
+   "lat": 47.981558,
+   "lon": 10.1822205
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62590",
+    "name": "Memmingen"
+   }
+  }
  }
 ]
