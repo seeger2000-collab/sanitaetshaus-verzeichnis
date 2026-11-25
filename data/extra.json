@@ -29481,5 +29481,362 @@
     "name": "Memmingen"
    }
   }
+ },
+ {
+  "id": "extra/post-sportverein-nuernberg-e-v-reha-sport-nuernberg",
+  "cat": "reha",
+  "quelle": "https://post-sv.de/kontakt/ (2026-11-25)",
+  "tags": {
+   "name": "Post-Sportverein Nürnberg e.V. (Reha-Sport)",
+   "addr:street": "Keßlerstraße",
+   "addr:housenumber": "1",
+   "addr:postcode": "90489",
+   "addr:city": "Nürnberg",
+   "phone": "+49 911 5874327",
+   "website": "https://post-sv.de/fitness/rehasport/",
+   "email": "reha@post-sv.de"
+  },
+  "location": {
+   "lat": 49.453958,
+   "lon": 11.089289
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17614",
+    "name": "Mittelfranken"
+   },
+   "6": {
+    "id": "relation/62780",
+    "name": "Nürnberg"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "herz",
+    "lunge",
+    "wasser"
+   ]
+  }
+ },
+ {
+  "id": "extra/franken-aktiv-sued-nuernberg",
+  "cat": "reha",
+  "quelle": "https://franken-aktiv.fit/kontakt/ (2026-11-25)",
+  "tags": {
+   "name": "Franken Aktiv Süd",
+   "addr:street": "Allersberger Straße",
+   "addr:housenumber": "185",
+   "addr:postcode": "90461",
+   "addr:city": "Nürnberg",
+   "phone": "+49 911 13221088",
+   "website": "https://franken-aktiv.fit/rehasport-nuernberg/",
+   "email": "info-sued@franken-aktiv.fit"
+  },
+  "location": {
+   "lat": 49.433201,
+   "lon": 11.096225
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17614",
+    "name": "Mittelfranken"
+   },
+   "6": {
+    "id": "relation/62780",
+    "name": "Nürnberg"
+   }
+  }
+ },
+ {
+  "id": "extra/turn-und-sportverein-1888-nuernberg-e-v-tuspo-nuer-nuernberg",
+  "cat": "reha",
+  "quelle": "https://tuspo-nuernberg.de/impressum/ (2026-11-25)",
+  "tags": {
+   "name": "Turn- und Sportverein 1888 Nürnberg e.V. (Tuspo Nürnberg), Koronarsport",
+   "addr:street": "Herrnhüttestraße",
+   "addr:housenumber": "75",
+   "addr:postcode": "90411",
+   "addr:city": "Nürnberg",
+   "phone": "+49 911 5298619",
+   "website": "https://tuspo-nuernberg.de/abteilungen/koronarsport/",
+   "email": "info@tuspo-nuernberg.de"
+  },
+  "location": {
+   "lat": 49.480492,
+   "lon": 11.100912
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17614",
+    "name": "Mittelfranken"
+   },
+   "6": {
+    "id": "relation/62780",
+    "name": "Nürnberg"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "herz"
+   ]
+  }
+ },
+ {
+  "id": "extra/dr-erler-reha-am-kontumazgarten-nuernberg",
+  "cat": "reha",
+  "quelle": "https://www.erler-reha.de/ (2026-11-25)",
+  "tags": {
+   "name": "DR. ERLER REHA am Kontumazgarten",
+   "addr:street": "Kontumazgarten",
+   "addr:housenumber": "19",
+   "addr:postcode": "90429",
+   "addr:city": "Nürnberg",
+   "phone": "+49 911 660550",
+   "website": "https://www.erler-reha.de/ambulante-leistungen/sporttherapie/reha-sport",
+   "email": "info@reha-kontumazgarten.de"
+  },
+  "location": {
+   "lat": 49.453277,
+   "lon": 11.066792
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17614",
+    "name": "Mittelfranken"
+   },
+   "6": {
+    "id": "relation/62780",
+    "name": "Nürnberg"
+   }
+  }
+ },
+ {
+  "id": "extra/djk-nuernberg-eibach-e-v-gesundheits-und-herzsport-nuernberg",
+  "cat": "reha",
+  "quelle": "https://www.djk-eibach.de/allgemein/kontakt-zur-djk-nuernberg-eibach/ (2026-11-25)",
+  "tags": {
+   "name": "DJK Nürnberg-Eibach e.V., Gesundheits- und Herzsport",
+   "addr:street": "Pommernstraße",
+   "addr:housenumber": "12",
+   "addr:postcode": "90451",
+   "addr:city": "Nürnberg",
+   "phone": "+49 911 6492473",
+   "website": "https://www.djk-eibach.de/abteilungen/gesundheitssport-herzsport-und-wirbelsaeulengymnastik/",
+   "email": "kontakt@djk-eibach.de"
+  },
+  "location": {
+   "lat": 49.412933,
+   "lon": 11.044443
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17614",
+    "name": "Mittelfranken"
+   },
+   "6": {
+    "id": "relation/62780",
+    "name": "Nürnberg"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "herz"
+   ]
+  }
+ },
+ {
+  "id": "extra/physiotherapie-klages-u-kollegen-gmbh-nuernberg",
+  "cat": "reha",
+  "quelle": "https://physiotherapie-klages.de/kontakt (2026-11-25)",
+  "tags": {
+   "name": "Physiotherapie Klages u. Kollegen GmbH",
+   "addr:street": "Am Plärrer",
+   "addr:housenumber": "25",
+   "addr:postcode": "90443",
+   "addr:city": "Nürnberg",
+   "phone": "+49 911 92919909",
+   "website": "https://physiotherapie-klages.de/",
+   "email": "info@physiotherapie-klages.de"
+  },
+  "location": {
+   "lat": 49.447525,
+   "lon": 11.065314
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17614",
+    "name": "Mittelfranken"
+   },
+   "6": {
+    "id": "relation/62780",
+    "name": "Nürnberg"
+   }
+  }
+ },
+ {
+  "id": "extra/body-art-gesundheitszentrum-fuer-frauen-nuernberg",
+  "cat": "reha",
+  "quelle": "https://www.body-and-art.de/impressum (2026-11-25)",
+  "tags": {
+   "name": "Body & ART – Gesundheitszentrum für Frauen",
+   "addr:street": "Zerzabelshofstraße",
+   "addr:housenumber": "43",
+   "addr:postcode": "90480",
+   "addr:city": "Nürnberg",
+   "phone": "+49 911 94185168",
+   "website": "https://www.body-and-art.de/reha-sport",
+   "email": "info@body-and-art.de"
+  },
+  "location": {
+   "lat": 49.44459,
+   "lon": 11.112041
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17614",
+    "name": "Mittelfranken"
+   },
+   "6": {
+    "id": "relation/62780",
+    "name": "Nürnberg"
+   }
+  }
+ },
+ {
+  "id": "extra/atv-1873-frankonia-nuernberg-e-v-abteilung-rehaspo-nuernberg",
+  "cat": "reha",
+  "quelle": "https://www.atv1873frankonia.de/de/rechtliches/impressum/ (2026-11-25)",
+  "tags": {
+   "name": "ATV 1873 Frankonia Nürnberg e.V., Abteilung RehaSport",
+   "addr:street": "Willstätterstraße",
+   "addr:housenumber": "4",
+   "addr:postcode": "90449",
+   "addr:city": "Nürnberg",
+   "phone": "+49 911 92389960",
+   "website": "https://www.atv1873frankonia.de/de/sportangebot/sportangebote-und-abteilungen/fitness--gesundheit/reha-sport/",
+   "email": "info@atv1873frankonia.de"
+  },
+  "location": {
+   "lat": 49.428145,
+   "lon": 11.015242
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17614",
+    "name": "Mittelfranken"
+   },
+   "6": {
+    "id": "relation/62780",
+    "name": "Nürnberg"
+   }
+  }
+ },
+ {
+  "id": "extra/therapie-company-langwasser-nuernberg",
+  "cat": "reha",
+  "quelle": "https://therapie-company.de/ (2026-11-25)",
+  "tags": {
+   "name": "Therapie Company Langwasser",
+   "addr:street": "Elisabeth-Selbert-Platz",
+   "addr:housenumber": "1",
+   "addr:postcode": "90473",
+   "addr:city": "Nürnberg",
+   "phone": "+49 911 2179740",
+   "website": "https://therapie-company.de/leistungen/#reha"
+  },
+  "location": {
+   "lat": 49.400477,
+   "lon": 11.135969
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17614",
+    "name": "Mittelfranken"
+   },
+   "6": {
+    "id": "relation/62780",
+    "name": "Nürnberg"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "krebs"
+   ]
+  }
+ },
+ {
+  "id": "extra/deutsche-rheuma-liga-landesverband-bayern-e-v-arbe-nuernberg",
+  "cat": "reha",
+  "quelle": "https://www.rheuma-liga-bayern.de/rheuma-liga-vor-ort/ag-nuernberg (2026-11-25)",
+  "tags": {
+   "name": "Deutsche Rheuma-Liga Landesverband Bayern e.V., Arbeitsgemeinschaft Nürnberg",
+   "addr:street": "Neue Gasse",
+   "addr:housenumber": "1",
+   "addr:postcode": "90403",
+   "addr:city": "Nürnberg",
+   "phone": "+49 911 330670",
+   "website": "https://www.rheuma-liga-bayern.de/rheuma-liga-vor-ort/ag-nuernberg",
+   "email": "rheuma-liga.nuernberg@t-online.de"
+  },
+  "location": {
+   "lat": 49.453968,
+   "lon": 11.080476
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17614",
+    "name": "Mittelfranken"
+   },
+   "6": {
+    "id": "relation/62780",
+    "name": "Nürnberg"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "funktionstraining",
+    "wasser"
+   ]
+  }
  }
 ]
