@@ -1,0 +1,18 @@
+---
+// Türkische Kategorieseiten (/tr/<kategorie>/). Texte: src/i18n/tr.ts. Ortsseiten bleiben deutsch.
+import Base from '../../../layouts/Base.astro';
+import Finder from '../../../components/Finder.astro';
+import { otherCategories, categories } from '../../../lib/data';
+import { LANGS, lp } from '../../../i18n';
+const lang = 'tr', L = LANGS[lang];
+export function getStaticPaths() {
+  return otherCategories.filter((c) => LANGS.tr.cats[c.key]?.intro).map((cat) => ({ params: { cat: cat.slug }, props: { cat } }));
+}
+const { cat } = Astro.props;
+const C = L.cats[cat.key];
+---
+<Base title={C.title!} description={C.intro!} crumbs={[{ href: lp(lang, `/${cat.slug}/`), label: C.label }]}>
+  <h1>{C.h1}</h1>
+  <p class="lead">{C.intro}</p>
+  <Finder lang={lang} preset={{ kind: 'cat', i: categories.findIndex((c) => c.key === cat.key), label: C.label, current: lp(lang, `/${cat.slug}/`) }} />
+</Base>
