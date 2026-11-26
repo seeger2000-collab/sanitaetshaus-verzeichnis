@@ -30598,5 +30598,259 @@
     "alltag"
    ]
   }
+ },
+ {
+  "id": "extra/turnverein-augsburg-1847-e-v-augsburg",
+  "cat": "reha",
+  "quelle": "https://www.tvaugsburg.de/impressum (2026-11-26)",
+  "tags": {
+   "name": "Turnverein Augsburg 1847 e.V.",
+   "addr:street": "Gabelsbergerstraße",
+   "addr:housenumber": "64",
+   "addr:postcode": "86199",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 573715",
+   "website": "https://www.tvaugsburg.de/reha-sport",
+   "email": "info@tvaugsburg.de"
+  },
+  "location": {
+   "lat": 48.352821,
+   "lon": 10.875086
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "herz",
+    "krebs",
+    "lunge"
+   ]
+  }
+ },
+ {
+  "id": "extra/therapiepark-augsburg-augsburg",
+  "cat": "reha",
+  "quelle": "https://www.therapiepark-augsburg.de/metanavigation/impressum (2026-11-26)",
+  "tags": {
+   "name": "Therapiepark Augsburg",
+   "addr:street": "Max-Josef-Metzger-Straße",
+   "addr:housenumber": "3a",
+   "addr:postcode": "86157",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 45536999",
+   "website": "https://www.therapiepark-augsburg.de/physiotherapie/rehasport",
+   "email": "termine@therapiepark-augsburg.de"
+  },
+  "location": {
+   "lat": 48.355548,
+   "lon": 10.853402
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/tsv-inningen-e-v-augsburg",
+  "cat": "reha",
+  "quelle": "https://tsv-inningen.de/impressum/ (2026-11-26)",
+  "tags": {
+   "name": "TSV Inningen e.V.",
+   "addr:street": "Oktavianstraße",
+   "addr:housenumber": "20",
+   "addr:postcode": "86199",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 93666",
+   "website": "https://tsv-inningen.de/kursangebote/",
+   "email": "info@tsv-inningen.de"
+  },
+  "location": {
+   "lat": 48.310607,
+   "lon": 10.857554
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
+ },
+ {
+  "id": "extra/djk-goeggingen-e-v-augsburg",
+  "cat": "reha",
+  "quelle": "https://djk-goeggingen.de/rehasport/ (2026-11-26)",
+  "tags": {
+   "name": "DJK Göggingen e.V.",
+   "addr:street": "Pfarrer-Bogner-Straße",
+   "addr:housenumber": "22",
+   "addr:postcode": "86199",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 9980577",
+   "website": "https://djk-goeggingen.de/rehasport/",
+   "email": "info@djk-goeggingen.de"
+  },
+  "location": {
+   "lat": 48.349329,
+   "lon": 10.868082
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "herz",
+    "neuro"
+   ]
+  }
+ },
+ {
+  "id": "extra/sportverein-reha-augsburg-e-v-augsburg",
+  "cat": "reha",
+  "quelle": "https://www.sv-reha.de/impressum/ (2026-11-26)",
+  "tags": {
+   "name": "Sportverein-Reha Augsburg e.V.",
+   "addr:street": "Christoph-von-Schmid-Straße",
+   "addr:housenumber": "10",
+   "addr:postcode": "86159",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 155975",
+   "website": "https://www.sv-reha.de/sportangebote/reha-sport-neurologie/"
+  },
+  "location": {
+   "lat": 48.355304,
+   "lon": 10.878151
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "neuro"
+   ]
+  }
+ },
+ {
+  "id": "extra/deutsche-rheuma-liga-landesverband-bayern-e-v-ag-a-augsburg",
+  "cat": "reha",
+  "quelle": "https://www.rheuma-liga-bayern.de/rheuma-liga-vor-ort/ag-augsburg (2026-11-26)",
+  "tags": {
+   "name": "Deutsche Rheuma-Liga Landesverband Bayern e.V. – AG Augsburg",
+   "addr:street": "Hessingstraße",
+   "addr:housenumber": "17",
+   "addr:postcode": "86199",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 99839040",
+   "website": "https://www.rheuma-liga-bayern.de/rheuma-liga-vor-ort/ag-augsburg",
+   "email": "info@rheuma-liga-augsburg.de"
+  },
+  "location": {
+   "lat": 48.340034,
+   "lon": 10.866246
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "funktionstraining",
+    "wasser"
+   ]
+  }
+ },
+ {
+  "id": "extra/7fit-augsburg-im-zentrum-fuer-kardiologie-cardiocl-augsburg",
+  "cat": "reha",
+  "quelle": "https://zfk-augsburg.de/fitness/kurse/ (2026-11-26)",
+  "tags": {
+   "name": "7FIT Augsburg im Zentrum für Kardiologie (CardioClinic Augsburg Service GmbH)",
+   "addr:street": "Alfred-Nobel-Straße",
+   "addr:housenumber": "4",
+   "addr:postcode": "86156",
+   "addr:city": "Augsburg",
+   "phone": "+49 821 31987523",
+   "website": "https://zfk-augsburg.de/reha/behandlungsspektrum/nachsorge/",
+   "email": "fitness@zfk-augsburg.de"
+  },
+  "location": {
+   "lat": 48.382703,
+   "lon": 10.847366
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62407",
+    "name": "Augsburg"
+   }
+  }
  }
 ]
