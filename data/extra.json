@@ -29838,5 +29838,765 @@
     "wasser"
    ]
   }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-lichtblick-biessenhofen",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-lichtblick.de/impressum (2026-11-26)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Lichtblick",
+   "addr:street": "Füssener Straße",
+   "addr:housenumber": "11",
+   "addr:postcode": "87640",
+   "addr:city": "Biessenhofen",
+   "phone": "+49 8341 994499",
+   "website": "https://www.pflegedienst-lichtblick.de",
+   "email": "info@pflegedienst-lichtblick.de"
+  },
+  "location": {
+   "lat": 47.830379,
+   "lon": 10.641809
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62533",
+    "name": "Landkreis Ostallgäu"
+   },
+   "7": {
+    "id": "relation/447978",
+    "name": "Biessenhofen (VGem)"
+   },
+   "8": {
+    "id": "relation/447976",
+    "name": "Biessenhofen"
+   }
+  }
+ },
+ {
+  "id": "extra/bea-s-pflegefeen-buchloe",
+  "cat": "pflege",
+  "quelle": "https://beas-pflegefeen.de/impressum/ (2026-11-26)",
+  "tags": {
+   "name": "Bea’s Pflegefeen",
+   "addr:street": "Mindelheimer Straße",
+   "addr:housenumber": "10",
+   "addr:postcode": "86807",
+   "addr:city": "Buchloe",
+   "phone": "+49 8241 9600010",
+   "website": "https://beas-pflegefeen.de",
+   "email": "info@beas-pflegefeen.de"
+  },
+  "location": {
+   "lat": 48.036658,
+   "lon": 10.721823
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62533",
+    "name": "Landkreis Ostallgäu"
+   },
+   "7": {
+    "id": "relation/2616230",
+    "name": "Buchloe"
+   },
+   "8": {
+    "id": "relation/442789",
+    "name": "Buchloe"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-intensivpflege-becker-fuessen",
+  "cat": "pflege",
+  "quelle": "https://ai-becker.de/impressum (2026-11-26)",
+  "tags": {
+   "name": "Ambulante Intensivpflege Becker",
+   "addr:street": "Am Ziegelstadel",
+   "addr:housenumber": "8a",
+   "addr:postcode": "87629",
+   "addr:city": "Füssen",
+   "phone": "+49 8362 9244340",
+   "website": "https://ai-becker.de",
+   "email": "mail@ai-becker.de"
+  },
+  "location": {
+   "lat": 47.571443,
+   "lon": 10.696699
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62533",
+    "name": "Landkreis Ostallgäu"
+   },
+   "8": {
+    "id": "relation/448298",
+    "name": "Füssen"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-in-guten-haenden-geborgen-oberguenzburg",
+  "cat": "pflege",
+  "quelle": "http://pflegedienst-oberguenzburg.de/ (2026-11-26)",
+  "tags": {
+   "name": "Pflegedienst In guten Händen geborgen",
+   "addr:street": "Unterer Markt",
+   "addr:housenumber": "19",
+   "addr:postcode": "87634",
+   "addr:city": "Obergünzburg",
+   "phone": "+49 8372 9805130",
+   "website": "http://pflegedienst-oberguenzburg.de",
+   "email": "info@pflegedienst-oberguenzburg.de"
+  },
+  "location": {
+   "lat": 47.848494,
+   "lon": 10.418322
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62533",
+    "name": "Landkreis Ostallgäu"
+   },
+   "7": {
+    "id": "relation/448037",
+    "name": "Obergünzburg (VGem)"
+   },
+   "8": {
+    "id": "relation/448038",
+    "name": "Obergünzburg"
+   }
+  }
+ },
+ {
+  "id": "extra/kirchliche-sozialstation-marktoberdorf-marktoberdorf",
+  "cat": "pflege",
+  "quelle": "https://www.sozialstation-marktoberdorf.de/kontakt/impressum/ (2026-11-26)",
+  "tags": {
+   "name": "Kirchliche Sozialstation Marktoberdorf",
+   "addr:street": "Greitherrstraße",
+   "addr:housenumber": "8",
+   "addr:postcode": "87616",
+   "addr:city": "Marktoberdorf",
+   "phone": "+49 8342 98447",
+   "website": "https://www.sozialstation-marktoberdorf.de",
+   "email": "info@sozialstation-marktoberdorf.de"
+  },
+  "location": {
+   "lat": 47.776338,
+   "lon": 10.61471
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62533",
+    "name": "Landkreis Ostallgäu"
+   },
+   "8": {
+    "id": "relation/445608",
+    "name": "Marktoberdorf"
+   }
+  }
+ },
+ {
+  "id": "extra/pflege-24-gmbh-fuessen",
+  "cat": "pflege",
+  "quelle": "https://www.pflege24-fuessen.de/impressum (2026-11-26)",
+  "tags": {
+   "name": "Pflege 24 GmbH",
+   "addr:street": "Von-Freyberg-Straße",
+   "addr:housenumber": "12",
+   "addr:postcode": "87629",
+   "addr:city": "Füssen",
+   "phone": "+49 8362 300111",
+   "website": "https://www.pflege24-fuessen.de",
+   "email": "willkommen@pflege24-fuessen.de"
+  },
+  "location": {
+   "lat": 47.570456,
+   "lon": 10.695664
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62533",
+    "name": "Landkreis Ostallgäu"
+   },
+   "8": {
+    "id": "relation/448298",
+    "name": "Füssen"
+   }
+  }
+ },
+ {
+  "id": "extra/guenztaler-pflege-engel-oberguenzburg",
+  "cat": "pflege",
+  "quelle": "https://guenztaler-pflegeengel.de/impressum/ (2026-11-26)",
+  "tags": {
+   "name": "Günztaler Pflege Engel",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "53",
+   "addr:postcode": "87634",
+   "addr:city": "Obergünzburg",
+   "phone": "+49 8372 9806131",
+   "website": "https://guenztaler-pflegeengel.de",
+   "email": "info@guenztaler-pflegeengel.de"
+  },
+  "location": {
+   "lat": 47.852761,
+   "lon": 10.47283
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62533",
+    "name": "Landkreis Ostallgäu"
+   },
+   "7": {
+    "id": "relation/448037",
+    "name": "Obergünzburg (VGem)"
+   },
+   "8": {
+    "id": "relation/448038",
+    "name": "Obergünzburg"
+   }
+  }
+ },
+ {
+  "id": "extra/mobile-pflege-sunshine-oberostendorf",
+  "cat": "pflege",
+  "quelle": "https://www.mobile-pflege-sunshine.de/impressum-datenschutz/ (2026-11-26)",
+  "tags": {
+   "name": "Mobile Pflege Sunshine",
+   "addr:street": "Kardinalstraße",
+   "addr:housenumber": "4",
+   "addr:postcode": "86869",
+   "addr:city": "Oberostendorf",
+   "phone": "+49 8344 7683674",
+   "website": "https://www.mobile-pflege-sunshine.de",
+   "email": "kontakt@mobile-pflege-sunshine.de"
+  },
+  "location": {
+   "lat": 47.94147,
+   "lon": 10.744662
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62533",
+    "name": "Landkreis Ostallgäu"
+   },
+   "7": {
+    "id": "relation/447635",
+    "name": "Westendorf (VGem)"
+   },
+   "8": {
+    "id": "relation/447636",
+    "name": "Oberostendorf"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-care4me-pforzen",
+  "cat": "pflege",
+  "quelle": "https://www.care-4-me.de/impressum.html (2026-11-26)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Care4me",
+   "addr:street": "Am Moosberg",
+   "addr:housenumber": "3a",
+   "addr:postcode": "87666",
+   "addr:city": "Pforzen",
+   "phone": "+49 8346 9822869",
+   "website": "https://www.care-4-me.de",
+   "email": "info@care-4-me.de"
+  },
+  "location": {
+   "lat": 47.933451,
+   "lon": 10.606892
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62533",
+    "name": "Landkreis Ostallgäu"
+   },
+   "8": {
+    "id": "relation/447626",
+    "name": "Pforzen"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-krankenpflegeverein-pfronten-e-v-pfronten",
+  "cat": "pflege",
+  "quelle": "https://www.krankenpflege-pfronten.de/impressum/ (2026-11-26)",
+  "tags": {
+   "name": "Ambulanter Krankenpflegeverein Pfronten e.V.",
+   "addr:street": "Dr.-Kohnle-Weg",
+   "addr:housenumber": "1",
+   "addr:postcode": "87459",
+   "addr:city": "Pfronten",
+   "phone": "+49 8363 94400",
+   "website": "https://www.krankenpflege-pfronten.de",
+   "email": "info@krankenpflege-pfronten.de"
+  },
+  "location": {
+   "lat": 47.585033,
+   "lon": 10.558639
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62533",
+    "name": "Landkreis Ostallgäu"
+   },
+   "8": {
+    "id": "relation/448299",
+    "name": "Pfronten"
+   }
+  }
+ },
+ {
+  "id": "extra/pflegedienst-tagespflege-siebert-ronsberg",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienstsiebert.de/impressum (2026-11-26)",
+  "tags": {
+   "name": "Pflegedienst & Tagespflege Siebert",
+   "addr:street": "Marktplatz",
+   "addr:housenumber": "6",
+   "addr:postcode": "87671",
+   "addr:city": "Ronsberg",
+   "phone": "+49 8306 975683",
+   "website": "https://www.pflegedienstsiebert.de",
+   "email": "info@pflegedienstsiebert.de"
+  },
+  "location": {
+   "lat": 47.89872,
+   "lon": 10.413346
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62533",
+    "name": "Landkreis Ostallgäu"
+   },
+   "8": {
+    "id": "relation/448039",
+    "name": "Ronsberg"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulante-pflege-mit-herz-schwangau",
+  "cat": "pflege",
+  "quelle": "https://www.pflege-mit-herz.biz/Impressum.html (2026-11-26)",
+  "tags": {
+   "name": "Ambulante Pflege mit Herz",
+   "addr:street": "Mitteldorf",
+   "addr:housenumber": "19",
+   "addr:postcode": "87645",
+   "addr:city": "Schwangau",
+   "phone": "+49 8362 929821",
+   "website": "https://www.pflege-mit-herz.biz",
+   "email": "info@pflege-mit-herz.biz"
+  },
+  "location": {
+   "lat": 47.576609,
+   "lon": 10.735361
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62533",
+    "name": "Landkreis Ostallgäu"
+   },
+   "8": {
+    "id": "relation/448297",
+    "name": "Schwangau"
+   }
+  }
+ },
+ {
+  "id": "extra/brk-ambulante-pflege-stuetzpunkt-marktoberdorf-marktoberdorf",
+  "cat": "pflege",
+  "quelle": "https://www.brk-ostallgaeu.de/soziale-dienste/ambulante-pflege.html (2026-11-26)",
+  "tags": {
+   "name": "BRK Ambulante Pflege Stützpunkt Marktoberdorf",
+   "addr:street": "Mühlsteig",
+   "addr:housenumber": "33",
+   "addr:postcode": "87616",
+   "addr:city": "Marktoberdorf",
+   "phone": "+49 8342 916047",
+   "website": "https://www.brk-ostallgaeu.de/soziale-dienste/ambulante-pflege.html",
+   "email": "ambulante.pflege.oal@brk.de"
+  },
+  "location": {
+   "lat": 47.771791,
+   "lon": 10.609502
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62533",
+    "name": "Landkreis Ostallgäu"
+   },
+   "8": {
+    "id": "relation/445608",
+    "name": "Marktoberdorf"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-ambulante-pflege-stuetzpunkt-marktoberdorf-marktoberdorf",
+  "cat": "fahrt",
+  "quelle": "https://www.brk-ostallgaeu.de/soziale-dienste/ambulante-pflege.html (2026-11-26)",
+  "tags": {
+   "name": "BRK Ambulante Pflege Stützpunkt Marktoberdorf",
+   "addr:street": "Mühlsteig",
+   "addr:housenumber": "33",
+   "addr:postcode": "87616",
+   "addr:city": "Marktoberdorf",
+   "phone": "+49 8342 916047",
+   "website": "https://www.brk-ostallgaeu.de/soziale-dienste/ambulante-pflege.html",
+   "email": "ambulante.pflege.oal@brk.de"
+  },
+  "location": {
+   "lat": 47.771791,
+   "lon": 10.609502
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62533",
+    "name": "Landkreis Ostallgäu"
+   },
+   "8": {
+    "id": "relation/445608",
+    "name": "Marktoberdorf"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-ambulante-pflege-stuetzpunkt-fuessen-fuessen",
+  "cat": "pflege",
+  "quelle": "https://www.brk-ostallgaeu.de/soziale-dienste/ambulante-pflege.html (2026-11-26)",
+  "tags": {
+   "name": "BRK Ambulante Pflege Stützpunkt Füssen",
+   "addr:street": "Herkomerstraße",
+   "addr:housenumber": "10",
+   "addr:postcode": "87629",
+   "addr:city": "Füssen",
+   "phone": "+49 8362 10274",
+   "website": "https://www.brk-ostallgaeu.de/soziale-dienste/ambulante-pflege.html",
+   "email": "ambulante.pflege.oal@brk.de"
+  },
+  "location": {
+   "lat": 47.569884,
+   "lon": 10.690743
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62533",
+    "name": "Landkreis Ostallgäu"
+   },
+   "8": {
+    "id": "relation/448298",
+    "name": "Füssen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/brk-ambulante-pflege-stuetzpunkt-fuessen-fuessen",
+  "cat": "fahrt",
+  "quelle": "https://www.brk-ostallgaeu.de/soziale-dienste/ambulante-pflege.html (2026-11-26)",
+  "tags": {
+   "name": "BRK Ambulante Pflege Stützpunkt Füssen",
+   "addr:street": "Herkomerstraße",
+   "addr:housenumber": "10",
+   "addr:postcode": "87629",
+   "addr:city": "Füssen",
+   "phone": "+49 8362 10274",
+   "website": "https://www.brk-ostallgaeu.de/soziale-dienste/ambulante-pflege.html",
+   "email": "ambulante.pflege.oal@brk.de"
+  },
+  "location": {
+   "lat": 47.569884,
+   "lon": 10.690743
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62533",
+    "name": "Landkreis Ostallgäu"
+   },
+   "8": {
+    "id": "relation/448298",
+    "name": "Füssen"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/mobiler-haushalts-seniorenservice-naumann-nesselwang",
+  "cat": "pflege",
+  "quelle": "https://senioren-service-naumann.de/impressum.html (2026-11-26)",
+  "tags": {
+   "name": "Mobiler Haushalts- & Seniorenservice Naumann",
+   "addr:street": "Bäckerweg",
+   "addr:housenumber": "5",
+   "addr:postcode": "87484",
+   "addr:city": "Nesselwang",
+   "phone": "+49 8361 9255255",
+   "website": "https://senioren-service-naumann.de",
+   "email": "seniorenservice-naumann@t-online.de"
+  },
+  "location": {
+   "lat": 47.622365,
+   "lon": 10.488707
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62533",
+    "name": "Landkreis Ostallgäu"
+   },
+   "8": {
+    "id": "relation/448300",
+    "name": "Nesselwang"
+   }
+  }
+ },
+ {
+  "id": "extra/hauswirtschaftlicher-fachservice-ostallgaeu-ruderatshofen",
+  "cat": "pflege",
+  "quelle": "https://www.hwfoal.de/impressum (2026-11-26)",
+  "tags": {
+   "name": "Hauswirtschaftlicher Fachservice Ostallgäu",
+   "addr:street": "Hauptstraße",
+   "addr:housenumber": "28",
+   "addr:postcode": "87674",
+   "addr:city": "Ruderatshofen",
+   "phone": "+49 8343 923659",
+   "website": "https://www.hwfoal.de",
+   "email": "cureischl@t-online.de"
+  },
+  "location": {
+   "lat": 47.818593,
+   "lon": 10.587932
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62533",
+    "name": "Landkreis Ostallgäu"
+   },
+   "8": {
+    "id": "relation/447975",
+    "name": "Ruderatshofen"
+   }
+  }
+ },
+ {
+  "id": "extra/buergerverein-am-lech-e-v-lechbruck-am-see",
+  "cat": "pflege",
+  "quelle": "https://buergerverein-am-lech.de/impressum/ (2026-11-26)",
+  "tags": {
+   "name": "Bürgerverein am Lech e.V.",
+   "addr:street": "Pfarrer-Königsdorfer-Weg",
+   "addr:housenumber": "9",
+   "addr:postcode": "86983",
+   "addr:city": "Lechbruck am See",
+   "phone": "+49 8862 9327648",
+   "website": "https://buergerverein-am-lech.de",
+   "email": "info@buergerverein-am-lech.de"
+  },
+  "location": {
+   "lat": 47.69966,
+   "lon": 10.794289
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62533",
+    "name": "Landkreis Ostallgäu"
+   },
+   "8": {
+    "id": "relation/448301",
+    "name": "Lechbruck am See"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
  }
 ]
