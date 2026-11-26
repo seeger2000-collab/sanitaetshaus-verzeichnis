@@ -3,9 +3,10 @@
 // Übersetzt sind bisher die Startseite und die Kategorieseiten (siehe translatedPaths); alle anderen Seiten bleiben deutsch.
 import { de, type Dict } from './de';
 import { en } from './en';
+import { tr } from './tr';
 import { otherCategories } from '../lib/data';
 
-export const LANGS: Record<string, Dict> = { de, en };
+export const LANGS: Record<string, Dict> = { de, en, tr };
 export type Lang = keyof typeof LANGS;
 export const DEFAULT_LANG = 'de';
 export const OTHER_LANGS = Object.keys(LANGS).filter((l) => l !== DEFAULT_LANG);

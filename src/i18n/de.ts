@@ -24,6 +24,8 @@ export const de = {
   osmContributors: 'OpenStreetMap-Mitwirkende',
   // nur in Übersetzungen gefüllt: Hinweis, dass Impressum und Datenschutz auf Deutsch maßgeblich sind
   legalNote: '',
+  // nur in Übersetzungen genutzt: Fußzeilen-Links auf die deutschen Seiten
+  footer: { german: 'Deutsche Version', impressum: 'Impressum', datenschutz: 'Datenschutz', eintrag: 'Eintrag ergänzen oder melden' },
   stat: {
     settings: 'Statistik-Einstellungen',
     heading: 'Dürfen wir genauer zählen?',

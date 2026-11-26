@@ -8,7 +8,7 @@ import { otherCategories } from '../../lib/data';
 import { LANGS, lp } from '../../i18n';
 const lang = 'en', L = LANGS[lang], H = L.home!;
 ---
-<Base title={H.title} description={H.description} jsonLd={[{ '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: new URL(u(lp(lang, '/')), Astro.site).href, inLanguage: 'en' }]}>
+<Base title={H.title} description={H.description} jsonLd={[{ '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: new URL(u(lp(lang, '/')), Astro.site).href, inLanguage: lang }]}>
   <h1>{H.h1}</h1>
   <p class="lead">{H.lead}</p>
   <Finder lang={lang} />
