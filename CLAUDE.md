@@ -17,7 +17,7 @@ Die Startseiten-Suche (src/components/Finder.astro) baut ihre Liste in JavaScrip
 - Besucher werden gesiezt.
 
 ## Sprachen (JS 21.11.2026)
-- Reihenfolge: Englisch (live 21.11.), Türkisch (25.11.), dann Polnisch. Alle nur in der sparsamen Fassung (JS 21.11.). Aufbau und Anleitung für neue Sprachen: docs/sprachen.md.
+- Reihenfolge: Englisch (live 21.11.), Türkisch (live 26.11.), Polnisch (26.11.). Weitere Sprachen nur auf Wunsch von JS. Alle nur in der sparsamen Fassung (JS 21.11.). Aufbau und Anleitung für neue Sprachen: docs/sprachen.md.
 - Neue Oberflächentexte in Base.astro oder Finder.astro gehören in src/i18n/de.ts und alle Sprachdateien, nicht direkt in den Code.
 - Nur Startseite und Kategorieseiten werden übersetzt, Einträge nie. Keine automatische Umleitung nach Browsersprache, nur der Hinweis oben.
 - Auch übersetzt bleibt das Etikett erkennbar als Werbung („Ad · TOP listing“).

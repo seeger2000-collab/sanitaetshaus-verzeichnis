@@ -11,7 +11,8 @@ Lesen, wenn eine neue Sprache dazukommt oder Oberflächentexte geändert werden.
 - hreflang: `Base.astro` setzt `<link rel="alternate" hreflang>` auf allen Seiten mit Übersetzung, die Sitemap verknüpft die Sprachen (`astro.config.mjs`, Option `i18n`).
 - Sprachhinweis: Passt die Browsersprache zu einer Übersetzung der aktuellen Seite, erscheint oben einmal „Diese Seite auf X anzeigen?“. Keine automatische Umleitung. Die Wahl wird im Browser unter `sh-sprache` gespeichert.
 
-## Neue Sprache (z. B. Türkisch `tr`)
+## Neue Sprache (z. B. Türkisch `tr`, Polnisch `pl`)
+Vorhanden: `en`, `tr`, `pl`.
 1. `src/i18n/en.ts` nach `src/i18n/tr.ts` kopieren, `flag` (Flagge als SVG), `switchTo`, `footer`, `code`, `htmlLang`, `ogLocale`, `dateLocale`, `decimal` anpassen und alle Texte übersetzen. Bei `bedarf.*.words` Suchwörter in der neuen Sprache eintragen.
 2. In `src/i18n/index.ts` in `LANGS` eintragen.
 3. In `astro.config.mjs` bei `sitemap({ i18n: { locales } })` eintragen.
