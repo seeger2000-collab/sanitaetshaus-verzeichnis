@@ -4,9 +4,10 @@
 import { de, type Dict } from './de';
 import { en } from './en';
 import { tr } from './tr';
+import { pl } from './pl';
 import { otherCategories } from '../lib/data';
 
-export const LANGS: Record<string, Dict> = { de, en, tr };
+export const LANGS: Record<string, Dict> = { de, en, tr, pl };
 export type Lang = keyof typeof LANGS;
 export const DEFAULT_LANG = 'de';
 export const OTHER_LANGS = Object.keys(LANGS).filter((l) => l !== DEFAULT_LANG);
