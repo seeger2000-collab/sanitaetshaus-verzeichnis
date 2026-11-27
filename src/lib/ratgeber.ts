@@ -1,75 +1,141 @@
 // Ratgeber-Seiten. Themen und Fragen stammen aus der Keyword-Recherche (reports/keywords/keywords.json).
-import { sgb5, sgb11, ktRL, hmv, estg, bgb, sgg, hilfsmRL } from './recht';
+import { sgb5, sgb11, sgb9, ktRL, hmv, estg, bgb, sgg, hilfsmRL } from './recht';
 // Häufige Suchanfrage (Keywords November 2026): „Rezept Gültigkeit“. Fassung der Richtlinie vom 20.02.2025, geprüft am 2.11.2026.
 const REZEPT_GUELTIG = { q: 'Wie lange ist das Rezept gültig?', a: `28 Kalendertage ab Ausstellung. Beginnt die Versorgung im Sanitätshaus nicht innerhalb dieser Zeit, verliert das Rezept seine Gültigkeit. Geht der Antrag in dieser Zeit bei der Krankenkasse ein, ist die Frist gewahrt (${hilfsmRL('§ 8 Abs. 2')}). Ein Rezept aus dem Krankenhaus bei der Entlassung gilt nur bis sieben Kalendertage nach der Entlassung (${hilfsmRL('§ 6a Abs. 2')}).` };
 const Z = 'mindestens 5 € und höchstens 10 €';
 // Rechtsstand Oktober 2026 (Normen am 5.10.2026 auf gesetze-im-internet.de geprüft), ohne Gewähr. Texte dürfen Links aus recht.ts enthalten. Bei Änderungen der Regeln hier anpassen.
 export type Guide = {
   slug: string; title: string; h1: string; description: string; lead: string;
-  sections: { h: string; p: string[] }[];
+  // steps: nummerierte Schritte, list: Aufzählung, after: Absätze nach der Liste. Alles darf Normlinks enthalten.
+  sections: { h: string; p: string[]; steps?: string[]; list?: string[]; after?: string[] }[];
   faq: { q: string; a: string }[];
   buy?: { label: string; amazon: string }[];
   pflegebox?: boolean; hausnotruf?: boolean;
   finder: { href: string; label: string };
+  // Schlüssel aus begriffe.ts: Kästen „Begriff erklärt“
+  begriffe?: string[];
+  // Tabelle „auf einen Blick“ (Zellen dürfen Normlinks enthalten)
+  table?: { caption: string; head: string[]; rows: string[][]; note?: string };
+  // „Vor Ort finden“: Städte mit mindestens 3 passenden Einträgen (nur indexierte Ortsseiten), Leistung (feature) oder Kategorie (cat)
+  local?: { feature?: string; cat?: string; label: string; extra?: { feature: string; label: string } };
+  related?: string[];
 };
 
 export const GUIDES: Guide[] = [
   {
     slug: 'rollator-auf-rezept',
-    title: 'Rollator auf Rezept: Was die Krankenkasse zahlt',
+    title: 'Rollator auf Rezept: Was die Krankenkasse zahlt (2026)',
     h1: 'Rollator auf Rezept oder selbst kaufen?',
-    description: 'Rollator auf Rezept: Wer ihn verordnet, was die Krankenkasse zahlt, ob ein Pflegegrad nötig ist und wann sich ein leichter Rollator zum Selbstkaufen lohnt.',
-    lead: 'Einen Rollator bekommen gesetzlich Versicherte mit ärztlicher Verordnung von der Krankenkasse. Einen Pflegegrad brauchen Sie dafür nicht.',
+    description: 'Rollator auf Rezept: wer ihn verordnet, was die Krankenkasse zahlt, Zuzahlung, ob ein Pflegegrad nötig ist, Reparatur, Ablehnung und Widerspruch, und welcher Rollator für Wohnung und draußen passt.',
+    lead: 'Einen Rollator bekommen gesetzlich Versicherte mit ärztlicher Verordnung von der Krankenkasse. Einen Pflegegrad brauchen Sie dafür nicht. Sie zahlen höchstens 10 € zu.',
+    begriffe: ['hilfsmittel', 'zuzahlung', 'vertragspartner', 'genehmigungsfiktion'],
     sections: [
       { h: 'So bekommen Sie einen Rollator auf Rezept', p: [
-        `Ihr Hausarzt oder Orthopäde verordnet den Rollator, wenn Sie ohne Hilfe nicht mehr sicher gehen können. Der Anspruch ergibt sich aus ${sgb5('33', 'Abs. 1')}. Mit dem Rezept gehen Sie in ein Sanitätshaus, das einen Vertrag mit Ihrer Krankenkasse hat (${sgb5('33', 'Abs. 6')}, ${sgb5('127')}). Das Sanitätshaus stellt den Antrag und rechnet direkt mit der Kasse ab.`,
-        `Versicherte ab 18 Jahren zahlen 10 % des Preises zu, ${Z} (${sgb5('33', 'Abs. 8')}, ${sgb5('61')} Satz 1). Wer die Belastungsgrenze erreicht hat, ist für den Rest des Jahres von Zuzahlungen befreit (${sgb5('62')}).`,
+        `Der Rollator ist ein Hilfsmittel der Krankenkasse (${sgb5('33', 'Abs. 1')} Satz 1). Im ${hmv} stehen Rollatoren in der Produktgruppe 10 (Gehhilfen) unter „fahrbare Gehhilfen“ (Positionsnummer 10.50.04). Diese Nummer muss nicht auf dem Rezept stehen, die Bezeichnung „Rollator“ und die Diagnose reichen.`,
+      ], steps: [
+        'Termin beim Hausarzt oder Orthopäden: Schildern Sie, wann und wo Sie unsicher gehen, ob Sie schon gestürzt sind und wie weit Sie ohne Pause kommen.',
+        'Der Arzt stellt eine Verordnung aus, mit Diagnose und „Rollator“. Besondere Anforderungen (z. B. Körpergewicht über 130 kg, sehr schmal für die Wohnung) sollte er dazuschreiben.',
+        `Gehen Sie mit dem Rezept innerhalb von 28 Tagen zu einem Sanitätshaus, das Vertragspartner Ihrer Kasse ist (${hilfsmRL('§ 8 Abs. 2')}, ${sgb5('33', 'Abs. 6')}). Unter den Vertragspartnern dürfen Sie frei wählen.`,
+        'Das Sanitätshaus fragt bei der Kasse an oder gibt den Rollator direkt ab, stellt ihn auf Ihre Größe ein und erklärt Bremsen und Falten. Viele liefern auch nach Hause.',
+        `Sie zahlen ab 18 Jahren die Zuzahlung im Sanitätshaus (${sgb5('33', 'Abs. 8')}). Den Rest rechnet das Sanitätshaus mit der Kasse ab.`,
       ] },
-      { h: 'Leichter Rollator, Rollator für die Wohnung', p: [
-        `Die Kasse zahlt das Modell, das medizinisch notwendig ist. Wünschen Sie ein besonders leichtes Modell aus Aluminium oder Carbon, ohne dass Sie es medizinisch brauchen, zahlen Sie die Mehrkosten selbst (${sgb5('33', 'Abs. 1')} Satz 9). Für enge Wohnungen gibt es schmale Indoor-Rollatoren mit Tablett.`,
-        'Achten Sie beim Kauf auf das Gewicht (leichte Modelle wiegen etwa 5 bis 7 kg), die Sitzhöhe, die Faltmaße für den Kofferraum und auf große Räder, wenn Sie oft draußen unterwegs sind.',
+      { h: 'Was die Krankenkasse zahlt und was Sie zahlen', p: [
+        `Die Kasse zahlt einen Rollator, der für Sie medizinisch notwendig ist, zu dem Preis, den sie mit dem Sanitätshaus vereinbart hat (${sgb5('33', 'Abs. 7')}). Sie zahlen 10 % des Preises zu, mindestens 5 € und höchstens 10 € (${sgb5('61')} Satz 1). Kostet der Rollator die Kasse 90 €, zahlen Sie also 9 €, bei 150 € die Höchstgrenze von 10 €.`,
+        `Wünschen Sie ein Modell, das mehr kann als nötig, etwa einen besonders leichten Carbon-Rollator ohne medizinischen Grund, zahlen Sie die Mehrkosten und dadurch höhere Folgekosten selbst (${sgb5('33', 'Abs. 1')} Satz 9). Fragen Sie im Sanitätshaus, welches Modell ohne Aufzahlung zu haben ist.`,
+        `Haben Sie im Jahr schon viel zugezahlt, prüfen Sie die Befreiung: Mehr als 2 % der Bruttoeinnahmen zum Lebensunterhalt, bei chronisch Kranken 1 %, müssen Sie nicht zuzahlen (${sgb5('62', 'Abs. 1')}).`,
+      ] },
+      { h: 'Leihweise, gebraucht, Reparatur', p: [
+        `Die Kasse darf Hilfsmittel auch leihweise überlassen (${sgb5('33', 'Abs. 5')}). Deshalb bekommen Sie oft einen geprüften, gebrauchten Rollator aus dem Bestand der Kasse. Er gehört dann der Kasse, nicht Ihnen. Brauchen Sie ihn nicht mehr, geben Sie ihn zurück.`,
+        `Zum Anspruch gehören auch die notwendige Änderung, Reparatur und Ersatzbeschaffung (${sgb5('33', 'Abs. 1')} Satz 5). Bremsen nachstellen, Reifen oder Griffe tauschen: Wenden Sie sich an das Sanitätshaus, das den Rollator geliefert hat, und zahlen Sie keine Reparatur selbst, bevor Sie gefragt haben.`,
+        `Ein Zweitgerät, etwa für ein anderes Stockwerk, zahlt die Kasse nur, wenn es im Einzelfall erforderlich ist (${sgb5('33', 'Abs. 1')} Satz 1). Lassen Sie sich die Begründung vom Arzt aufschreiben.`,
+      ] },
+      { h: 'Wenn die Kasse ablehnt oder sich Zeit lässt', p: [
+        `Die Krankenkasse muss über einen Antrag innerhalb von drei Wochen entscheiden, wenn sie ein Gutachten des Medizinischen Dienstes einholt, innerhalb von fünf Wochen. Schafft sie das nicht und nennt Ihnen keinen hinreichenden Grund, gilt der Antrag als genehmigt (${sgb5('13', 'Abs. 3a')} Satz 1, 5 und 6). Dient der Rollator dazu, eine Behinderung auszugleichen, können stattdessen die Fristen des Rehabilitationsrechts gelten (${sgb5('13', 'Abs. 3a')} Satz 9, ${sgb9('18')}). Notieren Sie sich deshalb, wann der Antrag bei der Kasse eingegangen ist.`,
+        `Gegen eine Ablehnung legen Sie innerhalb eines Monats Widerspruch ein (${sgg('84', 'Abs. 1')}). Ein kurzer Brief genügt: „Gegen Ihren Bescheid vom … lege ich Widerspruch ein. Die Begründung reiche ich nach.“ Bitten Sie dann den Arzt um eine kurze Stellungnahme, warum Sie ohne Rollator nicht sicher gehen können.`,
+      ] },
+      { h: 'Welcher Rollator passt?', p: [
+        'Für draußen sind große, weiche Räder und eine gute Feststellbremse wichtig, damit Bordsteine und Waldwege gehen. Für die Wohnung gibt es schmale Indoor-Rollatoren mit Tablett, die durch Türen passen und in denen man Teller oder Tasse tragen kann. Messen Sie die schmalste Tür und den Abstand zwischen Möbeln, bevor Sie sich entscheiden.',
+        'Die Griffe stehen richtig, wenn sie bei locker hängenden Armen etwa auf Höhe Ihrer Handgelenke sind. Leichte Modelle wiegen etwa 5 bis 7 kg, Standardmodelle deutlich mehr. Das zählt, wenn Sie den Rollator oft in den Kofferraum oder eine Stufe hinauf heben. Achten Sie auf das zulässige Höchstgewicht des Nutzers und auf eine Sitzfläche, wenn Sie unterwegs Pausen brauchen.',
+        'Rollatoren mit Unterarmauflage helfen, wenn Sie sich mit den Händen nicht gut abstützen können, etwa bei Rheuma. Elektrische Rollatoren mit Schiebe- und Bremshilfe sind noch selten und teuer; ob die Kasse einen zahlt, hängt davon ab, ob ein einfacher Rollator für Sie nicht ausreicht.',
       ] },
     ],
+    table: { caption: 'Rollator: die Kosten auf einen Blick (gesetzliche Krankenversicherung)', head: ['Frage', 'Antwort', 'Norm'], rows: [
+      ['Wer zahlt?', 'Krankenkasse, mit ärztlicher Verordnung', sgb5('33', 'Abs. 1')],
+      ['Pflegegrad nötig?', 'Nein', sgb5('33', 'Abs. 1')],
+      ['Zuzahlung', '10 % des Preises, mindestens 5 €, höchstens 10 €', `${sgb5('33', 'Abs. 8')}, ${sgb5('61')}`],
+      ['Wunschmodell', 'Mehrkosten zahlen Sie selbst', `${sgb5('33', 'Abs. 1')} Satz 9`],
+      ['Reparatur', 'gehört zum Anspruch', `${sgb5('33', 'Abs. 1')} Satz 5`],
+      ['Rezept gültig', '28 Kalendertage', hilfsmRL('§ 8 Abs. 2')],
+    ] },
     faq: [
       REZEPT_GUELTIG,
       { q: 'Brauche ich einen Pflegegrad für einen Rollator?', a: `Nein. Der Rollator ist ein Hilfsmittel der Krankenkasse nach ${sgb5('33')}. Es reicht eine ärztliche Verordnung.` },
       { q: 'Wie viel zahle ich zu?', a: `Ab 18 Jahren 10 % des Preises, ${Z}, aber nie mehr als der Rollator kostet (${sgb5('33', 'Abs. 8')}, ${sgb5('61')} Satz 1). Mehrkosten für ein Wunschmodell, das über das Notwendige hinausgeht, zahlen Sie selbst (${sgb5('33', 'Abs. 1')} Satz 9).` },
+      { q: 'Wer repariert meinen Rollator?', a: `Das Sanitätshaus, das ihn geliefert hat. Reparaturen gehören zum Anspruch gegen die Kasse (${sgb5('33', 'Abs. 1')} Satz 5). Fragen Sie vorher, bevor Sie selbst bezahlen.` },
       { q: 'Wo bekomme ich den Rollator?', a: `Bei einem Sanitätshaus, das Vertragspartner Ihrer Kasse ist (${sgb5('33', 'Abs. 6')}). Viele liefern ihn auch nach Hause.` },
+      { q: 'Kann ich einen Rollator ohne Rezept kaufen?', a: 'Ja, im Sanitätshaus, im Handel oder online. Dann zahlen Sie den vollen Preis. Lassen Sie ihn trotzdem einstellen, damit Griffhöhe und Bremsen stimmen.' },
     ],
     buy: [
       { label: 'Leichter Rollator (unter 7 kg)', amazon: 'rollator leicht faltbar' },
       { label: 'Schmaler Rollator für die Wohnung', amazon: 'rollator für die wohnung schmal' },
       { label: 'Rollator-Zubehör (Tasche, Stockhalter)', amazon: 'rollator zubehör tasche' },
     ],
-    finder: { href: '/leistung/rollstuhl-werkstatt/', label: 'Sanitätshaus mit Reha-Technik finden' },
+    local: { feature: 'rollator', label: 'Sanitätshäuser mit Rollatoren und Gehhilfen' },
+    related: ['pflegegrad-beantragen', 'badumbau-pflegekasse', 'orthopaedische-einlagen-krankenkasse'],
+    finder: { href: '/leistung/rollator/', label: 'Sanitätshaus mit Rollatoren finden' },
   },
   {
     slug: 'kompressionsstruempfe-stuetzstruempfe',
-    title: 'Kompressionsstrümpfe und Stützstrümpfe: Rezept, Klassen, Kauf',
+    title: 'Kompressionsstrümpfe: Rezept, Kosten, Klasse 1 und 2',
     h1: 'Kompressionsstrümpfe und Stützstrümpfe',
-    description: 'Unterschied zwischen Stützstrümpfen und medizinischen Kompressionsstrümpfen, Kompressionsklasse 1 und 2, Rezept, Zuzahlung, Anziehhilfe und wo Sie Strümpfe anmessen lassen.',
-    lead: 'Stützstrümpfe gibt es frei zu kaufen. Medizinische Kompressionsstrümpfe werden im Sanitätshaus angemessen und von der Krankenkasse bezahlt, wenn der Arzt sie verordnet.',
+    description: 'Kompressionsstrümpfe auf Rezept: was die Krankenkasse zahlt, Zuzahlung, Kompressionsklasse 1 und 2, Unterschied zu Stützstrümpfen, Anmessen, Anziehhilfe, Waschen und Schwangerschaft.',
+    lead: 'Stützstrümpfe gibt es frei zu kaufen. Medizinische Kompressionsstrümpfe werden im Sanitätshaus angemessen und von der Krankenkasse bezahlt, wenn der Arzt sie verordnet. Sie zahlen höchstens 10 € je Strumpf oder Paar zu.',
+    begriffe: ['kompressionsklasse', 'flachstrick', 'hilfsmittel', 'zuzahlung'],
     sections: [
       { h: 'Stützstrumpf oder Kompressionsstrumpf?', p: [
-        'Stützstrümpfe haben einen leichten Druck und eignen sich zum Beispiel für lange Flüge oder Tage im Stehen. Sie sind kein Medizinprodukt und gibt es in Drogerie, Apotheke oder online.',
-        'Medizinische Kompressionsstrümpfe haben einen festgelegten Druck in Klassen von 1 bis 4. Sie werden bei Venenleiden, Thrombose, Lymph- oder Lipödem verordnet. Bei Lymph- und Lipödem braucht man oft flachgestrickte Strümpfe nach Maß.',
+        'Stützstrümpfe haben einen leichten Druck und eignen sich zum Beispiel für lange Flüge oder Tage im Stehen. Sie sind kein Hilfsmittel der Kasse und gibt es in Drogerie, Apotheke oder online.',
+        'Medizinische Kompressionsstrümpfe haben einen festgelegten Druck, der vom Knöchel nach oben abnimmt. Er wird in Kompressionsklassen von 1 bis 4 angegeben. Verordnet werden sie zum Beispiel bei Krampfadern, nach einer Thrombose, bei offenen Beinen und bei Lymph- oder Lipödem. Bei Lymph- und Lipödem braucht man oft flachgestrickte Strümpfe nach Maß.',
       ] },
       { h: 'Rezept und Kosten', p: [
-        `Mit Verordnung zahlt die Krankenkasse die Strümpfe (${sgb5('33')}). Üblich ist eine Erstversorgung mit zwei Strümpfen oder Paaren zum Wechseln und eine Folgeversorgung nach etwa sechs Monaten. Das ist keine gesetzliche Regel, sondern folgt aus dem ${hmv} (Produktgruppe 17) und den Verträgen Ihrer Kasse. Ab 18 Jahren zahlen Sie 10 % zu, ${Z} je Hilfsmittel (${sgb5('33', 'Abs. 8')}, ${sgb5('61')}).`,
-        `An- und Ausziehhilfen für Kompressionsstrümpfe stehen ebenfalls im ${hmv} (Produktgruppe 02, Adaptionshilfen) und können verordnet werden, wenn Sie die Strümpfe allein nicht anziehen können.`,
+        `Mit ärztlicher Verordnung zahlt die Krankenkasse die Strümpfe (${sgb5('33', 'Abs. 1')}). Auf dem Rezept stehen Diagnose, Kompressionsklasse, Art (z. B. Wadenstrumpf, Schenkelstrumpf, Strumpfhose) und ob Maßanfertigung nötig ist. Kompressionsstrümpfe stehen im ${hmv} in der Produktgruppe 17.`,
+        `Üblich ist eine Erstversorgung mit zwei Strümpfen oder Paaren, damit Sie wechseln und waschen können, und eine Folgeversorgung nach etwa sechs Monaten. Das steht nicht im Gesetz, sondern folgt aus dem ${hmv} und den Verträgen Ihrer Kasse. Ab 18 Jahren zahlen Sie 10 % zu, ${Z} je Hilfsmittel (${sgb5('33', 'Abs. 8')}, ${sgb5('61')}).`,
+        `Wünschen Sie Farben, Muster oder Material über das Notwendige hinaus, zahlen Sie die Mehrkosten selbst (${sgb5('33', 'Abs. 1')} Satz 9). Viele Hersteller bieten aber Farben ohne Aufpreis an; fragen Sie danach.`,
+      ] },
+      { h: 'Anmessen im Sanitätshaus', p: [
+        'Gute Kompression sitzt nur, wenn richtig gemessen wird. Lassen Sie morgens messen, wenn die Beine noch nicht geschwollen sind, oder direkt nach einer Lymphdrainage. Gemessen werden Umfang und Länge an mehreren Punkten des Beins. Bei Maßanfertigung dauert es meist ein bis drei Wochen, bis die Strümpfe da sind.',
+        'Drückt oder rutscht ein neuer Strumpf, bringen Sie ihn ins Sanitätshaus zurück. Ein Strumpf, der nicht passt, wird nicht getragen und hilft nicht.',
+      ] },
+      { h: 'Anziehen, Waschen, Haltbarkeit', p: [
+        `Kompressionsstrümpfe zieht man morgens an, am besten bevor man aufsteht. Gummihandschuhe helfen beim Greifen. Wer die Strümpfe allein nicht anziehen kann, kann eine An- und Ausziehhilfe verordnet bekommen; sie steht im ${hmv} (Produktgruppe 02, Adaptionshilfen). Kann auch das nicht helfen, kann der Arzt häusliche Krankenpflege für das An- und Ausziehen verordnen (${sgb5('37', 'Abs. 2')}).`,
+        'Waschen Sie die Strümpfe möglichst täglich, handwarm mit Feinwaschmittel, ohne Weichspüler, und lassen Sie sie an der Luft trocknen. Das erhält den Druck. Bei täglichem Tragen lässt die Wirkung nach etwa sechs Monaten nach.',
+      ] },
+      { h: 'In der Schwangerschaft', p: [
+        `Bei Schwangerschaftsbeschwerden, etwa Krampfadern oder schweren Beinen, kann der Arzt Kompressionsstrümpfe verordnen. Dann fällt keine Zuzahlung an (${sgb5('24e')} Satz 2, der ${sgb5('33', 'Abs. 8')} für diese Fälle ausschließt).`,
       ] },
     ],
+    table: { caption: 'Kompressionsstrümpfe: die Kosten auf einen Blick (gesetzliche Krankenversicherung)', head: ['Frage', 'Antwort', 'Norm'], rows: [
+      ['Wer zahlt?', 'Krankenkasse, mit ärztlicher Verordnung', sgb5('33', 'Abs. 1')],
+      ['Zuzahlung', '10 %, mindestens 5 €, höchstens 10 € je Hilfsmittel', `${sgb5('33', 'Abs. 8')}, ${sgb5('61')}`],
+      ['Schwangerschaft', 'keine Zuzahlung bei Schwangerschaftsbeschwerden', sgb5('24e')],
+      ['Farben, Muster', 'Mehrkosten selbst', `${sgb5('33', 'Abs. 1')} Satz 9`],
+      ['Stützstrümpfe', 'selbst zahlen, kein Kassen-Hilfsmittel', '–'],
+      ['Rezept gültig', '28 Kalendertage', hilfsmRL('§ 8 Abs. 2')],
+    ] },
     faq: [
       REZEPT_GUELTIG,
+      { q: 'Kompressionsklasse 1 oder 2: was ist der Unterschied?', a: 'Klasse 1 drückt am Knöchel mit 18 bis 21 mmHg und wird eher bei leichten Beschwerden verordnet. Klasse 2 drückt mit 23 bis 32 mmHg und ist die häufigste Klasse bei Krampfadern und nach Thrombose. Welche Sie brauchen, entscheidet der Arzt.' },
       { q: 'Kann ich Kompressionsstrümpfe Klasse 2 ohne Rezept kaufen?', a: 'Ja, aber ohne Rezept zahlen Sie den vollen Preis. Lassen Sie die Strümpfe trotzdem anmessen, sonst sitzen sie schlecht.' },
+      { q: 'Wie viele Paar zahlt die Kasse?', a: `Üblich sind zwei Strümpfe oder Paare zum Wechseln und nach etwa sechs Monaten neue. Das regeln das ${hmv} und die Verträge Ihrer Kasse, nicht das Gesetz. Fragen Sie im Sanitätshaus nach den Regeln Ihrer Kasse.` },
       { q: 'Wie lange halten Kompressionsstrümpfe?', a: 'Bei täglichem Tragen etwa sechs Monate. Danach lässt der Druck nach.' },
-      { q: 'Wo bekomme ich Flachstrick-Strümpfe?', a: 'In Sanitätshäusern mit Lymph- und Lipödem-Versorgung. Diese finden Sie in unserer Liste.' },
+      { q: 'Wo bekomme ich Flachstrick-Strümpfe?', a: 'In Sanitätshäusern mit Lymph- und Lipödem-Versorgung. Diese finden Sie in unserer Liste unten auf dieser Seite.' },
     ],
     buy: [
       { label: 'Stützstrümpfe für Reisen', amazon: 'stützstrümpfe reise' },
       { label: 'Anziehhilfe für Kompressionsstrümpfe', amazon: 'anziehhilfe kompressionsstrümpfe' },
     ],
-    finder: { href: '/leistung/lymph-flachstrick/', label: 'Sanitätshaus mit Flachstrick finden' },
+    local: { feature: 'kompression', label: 'Sanitätshäuser mit Kompressionsstrümpfen', extra: { feature: 'lymph', label: 'Flachstrick bei Lymph- und Lipödem' } },
+    related: ['orthopaedische-einlagen-krankenkasse', 'rollator-auf-rezept'],
+    finder: { href: '/leistung/kompressionsstruempfe/', label: 'Sanitätshaus für Kompressionsstrümpfe finden' },
   },
   {
     slug: 'orthopaedische-einlagen-krankenkasse',
@@ -99,27 +165,61 @@ export const GUIDES: Guide[] = [
   },
   {
     slug: 'pflegebett-beantragen-mieten',
-    title: 'Pflegebett beantragen, mieten oder kaufen',
+    title: 'Pflegebett beantragen: Pflegekasse, Rezept, Zuzahlung',
     h1: 'Pflegebett: beantragen, mieten oder kaufen',
-    description: 'Pflegebett über Pflegekasse oder Krankenkasse beantragen, Zuzahlung, Pflegebett mieten oder gebraucht kaufen, Maße und Ausstattung.',
-    lead: 'Ein Pflegebett bekommen gesetzlich Versicherte meist leihweise über die Pflegekasse, wenn ein Pflegegrad vorliegt, oder über die Krankenkasse mit ärztlicher Verordnung.',
+    description: 'Pflegebett für zu Hause beantragen: über Pflegekasse oder Krankenkasse, mit Rezept oder Empfehlung vom Pflegedienst, Fristen, Zuzahlung, Ausstattung, Maße, Seitengitter, mieten oder kaufen.',
+    lead: 'Ein Pflegebett bekommen gesetzlich Versicherte meist leihweise und fast kostenlos: über die Pflegekasse, wenn ein Pflegegrad vorliegt, oder über die Krankenkasse mit ärztlicher Verordnung. Die Kasse muss in drei bis fünf Wochen entscheiden.',
+    begriffe: ['pflegehilfsmittel', 'doppelfunktional', 'pflegefachperson', 'genehmigungsfiktion', 'freiheitsentziehung'],
     sections: [
-      { h: 'Über die Pflegekasse', p: [
-        `Mit Pflegegrad stellen Sie einen formlosen Antrag bei der Pflegekasse (${sgb11('40', 'Abs. 1')}), oft hilft eine ärztliche Empfehlung oder die Empfehlung einer Pflegefachkraft (${sgb11('40', 'Abs. 6')}). Technische Pflegehilfsmittel wie das Bett werden vorrangig leihweise überlassen (${sgb11('40', 'Abs. 3')}) und von einem Sanitätshaus geliefert und aufgebaut.`,
+      { h: 'Wer zahlt: Pflegekasse oder Krankenkasse?', p: [
+        `Mit Pflegegrad ist meist die Pflegekasse zuständig, weil das Bett die Pflege erleichtert (${sgb11('40', 'Abs. 1')}). Ist das Bett aus medizinischen Gründen nötig, zum Beispiel nach einer Operation, kann es auch ohne Pflegegrad die Krankenkasse zahlen (${sgb5('33', 'Abs. 1')}).`,
+        `Sie müssen das nicht selbst klären. Pflegebetten können beiden Zwecken dienen. Die Kasse, bei der Sie den Antrag stellen, prüft selbst, ob Kranken- oder Pflegekasse zuständig ist, und entscheidet (${sgb11('40', 'Abs. 5')} Satz 1). Im Pflegehilfsmittelverzeichnis stehen Pflegebetten in der Produktgruppe 50 unter der Positionsnummer 50.45.01.`,
       ] },
-      { h: 'Über die Krankenkasse', p: [
-        `Ist das Bett aus medizinischen Gründen nötig, zum Beispiel nach einer Operation, kann der Arzt es verordnen. Dann zahlt die Krankenkasse, auch ohne Pflegegrad (${sgb5('33')}).`, `Pflegebetten können beiden Zwecken dienen. Die Kasse, bei der Sie den Antrag stellen, prüft selbst, ob Kranken- oder Pflegekasse zuständig ist (${sgb11('40', 'Abs. 5')}). Die Zuzahlung richtet sich bei Pflegebetten deshalb nach dem Recht der Krankenkasse: ab 18 Jahren 10 %, ${Z} (${sgb11('40', 'Abs. 5')} Satz 7 mit ${sgb5('33', 'Abs. 8')} und ${sgb5('61')}). Die sonst für technische Pflegehilfsmittel geltende Grenze von 25 € (${sgb11('40', 'Abs. 3')}) greift hier nicht.`,
+      { h: 'So beantragen Sie ein Pflegebett', p: [], steps: [
+        `Holen Sie eine Verordnung vom Hausarzt oder eine schriftliche Empfehlung einer Pflegefachperson, etwa vom Pflegedienst oder aus dem Beratungsbesuch. Mit der Empfehlung einer Pflegefachperson wird vermutet, dass das Bett nötig ist, ein Rezept brauchen Sie dann nicht. Die Empfehlung darf beim Antrag höchstens zwei Wochen alt sein (${sgb11('40', 'Abs. 6')}).`,
+        'Wählen Sie ein Sanitätshaus, das Vertragspartner Ihrer Kasse ist. Es stellt den Antrag meist für Sie und schickt Verordnung oder Empfehlung mit. Sie können den Antrag auch selbst formlos bei der Kasse stellen.',
+        `Notieren Sie das Datum, an dem der Antrag bei der Kasse eingeht. Die Pflegekasse muss innerhalb von drei Wochen entscheiden, wenn sie eine Pflegefachperson oder den Medizinischen Dienst einschaltet, innerhalb von fünf Wochen (${sgb11('40', 'Abs. 7')} Satz 1). Für die Krankenkasse gilt dasselbe (${sgb5('13', 'Abs. 3a')}).`,
+        `Hört die Kasse in der Frist nichts von sich hören und nennt Ihnen keinen hinreichenden Grund, gilt das Bett als genehmigt (${sgb11('40', 'Abs. 7')} Satz 4).`,
+        'Das Sanitätshaus liefert das Bett, baut es auf und zeigt Ihnen und den Angehörigen die Bedienung. Fragen Sie vorher nach der Lieferzeit, vor allem wenn jemand aus dem Krankenhaus nach Hause kommt.',
+      ] },
+      { h: 'Was es kostet', p: [
+        `Die Pflegekasse überlässt technische Pflegehilfsmittel wie das Bett vorrangig leihweise (${sgb11('40', 'Abs. 3')} Satz 1). Reparatur, Änderung und Einweisung gehören zum Anspruch (${sgb11('40', 'Abs. 3')} Satz 3). Lehnen Sie das Leihbett ohne zwingenden Grund ab, müssen Sie das Bett ganz selbst bezahlen (${sgb11('40', 'Abs. 3')} letzter Satz).`,
+        `Weil Pflegebetten doppelfunktional sind, richtet sich die Zuzahlung nach dem Recht der Krankenkasse: ab 18 Jahren 10 %, ${Z} (${sgb11('40', 'Abs. 5')} Satz 7 mit ${sgb5('33', 'Abs. 8')} und ${sgb5('61')}). Die sonst für technische Pflegehilfsmittel geltende Grenze von 25 € (${sgb11('40', 'Abs. 3')} Satz 4) greift hier nicht.`,
+        `Wünschen Sie eine Ausstattung, die über das Notwendige hinausgeht, etwa eine Holzverkleidung im Wohnzimmerstil, zahlen Sie die Mehrkosten selbst (${sgb11('40', 'Abs. 1')} Satz 3).`,
+      ] },
+      { h: 'Ausstattung, Maße und Platz', p: [
+        'Ein Standard-Pflegebett hat eine Liegefläche von 90 × 200 cm, ist elektrisch in der Höhe verstellbar und hat ein verstellbares Rücken- und Beinteil. Die Höhe ist wichtig für den Rücken der Pflegenden und zum sicheren Aufstehen. Dazu gehören meist ein Aufrichter (Galgen) mit Haltegriff und Seitengitter.',
+        'Planen Sie Platz ein: Das Bett sollte von beiden Seiten und vom Fußende aus erreichbar sein, damit man waschen, umlagern und einen Rollstuhl heranfahren kann. Messen Sie Türen und Flur für die Lieferung. Für Menschen mit hohem Gewicht, sehr großer oder kleiner Körpergröße und für Kinder gibt es besondere Betten; das muss auf Verordnung oder Empfehlung stehen.',
+        'Pflegebetten mit Aufstehhilfe oder Drehfunktion setzen den Menschen im Bett auf und drehen ihn zur Bettkante. Sie kosten deutlich mehr. Die Kasse zahlt sie, wenn ein Standardbett im Einzelfall nicht ausreicht; das sollte der Arzt oder die Pflegefachperson begründen.',
+        'Wer weiter neben dem Partner schlafen möchte, kann nach einem Einlegerahmen fragen, der in ein vorhandenes Bettgestell gesetzt wird, oder nach einem Pflegebett, das optisch zu einem Doppelbett passt.',
+      ] },
+      { h: 'Matratze und Seitengitter', p: [
+        `Zum Pflegebett gehört eine einfache Matratze. Besteht die Gefahr, sich wund zu liegen (Dekubitus), kann der Arzt eine Weichlagerungs- oder Wechseldruckmatratze verordnen. Sie ist ein eigenes Hilfsmittel der Krankenkasse (${sgb5('33', 'Abs. 1')}, ${hmv}, Produktgruppe 11).`,
+        `Seitengitter schützen vor dem Herausfallen, sie können aber auch einsperren. Bei Menschen mit Betreuer oder Vorsorgevollmacht braucht ein regelmäßiges oder längeres Hochstellen in Krankenhaus, Heim oder einer sonstigen Einrichtung die Genehmigung des Betreuungsgerichts (${bgb('1831', 'Abs. 4 und 5')}). Auch zu Hause lohnt sich ein Gespräch mit Arzt oder Pflegedienst über mildere Mittel, etwa ein Niedrigbett, geteilte Seitengitter oder eine Sturzmatte.`,
       ] },
       { h: 'Mieten oder kaufen', p: [
-        'Wer kein Bett von der Kasse bekommt oder ein besonderes Modell möchte, kann es bei Sanitätshäusern mieten oder kaufen. Ein Pflegebett mit Aufstehhilfe oder Drehfunktion kostet deutlich mehr als ein Standardbett. Achten Sie auf Liegefläche, Höhenverstellung und Seitengitter.',
+        'Wer kein Bett von der Kasse bekommt, schnell eines braucht oder ein besonderes Modell möchte, kann es bei vielen Sanitätshäusern mieten oder kaufen, auch gebraucht. Fragen Sie nach Monatsmiete, Lieferung, Aufbau und Abholung. Eine Miete lohnt sich vor allem bei kurzer Pflege, etwa nach einer Operation.',
       ] },
     ],
+    table: { caption: 'Pflegebett: die wichtigsten Regeln (gesetzliche Kranken- und Pflegeversicherung)', head: ['Frage', 'Antwort', 'Norm'], rows: [
+      ['Mit Pflegegrad', 'Pflegekasse, leihweise', sgb11('40', 'Abs. 1 und 3')],
+      ['Ohne Pflegegrad', 'Krankenkasse, mit ärztlicher Verordnung', sgb5('33', 'Abs. 1')],
+      ['Rezept nötig?', 'Nein, wenn eine Pflegefachperson das Bett empfiehlt', sgb11('40', 'Abs. 6')],
+      ['Entscheidung der Kasse', '3 Wochen, mit Gutachten 5 Wochen', `${sgb11('40', 'Abs. 7')}, ${sgb5('13', 'Abs. 3a')}`],
+      ['Zuzahlung', '10 %, mindestens 5 €, höchstens 10 €', `${sgb11('40', 'Abs. 5')} Satz 7, ${sgb5('61')}`],
+      ['Reparatur', 'gehört zum Anspruch', `${sgb11('40', 'Abs. 3')} Satz 3`],
+    ] },
     faq: [
       { q: 'Brauche ich einen Pflegegrad für ein Pflegebett?', a: `Für die Pflegekasse ja (${sgb11('40')}). Über die Krankenkasse geht es auch ohne Pflegegrad, wenn der Arzt es verordnet (${sgb5('33')}).` },
+      { q: 'Brauche ich ein Rezept für das Pflegebett?', a: `Nicht unbedingt. Empfiehlt eine Pflegefachperson das Bett schriftlich beim Antrag, wird vermutet, dass es nötig ist, und eine ärztliche Verordnung ist nicht erforderlich (${sgb11('40', 'Abs. 6')}). Die Empfehlung darf höchstens zwei Wochen alt sein.` },
+      { q: 'Wie schnell bekomme ich ein Pflegebett?', a: `Die Kasse muss in drei Wochen entscheiden, mit Gutachten in fünf Wochen (${sgb11('40', 'Abs. 7')}). Danach liefert das Sanitätshaus. Bei Entlassung aus dem Krankenhaus kümmert sich oft der Sozialdienst der Klinik schon vorher darum.` },
+      { q: 'Was zahle ich für ein Pflegebett zu?', a: `Ab 18 Jahren 10 % des Preises, ${Z} (${sgb11('40', 'Abs. 5')} Satz 7, ${sgb5('61')}).` },
       { q: 'Wer liefert und baut das Bett auf?', a: `Das Sanitätshaus, mit dem Ihre Kasse einen Vertrag hat (${sgb5('127')}). Fragen Sie nach der Lieferzeit.` },
     ],
     pflegebox: true,
-    finder: { href: '/leistung/hausbesuch/', label: 'Sanitätshaus mit Hausbesuch finden' },
+    local: { feature: 'pflegebett', label: 'Sanitätshäuser mit Pflegebetten' },
+    related: ['pflegegrad-beantragen', 'pflegebox-pflegehilfsmittel', 'hausnotruf-kosten-pflegekasse'],
+    finder: { href: '/leistung/pflegebett/', label: 'Sanitätshaus mit Pflegebetten finden' },
   },
   {
     slug: 'pflegebox-pflegehilfsmittel',
@@ -168,39 +268,74 @@ export const GUIDES: Guide[] = [
   },
   {
     slug: 'pflegegrad-beantragen',
-    title: 'Pflegegrad beantragen: Antrag, Begutachtung, Fristen',
+    title: 'Pflegegrad beantragen: Antrag, Begutachtung, Fristen 2026',
     h1: 'Pflegegrad beantragen: so geht es Schritt für Schritt',
-    description: 'Pflegegrad beantragen: Wo der Antrag hingeht, wie die Begutachtung abläuft, wie lange die Pflegekasse Zeit hat, ab wann es Geld gibt und wie Sie Widerspruch einlegen.',
-    lead: `Den Pflegegrad beantragen Sie bei Ihrer Pflegekasse. Sie sitzt bei Ihrer Krankenkasse (${sgb11('46', 'Abs. 1')}). Ein Anruf oder ein kurzer Brief reicht, Leistungen gibt es ab dem Monat des Antrags.`,
+    description: 'Pflegegrad beantragen: wo der Antrag hingeht, wie die Begutachtung abläuft, Punkte und Module, 25 Arbeitstage Frist und 70 € bei Verzögerung, Leistungen je Pflegegrad, Widerspruch und Höherstufung.',
+    lead: `Den Pflegegrad beantragen Sie bei Ihrer Pflegekasse. Sie sitzt bei Ihrer Krankenkasse (${sgb11('46', 'Abs. 1')}). Ein Anruf oder ein kurzer Brief reicht. Leistungen gibt es ab dem Monat des Antrags, und die Kasse muss innerhalb von 25 Arbeitstagen entscheiden.`,
+    begriffe: ['pflegebeduerftig', 'pflegegrad', 'pflegekasse', 'widerspruch', 'pflegestuetzpunkt'],
     sections: [
-      { h: 'Schritt 1: Antrag stellen', p: [
-        `Leistungen der Pflegeversicherung gibt es nur auf Antrag (${sgb11('33', 'Abs. 1')} Satz 1). Rufen Sie Ihre Krankenkasse an und sagen Sie, dass Sie Leistungen der Pflegeversicherung beantragen. Auch Angehörige können anrufen, wenn Sie sie dazu bevollmächtigt haben. Notieren Sie sich das Datum.`,
-        `Stellen Sie den Antrag früh. Wird er nicht im Monat gestellt, in dem die Pflegebedürftigkeit begonnen hat, sondern später, gibt es Leistungen erst ab Beginn des Antragsmonats (${sgb11('33', 'Abs. 1')} Satz 3).`,
+      { h: 'Wer einen Pflegegrad bekommt', p: [
+        `Einen Pflegegrad bekommt, wer wegen seiner Gesundheit im Alltag nicht mehr selbständig zurechtkommt und deshalb Hilfe braucht, voraussichtlich für mindestens sechs Monate (${sgb11('14', 'Abs. 1')}). Auf die Ursache kommt es nicht an: Auch Demenz, eine psychische Erkrankung oder eine Behinderung zählen. Ein bestimmtes Alter ist nicht nötig, auch Kinder können einen Pflegegrad bekommen (${sgb11('15', 'Abs. 6 und 7')}).`,
       ] },
-      { h: 'Schritt 2: Beratung', p: [
-        `Nach dem ersten Antrag muss die Pflegekasse Ihnen innerhalb von zwei Wochen einen Beratungstermin anbieten oder einen Beratungsgutschein geben. Die Beratung geht zu Lasten der Pflegekasse und kommt auf Wunsch zu Ihnen nach Hause (${sgb11('7b', 'Abs. 1')}).`,
+      { h: 'Schritt 1: Antrag stellen', p: [
+        `Leistungen der Pflegeversicherung gibt es nur auf Antrag (${sgb11('33', 'Abs. 1')} Satz 1). Rufen Sie Ihre Krankenkasse an und sagen Sie, dass Sie Leistungen der Pflegeversicherung beantragen. Auch Angehörige können anrufen, wenn Sie sie dazu bevollmächtigt haben. Notieren Sie sich das Datum und den Namen der Person am Telefon.`,
+        `Stellen Sie den Antrag früh. Wird er nicht im Monat gestellt, in dem die Pflegebedürftigkeit begonnen hat, sondern später, gibt es Leistungen erst ab Beginn des Antragsmonats (${sgb11('33', 'Abs. 1')} Satz 3). Das Formular, das die Kasse danach schickt, ist nur noch die Ergänzung.`,
+      ] },
+      { h: 'Schritt 2: Beratung nutzen', p: [
+        `Nach dem ersten Antrag muss die Pflegekasse Ihnen innerhalb von zwei Wochen einen Beratungstermin anbieten oder einen Beratungsgutschein geben. Die Beratung kommt auf Wunsch zu Ihnen nach Hause (${sgb11('7b', 'Abs. 1')}). Daneben gibt es in vielen Regionen Pflegestützpunkte, die unabhängig beraten (${sgb11('7c')}).`,
       ] },
       { h: 'Schritt 3: Begutachtung zu Hause', p: [
-        `Die Pflegekasse beauftragt den Medizinischen Dienst oder unabhängige Gutachter (${sgb11('18', 'Abs. 1')}). Die Begutachtung findet in der Regel bei Ihnen zu Hause statt (${sgb11('18a', 'Abs. 2')}).`,
-        `Begutachtet wird, wie selbständig Sie in sechs Bereichen sind, etwa Mobilität, Selbstversorgung, Erinnern und Orientierung, Umgang mit Krankheit und Alltag. Daraus ergeben sich Punkte: ab 12,5 Punkten Pflegegrad 1, ab 27 Pflegegrad 2, ab 47,5 Pflegegrad 3, ab 70 Pflegegrad 4, ab 90 Pflegegrad 5 (${sgb11('15', 'Abs. 3')}).`,
-        'Tipp: Führen Sie ein bis zwei Wochen vorher ein Pflegetagebuch. Schreiben Sie auf, wobei Sie Hilfe brauchen und wie lange es dauert. Legen Sie Arztberichte und den Medikamentenplan bereit. Eine vertraute Person sollte beim Termin dabei sein. Zeigen Sie den Alltag, wie er wirklich ist, nicht wie an einem guten Tag.',
+        `Die Pflegekasse beauftragt den Medizinischen Dienst oder unabhängige Gutachter (${sgb11('18', 'Abs. 1')}). Die Begutachtung findet in der Regel bei Ihnen zu Hause statt (${sgb11('18a', 'Abs. 2')} Satz 1). Liegen Sie im Krankenhaus oder in der Reha und muss die Versorgung danach geklärt werden, muss die Begutachtung spätestens am fünften Arbeitstag nach dem Antrag stattfinden (${sgb11('18a', 'Abs. 5')}). Haben Angehörige Pflegezeit beim Arbeitgeber angekündigt, gilt zu Hause eine Frist von zehn Arbeitstagen (${sgb11('18a', 'Abs. 6')}).`,
+        `Begutachtet wird, wie selbständig Sie in sechs Bereichen sind. Die Bereiche zählen unterschiedlich viel (${sgb11('15', 'Abs. 2')}):`,
+      ], list: [
+        'Mobilität, zum Beispiel aufstehen, umsetzen, Treppen steigen: 10 %',
+        'Geistige und kommunikative Fähigkeiten oder Verhalten und psychische Probleme, es zählt der höhere Wert: 15 %',
+        'Selbstversorgung, zum Beispiel waschen, anziehen, essen, Toilette: 40 %',
+        'Umgang mit Krankheit und Therapie, zum Beispiel Medikamente, Verbände, Arztbesuche: 20 %',
+        'Alltag und soziale Kontakte, zum Beispiel Tagesablauf, Beschäftigung, Kontakt zu anderen: 15 %',
+      ], after: [
+        `Aus den Punkten ergibt sich der Pflegegrad: ab 12,5 Punkten Pflegegrad 1, ab 27 Pflegegrad 2, ab 47,5 Pflegegrad 3, ab 70 Pflegegrad 4, ab 90 Pflegegrad 5 (${sgb11('15', 'Abs. 3')}). Weil die Selbstversorgung 40 % ausmacht, lohnt es sich, gerade hier genau zu schildern, wobei Sie Hilfe brauchen.`,
       ] },
-      { h: 'Schritt 4: Bescheid und Widerspruch', p: [
+      { h: 'So bereiten Sie die Begutachtung vor', p: [], list: [
+        'Führen Sie ein bis zwei Wochen vorher ein Pflegetagebuch: Wobei brauchen Sie Hilfe, wie oft, wie lange, auch nachts?',
+        'Legen Sie Arztberichte, Krankenhausbriefe, den Medikamentenplan und vorhandene Hilfsmittel bereit.',
+        'Bitten Sie eine vertraute Person dazu, die Ihren Alltag kennt und ergänzen kann.',
+        'Zeigen Sie den Alltag, wie er wirklich ist, nicht wie an einem guten Tag. Viele Menschen spielen ihre Probleme vor Fremden herunter.',
+        'Sprechen Sie auch über Vergesslichkeit, Unruhe, Ängste oder nächtliches Aufstehen. Das zählt in Modul 2 und 3.',
+        `Fragen Sie am Ende, welche Hilfsmittel der Gutachter empfiehlt. Stimmen Sie zu, gilt seine Empfehlung als Antrag, ein Rezept brauchen Sie dafür nicht (${sgb11('18b', 'Abs. 3')}).`,
+      ] },
+      { h: 'Schritt 4: Bescheid, Frist und Entschädigung', p: [
         `Die Pflegekasse muss Ihnen spätestens 25 Arbeitstage nach Eingang des Antrags schriftlich mitteilen, wie sie entschieden hat. Mit dem Bescheid bekommen Sie das Gutachten, wenn Sie nicht widersprechen (${sgb11('18c', 'Abs. 1 und 2')}).`,
-        `Sind Sie mit dem Pflegegrad nicht einverstanden, legen Sie innerhalb eines Monats Widerspruch ein (${sgg('84', 'Abs. 1')}). Ein kurzer Brief genügt, die Begründung können Sie nachreichen. Lesen Sie das Gutachten genau und vergleichen Sie es mit Ihrem Pflegetagebuch.`,
+        `Hält die Kasse die Frist nicht ein, muss sie Ihnen für jede angefangene Woche der Verspätung 70 € zahlen, außer sie hat die Verzögerung nicht zu vertreten (${sgb11('18c', 'Abs. 5')}). Haben Sie etwa einen Termin abgesagt, verschiebt sich die Frist. Fragen Sie nach, wenn die 25 Arbeitstage um sind.`,
+      ] },
+      { h: 'Schritt 5: Widerspruch, wenn der Pflegegrad zu niedrig ist', p: [
+        `Sind Sie mit dem Pflegegrad nicht einverstanden, legen Sie innerhalb eines Monats Widerspruch ein (${sgg('84', 'Abs. 1')}). Ein kurzer Brief genügt: „Gegen Ihren Bescheid vom … lege ich Widerspruch ein. Die Begründung reiche ich nach.“ Dann haben Sie Zeit.`,
+        'Lesen Sie das Gutachten Punkt für Punkt und vergleichen Sie es mit Ihrem Pflegetagebuch. Schreiben Sie auf, wo der Gutachter etwas übersehen oder zu gut bewertet hat. Ein Pflegedienst, ein Pflegestützpunkt oder ein Sozialverband hilft bei der Begründung.',
+        'Verschlechtert sich der Zustand später, stellen Sie einen Antrag auf Höherstufung. Er läuft genauso ab wie der erste Antrag, mit neuer Begutachtung.',
       ] },
       { h: 'Was es ab welchem Pflegegrad gibt', p: [
-        `Schon ab Pflegegrad 1 gibt es unter anderem Pflegehilfsmittel wie die Pflegebox, Zuschüsse zum Umbau der Wohnung und den Entlastungsbetrag (${sgb11('28a')}). Der Entlastungsbetrag beträgt bis zu 131 € im Monat (${sgb11('45b', 'Abs. 1')}).`,
-        `Ab Pflegegrad 2 gibt es Pflegegeld, wenn Angehörige oder Bekannte die Pflege übernehmen: 347 € bei Pflegegrad 2, 599 € bei Pflegegrad 3, 800 € bei Pflegegrad 4 und 990 € bei Pflegegrad 5 im Monat (${sgb11('37', 'Abs. 1')}). Statt Pflegegeld oder anteilig daneben können Sie einen Pflegedienst beauftragen (${sgb11('36')}, ${sgb11('38')}).`,
+        `Schon ab Pflegegrad 1 gibt es unter anderem Pflegehilfsmittel wie die Pflegebox, Zuschüsse zum Umbau der Wohnung und den Entlastungsbetrag (${sgb11('28a')}). Der Entlastungsbetrag beträgt bis zu 131 € im Monat und wird für anerkannte Hilfen erstattet, etwa Alltagsbegleitung oder Tagespflege (${sgb11('45b', 'Abs. 1')}).`,
+        `Ab Pflegegrad 2 gibt es Pflegegeld, wenn Angehörige oder Bekannte die Pflege übernehmen (${sgb11('37', 'Abs. 1')}). Statt Pflegegeld oder anteilig daneben können Sie einen Pflegedienst beauftragen, der mit der Pflegekasse abrechnet (Pflegesachleistung, ${sgb11('36', 'Abs. 3')}, ${sgb11('38')}). Wer Pflegegeld bezieht, muss halbjährlich einen Beratungsbesuch abrufen, bei Pflegegrad 4 und 5 kann er vierteljährlich kommen (${sgb11('37', 'Abs. 3')}).`,
       ] },
     ],
+    table: { caption: 'Leistungen je Pflegegrad im Monat (häusliche Pflege, Stand 2026)', head: ['Pflegegrad', 'Punkte', 'Pflegegeld', 'Pflegedienst (Sachleistung)', 'Entlastungsbetrag'], rows: [
+      ['1', '12,5 bis unter 27', '–', '–', '131 €'],
+      ['2', '27 bis unter 47,5', '347 €', 'bis 796 €', '131 €'],
+      ['3', '47,5 bis unter 70', '599 €', 'bis 1.497 €', '131 €'],
+      ['4', '70 bis unter 90', '800 €', 'bis 1.859 €', '131 €'],
+      ['5', '90 bis 100', '990 €', 'bis 2.299 €', '131 €'],
+    ], note: `Quellen: Punkte ${sgb11('15', 'Abs. 3')}, Pflegegeld ${sgb11('37', 'Abs. 1')}, Sachleistung ${sgb11('36', 'Abs. 3')}, Entlastungsbetrag ${sgb11('45b', 'Abs. 1')}, Pflegegrad 1 ${sgb11('28a')}.` },
     faq: [
       { q: 'Wo beantrage ich einen Pflegegrad?', a: `Bei der Pflegekasse. Sie gehört zu Ihrer Krankenkasse (${sgb11('46', 'Abs. 1')}). Ein Anruf genügt, das Formular schickt die Kasse zu.` },
-      { q: 'Wie lange dauert es bis zum Bescheid?', a: `Höchstens 25 Arbeitstage ab Eingang des Antrags (${sgb11('18c', 'Abs. 1')}). Geld gibt es rückwirkend ab dem Antragsmonat (${sgb11('33', 'Abs. 1')}).` },
+      { q: 'Wie lange dauert es bis zum Bescheid?', a: `Höchstens 25 Arbeitstage ab Eingang des Antrags (${sgb11('18c', 'Abs. 1')}). Geld gibt es rückwirkend ab dem Antragsmonat (${sgb11('33', 'Abs. 1')}). Ist die Kasse zu spät, zahlt sie 70 € je angefangene Woche (${sgb11('18c', 'Abs. 5')}).` },
       { q: 'Was tun, wenn der Pflegegrad zu niedrig ist?', a: `Innerhalb eines Monats nach Erhalt des Bescheids Widerspruch einlegen (${sgg('84', 'Abs. 1')}). Ein Pflegedienst oder eine Pflegeberatung hilft bei der Begründung.` },
+      { q: 'Wie viele Punkte brauche ich für Pflegegrad 2?', a: `Mindestens 27 von 100 Gesamtpunkten (${sgb11('15', 'Abs. 3')}). Für Pflegegrad 3 sind es 47,5 Punkte.` },
+      { q: 'Kann ich den Pflegegrad im Krankenhaus beantragen?', a: `Ja. Muss geklärt werden, wie es nach der Entlassung weitergeht, muss die Begutachtung spätestens am fünften Arbeitstag nach dem Antrag stattfinden (${sgb11('18a', 'Abs. 5')}). Der Sozialdienst des Krankenhauses hilft beim Antrag.` },
       { q: 'Gilt das auch für Privatversicherte?', a: `Privat Versicherte stellen den Antrag bei ihrer privaten Pflegeversicherung. Die Begutachtung macht dort Medicproof. Die Leistungen müssen gleichwertig sein (${sgb11('23', 'Abs. 1')}).` },
     ],
     pflegebox: true,
+    local: { cat: 'pflege', label: 'Pflegedienste in Ihrer Stadt' },
+    related: ['pflegebett-beantragen-mieten', 'pflegebox-pflegehilfsmittel', 'treppenlift-zuschuss', 'badumbau-pflegekasse'],
     finder: { href: '/pflegedienst/', label: 'Pflegedienst in Ihrer Nähe finden' },
   },
   {
