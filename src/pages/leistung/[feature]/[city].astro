@@ -28,6 +28,7 @@ const itemList = { '@context': 'https://schema.org', '@type': 'ItemList', name: 
   title={fit([`${feature.short} in ${city.label}: Sanitätshaus mit Adresse und Telefon`, `${feature.short} in ${city.label}: Sanitätshaus finden`, `${feature.short} ${city.label}`])}
   description={`Sanitätshaus in ${city.label} mit ${feature.label}${nearby.length ? ', dazu weitere im Umkreis von 40 km' : ''}: Adresse, Telefon, Öffnungszeiten, Route und Quelle der Angabe.`}
   jsonLd={[itemList]}
+  noindex={n < 3}
   crumbs={[{ href: '/leistung/', label: 'Leistungen' }, { href: `/leistung/${feature.slug}/`, label: feature.label }, { href: `/leistung/${feature.slug}/${city.slug}/`, label: city.label }]}>
   <h1>{feature.title} in {city.label}</h1>
   <p class="lead">{one ? 'Dieses Sanitätshaus' : 'Diese Sanitätshäuser'} in {city.label} {one ? 'nennt' : 'nennen'} „{feature.label}“ auf der eigenen Website. Bei jedem Haus verlinken wir die Seite, auf der wir es gefunden haben. <a href={u(`/stadt/${city.slug}/`)}>Alle Sanitätshäuser in {city.label}</a></p>

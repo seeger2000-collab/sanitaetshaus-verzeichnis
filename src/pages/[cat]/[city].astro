@@ -27,6 +27,7 @@ const nearCities = allCities.filter((c) => c.slug !== city.slug && c.counts[cat.
   title={fit([text.title(city.label, n), text.title2(city.label), `${cat.label} ${city.label}: Telefon und Adresse`, `${cat.label} ${city.label}`])}
   description={`${cat.label} in ${city.label}${nearby.length ? ' und Umgebung' : ''}: Adresse, Telefon, Öffnungszeiten und Leistungen. ${text.intro}`}
   jsonLd={[itemList, faqLd]}
+  noindex={n < 3}
   crumbs={[{ href: `/${cat.slug}/`, label: cat.label }, { href: `/${cat.slug}/${city.slug}/`, label: city.label }]}>
   <h1>{text.h1(city.label)}</h1>
   <p class="lead">{n === 1 ? cat.one : cat.many} in {city.label}{city.district && city.district !== city.name ? ` (${city.district})` : ''}. {text.intro}</p>
