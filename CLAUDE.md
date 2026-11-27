@@ -21,3 +21,6 @@ Die Startseiten-Suche (src/components/Finder.astro) baut ihre Liste in JavaScrip
 - Neue Oberflächentexte in Base.astro oder Finder.astro gehören in src/i18n/de.ts und alle Sprachdateien, nicht direkt in den Code.
 - Nur Startseite und Kategorieseiten werden übersetzt, Einträge nie. Keine automatische Umleitung nach Browsersprache, nur der Hinweis oben.
 - Auch übersetzt bleibt das Etikett erkennbar als Werbung („Ad · TOP listing“).
+
+## Google-Index (JS 27.11.2026)
+- Ortsseiten (Kategorie-, Stadt- und Leistungsseiten) mit weniger als 3 Einträgen im Ort bekommen noindex und fehlen in der Sitemap (Integration `sitemapOhneNoindex` in astro.config.mjs). Grund: Google hatte nur 6 % der Seiten indexiert und die Seite ab 29.10.2026 kaum noch gezeigt; dünne Seiten ziehen die ganze Domain herunter. Neue Kategorien folgen derselben Grenze.
