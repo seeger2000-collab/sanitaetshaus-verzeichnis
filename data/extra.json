@@ -31221,5 +31221,223 @@
     "name": "Kaufbeuren"
    }
   }
+ },
+ {
+  "id": "extra/regensburger-turnerschaft-e-v-herzsport-krebsnachs-regensburg",
+  "cat": "reha",
+  "quelle": "https://www.regensburger-turnerschaft.de/impressum (2026-11-27)",
+  "tags": {
+   "name": "Regensburger Turnerschaft e.V. (Herzsport, Krebsnachsorge)",
+   "addr:street": "Schopperplatz",
+   "addr:housenumber": "6",
+   "addr:postcode": "93059",
+   "addr:city": "Regensburg",
+   "phone": "+49 941 894046",
+   "website": "https://www.regensburger-turnerschaft.de/sportangebote/herzsport"
+  },
+  "location": {
+   "lat": 49.024285,
+   "lon": 12.086629
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17596",
+    "name": "Oberpfalz"
+   },
+   "6": {
+    "id": "relation/62411",
+    "name": "Regensburg"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "herz",
+    "krebs"
+   ]
+  }
+ },
+ {
+  "id": "extra/sg-post-sued-regensburg-e-v-koronarsport-regensburg",
+  "cat": "reha",
+  "quelle": "https://www.postsued-regensburg.de/sportarten/koronarsport (2026-11-27)",
+  "tags": {
+   "name": "SG Post/Süd Regensburg e.V. (Koronarsport)",
+   "addr:street": "Adalbert-Stifter-Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "93051",
+   "addr:city": "Regensburg",
+   "phone": "+49 941 920520",
+   "website": "https://www.postsued-regensburg.de/sportarten/koronarsport",
+   "email": "koronarsport@postsued-regensburg.de"
+  },
+  "location": {
+   "lat": 49.000343,
+   "lon": 12.084543
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17596",
+    "name": "Oberpfalz"
+   },
+   "6": {
+    "id": "relation/62411",
+    "name": "Regensburg"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "herz"
+   ]
+  }
+ },
+ {
+  "id": "extra/artner-training-rehasport-regensburg",
+  "cat": "reha",
+  "quelle": "https://www.artnertraining.com/impressum (2026-11-27)",
+  "tags": {
+   "name": "artner.training (Rehasport)",
+   "addr:street": "Am Holzhof",
+   "addr:housenumber": "1",
+   "addr:postcode": "93059",
+   "addr:city": "Regensburg",
+   "phone": "+49 941 59996022",
+   "website": "https://www.artnertraining.com/rehasport-1",
+   "email": "kontakt@artner.training"
+  },
+  "location": {
+   "lat": 49.031958,
+   "lon": 12.099387
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17596",
+    "name": "Oberpfalz"
+   },
+   "6": {
+    "id": "relation/62411",
+    "name": "Regensburg"
+   }
+  }
+ },
+ {
+  "id": "extra/zar-regensburg-zentrum-fuer-ambulante-rehabilitati-regensburg",
+  "cat": "reha",
+  "quelle": "https://www.zar.de/regensburg/ (2026-11-27)",
+  "tags": {
+   "name": "ZAR Regensburg – Zentrum für ambulante Rehabilitation (Rehasport)",
+   "addr:street": "Dr.-Gessler-Straße",
+   "addr:housenumber": "29",
+   "addr:postcode": "93051",
+   "addr:city": "Regensburg",
+   "phone": "+49 941 29859502",
+   "website": "https://www.zar.de/regensburg/rehasport",
+   "email": "rehasport@zar-regensburg.de"
+  },
+  "location": {
+   "lat": 49.003483,
+   "lon": 12.066431
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17596",
+    "name": "Oberpfalz"
+   },
+   "6": {
+    "id": "relation/62411",
+    "name": "Regensburg"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "wasser"
+   ]
+  }
+ },
+ {
+  "id": "extra/praxis-fuer-physiotherapie-seidl-unger-lungensport-regensburg",
+  "cat": "reha",
+  "quelle": "https://www.seidl-unger.de/de/imprint/imprint.html (2026-11-27)",
+  "tags": {
+   "name": "Praxis für Physiotherapie Seidl & Unger (Lungensport)",
+   "addr:street": "Frankenstraße",
+   "addr:housenumber": "9",
+   "addr:postcode": "93059",
+   "addr:city": "Regensburg",
+   "phone": "+49 941 8703280",
+   "website": "https://www.seidl-unger.de/de/services/services.html",
+   "email": "info@seidl-unger.de"
+  },
+  "location": {
+   "lat": 49.027842,
+   "lon": 12.098425
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17596",
+    "name": "Oberpfalz"
+   },
+   "6": {
+    "id": "relation/62411",
+    "name": "Regensburg"
+   }
+  },
+  "featuresByCat": {
+   "reha": [
+    "lunge"
+   ]
+  }
+ },
+ {
+  "id": "extra/inform-female-fitness-regensburg-reha-sport-regensburg",
+  "cat": "reha",
+  "quelle": "https://www.inform-femalefitness.de/impressum (2026-11-27)",
+  "tags": {
+   "name": "InForm – Female Fitness Regensburg (Reha-Sport)",
+   "addr:street": "Kumpfmühler Straße",
+   "addr:housenumber": "8a",
+   "addr:postcode": "93047",
+   "addr:city": "Regensburg",
+   "phone": "+49 941 27363",
+   "website": "https://www.inform-femalefitness.de/",
+   "email": "info@inform-femalefitness.de"
+  },
+  "location": {
+   "lat": 49.013155,
+   "lon": 12.087482
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17596",
+    "name": "Oberpfalz"
+   },
+   "6": {
+    "id": "relation/62411",
+    "name": "Regensburg"
+   }
+  }
  }
 ]
