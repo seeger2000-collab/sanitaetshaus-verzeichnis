@@ -30852,5 +30852,374 @@
     "name": "Augsburg"
    }
   }
+ },
+ {
+  "id": "extra/ambulante-pflege-espachstift-kaufbeuren",
+  "cat": "pflege",
+  "quelle": "https://www.espachstift.de/impressum (2026-11-27)",
+  "tags": {
+   "name": "Ambulante Pflege Espachstift",
+   "addr:street": "An der Schnelle",
+   "addr:housenumber": "8-14",
+   "addr:postcode": "87600",
+   "addr:city": "Kaufbeuren",
+   "phone": "+49 8341 95020",
+   "website": "https://www.espachstift.de/ambulante-pflege",
+   "email": "info@espachstift.de"
+  },
+  "location": {
+   "lat": 47.8845521,
+   "lon": 10.6179385
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62349",
+    "name": "Kaufbeuren"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/katholisch-evangelische-sozialstation-kaufbeuren-g-kaufbeuren",
+  "cat": "pflege",
+  "quelle": "https://www.sozialstation-kaufbeuren.de/impressum (2026-11-27)",
+  "tags": {
+   "name": "Katholisch-Evangelische Sozialstation Kaufbeuren gGmbH",
+   "addr:street": "Espachstraße",
+   "addr:housenumber": "16",
+   "addr:postcode": "87600",
+   "addr:city": "Kaufbeuren",
+   "phone": "+49 8341 95220",
+   "website": "https://www.sozialstation-kaufbeuren.de",
+   "email": "info@sozialstation-kaufbeuren.de"
+  },
+  "location": {
+   "lat": 47.8833552,
+   "lon": 10.6238933
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62349",
+    "name": "Kaufbeuren"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-weissbeck-kaufbeuren",
+  "cat": "pflege",
+  "quelle": "https://www.pflegedienst-weissbeck.de/impressum (2026-11-27)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Weißbeck",
+   "addr:street": "Marschowitzer Straße",
+   "addr:housenumber": "1",
+   "addr:postcode": "87600",
+   "addr:city": "Kaufbeuren",
+   "phone": "+49 8341 64572",
+   "website": "https://www.pflegedienst-weissbeck.de",
+   "email": "pflegedienst-weissbeck@online.de"
+  },
+  "location": {
+   "lat": 47.9060973,
+   "lon": 10.6316384
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62349",
+    "name": "Kaufbeuren"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/cur-a-kaufbeuren",
+  "cat": "pflege",
+  "quelle": "https://curea.care/kontakt/ (2026-11-27)",
+  "tags": {
+   "name": "CURÉA",
+   "addr:street": "Tiroler Straße",
+   "addr:housenumber": "3",
+   "addr:postcode": "87600",
+   "addr:city": "Kaufbeuren",
+   "phone": "+49 8341 9667788",
+   "website": "https://curea.care",
+   "email": "info@curea.care"
+  },
+  "location": {
+   "lat": 47.8725247,
+   "lon": 10.6002541
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62349",
+    "name": "Kaufbeuren"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegedienst-alpenrose-tagespflege-alpenrose-pfleg-kaufbeuren",
+  "cat": "pflege",
+  "quelle": "https://www.pflege-in-kfb.de/impressum (2026-11-27)",
+  "tags": {
+   "name": "Pflegedienst Alpenrose (Tagespflege Alpenrose Pflegedienst GmbH)",
+   "addr:street": "Buchenweg",
+   "addr:housenumber": "9",
+   "addr:postcode": "87600",
+   "addr:city": "Kaufbeuren",
+   "phone": "+49 8341 9557688",
+   "website": "https://www.pflege-in-kfb.de",
+   "email": "info@pflege-in-kfb.de"
+  },
+  "location": {
+   "lat": 47.9081627,
+   "lon": 10.6282705
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62349",
+    "name": "Kaufbeuren"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/pflegedienst-alpenrose-tagespflege-alpenrose-pfleg-kaufbeuren",
+  "cat": "fahrt",
+  "quelle": "https://www.pflege-in-kfb.de/impressum (2026-11-27)",
+  "tags": {
+   "name": "Pflegedienst Alpenrose (Tagespflege Alpenrose Pflegedienst GmbH)",
+   "addr:street": "Buchenweg",
+   "addr:housenumber": "9",
+   "addr:postcode": "87600",
+   "addr:city": "Kaufbeuren",
+   "phone": "+49 8341 9557688",
+   "website": "https://www.pflege-in-kfb.de",
+   "email": "info@pflege-in-kfb.de"
+  },
+  "location": {
+   "lat": 47.9081627,
+   "lon": 10.6282705
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62349",
+    "name": "Kaufbeuren"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ],
+   "fahrt": [
+    "begleitfahrt"
+   ]
+  }
+ },
+ {
+  "id": "extra/asb-sozialstation-kaufbeuren-kaufbeuren",
+  "cat": "pflege",
+  "quelle": "https://www.asb-allgaeu.de/seniorenhilfe/haeusliche-pflege/haeusliche-pflege-kaufbeuren-ostallgaeu (2026-11-27)",
+  "tags": {
+   "name": "ASB Sozialstation Kaufbeuren",
+   "addr:street": "Am Bleichanger",
+   "addr:housenumber": "46",
+   "addr:postcode": "87600",
+   "addr:city": "Kaufbeuren",
+   "phone": "+49 8341 9087998",
+   "website": "https://www.asb-allgaeu.de/seniorenhilfe/haeusliche-pflege/haeusliche-pflege-kaufbeuren-ostallgaeu"
+  },
+  "location": {
+   "lat": 47.8871511,
+   "lon": 10.6203892
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62349",
+    "name": "Kaufbeuren"
+   }
+  }
+ },
+ {
+  "id": "extra/brk-ambulante-pflege-kaufbeuren-kreisverband-ostal-kaufbeuren",
+  "cat": "pflege",
+  "quelle": "https://www.brk-ostallgaeu.de/soziale-dienste/ambulante-pflege.html (2026-11-27)",
+  "tags": {
+   "name": "BRK Ambulante Pflege Kaufbeuren (Kreisverband Ostallgäu)",
+   "addr:street": "Sudetenstraße",
+   "addr:housenumber": "96",
+   "addr:postcode": "87600",
+   "addr:city": "Kaufbeuren",
+   "phone": "+49 8341 94444",
+   "website": "https://www.brk-ostallgaeu.de/soziale-dienste/ambulante-pflege.html"
+  },
+  "location": {
+   "lat": 47.9092512,
+   "lon": 10.6349732
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62349",
+    "name": "Kaufbeuren"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/home-instead-kaufbeuren-hisb-betreuungsdienst-herr-kaufbeuren",
+  "cat": "pflege",
+  "quelle": "https://homeinstead.de/kaufbeuren/ (2026-11-27)",
+  "tags": {
+   "name": "Home Instead Kaufbeuren (HISB Betreuungsdienst Herrmann GmbH)",
+   "addr:street": "Sudetenstraße",
+   "addr:housenumber": "9",
+   "addr:postcode": "87600",
+   "addr:city": "Kaufbeuren",
+   "phone": "+49 8341 9608750",
+   "website": "https://homeinstead.de/kaufbeuren/",
+   "email": "kaufbeuren@homeinstead.de"
+  },
+  "location": {
+   "lat": 47.8984277,
+   "lon": 10.6437328
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62349",
+    "name": "Kaufbeuren"
+   }
+  },
+  "featuresByCat": {
+   "pflege": [
+    "alltag"
+   ]
+  }
+ },
+ {
+  "id": "extra/daheim-betreutes-wohnen-zuhause-hospitalstiftung-k-kaufbeuren",
+  "cat": "pflege",
+  "quelle": "https://hospitalstiftung.kaufbeuren.de/betreutes-wohnen/betreutes-wohnen.aspx (2026-11-27)",
+  "tags": {
+   "name": "daheim! Betreutes Wohnen zuhause (Hospitalstiftung Kaufbeuren)",
+   "addr:street": "Baumgarten",
+   "addr:housenumber": "36",
+   "addr:postcode": "87600",
+   "addr:city": "Kaufbeuren",
+   "phone": "+49 8341 437204",
+   "website": "https://hospitalstiftung.kaufbeuren.de/betreutes-wohnen/betreutes-wohnen.aspx",
+   "email": "simone.schneble@kaufbeuren.de"
+  },
+  "location": {
+   "lat": 47.8814285,
+   "lon": 10.6217808
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62349",
+    "name": "Kaufbeuren"
+   }
+  }
  }
 ]
