@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Finder from '../../components/Finder.astro';
 import OrteListe from '../../components/OrteListe.astro';
-import { otherCategories, categories, allCities } from '../../lib/data';
+import { otherCategories, categories, allCities, fit } from '../../lib/data';
 import { CATEGORY_TEXT } from '../../lib/categoryText';
 export function getStaticPaths() {
   return otherCategories.map((cat) => ({ params: { cat: cat.slug }, props: { cat } }));
@@ -11,7 +11,7 @@ const { cat } = Astro.props;
 const text = CATEGORY_TEXT[cat.key];
 const orte = allCities.filter((c) => c.counts[cat.key]).map((c) => ({ label: c.label, href: `/${cat.slug}/${c.slug}/`, state: c.state }));
 ---
-<Base title={`${cat.label} in der Nähe: mit Telefon, Route, Öffnungszeiten`} description={`${cat.label} in Ihrer Nähe finden: Ort oder PLZ eingeben, mit Karte, Telefon und Route. ${text.intro}`} crumbs={[{ href: `/${cat.slug}/`, label: cat.label }]}>
+<Base title={fit([...((cat.features || []).length ? [3, 2].map((k) => `${cat.label} in der Nähe: ${[...cat.features].sort((a, b) => b.count - a.count).slice(0, k).map((f) => f.short).join(', ')}`) : []), `${cat.label} in der Nähe: mit Telefon, Route, Öffnungszeiten`])} description={`${cat.label} in Ihrer Nähe finden: Ort oder PLZ eingeben, mit Karte, Telefon und Route. ${text.intro}`} crumbs={[{ href: `/${cat.slug}/`, label: cat.label }]}>
   <h1>{cat.label} in Ihrer Nähe</h1>
   <p class="lead">{text.intro}</p>
   <Finder preset={{ kind: 'cat', i: categories.findIndex((c) => c.key === cat.key), label: cat.label, current: `/${cat.slug}/` }} />
