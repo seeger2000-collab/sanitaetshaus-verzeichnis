@@ -7,25 +7,144 @@ import PflegeboxHinweis from '../../components/PflegeboxHinweis.astro';
 import { AFFILIATE } from '../../config';
 import { u } from '../../lib/url';
 import { GUIDES } from '../../lib/ratgeber';
-import { meta, fmtDate } from '../../lib/data';
+import { BEGRIFFE } from '../../lib/begriffe';
+import { meta, fmtDate, shops, allCities, featureByKey, categories } from '../../lib/data';
 export function getStaticPaths() { return GUIDES.map((g) => ({ params: { slug: g.slug }, props: { g } })); }
 const { g } = Astro.props;
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: g.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: stripTags(f.a) } })) };
-const article = { '@context': 'https://schema.org', '@type': 'Article', headline: g.h1, dateModified: meta.builtAt, inLanguage: 'de' };
+const article = { '@context': 'https://schema.org', '@type': 'Article', headline: g.h1, description: g.description, dateModified: meta.builtAt, inLanguage: 'de' };
+const begriffe = (g.begriffe || []).map((k) => BEGRIFFE[k]).filter(Boolean);
+const toc = g.sections.length >= 4;
+const anchor = (h: string) => h.toLowerCase().replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+// Vor Ort: nur Städte mit mindestens 3 passenden Einträgen, weil nur deren Ortsseiten im Google-Index sind (CLAUDE.md, JS 27.11.2026). Keine Anzahl zeigen.
+const MIN = 3, MAX = 12;
+const byFeature = (key: string) => {
+  const f = featureByKey[key];
+  if (!f) return [];
+  const n = new Map<string, number>();
+  for (const s of shops) if (s.features.includes(key)) n.set(s.citySlug, (n.get(s.citySlug) || 0) + 1);
+  return [...n].filter(([, c]) => c >= MIN).sort((a, b) => b[1] - a[1]).slice(0, MAX)
+    .map(([slug]) => allCities.find((c) => c.slug === slug)).filter(Boolean).map((c) => ({ href: `/leistung/${f.slug}/${c!.slug}/`, label: c!.label }));
+};
+const byCat = (key: string) => {
+  const cat = categories.find((c) => c.key === key);
+  if (!cat) return [];
+  return allCities.filter((c) => (c.counts[key] || 0) >= MIN).sort((a, b) => b.counts[key] - a.counts[key]).slice(0, MAX)
+    .map((c) => ({ href: `/${cat.slug}/${c.slug}/`, label: c.label }));
+};
+const local = g.local ? [
+  { label: g.local.label, links: g.local.feature ? byFeature(g.local.feature) : g.local.cat ? byCat(g.local.cat) : [] },
+  ...(g.local.extra ? [{ label: g.local.extra.label, links: byFeature(g.local.extra.feature) }] : []),
+].filter((x) => x.links.length) : [];
+const related = (g.related || []).map((s) => GUIDES.find((x) => x.slug === s)).filter(Boolean);
 ---
 <Base title={g.title} description={g.description} jsonLd={[article, faqLd]} crumbs={[{ href: '/ratgeber/', label: 'Ratgeber' }, { href: `/ratgeber/${g.slug}/`, label: g.h1 }]}>
   <article class="guide">
     <h1>{g.h1}</h1>
-    <p class="lead">{g.lead}</p>
+    <p class="lead" set:html={g.lead} />
     <p><a class="btn" href={u(g.finder.href)}>{g.finder.label}</a></p>
-    {g.sections.map((s) => (<section><h2>{s.h}</h2>{s.p.map((p) => <p set:html={p} />)}</section>))}
+    {toc && (
+      <nav class="toc card" aria-label="Inhalt">
+        <strong>Inhalt</strong>
+        <ol>
+          {g.sections.map((s) => <li><a href={`#${anchor(s.h)}`}>{s.h}</a></li>)}
+          {g.table && <li><a href="#auf-einen-blick">Auf einen Blick</a></li>}
+          {begriffe.length > 0 && <li><a href="#begriffe">Begriffe erklärt</a></li>}
+          {local.length > 0 && <li><a href="#vor-ort">Vor Ort finden</a></li>}
+          <li><a href="#fragen">Häufige Fragen</a></li>
+        </ol>
+      </nav>
+    )}
+    {g.sections.map((s) => (
+      <section id={anchor(s.h)}>
+        <h2>{s.h}</h2>
+        {s.p.map((p) => <p set:html={p} />)}
+        {s.steps && <ol class="steps">{s.steps.map((x) => <li set:html={x} />)}</ol>}
+        {s.list && <ul>{s.list.map((x) => <li set:html={x} />)}</ul>}
+        {s.after && s.after.map((p) => <p set:html={p} />)}
+      </section>
+    ))}
+    {g.table && (
+      <section id="auf-einen-blick">
+        <h2>Auf einen Blick</h2>
+        <div class="tablewrap">
+          <table>
+            <caption>{g.table.caption}</caption>
+            <thead><tr>{g.table.head.map((h) => <th scope="col">{h}</th>)}</tr></thead>
+            <tbody>{g.table.rows.map((r) => <tr>{r.map((c, i) => i === 0 ? <th scope="row" data-label={g.table!.head[0] !== 'Frage' ? g.table!.head[0] : undefined} set:html={c} /> : <td data-label={g.table!.head[i]} set:html={c} />)}</tr>)}</tbody>
+          </table>
+        </div>
+        {g.table.note && <p class="muted"><small set:html={g.table.note} /></p>}
+      </section>
+    )}
+    {begriffe.length > 0 && (
+      <section id="begriffe">
+        <h2>Begriffe erklärt</h2>
+        {begriffe.map((b) => (
+          <aside class="begriff">
+            <p class="begriff-term">Begriff: {b.term}</p>
+            <p>{b.def}</p>
+            <p class="begriff-quelle"><small>Quelle: <span set:html={b.quelle} /></small></p>
+          </aside>
+        ))}
+      </section>
+    )}
     {g.buy && <Kaufen items={g.buy} />}
     {g.pflegebox && <PflegeboxHinweis />}
     {g.hausnotruf && AFFILIATE.hausnotrufUrl && (
       <aside class="card"><h2>Hausnotruf</h2><p>Wer allein lebt, kann mit einem Hausnotruf auf Knopfdruck Hilfe rufen. Bei Pflegegrad zahlt die Pflegekasse die Grundgebühr.</p><p><a class="btn" href={AFFILIATE.hausnotrufUrl} rel="sponsored noopener" target="_blank">Hausnotruf bei {AFFILIATE.hausnotrufAnbieter} anfragen</a></p><p class="muted"><small>Werbung</small></p></aside>
     )}
+    {local.length > 0 && (
+      <section id="vor-ort">
+        <h2>Vor Ort finden</h2>
+        <p>Adressen mit Telefon, Öffnungszeiten und Route, zum Beispiel in diesen Städten. Alle anderen Orte finden Sie über die Suche.</p>
+        {local.map((l) => (
+          <>
+            <h3>{l.label}</h3>
+            <ul class="chips">{l.links.map((x) => <li><a class="chip" href={u(x.href)}>{x.label}</a></li>)}</ul>
+          </>
+        ))}
+        <p><a class="btn" href={u(g.finder.href)}>{g.finder.label}</a></p>
+      </section>
+    )}
     <Faq items={g.faq.map((f) => ({ ...f, html: true }))} kasse />
-    <p class="muted"><small>Stand: {fmtDate(meta.builtAt)}. Allgemeine Informationen, keine Rechts- oder Gesundheitsberatung. Im Einzelfall entscheidet Ihre Kasse.</small></p>
+    {related.length > 0 && (
+      <section>
+        <h2>Passende Ratgeber</h2>
+        <ul class="grid">{related.map((r) => <li><a class="tile" href={u(`/ratgeber/${r!.slug}/`)}>{r!.h1}</a></li>)}</ul>
+      </section>
+    )}
+    <p class="muted"><small>Stand: {fmtDate(meta.builtAt)}. Normen geprüft auf gesetze-im-internet.de. Allgemeine Informationen, keine Rechts- oder Gesundheitsberatung. Im Einzelfall entscheidet Ihre Kasse.</small></p>
   </article>
 </Base>
-<style>.guide { max-width: 46em; } .guide section p { margin: 0 0 0.8em; }</style>
+<style>
+  .guide { max-width: 46em; }
+  .guide section p { margin: 0 0 0.8em; }
+  .guide section { scroll-margin-top: 12px; }
+  .toc { margin: 1em 0 1.5em; }
+  .toc ol { margin: 0.4em 0 0; padding-left: 1.4em; }
+  .toc li { margin: 0.15em 0; }
+  .steps li { margin-bottom: 0.6em; }
+  .tablewrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { border-collapse: collapse; width: 100%; background: var(--surface); font-size: 0.95rem; }
+  caption { text-align: left; font-weight: 600; padding: 0 0 6px; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  thead th { background: var(--accent); }
+  tbody th { font-weight: 600; }
+  .begriff { background: var(--accent); border-left: 4px solid var(--brand); border-radius: var(--radius); padding: 12px 16px; margin: 0 0 12px; }
+  .begriff p { margin: 0 0 0.4em; }
+  .begriff-term { font-weight: 700; color: var(--brand); }
+  .begriff-quelle { margin: 0 !important; color: var(--muted); }
+  h3 { font-size: 1rem; margin: 1em 0 0.3em; }
+  /* Handy: Tabelle als Karten, eine Zeile je Kasten, Spaltenname davor */
+  @media (max-width: 600px) {
+    thead { display: none; }
+    table, tbody, tr, th, td { display: block; width: 100%; box-sizing: border-box; }
+    tr { border: 1px solid var(--line); border-radius: var(--radius); margin-bottom: 10px; overflow: hidden; }
+    tbody th { background: var(--accent); border: 0; }
+    td { border: 0; border-top: 1px solid var(--line); }
+    td::before { content: attr(data-label) ': '; font-weight: 600; }
+    caption { display: block; width: 100%; }
+    tbody th[data-label]::before { content: attr(data-label) ' '; }
+  }
+</style>
