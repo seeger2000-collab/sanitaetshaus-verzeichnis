@@ -31439,5 +31439,300 @@
     "name": "Regensburg"
    }
   }
+ },
+ {
+  "id": "extra/allgaeustift-gesundheits-und-pflegedienste-kempten-kempten-allga",
+  "cat": "pflege",
+  "quelle": "https://www.allgaeustift.de/standorte/gesundheits-und-pflegedienste-kempten/ (2026-11-28)",
+  "tags": {
+   "name": "AllgäuStift Gesundheits- und Pflegedienste Kempten",
+   "addr:street": "Rübezahlweg",
+   "addr:housenumber": "3",
+   "addr:postcode": "87437",
+   "addr:city": "Kempten (Allgäu)",
+   "phone": "+49 831 9607470",
+   "website": "https://www.allgaeustift.de/standorte/gesundheits-und-pflegedienste-kempten/",
+   "email": "ambulant@allgaeustift.de"
+  },
+  "location": {
+   "lat": 47.717336,
+   "lon": 10.327951
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62701",
+    "name": "Kempten (Allgäu)"
+   }
+  }
+ },
+ {
+  "id": "extra/kronenhof-intensivpflege-gmbh-kempten-allgaeu",
+  "cat": "pflege",
+  "quelle": "https://www.kronenhof-intensivpflege.de/kontakt/ (2026-11-28)",
+  "tags": {
+   "name": "Kronenhof Intensivpflege GmbH",
+   "addr:street": "Porschestraße",
+   "addr:housenumber": "15",
+   "addr:postcode": "87437",
+   "addr:city": "Kempten (Allgäu)",
+   "phone": "+49 831 5701700",
+   "website": "https://www.kronenhof-intensivpflege.de/",
+   "email": "kontakt@kronenhof-intensivpflege.de"
+  },
+  "location": {
+   "lat": 47.754474,
+   "lon": 10.318519
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62701",
+    "name": "Kempten (Allgäu)"
+   }
+  }
+ },
+ {
+  "id": "extra/heigl-care-gmbh-kempten-allgaeu",
+  "cat": "pflege",
+  "quelle": "https://www.heigl-care.de/impressum/ (2026-11-28)",
+  "tags": {
+   "name": "Heigl Care GmbH",
+   "addr:street": "Robert-Weixler-Straße",
+   "addr:housenumber": "23",
+   "addr:postcode": "87439",
+   "addr:city": "Kempten (Allgäu)",
+   "phone": "+49 831 2069720",
+   "website": "https://www.heigl-care.de/",
+   "email": "info@heigl-care.de"
+  },
+  "location": {
+   "lat": 47.732233,
+   "lon": 10.300582
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62701",
+    "name": "Kempten (Allgäu)"
+   }
+  }
+ },
+ {
+  "id": "extra/koerperbehinderte-allgaeu-mobile-hilfe-kempten-allgaeu",
+  "cat": "pflege",
+  "quelle": "https://kb-allgaeu.de/angebote/mobile-hilfe/ (2026-11-28)",
+  "tags": {
+   "name": "Körperbehinderte Allgäu – Mobile Hilfe",
+   "addr:street": "Immenstädter Straße",
+   "addr:housenumber": "27",
+   "addr:postcode": "87435",
+   "addr:city": "Kempten (Allgäu)",
+   "phone": "+49 831 51239320",
+   "website": "https://kb-allgaeu.de/angebote/mobile-hilfe/"
+  },
+  "location": {
+   "lat": 47.719634,
+   "lon": 10.31213
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62701",
+    "name": "Kempten (Allgäu)"
+   }
+  }
+ },
+ {
+  "id": "extra/die-lebensgestalter-cambosenior-gmbh-kempten-allgaeu",
+  "cat": "pflege",
+  "quelle": "https://dielebensgestalter.de/kontakt (2026-11-28)",
+  "tags": {
+   "name": "Die Lebensgestalter (CamboSenior GmbH)",
+   "addr:street": "Lohgässele",
+   "addr:housenumber": "1",
+   "addr:postcode": "87435",
+   "addr:city": "Kempten (Allgäu)",
+   "phone": "+49 831 9604570",
+   "website": "https://dielebensgestalter.de/"
+  },
+  "location": {
+   "lat": 47.725483,
+   "lon": 10.315158
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62701",
+    "name": "Kempten (Allgäu)"
+   }
+  }
+ },
+ {
+  "id": "extra/diakonie-allgaeu-evangelische-sozialstation-kempte-kempten-allga",
+  "cat": "pflege",
+  "quelle": "https://www.diakonie-allgaeu.de/ich-suche-hilfe/hilfe-fuer-senioren/abulante-pflegedienste/haeuslicher-pflegedienst-memmingen-1 (2026-11-28)",
+  "tags": {
+   "name": "Diakonie Allgäu – Evangelische Sozialstation Kempten",
+   "addr:street": "Freudental",
+   "addr:housenumber": "9",
+   "addr:postcode": "87435",
+   "addr:city": "Kempten (Allgäu)",
+   "phone": "+49 831 25384510",
+   "website": "https://www.diakonie-allgaeu.de/ich-suche-hilfe/hilfe-fuer-senioren/abulante-pflegedienste/haeuslicher-pflegedienst-memmingen-1",
+   "email": "pdl.sst@diakonie-allgaeu.de"
+  },
+  "location": {
+   "lat": 47.72272,
+   "lon": 10.317824
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62701",
+    "name": "Kempten (Allgäu)"
+   }
+  }
+ },
+ {
+  "id": "extra/richter-richter-ambulanter-pflegedienst-kempten-allgaeu",
+  "cat": "pflege",
+  "quelle": "https://die-besserewahl.de/impressum/ (2026-11-28)",
+  "tags": {
+   "name": "Richter & Richter Ambulanter Pflegedienst",
+   "addr:street": "Gebhartstraße",
+   "addr:housenumber": "11",
+   "addr:postcode": "87437",
+   "addr:city": "Kempten (Allgäu)",
+   "phone": "+49 831 5203929",
+   "website": "https://die-besserewahl.de/",
+   "email": "info@pflegedienst-in-kempten.de"
+  },
+  "location": {
+   "lat": 47.704729,
+   "lon": 10.325331
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62701",
+    "name": "Kempten (Allgäu)"
+   }
+  }
+ },
+ {
+  "id": "extra/ambulanter-pflegedienst-vera-kempten-allgaeu",
+  "cat": "pflege",
+  "quelle": "https://ambulanter-pflegedienst-vera.de/ (2026-11-28)",
+  "tags": {
+   "name": "Ambulanter Pflegedienst Vera",
+   "addr:street": "Memminger Straße",
+   "addr:housenumber": "75",
+   "addr:postcode": "87439",
+   "addr:city": "Kempten (Allgäu)",
+   "phone": "+49 831 58002384",
+   "website": "https://ambulanter-pflegedienst-vera.de/",
+   "email": "pd.vera.kempten@gmail.com"
+  },
+  "location": {
+   "lat": 47.734908,
+   "lon": 10.309565
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62701",
+    "name": "Kempten (Allgäu)"
+   }
+  }
+ },
+ {
+  "id": "extra/home-service-hs-gmbh-home-service-allgaeu-kempten-allgaeu",
+  "cat": "pflege",
+  "quelle": "https://www.home-service-hs.de/impressum/ (2026-11-28)",
+  "tags": {
+   "name": "Home Service HS GmbH (Home Service Allgäu)",
+   "addr:street": "Hirnbeinstraße",
+   "addr:housenumber": "14",
+   "addr:postcode": "87435",
+   "addr:city": "Kempten (Allgäu)",
+   "phone": "+49 831 54064881",
+   "website": "https://www.home-service-hs.de/seniorenbetreuung-zu-hause/kempten/",
+   "email": "info@home-service-allgaeu.de"
+  },
+  "location": {
+   "lat": 47.722379,
+   "lon": 10.312146
+  },
+  "admin": {
+   "4": {
+    "id": "relation/2145268",
+    "name": "Bayern"
+   },
+   "5": {
+    "id": "relation/17657",
+    "name": "Schwaben"
+   },
+   "6": {
+    "id": "relation/62701",
+    "name": "Kempten (Allgäu)"
+   }
+  }
  }
 ]
